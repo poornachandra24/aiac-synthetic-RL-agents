@@ -1,4 +1,6 @@
-trl==0.19.0
+trl==0.22.0
 wandb==0.20.1
 ipdb==0.13.13
-transformers==4.51.3
+transformers==4.56.0
+torchao>=0.13.0
+cut-cross-entropy
