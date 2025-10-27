@@ -1,0 +1,605 @@
+{
+  "summary": "The logical reasoning content covers parallel rows seating arrangement problems, which require analyzing and deducing information from given statements to determine the seating positions of individuals. Key solving strategies mentioned include carefully reading and understanding the given information, identifying relationships between individuals, and using logical deductions to eliminate possibilities. Important concepts and principles involved in these problems include understanding spatial relationships, recognizing patterns, and applying logical reasoning to arrive at a solution. By practicing these types of problems, individuals can improve their critical thinking and analytical skills, which are essential for solving complex logical reasoning problems.",
+  "qa_pairs": [
+    {
+      "question": "Who sits opposite to A in the seating arrangement?",
+      "answer": "To find out who sits opposite to A, we need to analyze the given information. Since J sits at one of the extreme ends and sits three places away from the one who faces E, and A does not sit at the extreme ends, we can deduce that the person who sits opposite to A is the one who faces C, which is D. However, without the exact positions of A and D, we cannot determine the correct answer from the given options.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Who sits 2nd to the left of G in the seating arrangement?",
+      "answer": "From the given information, we know that G sits second to the left of C. However, to find out who sits 2nd to the left of G, we need more specific information about the positions of the individuals. Since the information provided does not directly answer this question, the correct answer cannot be determined from the given options.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Who sits immediate left of H in the seating arrangement?",
+      "answer": "The information provided states that H neither faces west nor sits adjacent to G, but it does not directly specify who sits to the immediate left of H. Given the constraints, we cannot accurately determine who sits immediate left of H from the provided options.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Who sits exactly between the one who faces B and the one who faces J?",
+      "answer": "Since the seating arrangement is complex and the information provided does not directly specify the positions of B and J in relation to each other, we cannot accurately determine who sits exactly between the one who faces B and the one who faces J from the given options.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "Which of the following does not belong to the group based on the seating arrangement?",
+      "answer": "To determine which option does not belong to the group, we would typically look for a common characteristic among the options that one of them lacks. However, without specific details on how F, H, G, B, and J are related in the seating arrangement beyond the initial information, we cannot accurately identify which one does not belong based on the provided options.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "What is the position of Q with respect to L in the seating arrangement?",
+      "answer": "Given that L sits opposite to the one who sits second to the left of F and the number of persons to the left of L is the same as the number to the right of P, without the exact layout or positions of Q and L in relation to F and P, we cannot determine Q's position relative to L from the provided options.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Who among the following pairs of persons are sitting opposite to each other?",
+      "answer": "To determine which pairs are sitting opposite each other, we need specific information about the positions of the individuals in both rows. The provided information does not directly confirm the positions of OB, PE, LD, and MF in a way that allows us to definitively choose the correct pairs from the given options.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "If A is sitting at one of the extreme ends, who would be sitting opposite to A?",
+      "answer": "Given the initial conditions that A does not sit at the extreme ends, this question introduces a contradictory scenario. Thus, based on the original information, A cannot be at an extreme end, making it impossible to determine who would be opposite A under this false premise.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "How many people are between B and F?",
+      "answer": "According to the given information, only one person sits between B and F.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Is G adjacent to the one who faces D?",
+      "answer": "Yes, according to the information provided, G is sitting adjacent to the one who faces D.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Can H sit at one of the extreme ends?",
+      "answer": "No, the information provided states that neither A nor H sits at the extreme ends.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Does F face C?",
+      "answer": "Yes, according to the given information, F faces C.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Is J at one of the extreme ends?",
+      "answer": "Yes, the information provided states that J sits at one of the extreme ends.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "How many places away from the one who faces E is J?",
+      "answer": "J sits three places away from the one who faces E.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Does the number of persons to the left of L equal the number to the right of P?",
+      "answer": "Yes, according to the information provided, the number of persons sitting to the left of L is the same as the number of persons sitting to the right of P.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Who sits second to the right of P?",
+      "answer": "The information provided states that N sits second to the right of P.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Does B sit to the left of F?",
+      "answer": "Yes, according to the given information, B sits to the left of F.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Is A sitting immediate left of D?",
+      "answer": "No, according to the information provided, it is stated that A sits immediate left of D in a different context, not in the initial arrangement described.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If E sits opposite to the one who sits third to the left of X, and only one person sits between E and F, who sits opposite to D?",
+      "answer": "To determine who sits opposite to D, we need to first establish the position of E and X. Since E sits opposite to the one who sits third to the left of X, and only one person sits between E and F, we can deduce that D sits opposite to the one who sits second to the left of P.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Which of the following statements is true?",
+      "answer": "From the given information, we can deduce that C sits to the left of D and to the right of B. Therefore, option c) Only one person sits between A and C is not necessarily true. However, option c) is the most likely to be true based on the given constraints.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Who among the following persons faces the one who sits immediate left of C?",
+      "answer": "Since C sits to the left of D and to the right of B, the one who sits immediate left of C is B. Therefore, the person who faces B is the one who sits opposite to B, which is W.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "How many persons sit to the right of M?",
+      "answer": "There is no information provided about M in the given text. Therefore, we cannot determine how many persons sit to the right of M.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "How many persons are sitting between Y and the one who faces F?",
+      "answer": "Since only one person sits between E and F, and the number of persons sitting to the left of F is the same as to the right of Z, we can deduce that there are two persons sitting between Y and the one who faces F.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Four of the five among the following are similar in such a way to form a group, which one of the following doesn\u2019t belong to the group?",
+      "answer": "The given options are YW, UX, DE, CB, and AF. Based on the alphabetical order, we can see that DE is the only pair that is not in alphabetical order. Therefore, DE doesn\u2019t belong to the group.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "If all the persons are arranged alphabetical order in Row 2, from the left end to the right end, then how many persons remain unchanged from their previous position?",
+      "answer": "Since the persons in Row 2 are A, C, F, H, J, and L, arranging them in alphabetical order would result in A, C, F, H, J, and L. Comparing this with the original order, we can see that only one person, A, remains unchanged from their previous position.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Who sits adjacent to F?",
+      "answer": "Since only one person sits between E and F, and the number of persons sitting to the left of F is the same as to the right of Z, we can deduce that E sits adjacent to F.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Four of the following five are alike in a certain way and thus form a group as per the given arrangement. Which of the following one does not belong to that group?",
+      "answer": "The given options are not provided in the question. However, based on the context, we can assume that the options are related to the seating arrangement. To determine which one does not belong to the group, we need to analyze the seating arrangement and identify the common pattern among the options.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "If there are 12 persons sitting in two parallel rows, and the persons in row 1 are facing towards south and the persons in row 2 are facing towards north, how many persons are sitting between A and F?",
+      "answer": "Since the number of persons sitting to the left of F is the same as to the right of Z, and only one person sits between E and F, we can deduce that there are two persons sitting between A and F.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If G sits second to the right of B, where neither of them faces A nor sits on the extreme ends of the row, who sits opposite to D?",
+      "answer": "Since G sits second to the right of B, and neither of them faces A nor sits on the extreme ends of the row, we can deduce that D sits opposite to the one who sits second to the left of P.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If C sits on the extreme end of the row but doesn\u2019t face D, who sits opposite to A?",
+      "answer": "Since C sits on the extreme end of the row but doesn\u2019t face D, we can deduce that A sits opposite to the one who sits third to the right of A.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If only one person sits between L and F, who sits adjacent to F?",
+      "answer": "Since only one person sits between L and F, we can deduce that L sits adjacent to F.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "If K sits to the right of I but neither faces C and L nor sits on the extreme ends of the row, who sits opposite to D?",
+      "answer": "Since K sits to the right of I but neither faces C and L nor sits on the extreme ends of the row, we can deduce that D sits opposite to the one who sits second to the left of P.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If the number of persons who sits between A and F is the same as between Y and U, how many persons are sitting between Y and U?",
+      "answer": "Since the number of persons sitting to the left of F is the same as to the right of Z, and only one person sits between E and F, we can deduce that there are two persons sitting between Y and U.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If Y and Z are not immediate neighbours, who sits opposite to A?",
+      "answer": "Since Y and Z are not immediate neighbours, we can deduce that A sits opposite to the one who sits third to the right of A.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If W sits to the right of V and does not face A, who sits opposite to D?",
+      "answer": "Since W sits to the right of V and does not face A, we can deduce that D sits opposite to the one who sits second to the left of P.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If C sits to the left of D and to the right of B, who sits opposite to A?",
+      "answer": "Since C sits to the left of D and to the right of B, we can deduce that A sits opposite to the one who sits third to the right of A.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Who sits adjacent to F?",
+      "answer": "To find out who sits adjacent to F, we need to analyze the given information. Since I sits third to the right of L and B sits opposite to L, we can deduce the positions of I, L, and B. Given that A sits second to the left of B and the number of persons sitting between B and A is the same as the number of persons sitting between L and K, we can determine the positions of A and K. However, without explicit information about F's position relative to these individuals, we cannot directly determine who sits adjacent to F. Thus, we need more specific details to accurately answer this question.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "How many persons sit to the right of I?",
+      "answer": "Given that I sits third to the right of L, to determine how many persons sit to the right of I, we need to establish the total number of people in the row and their arrangement. Since there are ten persons in total and they are sitting in two parallel rows, with specific constraints on their positions, we can deduce the arrangement. However, without explicit information on the total number of people in each row or the exact positions of all individuals relative to I and L, we cannot directly calculate the number of persons to the right of I. The answer choices suggest a range of possibilities, but the exact number depends on the specific seating arrangement, which requires more detailed analysis.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If E is related to A and B is related to F in a certain way, then who among the following persons is related to L?",
+      "answer": "To solve this, we need to understand the nature of the relationship between E and A, and B and F. However, the question does not provide a clear definition of this relationship. Assuming the relationship is based on seating positions (e.g., opposite, adjacent), we still lack specific information about how E, A, B, F, and L are arranged relative to each other. Without knowing the exact nature of the relationship or the seating arrangement, we cannot accurately determine who is related to L.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Who among the following persons faces A?",
+      "answer": "Since A sits in Row 1 facing south, the person facing A must be in Row 2. Given that C and I sit opposite each other and I sits third to the right of L, we can start building the arrangement. However, without explicit information about who sits opposite A or more details about the positions of B, D, and E relative to A, we cannot directly determine who faces A. The seating arrangement provided has several constraints, but the specific positions of individuals in Row 2 relative to those in Row 1 need clearer definition to answer this question accurately.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "How many persons sit between J and the one who faces D?",
+      "answer": "To determine this, we need to know the positions of J and D. Since D does not sit adjacent to C and J's position is not explicitly stated relative to D or the person facing D, we must analyze the given constraints. Knowing that C and I sit opposite each other and A sits second to the left of B, with B opposite L, we can start to build the seating arrangement. However, without specific information about J's position or who faces D, calculating the exact number of persons between J and the one facing D requires more detailed seating information.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Who among the following persons sits between B and C?",
+      "answer": "Given that A sits second to the left of B and neither D nor E sits adjacent to C, we can start to determine the arrangement around B and C. Since E sits to the left of B and A is two positions to the left of B, E must be between A and B. With the constraint that neither D nor E is adjacent to C, and knowing A and E's positions relative to B, we can deduce possible positions. However, without explicit information about D's position relative to B and C or more details on the seating arrangement, we cannot conclusively determine who sits between B and C.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Who among the following pairs does not sit opposite each other?",
+      "answer": "To solve this, we need to examine the given pairs and the seating arrangement. Knowing that C and I sit opposite each other, B sits opposite L, and A and E's positions relative to B, we can start to determine opposites. Without explicit information on the positions of D, J, and K relative to the others or more details on the seating arrangement, identifying which pair does not sit opposite each other requires analyzing the constraints provided and the process of elimination.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Who among the following persons sits opposite to K?",
+      "answer": "Given that I sits third to the right of L and B sits opposite L, with A sitting second to the left of B, we have some basis for the arrangement. However, without explicit information about K's position or who sits opposite K, determining this requires more analysis of the seating constraints. Since the number of persons between B and A is the same as between L and K, and knowing the positions of B, A, and L, we can infer possible positions for K and thus who might sit opposite K.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Who among the following persons sits second to the left of P?",
+      "answer": "To solve this, we need information about P's position and the arrangement around P. Given that N sits adjacent to G and faces the one who sits second to the left of M, and only one person sits between L and the one who faces P, we can start to build the arrangement. However, without explicit details about the positions of P, G, N, M, and L relative to each other or more constraints on the seating, determining who sits second to the left of P requires additional analysis and possibly more information.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "Four of the following five are alike in a certain way and hence form a group. Who among the following persons does not belong to the group?",
+      "answer": "Without knowing the specific criteria that make four of the five individuals alike, it's challenging to determine who does not belong. The criteria could be based on seating positions, relationships, or other factors not explicitly stated. To solve this, we would need to identify the commonality among four of the individuals and then find the one that does not share this characteristic. Given the lack of specific information about the nature of the group or the criteria for inclusion, this question requires more context or details about the individuals and their relationships or positions.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "If there are two parallel rows and ten persons are sitting in them, with each person facing another person in the opposite row, how can we determine the seating arrangement based on given constraints?",
+      "answer": "To determine the seating arrangement, we would start by applying the given constraints one by one. For example, if we know that I sits third to the right of L and B sits opposite L, we can begin to build the arrangement. Then, using the information that A sits second to the left of B and the number of persons between B and A is the same as between L and K, we can further refine the seating arrangement. Continuing this process with each constraint will allow us to deduce the positions of all individuals. This requires systematically applying each piece of information to narrow down the possible arrangements until we find one that satisfies all constraints.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "Given that only one person sits between G and J, and H sits third to the left of I, how can we use this information to start building a seating arrangement?",
+      "answer": "We start by placing H and I based on the constraint that H sits third to the left of I. Then, knowing that only one person sits between G and J, we can consider how G and J might be positioned relative to H and I, keeping in mind that neither G nor J sits at the end of the row. This initial placement allows us to begin building the seating arrangement, which can then be further refined by applying additional constraints such as the positions of L, N, and the relationships between other individuals.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "How do we approach a problem involving seating arrangements with multiple constraints and relationships between individuals?",
+      "answer": "Approaching such a problem involves systematically applying each constraint to narrow down the possible seating arrangements. Start with the most restrictive constraints (e.g., fixed positions, direct relationships) and then apply less restrictive ones. It's essential to visualize the arrangement as you apply each constraint, using the process of elimination to find a solution that satisfies all given conditions. This methodical approach helps in deducing the seating arrangement and relationships between individuals based on the provided information.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "What is the importance of understanding the relationships and constraints in logical reasoning problems involving seating arrangements?",
+      "answer": "Understanding the relationships and constraints is crucial because it allows you to systematically deduce the seating arrangement. Each piece of information can significantly reduce the number of possible arrangements, and applying them correctly is key to finding the solution. The relationships between individuals (e.g., who faces whom, who sits next to whom) and the constraints (e.g., fixed positions, relative positions) are the foundation upon which the solution is built. Thus, carefully analyzing and applying these relationships and constraints is essential for solving seating arrangement problems.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Given a scenario where four of five individuals are alike in a certain way, how do we identify the one that does not belong?",
+      "answer": "To identify the individual who does not belong, we first need to understand the criteria that make the other four alike. This involves analyzing the characteristics, positions, or relationships of the individuals to find the commonality. Once the common trait is identified, we can then examine each individual to find the one that does not share this trait. This process requires careful analysis of the given information and the ability to recognize patterns or relationships that define the group.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "In a logical reasoning problem, what is the role of assumptions, and how should they be tested?",
+      "answer": "Assumptions play a crucial role in logical reasoning as they are the foundation upon which we build our deductions. However, it's essential to test these assumptions against the given information to ensure they are valid. This involves checking if the assumptions lead to contradictions or if they are consistent with all provided constraints. Testing assumptions helps in eliminating incorrect paths and guides us towards the correct solution. It's a critical step in the reasoning process that ensures our deductions are sound and based on the information given in the problem.",
+      "difficulty": "basic",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "How does the process of elimination contribute to solving logical reasoning problems?",
+      "answer": "The process of elimination is a powerful tool in solving logical reasoning problems. By systematically applying the constraints and eliminating possibilities that do not fit, we can narrow down the potential solutions. This process helps in identifying the correct arrangement or relationship by removing options that are inconsistent with the given information. It's an iterative process that, when applied carefully and consistently, leads to the identification of the correct solution by eliminating all other possibilities.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "What skills are required for effective logical reasoning in problems involving seating arrangements and relationships?",
+      "answer": "Effective logical reasoning in these problems requires several skills, including the ability to analyze information, understand relationships, apply constraints systematically, and visualize arrangements. Additionally, the ability to test assumptions, eliminate contradictions, and think methodically is crucial. Being able to break down complex information into manageable parts and to deduce step-by-step solutions is also essential. These skills, when combined, enable the solver to navigate complex problems and arrive at a solution that satisfies all given conditions.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "If J sits at one of the extreme ends and sits three places away from the one who faces E, which case is valid?",
+      "answer": "Case II and Case IV are valid as J can sit at either extreme right or left end of row 1 or row 2.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "If B faces the one who sits to the immediate left of E, who sits to the left of E?",
+      "answer": "Since B faces the one who sits to the immediate left of E, it means the person sitting to the left of E is facing B.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "If only one person sits between B and F, who faces C, what can be inferred about the arrangement?",
+      "answer": "Since only one person sits between B and F, it means B and F are adjacent to each other, with one person in between.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If G sits second to the left of C and is sitting adjacent to the one who faces D, what can be inferred about the arrangement?",
+      "answer": "Since G sits second to the left of C and is adjacent to the one who faces D, it means D and C are not sitting together.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If F is not sitting adjacent to D, which cases are invalid?",
+      "answer": "Case I and Case III are invalid as D and F are sitting together in these cases.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If neither A nor H sits at the extreme ends, what can be inferred about the arrangement?",
+      "answer": "Since neither A nor H sits at the extreme ends, it means they must be sitting in the middle rows.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "If H neither faces west nor sits adjacent to G, which case is rejected?",
+      "answer": "Case IV is rejected as we can\u2019t fix H in this case.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If L sits opposite to the one who sits second to the left of F, what can be inferred about the arrangement?",
+      "answer": "Since L sits opposite to the one who sits second to the left of F, it means L and F are not sitting together.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If only two persons sit between B and F, and B sits to the left of F, what can be inferred about the arrangement?",
+      "answer": "Since only two persons sit between B and F, and B sits to the left of F, it means B and F are three positions apart.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If K is related to P and I is related to O in a certain way, who among the following person is related to J?",
+      "answer": "Since K is related to P and I is related to O, it means J must be related to the person sitting opposite to J.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If four of the following five are alike in a certain way and hence form a group, who among the following person does not belong to the group?",
+      "answer": "The person who does not belong to the group is the one who does not share the common characteristic with the other four.",
+      "difficulty": "basic",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "If ten persons viz. G, H, I, J, K, L, M, N, O, and P are sitting in two parallel rows, how many persons sit between N and I?",
+      "answer": "Since the arrangement of the persons is not provided, it cannot be determined how many persons sit between N and I.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "If J sits at one of the extreme ends, which position is J most likely to occupy?",
+      "answer": "J is most likely to occupy the position at the extreme right or left end of row 1 or row 2.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "If B faces the one who sits to the immediate left of E, what can be inferred about the position of E?",
+      "answer": "Since B faces the one who sits to the immediate left of E, it means E must be sitting to the right of the person facing B.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If G sits second to the left of C, what can be inferred about the position of G?",
+      "answer": "Since G sits second to the left of C, it means G must be sitting two positions to the left of C.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "If F is not sitting adjacent to D, what can be inferred about the arrangement of F and D?",
+      "answer": "Since F is not sitting adjacent to D, it means F and D must be sitting apart from each other, with at least one person in between.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If L sits opposite to the one who sits second to the left of F, what can be inferred about the position of L?",
+      "answer": "Since L sits opposite to the one who sits second to the left of F, it means L must be sitting opposite to the person two positions to the left of F.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If K is related to P and I is related to O in a certain way, what can be inferred about the relationship between J and the person sitting opposite to J?",
+      "answer": "Since K is related to P and I is related to O, it means J must be related to the person sitting opposite to J in a similar way.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If B sits to the left of F and only two persons sit between B and F, what can be concluded about their positions?",
+      "answer": "Given that B sits to the left of F and there are only two persons between them, it means there are exactly three positions between B and F, including their own positions. Therefore, B and F are four positions apart.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "If A sits immediate left of D and none of them sits at the end of the row, what can be deduced about their seating arrangement?",
+      "answer": "Since A sits immediately to the left of D and neither sits at the end, there must be at least one person to the left of A and one to the right of D to satisfy the condition that neither A nor D is at the end.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Given that the number of persons sitting to the left of L is the same as the number of persons sitting to the right of P, what does this imply about their relative positions?",
+      "answer": "This condition implies that L and P are positioned symmetrically in relation to the total number of people, meaning if there are x people to the left of L, there are also x people to the right of P.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If N sits second to the right of P, how does this affect the seating arrangement?",
+      "answer": "Knowing N's position relative to P helps in fixing the positions around P. Since N is second to the right of P, there is exactly one person between P and N.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If C sits opposite to the one who sits second to the left of Q, what does this tell us about their seating arrangement?",
+      "answer": "This information gives us a clue about the seating arrangement across the rows. It means the person second to the left of Q must be directly across from C, helping to establish a relationship between the two rows.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Given that E sits opposite to the one who sits third to the left of X and either E or X is sitting at the end of the row, what are the implications for their positions?",
+      "answer": "This condition provides two pieces of information: the relative positioning across the rows (E opposite to the third person to the left of X) and the endpoint condition (either E or X at an end). This helps in narrowing down possible arrangements.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "If only one person sits between E and F, what does this imply about their proximity?",
+      "answer": "This means E and F are closely positioned, with only one person separating them. This condition can help in further narrowing down the seating arrangement, especially when combined with other conditions.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Given the number of persons sitting to the left of F is the same as to the right of Z, what does this symmetry imply?",
+      "answer": "This symmetry suggests that F and Z are positioned in a way that they divide the row into two parts with an equal number of people on either side of them, respectively.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If only two persons are sitting between Z and the one who sits opposite to A, what can be inferred about the seating arrangement across the rows?",
+      "answer": "This condition provides information about the relationship between Z's position and A's position across the rows. It helps in establishing how the rows are aligned based on the people sitting between Z and A's opposite.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Given that Y and Z are not immediate neighbors, what does this mean for their positions?",
+      "answer": "This condition simply means there is at least one person between Y and Z, separating them.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "If W sits to the right of V and does not face A, what are the implications for W and V's positions relative to A?",
+      "answer": "This tells us that W is positioned after V in the seating arrangement and that W's position does not directly face A, helping to determine possible seating configurations.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Given C sits to the left of D and to the right of B, how does this condition affect the seating arrangement?",
+      "answer": "This condition provides a sequence: B, C, D. Knowing this sequence helps in placing these individuals within the larger seating arrangement.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "If G sits second to the right of B, and neither of them faces A nor sits on the extreme ends of the row, what does this imply about their positions and the overall arrangement?",
+      "answer": "This condition gives us the sequence B, _, G, with the additional information that neither B nor G is at an end or faces A. This helps in determining the internal structure of the seating arrangement.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Given that the person who faces D sits third to the right of A, what does this tell us about the seating arrangement across the rows?",
+      "answer": "This condition establishes a relationship between A's position and the person facing D across the rows. It implies a specific alignment where the person facing D is three positions to the right of A.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "If only one person sits between A and H, what are the implications for their proximity in the seating arrangement?",
+      "answer": "This means A and H are close, with only one person separating them. This condition can be used to further refine the seating arrangement, especially when considered alongside other conditions.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Given that only one person sits between L and F, who neither sits adjacent to C nor A, what does this imply about the seating arrangement and the positions of L and F?",
+      "answer": "This condition provides information about the proximity of L and F while also giving constraints about their positions relative to C and A. It helps in narrowing down possible arrangements based on these constraints.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If K sits to the right of I but neither faces C and L nor sits on the extreme ends of the row, what does this tell us about K and I's positions?",
+      "answer": "This condition gives us the sequence I, K, with additional constraints that neither I nor K faces C or L, and neither is at an end. This information helps in placing K and I within the seating arrangement while considering the constraints.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Given that A sits second to the left of B, and the number of persons sitting between B and A is the same as the number of persons sitting between L and K, what does this symmetry imply about the seating arrangement?",
+      "answer": "This condition establishes a relationship between two parts of the seating arrangement: the segment between B and A and the segment between L and K. It implies that these segments have the same length, which can help in determining the overall structure of the seating.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "In a seating arrangement, if J and E do not sit opposite each other, and there are only two possible cases, how can we determine the final arrangement?",
+      "answer": "We can determine the final arrangement by eliminating the case where J and E sit opposite each other. This is done by applying the given condition to the two possible cases and selecting the one that satisfies the condition.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "If I sits third to the right of L, and B sits opposite to L, what are the possible arrangements?",
+      "answer": "There are two possible arrangements: one where I is three seats to the right of L, and B is directly opposite L, and another where I is three seats to the right of L, and B is directly opposite L, but with the seats rearranged to accommodate the condition.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Given that only one person sits between G and J, who faces I, and neither G nor J sits at the end of the row, what can be inferred about the seating arrangement?",
+      "answer": "We can infer that G and J are in the middle of the row, with one person between them, and that person faces I. Additionally, since neither G nor J sits at the end of the row, there must be at least two people on either side of them.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If H sits third to the left of I, whereas L faces north and sits at the end of the row but doesn\u2019t sit adjacent to J, what are the implications for the seating arrangement?",
+      "answer": "This implies that H is three seats to the left of I, and L is at the end of the row, facing north. Since L doesn\u2019t sit adjacent to J, there must be at least one person between L and J.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Given that only one person sits between L and the one who faces P, what can be inferred about the seating arrangement?",
+      "answer": "We can infer that L and the person who faces P are separated by only one person. This means that the person who faces P is either two seats to the right or left of L.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "If N sits adjacent to G and faces the one who sits second to the left of M, what are the implications for the seating arrangement?",
+      "answer": "This implies that N is next to G, and faces the person who is two seats to the left of M. This means that M is at least three seats away from N and G.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Given that K neither sits at the end of the row nor adjacent to P, what can be inferred about the seating arrangement?",
+      "answer": "We can infer that K is in the middle of the row, and not at either end. Additionally, K is not next to P, so there must be at least one person between K and P.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "If we have two possible cases for a seating arrangement, and one of the cases is eliminated due to a contradiction, how can we determine the correct arrangement?",
+      "answer": "We can determine the correct arrangement by selecting the remaining case that does not contain any contradictions. This is done by applying the given conditions to each case and eliminating the one that does not satisfy the conditions.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "In a seating arrangement, if we know the position of one person, and the relative positions of the other people, how can we determine the final arrangement?",
+      "answer": "We can determine the final arrangement by using the given information to place the other people in the arrangement. This is done by applying the relative positions to the known position and filling in the gaps.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Given a set of conditions for a seating arrangement, how can we determine the correct arrangement?",
+      "answer": "We can determine the correct arrangement by applying each condition to the possible arrangements and selecting the one that satisfies all the conditions. This may involve eliminating contradictions and using logical deductions.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    }
+  ]
+}

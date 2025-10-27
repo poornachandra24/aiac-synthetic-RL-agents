@@ -1,0 +1,575 @@
+{
+  "summary": "This logical reasoning content covers blood relation practice questions, which are a type of logical problem that requires analyzing relationships between family members. Key solving strategies mentioned include carefully reading the given information, identifying the relationships between family members, and using deductive reasoning to answer the questions. Important concepts and principles involved in solving these problems include understanding family relationships, such as parent-child, sibling, and spouse relationships, and using logical deductions to determine the relationships between individuals. By practicing these types of questions, individuals can improve their logical reasoning skills and prepare for upcoming bank exams.",
+  "qa_pairs": [
+    {
+      "question": "How is J related to C, given that A is the brother of C, B is the daughter of A, and J is the sister of B whose mother is H?",
+      "answer": "Since J is the sister of B, and B is the daughter of A, J is also the daughter of A. Given that A is the brother of C, J is the daughter of C's brother, making J the niece of C.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Who is the daughter of D, given the family relationships and the fact that E is the son of D and the brother of H?",
+      "answer": "Since E is the son of D and the brother of H, and there is no direct information about a daughter of D, we cannot determine the daughter of D from the given information.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is Sakshi related to Ravi, given that Sudha is the grandmother of Sakshi, Sakshi's mother is the wife of Shardul, and Ravi is the younger brother of Shardul?",
+      "answer": "Since Ravi is the younger brother of Shardul, and Sakshi's mother is the wife of Shardul, Sakshi is the niece of Ravi.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Who is Teju in the family, given that Teju is the wife of the brother of Ravi, and Ravi is the younger brother of Shardul?",
+      "answer": "Since Teju is the wife of the brother of Ravi, and Ravi has an older brother Shardul, Teju must be the wife of Shardul, because Ravi is the younger brother. However, the text also mentions that Sakshi's mother is the wife of Shardul, so Teju could be the wife of another brother not mentioned, but based on given options, Teju is Ravi's sister-in-law.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is E related to C, given the complex family relationships and the fact that neither A nor E is married to C?",
+      "answer": "From the information given, we cannot directly determine the relationship between E and C, as the text does not provide enough details to establish a clear connection between them.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is B related to D?",
+      "answer": "From the given information, we know that A is the father of E and B has 2 children of different genders. The sibling of D is the uncle of F, but we don't have direct information about B and D. However, since B has 2 children and only married couples can have children, B must be a parent. Given that A is already the father of E, B could be the parent of D, making B the parent of D. However, without more specific information about the gender of B's children or their relation to D, we cannot definitively conclude the exact relationship without assuming more than what is given. Thus, the correct answer based on the information provided and typical logic puzzle conventions would be 'e. Can\u2019t be determined' due to insufficient direct information linking B and D's relationship.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is W related to P?",
+      "answer": "Given that W is the niece of R and P is the father of T, with S being the mother of V and V being the grandson of Q, we need to establish the relationship between W and P through their connections to other family members. Since W is the niece of R, and U is the sister-in-law of R, W could be the daughter of U or another sibling of R. However, P's relationship to R or U is not directly stated, making it necessary to find a connection through other members. Knowing Q has two married sons and V is the grandson of Q, and S is the mother of V, we still lack a direct link between W and P without more information about the spouses of Q's sons or the exact relationship of R to the rest of the family. Therefore, based on the given information, 'e. Can\u2019t be determined' seems to be the most accurate answer due to the lack of direct connection between W and P.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is S related to T?",
+      "answer": "Since S is the mother of V and V is the grandson of Q, and P is the father of T, we need to find how S and T are related. Given that U is the sister-in-law of R and R is the father of V, and S is the mother of V, it implies S is married to R. However, the direct relationship between S and T is not explicitly stated. If P is the father of T, and considering the generations and relationships provided, without a direct statement about S's relationship to P or T, or more details about the family structure that directly involves S and T, the relationship cannot be precisely determined with the given information.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is T related to U?",
+      "answer": "Given that U is the sister of P, and P is the father of T, this makes U the aunt of T. Therefore, T is the nephew or niece of U, but since T's gender is not specified, we can conclude the relationship as 'nephew or niece,' which directly corresponds to option 'b. Son' if T is a male, or it would be 'niece' if T is a female. However, based on the provided options and the direct relationship, 'b. Son' is the closest match if we consider T to be male, given the context of the question.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How many male members are in the family if S is the only daughter of R?",
+      "answer": "Given that S is the only daughter of R, and knowing the family structure has three generations and seven members (A to G), with A being the father of E and B having two children of different genders, we can start mapping the family. If S is R's only daughter, then R must have at least one son to make B's children (who are of different genders) possible, considering the family has only two couples and each couple can have up to two children. With A as a father and B having two children, and knowing S is a daughter, we have at least three males: A, B (assuming B is male for the sake of having a male to female child ratio), and R. Additionally, considering the generations and the fact that only married couples can have children, and with the information about the sibling of D being the uncle of F, we can infer more males but the exact number depends on the gender of the children of each couple. However, with the information that S is the only daughter of R, and knowing we have at least A, B, and R as males, and considering the need for at least one more male to be the sibling of D (who is an uncle to F), the minimum number of male members would be 3 (A, R, and one other male), but given the structure, it's likely more. Without exact details on each child's gender, we lean towards the information given about the family structure and known male figures.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "What is the ratio of male members to female members of the family in the first scenario?",
+      "answer": "To determine the ratio, we first need to identify the relationships and genders of the family members. From the information given, we know there are three married couples and ten persons in total: P, Q, R, S, T, U, V, W, X, and Z. S is the sister-in-law of R, implying S is a female and R is a male. P is the son of V, and W is the brother of T, indicating P and W are males. Z is the father-in-law of Q, making Z a male. U is the mother of X and married to the brother of R, indicating U is a female. Given these relationships and the fact that there are three married couples, we can deduce the genders and relationships of all members. However, without explicit gender information for each member, we must rely on the relationships provided. Assuming each married couple consists of one male and one female, and considering the given relationships, we can infer that there are likely 5 males (P, R, W, Z, and one of the husbands not explicitly mentioned) and 5 females (S, U, Q, and two wives not explicitly mentioned), leading to a ratio of 1:1. However, the exact ratio cannot be determined without making assumptions about the genders of all members based on traditional marriage roles.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How many female members are there in the family described in the second scenario?",
+      "answer": "To find the number of female members, we analyze the given relationships: O is the only sister of P, and P is the brother-in-law of M. T is the daughter-in-law of H, and H is the father of O. L, a female, has two daughters, one of whom is married. K is the mother of P. From this information, we can identify the following females: O (sister of P), T (daughter-in-law of H), L (mother of two daughters), and K (mother of P). Additionally, since L has two daughters and only one is married, both daughters are female family members. Thus, we have at least 6 female members: O, T, L, K, and L's two daughters. However, the question's context suggests focusing on the immediate family relationships provided, which might not include all female members like L's daughters if they are not part of the 'seven people' mentioned. Given the direct information, we confirm O, T, L, and K as female members. If we consider L's daughters as part of the family based on the question's intent, we would have a total of 6 female members. But strictly from the given relationships without assuming beyond, we identify at least 4 female members directly mentioned or implied in the immediate family context.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is P related to L in the second scenario?",
+      "answer": "From the information provided, K is the mother of P, and L is mentioned as a female member having two daughters. There is no direct relationship given between P and L. However, since P is a member of the family and L is described with a specific relationship (having two daughters, one of whom is married), without a direct link, we cannot definitively say how P is related to L based solely on the information given. P could potentially be a son-in-law if one of L's daughters is married to him, but this is speculative without explicit statements of marriage between P and one of L's daughters.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is O related to K in the second scenario?",
+      "answer": "Given that K is the mother of P and O is the sister of P, we can deduce that O is the daughter of K. Therefore, O is related to K as her daughter.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "What is the relation of H with the mother of F, given the information in the third scenario?",
+      "answer": "From the information, F is the son of A, but A is not his father, implying A is his mother. H is the brother-in-law of F, who is married and has only one son. Since H is the brother-in-law of F, and considering F's marriage, H could be either the brother of F's wife or the husband of F's sister. However, without explicit information about F's sister or the gender of F's spouse, we cannot directly determine H's relationship to the mother of F (A) solely based on the given relationships. The relationship between H and A (the mother of F) cannot be precisely determined without additional assumptions or information about the family structure beyond what is provided.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is A related to H?",
+      "answer": "From the given information, we know that E is the only son of A and H belongs to the third generation. Since E has no brother and F is the son-in-law of C, who is the husband of A, it can be deduced that H is the son of E. Therefore, A is the grandmother of H.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is E related to F?",
+      "answer": "Given that F is the son-in-law of C, who is the husband of A, and E is the only son of A, we can conclude that F is the husband of E's sister, making F the brother-in-law of E.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is C related to G?",
+      "answer": "Since G is the only son of D and D is the only sister of E, it means G is the son of E's aunt. Given that C is the husband of A and A is the mother of E, C is the uncle of E. Therefore, C is the great-uncle of G.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is O related to U?",
+      "answer": "From the information provided, R is married to U and O is the daughter of Q. Since R and Q are kids of T and S, and R is married to U, it means O is the sister of R. Therefore, O is the sister-in-law of U.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "In expression K $ L @ M % N, how is N related to K?",
+      "answer": "Using the given notation, K $ L means K is the sister of L, L @ M means L is the mother of M, and M % N means M is the daughter of N. Therefore, N is the mother of M, and M is the sister of K's sister's child. This makes N the mother of K's niece or nephew, but since K is the sister of L and L is the mother of M, it simplifies to N being the mother of K's sister's child, making N the mother-in-law of K's brother or the grandmother of K's niece/nephew. However, the most direct relationship based on the provided operations is that N is the grandmother of K's niece/nephew, but given the sister relationship, it directly implies N is the mother of K's sister, thus making N the mother of K's sister, and by the sister relationship, N is the mother of K.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is R related to U?",
+      "answer": "From the given information, U is the sister-in-law of R, who is the father of V. This means R is the husband of S, and U is the wife of either R's brother or S's brother. However, since R is the father of V and U is the sister-in-law of R, R must be the brother of U's husband, making R the brother-in-law of U's husband, but the question directly asks how R is related to U, and since U is the sister-in-law of R, it implies U is the sister of R's wife, S. Thus, R is the husband of U's sister, making R the brother-in-law of U.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Who is the father-in-law of F?",
+      "answer": "Given that F is the paternal aunt of H, who is the sister of G, and D is the father of G, it makes F the sister of D. Since B is the husband of A, and A is the mother of D, B is the father of D. Therefore, B is the father-in-law of F's husband, but the question asks for the father-in-law of F. Since F is D's aunt and D's father is B, B is also the father of F's brother, making B the father-in-law of F if F were married to B's son, but since the direct relationship is asked, and considering the family structure, the actual father-in-law of F (if F is married) isn't directly provided but based on the closest relation, if F were to be married to D (which the text does not explicitly state but for the sake of logical deduction), B would be the father-in-law of F.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is A related to E?",
+      "answer": "From the information provided, B is the grandfather of E, and B is the husband of A. This makes A the grandmother of E. Therefore, A is the grandmother of E.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "What is the relationship between D and F?",
+      "answer": "Given that F is the paternal aunt of H, who is the sister of G, and D is the father of G, F is the sister of D. This makes D the brother of F.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "What is the relationship between E and C?",
+      "answer": "Since D has only two children and both are of the same gender, and G is one of D's children, the other child must also be of the same gender as G. Given that B is the grandfather of E, and B is the husband of A, who is the mother of D, it implies E is the child of D's sibling. However, since C is D's sibling and has a child, and considering the gender and relationship constraints provided, without explicit information on E's gender or direct parentage, we cannot definitively conclude E's relationship to C without assuming E's gender or parentage. But, considering the constraints and aiming for logical deduction based on given information, if we were to deduce based on family structure, E could potentially be the child of C, given C has a child and the question's context implies a closer familial relationship.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given that Q has two married sons, one of them is surely R, and there are no single parents, how can we determine the relationship between P and Q?",
+      "answer": "Since Q has two married sons and one of them is R, and given that there are no single parents, P must be the husband of Q because for R to be married, his father must also be married, implying P and Q are a couple.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If A is the father of E, and the sibling of D is the uncle of F, how can we deduce the familial relationships among A, D, E, and F?",
+      "answer": "From the information given, A being the father of E establishes a direct parent-child relationship. The sibling of D being the uncle of F implies that D and F are part of the same family but in different generations, with D's sibling being F's parent, thus making D an aunt or uncle of F. This shows a more complex family relationship where A, as E's father, could potentially be D's sibling or spouse of D's sibling, making E a cousin of F.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "With the information that B has 2 children of different genders, and the father-in-law of C is the grandfather of G, how can we infer the relationships and genders of the individuals involved?",
+      "answer": "Given B has 2 children of different genders, we know B has at least one son and one daughter. The father-in-law of C being the grandfather of G implies that C is married to either B's son or daughter. Since G's grandfather is also C's father-in-law, this means C is married to one of B's children, making B the grandfather of G. This doesn't directly reveal the genders of C or G but implies a multi-generational family structure.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If Q is the father-in-law of U, R is the father of S, and T is not married to U or R, how do we establish the familial relationships among Q, U, R, S, and T?",
+      "answer": "Given Q is the father-in-law of U, this means U is married to one of Q's children. Since R is the father of S and T is not married to U or R, we can infer that U might be married to S (if S is of appropriate age and gender), making Q the father of S's spouse, thus the father-in-law of U. T's marital status in relation to the others isn't directly inferable from the given information but suggests a family structure where Q, as a father-in-law, is part of an older generation.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given that F is the son of A but A is not his father, and H is the brother-in-law of F who is married and has only one son, how can we deduce the relationships among A, F, H, and other family members?",
+      "answer": "Since F is the son of A but A is not his father, A must be F's mother. H being the brother-in-law of F, married with one son, implies that H is married to F's sister (since A is F's mother, making F's sibling A's child as well). This information, combined with E being the father of C who is married to H, suggests a family structure where A and E are a couple, with F and C as their children, and H as C's husband and thus F's brother-in-law.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If A is the mother of D, and D is the father of G, and B is the grandfather of E and the husband of A, how is E related to G?",
+      "answer": "To find the relationship between E and G, we start with the given information: A is the mother of D, and D is the father of G. This makes A the grandmother of G. Since B is the husband of A, B is the grandfather of G. Given that B is also the grandfather of E, this means E and G are siblings because they share the same grandparents (A and B).",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given the family relationships: P is the husband of O, O is the daughter of Q, R and Q are kids of T and S, R is married to U, and U's father is V who is the paternal uncle of R, how is V related to T?",
+      "answer": "From the information provided, R is married to U, and U's father is V. Since V is the paternal uncle of R, this means V is the brother of R's father. Given that R and Q are kids of T and S, and considering R is the daughter of T (as deduced from the fact that R is the mother of N and U has only one daughter), V must be the brother of T because R's father would be T, making V the paternal uncle of R (T's niece or nephew).",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If E $ F # L $ G @ H means E is sister of F, F is son of L, L is sister of G, and G is mother of H, how is E related to H?",
+      "answer": "To determine the relationship between E and H, we follow the given expressions: E is the sister of F, F is the son of L, L is the sister of G, and G is the mother of H. This makes F the cousin of G (since L and G are sisters, and F is L's son). Since G is the mother of H, and F is the cousin of G, E (being F's sister) is also the cousin of G, making E the aunt of H.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "In a seating arrangement where A and B are the only daughters-in-law of C, who is the sister-in-law of D, and D is the only sister of E, with F and G being the sons of H and I respectively, and F and G married to A and B but I not married to B, how is E related to F and G?",
+      "answer": "Given that D is the sister of E and C is the sister-in-law of D, this implies C is married to E (since C is D's sister-in-law, and D is E's sister). A and B are the daughters-in-law of C, meaning they are married to C's sons. Since F and G are married to A and B, and they are the sons of H and I, it indicates H and I are likely C and E, given the familial relationships. Thus, F and G, being the sons of H (who could be C or E, but since C is the parent of the sons whose wives are A and B, it's more logical that H refers to C in this context, given the direct relationships provided), would make E the father of F and G, given the earlier deduction that C is married to E.",
+      "difficulty": "advanced",
+      "domain": "seating_arrangements"
+    },
+    {
+      "question": "If K is the sister of L, L is the mother of M, and M is the daughter of N, how is K related to M?",
+      "answer": "Given the relationships: K is the sister of L, and L is the mother of M, this directly makes K the aunt of M. The additional information that M is the daughter of N does not change the relationship between K and M but rather adds that N is the father of M. Thus, K remains the aunt of M.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "In a family with seven members P, Q, R, S, T, U, and V, R is the father-in-law of U, who is the grandmother of V. P has two sons, and T is the father of S. The gender of S and Q is the same. How is Q related to U?",
+      "answer": "Since R is the father-in-law of U, R's child is married to U. Given that R is married to P and P has two sons, one of them must be married to U. Since T is the father of S and S and Q are of the same gender, Q cannot be T (because then Q and S would be the same person or siblings, which is not stated). Thus, Q must be the sibling of T, making Q the child of R and P. Since U is the grandmother of V and married to one of P's sons, U is not the mother of Q. Therefore, Q is related to U as either a daughter-in-law or a sister-in-law, depending on which son of P is married to U. However, given U's relationship to V and the generations involved, Q is most directly related to U as a sister-in-law because U is the spouse of one of P's sons, and Q is the sibling of those sons.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "In a family of six members A, B, C, D, E, and F, where B is the son of C but C is not the mother of B, and E is the brother of C, how is E related to B?",
+      "answer": "Since B is the son of C but C is not the mother of B, C must be the father of B. Given that E is the brother of C, E is the uncle of B.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "With family members A, B, C, D, E, F, and H, where A is the father of D, D is the brother of F, E is the husband of H, and F is the sister of E, how is H related to F?",
+      "answer": "Since F is the sister of E, and E is the husband of H, H is the sister-in-law of F.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "In a gathering with 5 members P, Q, R, S, and T, where R is the daughter of Q and her son is T, and there are two couples present, how is R related to T?",
+      "answer": "R is the mother of T because it is stated that her son is T.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "In the same gathering as the previous question, if T's father is sitting next to P, who is a male, and R's parents are present, how is T's father related to R?",
+      "answer": "Since R is the daughter of Q and the mother of T, T's father must be R's husband. Therefore, T's father is related to R as her husband.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is S related to T?",
+      "answer": "From the information given, we know that R is the father of P, and T is not married. Also, Q's gender is the same as P's, and S is the son of Q. Since R's parents are present in the gathering and T is not married, it can be inferred that T is R's parent. Therefore, S is the son of Q, making S the grandson of T, but since T is not married, S cannot be T's son. Hence, the relationship cannot be determined directly from the given information, but based on the options provided, the closest relationship that can be inferred is that S could be T's son-in-law if Q is T's daughter-in-law, but without direct information about Q's relationship to T, the precise relationship of S to T cannot be conclusively determined from the given details alone.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Who is the mother of Q?",
+      "answer": "Given the information, we know that R is the father of P, and Q's gender is the same as P's. However, there is no direct information provided about Q's mother. Since T is not married and is in the gathering where R's parents are present, T could potentially be one of R's parents, but without explicit information linking T directly to Q, we cannot determine Q's mother from the provided details.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is P related to S?",
+      "answer": "From the information given, P is a male, and R is the father of P. S is the son of Q, and Q's gender is the same as P's. There is no direct relationship described between P and S in the initial information. However, considering the relationships described, if Q is P's sibling (since they share the same gender and are part of the same family gathering), then S, being Q's son, would make P the uncle of S, not directly stated but inferred through family relationships.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is U related to S?",
+      "answer": "Given that U is the only daughter of Q, who has three children, and S is the son of Q, U and S are siblings. Since U is the daughter and S is the son, they share the same parent, Q.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is W related to P?",
+      "answer": "Since W is the only sister-in-law of U, and U is Q's daughter, W must be married to one of Q's sons or to someone in the family that makes her U's sister-in-law. Given P is the grandfather of S, and if we assume S is Q's son (since S is mentioned as a son in the context of Q having a child), then W, being U's sister-in-law, could potentially be S's wife, making her P's granddaughter-in-law. However, the direct relationship between W and P as specifically asked cannot be conclusively determined without making several assumptions about the family structure not explicitly outlined in the initial information provided.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is H related to B in the given family?",
+      "answer": "From the information given, we know that B is the brother of H's mother (since B is the mother-in-law of F and G and H are sons of E and F). Also, C and D are brothers, and C is the brother-in-law of E. Given that H is the son of D and nephew of C, and B is the mother-in-law of F, we can deduce that B is the mother of E (since C is E's brother-in-law), making B the maternal grandmother of H. However, the direct relationship between H and B is not explicitly stated as grandmother and grandson in the provided snippet but can be inferred from the family structure that B is a maternal relative of H, but the exact relation provided in the options is 'Cannot be determined' due to the lack of direct statement about B being H's grandmother in the provided text.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Who is E's father-in-law in the given family?",
+      "answer": "Given that C and D are brothers, and C is the brother-in-law of E, it means E is married to either C or D's sibling. Since B is the mother-in-law of F, and G and H are sons of E and F respectively, E must be married to F. Knowing C and D are brothers and C is E's brother-in-law, we deduce D must be F's brother, making D's father E's father-in-law. However, the information directly states C and D are brothers and does not explicitly mention their parents, but it does mention A, B, C, D, E, F, G, H, I, and J are family members with specific relations. Since C is brother-in-law of E, and if we consider the structure where E is married to F (as G and H are their sons), D being C's brother makes D, F's brother, hence D's father would be E's father-in-law. But since the exact parentage of C and D isn't directly linked to E's spouse in the provided snippet, we look at the relations given: B is mother-in-law of F, implying B is E's mother (since G and H are E and F's sons), thus making the question's answer dependent on understanding B's relation to E and by extension to E's spouse, F. Therefore, given the direct information that C and D are brothers and B is the mother-in-law of F, it indicates B is the mother of E (since B is F's mother-in-law), but the direct question about E's father-in-law requires understanding that if B is E's mother, then E's father would be B's spouse, but since the question asks for E's father-in-law and given the complexity of relations, we deduce based on available relations.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is F related to B in the family?",
+      "answer": "From the given information, B is the mother-in-law of F. This directly implies that F is the spouse of one of B's children. Since B is mentioned as the mother-in-law of F, and given the structure of the family with three couples and their children, F is married to E (as G and H are sons of E and F), and B being E's mother makes B the mother-in-law of F.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Which of the following is a married couple in the given family?",
+      "answer": "Given the information, we know there are three couples and each has two children. From the relations provided, we can identify that C is married to E (since C is the brother-in-law of E, implying C is married to E's sister, but the text does not directly mention E's sister, it mentions C and D as brothers and C as E's brother-in-law). However, a direct married couple mentioned in the relations is not explicitly provided in the question snippet, but from the family structure and relations given (like B being the mother-in-law of F, and G and H being sons of E and F), we can infer that E and F are a married couple as they have sons together (G and H).",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is J related to D in the family?",
+      "answer": "Given the information, I and J are grand-children of A, and J is not H's sibling, and I is not J's sibling. This implies that I and J are cousins (since they are grandchildren of A but not siblings of each other). Since H is the son of D, and J is a grandchild of A (making J a cousin of H), J's relation to D would be that of a niece or nephew because J is the child of one of D's siblings (considering the family structure where I and J are grandchildren of A, and their parents are siblings of D, given the multi-generational family structure). However, without the explicit parentage of I and J in relation to D's siblings, the precise relation (niece or nephew) depends on the gender of J and the sibling of D who is J's parent. The information provided suggests J is related to D in a manner that can be deduced through the family tree but is specified as 'Niece' in the context of available options and family structure.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is E related to F?",
+      "answer": "To determine the relationship between E and F, we must analyze the given information. We know that 'F\u2019s mother\u2019s only brother\u2019s father is B' and 'E is the only brother-in-law of H' and 'D\u2019s mother is the only daughter-in-law of B.' However, without direct information linking E and F, we must infer their relationship through the family structure. Since E is the brother-in-law of H and given the complex relationships, we cannot directly deduce E's relation to F without assuming H's position in the family, which is not clearly stated in relation to F. Thus, based on the information given, we cannot accurately determine E's relationship to F.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Who is Sohan\u2019s wife?",
+      "answer": "From the information given, we know that 'Sita is not Sohan\u2019s wife' and 'Geeta is Shyam\u2019s sister.' Also, 'Sangeeta has two married sons and one married daughter.' Since Ram is Mohan\u2019s son-in-law, and if we consider the distribution of married individuals, without explicit information stating Sohan's wife, we cannot conclusively determine Sohan's wife among the given options (Sita, Geeta, Meeta, Sangeeta) without making assumptions beyond the provided information.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is W related to V?",
+      "answer": "Given that 'U is brother of T who is sister in law of R' and 'S is grandson of P who is father of Q' and 'V is only daughter of R who is wife of U,' we can deduce the relationships as follows: Since V is the daughter of R and R is married to U, and U is the brother of T, this makes R the sister-in-law of T. Also, since Q is the son of W who is the mother of U, this implies W is the mother of U and hence the mother-in-law of R. Therefore, W is the grandmother of V.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Who are the two daughter-in-laws of Mohan?",
+      "answer": "Given that 'Ram is Mohan\u2019s son-in-law' and 'Sangeeta has two married sons and one married daughter,' without explicit information about the wives of Sangeeta's sons or confirmation that Mohan is one of Sangeeta's sons, we cannot directly identify the two daughter-in-laws of Mohan from the options provided (Sita and Geeta, Sita and Meeta, Geeta and Meeta, Sangeeta and Sita, Sangeeta and Meeta). However, considering Ram is Mohan's son-in-law, it implies Mohan has a daughter married to Ram, but the details about the second daughter-in-law are not directly provided.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is Q related to V?",
+      "answer": "From the given information, 'Q is the son of W who is the mother of U' and 'V is the only daughter of R who is the wife of U.' This means U is the husband of R and the son of W, making W the mother of U and the grandmother of V (since V is the daughter of R and U). Since Q is the son of W, this makes Q the uncle of V.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If A and C are married couples and B is the son of C, but C is not the mother of B, how are A and B related?",
+      "answer": "Given that C is not the mother of B but B is the son of C, it implies C is the father of B. Since A and C are married couples, A must be the mother of B. Therefore, A is the mother of B.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "From the information that R is the father-in-law of T and S is the son of Q, who is not married to R, and knowing P and Q are of the same gender, how are Q and T related?",
+      "answer": "Since R is the father-in-law of T, it means R is the father of T's spouse. Given S is the son of Q and Q is not married to R, but P and Q are of the same gender, it implies Q must be the wife of T because R cannot be Q's spouse (as S is Q's son and R is T's father-in-law). Thus, Q is the wife of T.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given U is the only daughter of Q, who has three children, and W is the only sister-in-law of U, and P is the grandfather of S, whose father is V's brother, how are U, V, and R related?",
+      "answer": "Since U is the only daughter of Q and W is U's only sister-in-law, it means U has two brothers (because W is married to one of them, making her U's sister-in-law). Given P is the grandfather of S and S's father is V's brother, it implies V and R (if R is considered as part of this family context) are brothers of U, making them sons of Q. Therefore, U, V, and R are siblings, with U being the sister and V and R being brothers.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "With the information that there are equal numbers of males and females, no single parent has a child, F is the father of A who is married to D, B is the grandmother of C, and B has two children, how can we determine the family relationships?",
+      "answer": "Given F is the father of A and A is married to D, it establishes one family unit. Since B is the grandmother of C and has two children, and considering the equal number of males and females with no single parents, we can deduce family relationships by placing individuals into family units that satisfy all given conditions. For example, if E and D have the same gender, and knowing A is married to D, we can start building a family tree that respects all conditions provided.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If C and D are brothers, and C is the brother-in-law of E, implying E is the wife of D, and B is the mother-in-law of F, how are the family members related given additional information about their children and relationships?",
+      "answer": "Given C and D are brothers and C is E's brother-in-law, E must be D's wife. With B being F's mother-in-law, it means F is married to one of B's children. Considering G and H are sons of E and F respectively, and knowing E is D's wife, we can establish that G is the son of E and D. Since J is neither sister nor brother of H and E has one daughter, implying J is G's sister, we can further deduce family relationships based on the information about grandchildren and the three sets of couples living together.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given the statements: H is the son of D and nephew of C, F is the wife of D, and A is the grandmother of G who is the cousin of H. How is G related to D?",
+      "answer": "From the statement 'H is the son of D and nephew of C', we can deduce that D and C are siblings because H is D's son and C's nephew. Since 'A is the grandmother of G who is the cousin of H', and knowing H's parents are D and F, G must be the child of D's sibling, which is C. Thus, G is the child of C, making G the niece or nephew of D.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "In a family with members A, B, C, D, E, F, G, and H, where F is not the female, D is the sister of A, H is the grandfather of F and G, D has only one son and one daughter, E has no sibling, and B is the brother-in-law of A, who is the father of C, how is E related to H?",
+      "answer": "Since H is the grandfather of F and G, and A is the father of C and married to E (because B is A's brother-in-law), E must be A's wife. Given that H is A's father (since H is the grandfather of F and G, and A is a parent of one of them), E is H's daughter-in-law.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given Geeta is Shyam\u2019s sister, Geeta has two brothers Shyam and Sohan, and Sita is not Sohan\u2019s wife, how are Meeta and Sita related to Shyam and Sohan?",
+      "answer": "Since Geeta has two brothers, Shyam and Sohan, and Sita is not Sohan's wife, Sita must be Shyam's wife because Geeta is their sister. Therefore, Meeta, not being Shyam's wife (since Sita is), must be Sohan's wife.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If Sangeeta has two married sons and one married daughter, and Ram is Mohan\u2019s son-in-law, how is Ram related to Sangeeta?",
+      "answer": "Since Ram is Mohan's son-in-law, this means Mohan is married to Sangeeta (as she is the one with the married daughter). Therefore, Ram must be married to Sangeeta's daughter, making Ram Sangeeta's son-in-law.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given the statements about a family: U is brother of T who is sister in law of R, S is grandson of P who is father of Q, and V is only daughter of R who is wife of U, how is S related to U?",
+      "answer": "From the statement 'S is grandson of P who is father of Q', we know S's parent is Q or a sibling of Q because P is their parent. Since 'U is brother of T who is sister in law of R', and 'V is only daughter of R who is wife of U', U is married to V, and R is V's parent. Given T is R's sister-in-law (thus married to R's brother), and U is T's brother, U must be R's brother as well. Therefore, S, being the grandson of P (who is Q's parent), and considering U's family relations, if Q is U's child or sibling, then S could be U's grandson or nephew, respectively. However, without direct lineage from U to S, the precise relationship depends on Q's relation to U, which isn't directly stated.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How many married couples are in the family described, where A is the spouse of H, C is the daughter of A, A is the brother of G, G is the spouse of B, B is the father of F, E is the son of D, and G is the mother-in-law of D?",
+      "answer": "To determine the number of married couples, we need to identify the spouses. From the information given: A is the spouse of H, and G is the spouse of B. Additionally, since G is the mother-in-law of D, D must be married to a child of G. Since B has only one son and no daughter, and E is the son of D, it implies D is the spouse of E's other parent, who must be a child of G but not B (since B is the father of F and G is B's spouse). However, the direct spouses mentioned are A and H, and G and B. The other relationships do not directly imply additional married couples beyond these two. Thus, there are at least two married couples (A and H, G and B). Without explicit mention of D's spouse being one of the listed family members in a way that adds a new couple beyond A/H and G/B, we might initially conclude there are just two based on direct statements. However, considering D's relationship and the structure, it seems there might be an oversight in directly identifying all couples without assuming additional information not given. Thus, based on the explicit information provided and focusing strictly on it, we identify two married couples directly mentioned (A and H, G and B), but the question's phrasing suggests looking for a straightforward count based on given relationships, leading to the conclusion of two known couples from direct statements.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given that B is the son of G and A is the sister-in-law of F, and knowing G is the mother of F, how is A related to G?",
+      "answer": "Since G is the mother of F, and A is the sister-in-law of F, this implies A is married to a sibling of F. Given B is the son of G, and thus a sibling of F (since G is F's mother), A must be married to B to be F's sister-in-law. Therefore, A is the daughter-in-law of G, making G A's mother-in-law.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "In a family with members A, B, C, D, E, F, and G, where A is the spouse of H, C is the daughter of A, A is the brother of G, G is the spouse of B, B is the father of F, E is the son of D, and G is the mother-in-law of D, who is the husband of A?",
+      "answer": "According to the information provided, A is the spouse of H. Therefore, H is the husband of A.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given the relationships: A is the spouse of H, C is the daughter of A, A is the brother of G, G is the spouse of B, B is the father of F, E is the son of D, and G is the mother-in-law of D, how is E related to F?",
+      "answer": "Since E is the son of D, and D is married to a child of G (making G the mother-in-law of D), and B (G's spouse) is the father of F, this makes F a child of B and G. Given the family structure, E's relationship to F isn't directly sibling without knowing D's spouse. However, considering the complex relationships, if D is married to B's child (which would be F, given B has only one son and no daughters), then E (as D's son) would be F's son, making E the grandson of B (and thus related to F as a nephew, if considering a broader family context not directly stated). But strictly based on given data, without assuming D's spouse is F (which would be an incorrect assumption based on the provided structure), we can't conclusively determine E's relation to F beyond E being a part of the family through his parent D.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If there are seven members in a family - A, B, C, D, E, F, and G, with F and G being siblings, C being a male, B being the daughter-in-law of E, and F being the daughter-in-law of E's spouse, how many married couples are in the family?",
+      "answer": "From the given information, we know B is the daughter-in-law of E, meaning B is married to E's son. However, since F is also described in relation to E's spouse but as a daughter-in-law, it indicates F is married to a son of E's spouse. Given F and G are siblings, and without explicit mention of other spouses, we can identify at least one married couple directly (B and her husband, who is E's son). The description suggests a complex family structure but only directly supports identifying one married couple without making assumptions beyond the provided relationships.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "What is the relationship between E and C?",
+      "answer": "To find the relationship between E and C, we need to analyze the given information. We know that B is the daughter-in-law of E, and A has two children, C and D. Since B is the daughter-in-law of E, B must be married to one of E's children. However, we do not have enough information to directly determine the relationship between E and C. Therefore, the relationship between E and C cannot be determined from the given information.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How many females are in the family?",
+      "answer": "To determine the number of females in the family, we need to analyze the given information. We know that A has two children, C and D, and D is a female. We also know that B is the daughter-in-law of E, which means B is a female. Additionally, G is the sister-in-law of E, which means G is also a female. Since each female has two sons and one daughter, except for the third generation's female, we can conclude that there are at least four females in the family: D, B, G, and I (who is the daughter of G). Therefore, the correct answer is that there are at least four females in the family.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "What is the relationship between G and F?",
+      "answer": "To find the relationship between G and F, we need to analyze the given information. We know that F is the grandfather of D, and G is the sister-in-law of E. We also know that H and F are brothers and children of G. Since H and F are brothers, and F is the grandfather of D, G must be the mother of H and F. Therefore, the relationship between G and F is that G is the mother of F.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Who is the son-in-law of A?",
+      "answer": "To find the son-in-law of A, we need to analyze the given information. We know that A has two children, C and D, and B is the daughter-in-law of E. Since B is the daughter-in-law of E, B must be married to one of E's children. However, we also know that A is married to D, which means that B must be married to C (since A has only two children, C and D). Therefore, the son-in-law of A is the husband of B, but the husband of B is not explicitly stated in the given information. However, from the options provided, we can see that the son-in-law of A is the husband of B, and the only male left to be the husband of B is not explicitly mentioned, but we can infer it from the given options.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "What is the relationship between E and I?",
+      "answer": "To find the relationship between E and I, we need to analyze the given information. We know that D is the grandmother of I, and B is the daughter-in-law of E. We also know that G is the sister-in-law of E, and I is the daughter of G. Since D is the grandmother of I, and G is the mother of I, E must be the spouse of G (since G is the sister-in-law of E). Therefore, the relationship between E and I is that E is the father of I.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Who is the husband of the sister of D?",
+      "answer": "To solve this, we need to analyze the given family relationships. Since C is the brother-in-law of A and A has two daughters but no son, C must be married to one of A's daughters. However, the question asks for the husband of the sister of D, and without direct information linking D to A's daughters or C, we cannot determine the husband of D's sister directly from the given information. Thus, the answer cannot be definitively determined from the information provided.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is H related to B?",
+      "answer": "Given the information, H is the cousin of L, but there is no direct relationship described between H and B. Without more specific details about how H and B are connected through the family tree, we cannot accurately determine their relationship. Therefore, the relationship between H and B cannot be determined from the provided information.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How many female members are in the family described in the direction for questions 31-35?",
+      "answer": "From the information given, we know A is the husband of D, and E does not have any sister. Since G is the only child of C and E is the only brother of B, and considering D is the mother of B, we can identify D and B as female members. However, without explicit information on the gender of all members (like A, C, E, F, G), we cannot accurately count all female members. Thus, based on the provided details, we can confirm at least two female members (D and B) but cannot determine the total number of female members.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Who is the daughter-in-law of F?",
+      "answer": "Given that F is the father of A, and A is the husband of D, D is the daughter-in-law of F because she is the wife of F's son (A). This relationship can be deduced directly from the information provided.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How many married couples are in the family described in the direction for questions 36-40?",
+      "answer": "From the information provided, we know N is married to an unspecified person (later clarified as P is the son of M and O is married to P, but this seems to be a mix-up in the interpretation). Correctly, O is married to P. Additionally, L is mentioned as the father of K, and N is the mother of J and also the sister of O. Since L has only one son and one daughter, and considering the generations and relationships, we can confirm at least two married couples (O and P, and the parents of L, though the latter is not directly stated). However, without clear information on the marital status of all adults, determining the exact number of married couples based on the provided details is challenging.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Who is the daughter-in-law of M?",
+      "answer": "To find the daughter-in-law of M, we need to identify M's son and then his wife. However, the provided text does not directly state M's son or daughter-in-law. From the information given, we know J is the father of N, and N is the mother of P. Also, K is the son-in-law of N, which means K is married to N's daughter, but N's daughter is not explicitly mentioned. Since we cannot directly deduce the daughter-in-law of M from the given information without making assumptions, we need more specific relationships to accurately answer this question.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "What is the relationship of J with respect to L?",
+      "answer": "Given that L is the wife of J, we can directly deduce their relationship. J is the husband of L.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Who is the paternal aunt of K?",
+      "answer": "To determine K's paternal aunt, we need to identify K's father's sister. The text states O is the sister of K, but it does not specify their parents. However, since N and M are siblings and have opposite genders, and there's no direct information linking them as K's parents or specifying K's father, we cannot accurately determine K's paternal aunt without more information.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Who is the sister-in-law of J?",
+      "answer": "J's sister-in-law would be the sister of J's spouse or the wife of J's brother. Since L is J's wife, and there's no direct information about L's sister or J's brother, we look at the options provided in the text. The text does mention relationships but does not directly answer this question without assuming relationships not explicitly stated. However, given that M and N are siblings and considering family dynamics, if we had more direct relationships, we could potentially identify J's sister-in-law.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How many female members are in the family?",
+      "answer": "The family members mentioned are J, K, L, M, N, O, and P. From the given information: L is the wife of J, N and M are siblings (N is female, and M's gender is not directly stated but implied male as N has the opposite gender), O is the sister of K, making O female. Since N has only one child, and that child is P, and considering K is the son-in-law of N, P must be female as K is her husband. Thus, the female members are L, N, O, and P, totaling four female members.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If A is married to D and D is the grandmother of I, who has no children, what is the relationship between A and I?",
+      "answer": "To determine the relationship between A and I, we start by knowing A is married to D, and D is the grandmother of I. Since D is a grandmother, her child must be the parent of I. Given that I has no children, we cannot deduce any further generations from I. Knowing A is married to D and D has a child who is I's parent, A must be the grandparent of I, making A the grandfather or grandmother of I, depending on A's gender. However, since the gender of A is not specified, we conclude A is a grandparent of I.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given that G is the mother of F and B is the father of F, what is the relationship between B and G?",
+      "answer": "Since G is the mother of F and B is the father of F, B and G must be spouses because they are both parents of the same child, F.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If E has two children and B is the daughter-in-law of E, what can be inferred about the children of E?",
+      "answer": "Knowing B is the daughter-in-law of E means B is married to one of E's children. Since E has two children and B is specifically mentioned as a daughter-in-law, it implies that at least one of E's children is a son (because B is married to him). The gender of the second child is not specified, but given the information, we can infer E has at least one son.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given that F is the grandfather of D, and G is the sister-in-law of E, and considering the additional information that F and G are siblings, what is the relationship between E and F?",
+      "answer": "Since F and G are siblings, and G is the sister-in-law of E, this means E must be married to a sibling of G, which would be F, given the context. However, since F is also mentioned as the grandfather of D, and there's no direct information linking E and F as spouses, we need to deduce based on the sibling relationship of F and G. If G is E's sister-in-law, then E could be married to F's sibling, but since F is a grandfather, the generation does not directly align for E to be F's spouse based on the grandfather statement alone. The correct deduction should focus on the sibling relationship and in-laws: if G is E's sister-in-law, and F is G's sibling, then E is married to a sibling of F and G, making E a part of the family but not directly as F's spouse without more specific marital information.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "With the information that N is the father of O and J, N is the husband of P, and O is the maternal uncle of Q, how are N and Q related?",
+      "answer": "Since O is the maternal uncle of Q, this means Q's mother is a sibling of O. Given N is the father of O and J, and N is the husband of P, for O to be a maternal uncle, Q's mother must be J (because O and J are siblings, and for O to be a maternal uncle, he must be the brother of Q's mother). Therefore, N, being the father of J, is the grandfather of Q.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is K related to N, given that O is the sister of K and K is the son-in-law of N?",
+      "answer": "Since O is the sister of K, and K is the son-in-law of N, it means K is married to N's child. Given that N has only one child and N and M are siblings of opposite gender, if N is the mother, then K is married to N's child, making K the husband of either a son or daughter of N. However, since K is a son-in-law, N's child must be a daughter. Thus, K is married to N's daughter.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Can M be the mother of K, given the information that N and M are siblings of opposite gender and K is the son-in-law of N?",
+      "answer": "If M is the mother of K, then for K to be the son-in-law of N, K would have to be married to N's child. Since N has only one child and considering N and M are of opposite gender, if N is a male (brother of M), then N's child could be a daughter who is married to K, making K the son-in-law of N. However, the direct relationship between M and K being mother-son does not directly influence K's relationship to N as son-in-law without considering the gender of N and the marital connections.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given that N has only one child and O is the sister of K, how can we deduce the gender of N's child if K is the son-in-law of N?",
+      "answer": "Since K is the son-in-law of N, it implies that N's child is married to K. For K to be a son-in-law, N's child must be a daughter because a son-in-law is the husband of one's daughter. Thus, regardless of the gender of N, the fact that K is a son-in-law indicates N has a daughter.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If N is a female and has only one child, and considering K is the son-in-law of N, can we determine the gender of M, N's sibling?",
+      "answer": "Given N is a female and has only one child, and K is the son-in-law of N, it means N's child is a daughter (since K is married to her). The gender of M, N's sibling, is stated as the opposite of N's. Since N is female, M must be male.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How does the information that O is the sister of K help in understanding the relationship between K and N, given that K is the son-in-law of N?",
+      "answer": "The information that O is the sister of K provides additional family context but does not directly alter the relationship between K and N. Since K is the son-in-law of N, K is married to N's child. O being K's sister means O is also related to N's child (K's spouse) but as a sister-in-law. This does not change the fact that K is married to N's daughter, making the specific relationship between O and N's family secondary to understanding K's role as son-in-law.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    }
+  ]
+}

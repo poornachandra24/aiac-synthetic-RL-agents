@@ -1,0 +1,605 @@
+{
+  "summary": "This logical reasoning content covers linear seating arrangement problems, which involve determining the order of people sitting in a row based on given conditions. Key solving strategies mentioned include analyzing the conditions, eliminating possibilities, and using logical deductions to arrive at the final arrangement. Important concepts and principles used in these problems include understanding the relationships between individuals, using positional language (e.g., \"second to the left\"), and making inferences based on the given information. By applying these strategies and concepts, test-takers can solve linear seating arrangement problems and determine the correct order of individuals.",
+  "qa_pairs": [
+    {
+      "question": "Who sits third to the left of the one who uses Hero?",
+      "answer": "Y",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "What is the position of U with respect to the one who uses Sheaffer?",
+      "answer": "U does not use Sheaffer, but the one who uses Paperkraft sits immediate left of the one who uses Hayman, and U's position is not directly stated",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "How many persons sit between U and W?",
+      "answer": "Two",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Who sits second to the left of the one who likes Ladoo?",
+      "answer": "V",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "What is the position of Z with respect to W?",
+      "answer": "Z sits immediate left of W",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Who likes Jalebi?",
+      "answer": "The one who likes Jalebi sits third to the left of W, but the exact person is not stated",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "What is the position of the one who uses Cello with respect to X?",
+      "answer": "The one who uses Cello sits third to the left of the one who sits second to the right of U, but the exact position with respect to X is not directly stated",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Who sits to the immediate left of the one who uses Hero?",
+      "answer": "Y",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "What is the relationship between V and Papercraft?",
+      "answer": "V is related to Papercraft",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "What is the relationship between X and Sheaffer?",
+      "answer": "X is related to Sheaffer",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Who is related to Hayman?",
+      "answer": "The one who is related to Hayman is not directly stated, but it can be deduced from the relationships between V, X, and their respective pens",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "Which combination of sweets and people is true?",
+      "answer": "The correct combination is not directly stated, but it can be deduced from the given information",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "What sweet does X like?",
+      "answer": "The sweet that X likes is not directly stated, but it can be deduced from the given information",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "Who sits second to the right of Y?",
+      "answer": "The person who sits second to the right of Y is not directly stated",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "What is the position of the one who uses Parker?",
+      "answer": "The position of the one who uses Parker is not directly stated",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "How many persons sit to the left of W?",
+      "answer": "The number of persons who sit to the left of W is the same as the number of persons who sit to the right of the one who uses Parker",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Who sits to the immediate right of U?",
+      "answer": "The person who sits to the immediate right of U is not directly stated",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "What is the position of the one who uses Hayman?",
+      "answer": "The one who uses Hayman sits to the right of the one who uses Paperkraft",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Who likes KajuKatli?",
+      "answer": "The one who likes KajuKatli sits second to the right of the one who likes Halwa",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "What is the position of Y with respect to the one who likes Ladoo?",
+      "answer": "Y neither likes Jalebi nor Ladoo, but the exact position with respect to the one who likes Ladoo is not directly stated",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Who sits to the immediate left of V?",
+      "answer": "The person who sits to the immediate left of V is not directly stated",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "What is the relationship between U and the one who uses Sheaffer?",
+      "answer": "U does not use Sheaffer",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Who likes Halwa?",
+      "answer": "The one who likes Halwa is not directly stated, but it can be deduced from the given information",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "What is the position of the one who likes Mysore Pak?",
+      "answer": "The one who likes Mysore Pak is not directly stated, but it can be deduced from the given information",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "Who sits second to the left of W?",
+      "answer": "The person who sits second to the left of W is not directly stated",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "What is the position of X with respect to the one who likes Jalebi?",
+      "answer": "The one who likes Jalebi sits third to the left of W, and X does not like Jalebi, but the exact position with respect to the one who likes Jalebi is not directly stated",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Who likes Jamun?",
+      "answer": "The one who likes Jamun is not directly stated, but it can be deduced from the given information",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "What is the relationship between V and the one who likes Ladoo?",
+      "answer": "V sits second to the left of the one who likes Ladoo",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Who sits to the immediate right of Z?",
+      "answer": "W sits to the immediate right of Z",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "What is the position of the one who uses Cello with respect to the one who uses Hero?",
+      "answer": "The one who uses Cello sits third to the left of the one who sits second to the right of U, but the exact position with respect to the one who uses Hero is not directly stated",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Who likes Ladoo?",
+      "answer": "The one who likes Ladoo is not directly stated, but it can be deduced from the given information",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "What is the relationship between X and the one who likes KajuKatli?",
+      "answer": "X does not like KajuKatli",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Who sits second to the right of the one who likes Halwa?",
+      "answer": "The one who likes KajuKatli sits second to the right of the one who likes Halwa",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "What is the position of Y with respect to the one who likes Mysore Pak?",
+      "answer": "The one who likes Mysore Pak is not directly stated, but it can be deduced from the given information",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "Who likes Jalebi?",
+      "answer": "The one who likes Jalebi sits third to the left of W, but the exact person is not stated",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "What is the relationship between U and the one who uses Paperkraft?",
+      "answer": "The one who uses Paperkraft sits immediate left of the one who uses Hayman, but U's position is not directly stated",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Who sits to the immediate left of the one who uses Hero?",
+      "answer": "Y sits third to the left of the one who uses Hero",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If there are only two persons sitting between U and W, and the number of persons sitting to the left of W is the same as the right of the one who uses Parker, what can be inferred about the seating arrangement?",
+      "answer": "Given the constraints, there are limited possible arrangements, and we can start by placing U and W with two persons between them, and then use the information about Parker to further restrict the possibilities.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "How can we use the information that Y sits third to the left of the one who uses Hero, and neither X nor V uses Hero, to determine the seating arrangement?",
+      "answer": "We can start by placing Y and then determine the possible positions of the person who uses Hero, taking into account that neither X nor V uses Hero. This will help us to further restrict the possible seating arrangements.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "What can be inferred about the seating arrangement if the one who likes Jalebi sits third to the left of W, and neither of them sits at the end of the row?",
+      "answer": "Given this information, we can determine the possible positions of the person who likes Jalebi and W, taking into account that neither of them sits at the end of the row. This will help us to further restrict the possible seating arrangements.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If the number of persons sitting to the left of X is the same as the number of persons sitting to the right of the one who likes Mysore Pak, what can be inferred about the seating arrangement?",
+      "answer": "Given this information, we can start by determining the possible positions of X and the person who likes Mysore Pak, taking into account that the number of persons sitting to the left of X is the same as the number of persons sitting to the right of the person who likes Mysore Pak.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "How can we use the information that V sits second to the left of the one who likes Ladoo, and V neither likes Jalebi nor Halwa, to determine the seating arrangement?",
+      "answer": "We can start by placing V and then determine the possible positions of the person who likes Ladoo, taking into account that V sits second to the left of the person who likes Ladoo, and V neither likes Jalebi nor Halwa.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If the one who likes KajuKatli sits second to the right of the one who likes Halwa, and X does not like Kajukatli, what can be inferred about the seating arrangement?",
+      "answer": "Given this information, we can determine the possible positions of the person who likes KajuKatli and the person who likes Halwa, taking into account that the one who likes KajuKatli sits second to the right of the person who likes Halwa, and X does not like Kajukatli.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "What can be inferred about the seating arrangement if Y neither likes Jalebi nor Ladoo, and neither Y nor X likes Halwa?",
+      "answer": "Given this information, we can determine the possible positions of Y and X, taking into account that Y neither likes Jalebi nor Ladoo, and neither Y nor X likes Halwa.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "How can we use the information that the one who uses Cello sits third to the left of the one who sits second to the right of U to determine the seating arrangement?",
+      "answer": "We can start by placing U and then determine the possible positions of the person who uses Cello, taking into account that the person who uses Cello sits third to the left of the person who sits second to the right of U.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If only two persons are sitting between U and W, what can be inferred about the seating arrangement?",
+      "answer": "Given this information, we can start by placing U and W with two persons between them, and then use the other constraints to further restrict the possible seating arrangements.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "What can be inferred about the seating arrangement if the one who likes Jalebi sits third to the left of W, and Z sits immediate left of W?",
+      "answer": "Given this information, we can determine the possible positions of the person who likes Jalebi, W, and Z, taking into account that the person who likes Jalebi sits third to the left of W, and Z sits immediate left of W.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "How can we use the information that only one person sits between Z and X to determine the seating arrangement?",
+      "answer": "We can start by placing Z and X, and then determine the possible positions of the person who sits between them, taking into account that only one person sits between Z and X.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "If the one who uses Paperkraft sits immediate left of the one who uses Hayman, what can be inferred about the seating arrangement?",
+      "answer": "Given this information, we can determine the possible positions of the person who uses Paperkraft and the person who uses Hayman, taking into account that the person who uses Paperkraft sits immediate left of the person who uses Hayman.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "What can be inferred about the seating arrangement if U does not use Sheaffer?",
+      "answer": "Given this information, we can determine the possible positions of U, taking into account that U does not use Sheaffer.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "How can we use the information that the number of persons sitting to the left of W is the same as the right of the one who uses Parker to determine the seating arrangement?",
+      "answer": "We can start by placing W and the person who uses Parker, and then determine the possible positions of the other persons, taking into account that the number of persons sitting to the left of W is the same as the right of the person who uses Parker.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If only two persons sit between the one who uses Parker and X, what can be inferred about the seating arrangement?",
+      "answer": "Given this information, we can start by placing the person who uses Parker and X, and then determine the possible positions of the two persons who sit between them.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "What can be inferred about the seating arrangement if V neither likes Jalebi nor Halwa?",
+      "answer": "Given this information, we can determine the possible positions of V, taking into account that V neither likes Jalebi nor Halwa.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "How can we use the information that the one who likes Ladoo sits second to the right of the one who likes Halwa to determine the seating arrangement?",
+      "answer": "We can start by placing the person who likes Ladoo and the person who likes Halwa, and then determine the possible positions of the other persons, taking into account that the person who likes Ladoo sits second to the right of the person who likes Halwa.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If X does not like Kajukatli, what can be inferred about the seating arrangement?",
+      "answer": "Given this information, we can determine the possible positions of X, taking into account that X does not like Kajukatli.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "What can be inferred about the seating arrangement if Y neither likes Jalebi nor Ladoo?",
+      "answer": "Given this information, we can determine the possible positions of Y, taking into account that Y neither likes Jalebi nor Ladoo.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "How can we use the information that neither Y nor X likes Halwa to determine the seating arrangement?",
+      "answer": "We can start by placing Y and X, and then determine the possible positions of the other persons, taking into account that neither Y nor X likes Halwa.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If the one who uses Cello sits third to the left of the one who sits second to the right of U, what can be inferred about the seating arrangement?",
+      "answer": "Given this information, we can determine the possible positions of the person who uses Cello, taking into account that the person who uses Cello sits third to the left of the person who sits second to the right of U.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "What can be inferred about the seating arrangement if only two persons are sitting between U and W?",
+      "answer": "Given this information, we can start by placing U and W with two persons between them, and then use the other constraints to further restrict the possible seating arrangements.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "How can we use the information that the one who likes Jalebi sits third to the left of W, and Z sits immediate left of W, to determine the seating arrangement?",
+      "answer": "We can start by placing the person who likes Jalebi, W, and Z, and then determine the possible positions of the other persons, taking into account that the person who likes Jalebi sits third to the left of W, and Z sits immediate left of W.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If the one who uses Paperkraft sits immediate left of the one who uses Hayman, what can be inferred about the seating arrangement?",
+      "answer": "Given this information, we can determine the possible positions of the person who uses Paperkraft and the person who uses Hayman, taking into account that the person who uses Paperkraft sits immediate left of the person who uses Hayman.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "What can be inferred about the seating arrangement if U does not use Sheaffer?",
+      "answer": "Given this information, we can determine the possible positions of U, taking into account that U does not use Sheaffer.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "How can we use the information that the number of persons sitting to the left of W is the same as the right of the one who uses Parker to determine the seating arrangement?",
+      "answer": "We can start by placing W and the person who uses Parker, and then determine the possible positions of the other persons, taking into account that the number of persons sitting to the left of W is the same as the right of the person who uses Parker.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If only two persons sit between the one who uses Parker and X, what can be inferred about the seating arrangement?",
+      "answer": "Given this information, we can start by placing the person who uses Parker and X, and then determine the possible positions of the two persons who sit between them.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "What can be inferred about the seating arrangement if V neither likes Jalebi nor Halwa?",
+      "answer": "Given this information, we can determine the possible positions of V, taking into account that V neither likes Jalebi nor Halwa.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "How can we use the information that the one who likes Ladoo sits second to the right of the one who likes Halwa to determine the seating arrangement?",
+      "answer": "We can start by placing the person who likes Ladoo and the person who likes Halwa, and then determine the possible positions of the other persons, taking into account that the person who likes Ladoo sits second to the right of the person who likes Halwa.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If X does not like Kajukatli, what can be inferred about the seating arrangement?",
+      "answer": "Given this information, we can determine the possible positions of X, taking into account that X does not like Kajukatli.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "What can be inferred about the seating arrangement if Y neither likes Jalebi nor Ladoo?",
+      "answer": "Given this information, we can determine the possible positions of Y, taking into account that Y neither likes Jalebi nor Ladoo.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "How can we use the information that neither Y nor X likes Halwa to determine the seating arrangement?",
+      "answer": "We can start by placing Y and X, and then determine the possible positions of the other persons, taking into account that neither Y nor X likes Halwa.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If the one who uses Cello sits third to the left of the one who sits second to the right of U, what can be inferred about the seating arrangement?",
+      "answer": "Given this information, we can determine the possible positions of the person who uses Cello, taking into account that the person who uses Cello sits third to the left of the person who sits second to the right of U.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "What can be inferred about the seating arrangement if only two persons are sitting between U and W?",
+      "answer": "Given this information, we can start by placing U and W with two persons between them, and then use the other constraints to further restrict the possible seating arrangements.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "How can we use the information that the one who likes Jalebi sits third to the left of W, and Z sits immediate left of W, to determine the seating arrangement?",
+      "answer": "We can start by placing the person who likes Jalebi, W, and Z, and then determine the possible positions of the other persons, taking into account that the person who likes Jalebi sits third to the left of W, and Z sits immediate left of W.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If the one who uses Paperkraft sits immediate left of the one who uses Hayman, what can be inferred about the seating arrangement?",
+      "answer": "Given this information, we can determine the possible positions of the person who uses Paperkraft and the person who uses Hayman, taking into account that the person who uses Paperkraft sits immediate left of the person who uses Hayman.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "What can be inferred about the seating arrangement if U does not use Sheaffer?",
+      "answer": "Given this information, we can determine the possible positions of U, taking into account that U does not use Sheaffer.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "If Y does not like Jalebi or Ladoo, and neither Y nor X likes Halwa, what can be concluded about X's preferences?",
+      "answer": "Since neither Y nor X likes Halwa, we can conclude that X does not like Halwa. However, we cannot determine X's preferences for Jalebi or Ladoo based on the given information.",
+      "difficulty": "basic",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "If a person does not like Halwa, can we conclude that they are either X or Y?",
+      "answer": "Yes, based on the statement 'Neither Y nor X likes Halwa', we can conclude that if a person does not like Halwa, they are either X or Y.",
+      "difficulty": "basic",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "Can we determine Y's preference for any food item based on the given statements?",
+      "answer": "No, based on the given statements, we can only determine what Y does not like (Jalebi and Ladoo). We cannot determine Y's preference for any other food item.",
+      "difficulty": "basic",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "If X likes Jalebi, can we conclude that Y does not like Jalebi?",
+      "answer": "Yes, based on the statement 'Y neither likes Jalebi nor Ladoo', we can conclude that Y does not like Jalebi, regardless of X's preference.",
+      "difficulty": "basic",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "Can we determine the number of people who do not like Halwa based on the given statements?",
+      "answer": "No, based on the given statements, we can only determine that X and Y do not like Halwa. We cannot determine the total number of people who do not like Halwa.",
+      "difficulty": "basic",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "If a person likes Ladoo, can we conclude that they are not Y?",
+      "answer": "Yes, based on the statement 'Y neither likes Jalebi nor Ladoo', we can conclude that if a person likes Ladoo, they are not Y.",
+      "difficulty": "basic",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "Can we determine X's preference for Ladoo based on the given statements?",
+      "answer": "No, based on the given statements, we cannot determine X's preference for Ladoo.",
+      "difficulty": "basic",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "If neither X nor Y likes a particular food item, can we conclude that the food item is Halwa?",
+      "answer": "No, based on the given statements, we can only conclude that if neither X nor Y likes a particular food item, it could be Halwa, but it could also be another food item.",
+      "difficulty": "intermediate",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "Can we determine the number of food items that Y does not like based on the given statements?",
+      "answer": "Yes, based on the statement 'Y neither likes Jalebi nor Ladoo', we can conclude that Y does not like at least two food items (Jalebi and Ladoo).",
+      "difficulty": "intermediate",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "If X likes a food item that Y does not like, can we conclude that the food item is either Jalebi or Ladoo?",
+      "answer": "Yes, based on the statement 'Y neither likes Jalebi nor Ladoo', we can conclude that if X likes a food item that Y does not like, the food item is either Jalebi or Ladoo.",
+      "difficulty": "intermediate",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "Can we determine Y's preference for a food item based on X's preference for the same food item?",
+      "answer": "No, based on the given statements, we cannot determine Y's preference for a food item based on X's preference for the same food item.",
+      "difficulty": "intermediate",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "If a person does not like a particular food item, can we conclude that they are either X or Y?",
+      "answer": "No, based on the given statements, we can only conclude that if a person does not like Halwa, they are either X or Y. We cannot make this conclusion for other food items.",
+      "difficulty": "intermediate",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "Can we determine the number of people who like a particular food item based on the given statements?",
+      "answer": "No, based on the given statements, we cannot determine the number of people who like a particular food item.",
+      "difficulty": "intermediate",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "If X and Y have different preferences for a food item, can we conclude that the food item is either Jalebi or Ladoo?",
+      "answer": "Yes, based on the statement 'Y neither likes Jalebi nor Ladoo', we can conclude that if X and Y have different preferences for a food item, the food item is either Jalebi or Ladoo.",
+      "difficulty": "advanced",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "Can we determine X's preference for a food item based on the fact that Y does not like the same food item?",
+      "answer": "No, based on the given statements, we cannot determine X's preference for a food item based on the fact that Y does not like the same food item.",
+      "difficulty": "advanced",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "If a person likes a food item that X does not like, can we conclude that the person is Y?",
+      "answer": "No, based on the given statements, we cannot conclude that the person is Y. We can only conclude that the person is not X.",
+      "difficulty": "advanced",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "Can we determine the number of food items that X does not like based on the given statements?",
+      "answer": "No, based on the given statements, we can only determine that X does not like Halwa. We cannot determine the total number of food items that X does not like.",
+      "difficulty": "advanced",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "If Y likes a food item, can we conclude that the food item is not Jalebi or Ladoo?",
+      "answer": "Yes, based on the statement 'Y neither likes Jalebi nor Ladoo', we can conclude that if Y likes a food item, the food item is not Jalebi or Ladoo.",
+      "difficulty": "advanced",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "Can we determine X's preference for a food item based on the fact that Y likes the same food item?",
+      "answer": "No, based on the given statements, we cannot determine X's preference for a food item based on the fact that Y likes the same food item.",
+      "difficulty": "advanced",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "If a person does not like a particular food item, can we conclude that they are not X?",
+      "answer": "No, based on the given statements, we can only conclude that if a person does not like Halwa, they are either X or Y. We cannot make this conclusion for other food items.",
+      "difficulty": "advanced",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "Can we determine the number of people who do not like a particular food item based on the given statements?",
+      "answer": "No, based on the given statements, we can only determine that X and Y do not like Halwa. We cannot determine the total number of people who do not like a particular food item.",
+      "difficulty": "advanced",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "If X and Y have the same preference for a food item, can we conclude that the food item is not Jalebi or Ladoo?",
+      "answer": "Yes, based on the statement 'Y neither likes Jalebi nor Ladoo', we can conclude that if X and Y have the same preference for a food item, the food item is not Jalebi or Ladoo.",
+      "difficulty": "advanced",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "Can we determine Y's preference for a food item based on the fact that X does not like the same food item?",
+      "answer": "No, based on the given statements, we cannot determine Y's preference for a food item based on the fact that X does not like the same food item.",
+      "difficulty": "advanced",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "If a person likes a food item that Y likes, can we conclude that the person is not X?",
+      "answer": "No, based on the given statements, we cannot conclude that the person is not X. We can only conclude that the person is not Y.",
+      "difficulty": "advanced",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "Can we determine the number of food items that X and Y both like based on the given statements?",
+      "answer": "No, based on the given statements, we cannot determine the number of food items that X and Y both like.",
+      "difficulty": "advanced",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "If X and Y have different preferences for all food items, can we conclude that X likes Jalebi and Y likes Ladoo?",
+      "answer": "No, based on the given statements, we cannot conclude that X likes Jalebi and Y likes Ladoo. We can only conclude that X and Y have different preferences for Jalebi and Ladoo.",
+      "difficulty": "advanced",
+      "domain": "knights_knaves"
+    }
+  ]
+}

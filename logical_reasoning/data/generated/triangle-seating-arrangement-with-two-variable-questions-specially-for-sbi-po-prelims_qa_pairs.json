@@ -1,0 +1,605 @@
+{
+  "summary": "The logical reasoning content covers seating arrangement problems with two variables, specifically focusing on triangular seating arrangements with multiple individuals and their color preferences. Key solving strategies mentioned include analyzing the given information, identifying immediate neighbors, and using process of elimination to determine the correct seating arrangement. Important concepts and principles involved in solving these problems include understanding the spatial relationships between individuals, recognizing patterns, and making logical deductions based on the given information. By applying these strategies and concepts, individuals can effectively solve seating arrangement problems and improve their logical reasoning skills.",
+  "qa_pairs": [
+    {
+      "question": "Who sits at the corner of the table among the given options?",
+      "answer": "From the given information, we can deduce that Tanu sits at the corner of the table. Since two persons sit between Tanu and Garima, and Pranjal sits to the immediate left of Garima, Tanu must be at one of the corners. Additionally, Kirti sits exactly between Sainki and Rahul, and since Sainki sits third to the left of the person who likes Pink (Pranjal), Sainki cannot be at the corner where Tanu is. Therefore, Tanu is one of the corner persons.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Which of the following color combinations is not true?",
+      "answer": "Let's analyze the given options. We know that Garima likes Blue, Kirti likes Yellow, and Harshit likes Red. We also know that Pranjal likes Pink and sits to the immediate left of Garima. Since Charu sits second to the right of Pranjal, Charu cannot like Green (because the person who likes Peach sits second to the left of the person who likes Green). However, we do not have enough information to confirm the other options. But we can confirm that option C (Rahul-Pink) is not true because Rahul likes Black, not Pink.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Which of the following statements is/are true?",
+      "answer": "From the given information, we can confirm that option D (Garima-Blue) is true. However, we cannot confirm the other options. Option A (Person who likes White sits at the corner of the table) is not necessarily true because Charu, who likes White, sits second to the right of Pranjal, but we do not know if Charu is at the corner. Option B (Pranjal doesn't like Pink) is false because Pranjal likes Pink. Therefore, only option D is true.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "How many persons sit between Charu and the person who likes Brown when counted from the right of Charu?",
+      "answer": "Since Anjali likes either Brown or Peach, and the person who likes Peach sits second to the left of the person who likes Green, Anjali must like Brown (because if Anjali liked Peach, the person who likes Green would be to the right of Charu, but we do not have enough information to confirm this). We also know that Charu sits second to the right of Pranjal, and Harshit sits to the immediate right of Charu (because Harshit and Charu are immediate neighbors). Therefore, there are two persons between Charu and Anjali (Harshit and either Sainki or Kirti).",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "Who among the following sits second to the right of Rahul?",
+      "answer": "Since Kirti sits exactly between Sainki and Rahul, and Kirti likes Yellow, the person who sits second to the right of Rahul must like Green (because the person who likes Peach sits second to the left of the person who likes Green). However, we do not have enough information to confirm the other options. But we can confirm that option C (Person who sits third to the right of the person who likes Peach) is not possible because the person who likes Peach sits second to the left of the person who likes Green, and there is not enough space for three persons between Rahul and the person who likes Peach.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "Which of the following statements is/are true in the new seating arrangement with Anuj, Sejal, Kartik, Surbhi, Krish, Vinay, Mohit, Mishi, and Neha?",
+      "answer": "Since there is not enough information provided about the new seating arrangement, we cannot confirm any of the options. The new seating arrangement has different persons and colors, and we would need more information to determine which statements are true.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "If Neha likes Green and sits to the immediate right of Krish, who likes Peach, and neither of them sits at the corner, what can be concluded about the position of Sejal, who likes Black, with respect to Neha?",
+      "answer": "Since Neha sits to the immediate right of Krish and neither of them sits at the corner, Sejal must sit two places away from Surbhi, who likes Golden. Given that three persons sit between Neha and Surbhi, and one person sits between Krish and Mishi, Sejal must be on the other side of the table from Neha. Therefore, Sejal is at least two places away from Neha.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Who sits at the corner of the table, given the information about the seating arrangement and color preferences?",
+      "answer": "From the information provided, Surbhi likes Golden and sits at the corner of the table. This is directly stated in the text.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "If Anuj likes Purple and sits second to the left of Kartik, who does not like Yellow or Pink, and Mohit likes Red, what can be inferred about the color preferences of the person who sits to the immediate right of Sejal?",
+      "answer": "Since Anuj sits second to the left of Kartik, and Mohit likes Red, the person who sits to the immediate right of Sejal likes Yellow. This is because the person who likes Yellow sits to the immediate right of Sejal, according to the given information.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If Somit likes Grey and does not sit at the corner, and Mehul sits second to the left of Somit, who likes Green, what can be concluded about the position of Pratim, who likes either Red or Yellow?",
+      "answer": "Given that two persons sit between Rajan and Pratim, and Rajan sits to the immediate left of Mehul, Pratim must sit on the other side of the table from Somit and Mehul. Since Somit does not sit at the corner, Pratim also cannot sit at the corner, as there are two persons between Rajan and Pratim.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "If the person who likes White and the person who likes Yellow sit on the same side of the table, and Vishnu likes neither Black nor Grey, what can be inferred about the color preferences of the person who sits to the immediate right of the person who likes Yellow?",
+      "answer": "Since the person who likes White and the person who likes Yellow sit on the same side of the table, and the person who likes Red is an immediate neighbor of the person who likes Grey, the person who sits to the immediate right of the person who likes Yellow cannot like Red. Therefore, the person who sits to the immediate right of the person who likes Yellow must like a color other than Red or Yellow.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "If Tahir, Mehul, Pratim, Rajan, Vishnu, Somit, Jeevan, Abhay, and Akku sit in a triangular table facing inside, and three persons sit at the corners, what can be concluded about the number of persons sitting on each side of the table?",
+      "answer": "Since there are nine persons in total, and three persons sit at the corners, the remaining six persons must sit on the sides of the table. Given that two persons sit on each side of the table, there are three sides with two persons each.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "What can be concluded about the seating arrangement of the person who likes Red and the person who likes Grey?",
+      "answer": "The person who likes Red is an immediate neighbour of the person who likes Grey, but the person who likes Red does not sit at the corner of the table.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Which of the following statements is/are not true regarding the seating arrangement?",
+      "answer": "Option A) Somit likes Grey is not necessarily true based on the given information, and option B) Tahir who likes Blue doesn't sit at the middle side of the table could be true or false depending on the arrangement.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "What is the position of Mehul with respect to Tahir?",
+      "answer": "The position of Mehul with respect to Tahir cannot be determined with the given information.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Who sits second to the right of Manjri?",
+      "answer": "The person who sits second to the right of Manjri cannot be determined with the given information.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "What is the position of Pawan with respect to Aparna?",
+      "answer": "Pawan's position with respect to Aparna cannot be determined with the given information.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Which of the following statements is/are not true regarding Manju?",
+      "answer": "Without specific information about Manju's seating position or color preference, options A, B, and C cannot be confirmed as true or false based on the provided text.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "If Kajal likes Green and sits third to the right of Raghav, and Madan sits second to the right of the person who likes Green, who sits to the immediate right of Madan?",
+      "answer": "To determine who sits to the immediate right of Madan, we first establish the order based on the given clues. Since Kajal likes Green and sits third to the right of Raghav, and Madan sits second to the right of the person who likes Green (which is Kajal), we can deduce the order as follows: Raghav, ?, Kajal, ?, Madan. Given that Madan sits second to the left of the person who likes Black, we can further infer that the person who likes Black sits to the immediate right of Madan.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If Tripti likes Red and sits to the immediate left of Rashi, and the person who likes Peach sits second to the left of Tripti, who sits exactly between Tripti and the person who likes White?",
+      "answer": "From the information given, we know Tripti likes Red and sits to the immediate left of Rashi. The person who likes Peach sits second to the left of Tripti. Devesh, who likes White, sits two places away from the person who likes Peach. Given these constraints, we can deduce the order as follows: ?, Peach, Tripti, Rashi. Since Devesh is two places away from the person who likes Peach and considering the seating arrangement, Devesh must sit to the right of Rashi, making the person who likes Peach sit exactly between Tripti and Devesh (who likes White).",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "If Sahil likes Green and likes neither Yellow nor Pink, and Sarika likes either Yellow or Blue, can we determine what color Sarika likes based on the given information?",
+      "answer": "Given the information, we cannot directly determine what color Sarika likes. The information provided about Sahil's preferences does not directly relate to Sarika's preferences. We would need additional information to conclusively determine whether Sarika likes Yellow or Blue.",
+      "difficulty": "basic",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "In a seating arrangement where nine persons are sitting in a triangular table, if two persons sit between Devesh and Sahil, and Sahil is not an immediate neighbor of Tripti, who among the following sits third to the left of Sahil?",
+      "answer": "To solve this, we consider the seating arrangement and the given conditions. Since two persons sit between Devesh and Sahil, and knowing the positions of Tripti and others relative to Sahil, we can deduce the seating order. However, without explicit information on who sits third to the left of Sahil, we must rely on the process of elimination and the given conditions to find the correct answer.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If Payal likes Pink and sits to the immediate right of Sonali, who likes Purple, and only one person sits between Dolsy and the person who likes Purple, who sits second to the left of the person who likes Blue?",
+      "answer": "Given Payal likes Pink and sits to the right of Sonali, who likes Purple, and only one person sits between Dolsy and Sonali, we can start building the seating arrangement. However, without direct information on the person who likes Blue or their position relative to the others, we cannot directly determine who sits second to the left of the person who likes Blue.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "If a person likes neither Yellow nor Blue, and Neha likes Orange and sits second to the left of Agrima, can we conclude what color Agrima likes based on the information that Jagriti likes Peach and sits third to the right of Pari?",
+      "answer": "From the given information, we know Neha likes Orange and sits second to the left of Agrima. Also, Jagriti likes Peach and sits third to the right of Pari. However, without direct information linking these preferences to Agrima's, or knowing the specific seating arrangement that would force a particular color on Agrima, we cannot conclusively determine Agrima's color preference.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Who sits to the immediate left of the person who likes White?",
+      "answer": "The person who likes Yellow sits to the immediate left of the person who likes White. This can be deduced directly from the given information.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Which of the following combination is true regarding the seating arrangement?",
+      "answer": "Given the constraints, we can deduce that the person who likes Yellow sits to the immediate left of the person who likes White. However, without more specific information about each person's color preference and their seating positions, we cannot accurately determine the truth of the other combinations. Thus, the only directly verifiable true statement from the given information is that the person who likes Yellow sits to the immediate left of the person who likes White.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Who among the following sits second to the left of the person who likes Blue?",
+      "answer": "From the given information, we cannot directly determine who sits second to the left of the person who likes Blue without knowing the specific seating arrangement and color preferences of each person. The information provided does not give a clear answer to this question.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Who sits exactly between Agrima and Neha?",
+      "answer": "Without a detailed seating arrangement, we cannot accurately determine who sits exactly between Agrima and Neha. The information given does not specify the positions of Agrima and Neha relative to each other or to the other individuals.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "Which of the following statements is/are true regarding the seating arrangement and color preferences?",
+      "answer": "Given the lack of specific details about each person's seating position and color preference in the question, we cannot verify the truth of the statements provided (e.g., Jagriti doesn't like Peach, Payal sits to the immediate left of the person who likes Purple, Sonali sits second to the right of Dolsy). These statements require more detailed information about the seating arrangement and individual preferences to be confirmed.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "How many persons sit between Amrita and Prachi?",
+      "answer": "The information provided does not give the specific seating arrangement of Amrita and Prachi relative to each other, nor does it detail the positions of the other individuals. Therefore, we cannot accurately determine the number of persons sitting between Amrita and Prachi.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "Who sits to the immediate left of Suhaas, given that Arti who likes Yellow sits to the immediate left of Suhaas?",
+      "answer": "Arti, who likes Yellow, sits to the immediate left of Suhaas. This is directly stated in the given information.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Can Amrita sit at the corner of the table, given that Shashi who likes Pink sits two places away from Amrita, who likes Purple and sits at the corner of the table?",
+      "answer": "No, Amrita cannot sit at the corner of the table because Shashi sits two places away from Amrita, and if Amrita were at the corner, there would not be enough space for two people between them. Therefore, statement A is not true.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Which of the following combinations is incorrect, given the seating arrangement and color preferences?",
+      "answer": "To determine the incorrect combination, we must analyze each option against the given information. Since specific details about each person's position and color preference are provided, we can eliminate options that contradict these details. For example, if we know Amrit likes Purple and sits at the corner, option E (Amrit-Purple) would be correct, not incorrect. The correct answer would depend on identifying a combination that directly contradicts the provided information.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Who among the following sits third to the right of Meghna, considering the seating arrangement and the given conditions?",
+      "answer": "To solve this, we need to understand the seating arrangement around Meghna. However, without specific details on Meghna's position relative to others, we cannot directly deduce who sits third to her right. We would need to establish the sequence of people around the table based on the given conditions and then determine the position relative to Meghna.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "What is the position of Mishu with respect to Guddan, given that Mishu likes Red and sits two places away from the person who likes White, who sits at the corner of the table?",
+      "answer": "Since Guddan likes Black and sits to the immediate left of Chetan, and considering Mishu's position relative to the person who likes White, we need to establish the seating sequence. If Mishu is two places away from the person who likes White and this person is at the corner, Mishu's position relative to Guddan would depend on where Guddan is in relation to the corner and Mishu. Without a direct link between Mishu and Guddan, we must use the information about the other individuals' positions and preferences to deduce their relative positions.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "Which of the following statements is/are true, considering the seating arrangement and the preferences of Guddan, Chetan, Pragati, and Meghna?",
+      "answer": "To determine the true statements, we analyze each option against the given information. For example, if Guddan likes Black and sits to the immediate left of Chetan, and Pragati sits second to the right of Chetan, we can verify the truth of statement A (Komal likes White and doesn't sit at the corner of the table) by checking if Komal's preferences and position match this description. Each statement must be evaluated against the known seating arrangement and preferences.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Who sits second to the right of the person who likes Brown?",
+      "answer": "To solve this, we need to analyze the given information. We know Puneet sits second to the right of the person who likes Black. We also know Paras is not an immediate neighbor of the one who likes red. However, without specific information about who likes Brown, we cannot directly determine who sits second to the right of the person who likes Brown. We would need more details about the seating arrangement and color preferences to accurately answer this question.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Which of the following combinations is true based on the seating arrangement and color preferences given?",
+      "answer": "Given the options and the information provided, we can analyze each choice. For example, option A) Mahi-Yellow and D) Mishu-Green are given as potential correct combinations. However, without specific details linking individuals to their color preferences in the provided text, we cannot definitively confirm which combination is true. We would need to cross-reference the seating arrangement and color preferences to determine the correct combination.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Who among the following sits at the corner of the table?",
+      "answer": "From the information given, we know that Paras who likes Yellow sits to the immediate left of Kushal, who sits at the corner of the table. This directly tells us that Kushal is at a corner. Therefore, the correct answer is the person who likes Yellow's neighbor, Kushal, but since Kushal is the one at the corner and likes Black, the statement about Yellow is a clue but the direct answer about who sits at the corner based on given choices would be related to Kushal or others explicitly mentioned to be at corners.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Which of the following statements is/are not true regarding the seating arrangement and preferences?",
+      "answer": "To determine which statement is not true, we must analyze each option against the given information. For instance, if we consider option C) Dinkar and the person who likes Black are immediate neighbors of each other, without specific information placing Dinkar next to the person who likes Black, we cannot confirm its truth. Each statement must be cross-referenced with the provided details to identify any that contradict the given information.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Who among the following sits third to the right of Mehek?",
+      "answer": "Without a detailed seating arrangement provided in the question, determining who sits third to the right of Mehek requires knowledge of the specific seating order of all individuals. Given the original text does not outline the seating order in a manner that allows for the direct calculation of who is third to the right of Mehek, this question would necessitate additional information or a visual representation of the seating arrangement to accurately answer.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "Which pair among the following is facing the same direction?",
+      "answer": "To solve this, we need to understand the seating arrangement and the direction each person is facing. Given that persons at the corner face outside and those at the middle sides face inside, determining which pair faces the same direction requires knowing the specific positions (corner or middle side) of the individuals mentioned. Without explicit details on the positions of Nora, Sanjhi, Priti, and others relative to the table's corners and sides, we cannot directly identify which pair faces the same direction.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "Who sits second to the right of Priti, given that Priti likes Green and sits third to the left of Mehek who likes Orange?",
+      "answer": "To find out who sits second to the right of Priti, we first need to establish the seating arrangement based on the given clues. Since Priti sits third to the left of Mehek, and considering the table's corner and middle side seating rules, we can deduce the positions. However, the exact arrangement is not provided in the question, so we'll rely on the information that Priti likes Green and sits third to the left of Mehek. Given the options provided in the original text (A) Person who likes Orange, B) Nora, C) Person who likes Peach, D) Richa, E) None of These, and without the explicit arrangement, we can infer based on typical logical deduction processes in seating arrangements that the person who likes Orange (Mehek) is three positions to the right of Priti. Thus, the person second to the right of Priti would not be Mehek but someone else based on the specific seating rules and preferences. Without explicit details on each person's position relative to Priti in the question, we must consider the logical steps involved in such puzzles: identifying direct relationships, using the process of elimination, and applying given conditions to narrow down possibilities.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If Khushi likes Blue and sits second to the left of Divya, who sits at the corner of the table, and Sneha sits to the immediate right of Khushi, what can be deduced about the seating arrangement of these three individuals?",
+      "answer": "Given that Khushi likes Blue and sits second to the left of Divya, and Sneha sits to the immediate right of Khushi, we can start forming a part of the seating arrangement. Since Divya sits at the corner and Khushi is second to the left of Divya, there must be one person between Divya and Khushi. Sneha, being to the immediate right of Khushi, will be third to the left of Divya. This gives us a partial arrangement of: Divya, ?, Khushi, Sneha, from left to right, with the '?' representing an unknown person.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Given that two persons sit between Tanu, who sits at the corner of the table, and Garima, who likes Blue, how would you begin to solve the seating arrangement?",
+      "answer": "To solve this, we start by placing Tanu at the corner and Garima with two persons between them. This gives us a basic structure of: Tanu, ?, ?, Garima. We then use additional clues provided in the puzzle to fill in the '?' with names and colors, gradually building up the seating arrangement by applying each clue systematically.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "If Pranjal likes Pink and sits to the immediate left of Garima, and Charu sits second to the right of Pranjal, how does this affect the seating arrangement?",
+      "answer": "With Pranjal to the immediate left of Garima and Charu second to the right of Pranjal, we can deduce the following arrangement: ..., Pranjal, Garima, ?, Charu. Given that Garima likes Blue, we now have a segment of the seating arrangement that looks like: ..., Pranjal (Pink), Garima (Blue), ?, Charu. This helps in further deductions as we add more information about the other individuals and their color preferences.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "In a seating arrangement where Harshit and Charu are immediate neighbors of each other, and Charu likes White, what can be inferred about their positions relative to others?",
+      "answer": "Knowing Harshit and Charu are immediate neighbors and Charu likes White doesn't immediately reveal their exact positions without additional context. However, in a typical seating arrangement puzzle, this information would be used in conjunction with other clues (such as who sits at the corners, who faces in or out, and other color preferences) to narrow down possible positions for Harshit and Charu. The key is to find a clue that directly or indirectly links Harshit and Charu to other individuals whose positions are known or partially known.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Given that Richa sits exactly between Mehek and Sanjhi, who likes Pink, and considering the seating rules, how would you approach finding Richa's position in the arrangement?",
+      "answer": "To find Richa's position, we first need to establish the positions of Mehek and Sanjhi. Since Sanjhi likes Pink, and given other clues about the arrangement (such as Priti's position relative to Mehek, who likes Orange), we can start building a framework. Knowing Richa is between Mehek and Sanjhi, we look for clues that might fix the positions of Mehek and Sanjhi relative to other known positions (like Priti or the corner seats). The process involves using each clue to incrementally build the seating arrangement until Richa's position can be precisely determined.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "If Neha, who likes Green, sits to the immediate right of Krish, who likes Peach, and neither of them sits at the corner of the table, what can be deduced about their seating arrangement?",
+      "answer": "Given Neha's position relative to Krish and the constraint that neither sits at the corner, we can deduce there must be at least one person to the left of Krish and one to the right of Neha to satisfy the condition of not being at the corner. This creates a basic structure for their seating arrangement.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "With the information that three persons sit between Neha and Surbhi, who likes Golden and sits at the corner of the table, how does this affect the seating arrangement?",
+      "answer": "Knowing Surbhi is at a corner and three people are between Neha and Surbhi, we can start to build a more detailed seating arrangement. Since Neha cannot be at the corner (as per previous information), and there are three people between her and Surbhi, this gives us a minimum of five people in the arrangement so far, not counting Surbhi, which helps in narrowing down possible configurations.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Given that Sejal, who likes Black, sits two places away from Surbhi, and considering previous constraints, how does this further refine the seating arrangement?",
+      "answer": "With Sejal sitting two places away from Surbhi, and knowing Surbhi is at a corner, this means Sejal must be third in line from Surbhi's corner. Combining this with previous information about Neha and Krish's positions relative to each other and the corner, we start to see a more defined structure emerge, allowing us to place individuals with more precision.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If the person who likes Yellow sits to the immediate right of Sejal, and Anuj, who likes Purple, sits second to the left of Kartik, who neither likes Yellow nor Pink, what can be inferred about Kartik's and Anuj's positions?",
+      "answer": "Given the person who likes Yellow is to the right of Sejal, and knowing Sejal's position relative to Surbhi, we can start placing these individuals. Anuj's position second to the left of Kartik, with Kartik not liking Yellow or Pink, helps in further defining the arrangement, especially considering the constraints on Yellow and the relative positions of individuals to each other.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "Mohit likes Red, and both the person who likes Pink and the person who likes Peach are immediate neighbors of the person who likes Blue. How does this information impact the seating arrangement, especially considering previous eliminations and arrangements?",
+      "answer": "This information is crucial as it directly links the positions of those who like Pink, Peach, and Blue, while also introducing Mohit's preference. Given previous constraints and the elimination of certain cases, we can deduce specific positions for these individuals, ensuring that the person who likes Blue is situated between those who like Pink and Peach, and accounting for Mohit's position based on the color he likes.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "Somit, who likes Grey, does not sit at the corner of the table. If Mehul sits second to the left of Somit, how does this affect possible seating arrangements, considering Somit's initial constraint?",
+      "answer": "Somit not being at the corner, combined with Mehul's position relative to Somit, gives us a starting point to consider their placement. Since Mehul is second to the left of Somit, this implies there is at least one person between Mehul and Somit. This setup, along with the knowledge that Somit is not at a corner, allows us to explore different configurations that satisfy these conditions, taking into account the table's geometry and the implications for other individuals' placements.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "In a triangle seating arrangement, if Rajan who likes Green sits to the immediate left of Mehul, and two persons sit between Rajan and Pratim, what can be deduced about the seating arrangement?",
+      "answer": "From the given statements, we can deduce that there are two possible cases for the seating arrangement. In CASE I, Rajan sits to the immediate left of Mehul, and two persons sit between Rajan and Pratim. This gives us a possible seating arrangement. However, without more information, we cannot determine the exact seating arrangement.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "If Person A likes Red and Person B likes Grey, and the person who likes Red is an immediate neighbour of the person who likes Grey but doesn't sit at the corner of the table, what can be inferred about their seating positions?",
+      "answer": "From the given statement, we can infer that Person A (who likes Red) and Person B (who likes Grey) are seated next to each other, but not at the corner of the table. This means they must be seated in the middle two seats, with Person A on one side of Person B or vice versa.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "In a family with three siblings - Rajan, Pratim, and Vishnu - if Vishnu who likes Orange is neither an immediate neighbour of Rajan nor Somit, what can be deduced about their relationship?",
+      "answer": "From the given statement, we can deduce that Vishnu is not directly related to Rajan or Somit as siblings, since he is neither an immediate neighbour of Rajan nor Somit. However, without more information about the family structure, we cannot determine the exact relationship between Vishnu and the other siblings.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If Person X likes White and Person Y likes Yellow, and they are sitting on the same side of the table, what can be inferred about their seating positions?",
+      "answer": "From the given statement, we can infer that Person X (who likes White) and Person Y (who likes Yellow) are seated on the same side of the table, but we cannot determine their exact seating positions without more information. They could be seated next to each other or separated by other people.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "In a triangle seating arrangement, if Person A likes Grey and sits adjacent to both Akku and Tahir (who likes Blue), what can be deduced about the seating arrangement?",
+      "answer": "From the given statement, we can deduce that Person A (who likes Grey) is seated between Akku and Tahir (who likes Blue). This gives us a possible seating arrangement, but without more information, we cannot determine the exact seating positions of the other people.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If Jeevan neither likes Green nor Peach, and the person who likes Peach is an immediate neighbour of Vishu, what can be inferred about Jeevan's relationship to Vishu?",
+      "answer": "From the given statement, we can infer that Jeevan is not Vishu, since Jeevan neither likes Green nor Peach, and Vishu has a neighbour who likes Peach. However, without more information about the family structure or relationships, we cannot determine the exact relationship between Jeevan and Vishu.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "In a triangle seating arrangement, if Pawan sits second to the right of Krish, who likes Green, and there are three possible cases, how would the arrangement look like?",
+      "answer": "The arrangement would have three possible cases: CASE I, CASE II, and CASE III, with different seating positions for Pawan and Krish. To determine the exact arrangement, we need to consider additional constraints and eliminate impossible cases through step-by-step logical deductions.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "If three persons sit between Ragini and the person who likes Blue, who doesn't sit at the corner of the table, how would this affect the existing cases in the seating arrangement?",
+      "answer": "This statement would further split CASE I into one more case, resulting in new possible arrangements: CASE I (A) and CASE II. We need to analyze the given information, identify the constraints, and systematically apply them to the existing cases to determine the updated arrangements.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Given that Gagan, who likes Red, sits second to the right of the person who likes Blue, and two persons sit between Gagan and Manju, how would this impact the existing cases?",
+      "answer": "This information would eliminate CASE I and CASE II, and further split CASE I (A) and CASE III into one more case each. We must carefully examine the relationships between the individuals, their color preferences, and seating positions to deduce the updated arrangements and eliminate impossible cases.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If the person who likes Black sits to the immediate left of the person who likes Yellow, how would this affect the seating arrangement?",
+      "answer": "This statement would result in updated arrangements for CASE I (A), CASE III, and CASE III (A). We need to consider the new constraint, apply it to the existing cases, and systematically determine the possible seating arrangements, ensuring that all conditions are met.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "With the information that Manjri, who likes Magenta, sits at one of the corners of the table, how would this impact the existing cases?",
+      "answer": "This statement would eliminate CASE III (A), and we would continue with CASE I (A), CASE I (A) (B), and CASE III. We must analyze the given information, identify the constraints, and apply them to the existing cases to determine the updated arrangements and eliminate impossible cases.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "Given that neither Harman nor Aparna likes Yellow, Piyush is an immediate neighbor of Aparna, and Harman doesn't like Golden, how would this affect the seating arrangement?",
+      "answer": "This information would eliminate CASE I (A) and CASE III, and we would continue with CASE I (A) (B) as the final arrangement. We need to carefully examine the relationships between the individuals, their color preferences, and seating positions to deduce the final arrangement, ensuring that all conditions are met and impossible cases are eliminated.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "If Tripti sits to the immediate left of Rashi, and Rashi does not sit at the corner of the table, what are the possible seating arrangements?",
+      "answer": "There are two possible cases: CASE I and CASE II. In CASE I, Tripti sits to the immediate left of Rashi, and in CASE II, Tripti sits to the immediate right of Rashi. We need to consider both cases and eliminate the one that contradicts the given statements.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "If the person who likes Peach sits second to the left of Tripti, and Devesh who likes White sits two places away from the person who likes Peach, what can be inferred about the seating arrangement?",
+      "answer": "From the given statements, we can infer that Devesh cannot sit next to Tripti or the person who likes Peach. We need to analyze the possible seating arrangements and eliminate the ones that contradict the given statements.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If two people sit between Devesh and Sahil, and Sahil is not an immediate neighbor of Tripti, what are the possible seating arrangements?",
+      "answer": "We need to consider the possible seating arrangements and eliminate the ones that contradict the given statements. We can start by placing Devesh and Sahil, and then add the two people who sit between them.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If Kajal who likes Green sits third to the right of Raghav, and Sarika likes either Yellow or Blue, what can be inferred about the seating arrangement?",
+      "answer": "From the given statements, we can infer that Kajal and Raghav must be seated in a specific order. We also need to consider the possible seating arrangements for Sarika and eliminate the ones that contradict the given statements.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "If Navya who likes Black and sits at the corner of the table is two places away from Dolsy, what are the possible seating arrangements?",
+      "answer": "We need to consider the possible seating arrangements and eliminate the ones that contradict the given statements. We can start by placing Navya and Dolsy, and then add the other people to the seating arrangement.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "If only one person sits between Dolsy and the person who likes Purple, what can be inferred about the seating arrangement?",
+      "answer": "From the given statements, we can infer that the person who likes Purple must be seated in a specific order relative to Dolsy. We need to analyze the possible seating arrangements and eliminate the ones that contradict the given statements.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "In a triangle seating arrangement, Navya likes Black and sits at the corner of the table, two places away from Dolsy. Only one person sits between Dolsy and the person who likes Purple. How many possible cases can be formed based on these statements?",
+      "answer": "Based on the given statements, there are two possible cases that can be formed. In the first case, Navya is at one corner, and the person who likes Purple is two places away from Dolsy. In the second case, Navya is at the other corner, and the person who likes Purple is again two places away from Dolsy. These two cases can be further analyzed to determine the seating arrangement.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "If Payal who likes Pink sits to the immediate right of Sonali who likes Purple, and Agrima is an immediate neighbor of Dolsy, how will the seating arrangement change?",
+      "answer": "With Payal sitting to the immediate right of Sonali, and Agrima being an immediate neighbor of Dolsy, the seating arrangement will undergo significant changes. Payal's position will be fixed relative to Sonali, and Agrima's position will be fixed relative to Dolsy. This will lead to the elimination of some possible cases and the creation of new ones, ultimately resulting in a more refined seating arrangement.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "In a triangle seating arrangement, Shashi likes Pink and sits two places away from Amrit, who likes Purple and sits at the corner of the table. How many possible cases can be formed based on this statement?",
+      "answer": "Based on the given statement, there are two possible cases that can be formed. In the first case, Shashi is at one corner, and Amrit is at the other corner. In the second case, Shashi is at the other corner, and Amrit is again at the corner. These two cases can be further analyzed to determine the seating arrangement.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "If Arti likes Yellow and sits to the immediate left of Suhaas, and Suhaas sits third to the left of Amrit, how will the seating arrangement change?",
+      "answer": "With Arti sitting to the immediate left of Suhaas, and Suhaas sitting third to the left of Amrit, the seating arrangement will undergo significant changes. Arti's position will be fixed relative to Suhaas, and Suhaas' position will be fixed relative to Amrit. This will lead to the elimination of some possible cases and the creation of new ones, ultimately resulting in a more refined seating arrangement.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "In a triangle seating arrangement, a person who likes Yellow sits to the immediate left of the person who likes White. If Agrima likes neither Yellow nor Blue, how will the seating arrangement change?",
+      "answer": "With the person who likes Yellow sitting to the immediate left of the person who likes White, and Agrima liking neither Yellow nor Blue, the seating arrangement will undergo significant changes. Agrima's position will be restricted, and the positions of the persons who like Yellow and White will be fixed relative to each other. This will lead to the elimination of some possible cases and the creation of new ones, ultimately resulting in a more refined seating arrangement.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If Amrita sits exactly between Arti and Praful, who likes Green and sits at the corner of the table, how will the seating arrangement change?",
+      "answer": "With Amrita sitting exactly between Arti and Praful, the seating arrangement will undergo significant changes. Amrita's position will be fixed relative to Arti and Praful, and Praful's position will be fixed at the corner. This will lead to the elimination of some possible cases and the creation of new ones, ultimately resulting in a more refined seating arrangement. The positions of Arti, Amrita, and Praful will be fixed, and the remaining persons can be arranged accordingly.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "If Suhaas sits third to the left of Amrit, and Amrita sits exactly between Arti and Praful, who likes Green and sits at the corner of the table, what can be deduced about the seating arrangement?",
+      "answer": "From the given statements, we can deduce that there are multiple possible arrangements. However, if we consider the constraints together, we can start building a possible seating arrangement. For example, if Suhaas is third to the left of Amrit, and Amrita is between Arti and Praful, then we can start placing these individuals relative to each other, considering the corner position for Praful who likes Green.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Given that Prachi sits to the immediate left of the person who likes Pink, and Ajay sits to the immediate left of the person who likes White, how do these conditions affect the seating arrangement?",
+      "answer": "These conditions help in further narrowing down the possible seating arrangements. For instance, if Prachi sits to the left of the person who likes Pink, and considering other constraints, we can try to fit Ajay and the person who likes White into the arrangement. This might involve eliminating certain cases if they lead to contradictions with the given constraints.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If Prachi, who likes Blue, is neither an immediate neighbor of Ajay nor Arti, and both the person who likes Red and the person who likes Yellow are immediate neighbors of the person who likes Black, how can we use this information to solve the seating arrangement?",
+      "answer": "This information provides critical constraints. Knowing Prachi's position relative to Ajay and Arti, and the relationship between the individuals who like Red, Yellow, and Black, allows us to make significant deductions. We can try to place Prachi in a position that satisfies the 'not an immediate neighbor' condition and then use the Red, Yellow, and Black constraints to further refine the arrangement, possibly by process of elimination or direct placement based on the constraints.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "With Guddan who likes Black sitting to the immediate left of Chetan who likes Purple, and Pragati sitting second to the right of Chetan and liking either Golden or Blue, how do we proceed with determining the seating arrangement?",
+      "answer": "First, place Guddan and Chetan according to the given condition. Then, position Pragati two seats to the right of Chetan. Considering Pragati likes either Golden or Blue, we can explore both possibilities, keeping in mind any additional constraints provided, such as Meghna's position and her preference for Green, to systematically build possible arrangements.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Given that Meghna who likes Green sits exactly between Chetan and Pragati, and the person who likes Blue sits second to the left of Guddan, how can we integrate this information into our seating arrangement?",
+      "answer": "This information allows us to further specify the positions of Meghna and the person who likes Blue. By placing Meghna between Chetan and Pragati, and considering the position of the person who likes Blue relative to Guddan, we can start to solidify the seating arrangement. It's essential to ensure that all conditions are met without contradiction, possibly requiring adjustments to the arrangement as we integrate each new piece of information.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If Mishu, who likes Red, sits two places away from the person who likes White, who sits at the corner of the table, how does this affect the possible seating arrangements, especially considering the other constraints provided?",
+      "answer": "This condition provides a specific relationship between Mishu and the person who likes White. Given the corner position of the person who likes White, we can calculate Mishu's possible positions. Integrating this with other constraints, such as the positions of Guddan, Chetan, Pragati, and Meghna, requires careful consideration to ensure all conditions are satisfied. This might involve systematically checking each possible arrangement against all given constraints to find a valid solution.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "If a person who likes Blue sits second to the left of Guddan, and there are three possible cases for the seating arrangement, how can we determine the correct case?",
+      "answer": "To determine the correct case, we need to analyze the given statements and eliminate the cases that contradict them. We should start by identifying the fixed positions and then use the process of elimination to narrow down the possibilities. By applying this step-by-step approach, we can systematically rule out the incorrect cases and arrive at the correct seating arrangement.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "In a triangle seating arrangement, if Mishu who likes Red sits two places away from the person who likes White, and the person who likes White sits at the corner of the table, what can we infer about the possible seating arrangements?",
+      "answer": "From the given statement, we can infer that there are two possible cases for the seating arrangement. We need to consider the position of Mishu and the person who likes White, and then analyze the possible arrangements of the other individuals. By applying the constraints and using logical deductions, we can systematically determine the possible seating arrangements and eliminate any contradictions.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If Komal sits second to the right of Mahi, and we have already determined that CASE I is incorrect, how can we use this information to further narrow down the possible seating arrangements?",
+      "answer": "With the new information that Komal sits second to the right of Mahi, we can re-examine the remaining cases (CASE II and CASE III) and apply this constraint to eliminate any arrangements that contradict this statement. By doing so, we can further refine the possible seating arrangements and move closer to determining the correct solution.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "In a seating arrangement, if Deepak and Jitu who likes Purple are sitting to the immediate left of each other, what are the possible implications for the seating arrangement?",
+      "answer": "From this statement, we can infer that there are two possible cases for the seating arrangement. We need to consider the position of Deepak and Jitu, and then analyze the possible arrangements of the other individuals. By applying the constraints and using logical deductions, we can systematically determine the possible seating arrangements and eliminate any contradictions. This information provides a starting point for further analysis and helps to narrow down the possibilities.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "If a person who likes Blue sits second to the left of the person who likes Grey, but neither of them sits at the corner of the table, how can we use this information to constrain the possible seating arrangements?",
+      "answer": "With this statement, we can introduce new constraints into the seating arrangement. We need to identify the possible positions for the person who likes Blue and the person who likes Grey, and then apply the constraint that neither of them sits at the corner. By doing so, we can eliminate any arrangements that contradict this statement and further refine the possible seating arrangements. This information helps to narrow down the possibilities and move closer to determining the correct solution.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If Amit likes neither Red nor Grey, and we have already determined the possible seating arrangements based on previous statements, how can we use this information to make a final determination about the seating arrangement?",
+      "answer": "With the new information about Amit's preferences, we can re-examine the remaining possible seating arrangements and apply this constraint to eliminate any arrangements that contradict this statement. By doing so, we can make a final determination about the seating arrangement and confirm the correct solution. This information provides a final check on the possibilities and helps to ensure that the solution is consistent with all the given statements.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    },
+    {
+      "question": "If Sneha sits to the immediate right of Khushi and the person who likes Orange sits second to the right of Sneha, who sits to the immediate left of the person who likes Orange?",
+      "answer": "To solve this, we start by placing Sneha to the right of Khushi. Then, since the person who likes Orange sits second to the right of Sneha, there must be one person between Sneha and the person who likes Orange. Therefore, the person who sits to the immediate left of the person who likes Orange is Sneha.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Given that two persons sit between Ashika and Priti, and Priti who likes Green sits third to the left of Mehek who likes Orange, can Ashika like Orange?",
+      "answer": "If two persons sit between Ashika and Priti, and considering Priti's position relative to Mehek, Ashika cannot like Orange because Priti is already determined to be three positions away from Mehek, and Ashika's position would conflict with this arrangement if she liked Orange.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If Richa sits exactly between Mehek and Sanjhi who likes Pink, and neither Richa nor Divya likes Black, can the person who likes Golden sit at the middle side of the table?",
+      "answer": "Given that the person who likes Golden doesn't sit at the middle side of the table, and considering Richa's position between Mehek and Sanjhi, if Richa or Divya were at the middle, they could potentially like Golden, but since neither likes Black, it doesn't directly answer the question about Golden. However, the statement about Golden not being at the middle side is a constraint, so without specific positions for all, we can't definitively say based on the given information alone.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "Nora who likes Red sits two places away from the person who likes Yellow. If Amit likes neither Red nor Grey, how does this impact the seating arrangement?",
+      "answer": "Given Nora's position relative to the person who likes Yellow and Amit not liking Red or Grey, we can start eliminating possibilities for Amit's color and position based on Nora's fixed position relative to Yellow. However, without knowing the exact seating arrangement or more details about the other colors and positions, we can only say it limits the options for Amit and potentially affects the overall arrangement.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "In a family where A is the father of B, and B is the mother of C, if D is the brother of B, what is the relationship between D and C?",
+      "answer": "Given A is the father of B, and B is the mother of C, this makes A the grandfather of C. Since D is the brother of B, D is the uncle of C.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "On a island where all inhabitants are either knights (who always tell the truth) or knaves (who always lie), if a person says 'I am a knave,' what can be deduced about this person?",
+      "answer": "If the person says 'I am a knave,' and assuming they are a knight (tells the truth), then their statement must be false, which leads to a contradiction because a knight cannot lie. Therefore, the person must actually be a knave because, as a liar, they would falsely claim to be a knave, which aligns with the behavior of a knave.",
+      "difficulty": "advanced",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "In a triangle seating arrangement, if Richa sits exactly between Mehek and Sanjhi, and a person who likes Golden doesn't sit at the middle side of the table, determine the possible seating positions for the person who likes Golden.",
+      "answer": "To solve this, first, we place Richa between Mehek and Sanjhi. Since the person who likes Golden cannot sit in the middle, and assuming the middle seat is taken by one of the three (Richa, Mehek, Sanjhi), the person who likes Golden must sit at one of the ends. Without more specific information about who likes Golden among Richa, Mehek, or Sanjhi, we cannot determine the exact seat but can conclude the person who likes Golden will be at an end.",
+      "difficulty": "basic",
+      "domain": "seating"
+    },
+    {
+      "question": "Given the statement 'Richa sits exactly between Mehek and Sanjhi' and knowing there are three people in total, how can we deduce the seating arrangement if one person likes Pink and another likes Golden, and the Golden liking person cannot be in the middle?",
+      "answer": "First, place Richa between Mehek and Sanjhi. This gives us a fixed arrangement of R-M-S or S-M-R (where R = Richa, M = Mehek, S = Sanjhi). Since the person who likes Golden cannot be in the middle, and Richa is in the middle, Richa cannot like Golden. Therefore, either Mehek or Sanjhi likes Golden. Without knowing who likes Pink, we cannot finalize the arrangement further, but we can say the person who likes Golden will be at one end.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "In a seating arrangement where one person likes Pink and another likes Golden, and given that Richa sits between Mehek and Sanjhi, if the person who likes Pink also sits at an end, how can we determine the seating arrangement?",
+      "answer": "Given Richa is between Mehek and Sanjhi, and the person who likes Golden also cannot be in the middle (which is taken by Richa), and now knowing the person who likes Pink sits at an end, we can start to piece together the arrangement. If the Pink liking person is at one end, and the Golden liking person must also be at an end (since they can't be in the middle), we have two scenarios: (1) Pink-Golden-Richa-Mejek/Sanjhi or (2) Sanjhi/Mehek-Richa-Golden-Pink. However, since Richa must be between Mehek and Sanjhi, the correct arrangement considering all constraints would be to place the Pink and Golden likers at the ends and maintain Richa between Mehek and Sanjhi, resulting in either Pink-Richa-Mejek/Sanjhi-Golden or Golden-Sanjhi/Mehek-Richa-Pink.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "If there are four people (Richa, Mehek, Sanjhi, and a new person, Priya) and Richa sits between Mehek and Sanjhi, and one person likes Golden, one likes Pink, and Priya likes neither Golden nor Pink, determine the seating arrangement if the Golden liking person cannot sit in the middle.",
+      "answer": "First, place Richa between Mehek and Sanjhi. Since Priya likes neither Golden nor Pink, and the Golden liking person cannot be in the middle, Priya must be in the middle or at an end not taken by the Golden liking person. However, since Richa is fixed between Mehek and Sanjhi, and one of these three must like Golden (since Priya doesn't), and the Golden liking person can't be in the middle, it means either Mehek or Sanjhi likes Golden. Considering Priya's placement, she could be at either end, but since the arrangement must accommodate the Pink liking person as well, and Richa is already between Mehek and Sanjhi, the most likely scenario involves Priya at one end, followed by the Pink liking person, then Richa between Mehek and Sanjhi, with the other end being the Golden liking person, or vice versa.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    }
+  ]
+}

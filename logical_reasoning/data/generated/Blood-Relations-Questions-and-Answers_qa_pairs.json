@@ -1,0 +1,605 @@
+{
+  "summary": "The logical reasoning content covers blood relation problems, which involve determining the relationships between family members based on given information. Key solving strategies mentioned include using symbols to represent relationships, such as \u2195 for children, \u2194 for siblings, and \u223c for married couples, as well as analyzing the given information to identify the relationships between family members. Important concepts and principles include understanding the meanings of different symbols and notations, analyzing the given information carefully, and using logical deductions to determine the relationships between family members. By applying these strategies and concepts, one can solve complex blood relation problems and determine the relationships between family members.",
+  "qa_pairs": [
+    {
+      "question": "Richa introduces a boy to her mother, saying he is the son of the daughter of the father of her uncle. How is Richa related to the boy?",
+      "answer": "Richa is the brother of the boy. The father of Richa's uncle is Richa's grandfather. The daughter of Richa's grandfather is Richa's mother. The son of Richa's mother is Richa's brother.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Ejaz is the son of Kismat. Bharat is the brother of Dharmesh, and Garima is Dharmesh's daughter. Kismat is married to Dharmesh. Fatima is the maternal aunt of Ejaz. What is the relation between Bharat and Ejaz?",
+      "answer": "Bharat is the uncle of Ejaz. Since Bharat is the brother of Dharmesh, and Dharmesh is married to Kismat, Bharat is the uncle of Ejaz.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Based on the equation K * J \u00d7 L + I * P, how is J related to I?",
+      "answer": "J is the father-in-law of I. The equation shows that K is the brother of J, and J is the father of L. I is married to P, making J the father-in-law of I.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Based on the equation T + R * S + U \u00d7 H, how is S related to T?",
+      "answer": "S is the sister-in-law of T. The equation shows that R is the brother of S, and U is the father of H. T is married to R, making S the sister-in-law of T.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Based on the equation Y + Z - U * S + X * R, how is U related to X?",
+      "answer": "U is the brother-in-law of X. The equation shows that Y is married to Z, and U is the brother of S. X is married to R, making U the brother-in-law of X.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Ajit pointed at Abhijeet and said, 'I am the only son of one of the sons of his father.' How is Ajit related to Abhijeet?",
+      "answer": "Ajit is either the father or uncle of Abhijeet. Since Ajit is the only son of one of the sons of Abhijeet's father, Ajit can be either the father or uncle of Abhijeet.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Sangeeta came across a photo and pointing towards a boy in it, Sangeeta said, 'He is the only son of the only daughter of my Grandfather.' How is Sangeeta related to that boy?",
+      "answer": "Sangeeta is the sister of the boy. The boy is the son of Sangeeta's aunt, making Sangeeta the sister of the boy.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "In a family with seven members, including two couples, C is the sister of B. A is the father of F, and E is the brother of F. G is the mother of B. D is the mother-in-law of G. How is G related to A?",
+      "answer": "G is the daughter-in-law of A. Since G is the mother of B, and A is the father of F, G is the daughter-in-law of A.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "In the same family, how is E related to C?",
+      "answer": "E is the father of C. Since E is the brother of F, and C is the sister of B, E is the father of C.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "In the same family, what is the relation between B and D?",
+      "answer": "B is the grandson of D. Since D is the mother-in-law of G, and G is the mother of B, B is the grandson of D.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "In the same family, how is F related to B?",
+      "answer": "F is the aunt of B. Since F is the daughter of A, and B is the son of G, F is the aunt of B.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If A is the father of B, and B is the father of C, how is A related to C?",
+      "answer": "A is the grandfather of C. Since A is the father of B, and B is the father of C, A is the grandfather of C.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If X is the sister of Y, and Y is the brother of Z, how is X related to Z?",
+      "answer": "X is the sister of Z. Since X is the sister of Y, and Y is the brother of Z, X is the sister of Z.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If P is the father of Q, and Q is the mother of R, how is P related to R?",
+      "answer": "P is the grandfather of R. Since P is the father of Q, and Q is the mother of R, P is the grandfather of R.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If M is the brother of N, and N is the sister of O, how is M related to O?",
+      "answer": "M is the brother of O. Since M is the brother of N, and N is the sister of O, M is the brother of O.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If T is the son of U, and U is the daughter of V, how is T related to V?",
+      "answer": "T is the grandson of V. Since T is the son of U, and U is the daughter of V, T is the grandson of V.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If W is the father of X, and X is the brother of Y, how is W related to Y?",
+      "answer": "W is the father of Y. Since W is the father of X, and X is the brother of Y, W is the father of Y.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If Z is the sister of A, and A is the brother of B, how is Z related to B?",
+      "answer": "Z is the sister of B. Since Z is the sister of A, and A is the brother of B, Z is the sister of B.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If C is the brother of D, and D is the father of E, how is C related to E?",
+      "answer": "C is the uncle of E. Since C is the brother of D, and D is the father of E, C is the uncle of E.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If F is the mother of G, and G is the son of H, how is F related to H?",
+      "answer": "F is the wife of H. Since F is the mother of G, and G is the son of H, F is the wife of H.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If I is the father of J, and J is the brother of K, how is I related to K?",
+      "answer": "I is the father of K. Since I is the father of J, and J is the brother of K, I is the father of K.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If L is the sister of M, and M is the brother of N, how is L related to N?",
+      "answer": "L is the sister of N. Since L is the sister of M, and M is the brother of N, L is the sister of N.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If O is the brother of P, and P is the father of Q, how is O related to Q?",
+      "answer": "O is the uncle of Q. Since O is the brother of P, and P is the father of Q, O is the uncle of Q.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If R is the mother of S, and S is the daughter of T, how is R related to T?",
+      "answer": "R is the wife of T. Since R is the mother of S, and S is the daughter of T, R is the wife of T.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If U is the father of V, and V is the brother of W, how is U related to W?",
+      "answer": "U is the father of W. Since U is the father of V, and V is the brother of W, U is the father of W.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If X is the sister of Y, and Y is the sister of Z, how is X related to Z?",
+      "answer": "X is the sister of Z. Since X is the sister of Y, and Y is the sister of Z, X is the sister of Z.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If A is the brother of B, and B is the brother of C, how is A related to C?",
+      "answer": "A is the brother of C. Since A is the brother of B, and B is the brother of C, A is the brother of C.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If D is the father of E, and E is the father of F, how is D related to F?",
+      "answer": "D is the grandfather of F. Since D is the father of E, and E is the father of F, D is the grandfather of F.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If G is the mother of H, and H is the mother of I, how is G related to I?",
+      "answer": "G is the grandmother of I. Since G is the mother of H, and H is the mother of I, G is the grandmother of I.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If J is the brother of K, and K is the brother of L, how is J related to L?",
+      "answer": "J is the brother of L. Since J is the brother of K, and K is the brother of L, J is the brother of L.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If M is the father of N, and N is the brother of O, how is M related to O?",
+      "answer": "M is the father of O. Since M is the father of N, and N is the brother of O, M is the father of O.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If P is the sister of Q, and Q is the sister of R, how is P related to R?",
+      "answer": "P is the sister of R. Since P is the sister of Q, and Q is the sister of R, P is the sister of R.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If S is the mother of T, and T is the son of U, how is S related to U?",
+      "answer": "S is the wife of U. Since S is the mother of T, and T is the son of U, S is the wife of U.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If V is the brother of W, and W is the father of X, how is V related to X?",
+      "answer": "V is the uncle of X. Since V is the brother of W, and W is the father of X, V is the uncle of X.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If Y is the father of Z, and Z is the brother of A, how is Y related to A?",
+      "answer": "Y is the father of A. Since Y is the father of Z, and Z is the brother of A, Y is the father of A.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If B is the sister of C, and C is the brother of D, how is B related to D?",
+      "answer": "B is the sister of D. Since B is the sister of C, and C is the brother of D, B is the sister of D.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If E is the mother of F, and F is the daughter of G, how is E related to G?",
+      "answer": "E is the wife of G. Since E is the mother of F, and F is the daughter of G, E is the wife of G.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If H is the father of I, and I is the brother of J, how is H related to J?",
+      "answer": "H is the father of J. Since H is the father of I, and I is the brother of J, H is the father of J.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If K is the sister of L, and L is the sister of M, how is K related to M?",
+      "answer": "K is the sister of M. Since K is the sister of L, and L is the sister of M, K is the sister of M.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If N is the brother of O, and O is the father of P, how is N related to P?",
+      "answer": "N is the uncle of P. Since N is the brother of O, and O is the father of P, N is the uncle of P.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If Q is the mother of R, and R is the mother of S, how is Q related to S?",
+      "answer": "Q is the grandmother of S. Since Q is the mother of R, and R is the mother of S, Q is the grandmother of S.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If a person is a knight, what can be concluded about their statements?",
+      "answer": "A knight always tells the truth, so their statements can be trusted.",
+      "difficulty": "basic",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "How is the person related to Harish's wife?",
+      "answer": "The person is Harish's son, Lalit, and Harish's wife is a Scientist.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "What is the profession of Harish's wife?",
+      "answer": "Harish's wife is a Scientist.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is Lalit related to Renu?",
+      "answer": "Lalit is Renu's nephew.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "What is the profession of Honey's wife?",
+      "answer": "Honey's wife is an Engineer.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Which statement is incorrect with respect to the blood relation given?",
+      "answer": "The statement 'Harish is the husband of an Engineer' is incorrect.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If A and C are a married couple, and C is not the mother of B, what can be concluded about B's parentage?",
+      "answer": "B's mother must be someone other than C, and since A and C are a married couple, A must be B's mother.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Which of the given statements is incorrect?",
+      "answer": "The statement 'F is male' is incorrect.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is D related to F?",
+      "answer": "D is F's sister.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is E related to F?",
+      "answer": "E is F's uncle.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "What is the profession of the person married to C?",
+      "answer": "The person married to C is a Doctor.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is E related to A?",
+      "answer": "The relationship between E and A cannot be determined.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If a person is a knave, what can be concluded about their statements?",
+      "answer": "A knave always lies, so their statements cannot be trusted.",
+      "difficulty": "basic",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "If two people are married, what can be concluded about their relationship?",
+      "answer": "Two people who are married are in a romantic partnership and are each other's spouse.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If a person has a child, what can be concluded about their relationship to that child?",
+      "answer": "A person who has a child is that child's parent.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If two people are siblings, what can be concluded about their relationship?",
+      "answer": "Two people who are siblings share a common parent and are each other's brother or sister.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If a person is someone's uncle, what can be concluded about their relationship?",
+      "answer": "A person who is someone's uncle is the brother of that person's parent.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If a person is someone's aunt, what can be concluded about their relationship?",
+      "answer": "A person who is someone's aunt is the sister of that person's parent.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If a person is someone's nephew, what can be concluded about their relationship?",
+      "answer": "A person who is someone's nephew is the child of that person's sibling.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If a person is someone's niece, what can be concluded about their relationship?",
+      "answer": "A person who is someone's niece is the child of that person's sibling.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If two people are in a romantic partnership, what can be concluded about their relationship?",
+      "answer": "Two people who are in a romantic partnership are each other's partner and may be married or unmarried.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If a person has a grandchild, what can be concluded about their relationship to that grandchild?",
+      "answer": "A person who has a grandchild is the parent of that grandchild's parent.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If a person is someone's granddaughter, what can be concluded about their relationship?",
+      "answer": "A person who is someone's granddaughter is the child of that person's child.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If a person is someone's grandson, what can be concluded about their relationship?",
+      "answer": "A person who is someone's grandson is the child of that person's child.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If two people are cousins, what can be concluded about their relationship?",
+      "answer": "Two people who are cousins share a common grandparent and are each other's cousin.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If a person has a sibling, what can be concluded about their relationship to that sibling?",
+      "answer": "A person who has a sibling shares a common parent with that sibling.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If a person is someone's mother, what can be concluded about their relationship?",
+      "answer": "A person who is someone's mother is the female parent of that person.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If a person is someone's father, what can be concluded about their relationship?",
+      "answer": "A person who is someone's father is the male parent of that person.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If two people are married and have a child, what can be concluded about their relationship to that child?",
+      "answer": "Two people who are married and have a child are that child's parents.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If a person has two children, what can be concluded about their relationship to those children?",
+      "answer": "A person who has two children is the parent of both of those children.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If two people are siblings and have a child, what can be concluded about their relationship to that child?",
+      "answer": "Two people who are siblings and have a child are that child's parents, but they cannot be siblings and parents at the same time.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If a person is someone's grandparent, what can be concluded about their relationship to that grandparent's child?",
+      "answer": "A person who is someone's grandparent is the parent of that person's parent.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If two people are in a romantic partnership and have a child, what can be concluded about their relationship to that child?",
+      "answer": "Two people who are in a romantic partnership and have a child are that child's parents.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If a person has a child and that child has a child, what can be concluded about their relationship to that grandchild?",
+      "answer": "A person who has a child and that child has a child is the grandparent of that grandchild.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If two people are married and one of them has a child, what can be concluded about their relationship to that child?",
+      "answer": "Two people who are married and one of them has a child are that child's parents, but only if the child is the biological child of both spouses.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If E and A are siblings, and A is a female, what can be concluded about E's gender?",
+      "answer": "Since E and A are siblings, and A is a female, E can be either male or female. There is not enough information to determine E's gender.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given the statement 'A is the Grandmother of F', what can be inferred about A's relationship to E?",
+      "answer": "If A is the Grandmother of F, and E is a sibling of A, then E must be the Grandparent of F. However, without more information about the family tree, the exact relationship between E and F cannot be determined.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If B is a Doctor by profession, and C is the mother of F, what can be concluded about the profession of C?",
+      "answer": "There is no information provided about the profession of C. The statement only mentions the profession of B and the relationship between C and F.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given the family tree notation, what does the symbol '\u223c' represent?",
+      "answer": "The symbol '\u223c' represents a married couple.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If D is male, and A is a female, what can be concluded about the gender of E?",
+      "answer": "There is not enough information to determine the gender of E. The gender of D and A does not provide any information about the gender of E.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given the statement 'A is the Grandmother of F', what can be inferred about the age of A?",
+      "answer": "If A is the Grandmother of F, then A must be older than F. However, the exact age of A cannot be determined.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If B is a Doctor by profession, and A is a Teacher by profession, what can be concluded about the profession of C?",
+      "answer": "There is no information provided about the profession of C. The statement only mentions the professions of B and A.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given the family tree notation, what does the symbol '+' represent?",
+      "answer": "The symbol '+' represents a male.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If E and A are siblings, and E is a male, what can be concluded about the gender of A?",
+      "answer": "If E and A are siblings, and E is a male, then A can be either male or female. There is not enough information to determine the gender of A.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given the statement 'C is the mother of F', what can be inferred about the relationship between C and E?",
+      "answer": "If C is the mother of F, and E is a sibling of A, then C must be the mother of A as well. However, without more information about the family tree, the exact relationship between C and E cannot be determined.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If D is male, and B is a Doctor by profession, what can be concluded about the profession of D?",
+      "answer": "There is no information provided about the profession of D. The statement only mentions the profession of B.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given the family tree notation, what does the symbol '\u2195' represent?",
+      "answer": "The symbol '\u2195' represents children.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If A is a Teacher by profession, and E is an Engineer by profession, what can be concluded about the profession of F?",
+      "answer": "There is no information provided about the profession of F. The statement only mentions the professions of A and E.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given the statement 'B is a Doctor by profession', what can be inferred about the profession of A?",
+      "answer": "There is no information provided about the profession of A. The statement only mentions the profession of B.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If C is the mother of F, and A is the Grandmother of F, what can be concluded about the relationship between C and A?",
+      "answer": "If C is the mother of F, and A is the Grandmother of F, then C must be the daughter of A.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given the family tree notation, what does the symbol '-' represent?",
+      "answer": "The symbol '-' represents a female.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If E and A are siblings, and A is a female, what can be concluded about the gender of E?",
+      "answer": "Since E and A are siblings, and A is a female, E can be either male or female. There is not enough information to determine E's gender.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given the statement 'D is male', what can be inferred about the gender of E?",
+      "answer": "There is not enough information to determine the gender of E. The gender of D does not provide any information about the gender of E.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If B is a Doctor by profession, and C is the mother of F, what can be concluded about the profession of B?",
+      "answer": "The statement already mentions that B is a Doctor by profession. No additional information can be concluded.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given the family tree notation, what does the symbol '\u2194' represent?",
+      "answer": "The symbol '\u2194' represents siblings.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If A is a Teacher by profession, and E is an Engineer by profession, what can be concluded about the profession of B?",
+      "answer": "There is no information provided about the profession of B. The statement only mentions the professions of A and E.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given the statement 'C is the mother of F', what can be inferred about the relationship between C and A?",
+      "answer": "If C is the mother of F, and A is the Grandmother of F, then C must be the daughter of A.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If D is male, and A is a female, what can be concluded about the gender of E?",
+      "answer": "There is not enough information to determine the gender of E. The gender of D and A does not provide any information about the gender of E.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given the family tree notation, what does the symbol '+' represent?",
+      "answer": "The symbol '+' represents a male.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    }
+  ]
+}

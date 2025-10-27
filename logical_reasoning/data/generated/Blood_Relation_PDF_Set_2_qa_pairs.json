@@ -1,0 +1,605 @@
+{
+  "summary": "The logical reasoning content covers blood relation problems, which require analyzing family relationships and determining how individuals are related to each other. Key solving strategies mentioned include carefully studying the given information, identifying relationships between family members, and using logical deductions to answer questions. Important concepts and principles involved in these problems include understanding family trees, recognizing relationships such as parent-child, sibling, and spouse, and applying logical rules to determine unknown relationships. By applying these strategies and concepts, individuals can effectively solve blood relation problems and determine how different family members are related to each other.",
+  "qa_pairs": [
+    {
+      "question": "How is S related to Q, given that B is the father of Q, B has only two children, Q is the brother of R, R is the daughter of P, A is the granddaughter of P, and S is the father of A?",
+      "answer": "To find the relationship between S and Q, we first establish the family relationships. Since B is the father of Q and Q is the brother of R, B is also the father of R. Given that R is the daughter of P, P must be the mother of Q and R, making B the husband of P. A is the granddaughter of P, and since S is the father of A, S must be the son of P or the husband of P's daughter. However, since B is the husband of P, S cannot be the husband of P. Thus, S must be the son of P, making S the brother of Q and R. Therefore, S is the uncle of A and the brother of Q.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is Abhishek related to Teji, given that Abhishek is the son of Amitabh\u2019s father\u2019s sister, Prakash is the son of Teji who is the mother of Vikash and grandmother of Amitabh, and Harivansh is the father of Neela and grandfather of Abhishek?",
+      "answer": "Abhishek is the son of Amitabh's father's sister, making Abhishek the cousin of Amitabh. Since Teji is the grandmother of Amitabh, Teji must be the mother of Amitabh's father. Thus, Teji is the aunt of Abhishek's mother, making Teji the grandaunt of Abhishek. However, given Harivansh is the father of Neela and grandfather of Abhishek, and Teji is the wife of Harivansh, Teji is actually the grandmother of Abhishek.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is Vikas's wife related to Neela, given the same information as the previous question?",
+      "answer": "Since Vikash is the son of Teji, and Teji is the wife of Harivansh, Vikash is the son of Harivansh. Neela is also the child of Harivansh, making Neela the sister of Vikash. Therefore, Vikash's wife is the sister-in-law of Neela.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is B related to E, given that B and C are siblings, M has two children and is the son of E, who is the father-in-law of H, H has only one son, and C is not the granddaughter of E?",
+      "answer": "Since M is the son of E and has two children, and C is not the granddaughter of E, B and C must be the children of M to not be the grandchildren of E. This makes B the child of M, and since M is the son of E, B is the grandchild of E.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is H related to M, given the same information as the previous question?",
+      "answer": "Since E is the father-in-law of H, H must be the spouse of M, who is the son of E. Therefore, H is the wife of M.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Who among the following works as a doctor, given the information about the family of six persons and their professions?",
+      "answer": "From the information given, Anupam works as an Engineer, Ayushi as a Writer, Anuj as a Lawyer, and Sohan does not work as an Architect. Since each person has a different profession and there are six professions mentioned (Doctor, Engineer, Lawyer, Teacher, Writer, Architect), and given that Ajay does not read Doctor or Architect, we cannot directly deduce who works as a doctor without more specific information about the professions of the other family members.",
+      "difficulty": "intermediate",
+      "domain": "seating_arrangements"
+    },
+    {
+      "question": "How is Anuj related to Anupam, given the same information as the previous question?",
+      "answer": "Since Anupam is the mother-in-law of Anu, and Anu is the wife of Sohan, Anupam is the mother of Sohan. Ayushi is the sister of Anuj, and Anuj works as a Lawyer. There is no direct relationship given between Anuj and Anupam, but since Anupam is the mother-in-law of Anu (Sohan's wife) and there are only two married couples, Anuj must be related to Anupam through one of the couples. Given Ayushi is Anuj's sister and works as a Writer, and Anuj is a Lawyer, Anuj could be the son of Anupam if we consider the family structure and the fact that Anupam is a mother-in-law, indicating Anupam has a child who is married.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How many sons does Anupam have, given the same information as the previous question?",
+      "answer": "Given Anupam is the mother-in-law of Anu, who is married to Sohan, and considering the family structure with two married couples and two unmarried persons, if Anuj is the son (as deduced from the relationship and professions), then Sohan could be the other son or part of the other married couple. However, without explicit information on the gender and relationships of all family members, it's challenging to definitively conclude the number of sons Anupam has based solely on the provided details.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is Shruti related to Daksha, given that Daksha has two sons, Badal and Fezan, Badal is married to Utkal, Utkal is the mother of Shruti, Lakshit is the daughter of Daksha, and Yadu is the mother-in-law of Utkal?",
+      "answer": "Since Utkal is the mother of Shruti and Utkal is married to Badal, who is the son of Daksha, Shruti is the granddaughter of Daksha.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is Mitthu related to Rohit, given that Rohit has two sons, Bittu and Kittu, Bittu is the husband of Gillu, Lata is the mother-in-law of Gillu and Sittu, and Sittu is the mother of Mitthu?",
+      "answer": "Since Sittu is the mother of Mitthu and Lata is the mother-in-law of Sittu, Lata must be the grandmother of Mitthu. Given that Lata is also the mother-in-law of Gillu, who is married to Bittu, and Bittu is the son of Rohit, this makes Lata the wife of Rohit. Therefore, Mitthu is the granddaughter of Rohit.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Can the relationship between S and Q be determined if B is the father of Q, but the information about R and P is unknown?",
+      "answer": "Without information about R and P, and knowing only that B is the father of Q, we cannot determine the relationship between S and Q as the connection between S and the rest of the family (B, Q, R, P) is not provided.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "In the Hansraj family, who is the grandmother of S?",
+      "answer": "To determine the grandmother of S, we must analyze the given information. We know R is unmarried and Q has only one niece. The husband of T's daughter is married to V, and V has only one sibling. Since U's father-in-law has two granddaughters, U must be a female, and her husband's father is a male with two granddaughters. Given that W's brother has only one nephew and W is not V's mother, we can infer relationships but cannot directly determine S's grandmother without more specific relationships between S and the other family members. Thus, based on the provided information, we cannot definitively determine S's grandmother.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Who is the uncle of U's spouse in the Hansraj family?",
+      "answer": "Given that U's father-in-law has two granddaughters and considering the other relationships, we need to identify U's spouse's uncle. However, without explicit information about U's spouse's family relationships to the other members, we cannot directly determine the uncle of U's spouse from the given information.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "What is the combination of the couple discussed in the information part of the Hansraj family?",
+      "answer": "From the information provided, we know specific relationships but not explicit couples except for the husband of T's daughter being married to V. Without direct information on the other couples, we cannot accurately determine all possible couples based on the given relationships alone.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Who is the mother of V in the second family scenario?",
+      "answer": "Given that S is the brother-in-law of T and paternal uncle of P, and R is the father of V and son of M, we know V is the sister of P and Q is the grandfather of V. Since R is the father of V, the mother of V must be R's wife. However, R's wife is not explicitly mentioned, but since S is the brother-in-law of T and T is not mentioned as a parent of V, and given that Q is the grandfather of V, it implies M is the mother of R, making M the grandmother of V, not the mother. Thus, the mother of V is not directly stated but can be inferred as T, given the relationships provided.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is Q related to T in the second family scenario?",
+      "answer": "Q is the grandfather of V, and since V is the sister of P, Q is also the grandfather of P. Given that S is the paternal uncle of P, this makes S the brother of P's father. R is the father of V, and since Q is R's father (as Q is the grandfather of V), Q is the father of R. T is S's wife (as S is the brother-in-law of T), making T the mother of P and V, and thus Q is the father-in-law of T.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "What symbols will come in place of question marks in the equation X % P \u2013 C ? D ? E to show that E is the wife of X?",
+      "answer": "Given the equation and the definitions of the symbols, for E to be the wife of X, the equation must show a relationship where E is directly related to X as a spouse. The '%' symbol denotes 'son-in-law of', and '-' denotes 'wife of'. Thus, for E to be the wife of X, the correct sequence should directly link E as the wife, which means using the '-' symbol after C to indicate C's wife, and then the '%' symbol does not directly apply to show E as X's wife but the '+' symbol could be used to show a son relationship, yet it's the '-' symbol that directly shows a spouse relationship.",
+      "difficulty": "basic",
+      "domain": "symbolic_logic"
+    },
+    {
+      "question": "Which symbol will come in place of the question mark in the equation V + Z x T ? L to show that V is the daughter-in-law of L?",
+      "answer": "For V to be the daughter-in-law of L, V must be married to L's son. The '+' symbol denotes 'son of', and 'x' denotes 'father of'. Thus, 'V + Z' means V is the son of Z, and 'Z x T' means Z is the father of T, implying T is V's wife. However, to show V as the daughter-in-law of L, we need to show V's husband (T) as the son of L, which is directly shown by 'x', but since we need to connect V to L through V's husband, the correct symbol to show V in relation to L as daughter-in-law involves showing T as L's son, which is already implied by 'x'. The '%' symbol denotes 'son-in-law of', but to show daughter-in-law, we consider the relationship of V's husband to L.",
+      "difficulty": "intermediate",
+      "domain": "symbolic_logic"
+    },
+    {
+      "question": "Which symbol will come in place of the question mark in the equation P x Q x R + S ? L to show that L is the paternal aunt of P?",
+      "answer": "For L to be the paternal aunt of P, L must be the sister of P's father. Given 'P x Q' means P is the father of Q, and 'Q x R' means Q is the father of R, it implies a lineage but does not directly relate to L being P's paternal aunt. The '+' symbol denotes 'son of', and '*' denotes 'brother of', but we are looking for a symbol that shows a sister relationship. The '#' symbol denotes 'the only sister of', which would be used to show L as a sister, thus as a paternal aunt if she is the sister of P's father.",
+      "difficulty": "intermediate",
+      "domain": "symbolic_logic"
+    },
+    {
+      "question": "How is M related to K in the family with two couples?",
+      "answer": "Given that K has two children, and M is the wife of O, who is the brother of B, we can infer relationships but not directly determine M's relationship to K without knowing how O and B are related to K. If F is the daughter of K, and U is the sister of S, who is the son of O, this implies multiple family relationships but does not directly state M's relationship to K.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is U related to T in the family with two couples?",
+      "answer": "Given that U is the sister of S, and S is the son of O, and T is the son of B, without explicit information that B is K or another direct relationship between U and T's families, we cannot directly determine U's relationship to T based solely on the given information.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Can we determine the exact relationships between all members in the Hansraj family with the given information?",
+      "answer": "With the provided information, while we can infer several relationships, such as the husband of T's daughter being married to V, and U's father-in-law having two granddaughters, the exact relationships between all members, especially in terms of direct parent-child or sibling relationships for each individual, cannot be fully determined without additional specific information about each member's connections.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "In symbolic logic, how do you represent 'A is the mother of B' using the given symbols?",
+      "answer": "Given the definitions, 'B + A' means 'A is the son of B', and 'B x A' means 'A is the father of B'. To represent 'A is the mother of B', we would need a symbol that denotes 'mother of'. Since '-' denotes 'wife of', and there's no direct 'mother of' symbol, we must infer the relationship through the given symbols, possibly using a combination to imply the maternal relationship.",
+      "difficulty": "basic",
+      "domain": "symbolic_logic"
+    },
+    {
+      "question": "How is Pritam related to Hitesh?",
+      "answer": "From the information given, we know that Vishnu is the uncle of Sanshlesh, who is the daughter of Pritam. We also know that Ruchika is the sister-in-law of Vishnu. Since Anupam is the granddaughter of Ruchika and sister of Bhumika, and Mohini has one daughter and one son, we can deduce that Mohini is the mother of Anupam and Bhumika. However, the relationship between Pritam and Hitesh cannot be directly determined from the given information.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is Bhumika related to Sanshlesh?",
+      "answer": "Since Anupam is the sister of Bhumika and the granddaughter of Ruchika, and Sanshlesh is the daughter of Pritam, we need more information to directly determine the relationship between Bhumika and Sanshlesh. However, given that there are two married couples and two grandchildren in the family, and considering the relationships provided, we can infer that Bhumika and Sanshlesh are likely to be cousins, but this is not explicitly stated.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Who is the mother of Anupam?",
+      "answer": "From the information given, we know that Anupam is the granddaughter of Ruchika and the sister of Bhumika. We also know that Mohini has one daughter and one son. Since Anupam and Bhumika are sisters, and given the family structure, Mohini is the most likely candidate to be the mother of Anupam and Bhumika.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is L related to M?",
+      "answer": "Given that U is the wife of the nephew of L, who is the wife of K, and P is the brother of M, with W being the son of M and U being the mother of W, we can deduce that L is the aunt of M because U's husband (who is L's nephew) is M's brother, making L the sister of M's mother.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How many female members are there in the family consisting of P, Q, R, S, T, and U?",
+      "answer": "From the information provided, P and Q are a married couple, S is the only son of R, who is the brother of P, making S the nephew of P and Q. T is the sister of S, and Q is the daughter-in-law of U. Since U's husband has passed away, and given the relationships, we can identify Q, T, and U as female members. The status of R is not explicitly mentioned as male or female, but given that P is a male member and R is P's brother, we can infer R is likely male. Thus, we have at least three female members: Q, T, and U.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How does Vaishnavi relate to Suresh?",
+      "answer": "Given that Vaishnavi's father, Vikram, is the son of Seema, who is the mother-in-law of Sakshi, and considering the family structure where Mayank and Suresh are brothers, we need to establish the connection between Vikram and Suresh. Since Vikram is the son of Seema and Seema is the mother-in-law of Sakshi, and given that Sakshi has two daughters, if Vikram is married to Sakshi, then Vaishnavi would be the niece of Suresh.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Who is the father of Vaishnavi?",
+      "answer": "From the information provided, Vikram is the father of Vaishnavi because it is stated that Vaishnavi's father, Vikram, is the son of Seema.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is Mainak related to Seema?",
+      "answer": "Given that Mainak's grandmother, Kavita, is the mother-in-law of Amar, and considering the family relationships, if Amar is married to a daughter of Seema, then Mainak would be the grandson of Seema's daughter's husband's brother, or simply a more distant relative. However, without direct information linking Mainak to Seema, we must consider the provided relationships carefully. If Kavita is Seema, then Mainak is Seema's grandson.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is the girl related to the boy she is introducing?",
+      "answer": "The girl says, 'He is the only son of my mother\u2019s mother.' This means the boy is the son of the girl's grandmother, making him the girl's uncle or a more distant relative. However, since the boy is the 'only son' of the girl's grandmother, and considering typical family structures, the girl is likely referring to her own brother, given that her mother's mother (the girl's grandmother) would have children who are the girl's aunts and uncles, but the 'only son' specification suggests a closer relationship.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is Ravi related to Rajat?",
+      "answer": "Ravi said, 'His mother has only one grandchild whose mother is my sister.' This means Rajat's mother is the granddaughter of Ravi's sister, making Rajat the great-nephew of Ravi. However, a more direct interpretation based on the statement would be that Rajat is the son of Ravi's sister's daughter, making Rajat Ravi's grandnephew or simply the nephew of Ravi if we consider 'my sister' as the mother of Rajat's mother.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given the complex family relationships, how can we systematically approach determining relationships between family members?",
+      "answer": "To systematically approach determining relationships, start by identifying direct relationships (parent-child, siblings) and then use the process of elimination and deduction to establish more complex relationships. Create a family tree or diagram to visualize the relationships and fill in the gaps based on the given information.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Which expression indicates that M is the daughter of D?",
+      "answer": "To determine the correct expression, we need to analyze each option. The correct expression should indicate that M is the daughter of D. Option A: L % R $ D + T \u00d7 M means L is the mother of R, R is the wife of D, and D is the father of T, and T is the sister of M. This does not directly indicate that M is the daughter of D. Option B: L + R $ D + M \u00d7 T means L is the father of R, R is the wife of D, D is the father of M, and M is the sister of T. This indicates that M is the daughter of D. Therefore, the correct answer is B.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Which expression is true if Y is the son of X is definitely false?",
+      "answer": "To determine the correct expression, we need to analyze each option. The correct expression should be false if Y is the son of X. Option A: W % L \u00d7 T \u00d7 Y \u00f7 X means W is the mother of L, L is the sister of T, T is the sister of Y, and Y is the son of X. This expression is false if Y is not the son of X. However, we need to find an expression that is definitely false if Y is the son of X. Option E: W % X + T \u00d7 Y \u00f7 L means W is the mother of X, X is the father of T, T is the sister of Y, and Y is the son of L. If Y is the son of X, then this expression is false because it states that Y is the son of L, not X. Therefore, the correct answer is E.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "What should come in place of the question mark to establish that T is the sister-in-law of Q?",
+      "answer": "To determine the correct answer, we need to analyze the given expression: R % T \u00d7 P ? Q + V. Since T is the sister of P, and we want T to be the sister-in-law of Q, P should be the spouse of Q. Therefore, the question mark should be $, which means P is the wife of Q. So, the correct answer is D.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If Mrs. Khanna is Vineet's aunt, which of the following cases could be the correct one?",
+      "answer": "If Mrs. Khanna is Vineet's aunt, then she is either the sister of Mr. Iyer or the sister of Mrs. Iyer. Case I states that Mr. Iyer is Mrs. Khanna's brother, which would make Mrs. Khanna the sister of Mr. Iyer and the aunt of Vineet. Case II states that Mr. Khanna is Mrs. Iyer's brother, which does not necessarily make Mrs. Khanna the aunt of Vineet. Case III states that Mrs. Iyer is Mrs. Khanna's sister, which would make Mrs. Khanna the aunt of Vineet. Therefore, the correct answer is Either I or III.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Which statement is definitely true about the common grandfather of Vineet and Kavita if one disregards case II?",
+      "answer": "If we disregard case II, then we are left with cases I and III. In case I, Mr. Iyer is Mrs. Khanna's brother, which means that Mr. Iyer's father is the common grandfather of Vineet and Kavita. In case III, Mrs. Iyer is Mrs. Khanna's sister, which means that Mrs. Iyer's father is the common grandfather of Vineet and Kavita. In both cases, the common grandfather is the father of Mr. Iyer or Mrs. Iyer. Therefore, the correct answer is that he is the father-in-law of Mr. Khanna.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is Daya related to Sonu?",
+      "answer": "From the given information, we know that Haryali is the daughter-in-law of Neelu and the sister-in-law of Sonu and Anku. We also know that Anku is the aunt of Cheenu's two daughters, Saba and Daya. Since Anku is the aunt of Daya, and Sonu is the brother of Anku, Sonu is the uncle of Daya. However, the option 'uncle' is not available. The closest relationship would be 'niece' from the perspective of Sonu's relationship to Daya, but in the context of the question, it asks how Daya is related to Sonu, making the correct answer 'niece' in the context of family relationships provided.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Find the relation between Haryali and Saba?",
+      "answer": "From the given information, we know that Haryali is the daughter-in-law of Neelu and the sister-in-law of Sonu and Anku. We also know that Anku is the aunt of Cheenu's two daughters, Saba and Daya. Since Haryali is the sister-in-law of Anku, and Anku is the aunt of Saba, Haryali is also the aunt of Saba, but more directly in relation to the question's context, Haryali would be the mother of Saba or Daya since she is the daughter-in-law and one of the sisters-in-law is Anku, who is an aunt to Saba and Daya. Given the direct relationships provided, Haryali is most likely the mother of one of the daughters, making the relationship 'mother-daughter' the most fitting answer based on typical family structures and the information given.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Who is the husband of Haryali?",
+      "answer": "From the given information, we know that Haryali is the daughter-in-law of Neelu. This means that Haryali is married to one of Neelu's sons. Since Bablu is the eldest male member of the family and Sonu is also a male member, and given that Haryali is the sister-in-law of Sonu and Anku, it implies that Haryali is married to either Bablu or another son not mentioned directly as a separate individual from Bablu and Sonu. However, since Bablu and Sonu are the only males mentioned aside from Cheenu, and considering typical family structures, it's reasonable to infer that Haryali could be the wife of either Bablu or Sonu, but without explicit information stating otherwise or providing another male, the answer cannot be definitively determined from the given options.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Which of the following needs to be true to establish that K is the daughter of X?",
+      "answer": "To establish that K is the daughter of X, we need to find a condition that makes this relationship necessary. Given that N is the son of A and the only brother of K, and X is the mother of K and N, the condition that B is unmarried (A) does not directly affect the relationship between K and X. The statement 'X has only one son' (B) implies that N is the only son of X, but it does not necessarily make K the daughter of X since X could have other children who are daughters. The statement 'N is the grandson of Q' (C) provides information about N's ancestry but does not directly impact the relationship between K and X. Since X is already stated to be the mother of K and N, no extra information is required to establish that K is the daughter of X, making the correct answer 'No extra information is required' (D).",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is K related to Q?",
+      "answer": "Given that Q is the father of A and B, and N is the son of A and the only brother of K, this makes K the child of A or B since N and K are siblings. Since X is the mother of K and N, and X is the daughter-in-law of P, who has only one daughter and one son, it implies that A or B must be the child of P, making Q the grandfather of K, regardless of whether K is the child of A or B. Therefore, K is either the grandson or granddaughter of Q, making the correct answer 'Either B or C' (grandson or granddaughter).",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is X related to B?",
+      "answer": "Given that X is the daughter-in-law of P, and P has only one daughter and one son, and considering that Q is the father of A and B, for X to be the daughter-in-law of P, X must be married to either A or B, since they are the sons of Q and thus the grandchildren of P. Since N is the son of A, and X is the mother of N, it implies that X is married to A. Therefore, X is the wife of A, not directly related to B as a sister, daughter, or mother, but as the wife of A, she would be the sister-in-law of B, or more directly in the context provided, the relationship of X to B is that of a sister-in-law, but the closest option given is 'sister-in-law' is not provided; however, the most fitting answer based on the relationships described would be that X is the wife of A, making her related to B as a sister-in-law, but the provided options do not include 'sister-in-law'. The closest in meaning from the given options, considering typical family relationships, would be 'sister' if we were to infer a relationship not directly stated but implied through marriage, yet this is not accurate. The correct interpretation based on the information given should reflect X's relationship to B as the spouse of A, thus a sibling's spouse, or sister-in-law, which is not listed. However, given the options and understanding that X is A's spouse, and A is B's sibling, X would be B's sister-in-law, but since that's not an option, and considering the structure of relationships provided, the intention might be to understand X's relation in a more direct or implied familial tie not explicitly covered by the options provided.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is Kanu related to Soni?",
+      "answer": "Kanu is the grandfather of Soni because Kanu is the husband of Meet, and Meet is the mother of Roop, who is the father of Geet and Meet is also the mother of Roop, making Kanu the grandfather of Geet and Soni's cousin, hence Kanu is the grandfather of Soni.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "What is the relationship between Tony and Tanu?",
+      "answer": "Tony is the sister of Tanu because it is given in the problem statement that Tony is the sister of Tanu.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If Sona is the sister-in-law of Tanu, how is Tony related to Geet?",
+      "answer": "Tony is the aunt of Geet because Sona is the sister-in-law of Tanu, meaning Sona is the wife of Tony's brother, and since Tony is the sister of Tanu, and Tanu is the mother of Soni, making Tony the aunt of Soni and Geet's cousin, hence Tony is the aunt of Geet.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is Preet related to Tanu?",
+      "answer": "The relationship between Preet and Tanu cannot be determined because the problem statement only mentions that Moni is the brother of Preet, and Moni is the father of Tony, but it does not provide any direct relationship between Preet and Tanu.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is Arun related to Kiara?",
+      "answer": "Arun is the paternal uncle of Kiara because Arun is the child of Tahir, and Kiara is the daughter of Trisha, who is the sister of Arun's sibling, making Arun the paternal uncle of Kiara.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is Kiara related to Tahir?",
+      "answer": "Kiara is the granddaughter of Tahir because Kiara is the daughter of Trisha, who is the daughter of Tahir's child, making Kiara the granddaughter of Tahir.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If Micky is the spouse of Rhea, how is Roma related to Micky?",
+      "answer": "Roma is the wife of Micky's brother-in-law because Micky is the spouse of Rhea, and Rhea is the sister of Sushant, making Roma the wife of Sushant, who is Micky's brother-in-law.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Which of the following statements is possibly false?",
+      "answer": "The statement 'Kiara is a nephew of Arun' is possibly false because Kiara is the granddaughter of Tahir, and Arun is the child of Tahir, making Kiara the niece or nephew of Arun's sibling, but not necessarily Arun's nephew.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "What will Akram, son of Tahir's brother Kiku, call Sushant?",
+      "answer": "Akram will call Sushant his cousin because Akram is the son of Tahir's brother Kiku, making Akram the cousin of Tahir's children, and Sushant is the child of Tahir, making Akram and Sushant cousins.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "How is the person in the photograph related to the woman?",
+      "answer": "The person in the photograph is the son of the woman because the woman says 'His father is the only son of my daughter's grandmother's husband', which means the person in the photograph is the son of the woman's daughter's son, making the person in the photograph the woman's son.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "What is the relationship between Geet and Kanu?",
+      "answer": "The relationship between Geet and Kanu cannot be determined because the problem statement only mentions that Kanu is the husband of Meet, and Meet is the mother of Roop, who is the father of Geet, but it does not provide any direct relationship between Geet and Kanu.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If Sohan is a doctor, and Anuj is the son of Anupam, what can be inferred about Sohan's relationship to Anupam?",
+      "answer": "From the given information, we cannot directly infer Sohan's relationship to Anupam. However, we can conclude that Sohan is a doctor and Anuj is Anupam's son, but no direct connection between Sohan and Anupam is provided.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given that Anupam has two sons, and Shruti can be either a granddaughter or grandson of Daksha, what can be deduced about Shruti's relationship to Anupam?",
+      "answer": "Since we don't have information about Shruti's gender or direct relationship to Anupam, we cannot deduce any specific relationship between Shruti and Anupam. However, we know Anupam has two sons, but this does not directly relate to Shruti without more information.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If the husband of T's daughter is married to V, and U's father-in-law has two granddaughters, what can be inferred about the relationships between T, V, and U?",
+      "answer": "From the given statements, we can infer that T's daughter is married to V's husband, making T the mother-in-law of V's husband. Additionally, U's father-in-law having two granddaughters implies U is married to one of them, but without more information, we cannot directly link U to T or V.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "With the information that V has only one sibling, and W's brother has only one nephew, can we determine the relationship between V and W?",
+      "answer": "Given that V has only one sibling, and considering W's brother has only one nephew, it suggests that W's brother is V's father, making W the aunt or uncle of V. However, without knowing W's gender, we cannot specify the exact relationship.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If R is unmarried and Q has only one niece, how does this affect the possible relationships between R, Q, and other family members?",
+      "answer": "Since R is unmarried, R cannot be the parent of Q's niece. Given Q has only one niece, this niece must be the child of Q's sibling. If R is Q's sibling, then R's child would be Q's niece or nephew, but since R is unmarried, this scenario does not apply. Thus, Q's niece must be the child of another sibling of Q, and R remains unmarried without contributing to Q's nieces or nephews.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given the final family tree, how can we deduce that T is the grandmother of V?",
+      "answer": "To deduce that T is the grandmother of V, we need information showing T's child is V's parent. Without explicit statements or a visual of the family tree, we rely on previous deductions that might link T as the mother of V's parent, thus making T the grandmother of V.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If Q is the uncle of U's spouse, who is V, how does this relationship fit into the family tree?",
+      "answer": "Knowing Q is the uncle of U's spouse (V), we understand Q is the brother of either U's mother or father. Since V is U's spouse, Q's relationship to V is that of an uncle by marriage to V, and an uncle by blood to U's children, if any.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "With two couples, W and T, and V and U, in the family tree, what are the possible relationships between these individuals?",
+      "answer": "Given two couples, W and T, and V and U, possible relationships include W and T being parents of V or U, or V and U being the children of W and T. Without specific generational information, W and T could also be siblings of V and U's parents, or other configurations depending on the family structure.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If T is the mother of V, and Q is the father-in-law of T, what does this imply about Q's relationship to V?",
+      "answer": "If T is the mother of V, and Q is the father-in-law of T, this means Q is married to T's mother, making Q the grandfather of V. This establishes a clear three-generation relationship between Q, T, and V.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "In a seating arrangement where T is the cousin of S, how can we determine their family relationship?",
+      "answer": "To determine the family relationship where T is the cousin of S, we need to establish their common ancestors. Cousins share a set of grandparents but not parents, meaning T and S's parents are siblings, making T and S first cousins.",
+      "difficulty": "basic",
+      "domain": "seating_arrangements"
+    },
+    {
+      "question": "Given Pritam is the father of Hitesh, and M is the sister-in-law of K, can we infer any relationship between Pritam, Hitesh, M, and K?",
+      "answer": "From the information given, Pritam being the father of Hitesh establishes a direct parent-child relationship. M being the sister-in-law of K implies M is married to K's sibling. Without more information linking these individuals, we cannot directly relate Pritam and Hitesh to M and K.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If Pritam is the father of Hitesh, and Hitesh has a sister named Bhumika, what is the relationship between Pritam and Bhumika?",
+      "answer": "Pritam is the father of Bhumika. This can be deduced by understanding the family relationship where Pritam, being the father of Hitesh, would also be the father of Hitesh's sister, Bhumika.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given that Mohini is the mother of Anupam, and Anupam has a sibling named L, what is the relationship between Mohini and L?",
+      "answer": "Mohini is the mother of L. Since Mohini is Anupam's mother and L is Anupam's sibling, it logically follows that Mohini is also L's mother.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If Vaishnavi is the granddaughter of Suresh, and Vikram is Vaishnavi's father, what is the relationship between Vikram and Suresh?",
+      "answer": "Vikram is the son of Suresh. Since Vaishnavi is Suresh's granddaughter and Vikram is Vaishnavi's father, it implies that Vikram is Suresh's son.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Mainak is the grandson of Mayank, who is the brother-in-law of Seema. What is Mainak's relationship to Seema?",
+      "answer": "Mainak is the nephew of Seema. Since Mayank is Seema's brother-in-law, and Mainak is Mayank's grandson, Mainak would be Seema's nephew.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "In a family with members U, Q, and T, where U is the mother of Q and T, what is the relationship between Q and T?",
+      "answer": "Q and T are siblings. Given that U is the mother of both Q and T, it logically follows that Q and T are brother and sister.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If a girl is the niece of a boy, and the boy has a brother, what is the relationship between the girl and the boy's brother?",
+      "answer": "The girl is also the niece of the boy's brother. Since the girl is the niece of one of the brothers, and they share the same parents, she would be the niece of both brothers.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given that M is the daughter of D, and D has a sibling named X, what is the relationship between M and X?",
+      "answer": "M is the niece of X. Since M is D's daughter, and X is D's sibling, it follows that M is X's niece.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If Y is not the son of X, and X has a child named Z, what can be deduced about the relationship between Y and Z?",
+      "answer": "Nothing can be directly deduced about the relationship between Y and Z from the given information. The statement only provides information about Y not being the son of X, without giving any details about Z's relationship to Y or X.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Mrs. Khanna is Vineet's aunt. If Mr. Iyer is Vineet's father, what is Mrs. Khanna's relationship to Mr. Iyer?",
+      "answer": "Mrs. Khanna is either the sister of Mr. Iyer or the sister of Mrs. Iyer. Since Mrs. Khanna is Vineet's aunt and Mr. Iyer is Vineet's father, Mrs. Khanna must be the sibling of one of Vineet's parents.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Haryali is the daughter-in-law of Neelu and the sister-in-law of Sonu and Anku. If Anku is the aunt of Cheenu's two daughters, what is the relationship between Haryali and Cheenu?",
+      "answer": "Haryali is Cheenu's wife. Given that Anku is the aunt of Cheenu's daughters and Haryali is the sister-in-law of Anku, it implies that Haryali is married to Cheenu, making her the mother of Cheenu's daughters.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Daya is related to Sonu as his niece. If Sonu has a brother named Bablu, what is the relationship between Daya and Bablu?",
+      "answer": "Daya is also the niece of Bablu. Since Daya is Sonu's niece and Sonu and Bablu are brothers, Daya would be the niece of both Sonu and Bablu.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If Q is the father of A and B, and N is the son of A and the only brother of K, what can be inferred about the relationship between K and Q?",
+      "answer": "Since N is the son of A and the only brother of K, K must be the child of A. Given that Q is the father of A, Q must be the grandfather of K.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given that X is the mother of K, and N is the son of A and the only brother of K, can we determine the relationship between X and A?",
+      "answer": "Since N is the son of A and the only brother of K, and X is the mother of K, it implies that X is also the mother of N. Therefore, X must be the wife of A.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If P has only one daughter and one son, and X is the daughter-in-law of P, what can be inferred about the relationship between X and P's children?",
+      "answer": "Since X is the daughter-in-law of P, X must be the wife of P's son. Given that P has only one daughter and one son, X's husband is P's son, and P's daughter is X's sister-in-law.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Using the information from questions 39-41, can we determine the relationship between K and Q?",
+      "answer": "From the given explanations, we know that K could be either the grandson or granddaughter of Q. Therefore, the relationship between K and Q cannot be determined with certainty.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given the blood chart created using the hints from questions 42-44, what can be inferred about the relationship between Geet and Kanu?",
+      "answer": "From the blood chart, we can see that Geet is the child of Roop, and Kanu is the grandfather of Soni. However, the relationship between Geet and Kanu cannot be determined with certainty.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If Tony is the sister of Tanu, and Moni is the father of Tony, what can be inferred about the relationship between Moni and Tanu?",
+      "answer": "Since Tony is the sister of Tanu, and Moni is the father of Tony, Moni must also be the father of Tanu.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Using the information from questions 46-50, can we determine the relationship between Kiara and Arun?",
+      "answer": "From the given explanations, we know that Arun is the child of Tahir and Ileana, and Kiara is the child of Sushant. Since Arun is unmarried, Arun must be the maternal uncle of Kiara.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given that Roma is the mother of Trisha, and Trisha is the only sister of Kiara, what can be inferred about the relationship between Roma and Sushant?",
+      "answer": "Since Trisha is the only sister of Kiara, and Roma is the mother of Trisha, Roma must also be the mother of Kiara. Given that Sushant is the father of Kiara, Roma must be the wife of Sushant.",
+      "difficulty": "intermediate",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "If Soni is the child of either Roop or Roop's sister, and Kanu has only two children of opposite gender, what can be inferred about the relationship between Soni and Kanu?",
+      "answer": "Since Kanu has only two children of opposite gender, and Roop is one of them, Soni must be the child of either Roop or Roop's sister. However, the exact relationship between Soni and Kanu cannot be determined with certainty.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Given the statement 'Person's father = Only son of woman's daughter's grandfather's husband's = Woman's husband', can we determine the relationship between the person and the woman?",
+      "answer": "Let's break down the statement: 'Person's father = Only son of woman's daughter's grandfather's husband's = Woman's husband'. This implies that the person's father is the husband of the woman, making the woman the person's mother.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Using the information from the entire text, can we create a comprehensive family tree that includes all the mentioned individuals and their relationships?",
+      "answer": "By combining the information from the entire text, we can create a comprehensive family tree. However, due to the complexity and the amount of information, the exact relationships between all individuals would require a detailed and systematic approach to deduce accurately.",
+      "difficulty": "advanced",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "There are two people, Alex and Ben. Alex says, 'Ben is a liar.' Ben says, 'Alex is a truth-teller.' Who is a truth-teller, and who is a liar?",
+      "answer": "If Alex is a truth-teller, then Ben is a liar. But if Ben is a liar, then Alex cannot be a truth-teller because Ben says Alex is a truth-teller. This creates a contradiction. Therefore, Alex must be a liar, and Ben must be a truth-teller.",
+      "difficulty": "basic",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "In a family, Akram is the son of Rehana, and Rehana is the daughter of Sushant's father's wife. What relation is Akram to Sushant?",
+      "answer": "Rehana is the daughter of Sushant's father's wife, meaning Rehana is Sushant's sister. Since Akram is Rehana's son, Akram is Sushant's nephew.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "Five friends - John, Mary, David, Emily, and Michael - are seated in a row. John is to the immediate left of Mary, David is to the immediate right of Emily, and Michael is at one of the ends. If Emily is not at either end, what is the possible seating arrangement?",
+      "answer": "Given the constraints: John is to the immediate left of Mary, and David is to the immediate right of Emily. Since Emily is not at either end and Michael is at one end, the possible arrangement could be Michael, Emily, David, John, Mary or the reverse, considering the end positions.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "On an island, 80% of the people are knights (always tell the truth), and 20% are knaves (always lie). You meet two islanders, Jack and Jill. Jack says, 'Jill is a knave.' Jill says, 'Jack is a knight.' Who is a knight, and who is a knave?",
+      "answer": "If Jack is a knight, then Jill is indeed a knave as Jack says. But if Jill is a knave, then her statement about Jack being a knight must be false, which means Jack cannot be a knight. This creates a contradiction. Therefore, Jack must be a knave (because he lies about Jill), and Jill must be a knight (because she tells the truth about Jack).",
+      "difficulty": "intermediate",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "A family consists of three generations: grandparents, parents, and children. Tom is the grandson of George. Rachel is Tom's mother. Who is George to Rachel?",
+      "answer": "Since Tom is the grandson of George, and Rachel is Tom's mother, this makes Rachel the daughter of George's child, hence George's child is Rachel's parent. Therefore, George is Rachel's parent (either mother or father).",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "In a circular seating arrangement of 8 people, each person is either a knight or a knave. A person says, 'The person to my left is a knave, and the person to my right is a knight.' Can you determine the arrangement of knights and knaves?",
+      "answer": "This problem requires a systematic approach, considering the circular nature and the statements given. However, without more specific information about the arrangement or additional statements from other individuals, we cannot accurately determine the exact arrangement of knights and knaves.",
+      "difficulty": "advanced",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "Given that Alice is the sister of Bruce, and Bruce is the brother of Charlie, what is the relationship between Alice and Charlie?",
+      "answer": "Since Alice is the sister of Bruce, and Bruce is the brother of Charlie, this implies Alice and Charlie are siblings, making them either brother and sister or sister and sister. Given Alice is a female, Alice and Charlie are sisters.",
+      "difficulty": "basic",
+      "domain": "blood_relations"
+    },
+    {
+      "question": "There are three switches, but they are not labelled. Each switch corresponds to one of three light bulbs in a room. Each light bulb is off at the start. You can turn the lights on and off as many times as you want, but you can only enter the room one time to observe the bulbs. How can you figure out which switch controls which light bulb?",
+      "answer": "Turn switch 1 to the 'on' position for 5 minutes. Then turn it off. Turn switch 2 to the 'on' position and immediately enter the room. The bulb that is on is controlled by switch 2. The bulb that is warm (but off) is controlled by switch 1. The remaining bulb is controlled by switch 3.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "On a train, there are three cars: economy, business, and first class. Three passengers - Mr. Smith, Ms. Johnson, and Mr. Davis - are travelling in these cars, but not necessarily in the order given. Using the following clues: Mr. Smith is not in the economy car, Ms. Johnson is not in the first-class car, and Mr. Davis is in the business car. What car is each passenger in?",
+      "answer": "From the clues, we know Mr. Davis is in the business car. Since Mr. Smith is not in the economy car, and Ms. Johnson is not in the first-class car, this means Mr. Smith must be in the first-class car (because he can't be in economy, and business is taken by Mr. Davis). Therefore, Ms. Johnson must be in the economy car, as she cannot be in first class, and business is occupied.",
+      "difficulty": "intermediate",
+      "domain": "seating"
+    },
+    {
+      "question": "A woman has two coins that add up to 30 cents. One coin is not a nickel. What are the two coins?",
+      "answer": "The statement 'one coin is not a nickel' does not mean neither coin is a nickel. It means at least one of the coins is not a nickel. The solution is a quarter (25 cents) and a nickel (5 cents), as the quarter is not a nickel, and together they add up to 30 cents.",
+      "difficulty": "basic",
+      "domain": "knights_knaves"
+    },
+    {
+      "question": "Five people are to be seated in a row for a photograph. Tom must be at one of the ends, and no two of the following people can be seated next to each other: Sarah and Alex, or Ben and David. How many different seating arrangements are possible?",
+      "answer": "Given Tom is at one end, there are 4 spots left. Considering the restrictions: if Sarah is next to Tom, Alex cannot be next to her, so Alex has 2 possible spots (out of the remaining 3 after placing Sarah). Similarly, if Ben or David is placed, the other cannot be next to them, limiting their placement options based on who is already seated. This requires calculating the permutations while considering these restrictions, which can get complex due to the interdependency of the seating arrangements.",
+      "difficulty": "advanced",
+      "domain": "seating"
+    }
+  ]
+}

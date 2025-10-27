@@ -43,3 +43,6 @@ logs/
 .cache/
 hf_cache/
 cache/
+!logical_reasoning/
+!logical_reasoning/data/
+!logical_reasoning/data/**/*.json

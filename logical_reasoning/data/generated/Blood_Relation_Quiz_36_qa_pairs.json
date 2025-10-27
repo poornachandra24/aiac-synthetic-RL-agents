@@ -1,0 +1,325 @@
+{
+  "summary": "This logical reasoning content covers blood relation problems, which require analyzing family relationships and determining how individuals are related to each other. Key solving strategies mentioned include carefully reading the given information, using inference to draw conclusions, and creating a mental or visual representation of the family relationships. Important concepts and principles include understanding relationships such as uncle, aunt, brother, sister, mother, father, and spouse, as well as being able to identify more complex relationships like grandfather, grandmother, and maternal/paternal uncle. By applying these strategies and concepts, individuals can effectively solve blood relation problems and determine the relationships between family members.",
+  "qa_pairs": [
+    {
+      "question": "How is Rekha related to Meena?",
+      "answer": "Rekha is the mother-in-law of Meena because Rekha's husband, Tipu, is the grandfather of Sandy, and Sandy's father, Mohan, is married to Meena."
+    },
+    {
+      "question": "How is Duggu related to Meena?",
+      "answer": "Duggu is the brother-in-law of Meena because Duggu is the brother of Mohan, who is Meena's husband."
+    },
+    {
+      "question": "If P is the wife of Duggu, how is Tipu related to P?",
+      "answer": "Tipu is the father-in-law of P because Tipu is the father of Duggu's brother, Mohan, making Tipu the father-in-law of Duggu's wife, P."
+    },
+    {
+      "question": "How is Krishna related to Sandy?",
+      "answer": "Krishna is the maternal uncle of Sandy because Krishna is the uncle of Sandy, and since Sandy's father is Mohan, Krishna must be the brother of Mohan's wife, Meena."
+    },
+    {
+      "question": "How is Tipu related to Sandy?",
+      "answer": "Tipu is the grandfather of Sandy because Sandy is the son of Mohan, and Mohan is one of Tipu's two sons."
+    },
+    {
+      "question": "Who is the husband of Meena?",
+      "answer": "Mohan is the husband of Meena."
+    },
+    {
+      "question": "Who is the father of Sandy?",
+      "answer": "Mohan is the father of Sandy."
+    },
+    {
+      "question": "Who is the mother of Mohan?",
+      "answer": "Rekha is the mother of Mohan."
+    },
+    {
+      "question": "How is Rekha related to Sandy?",
+      "answer": "Rekha is the grandmother of Sandy."
+    },
+    {
+      "question": "Who is the brother of Mohan?",
+      "answer": "Duggu is the brother of Mohan."
+    },
+    {
+      "question": "How is Krishna related to Mohan?",
+      "answer": "Krishna is the brother-in-law of Mohan."
+    },
+    {
+      "question": "Who is the wife of Tipu?",
+      "answer": "Rekha is the wife of Tipu."
+    },
+    {
+      "question": "How many sons does Rekha have?",
+      "answer": "Rekha has two sons."
+    },
+    {
+      "question": "Who is the uncle of Sandy?",
+      "answer": "Krishna is the uncle of Sandy."
+    },
+    {
+      "question": "How is Tipu related to Mohan?",
+      "answer": "Tipu is the father of Mohan."
+    },
+    {
+      "question": "Who is the grandson of Tipu?",
+      "answer": "Sandy is the grandson of Tipu."
+    },
+    {
+      "question": "How is Duggu related to Tipu?",
+      "answer": "Duggu is the son of Tipu."
+    },
+    {
+      "question": "Who is the mother-in-law of P?",
+      "answer": "Rekha is the mother-in-law of P if P is the wife of Duggu."
+    },
+    {
+      "question": "How is Krishna related to Meena?",
+      "answer": "Krishna is the brother-in-law of Meena."
+    },
+    {
+      "question": "Who is the father-in-law of Meena?",
+      "answer": "Tipu is the father-in-law of Meena."
+    },
+    {
+      "question": "How is Rekha related to Duggu?",
+      "answer": "Rekha is the mother of Duggu."
+    },
+    {
+      "question": "Who is the brother of Duggu?",
+      "answer": "Mohan is the brother of Duggu."
+    },
+    {
+      "question": "How is Tipu related to Duggu?",
+      "answer": "Tipu is the father of Duggu."
+    },
+    {
+      "question": "Who is the wife of Mohan?",
+      "answer": "Meena is the wife of Mohan."
+    },
+    {
+      "question": "How is Krishna related to Sandy's father?",
+      "answer": "Krishna is the brother-in-law of Sandy's father, Mohan."
+    },
+    {
+      "question": "Who is the grandfather of Sandy?",
+      "answer": "Tipu is the grandfather of Sandy."
+    },
+    {
+      "question": "How is Rekha related to Sandy's father?",
+      "answer": "Rekha is the mother of Sandy's father, Mohan."
+    },
+    {
+      "question": "Who is the uncle of Sandy's father?",
+      "answer": "Krishna is the uncle of Sandy's father, Mohan."
+    },
+    {
+      "question": "How is Tipu related to Sandy's mother?",
+      "answer": "Tipu is the father-in-law of Sandy's mother, Meena."
+    },
+    {
+      "question": "Who is the brother of Sandy's father?",
+      "answer": "Duggu is the brother of Sandy's father, Mohan."
+    },
+    {
+      "question": "How is Rekha related to Sandy's mother?",
+      "answer": "Rekha is the mother-in-law of Sandy's mother, Meena."
+    },
+    {
+      "question": "Who is the husband of Sandy's mother?",
+      "answer": "Mohan is the husband of Sandy's mother, Meena."
+    },
+    {
+      "question": "How is Krishna related to Sandy's mother?",
+      "answer": "Krishna is the brother-in-law of Sandy's mother, Meena."
+    },
+    {
+      "question": "Who is the father of Sandy's mother?",
+      "answer": "The father of Sandy's mother, Meena, is not specified in the given information."
+    },
+    {
+      "question": "How is Tipu related to Sandy's father?",
+      "answer": "Tipu is the father of Sandy's father, Mohan."
+    },
+    {
+      "question": "Who is the mother of Sandy's father?",
+      "answer": "Rekha is the mother of Sandy's father, Mohan."
+    },
+    {
+      "question": "How is Rekha related to Sandy?",
+      "answer": "Rekha is the grandmother of Sandy."
+    },
+    {
+      "question": "Who is the brother of Sandy's mother?",
+      "answer": "The brother of Sandy's mother, Meena, is not specified in the given information."
+    },
+    {
+      "question": "How is Krishna related to Sandy?",
+      "answer": "Krishna is the maternal uncle of Sandy."
+    },
+    {
+      "question": "Who is the wife of Duggu?",
+      "answer": "P is the wife of Duggu."
+    },
+    {
+      "question": "How is Tipu related to P?",
+      "answer": "Tipu is the father-in-law of P."
+    },
+    {
+      "question": "Who is the mother of Duggu?",
+      "answer": "Rekha is the mother of Duggu."
+    },
+    {
+      "question": "How is Rekha related to P?",
+      "answer": "Rekha is the mother-in-law of P."
+    },
+    {
+      "question": "Who is the father of Duggu?",
+      "answer": "Tipu is the father of Duggu."
+    },
+    {
+      "question": "How is Krishna related to Duggu?",
+      "answer": "Krishna is the brother-in-law of Duggu."
+    },
+    {
+      "question": "Who is the brother of Krishna?",
+      "answer": "The brother of Krishna is not specified in the given information."
+    },
+    {
+      "question": "How is Tipu related to Krishna?",
+      "answer": "The relationship between Tipu and Krishna is not specified in the given information."
+    },
+    {
+      "question": "Who is the wife of Krishna?",
+      "answer": "The wife of Krishna is not specified in the given information."
+    },
+    {
+      "question": "How is Rekha related to Krishna?",
+      "answer": "The relationship between Rekha and Krishna is not specified in the given information."
+    },
+    {
+      "question": "Who is the father of Krishna?",
+      "answer": "The father of Krishna is not specified in the given information."
+    },
+    {
+      "question": "How is Duggu related to Krishna?",
+      "answer": "Duggu is the brother-in-law of Krishna."
+    },
+    {
+      "question": "Who is the mother of Krishna?",
+      "answer": "The mother of Krishna is not specified in the given information."
+    },
+    {
+      "question": "How is Tipu related to Meena?",
+      "answer": "Tipu is the father-in-law of Meena."
+    },
+    {
+      "question": "Who is the brother of Meena?",
+      "answer": "The brother of Meena is not specified in the given information."
+    },
+    {
+      "question": "How is Rekha related to Meena?",
+      "answer": "Rekha is the mother-in-law of Meena."
+    },
+    {
+      "question": "Who is the father of Meena?",
+      "answer": "The father of Meena is not specified in the given information."
+    },
+    {
+      "question": "How is Krishna related to Meena?",
+      "answer": "Krishna is the brother-in-law of Meena."
+    },
+    {
+      "question": "Who is the husband of Meena?",
+      "answer": "Mohan is the husband of Meena."
+    },
+    {
+      "question": "How is Duggu related to Meena?",
+      "answer": "Duggu is the brother-in-law of Meena."
+    },
+    {
+      "question": "Who is the mother of Meena?",
+      "answer": "The mother of Meena is not specified in the given information."
+    },
+    {
+      "question": "How is Tipu related to Sandy?",
+      "answer": "Tipu is the grandfather of Sandy."
+    },
+    {
+      "question": "Who is the son of Mohan?",
+      "answer": "Sandy is the son of Mohan."
+    },
+    {
+      "question": "How is Rekha related to Mohan?",
+      "answer": "Rekha is the mother of Mohan."
+    },
+    {
+      "question": "Who is the brother of Mohan?",
+      "answer": "Duggu is the brother of Mohan."
+    },
+    {
+      "question": "How is Krishna related to Mohan?",
+      "answer": "Krishna is the brother-in-law of Mohan."
+    },
+    {
+      "question": "Who is the father of Mohan?",
+      "answer": "Tipu is the father of Mohan."
+    },
+    {
+      "question": "How is Duggu related to Sandy?",
+      "answer": "Duggu is the uncle of Sandy."
+    },
+    {
+      "question": "Who is the mother of Sandy?",
+      "answer": "Meena is the mother of Sandy."
+    },
+    {
+      "question": "How is Tipu related to Meena?",
+      "answer": "Tipu is the father-in-law of Meena."
+    },
+    {
+      "question": "Who is the wife of Tipu?",
+      "answer": "Rekha is the wife of Tipu."
+    },
+    {
+      "question": "How is Rekha related to Sandy?",
+      "answer": "Rekha is the grandmother of Sandy."
+    },
+    {
+      "question": "Who is the uncle of Sandy?",
+      "answer": "Krishna is the uncle of Sandy."
+    },
+    {
+      "question": "How is Duggu related to Krishna?",
+      "answer": "Duggu is the brother-in-law of Krishna."
+    },
+    {
+      "question": "Who is the father of Duggu?",
+      "answer": "Tipu is the father of Duggu."
+    },
+    {
+      "question": "How is Tipu related to Duggu?",
+      "answer": "Tipu is the father of Duggu."
+    },
+    {
+      "question": "Who is the mother of Duggu?",
+      "answer": "Rekha is the mother of Duggu."
+    },
+    {
+      "question": "How is Rekha related to Duggu?",
+      "answer": "Rekha is the mother of Duggu."
+    },
+    {
+      "question": "Who is the brother of Duggu?",
+      "answer": "Mohan is the brother of Duggu."
+    },
+    {
+      "question": "How is Krishna related to Duggu?",
+      "answer": "Krishna is the brother-in-law of Duggu."
+    },
+    {
+      "question": "Who is the wife of Duggu?",
+      "answer": "P is the wife of Duggu."
+    }
+  ]
+}
