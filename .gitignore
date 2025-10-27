@@ -1,0 +1,45 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments
+.env/
+venv/
+.venv/
+
+# Model weights and large artifacts
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.h5
+
+# Hugging Face training artifacts
+checkpoint/
+checkpoints/
+runs/
+wandb/
+*.onnx
+*.gguf
+
+# General large data
+data/
+datasets/
+*.tar.gz
+*.zip
+*.7z
+*.ckpt
+
+# Logs
+*.log
+logs/
+
+# Cache directories
+.cache/
+hf_cache/
+cache/
