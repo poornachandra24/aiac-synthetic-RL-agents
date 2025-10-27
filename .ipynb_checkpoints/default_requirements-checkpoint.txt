@@ -4,3 +4,4 @@ ipdb==0.13.13
 transformers==4.56.2
 cut-cross-entropy
 torchao>=0.13.0
+numpy>=1.17,<2.3

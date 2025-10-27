@@ -19715,11 +19715,11 @@ T
 F 
 # 
 T 
-T 
-T 
-T 
+F 
 # 
 T 
+F 
+# 
 
 T 
 T 
@@ -19735,11 +19735,11 @@ T
 F 
 # 
 T 
-F 
+T 
+T 
+T 
 # 
 T 
-F 
-# 
 
 To use this table to assess argument validity, you will look for a row that serves as a 
 counterexample to the argument, namely a row in which the two premises are true but the 
