@@ -6,87 +6,22 @@ from tqdm import tqdm
 from pathlib import Path
 from typing import List, Tuple, Dict, Any
 
-# This correctly imports the Unsloth-powered AAgent from your answer_model.py
 from .answer_model import AAgent
 
 
-def robust_json_parser(raw_text: str) -> dict | None:
-    """Robustly extract and parse JSON from model output."""
-    # Strategy 1: Try to find JSON between code blocks
-    code_block_pattern = r'```(?:json)?\s*(\{.*?\})\s*```'
-    match = re.search(code_block_pattern, raw_text, re.DOTALL)
-    if match:
-        try:
-            return json.loads(match.group(1))
-        except json.JSONDecodeError:
-            pass
-    
-    # Strategy 2: Find complete JSON objects (non-greedy)
-    json_pattern = r'\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}'
-    matches = re.finditer(json_pattern, raw_text, re.DOTALL)
-    for match in matches:
-        try:
-            parsed = json.loads(match.group(0))
-            if "answer" in parsed:
-                return parsed
-        except json.JSONDecodeError:
-            continue
-    
-    # Strategy 3: Extract from first { to last }
-    try:
-        first_brace = raw_text.find('{')
-        if first_brace != -1:
-            last_brace = raw_text.rfind('}')
-            if last_brace != -1:
-                json_str = raw_text[first_brace:last_brace+1]
-                return json.loads(json_str)
-    except (json.JSONDecodeError, ValueError):
-        pass
-    
-    return None
-
-
-def clean_and_validate_answer(parsed_json: dict) -> dict | None:
-    """Clean and validate the parsed JSON answer."""
-    if not isinstance(parsed_json, dict):
-        return None
-    
-    if "answer" not in parsed_json:
-        print(f"❌ 'answer' key missing")
-        return None
-    
-    answer_value = parsed_json.get("answer", "")
-    if not isinstance(answer_value, str):
-        print(f"❌ 'answer' is not a string")
-        return None
-    
-    # Extract valid answer letter (A-D)
-    answer_match = re.search(r'([A-D])', answer_value.upper())
-    if not answer_match:
-        print(f"❌ No valid answer letter (A-D) in: {answer_value}")
-        return None
-    
-    cleaned = {
-        "answer": answer_match.group(1),
-        "reasoning": parsed_json.get("reasoning", "").strip()
-    }
-    
-    # Handle empty reasoning
-    if not cleaned["reasoning"]:
-        cleaned["reasoning"] = "Answer selected based on analysis of the question."
-        print(f"⚠️  Empty reasoning, using default")
-    
-    return cleaned
-
-
 class AnsweringAgent(object):
-    r"""Agent responsible for answering MCQ questions"""
+    r"""Agent responsible for answering MCQ questions with confidence scoring"""
 
-    def __init__(self, **kwargs):
+    def __init__(self, select_prompt1: bool = True, **kwargs):
         self.agent = AAgent(**kwargs)
+        # The select_prompt1 flag is kept for structural compatibility
+        self.select_prompt1 = select_prompt1
 
     def build_prompt(self, question_data: Dict[str, Any]) -> Tuple[str, str]:
-        # A forceful "JSON machine" prompt with a one-shot example
+        """
+        This method is now updated with our superior "JSON Machine" and "One-Shot" prompt
+        to ensure clean, correctly formatted output from the fine-tuned model.
+        """
         sys_prompt = """
         You are a JSON generation machine. Your sole purpose is to solve the following multiple-choice question and generate a single, valid JSON object that follows the specified format.
         Your final output must be ONLY the JSON object and nothing else.
@@ -104,48 +39,83 @@ class AnsweringAgent(object):
             '    "reasoning": "This is a brief, step-by-step reasoning for why A is the correct answer, written within 50 words."\n'
             "}}\n"
             "```\n\n"
-            "IMPORTANT: You MUST provide non-empty reasoning. Do NOT leave the reasoning field empty."
+            "IMPORTANT: Your reasoning MUST be concise and you MUST include the closing brace `}}` to complete the JSON object."
         )
         
-        choices_str = " ".join(question_data.get("choices", []))
+        choices_str = self._format_choices(question_data.get("choices", []))
         prompt = tmpl.format(question=question_data.get("question", "N/A"), choices=choices_str)
+        
+        # We return the same powerful prompt regardless of the select_prompt1 flag
         return prompt, sys_prompt
 
-    def answer_question_batch(
-        self, questions: List[Dict], **kwargs
+    def answer_question(
+        self, question_data: List[Dict], **kwargs
     ) -> Tuple[List[str], int | None, float | None]:
+        """
+        This method is simplified to handle batching, as our model is optimized for it.
+        It prepares a batch of prompts and gets a batch of responses.
+        """
         prompts = []
+        # A single system prompt is used for the entire batch for efficiency
         _, sp = self.build_prompt({})
-        for qd in questions:
+        for qd in question_data:
             p, _ = self.build_prompt(qd)
             prompts.append(p)
 
+        # This correctly calls our model, which expects a list of prompts
         resp, tl, gt = self.agent.generate_response(prompts, sp, **kwargs)
         return resp, tl, gt
 
-    def answer_all_questions(
+    def answer_batches(
         self, questions: List[Dict], batch_size: int = 5, **kwargs
-    ) -> Tuple[List[str], float, int]:
+    ) -> Tuple[List[str], List[int | None], List[float | None]]:
+        """
+        This is the original batching loop, now corrected to handle the tuple output
+        from our high-performance model.
+        """
         all_answers = []
-        total_tokens = 0
-        total_time = 0.0
+        all_tls, all_gts = [], []
         pbar = tqdm(total=(len(questions) + batch_size - 1) // batch_size, desc="STEPS: ")
 
         for i in range(0, len(questions), batch_size):
             batch_questions = questions[i : i + batch_size]
-            answers, tl, gt = self.answer_question_batch(batch_questions, **kwargs)
-            all_answers.extend(answers)
-            if tl: total_tokens += tl
-            if gt: total_time += gt
+            # `answer_question` now correctly handles batches
+            batch_answers_text, tl, gt = self.answer_question(batch_questions, **kwargs)
+            
+            all_answers.extend(batch_answers_text)
+            all_tls.append(tl)
+            all_gts.append(gt)
             pbar.update(1)
         pbar.close()
-        return all_answers, total_time, total_tokens
+        return all_answers, all_tls, all_gts
 
-    def save_answers(self, answers: List[Dict], file_path: str) -> None:
+    # --- The following original methods are kept for compatibility and structure ---
+    def count_tokens_a(self, text: str) -> int:
+        return len(self.agent.tokenizer.encode(str(text), add_special_tokens=False))
+
+    def filter_answers(self, ans: List[Dict[str, str]]) -> List[Dict[str, str] | None]:
+        def basic_checks(a1: Dict[str, str]) -> bool:
+            if "answer" in a1 and isinstance(a1["answer"], str):
+                if len(a1["answer"]) == 1 and a1["answer"].upper() in "ABCD":
+                    return True
+            return False
+
+        filtered = []
+        for a in ans:
+            if a and basic_checks(a):
+                filtered.append(a)
+            else:
+                filtered.append(None) # Keep placeholders for scoring
+        return filtered
+
+    def save_answers(self, answers: List[Any], file_path: str | Path) -> None:
         path = Path(file_path)
         path.parent.mkdir(parents=True, exist_ok=True)
         with open(path, "w") as f:
             json.dump(answers, f, indent=4)
+
+    def _format_choices(self, choices: List[str]) -> str:
+        return " ".join(choices)
 
 
 if __name__ == "__main__":
@@ -157,54 +127,73 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     with open(args.input_file, "r") as f:
-        questions_to_answer = json.load(f)
+        sample_questions = json.load(f)
 
     agent = AnsweringAgent()
     gen_kwargs = {"tgps_show": True}
     with open("agen.yaml", "r") as f:
         gen_kwargs.update(yaml.safe_load(f))
 
-    raw_outputs, total_time, total_tokens = agent.answer_all_questions(
-        questions=questions_to_answer, batch_size=args.batch_size, **gen_kwargs
+    # The main call to the original `answer_batches` method
+    raw_outputs, tls, gts = agent.answer_batches(
+        questions=sample_questions, batch_size=args.batch_size, **gen_kwargs
     )
 
     if args.verbose:
-        for i, (q, raw_a) in enumerate(zip(questions_to_answer, raw_outputs)):
-            print("\n" + "="*20 + f" Question {i+1} " + "="*20)
-            print(f"Question: {q.get('question', 'N/A')}")
-            print(f"Expected Answer: {q.get('answer', 'N/A')}")
-            print(f"Model Raw Output:\n{raw_a}")
-        
-        if total_time > 0:
-            print("\n" + "=" * 50)
-            print(f"Total Time Taken: {total_time:.3f} seconds; Total Tokens: {total_tokens}; TGPS: {total_tokens/total_time:.3f} tokens/sec\n")
-            print("=" * 50 + "\n")
+        # Verbose output now shows raw model text
+        for i, (q, raw_a) in enumerate(zip(sample_questions, raw_outputs)):
+            print(f"\n{'='*20} Question {i+1} {'='*20}")
+            print(f"Expected: {q.get('answer', 'N/A')}, Model Raw Output:\n{raw_a}")
+        if gts:
+            total_time = sum(filter(None, gts))
+            total_tokens = sum(filter(None, tls))
+            if total_time > 0:
+                print(f"\n{'='*50}\nTotal Time: {total_time:.3f}s; Total Tokens: {total_tokens}; TGPS: {total_tokens/total_time:.3f}\n{'='*50}\n")
 
-    # === IMPROVED ROBUST JSON PARSING ===
+    # === OUR INTEGRATED 3-LAYER PARSING CASCADE ===
+    # This replaces the original script's slow self-correction loop with our robust, multi-layered solution.
     clean_answers = []
-    print("\n--- Starting Robust JSON Parsing ---")
-    
-    for idx, raw_text in enumerate(raw_outputs, 1):
-        print(f"[Q{idx}] ", end="")
-        
-        # Step 1: Extract JSON
-        parsed_json = robust_json_parser(raw_text)
-        
-        if parsed_json is None:
-            print(f"❌ No valid JSON found")
-            continue
-        
-        # Step 2: Clean and validate
-        cleaned = clean_and_validate_answer(parsed_json)
-        
-        if cleaned:
-            clean_answers.append(cleaned)
-            print(f"✅ Answer: {cleaned['answer']}")
-    # =====================================
-    
-    print(f"\n{'='*50}")
-    print(f"Successfully parsed {len(clean_answers)}/{len(raw_outputs)} outputs")
-    print(f"{'='*50}")
-    
+    print("\n--- Starting 3-Layer Robust JSON Parsing ---")
+    for raw_text in raw_outputs:
+        parsed_json = None
+        # Layer 1: Direct Parsing
+        try:
+            parsed_json = json.loads(raw_text)
+        except json.JSONDecodeError:
+            # Layer 2: Regex Extraction
+            match = re.search(r'\{.*\}', raw_text, re.DOTALL)
+            if match:
+                try: parsed_json = json.loads(match.group(0))
+                except json.JSONDecodeError: pass
+            
+            # Layer 3: LLM Self-Correction (Last Resort)
+            if parsed_json is None:
+                try:
+                    correction_prompt = f"Extract and return ONLY the valid JSON object from the following text:\n\n```\n{raw_text}\n```"
+                    corrected_output, _, _ = agent.agent.generate_response(
+                        [correction_prompt], "You are an expert JSON extractor.", temperature=0.0, do_sample=False
+                    )
+                    parsed_json = json.loads(corrected_output[0])
+                except Exception:
+                    pass # Final failure
+
+        # Final validation and cleanup
+        if parsed_json and "answer" in parsed_json and isinstance(parsed_json.get("answer"), str):
+            answer_match = re.search(r'([A-D])', parsed_json["answer"].upper())
+            if answer_match:
+                parsed_json["answer"] = answer_match.group(1)
+                clean_answers.append(parsed_json)
+            else:
+                clean_answers.append(None) # Append None if answer format is invalid
+        else:
+            clean_answers.append(None) # Append None if parsing failed entirely
+
+    # The final part of the script uses the original method names for saving and filtering
     agent.save_answers(clean_answers, args.output_file)
-    print(f"\nSaved {len(clean_answers)} clean answers to {args.output_file}!")
+    filtered_file_name = args.output_file.replace("answers.json", "filtered_answers.json")
+    # We call the original filter function on our cleaned data
+    final_filtered_answers = agent.filter_answers(clean_answers)
+    agent.save_answers(final_filtered_answers, filtered_file_name)
+    
+    print(f"\nSaved {len([a for a in clean_answers if a])} clean answers to {args.output_file}!")
+    print(f"Saved {len([a for a in final_filtered_answers if a])} filtered answers to {filtered_file_name}!")
