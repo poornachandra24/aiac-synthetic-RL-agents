@@ -1,0 +1,6 @@
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+#### Unsloth: `hf_xet==1.1.10` and `ipykernel>6.30.1` breaks progress bars. Disabling for now in XET.
+#### Unsloth: To re-enable progress bars, please downgrade to `ipykernel==6.30.1` or wait for a fix to
+https://github.com/huggingface/xet-core/issues/526
+INFO 10-28 14:39:44 [__init__.py:225] Automatically detected platform rocm.
+🦥 Unsloth Zoo will now patch everything to make training faster!

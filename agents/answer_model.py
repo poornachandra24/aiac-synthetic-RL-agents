@@ -2,19 +2,20 @@
 import time
 import torch
 from typing import Optional, List
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from unsloth import FastLanguageModel
 
 torch.random.manual_seed(0)
 
 
 class AAgent(object):
     def __init__(self, **kwargs):
-        model_name = "Qwen/Qwen3-4B"
+        model_name = "Thunderbird2410/Llama-3-8B-Puzzles-Unsloth"
 
         # load the tokenizer and the model
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name, padding_side="left")
-        self.model = AutoModelForCausalLM.from_pretrained(
-            model_name, torch_dtype="auto", device_map="auto"
+        self.model, self.tokenizer = FastLanguageModel.from_pretrained(
+            model_name = model_name,
+            dtype = torch.bfloat16,
+            device_map = "auto",
         )
 
     def generate_response(
@@ -22,79 +23,61 @@ class AAgent(object):
     ) -> str:
         if system_prompt is None:
             system_prompt = "You are a helpful assistant."
-        if isinstance(message, str):
-            message = [message]
-        # Prepare all messages for batch processing
-        all_messages = []
-        for msg in message:
-            messages = [
+        
+        # Ensure message is a list for batch processing
+        messages_list = [message] if isinstance(message, str) else message
+        
+        # Prepare all messages for batch processing using the correct chat template
+        batched_messages = [
+            [
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": msg},
-            ]
-            all_messages.append(messages)
+            ] for msg in messages_list
+        ]
 
-        # convert all messages to text format
-        texts = []
-        for messages in all_messages:
-            text = self.tokenizer.apply_chat_template(
-                messages,
-                tokenize=False,
-                add_generation_prompt=True,
-                enable_thinking=False,
-            )
-            texts.append(text)
-
-        # tokenize all texts together with padding
-        model_inputs = self.tokenizer(
-            texts, return_tensors="pt", padding=True, truncation=True
+        # Tokenize the entire batch at once with padding
+        inputs = self.tokenizer.apply_chat_template(
+            batched_messages,
+            tokenize = True,
+            add_generation_prompt = True,
+            return_tensors = "pt",
+            padding = True,
         ).to(self.model.device)
 
-        tgps_show_var = kwargs.get("tgps_show", False)
-        # conduct batch text completion
+        # Separate kwargs for generation from other potential kwargs
+        tgps_show_var = kwargs.pop("tgps_show", False)
+        
+        # Default generation parameters, can be overridden by kwargs
+        generation_params = {
+            "max_new_tokens": 1024,
+            "pad_token_id": self.tokenizer.pad_token_id,
+        }
+        generation_params.update(kwargs)
+
+        # Generate responses for the batch
         if tgps_show_var:
             start_time = time.time()
-        generated_ids = self.model.generate(
-            **model_inputs,
-            max_new_tokens=kwargs.get("max_new_tokens", 1024),
-            pad_token_id=self.tokenizer.pad_token_id,
-        )
+        
+        generated_ids = self.model.generate(inputs, **generation_params)
+        
         if tgps_show_var:
             generation_time = time.time() - start_time
+        
+        # Decode the batch, ensuring to skip the original prompt tokens
+        input_lengths = inputs.shape[1]
+        decoded_outputs = self.tokenizer.batch_decode(
+            generated_ids[:, input_lengths:], 
+            skip_special_tokens=True,
+        )
+        
+        # Strip any leading/trailing whitespace from each response
+        decoded_outputs = [output.strip() for output in decoded_outputs]
 
-        # decode the batch
-        batch_outs = []
         if tgps_show_var:
-            token_len = 0
-        for i, (input_ids, generated_sequence) in enumerate(
-            zip(model_inputs.input_ids, generated_ids)
-        ):
-            # extract only the newly generated tokens
-            output_ids = generated_sequence[len(input_ids) :].tolist()
-
-            # compute total tokens generated
-            if tgps_show_var:
-                token_len += len(output_ids)
-
-            # remove thinking content using regex
-            # result = re.sub(r'<think>[\s\S]*?</think>', '', full_result, flags=re.DOTALL).strip()
-            index = (
-                len(output_ids) - output_ids[::-1].index(151668)
-                if 151668 in output_ids
-                else 0
-            )
-
-            # decode the full result
-            content = self.tokenizer.decode(
-                output_ids[index:], skip_special_tokens=True
-            ).strip("\n")
-            batch_outs.append(content)
-        if tgps_show_var:
-            return (
-                batch_outs[0] if len(batch_outs) == 1 else batch_outs,
-                token_len,
-                generation_time,
-            )
-        return batch_outs[0] if len(batch_outs) == 1 else batch_outs, None, None
+            total_new_tokens = sum(len(ids[input_lengths:]) for ids in generated_ids)
+            return (decoded_outputs[0] if isinstance(message, str) else decoded_outputs, total_new_tokens, generation_time)
+        
+        return (decoded_outputs[0] if isinstance(message, str) else decoded_outputs, None, None)
 
 
 if __name__ == "__main__":

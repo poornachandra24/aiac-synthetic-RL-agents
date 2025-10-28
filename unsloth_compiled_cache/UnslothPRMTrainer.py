@@ -1,8 +1,8 @@
 """
 2025.10.10
 2025.10.9
-4.57.1
-0.23.0
+4.56.2
+0.20.0
 __UNSLOTH_VERSIONING__
 """
 
@@ -27,7 +27,7 @@ import torch
 import torch.nn as nn
 from torch.nn import functional as F
 from typing import Any, List, Optional, Tuple, Union, Dict, Set, Callable
-from trl.trainer.prm_trainer import (BaseImageProcessor, Callable, DataCollator, DataCollatorForTokenClassification, Dataset, EvalPrediction, FeatureExtractionMixin, Optional, PRMConfig, PRMTrainer, PartialState, Path, PreTrainedModel, PreTrainedTokenizerBase, ProcessorMixin, Trainer, TrainerCallback, Union, chain, compute_accuracy, disable_dropout_in_model, features, generate_model_card, is_wandb_available, nn, os, prepare_peft_model, textwrap, torch, wandb, Optional, PreTrainedModel, Trainer, os, torch)
+from trl.trainer.prm_trainer import (BaseImageProcessor, Callable, DataCollator, DataCollatorForTokenClassification, Dataset, EvalPrediction, FeatureExtractionMixin, Optional, PRMConfig, PRMTrainer, PartialState, Path, PeftModel, PreTrainedModel, PreTrainedTokenizerBase, ProcessorMixin, Trainer, TrainerCallback, Union, chain, compute_accuracy, disable_dropout_in_model, features, generate_model_card, inspect, is_peft_available, is_wandb_available, nn, os, prepare_model_for_kbit_training, textwrap, torch, wandb, warnings, Optional, PeftModel, PreTrainedModel, Trainer, is_peft_available, os, torch)
 
 
 import os
@@ -231,6 +231,7 @@ class UnslothPRMConfig(PRMConfig):
         seed = 3407,
         data_seed = 3407,
         jit_mode_eval = False,
+        use_ipex = False,
         bf16 = False,
         fp16 = False,
         fp16_opt_level = 'O1',
@@ -256,7 +257,7 @@ class UnslothPRMConfig(PRMConfig):
         metric_for_best_model = None,
         greater_is_better = None,
         ignore_data_skip = False,
-        fsdp = None,
+        fsdp = '',
         fsdp_min_num_params = 0,
         fsdp_config = None,
         fsdp_transformer_layer_cls_to_wrap = None,
@@ -270,8 +271,6 @@ class UnslothPRMConfig(PRMConfig):
         group_by_length = False,
         length_column_name = 'length',
         report_to = None,
-        project = 'huggingface',
-        trackio_space_id = 'trackio',
         ddp_find_unused_parameters = None,
         ddp_bucket_cap_mb = None,
         ddp_broadcast_buffers = None,
@@ -287,7 +286,7 @@ class UnslothPRMConfig(PRMConfig):
         hub_private_repo = None,
         hub_always_push = False,
         hub_revision = None,
-        gradient_checkpointing = True,
+        gradient_checkpointing = False,
         gradient_checkpointing_kwargs = None,
         include_inputs_for_metrics = False,
         eval_do_concat_batches = True,
@@ -384,6 +383,7 @@ class UnslothPRMConfig(PRMConfig):
             seed = seed,
             data_seed = data_seed,
             jit_mode_eval = jit_mode_eval,
+            use_ipex = use_ipex,
             bf16 = bf16,
             fp16 = fp16,
             fp16_opt_level = fp16_opt_level,
@@ -423,8 +423,6 @@ class UnslothPRMConfig(PRMConfig):
             group_by_length = group_by_length,
             length_column_name = length_column_name,
             report_to = report_to,
-            project = project,
-            trackio_space_id = trackio_space_id,
             ddp_find_unused_parameters = ddp_find_unused_parameters,
             ddp_bucket_cap_mb = ddp_bucket_cap_mb,
             ddp_broadcast_buffers = ddp_broadcast_buffers,
@@ -504,8 +502,30 @@ class _UnslothPRMTrainer(Trainer):
         preprocess_logits_for_metrics: Optional[Callable[[torch.Tensor, torch.Tensor], torch.Tensor]] = None,
         peft_config: Optional[dict] = None,
     ):
-        if False:
-            model = prepare_peft_model(model, peft_config, args)
+        if not is_peft_available() and peft_config is not None:
+            raise ValueError(
+                "PEFT is not installed and you passed a `peft_config` in the trainer's kwargs, please install it to use the PEFT models"
+            )
+        elif is_peft_available() and peft_config is not None:
+            if not isinstance(model, PeftModel):
+                if getattr(model, "is_loaded_in_8bit", False) or getattr(model, "is_quantized", False):
+                    _supports_gc_kwargs = "gradient_checkpointing_kwargs" in list(
+                        inspect.signature(prepare_model_for_kbit_training).parameters
+                    )
+
+                    prepare_model_kwargs = {"use_gradient_checkpointing": args.gradient_checkpointing}
+
+                    if not _supports_gc_kwargs and args.gradient_checkpointing_kwargs is not None:
+                        warnings.warn(
+                            "You passed `gradient_checkpointing_kwargs` in the trainer's kwargs, but your peft version does not support it. "
+                            "please update to the latest version of peft to use `gradient_checkpointing_kwargs`."
+                        )
+                    elif _supports_gc_kwargs and args.gradient_checkpointing_kwargs is not None:
+                        prepare_model_kwargs["gradient_checkpointing_kwargs"] = args.gradient_checkpointing_kwargs
+
+                    model = prepare_model_for_kbit_training(model, **prepare_model_kwargs)
+
+                model = model
 
         # Disable dropout in the model
         if args.disable_dropout:
@@ -720,12 +740,8 @@ class _UnslothPRMTrainer(Trainer):
         if hasattr(self.model.config, "unsloth_version"):
             tags.add("unsloth")
 
-        if "JOB_ID" in os.environ:
-            tags.add("hf_jobs")
-
         tags.update(self._tag_names)
 
-        # docstyle-ignore
         citation = textwrap.dedent("""\
         @article{uesato2022solving,
             title        = {{Solving Math Word Problems With Process- and Outcome-Based Feedback}},

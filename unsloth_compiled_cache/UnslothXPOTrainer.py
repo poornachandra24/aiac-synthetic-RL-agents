@@ -1,8 +1,8 @@
 """
 2025.10.10
 2025.10.9
-4.57.1
-0.23.0
+4.56.2
+0.20.0
 __UNSLOTH_VERSIONING__
 """
 
@@ -214,6 +214,7 @@ class UnslothXPOConfig(XPOConfig):
         seed = 3407,
         data_seed = 3407,
         jit_mode_eval = False,
+        use_ipex = False,
         bf16 = False,
         fp16 = False,
         fp16_opt_level = 'O1',
@@ -239,7 +240,7 @@ class UnslothXPOConfig(XPOConfig):
         metric_for_best_model = None,
         greater_is_better = None,
         ignore_data_skip = False,
-        fsdp = None,
+        fsdp = '',
         fsdp_min_num_params = 0,
         fsdp_config = None,
         fsdp_transformer_layer_cls_to_wrap = None,
@@ -253,8 +254,6 @@ class UnslothXPOConfig(XPOConfig):
         group_by_length = False,
         length_column_name = 'length',
         report_to = None,
-        project = 'huggingface',
-        trackio_space_id = 'trackio',
         ddp_find_unused_parameters = None,
         ddp_bucket_cap_mb = None,
         ddp_broadcast_buffers = None,
@@ -270,7 +269,7 @@ class UnslothXPOConfig(XPOConfig):
         hub_private_repo = None,
         hub_always_push = False,
         hub_revision = None,
-        gradient_checkpointing = True,
+        gradient_checkpointing = False,
         gradient_checkpointing_kwargs = None,
         include_inputs_for_metrics = False,
         eval_do_concat_batches = True,
@@ -302,31 +301,14 @@ class UnslothXPOConfig(XPOConfig):
         max_new_tokens = 64,
         max_length = 512,
         temperature = 0.9,
-        top_p = 1.0,
-        top_k = None,
-        min_p = None,
-        repetition_penalty = 1.0,
-        generation_kwargs = {},
-        use_transformers_paged = False,
-        cache_implementation = None,
         missing_eos_penalty = None,
         loss_type = 'sigmoid',
+        dataset_num_proc = None,
         disable_dropout = True,
         use_vllm = False,
-        vllm_model_impl = 'vllm',
-        vllm_guided_decoding_regex = None,
-        vllm_gpu_memory_utilization = 0.55,
-        vllm_mode = 'colocate',
-        vllm_server_base_url = None,
-        vllm_server_host = '0.0.0.0',
-        vllm_server_port = 8000,
-        vllm_server_timeout = 240.0,
-        vllm_tensor_parallel_size = 1,
+        gpu_memory_utilization = 0.55,
         ds3_gather_for_generation = True,
         model_init_kwargs = None,
-        reward_weights = None,
-        dataset_num_proc = None,
-        gpu_memory_utilization = None,
         vllm_sampling_params = None,
         unsloth_num_chunks = -1,
         max_seq_length = None,
@@ -394,6 +376,7 @@ class UnslothXPOConfig(XPOConfig):
             seed = seed,
             data_seed = data_seed,
             jit_mode_eval = jit_mode_eval,
+            use_ipex = use_ipex,
             bf16 = bf16,
             fp16 = fp16,
             fp16_opt_level = fp16_opt_level,
@@ -433,8 +416,6 @@ class UnslothXPOConfig(XPOConfig):
             group_by_length = group_by_length,
             length_column_name = length_column_name,
             report_to = report_to,
-            project = project,
-            trackio_space_id = trackio_space_id,
             ddp_find_unused_parameters = ddp_find_unused_parameters,
             ddp_bucket_cap_mb = ddp_bucket_cap_mb,
             ddp_broadcast_buffers = ddp_broadcast_buffers,
@@ -482,31 +463,14 @@ class UnslothXPOConfig(XPOConfig):
             max_new_tokens = max_new_tokens,
             max_length = max_length,
             temperature = temperature,
-            top_p = top_p,
-            top_k = top_k,
-            min_p = min_p,
-            repetition_penalty = repetition_penalty,
-            generation_kwargs = generation_kwargs,
-            use_transformers_paged = use_transformers_paged,
-            cache_implementation = cache_implementation,
             missing_eos_penalty = missing_eos_penalty,
             loss_type = loss_type,
+            dataset_num_proc = dataset_num_proc,
             disable_dropout = disable_dropout,
             use_vllm = use_vllm,
-            vllm_model_impl = vllm_model_impl,
-            vllm_guided_decoding_regex = vllm_guided_decoding_regex,
-            vllm_gpu_memory_utilization = vllm_gpu_memory_utilization,
-            vllm_mode = vllm_mode,
-            vllm_server_base_url = vllm_server_base_url,
-            vllm_server_host = vllm_server_host,
-            vllm_server_port = vllm_server_port,
-            vllm_server_timeout = vllm_server_timeout,
-            vllm_tensor_parallel_size = vllm_tensor_parallel_size,
+            gpu_memory_utilization = gpu_memory_utilization,
             ds3_gather_for_generation = ds3_gather_for_generation,
-            model_init_kwargs = model_init_kwargs,
-            reward_weights = reward_weights,
-            dataset_num_proc = dataset_num_proc,
-            gpu_memory_utilization = gpu_memory_utilization,**kwargs)
+            model_init_kwargs = model_init_kwargs,**kwargs)
         self.vllm_sampling_params = vllm_sampling_params
         self.unsloth_num_chunks = unsloth_num_chunks
         self.max_seq_length = max_seq_length
@@ -521,7 +485,7 @@ class _UnslothXPOTrainer(OnlineDPOTrainer):
         self,
         model: Union[PreTrainedModel, nn.Module] = None,
         ref_model: Union[PreTrainedModel, nn.Module] = None,
-        reward_funcs: Optional[nn.Module] = None,
+        reward_model: Optional[nn.Module] = None,
         judge: Optional[BasePairwiseJudge] = None,
         args: Optional[XPOConfig] = None,
         data_collator: Optional[Callable] = None,
@@ -530,27 +494,23 @@ class _UnslothXPOTrainer(OnlineDPOTrainer):
         processing_class: Optional[
             Union[PreTrainedTokenizerBase, BaseImageProcessor, FeatureExtractionMixin, ProcessorMixin]
         ] = None,
-        reward_processing_classes: Optional[Union[PreTrainedTokenizerBase, list[PreTrainedTokenizerBase]]] = None,
         peft_config: Optional[dict] = None,
         compute_metrics: Optional[Callable[[EvalPrediction], dict]] = None,
         callbacks: Optional[list[TrainerCallback]] = None,
         optimizers: tuple[torch.optim.Optimizer, torch.optim.lr_scheduler.LambdaLR] = (None, None),
         preprocess_logits_for_metrics: Optional[Callable[[torch.Tensor, torch.Tensor], torch.Tensor]] = None,
-        # Deprecated parameters
-        reward_model: Optional[Union[PreTrainedModel, nn.Module]] = None,
     ) -> None:
         super().__init__(
             model=model,
             ref_model=ref_model,
             judge=judge,
-            reward_funcs=reward_funcs,
             reward_model=reward_model,
             args=args,
             data_collator=data_collator,
             train_dataset=train_dataset,
             eval_dataset=eval_dataset,
             processing_class=processing_class,
-            reward_processing_classes=reward_processing_classes,
+            reward_processing_class=processing_class,  # for now, XPOTrainer can't use any reward model
             peft_config=peft_config,
             compute_metrics=compute_metrics,
             callbacks=callbacks,
@@ -580,10 +540,8 @@ class _UnslothXPOTrainer(OnlineDPOTrainer):
             "alpha": [],
             "beta": [],
         }
-        if self.reward_funcs is not None:
-            if len(self.reward_funcs) != 1:
-                raise ValueError("XPOTrainer only supports one reward function/model.")
-            self.reward_funcs = self.reward_funcs[0]
+        if self.reward_model is not None:
+            # Replace "scores" by "model_scores" and "ref_scores"
             self.stats["objective/model_scores"] = []
             self.stats["objective/ref_scores"] = []
             self.stats["objective/scores_margin"] = []
@@ -654,10 +612,10 @@ class _UnslothXPOTrainer(OnlineDPOTrainer):
     def _compute_rewards(self, model_data, ref_data, context_length):
         with torch.no_grad():
             _, model_scores, _ = get_reward(
-                self.reward_funcs, model_data["input_ids"], self.processing_class.pad_token_id, context_length
+                self.reward_model, model_data["input_ids"], self.processing_class.pad_token_id, context_length
             )
             _, ref_scores, _ = get_reward(
-                self.reward_funcs, ref_data["input_ids"], self.processing_class.pad_token_id, context_length
+                self.reward_model, ref_data["input_ids"], self.processing_class.pad_token_id, context_length
             )
 
         # Apply EOS penalty if needed
@@ -800,7 +758,7 @@ class _UnslothXPOTrainer(OnlineDPOTrainer):
         self.stats["loss/xpo"].append(gather_mean(xpo_losses))
 
         # Log scores
-        if self.reward_funcs is not None:
+        if self.reward_model is not None:
             self.stats["objective/model_scores"].append(gather_mean(model_scores))
             self.stats["objective/ref_scores"].append(gather_mean(ref_scores))
             self.stats["objective/scores_margin"].append(gather_mean(model_scores - ref_scores))
@@ -889,7 +847,7 @@ class _UnslothXPOTrainer(OnlineDPOTrainer):
         model_data, ref_data = self._process_completions(model_output, ref_output, prompts)
 
         # Compute rewards
-        if self.reward_funcs is not None:
+        if self.reward_model is not None:
             model_scores, ref_scores = self._compute_rewards(model_data, ref_data, context_length)
             chosen_mask = model_scores >= ref_scores
         else:
@@ -984,12 +942,8 @@ class _UnslothXPOTrainer(OnlineDPOTrainer):
         if hasattr(self.model.config, "unsloth_version"):
             tags.add("unsloth")
 
-        if "JOB_ID" in os.environ:
-            tags.add("hf_jobs")
-
         tags.update(self._tag_names)
 
-        # docstyle-ignore
         citation = textwrap.dedent("""\
         @article{jung2024binary,
             title        = {{Exploratory Preference Optimization: Harnessing Implicit Q*-Approximation for Sample-Efficient RLHF}},
@@ -1025,7 +979,7 @@ class UnslothXPOTrainer(_UnslothXPOTrainer):
             Hugging Face transformer model with a casual language modelling head. Used for implicit reward computation
             and loss. If no reference model is provided, the trainer will create a reference model with the same
             architecture as the model to be optimized.
-        reward_funcs (`transformers.PreTrainedModel`):
+        reward_model (`transformers.PreTrainedModel`):
             The reward model to score completions with, preferably an `AutoModelForSequenceClassification`.
         judge (`BasePairwiseJudge`):
             The judge to use for pairwise comparison of model completions.
@@ -1054,32 +1008,23 @@ class UnslothXPOTrainer(_UnslothXPOTrainer):
             The optimizer and scheduler to use for training.
         preprocess_logits_for_metrics (`Callable[[torch.Tensor, torch.Tensor], torch.Tensor]`):
             The function to use to preprocess the logits before computing the metrics.
-
-    .. deprecated:: 0.22.0
-        The following parameters are deprecated and will be removed in a future version:
-
-        * `reward_model`: Use `reward_funcs` instead. For example, change `reward_model=model` to `reward_funcs=model`.
-        * `reward_processing_class`: Use `reward_processing_classes` instead. For example, change
-          `reward_processing_class=tokenizer` to `reward_processing_classes=tokenizer`.
     
     """
     def __init__(
         self,
         model = None,
         ref_model = None,
-        reward_funcs = None,
+        reward_model = None,
         judge = None,
         args = None,
         data_collator = None,
         train_dataset = None,
         eval_dataset = None,
         processing_class = None,
-        reward_processing_classes = None,
         peft_config = None,
         compute_metrics = None,
         callbacks = None,
         preprocess_logits_for_metrics = None,
-        reward_model = None,
         **kwargs
     ):
         if args is None: args = UnslothXPOConfig()
@@ -1205,19 +1150,17 @@ class UnslothXPOTrainer(_UnslothXPOTrainer):
         super().__init__(
             model = model,
             ref_model = ref_model,
-            reward_funcs = reward_funcs,
+            reward_model = reward_model,
             judge = judge,
             args = args,
             data_collator = data_collator,
             train_dataset = train_dataset,
             eval_dataset = eval_dataset,
             processing_class = processing_class,
-            reward_processing_classes = reward_processing_classes,
             peft_config = peft_config,
             compute_metrics = compute_metrics,
             callbacks = callbacks,
-            preprocess_logits_for_metrics = preprocess_logits_for_metrics,
-            reward_model = reward_model,**kwargs)
+            preprocess_logits_for_metrics = preprocess_logits_for_metrics,**kwargs)
         if "model" in locals() and hasattr(model, "for_inference"):
             model.for_inference()
         if hasattr(self, 'neftune_hook_handle'):

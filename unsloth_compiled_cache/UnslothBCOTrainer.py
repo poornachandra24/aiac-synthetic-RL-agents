@@ -1,8 +1,8 @@
 """
 2025.10.10
 2025.10.9
-4.57.1
-0.23.0
+4.56.2
+0.20.0
 __UNSLOTH_VERSIONING__
 """
 
@@ -27,7 +27,7 @@ import torch
 import torch.nn as nn
 from torch.nn import functional as F
 from typing import Any, List, Optional, Tuple, Union, Dict, Set, Callable
-from trl.trainer.bco_trainer import (Any, AutoModelForCausalLM, BCOConfig, BCOTrainer, BaseImageProcessor, CLF_NAME, Callable, DPODataCollatorWithPadding, DataCollator, DataLoader, Dataset, EvalLoopOutput, F, FeatureExtractionMixin, Literal, Optional, PartialState, Path, PeftModel, PreTrainedModel, PreTrainedTokenizerBase, ProcessorMixin, RUNNING_NAME, RunningMoments, SequentialSampler, Trainer, TrainerCallback, TrainingArguments, Union, _process_tokens, _tokenize, autocast, contextmanager, create_reference_model, defaultdict, disable_dropout_in_model, generate_model_card, get_comet_experiment_url, has_length, inspect, is_comet_available, is_joblib_available, is_peft_available, is_sklearn_available, is_wandb_available, itemgetter, log_table_to_comet_experiment, logger, logging, maybe_apply_chat_template, maybe_extract_prompt, maybe_unpair_preference_dataset, nn, np, nullcontext, os, pad_to_length, pd, peft_module_casting_to_bf16, prepare_deepspeed, prepare_model_for_kbit_training, random, selective_log_softmax, textwrap, torch, tqdm, wandb, F, Optional, PeftModel, PreTrainedModel, Trainer, is_peft_available, logger, os, torch)
+from trl.trainer.bco_trainer import (Any, AutoModelForCausalLM, BCOConfig, BCOTrainer, BaseImageProcessor, CLF_NAME, Callable, DPODataCollatorWithPadding, DataCollator, DataLoader, Dataset, EvalLoopOutput, F, FeatureExtractionMixin, Literal, Optional, PartialState, Path, PeftModel, PreTrainedModel, PreTrainedTokenizerBase, ProcessorMixin, RUNNING_NAME, RunningMoments, SequentialSampler, Trainer, TrainerCallback, TrainingArguments, Union, _process_tokens, _tokenize, autocast, contextmanager, create_reference_model, defaultdict, disable_dropout_in_model, generate_model_card, get_comet_experiment_url, has_length, inspect, is_comet_available, is_joblib_available, is_peft_available, is_sklearn_available, is_wandb_available, itemgetter, log_table_to_comet_experiment, logger, maybe_apply_chat_template, nn, np, nullcontext, os, pad_to_length, pd, peft_module_casting_to_bf16, prepare_deepspeed, prepare_model_for_kbit_training, random, selective_log_softmax, textwrap, torch, tqdm, wandb, warnings, F, Optional, PeftModel, PreTrainedModel, Trainer, is_peft_available, logger, os, torch)
 
 
 import os
@@ -260,6 +260,7 @@ class UnslothBCOConfig(BCOConfig):
         seed = 3407,
         data_seed = 3407,
         jit_mode_eval = False,
+        use_ipex = False,
         bf16 = False,
         fp16 = False,
         fp16_opt_level = 'O1',
@@ -285,7 +286,7 @@ class UnslothBCOConfig(BCOConfig):
         metric_for_best_model = None,
         greater_is_better = None,
         ignore_data_skip = False,
-        fsdp = None,
+        fsdp = '',
         fsdp_min_num_params = 0,
         fsdp_config = None,
         fsdp_transformer_layer_cls_to_wrap = None,
@@ -299,8 +300,6 @@ class UnslothBCOConfig(BCOConfig):
         group_by_length = False,
         length_column_name = 'length',
         report_to = None,
-        project = 'huggingface',
-        trackio_space_id = 'trackio',
         ddp_find_unused_parameters = None,
         ddp_bucket_cap_mb = None,
         ddp_broadcast_buffers = None,
@@ -316,7 +315,7 @@ class UnslothBCOConfig(BCOConfig):
         hub_private_repo = None,
         hub_always_push = False,
         hub_revision = None,
-        gradient_checkpointing = True,
+        gradient_checkpointing = False,
         gradient_checkpointing_kwargs = None,
         include_inputs_for_metrics = False,
         eval_do_concat_batches = True,
@@ -422,6 +421,7 @@ class UnslothBCOConfig(BCOConfig):
             seed = seed,
             data_seed = data_seed,
             jit_mode_eval = jit_mode_eval,
+            use_ipex = use_ipex,
             bf16 = bf16,
             fp16 = fp16,
             fp16_opt_level = fp16_opt_level,
@@ -461,8 +461,6 @@ class UnslothBCOConfig(BCOConfig):
             group_by_length = group_by_length,
             length_column_name = length_column_name,
             report_to = report_to,
-            project = project,
-            trackio_space_id = trackio_space_id,
             ddp_find_unused_parameters = ddp_find_unused_parameters,
             ddp_bucket_cap_mb = ddp_bucket_cap_mb,
             ddp_broadcast_buffers = ddp_broadcast_buffers,
@@ -574,16 +572,16 @@ class _UnslothBCOTrainer(Trainer):
             raise ValueError("You passed model_kwargs to the BCOTrainer. But your model is already instantiated.")
         else:
             model_init_kwargs = args.model_init_kwargs
-            dtype = model_init_kwargs.get("dtype")
-            if dtype is not None:
+            torch_dtype = model_init_kwargs.get("torch_dtype")
+            if torch_dtype is not None:
                 # Convert to `torch.dtype` if an str is passed
-                if isinstance(dtype, str) and dtype != "auto":
-                    dtype = getattr(torch, dtype)
-                if dtype != "auto" and not isinstance(dtype, torch.dtype):
+                if isinstance(torch_dtype, str) and torch_dtype != "auto":
+                    torch_dtype = getattr(torch, torch_dtype)
+                if torch_dtype != "auto" and not isinstance(torch_dtype, torch.dtype):
                     raise ValueError(
-                        f"Invalid `dtype` passed to the BCOConfig. Expected a string with either `torch.dtype` or 'auto', but got {dtype}."
+                        f"Invalid `torch_dtype` passed to the BCOConfig. Expected a string with either `torch.dtype` or 'auto', but got {torch_dtype}."
                     )
-                model_init_kwargs["dtype"] = dtype
+                model_init_kwargs["torch_dtype"] = torch_dtype
 
         if args.ref_model_init_kwargs is None:
             ref_model_init_kwargs = {}
@@ -593,16 +591,16 @@ class _UnslothBCOTrainer(Trainer):
             )
         else:
             ref_model_init_kwargs = args.ref_model_init_kwargs
-            dtype = ref_model_init_kwargs.get("dtype")
-            if dtype is not None:
+            torch_dtype = ref_model_init_kwargs.get("torch_dtype")
+            if torch_dtype is not None:
                 # Convert to `torch.dtype` if an str is passed
-                if isinstance(dtype, str) and dtype != "auto":
-                    dtype = getattr(torch, dtype)
-                if dtype != "auto" and not isinstance(dtype, torch.dtype):
+                if isinstance(torch_dtype, str) and torch_dtype != "auto":
+                    torch_dtype = getattr(torch, torch_dtype)
+                if torch_dtype != "auto" and not isinstance(torch_dtype, torch.dtype):
                     raise ValueError(
-                        f"Invalid `dtype` passed to the BCOConfig. Expected a string with either `torch.dtype` or 'auto', but got {dtype}."
+                        f"Invalid `torch_dtype` passed to the BCOConfig. Expected a string with either `torch.dtype` or 'auto', but got {torch_dtype}."
                     )
-                ref_model_init_kwargs["dtype"] = dtype
+                ref_model_init_kwargs["torch_dtype"] = torch_dtype
 
         if isinstance(model, str):
             model = AutoModelForCausalLM.from_pretrained(model, **model_init_kwargs)
@@ -698,18 +696,20 @@ class _UnslothBCOTrainer(Trainer):
                 "max_length or a processing_class must be specified when using the default DPODataCollatorWithPadding"
             )
         if args.max_length is None:
-            logger.warning(
+            warnings.warn(
                 "When using DPODataCollatorWithPadding, you should set `max_length` in the `BCOConfig`. "
                 "It will be set to `512` by default, but you should do it yourself in the future.",
+                UserWarning,
             )
             max_length = 512
         if args.max_length is not None:
             max_length = args.max_length
 
         if args.max_prompt_length is None:
-            logger.warning(
+            warnings.warn(
                 "When using DPODataCollatorWithPadding, you should set `max_prompt_length` in the `BCOConfig`. "
                 "It will be set to `128` by default, but you should do it yourself in the future.",
+                UserWarning,
             )
             max_prompt_length = 128
         if args.max_prompt_length is not None:
@@ -717,9 +717,10 @@ class _UnslothBCOTrainer(Trainer):
 
         max_completion_length = None
         if args.max_completion_length is None and self.is_encoder_decoder:
-            logger.warning(
+            warnings.warn(
                 "When using DPODataCollatorWithPadding with an encoder decoder architecture, you should set `max_completion_length` in the BCOTrainer's init"
                 " it will be set to `128` by default, but you should do it yourself in the future.",
+                UserWarning,
             )
             max_completion_length = 128
         if args.max_completion_length is not None and self.is_encoder_decoder:
@@ -735,9 +736,10 @@ class _UnslothBCOTrainer(Trainer):
             if args.remove_unused_columns:
                 args.remove_unused_columns = False
                 # warn users
-                logger.warning(
+                warnings.warn(
                     "When using DPODataCollatorWithPadding, you should set `remove_unused_columns=False` in your BCOConfig"
                     " we have set it for you, but you should do it yourself in the future.",
+                    UserWarning,
                 )
 
             self.use_dpo_data_collator = True
@@ -772,11 +774,12 @@ class _UnslothBCOTrainer(Trainer):
         self.aux_loss_enabled = getattr(model.config, "output_router_logits", False)
         self.aux_loss_coef = getattr(model.config, "router_aux_loss_coef", 0.0)
         if self.aux_loss_enabled and self.aux_loss_coef == 0.0:
-            logger.warning(
+            warnings.warn(
                 "You set `output_router_logits` to `True` in the model config, but `router_aux_loss_coef` is set to "
                 "`0.0`, meaning the auxiliary loss will not be used. Either set `router_aux_loss_coef` to a value "
                 "greater than `0.0`, or set `output_router_logits` to `False` if you don't want to use the auxiliary "
                 "loss.",
+                UserWarning,
             )
 
         # Underlying Distribution Matching argument
@@ -793,27 +796,11 @@ class _UnslothBCOTrainer(Trainer):
         model.warnings_issued["estimate_tokens"] = True
 
         with PartialState().main_process_first():
-            # Extract the prompt if needed
-            train_dataset = train_dataset.map(
-                maybe_extract_prompt, num_proc=args.dataset_num_proc, desc="Extracting prompt from train dataset"
-            )
-            # Unpair the dataset if needed
-            train_dataset = maybe_unpair_preference_dataset(
-                train_dataset, args.dataset_num_proc, desc="Unpairing train dataset"
-            )
             # Apply the chat template if needed
             train_dataset = train_dataset.map(
                 maybe_apply_chat_template, fn_kwargs={"tokenizer": processing_class}, num_proc=args.dataset_num_proc
             )
             if eval_dataset is not None:
-                # Extract the prompt if needed
-                eval_dataset = eval_dataset.map(
-                    maybe_extract_prompt, num_proc=args.dataset_num_proc, desc="Extracting prompt from eval dataset"
-                )
-                # Unpair the dataset if needed
-                eval_dataset = maybe_unpair_preference_dataset(
-                    eval_dataset, args.dataset_num_proc, desc="Unpairing eval dataset"
-                )
                 eval_dataset = eval_dataset.map(
                     maybe_apply_chat_template,
                     fn_kwargs={"tokenizer": processing_class},
@@ -1016,9 +1003,8 @@ class _UnslothBCOTrainer(Trainer):
             attention_mask=batch["embedding_attention_mask"],
         )
 
-        labels = torch.tensor(batch["label"], dtype=torch.bool, device=embeddings.device)
-        chosen_idx = torch.where(labels)[0]
-        rejected_idx = torch.where(~labels)[0]
+        chosen_idx = [i for i in range(len(batch["label"])) if batch["label"][i] is True]
+        rejected_idx = [i for i in range(len(batch["label"])) if batch["label"][i] is False]
 
         chosen_embeddings = embeddings[chosen_idx, ...]
         rejected_embeddings = embeddings[rejected_idx, ...]
@@ -1240,12 +1226,6 @@ class _UnslothBCOTrainer(Trainer):
             average_log_prob:
                 If True, return the average log probability per (non-masked) token. Otherwise, return the sum of the
                 log probabilities of the (non-masked) tokens.
-            label_pad_token_id:
-                The label value to ignore when computing log probabilities.
-            is_encoder_decoder:
-                Whether the model is an encoder-decoder model. If True, the labels are not shifted, and the logits are
-                assumed to already be aligned with the labels. If False, the labels are shifted to the right by one
-                position, and the logits are assumed to be aligned with the shifted labels.
 
         Returns:
             A tensor of shape (batch_size,) containing the average/sum log probabilities of the given labels under the
@@ -1355,7 +1335,6 @@ class _UnslothBCOTrainer(Trainer):
                 batch_size,)
             chosen_embeddings: embeddings of desirable prompts
             rejected_embeddings: embeddings of undesirable prompts
-            do_train: whether to update the running delta value. Default is True.
 
         Returns:
             A tuple of four tensors: (losses, chosen_rewards, rejected_rewards, delta). The losses tensor contains the
@@ -1627,12 +1606,11 @@ class _UnslothBCOTrainer(Trainer):
             random_batch = self.data_collator(random_batch_dataset)
             random_batch = self._prepare_inputs(random_batch)
 
-            target_labels = torch.tensor(random_batch["label"], dtype=torch.bool, device=self.accelerator.device)
-            target_indices = torch.where(~target_labels)[0]
+            target_indicies = [i for i in range(len(random_batch["label"])) if random_batch["label"][i] is False]
             target_batch = {
-                "prompt_input_ids": random_batch["prompt_input_ids"][target_indices],
-                "prompt_attention_mask": random_batch["prompt_attention_mask"][target_indices],
-                "prompt": itemgetter(*target_indices)(random_batch["prompt"]),
+                "prompt_input_ids": random_batch["prompt_input_ids"][target_indicies],
+                "prompt_attention_mask": random_batch["prompt_attention_mask"][target_indicies],
+                "prompt": itemgetter(*target_indicies)(random_batch["prompt"]),
             }
             policy_output_decoded, ref_output_decoded = self.generate_from_model_and_ref(self.model, target_batch)
 
@@ -1739,12 +1717,8 @@ class _UnslothBCOTrainer(Trainer):
         if hasattr(self.model.config, "unsloth_version"):
             tags.add("unsloth")
 
-        if "JOB_ID" in os.environ:
-            tags.add("hf_jobs")
-
         tags.update(self._tag_names)
 
-        # docstyle-ignore
         citation = textwrap.dedent("""\
         @article{jung2024binary,
             title        = {{Binary Classifier Optimization for Large Language Model Alignment}},

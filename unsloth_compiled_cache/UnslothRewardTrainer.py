@@ -1,8 +1,8 @@
 """
 2025.10.10
 2025.10.9
-4.57.1
-0.23.0
+4.56.2
+0.20.0
 __UNSLOTH_VERSIONING__
 """
 
@@ -27,7 +27,7 @@ import torch
 import torch.nn as nn
 from torch.nn import functional as F
 from typing import Any, List, Optional, Tuple, Union, Dict, Set, Callable
-from trl.trainer.reward_trainer import (Any, BaseImageProcessor, Callable, DataCollator, Dataset, EvalPrediction, FeatureExtractionMixin, FrozenInstanceError, Optional, PartialState, Path, PreTrainedModel, PreTrainedTokenizerBase, ProcessorMixin, RewardConfig, RewardDataCollatorWithPadding, RewardTrainer, Trainer, TrainerCallback, Union, _tokenize, compute_accuracy, decode_and_strip_padding, defaultdict, disable_dropout_in_model, gather_object, generate_model_card, get_comet_experiment_url, is_rich_available, is_wandb_available, log_table_to_comet_experiment, logger, logging, maybe_apply_chat_template, nested_detach, nn, os, pd, prepare_peft_model, print_rich_table, replace, torch, wandb, Optional, PreTrainedModel, Trainer, logger, os, torch)
+from trl.trainer.reward_trainer import (Any, BaseImageProcessor, Callable, DataCollator, Dataset, EvalPrediction, FeatureExtractionMixin, FrozenInstanceError, Optional, PartialState, Path, PeftModel, PreTrainedModel, PreTrainedTokenizerBase, ProcessorMixin, RewardConfig, RewardDataCollatorWithPadding, RewardTrainer, Trainer, TrainerCallback, Union, _tokenize, compute_accuracy, decode_and_strip_padding, defaultdict, disable_dropout_in_model, gather_object, generate_model_card, get_comet_experiment_url, inspect, is_peft_available, is_rich_available, is_wandb_available, log_table_to_comet_experiment, maybe_apply_chat_template, nested_detach, nn, os, pd, prepare_model_for_kbit_training, print_rich_table, replace, torch, wandb, warnings, Optional, PeftModel, PreTrainedModel, Trainer, is_peft_available, os, torch)
 
 
 import os
@@ -230,6 +230,7 @@ class UnslothRewardConfig(RewardConfig):
         seed = 3407,
         data_seed = 3407,
         jit_mode_eval = False,
+        use_ipex = False,
         bf16 = False,
         fp16 = False,
         fp16_opt_level = 'O1',
@@ -255,7 +256,7 @@ class UnslothRewardConfig(RewardConfig):
         metric_for_best_model = None,
         greater_is_better = None,
         ignore_data_skip = False,
-        fsdp = None,
+        fsdp = '',
         fsdp_min_num_params = 0,
         fsdp_config = None,
         fsdp_transformer_layer_cls_to_wrap = None,
@@ -269,8 +270,6 @@ class UnslothRewardConfig(RewardConfig):
         group_by_length = False,
         length_column_name = 'length',
         report_to = None,
-        project = 'huggingface',
-        trackio_space_id = 'trackio',
         ddp_find_unused_parameters = None,
         ddp_bucket_cap_mb = None,
         ddp_broadcast_buffers = None,
@@ -286,7 +285,7 @@ class UnslothRewardConfig(RewardConfig):
         hub_private_repo = None,
         hub_always_push = False,
         hub_revision = None,
-        gradient_checkpointing = True,
+        gradient_checkpointing = False,
         gradient_checkpointing_kwargs = None,
         include_inputs_for_metrics = False,
         eval_do_concat_batches = True,
@@ -379,6 +378,7 @@ class UnslothRewardConfig(RewardConfig):
             seed = seed,
             data_seed = data_seed,
             jit_mode_eval = jit_mode_eval,
+            use_ipex = use_ipex,
             bf16 = bf16,
             fp16 = fp16,
             fp16_opt_level = fp16_opt_level,
@@ -418,8 +418,6 @@ class UnslothRewardConfig(RewardConfig):
             group_by_length = group_by_length,
             length_column_name = length_column_name,
             report_to = report_to,
-            project = project,
-            trackio_space_id = trackio_space_id,
             ddp_find_unused_parameters = ddp_find_unused_parameters,
             ddp_bucket_cap_mb = ddp_bucket_cap_mb,
             ddp_broadcast_buffers = ddp_broadcast_buffers,
@@ -472,8 +470,6 @@ class UnslothRewardConfig(RewardConfig):
 pass
 
 class _UnslothRewardTrainer(Trainer):
-    """"""
-
     _tag_names = ["trl", "reward-trainer"]
 
     def __init__(
@@ -496,8 +492,67 @@ class _UnslothRewardTrainer(Trainer):
         preprocess_logits_for_metrics: Optional[Callable[[torch.Tensor, torch.Tensor], torch.Tensor]] = None,
         peft_config: Optional[dict] = None,
     ):
-        if False:
-            model = prepare_peft_model(model, peft_config, args)
+        """
+        Initialize RewardTrainer.
+
+        Args:
+            model (`transformers.PreTrainedModel`):
+                The model to train, preferably an `AutoModelForSequenceClassification`.
+            args (`RewardConfig`):
+                The arguments to use for training.
+            data_collator (`transformers.DataCollator`):
+                The data collator to use for training. If None is specified, the default data collator
+                (`RewardDataCollatorWithPadding`) will be used which will pad the sequences to the maximum length of
+                the sequences in the batch, given a dataset of paired sequences.
+            train_dataset (`datasets.Dataset`):
+                The dataset to use for training.
+            eval_dataset (`datasets.Dataset`):
+                The dataset to use for evaluation.
+            processing_class ([`~transformers.PreTrainedTokenizerBase`], [`~transformers.BaseImageProcessor`], [`~transformers.FeatureExtractionMixin`] or [`~transformers.ProcessorMixin`], *optional*, defaults to `None`):
+                Processing class used to process the data. If provided, will be used to automatically process the
+                inputs for the model, and it will be saved along the model to make it easier to rerun an interrupted
+                training or reuse the fine-tuned model.
+            model_init (`Callable[[], transformers.PreTrainedModel]`):
+                The model initializer to use for training. If None is specified, the default model initializer will be
+                used.
+            compute_metrics (`Callable[[transformers.EvalPrediction], dict]`, *optional* defaults to `compute_accuracy`):
+                The metrics to use for evaluation. If no metrics are specified, the default metric (`compute_accuracy`)
+                will be used.
+            callbacks (`list[transformers.TrainerCallback]`):
+                The callbacks to use for training.
+            optimizers (`tuple[torch.optim.Optimizer, torch.optim.lr_scheduler.LambdaLR]`):
+                The optimizer and scheduler to use for training.
+            preprocess_logits_for_metrics (`Callable[[torch.Tensor, torch.Tensor], torch.Tensor]`):
+                The function to use to preprocess the logits before computing the metrics.
+            peft_config (`dict`, defaults to `None`):
+                The PEFT configuration to use for training. If you pass a PEFT configuration, the model will be wrapped
+                in a PEFT model.
+        """
+        if not is_peft_available() and peft_config is not None:
+            raise ValueError(
+                "PEFT is not installed and you passed a `peft_config` in the trainer's kwargs, please install it to use the PEFT models"
+            )
+        elif is_peft_available() and peft_config is not None:
+            if not isinstance(model, PeftModel):
+                if getattr(model, "is_loaded_in_8bit", False) or getattr(model, "is_quantized", False):
+                    _supports_gc_kwargs = "gradient_checkpointing_kwargs" in list(
+                        inspect.signature(prepare_model_for_kbit_training).parameters
+                    )
+
+                    prepare_model_kwargs = {"use_gradient_checkpointing": args.gradient_checkpointing}
+
+                    if not _supports_gc_kwargs and args.gradient_checkpointing_kwargs is not None:
+                        warnings.warn(
+                            "You passed `gradient_checkpointing_kwargs` in the trainer's kwargs, but your peft version does not support it. "
+                            "please update to the latest version of peft to use `gradient_checkpointing_kwargs`.",
+                            UserWarning,
+                        )
+                    elif _supports_gc_kwargs and args.gradient_checkpointing_kwargs is not None:
+                        prepare_model_kwargs["gradient_checkpointing_kwargs"] = args.gradient_checkpointing_kwargs
+
+                    model = prepare_model_for_kbit_training(model, **prepare_model_kwargs)
+
+                model = model
 
         # Disable dropout in the model
         if args.disable_dropout:
@@ -522,9 +577,10 @@ class _UnslothRewardTrainer(Trainer):
                 except FrozenInstanceError:
                     args = replace(args, remove_unused_columns=False)
                 # warn users
-                logger.warning(
+                warnings.warn(
                     "When using RewardDataCollatorWithPadding, you should set `remove_unused_columns=False` in your RewardConfig"
                     " we have set it for you, but you should do it yourself in the future.",
+                    UserWarning,
                 )
 
             self.use_reward_data_collator = True
@@ -746,9 +802,6 @@ class _UnslothRewardTrainer(Trainer):
         if hasattr(self.model.config, "unsloth_version"):
             tags.add("unsloth")
 
-        if "JOB_ID" in os.environ:
-            tags.add("hf_jobs")
-
         tags.update(self._tag_names)
 
         model_card = generate_model_card(
@@ -765,42 +818,6 @@ class _UnslothRewardTrainer(Trainer):
         model_card.save(os.path.join(self.args.output_dir, "README.md"))
 class UnslothRewardTrainer(_UnslothRewardTrainer):
     """
-    
-    Trainer for custom reward.
-
-    Args:
-        model ([`~transformers.PreTrainedModel`] or `torch.nn.Module`, *optional*):
-            Model to be trained, preferably an [`~transformers.AutoModelForSequenceClassification`].
-        args ([`RewardConfig`], *optional*):
-            Training arguments.
-        data_collator ([`~transformers.DataCollator`], *optional*):
-            The data collator to use for training. If None is specified, the default data collator
-            [`~trainer.utils.RewardDataCollatorWithPadding`] will be used which will pad the sequences to the maximum
-            length of the sequences in the batch, given a dataset of paired sequences.
-        train_dataset ([`~datasets.Dataset`], *optional*):
-            The dataset to use for training.
-        eval_dataset ([`~datasets.Dataset`], *optional*):
-            The dataset to use for evaluation.
-        processing_class ([`~transformers.PreTrainedTokenizerBase`], [`~transformers.BaseImageProcessor`], [`~transformers.FeatureExtractionMixin`] or [`~transformers.ProcessorMixin`], *optional*):
-            Processing class used to process the data. If provided, will be used to automatically process the inputs
-            for the model, and it will be saved along the model to make it easier to rerun an interrupted training or
-            reuse the fine-tuned model.
-        model_init (`Callable[[], transformers.PreTrainedModel]`, *optional*):
-            The model initializer to use for training. If None is specified, the default model initializer will be
-            used.
-        compute_metrics (`Callable[[transformers.EvalPrediction], dict]`, *optional*, defaults to [`~trainer.utils.compute_accuracy`]):
-            Function to compute metrics at evaluation. Must take in an [`~transformers.EvalPrediction`] and return a
-            dictionary string to float.
-        callbacks (`list` of [`~transformers.TrainerCallback`], *optional*):
-            Callbacks to use during training.
-        optimizers (`tuple` of `torch.optim.Optimizer` and `torch.optim.lr_scheduler.LambdaLR`, *optional*, defaults to `(None, None)`):
-            Tuple containing the optimizer and the learning rate scheduler to use for training.
-        preprocess_logits_for_metrics (`Callable[[torch.Tensor, torch.Tensor], torch.Tensor]`, *optional*):
-            Function to preprocess the logits before computing the metrics. Must take in the `logits` and `labels` and
-            return the logits to be used for metrics computation.
-        peft_config (`dict`, *optional*):
-            PEFT configuration to use PEFT for training. If `None`, PEFT is not used. If provided, the `model` will be
-            wrapped with the specified PEFT adapter.
     
     """
     def __init__(
@@ -971,13 +988,3 @@ class UnslothRewardTrainer(_UnslothRewardTrainer):
         pass
         
 pass
-
-
-if hasattr(logger, "addFilter"):
-    import logging
-    class HideLoggingMessage(logging.Filter):
-        def __init__(self, text): self.text = text
-        def filter(self, x): return not (self.text in x.getMessage())
-    pass
-    logger.addFilter(HideLoggingMessage("`use_cache=True`"))
-

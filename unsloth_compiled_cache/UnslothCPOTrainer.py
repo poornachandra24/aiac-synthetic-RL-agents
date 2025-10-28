@@ -1,8 +1,8 @@
 """
 2025.10.10
 2025.10.9
-4.57.1
-0.23.0
+4.56.2
+0.20.0
 __UNSLOTH_VERSIONING__
 """
 
@@ -27,7 +27,7 @@ import torch
 import torch.nn as nn
 from torch.nn import functional as F
 from typing import Any, List, Optional, Tuple, Union, Dict, Set, Callable
-from trl.trainer.cpo_trainer import (Any, AutoModelForCausalLM, BaseImageProcessor, CPOConfig, CPOTrainer, Callable, DPODataCollatorWithPadding, DataCollator, DataLoader, Dataset, EvalLoopOutput, F, FeatureExtractionMixin, Literal, Optional, PartialState, Path, PeftModel, PreTrainedModel, PreTrainedTokenizerBase, ProcessorMixin, Trainer, TrainerCallback, Union, add_bos_token_if_needed, add_eos_token_if_needed, autocast, defaultdict, disable_dropout_in_model, generate_model_card, get_comet_experiment_url, inspect, is_comet_available, is_peft_available, is_torch_fx_proxy, is_wandb_available, log_table_to_comet_experiment, logger, logging, maybe_apply_chat_template, maybe_extract_prompt, nn, np, nullcontext, os, pad_to_length, pd, peft_module_casting_to_bf16, prepare_model_for_kbit_training, random, selective_log_softmax, textwrap, torch, wandb, F, Optional, PeftModel, PreTrainedModel, Trainer, is_peft_available, logger, os, torch)
+from trl.trainer.cpo_trainer import (Any, AutoModelForCausalLM, BaseImageProcessor, CPOConfig, CPOTrainer, Callable, DPODataCollatorWithPadding, DataCollator, DataLoader, Dataset, EvalLoopOutput, F, FeatureExtractionMixin, Literal, Optional, PartialState, Path, PeftModel, PreTrainedModel, PreTrainedTokenizerBase, ProcessorMixin, Trainer, TrainerCallback, Union, add_bos_token_if_needed, add_eos_token_if_needed, autocast, defaultdict, disable_dropout_in_model, generate_model_card, get_comet_experiment_url, inspect, is_comet_available, is_peft_available, is_torch_fx_proxy, is_wandb_available, log_table_to_comet_experiment, maybe_apply_chat_template, maybe_extract_prompt, nn, np, nullcontext, os, pad_to_length, pd, peft_module_casting_to_bf16, prepare_model_for_kbit_training, random, selective_log_softmax, textwrap, torch, wandb, warnings, F, Optional, PeftModel, PreTrainedModel, Trainer, is_peft_available, os, torch)
 
 
 import os
@@ -176,8 +176,6 @@ class UnslothCPOConfig(CPOConfig):
                   [SLiC](https://huggingface.co/papers/2305.10425) paper.
                 - `"ipo"`: IPO loss from the [IPO](https://huggingface.co/papers/2310.12036) paper.
                 - `"simpo"`: SimPO loss from the [SimPO](https://huggingface.co/papers/2405.14734) paper.
-                - `"alphapo"`: AlphaPO loss from the [AlphaPO](https://huggingface.co/papers/2501.03884) paper. This
-                  automatically sets `loss_type="simpo"` and `cpo_alpha=0.0`.
 
         disable_dropout (`bool`, *optional*, defaults to `True`):
             Whether to disable dropout in the model.
@@ -185,11 +183,6 @@ class UnslothCPOConfig(CPOConfig):
             Weight of the BC regularizer in CPO training.
         simpo_gamma (`float`, *optional*, defaults to `0.5`):
             Target reward margin for the SimPO loss, used only when the `loss_type="simpo"`.
-        alpha (`float`, *optional*, defaults to `0.0`):
-            Alpha parameter that controls reward function shape across all loss types. When alpha=0 (default), uses
-            standard log probability rewards. When `alpha != 0`, applies AlphaPO transformation: `r = (1 - p^(-alpha))
-            / alpha` from the [AlphaPO paper](https://huggingface.co/papers/2501.03884). This parameter works with all
-            loss types.
         label_pad_token_id (`int`, *optional*, defaults to `-100`):
             Label pad token id. This argument is required if you want to use the default data collator.
         padding_value (`int` or `None`, *optional*, defaults to `None`):
@@ -270,6 +263,7 @@ class UnslothCPOConfig(CPOConfig):
         seed = 3407,
         data_seed = 3407,
         jit_mode_eval = False,
+        use_ipex = False,
         bf16 = False,
         fp16 = False,
         fp16_opt_level = 'O1',
@@ -295,7 +289,7 @@ class UnslothCPOConfig(CPOConfig):
         metric_for_best_model = None,
         greater_is_better = None,
         ignore_data_skip = False,
-        fsdp = None,
+        fsdp = '',
         fsdp_min_num_params = 0,
         fsdp_config = None,
         fsdp_transformer_layer_cls_to_wrap = None,
@@ -309,8 +303,6 @@ class UnslothCPOConfig(CPOConfig):
         group_by_length = False,
         length_column_name = 'length',
         report_to = None,
-        project = 'huggingface',
-        trackio_space_id = 'trackio',
         ddp_find_unused_parameters = None,
         ddp_bucket_cap_mb = None,
         ddp_broadcast_buffers = None,
@@ -326,7 +318,7 @@ class UnslothCPOConfig(CPOConfig):
         hub_private_repo = None,
         hub_always_push = False,
         hub_revision = None,
-        gradient_checkpointing = True,
+        gradient_checkpointing = False,
         gradient_checkpointing_kwargs = None,
         include_inputs_for_metrics = False,
         eval_do_concat_batches = True,
@@ -362,7 +354,6 @@ class UnslothCPOConfig(CPOConfig):
         disable_dropout = True,
         cpo_alpha = 1.0,
         simpo_gamma = 0.5,
-        alpha = 0.0,
         label_pad_token_id = -100,
         padding_value = None,
         truncation_mode = 'keep_end',
@@ -432,6 +423,7 @@ class UnslothCPOConfig(CPOConfig):
             seed = seed,
             data_seed = data_seed,
             jit_mode_eval = jit_mode_eval,
+            use_ipex = use_ipex,
             bf16 = bf16,
             fp16 = fp16,
             fp16_opt_level = fp16_opt_level,
@@ -471,8 +463,6 @@ class UnslothCPOConfig(CPOConfig):
             group_by_length = group_by_length,
             length_column_name = length_column_name,
             report_to = report_to,
-            project = project,
-            trackio_space_id = trackio_space_id,
             ddp_find_unused_parameters = ddp_find_unused_parameters,
             ddp_bucket_cap_mb = ddp_bucket_cap_mb,
             ddp_broadcast_buffers = ddp_broadcast_buffers,
@@ -524,7 +514,6 @@ class UnslothCPOConfig(CPOConfig):
             disable_dropout = disable_dropout,
             cpo_alpha = cpo_alpha,
             simpo_gamma = simpo_gamma,
-            alpha = alpha,
             label_pad_token_id = label_pad_token_id,
             padding_value = padding_value,
             truncation_mode = truncation_mode,
@@ -565,16 +554,16 @@ class _UnslothCPOTrainer(Trainer):
             raise ValueError("You passed model_kwargs to the CPOTrainer. But your model is already instantiated.")
         else:
             model_init_kwargs = args.model_init_kwargs
-            dtype = model_init_kwargs.get("dtype")
-            if dtype is not None:
+            torch_dtype = model_init_kwargs.get("torch_dtype")
+            if torch_dtype is not None:
                 # Convert to `torch.dtype` if an str is passed
-                if isinstance(dtype, str) and dtype != "auto":
-                    dtype = getattr(torch, dtype)
-                if dtype != "auto" and not isinstance(dtype, torch.dtype):
+                if isinstance(torch_dtype, str) and torch_dtype != "auto":
+                    torch_dtype = getattr(torch, torch_dtype)
+                if torch_dtype != "auto" and not isinstance(torch_dtype, torch.dtype):
                     raise ValueError(
-                        f"Invalid `dtype` passed to the CPOConfig. Expected a string with either `torch.dtype` or 'auto', but got {dtype}."
+                        f"Invalid `torch_dtype` passed to the CPOConfig. Expected a string with either `torch.dtype` or 'auto', but got {torch_dtype}."
                     )
-                model_init_kwargs["dtype"] = dtype
+                model_init_kwargs["torch_dtype"] = torch_dtype
 
         if isinstance(model, str):
             model = AutoModelForCausalLM.from_pretrained(model, **model_init_kwargs)
@@ -657,17 +646,19 @@ class _UnslothCPOTrainer(Trainer):
         if processing_class is None:
             raise ValueError("processing_class must be specified to tokenize a CPO dataset.")
         if args.max_length is None:
-            logger.warning(
+            warnings.warn(
                 "`max_length` is not set in the CPOConfig's init"
                 " it will default to `512` by default, but you should do it yourself in the future.",
+                UserWarning,
             )
             max_length = 512
         else:
             max_length = args.max_length
         if args.max_prompt_length is None:
-            logger.warning(
+            warnings.warn(
                 "`max_prompt_length` is not set in the CPOConfig's init"
                 " it will default to `128` by default, but you should do it yourself in the future.",
+                UserWarning,
             )
             max_prompt_length = 128
         else:
@@ -679,9 +670,10 @@ class _UnslothCPOTrainer(Trainer):
             )
 
         if args.max_completion_length is None and self.is_encoder_decoder:
-            logger.warning(
+            warnings.warn(
                 "When using an encoder decoder architecture, you should set `max_completion_length` in the CPOConfig's init"
                 " it will default to `128` by default, but you should do it yourself in the future.",
+                UserWarning,
             )
             max_completion_length = 128
         else:
@@ -697,9 +689,10 @@ class _UnslothCPOTrainer(Trainer):
             if args.remove_unused_columns:
                 args.remove_unused_columns = False
                 # warn users
-                logger.warning(
+                warnings.warn(
                     "When using DPODataCollatorWithPadding, you should set `remove_unused_columns=False` in your TrainingArguments"
                     " we have set it for you, but you should do it yourself in the future.",
+                    UserWarning,
                 )
 
             self.use_dpo_data_collator = True
@@ -720,9 +713,10 @@ class _UnslothCPOTrainer(Trainer):
         self.processing_class = processing_class
 
         if args.loss_type in ["hinge", "ipo"] and args.label_smoothing > 0:
-            logger.warning(
+            warnings.warn(
                 f"You are using the {args.loss_type} loss type that does not support label smoothing. The "
                 "`label_smoothing` parameter will be ignored. Set `label_smoothing` to `0.0` to remove this warning.",
+                UserWarning,
             )
         if args.loss_type == "kto_pair":
             raise ValueError("Support for kto_pair has been removed in CPOTrainer. Please use KTOTrainer.")
@@ -734,18 +728,16 @@ class _UnslothCPOTrainer(Trainer):
         self.aux_loss_enabled = getattr(model.config, "output_router_logits", False)
         self.aux_loss_coef = getattr(model.config, "router_aux_loss_coef", 0.0)
         if self.aux_loss_enabled and self.aux_loss_coef == 0.0:
-            logger.warning(
+            warnings.warn(
                 "You set `output_router_logits` to `True` in the model config, but `router_aux_loss_coef` is set to "
                 "`0.0`, meaning the auxiliary loss will not be used. Either set `router_aux_loss_coef` to a value "
                 "greater than `0.0`, or set `output_router_logits` to `False` if you don't want to use the auxiliary "
                 "loss.",
+                UserWarning,
             )
 
         if args.loss_type == "simpo":
             self.simpo_gamma = args.simpo_gamma
-
-        # AlphaPO parameter for reward shaping
-        self.alpha = args.alpha
 
         self._stored_metrics = defaultdict(lambda: defaultdict(list))
 
@@ -1087,20 +1079,7 @@ class _UnslothCPOTrainer(Trainer):
             loss for each example in the batch. The chosen_rewards and rejected_rewards tensors contain the rewards for
             the chosen and rejected responses, respectively.
         """
-        # Apply AlphaPO reward transformation if alpha != 0
-        if self.alpha != 0.0:
-            # Compute probabilities
-            chosen_probs = torch.exp(policy_chosen_logps)
-            rejected_probs = torch.exp(policy_rejected_logps)
-
-            # Apply AlphaPO transformation: r = (1 - p^(-alpha)) / alpha
-            policy_chosen_rewards = (1 - chosen_probs.pow(-self.alpha)) / self.alpha
-            policy_rejected_rewards = (1 - rejected_probs.pow(-self.alpha)) / self.alpha
-
-            logits = (policy_chosen_rewards - policy_rejected_rewards).to(self.accelerator.device)
-        else:
-            # Standard log probability rewards when alpha = 0
-            logits = (policy_chosen_logps - policy_rejected_logps).to(self.accelerator.device)
+        logits = (policy_chosen_logps - policy_rejected_logps).to(self.accelerator.device)
 
         # The beta is a temperature parameter for the CPO loss, typically something in the range of 0.1 to 0.5.
         # We ignore the reference model as beta -> 0. The label_smoothing parameter encodes our uncertainty about the labels and
@@ -1130,15 +1109,8 @@ class _UnslothCPOTrainer(Trainer):
                 f"Unknown loss type: {self.loss_type}. Should be one of ['sigmoid', 'hinge', 'ipo', 'simpo']"
             )
 
-        # Calculate rewards for logging
-        if self.alpha != 0.0:
-            # When using AlphaPO transformation, use the transformed rewards
-            chosen_rewards = self.beta * policy_chosen_rewards.to(self.accelerator.device).detach()
-            rejected_rewards = self.beta * policy_rejected_rewards.to(self.accelerator.device).detach()
-        else:
-            # Standard log probability rewards
-            chosen_rewards = self.beta * (policy_chosen_logps.to(self.accelerator.device)).detach()
-            rejected_rewards = self.beta * (policy_rejected_logps.to(self.accelerator.device)).detach()
+        chosen_rewards = self.beta * (policy_chosen_logps.to(self.accelerator.device)).detach()
+        rejected_rewards = self.beta * (policy_rejected_logps.to(self.accelerator.device)).detach()
 
         return losses, chosen_rewards, rejected_rewards
 
@@ -1535,12 +1507,8 @@ class _UnslothCPOTrainer(Trainer):
         if hasattr(self.model.config, "unsloth_version"):
             tags.add("unsloth")
 
-        if "JOB_ID" in os.environ:
-            tags.add("hf_jobs")
-
         tags.update(self._tag_names)
 
-        # docstyle-ignore
         citation = textwrap.dedent("""\
         @inproceedings{xu2024contrastive,
             title        = {{Contrastive Preference Optimization: Pushing the Boundaries of LLM Performance in Machine Translation}},
@@ -1772,13 +1740,3 @@ class UnslothCPOTrainer(_UnslothCPOTrainer):
         pass
         
 pass
-
-
-if hasattr(logger, "addFilter"):
-    import logging
-    class HideLoggingMessage(logging.Filter):
-        def __init__(self, text): self.text = text
-        def filter(self, x): return not (self.text in x.getMessage())
-    pass
-    logger.addFilter(HideLoggingMessage("`use_cache=True`"))
-

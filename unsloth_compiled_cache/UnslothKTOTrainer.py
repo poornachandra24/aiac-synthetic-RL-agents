@@ -1,8 +1,8 @@
 """
 2025.10.10
 2025.10.9
-4.57.1
-0.23.0
+4.56.2
+0.20.0
 __UNSLOTH_VERSIONING__
 """
 
@@ -27,7 +27,7 @@ import torch
 import torch.nn as nn
 from torch.nn import functional as F
 from typing import Any, List, Optional, Tuple, Union, Dict, Set, Callable
-from trl.trainer.kto_trainer import (Any, AutoModelForCausalLM, BaseImageProcessor, Callable, DPODataCollatorWithPadding, DataCollator, DataLoader, Dataset, EvalLoopOutput, F, FeatureExtractionMixin, KTOConfig, KTOTrainer, Literal, Optional, PartialState, Path, PeftModel, PreTrainedModel, PreTrainedTokenizerBase, ProcessorMixin, SequentialSampler, Trainer, TrainerCallback, TrainingArguments, Union, _get_kl_dataset, _process_tokens, _tokenize, autocast, concatenate_datasets, contextmanager, create_reference_model, defaultdict, disable_dropout_in_model, generate_model_card, get_comet_experiment_url, has_length, inspect, is_comet_available, is_liger_kernel_available, is_peft_available, is_wandb_available, itemgetter, log_table_to_comet_experiment, logger, logging, maybe_apply_chat_template, maybe_extract_prompt, maybe_unpair_preference_dataset, nn, np, nullcontext, os, pad_to_length, pd, peft_module_casting_to_bf16, prepare_deepspeed, prepare_model_for_kbit_training, random, selective_log_softmax, textwrap, torch, tqdm, wandb, F, Optional, PeftModel, PreTrainedModel, Trainer, is_peft_available, logger, os, torch)
+from trl.trainer.kto_trainer import (Any, AutoModelForCausalLM, BaseImageProcessor, Callable, DPODataCollatorWithPadding, DataCollator, DataLoader, Dataset, EvalLoopOutput, F, FeatureExtractionMixin, KTOConfig, KTOTrainer, Literal, Optional, PartialState, Path, PeftModel, PreTrainedModel, PreTrainedTokenizerBase, ProcessorMixin, SequentialSampler, Trainer, TrainerCallback, TrainingArguments, Union, _get_kl_dataset, _process_tokens, _tokenize, autocast, concatenate_datasets, contextmanager, create_reference_model, defaultdict, disable_dropout_in_model, generate_model_card, get_comet_experiment_url, has_length, inspect, is_comet_available, is_liger_kernel_available, is_peft_available, is_wandb_available, itemgetter, log_table_to_comet_experiment, maybe_apply_chat_template, maybe_extract_prompt, maybe_unpair_preference_dataset, nn, np, nullcontext, os, pad_to_length, pd, peft_module_casting_to_bf16, prepare_deepspeed, prepare_model_for_kbit_training, random, selective_log_softmax, textwrap, torch, tqdm, wandb, warnings, F, Optional, PeftModel, PreTrainedModel, Trainer, is_peft_available, os, torch)
 
 
 import os
@@ -270,6 +270,7 @@ class UnslothKTOConfig(KTOConfig):
         seed = 3407,
         data_seed = 3407,
         jit_mode_eval = False,
+        use_ipex = False,
         bf16 = False,
         fp16 = False,
         fp16_opt_level = 'O1',
@@ -295,7 +296,7 @@ class UnslothKTOConfig(KTOConfig):
         metric_for_best_model = None,
         greater_is_better = None,
         ignore_data_skip = False,
-        fsdp = None,
+        fsdp = '',
         fsdp_min_num_params = 0,
         fsdp_config = None,
         fsdp_transformer_layer_cls_to_wrap = None,
@@ -309,8 +310,6 @@ class UnslothKTOConfig(KTOConfig):
         group_by_length = False,
         length_column_name = 'length',
         report_to = None,
-        project = 'huggingface',
-        trackio_space_id = 'trackio',
         ddp_find_unused_parameters = None,
         ddp_bucket_cap_mb = None,
         ddp_broadcast_buffers = None,
@@ -326,7 +325,7 @@ class UnslothKTOConfig(KTOConfig):
         hub_private_repo = None,
         hub_always_push = False,
         hub_revision = None,
-        gradient_checkpointing = True,
+        gradient_checkpointing = False,
         gradient_checkpointing_kwargs = None,
         include_inputs_for_metrics = False,
         eval_do_concat_batches = True,
@@ -434,6 +433,7 @@ class UnslothKTOConfig(KTOConfig):
             seed = seed,
             data_seed = data_seed,
             jit_mode_eval = jit_mode_eval,
+            use_ipex = use_ipex,
             bf16 = bf16,
             fp16 = fp16,
             fp16_opt_level = fp16_opt_level,
@@ -473,8 +473,6 @@ class UnslothKTOConfig(KTOConfig):
             group_by_length = group_by_length,
             length_column_name = length_column_name,
             report_to = report_to,
-            project = project,
-            trackio_space_id = trackio_space_id,
             ddp_find_unused_parameters = ddp_find_unused_parameters,
             ddp_bucket_cap_mb = ddp_bucket_cap_mb,
             ddp_broadcast_buffers = ddp_broadcast_buffers,
@@ -581,16 +579,16 @@ class _UnslothKTOTrainer(Trainer):
             raise ValueError("You passed model_kwargs to the KTOTrainer. But your model is already instantiated.")
         else:
             model_init_kwargs = args.model_init_kwargs
-            dtype = model_init_kwargs.get("dtype")
-            if dtype is not None:
+            torch_dtype = model_init_kwargs.get("torch_dtype")
+            if torch_dtype is not None:
                 # Convert to `torch.dtype` if an str is passed
-                if isinstance(dtype, str) and dtype != "auto":
-                    dtype = getattr(torch, dtype)
-                if dtype != "auto" and not isinstance(dtype, torch.dtype):
+                if isinstance(torch_dtype, str) and torch_dtype != "auto":
+                    torch_dtype = getattr(torch, torch_dtype)
+                if torch_dtype != "auto" and not isinstance(torch_dtype, torch.dtype):
                     raise ValueError(
-                        f"Invalid `dtype` passed to the KTOConfig. Expected a string with either `torch.dtype` or 'auto', but got {dtype}."
+                        f"Invalid `torch_dtype` passed to the KTOConfig. Expected a string with either `torch.dtype` or 'auto', but got {torch_dtype}."
                     )
-                model_init_kwargs["dtype"] = dtype
+                model_init_kwargs["torch_dtype"] = torch_dtype
 
         if args.ref_model_init_kwargs is None:
             ref_model_init_kwargs = {}
@@ -600,16 +598,16 @@ class _UnslothKTOTrainer(Trainer):
             )
         else:
             ref_model_init_kwargs = args.ref_model_init_kwargs
-            dtype = ref_model_init_kwargs.get("dtype")
-            if dtype is not None:
+            torch_dtype = ref_model_init_kwargs.get("torch_dtype")
+            if torch_dtype is not None:
                 # Convert to `torch.dtype` if an str is passed
-                if isinstance(dtype, str) and dtype != "auto":
-                    dtype = getattr(torch, dtype)
-                if dtype != "auto" and not isinstance(dtype, torch.dtype):
+                if isinstance(torch_dtype, str) and torch_dtype != "auto":
+                    torch_dtype = getattr(torch, torch_dtype)
+                if torch_dtype != "auto" and not isinstance(torch_dtype, torch.dtype):
                     raise ValueError(
-                        f"Invalid `dtype` passed to the KTOConfig. Expected a string with either `torch.dtype` or 'auto', but got {dtype}."
+                        f"Invalid `torch_dtype` passed to the KTOConfig. Expected a string with either `torch.dtype` or 'auto', but got {torch_dtype}."
                     )
-                ref_model_init_kwargs["dtype"] = dtype
+                ref_model_init_kwargs["torch_dtype"] = torch_dtype
 
         if isinstance(model, str):
             model = AutoModelForCausalLM.from_pretrained(model, **model_init_kwargs)
@@ -705,18 +703,20 @@ class _UnslothKTOTrainer(Trainer):
                 "max_length or a processing_class must be specified when using the default DPODataCollatorWithPadding"
             )
         if args.max_length is None:
-            logger.warning(
+            warnings.warn(
                 "When using DPODataCollatorWithPadding, you should set `max_length` in the KTOTrainer's init"
                 " it will be set to `512` by default, but you should do it yourself in the future.",
+                UserWarning,
             )
             max_length = 512
         if args.max_length is not None:
             max_length = args.max_length
 
         if args.max_prompt_length is None:
-            logger.warning(
+            warnings.warn(
                 "When using DPODataCollatorWithPadding, you should set `max_prompt_length` in the KTOTrainer's init"
                 " it will be set to `128` by default, but you should do it yourself in the future.",
+                UserWarning,
             )
             max_prompt_length = 128
         if args.max_prompt_length is not None:
@@ -724,9 +724,10 @@ class _UnslothKTOTrainer(Trainer):
 
         max_completion_length = None
         if args.max_completion_length is None and self.is_encoder_decoder:
-            logger.warning(
+            warnings.warn(
                 "When using DPODataCollatorWithPadding with an encoder decoder architecture, you should set `max_completion_length` in the KTOTrainer's init"
                 " it will be set to `128` by default, but you should do it yourself in the future.",
+                UserWarning,
             )
             max_completion_length = 128
         if args.max_completion_length is not None and self.is_encoder_decoder:
@@ -742,9 +743,10 @@ class _UnslothKTOTrainer(Trainer):
             if args.remove_unused_columns:
                 args.remove_unused_columns = False
                 # warn users
-                logger.warning(
+                warnings.warn(
                     "When using DPODataCollatorWithPadding, you should set `remove_unused_columns=False` in your KTOConfig"
                     " we have set it for you, but you should do it yourself in the future.",
+                    UserWarning,
                 )
 
             self.use_dpo_data_collator = True
@@ -788,11 +790,12 @@ class _UnslothKTOTrainer(Trainer):
         self.aux_loss_enabled = getattr(model.config, "output_router_logits", False)
         self.aux_loss_coef = getattr(model.config, "router_aux_loss_coef", 0.0)
         if self.aux_loss_enabled and self.aux_loss_coef == 0.0:
-            logger.warning(
+            warnings.warn(
                 "You set `output_router_logits` to `True` in the model config, but `router_aux_loss_coef` is set to "
                 "`0.0`, meaning the auxiliary loss will not be used. Either set `router_aux_loss_coef` to a value "
                 "greater than `0.0`, or set `output_router_logits` to `False` if you don't want to use the auxiliary "
                 "loss.",
+                UserWarning,
             )
 
         # The trainer estimates the number of FLOPs [floating-point operations] using the number of elements in the
@@ -945,13 +948,14 @@ class _UnslothKTOTrainer(Trainer):
                 und_weight_in_range = und_weight_lower_bound <= self.undesirable_weight <= und_weight_upper_bound
 
                 if not (des_weight_in_range or und_weight_in_range):
-                    logger.warning(
+                    warnings.warn(
                         "You have different amounts of desirable/positive and undesirable/negative examples but the "
                         "weights on the desirable and undesirable losses don't seem to be in an ideal range. Based "
                         f"on your data, we recommend EITHER "
                         f"desirable_weight in [{des_weight_lower_bound}, {des_weight_upper_bound}] or "
                         f"undesirable_weight in [{und_weight_lower_bound}, {und_weight_upper_bound}] (but NOT BOTH). "
                         "See the documentation on how to optimally set these weights.",
+                        UserWarning,
                     )
 
         super().__init__(
@@ -1236,12 +1240,6 @@ class _UnslothKTOTrainer(Trainer):
             average_log_prob:
                 If True, return the average log probability per (non-masked) token. Otherwise, return the sum of the
                 log probabilities of the (non-masked) tokens.
-            label_pad_token_id:
-                The label value to ignore when computing log probabilities.
-            is_encoder_decoder:
-                Whether the model is an encoder-decoder model. If True, the labels are not shifted and the logits are
-                assumed to already be aligned with the labels. If False, the labels are shifted to the right by one
-                position, and the logits are assumed to be aligned with the shifted labels.
 
         Returns:
             A tensor of shape (batch_size,) containing the average/sum log probabilities of the given labels under the
@@ -1500,11 +1498,10 @@ class _UnslothKTOTrainer(Trainer):
             )
         else:
             # skip the lm head and get the last hidden state
-            if hasattr(model, "get_decoder") and model.get_decoder() is not None:
+            if hasattr(model, "get_decoder"):
                 base_model = model.get_decoder()
             else:
-                base_attr = getattr(model, "base_model_prefix", self.args.base_model_attribute_name)
-                base_model = getattr(model, base_attr, model)
+                base_model = getattr(model, self.args.base_model_attribute_name)
             outputs = base_model(
                 batch["completion_input_ids"],
                 attention_mask=batch["completion_attention_mask"],
@@ -1513,11 +1510,10 @@ class _UnslothKTOTrainer(Trainer):
             )
 
             # reference model
-            if hasattr(self.ref_model, "get_decoder") and self.ref_model.get_decoder() is not None:
+            if hasattr(self.ref_model, "get_decoder"):
                 ref_base_model = self.ref_model.get_decoder()
             else:
-                ref_attr = getattr(self.ref_model, "base_model_prefix", self.args.base_model_attribute_name)
-                ref_base_model = getattr(self.ref_model, ref_attr, self.ref_model)
+                ref_base_model = getattr(self.ref_model, self.args.base_model_attribute_name)
             ref_outputs = ref_base_model(
                 batch["completion_input_ids"],
                 attention_mask=batch["completion_attention_mask"],
@@ -1825,12 +1821,11 @@ class _UnslothKTOTrainer(Trainer):
             random_batch = self.data_collator(random_batch_dataset)
             random_batch = self._prepare_inputs(random_batch)
 
-            target_labels = torch.tensor(random_batch["label"], dtype=torch.bool, device=self.accelerator.device)
-            target_indices = torch.where(~target_labels)[0]
+            target_indicies = [i for i in range(len(random_batch["label"])) if random_batch["label"][i] is False]
             target_batch = {
-                "prompt_input_ids": random_batch["prompt_input_ids"][target_indices],
-                "prompt_attention_mask": random_batch["prompt_attention_mask"][target_indices],
-                "prompt": itemgetter(*target_indices)(random_batch["prompt"]),
+                "prompt_input_ids": random_batch["prompt_input_ids"][target_indicies],
+                "prompt_attention_mask": random_batch["prompt_attention_mask"][target_indicies],
+                "prompt": itemgetter(*target_indicies)(random_batch["prompt"]),
             }
             policy_output_decoded, ref_output_decoded = self.generate_from_model_and_ref(self.model, target_batch)
 
@@ -1937,12 +1932,8 @@ class _UnslothKTOTrainer(Trainer):
         if hasattr(self.model.config, "unsloth_version"):
             tags.add("unsloth")
 
-        if "JOB_ID" in os.environ:
-            tags.add("hf_jobs")
-
         tags.update(self._tag_names)
 
-        # docstyle-ignore
         citation = textwrap.dedent("""\
         @article{ethayarajh2024kto,
             title        = {{KTO: Model Alignment as Prospect Theoretic Optimization}},
@@ -2187,13 +2178,3 @@ class UnslothKTOTrainer(_UnslothKTOTrainer):
         pass
         
 pass
-
-
-if hasattr(logger, "addFilter"):
-    import logging
-    class HideLoggingMessage(logging.Filter):
-        def __init__(self, text): self.text = text
-        def filter(self, x): return not (self.text in x.getMessage())
-    pass
-    logger.addFilter(HideLoggingMessage("`use_cache=True`"))
-

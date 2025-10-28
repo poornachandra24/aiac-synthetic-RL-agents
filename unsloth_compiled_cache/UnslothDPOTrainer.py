@@ -1,8 +1,8 @@
 """
 2025.10.10
 2025.10.9
-4.57.1
-0.23.0
+4.56.2
+0.20.0
 __UNSLOTH_VERSIONING__
 """
 
@@ -27,7 +27,7 @@ import torch
 import torch.nn as nn
 from torch.nn import functional as F
 from typing import Any, List, Optional, Tuple, Union, Dict, Set, Callable
-from trl.trainer.dpo_trainer import (Any, AutoModelForCausalLM, AutoTokenizer, BaseImageProcessor, Callable, DPOConfig, DPOTrainer, DataCollator, DataCollatorForPreference, DataLoader, Dataset, EvalLoopOutput, F, FDivergenceConstants, FDivergenceType, FeatureExtractionMixin, IterableDataset, Literal, MODEL_FOR_IMAGE_TEXT_TO_TEXT_MAPPING_NAMES, Optional, PartialState, Path, PeftConfig, PeftModel, PreTrainedModel, PreTrainedTokenizerBase, ProcessorMixin, RunningMoments, SyncRefModelCallback, Trainer, TrainerCallback, Union, autocast, cap_exp, contextmanager, create_reference_model, dataclass, defaultdict, disable_dropout_in_model, empty_cache, flush_left, flush_right, generate_model_card, get_comet_experiment_url, get_peft_model, inspect, is_comet_available, is_liger_kernel_available, is_mlflow_available, is_peft_available, is_wandb_available, log_table_to_comet_experiment, logger, logging, maybe_apply_chat_template, maybe_extract_prompt, nn, nullcontext, os, pad, pad_to_length, pd, peft_module_casting_to_bf16, prepare_deepspeed, prepare_fsdp, prepare_model_for_kbit_training, random, selective_log_softmax, shift_tokens_right, textwrap, torch, tqdm, wandb, F, Optional, PeftModel, PreTrainedModel, Trainer, is_peft_available, logger, os, torch)
+from trl.trainer.dpo_trainer import (Any, AutoModelForCausalLM, AutoTokenizer, BaseImageProcessor, Callable, DPOConfig, DPOTrainer, DataCollator, DataCollatorForPreference, DataLoader, Dataset, EvalLoopOutput, F, FDivergenceConstants, FDivergenceType, FeatureExtractionMixin, IterableDataset, Literal, MODEL_FOR_VISION_2_SEQ_MAPPING_NAMES, Optional, PartialState, Path, PeftConfig, PeftModel, PreTrainedModel, PreTrainedTokenizerBase, ProcessorMixin, RunningMoments, SyncRefModelCallback, Trainer, TrainerCallback, Union, autocast, cap_exp, contextmanager, create_reference_model, dataclass, defaultdict, disable_dropout_in_model, empty_cache, flush_left, flush_right, generate_model_card, get_comet_experiment_url, get_peft_model, inspect, is_comet_available, is_liger_kernel_available, is_mlflow_available, is_peft_available, is_wandb_available, log_table_to_comet_experiment, maybe_apply_chat_template, maybe_extract_prompt, nn, nullcontext, os, pad, pad_to_length, pd, peft_module_casting_to_bf16, prepare_deepspeed, prepare_fsdp, prepare_model_for_kbit_training, random, selective_log_softmax, shift_tokens_right, textwrap, torch, tqdm, wandb, warnings, F, Optional, PeftModel, PreTrainedModel, Trainer, is_peft_available, os, torch)
 
 
 import os
@@ -274,9 +274,9 @@ class UnslothDPOConfig(DPOConfig):
             τ/temperature parameter from the [DiscoPOP](https://huggingface.co/papers/2406.08414) paper, which controls
             the shape of log ratio modulated loss. The paper recommends the default value `discopop_tau=0.05`.
         loss_weights (`list[float]` or `None`, *optional*, defaults to `None`):
-            List of loss weights for multi-loss combinations. Used when combining multiple loss types. Example: `[0.8,
-            0.2, 1.0]` for [MPO](https://huggingface.co/papers/2411.10442). If not provided, defaults to equal weights
-            (`1.0`) for all loss types.
+            List of loss weights for multi-loss combinations. Used when combining multiple loss types.
+            Example: `[0.8, 0.2, 1.0]` for [MPO](https://huggingface.co/papers/2411.10442). If not provided, defaults
+            to equal weights (`1.0`) for all loss types.
         sync_ref_model (`bool`, *optional*, defaults to `False`):
             Whether to synchronize the reference model with the active model every `ref_model_sync_steps` steps, using
             the `ref_model_mixup_alpha` parameter. This synchronization originates from the
@@ -359,6 +359,7 @@ class UnslothDPOConfig(DPOConfig):
         seed = 3407,
         data_seed = 3407,
         jit_mode_eval = False,
+        use_ipex = False,
         bf16 = False,
         fp16 = False,
         fp16_opt_level = 'O1',
@@ -384,7 +385,7 @@ class UnslothDPOConfig(DPOConfig):
         metric_for_best_model = None,
         greater_is_better = None,
         ignore_data_skip = False,
-        fsdp = None,
+        fsdp = '',
         fsdp_min_num_params = 0,
         fsdp_config = None,
         fsdp_transformer_layer_cls_to_wrap = None,
@@ -398,8 +399,6 @@ class UnslothDPOConfig(DPOConfig):
         group_by_length = False,
         length_column_name = 'length',
         report_to = None,
-        project = 'huggingface',
-        trackio_space_id = 'trackio',
         ddp_find_unused_parameters = None,
         ddp_bucket_cap_mb = None,
         ddp_broadcast_buffers = None,
@@ -415,7 +414,7 @@ class UnslothDPOConfig(DPOConfig):
         hub_private_repo = None,
         hub_always_push = False,
         hub_revision = None,
-        gradient_checkpointing = True,
+        gradient_checkpointing = False,
         gradient_checkpointing_kwargs = None,
         include_inputs_for_metrics = False,
         eval_do_concat_batches = True,
@@ -537,6 +536,7 @@ class UnslothDPOConfig(DPOConfig):
             seed = seed,
             data_seed = data_seed,
             jit_mode_eval = jit_mode_eval,
+            use_ipex = use_ipex,
             bf16 = bf16,
             fp16 = fp16,
             fp16_opt_level = fp16_opt_level,
@@ -576,8 +576,6 @@ class UnslothDPOConfig(DPOConfig):
             group_by_length = group_by_length,
             length_column_name = length_column_name,
             report_to = report_to,
-            project = project,
-            trackio_space_id = trackio_space_id,
             ddp_find_unused_parameters = ddp_find_unused_parameters,
             ddp_bucket_cap_mb = ddp_bucket_cap_mb,
             ddp_broadcast_buffers = ddp_broadcast_buffers,
@@ -714,7 +712,7 @@ class _UnslothDPOTrainer(Trainer):
             )
 
         if args.model_init_kwargs is not None and not isinstance(model, str):
-            logger.warning(
+            warnings.warn(
                 "You passed model_init_kwargs to the `DPOConfig`, but your model is already instantiated. "
                 "The `model_init_kwargs` will be ignored."
             )
@@ -722,7 +720,7 @@ class _UnslothDPOTrainer(Trainer):
             model = self._create_model_from_path(model, args)
 
         if args.ref_model_init_kwargs is not None and not isinstance(ref_model, str):
-            logger.warning(
+            warnings.warn(
                 "You passed ref_model_init_kwargs to the `DPOConfig`, but your ref_model is already instantiated. "
                 "The `ref_model_init_kwargs` will be ignored."
             )
@@ -739,7 +737,7 @@ class _UnslothDPOTrainer(Trainer):
             )
 
         self.is_encoder_decoder = model.config.is_encoder_decoder
-        self.is_vision_model = model.config.model_type in MODEL_FOR_IMAGE_TEXT_TO_TEXT_MAPPING_NAMES.keys()
+        self.is_vision_model = model.config.model_type in MODEL_FOR_VISION_2_SEQ_MAPPING_NAMES.keys()
         self.is_peft_model = is_peft_available() and isinstance(model, PeftModel)
         self.model_adapter_name = args.model_adapter_name
         self.ref_adapter_name = args.ref_adapter_name
@@ -766,17 +764,16 @@ class _UnslothDPOTrainer(Trainer):
                     "You set `use_liger_loss=True` but the liger kernel is not available. "
                     "Please install liger-kernel first: `pip install liger-kernel`"
                 )
-            if args.loss_type not in ["sigmoid", "apo_zero", "apo_down", "sppo_hard", "nca_pair"]:
+            if args.loss_type != "sigmoid":
                 raise ValueError(
-                    "You set `use_liger_loss=True` but the loss type is not from `[sigmoid, apo_zero, apo_down, sppo_hard, nca_pair`. "
-                    "Please set `loss_type='[sigmoid | apo_zero | apo_down | sppo_hard | nca_pair]'` to use the liger kernel."
+                    "You set `use_liger_loss=True` but the loss type is not `sigmoid`. "
+                    "Please set `loss_type='sigmoid'` to use the liger kernel."
                 )
             self.dpo_loss_fn = LigerFusedLinearDPOLoss(
                 ignore_index=args.label_pad_token_id,
                 beta=args.beta,
                 use_ref_model=not args.reference_free,
                 average_log_prob=False,
-                loss_type=args.loss_type,
             )
         # The trainer estimates the number of FLOPs [floating-point operations] using the number of elements in the
         # input tensor associated with the key "input_ids". However, in DPO, the sampled data does not include the
@@ -802,7 +799,7 @@ class _UnslothDPOTrainer(Trainer):
 
         if args.padding_free:
             if model.config._attn_implementation != "flash_attention_2":
-                logger.warning(
+                warnings.warn(
                     "Padding-free training is enabled, but the attention implementation is not set to "
                     "'flash_attention_2'. Padding-free training flattens batches into a single sequence, and "
                     "'flash_attention_2' is the only known attention mechanism that reliably supports this. Using "
@@ -811,7 +808,7 @@ class _UnslothDPOTrainer(Trainer):
                     "attention mechanism can handle flattened sequences."
                 )
             if args.per_device_train_batch_size == 1:
-                logger.warning(
+                warnings.warn(
                     "You are using a per_device_train_batch_size of 1 with padding-free training. Using a batch size "
                     "of 1 anihilate the benefits of padding-free training. Please consider increasing the batch size "
                     "to at least 2."
@@ -831,21 +828,22 @@ class _UnslothDPOTrainer(Trainer):
         self.use_weighting = args.use_weighting
         self.aux_loss_coef = getattr(model.config, "router_aux_loss_coef", 0.0)
         if self.aux_loss_enabled and self.aux_loss_coef == 0.0:
-            logger.warning(
+            warnings.warn(
                 "You set `output_router_logits` to `True` in the model config, but `router_aux_loss_coef` is set to "
                 "`0.0`, meaning the auxiliary loss will not be used. Either set `router_aux_loss_coef` to a value "
                 "greater than `0.0`, or set `output_router_logits` to `False` if you don't want to use the auxiliary "
                 "loss.",
+                UserWarning,
             )
         for loss_type in self.loss_type:
             if (
                 loss_type in ["hinge", "ipo", "bco_pair", "sppo_hard", "nca_pair", "apo_zero", "apo_down"]
                 and args.label_smoothing > 0
             ):
-                logger.warning(
+                warnings.warn(
                     f"You are using the {loss_type} loss type that does not support label smoothing. The "
-                    "`label_smoothing` parameter will be ignored. Set `label_smoothing` to `0.0` to remove this "
-                    "warning.",
+                    "`label_smoothing` parameter will be ignored. Set `label_smoothing` to `0.0` to remove this warning.",
+                    UserWarning,
                 )
             if loss_type == "kto_pair":
                 raise ValueError("Support for kto_pair has been removed in DPOTrainer. Please use KTOTrainer.")
@@ -937,17 +935,20 @@ class _UnslothDPOTrainer(Trainer):
             model_init_kwargs = args.ref_model_init_kwargs or {}
 
         # Handle torch dtype
-        dtype = model_init_kwargs.get("dtype")
-        if isinstance(dtype, torch.dtype) or dtype == "auto" or dtype is None:
-            pass  # dtype is already a torch.dtype or "auto" or None
-        elif isinstance(dtype, str):  # it's a str, but not "auto"
-            dtype = getattr(torch, dtype)
-            model_init_kwargs["dtype"] = dtype
+        torch_dtype = model_init_kwargs.get("torch_dtype")
+        if isinstance(torch_dtype, torch.dtype) or torch_dtype == "auto" or torch_dtype is None:
+            pass  # torch_dtype is already a torch.dtype or "auto" or None
+        elif isinstance(torch_dtype, str):  # it's a str, but not "auto"
+            torch_dtype = getattr(torch, torch_dtype)
+            model_init_kwargs["torch_dtype"] = torch_dtype
         else:
             raise ValueError(
-                "Invalid `dtype` passed to `DPOConfig`. Expected either 'auto' or a string representing "
-                f"a `torch.dtype` (e.g., 'float32'), but got {dtype}."
+                "Invalid `torch_dtype` passed to `DPOConfig`. Expected either 'auto' or a string representing "
+                f"a `torch.dtype` (e.g., 'float32'), but got {torch_dtype}."
             )
+        # Disable caching if gradient checkpointing is enabled (not supported)
+        # if args.gradient_checkpointing:
+        #     model_init_kwargs["use_cache"] = False
 
         # Create model
         model = AutoModelForCausalLM.from_pretrained(model_path, **model_init_kwargs)
@@ -1424,29 +1425,6 @@ class _UnslothDPOTrainer(Trainer):
                 Log probabilities of the reference model for the chosen responses. Shape: `(batch_size,)`.
             ref_rejected_logps (`torch.FloatTensor`):
                 Log probabilities of the reference model for the rejected responses. Shape: `(batch_size,)`.
-            loss_type (`str`, defaults to `"sigmoid"`):
-                The type of loss to compute. One of:
-                - `"sigmoid"`: Sigmoid loss from the original [DPO](https://huggingface.co/papers/2305.18290) paper.
-                - `"hinge"`: Hinge loss on the normalized likelihood from the
-                  [SLiC](https://huggingface.co/papers/2305.10425) paper.
-                - `"ipo"`: IPO loss from the [IPO](https://huggingface.co/papers/2310.12036) paper.
-                - `"exo_pair"`: Pairwise EXO loss from the [EXO](https://huggingface.co/papers/2402.00856) paper.
-                - `"nca_pair"`: Pairwise NCA loss from the [NCA](https://huggingface.co/papers/2402.05369) paper.
-                - `"robust"`: Unbiased estimate of the DPO loss that is robust to preference noise from the [Robust
-                  DPO](https://huggingface.co/papers/2403.00409) paper.
-                - `"bco_pair"`: Pairwise BCO loss from the [BCO](https://huggingface.co/papers/2404.04656) paper.
-                - `"sppo_hard"`: SPPO loss with hard label from the [SPPO](https://huggingface.co/papers/2405.00675)
-                  paper.
-                - `"aot"`: AOT loss for paired datasets from the [AOT](https://huggingface.co/papers/2406.05882) paper.
-                - `"aot_pair"`: AOT loss for unpaired datasets from the [AOT](https://huggingface.co/papers/2406.05882)
-                  paper.
-                - `"discopop"`: DiscoPOP (a.k.a Log-Ratio Modulated Loss, LRML) loss from the
-                  [DiscoPOP](https://huggingface.co/papers/2406.08414) paper.
-                - `"apo_zero"`: APO-zero loss from the [APO](https://huggingface.co/papers/2408.06266) paper.
-                - `"apo_down"`: APO-down loss from the [APO](https://huggingface.co/papers/2408.06266) paper.
-                - `"sft"`: Negative log-likelihood loss (standard supervised fine-tuning loss).
-            model_output (`dict[str, torch.FloatTensor]`, *optional*):
-                The output of the model's forward pass. This is used to compute auxiliary losses if enabled.
 
         Returns:
             A tuple of three tensors: `(losses, chosen_rewards, rejected_rewards)`. The losses tensor contains the DPO
@@ -1766,11 +1744,10 @@ class _UnslothDPOTrainer(Trainer):
                 model_kwargs["attention_mask"] = attention_mask
 
             # Get the base model outputs (before LM head)
-            if hasattr(unwrapped_model, "get_decoder") and unwrapped_model.get_decoder() is not None:
+            if hasattr(unwrapped_model, "get_decoder"):
                 base_model = unwrapped_model.get_decoder()
             else:
-                base_attr = getattr(unwrapped_model, "base_model_prefix", self.args.base_model_attribute_name)
-                base_model = getattr(unwrapped_model, base_attr, unwrapped_model)
+                base_model = getattr(unwrapped_model, self.args.base_model_attribute_name, unwrapped_model)
 
             outputs = base_model(
                 input_ids,
@@ -1783,11 +1760,12 @@ class _UnslothDPOTrainer(Trainer):
             ref_hidden_states = None
             if not self.reference_free and self.ref_model is not None:
                 unwrapped_ref_model = self.accelerator.unwrap_model(self.ref_model)
-                if hasattr(unwrapped_ref_model, "get_decoder") and unwrapped_ref_model.get_decoder() is not None:
+                if hasattr(unwrapped_ref_model, "get_decoder"):
                     ref_base_model = unwrapped_ref_model.get_decoder()
                 else:
-                    ref_attr = getattr(unwrapped_ref_model, "base_model_prefix", self.args.base_model_attribute_name)
-                    ref_base_model = getattr(unwrapped_ref_model, ref_attr, unwrapped_ref_model)
+                    ref_base_model = getattr(
+                        unwrapped_ref_model, self.args.base_model_attribute_name, unwrapped_ref_model
+                    )
 
                 ref_outputs = ref_base_model(
                     input_ids,
@@ -1796,11 +1774,10 @@ class _UnslothDPOTrainer(Trainer):
                 )
                 ref_hidden_states = ref_outputs.last_hidden_state[:, :-1]
             elif not self.reference_free:
-                if hasattr(unwrapped_model, "get_decoder") and unwrapped_model.get_decoder() is not None:
+                if hasattr(unwrapped_model, "get_decoder"):
                     ref_base_model = unwrapped_model.get_decoder()
                 else:
-                    ref_attr = getattr(unwrapped_model, "base_model_prefix", self.args.base_model_attribute_name)
-                    ref_base_model = getattr(unwrapped_model, ref_attr, unwrapped_model)
+                    ref_base_model = getattr(unwrapped_model, self.args.base_model_attribute_name, unwrapped_model)
                 with self.null_ref_context():
                     ref_outputs = ref_base_model(
                         input_ids,
@@ -1986,7 +1963,7 @@ class _UnslothDPOTrainer(Trainer):
                 loss_mask = loss_mask[:, -logits_to_keep:]
 
         if logits.shape[:2] != labels.shape[:2]:
-            # for LLaVA, the returned logits include the image tokens (placed before the text tokens)
+            # for llava, the returned logits include the image tokens (placed before the text tokens)
             seq_len = labels.shape[1]
             logits = logits[:, -seq_len:]
 
@@ -2398,12 +2375,8 @@ class _UnslothDPOTrainer(Trainer):
         if hasattr(self.model.config, "unsloth_version"):
             tags.add("unsloth")
 
-        if "JOB_ID" in os.environ:
-            tags.add("hf_jobs")
-
         tags.update(self._tag_names)
 
-        # docstyle-ignore
         citation = textwrap.dedent(
             """\
             @inproceedings{rafailov2023direct,
@@ -2675,13 +2648,3 @@ class UnslothDPOTrainer(_UnslothDPOTrainer):
         pass
         
 pass
-
-
-if hasattr(logger, "addFilter"):
-    import logging
-    class HideLoggingMessage(logging.Filter):
-        def __init__(self, text): self.text = text
-        def filter(self, x): return not (self.text in x.getMessage())
-    pass
-    logger.addFilter(HideLoggingMessage("`use_cache=True`"))
-

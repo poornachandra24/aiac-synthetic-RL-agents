@@ -1,8 +1,8 @@
 """
 2025.10.10
 2025.10.9
-4.57.1
-0.23.0
+4.56.2
+0.20.0
 __UNSLOTH_VERSIONING__
 """
 
@@ -27,7 +27,7 @@ import torch
 import torch.nn as nn
 from torch.nn import functional as F
 from typing import Any, List, Optional, Tuple, Union, Dict, Set, Callable
-from trl.trainer.iterative_sft_trainer import (AutoModelForCausalLM, AutoTokenizer, BaseImageProcessor, Callable, DataCollator, DataCollatorForLanguageModeling, DataCollatorForSeq2Seq, DataLoader, Dataset, EvalLoopOutput, FeatureExtractionMixin, IterativeSFTConfig, IterativeSFTTrainer, Optional, PPODecorators, Path, PeftModel, PreTrainedModel, PreTrainedTokenizerBase, ProcessorMixin, Trainer, TrainingArguments, Union, generate_model_card, get_comet_experiment_url, is_peft_available, is_wandb_available, logger, logging, os, torch, wandb, warnings, Optional, PeftModel, PreTrainedModel, Trainer, is_peft_available, logger, os, torch)
+from trl.trainer.iterative_sft_trainer import (AutoModelForCausalLM, AutoTokenizer, BaseImageProcessor, Callable, DataCollator, DataCollatorForLanguageModeling, DataCollatorForSeq2Seq, DataLoader, Dataset, EvalLoopOutput, FeatureExtractionMixin, IterativeSFTConfig, IterativeSFTTrainer, Optional, PPODecorators, Path, PeftModel, PreTrainedModel, PreTrainedTokenizerBase, ProcessorMixin, Trainer, TrainingArguments, Union, generate_model_card, get_comet_experiment_url, is_peft_available, is_wandb_available, os, torch, wandb, warnings, Optional, PeftModel, PreTrainedModel, Trainer, is_peft_available, os, torch)
 
 
 import os
@@ -145,12 +145,6 @@ class UnslothIterativeSFTConfig(IterativeSFTConfig):
     
     Configuration class for the [`IterativeSFTTrainer`].
 
-    <Tip warning={true}>
-
-    The [`IterativeSFTTrainer`] is deprecated and will be removed in version 0.24.0. Please use the [`SFTTrainer`].
-
-    </Tip>
-
     This class includes only the parameters that are specific to Iterative SFT training. For a full list of training
     arguments, please refer to the [`~transformers.TrainingArguments`] documentation. Note that default values in this
     class may differ from those in [`~transformers.TrainingArguments`].
@@ -237,6 +231,7 @@ class UnslothIterativeSFTConfig(IterativeSFTConfig):
         seed = 3407,
         data_seed = 3407,
         jit_mode_eval = False,
+        use_ipex = False,
         bf16 = False,
         fp16 = False,
         fp16_opt_level = 'O1',
@@ -262,7 +257,7 @@ class UnslothIterativeSFTConfig(IterativeSFTConfig):
         metric_for_best_model = None,
         greater_is_better = None,
         ignore_data_skip = False,
-        fsdp = None,
+        fsdp = '',
         fsdp_min_num_params = 0,
         fsdp_config = None,
         fsdp_transformer_layer_cls_to_wrap = None,
@@ -276,8 +271,6 @@ class UnslothIterativeSFTConfig(IterativeSFTConfig):
         group_by_length = False,
         length_column_name = 'length',
         report_to = None,
-        project = 'huggingface',
-        trackio_space_id = 'trackio',
         ddp_find_unused_parameters = None,
         ddp_bucket_cap_mb = None,
         ddp_broadcast_buffers = None,
@@ -293,7 +286,7 @@ class UnslothIterativeSFTConfig(IterativeSFTConfig):
         hub_private_repo = None,
         hub_always_push = False,
         hub_revision = None,
-        gradient_checkpointing = True,
+        gradient_checkpointing = False,
         gradient_checkpointing_kwargs = None,
         include_inputs_for_metrics = False,
         eval_do_concat_batches = True,
@@ -383,6 +376,7 @@ class UnslothIterativeSFTConfig(IterativeSFTConfig):
             seed = seed,
             data_seed = data_seed,
             jit_mode_eval = jit_mode_eval,
+            use_ipex = use_ipex,
             bf16 = bf16,
             fp16 = fp16,
             fp16_opt_level = fp16_opt_level,
@@ -422,8 +416,6 @@ class UnslothIterativeSFTConfig(IterativeSFTConfig):
             group_by_length = group_by_length,
             length_column_name = length_column_name,
             report_to = report_to,
-            project = project,
-            trackio_space_id = trackio_space_id,
             ddp_find_unused_parameters = ddp_find_unused_parameters,
             ddp_bucket_cap_mb = ddp_bucket_cap_mb,
             ddp_broadcast_buffers = ddp_broadcast_buffers,
@@ -496,12 +488,6 @@ class _UnslothIterativeSFTTrainer(Trainer):
         preprocess_logits_for_metrics: Optional[Callable[[torch.Tensor, torch.Tensor], torch.Tensor]] = None,
         compute_metrics: Optional[Callable[[EvalLoopOutput], dict]] = None,
     ):
-        warnings.warn(
-            "The `IterativeSFTTrainer` is deprecated and will be removed in version 0.24.0. Please use the "
-            "`SFTTrainer`.",
-            FutureWarning,
-        )
-
         # Args
         model_id = model if isinstance(model, str) else model.config._name_or_path
         if args is None:
@@ -519,7 +505,7 @@ class _UnslothIterativeSFTTrainer(Trainer):
 
         # Model
         if args.model_init_kwargs is not None and not isinstance(model, str):
-            logger.warning(
+            warnings.warn(
                 "You passed model_init_kwargs to the `IterativeSFTConfig`, but your model is already instantiated. "
                 "The `model_init_kwargs` will be ignored."
             )
@@ -708,9 +694,10 @@ class _UnslothIterativeSFTTrainer(Trainer):
         if input_ids is None and texts is None:
             raise ValueError("Step should include `input_ids` or `texts` as keyword arguments.")
         elif input_ids is not None and texts is not None:
-            logger.warning(
+            warnings.warn(
                 "Both `input_ids` and `texts` argument are provided. `input_ids` will be ignored. "
                 "Please provide only one of the two.",
+                UserWarning,
             )
 
         if labels is None and texts_labels is None and self.is_encoder_decoder:
@@ -866,9 +853,6 @@ class _UnslothIterativeSFTTrainer(Trainer):
         if hasattr(self.model.config, "unsloth_version"):
             tags.add("unsloth")
 
-        if "JOB_ID" in os.environ:
-            tags.add("hf_jobs")
-
         tags.update(self._tag_names)
 
         model_card = generate_model_card(
@@ -887,12 +871,6 @@ class UnslothIterativeSFTTrainer(_UnslothIterativeSFTTrainer):
     """
     
     The IterativeSFTTrainer can be used to finetune models with methods that requires some steps between optimization.
-
-    <Tip warning={true}>
-
-    The [`IterativeSFTTrainer`] is deprecated and will be removed in version 0.24.0. Please use the [`SFTTrainer`].
-
-    </Tip>
 
     Args:
         model (`Union[str, PreTrainedModel]`):
@@ -923,6 +901,12 @@ class UnslothIterativeSFTTrainer(_UnslothIterativeSFTTrainer):
         compute_metrics (`Callable[[EvalPrediction], dict]`, *optional*):
             The function to use to compute the metrics. Must take a `EvalPrediction` and return a dictionary string to
             metric values.
+        max_length (`int`, *optional*, deprecated):
+            Maximum length of the tokenized sequence. Use `args.max_length` instead.
+        truncation_mode (`str`, *optional*, deprecated):
+            The truncation mode to use. Use `args.truncation_mode` instead.
+        optimize_device_cache (`bool`, *optional*, deprecated):
+            Whether to optimize accelerator cache. Use `args.optimize_device_cache` instead.
     
     """
     def __init__(
@@ -1052,13 +1036,3 @@ class UnslothIterativeSFTTrainer(_UnslothIterativeSFTTrainer):
         pass
         
 pass
-
-
-if hasattr(logger, "addFilter"):
-    import logging
-    class HideLoggingMessage(logging.Filter):
-        def __init__(self, text): self.text = text
-        def filter(self, x): return not (self.text in x.getMessage())
-    pass
-    logger.addFilter(HideLoggingMessage("`use_cache=True`"))
-

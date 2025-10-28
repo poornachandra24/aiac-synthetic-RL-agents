@@ -1,8 +1,8 @@
 """
 2025.10.10
 2025.10.9
-4.57.1
-0.23.0
+4.56.2
+0.20.0
 __UNSLOTH_VERSIONING__
 """
 
@@ -27,7 +27,7 @@ import torch
 import torch.nn as nn
 from torch.nn import functional as F
 from typing import Any, List, Optional, Tuple, Union, Dict, Set, Callable
-from trl.trainer.alignprop_trainer import (Accelerator, AlignPropConfig, AlignPropTrainer, Any, Callable, DDPOStableDiffusionPipeline, Optional, Path, ProjectConfiguration, PyTorchModelHubMixin, Union, defaultdict, generate_model_card, get_comet_experiment_url, is_wandb_available, logger, logging, os, set_seed, textwrap, torch, wandb, warnings)
+from trl.trainer.alignprop_trainer import (Accelerator, AlignPropConfig, AlignPropTrainer, Any, Callable, DDPOStableDiffusionPipeline, Optional, Path, ProjectConfiguration, PyTorchModelHubMixin, Union, defaultdict, generate_model_card, get_comet_experiment_url, is_wandb_available, logger, os, set_seed, textwrap, torch, wandb, warnings)
 
 
 import os
@@ -230,7 +230,7 @@ class UnslothAlignPropConfig(AlignPropConfig):
     
     def __init__(
         self,
-        exp_name = 'ipykernel_launcher',
+        exp_name = 'answer_agent',
         run_name = '',
         seed = 3407,
         log_with = None,
@@ -320,7 +320,7 @@ class _UnslothAlignPropTrainer(PyTorchModelHubMixin):
             DeprecationWarning,
         )
         if image_samples_hook is None:
-            logger.warning("No image_samples_hook provided; no images will be logged")
+            warnings.warn("No image_samples_hook provided; no images will be logged")
 
         self.prompt_fn = prompt_function
         self.reward_fn = reward_function
@@ -405,7 +405,7 @@ class _UnslothAlignPropTrainer(PyTorchModelHubMixin):
 
         # Enable TF32 for faster training on Ampere GPUs,
         # cf https://pytorch.org/docs/stable/notes/cuda.html#tensorfloat-32-tf32-on-ampere-devices
-        if self.config.allow_tf32 and torch.cuda.is_available():
+        if self.config.allow_tf32:
             torch.backends.cuda.matmul.allow_tf32 = True
 
         self.optimizer = self._setup_optimizer(
@@ -579,7 +579,6 @@ class _UnslothAlignPropTrainer(PyTorchModelHubMixin):
         Args:
             batch_size (int): Batch size to use for sampling
             with_grad (bool): Whether the generated RGBs should have gradients attached to it.
-            prompts (list[str], *optional*): If provided, use these prompts instead of generating new ones.
 
         Returns:
             prompt_image_pairs (dict[Any])
@@ -692,12 +691,8 @@ class _UnslothAlignPropTrainer(PyTorchModelHubMixin):
         if hasattr(self.model.config, "unsloth_version"):
             tags.add("unsloth")
 
-        if "JOB_ID" in os.environ:
-            tags.add("hf_jobs")
-
         tags.update(self._tag_names)
 
-        # docstyle-ignore
         citation = textwrap.dedent("""\
         @article{prabhudesai2024aligning,
             title        = {{Aligning Text-to-Image Diffusion Models with Reward Backpropagation}},
@@ -728,7 +723,7 @@ class UnslothAlignPropTrainer(_UnslothAlignPropTrainer):
     heavily inspired by the work here: https://github.com/mihirp1998/AlignProp/ As of now only Stable Diffusion based
     pipelines are supported
 
-    Args:
+    Attributes:
         config (`AlignPropConfig`):
             Configuration object for AlignPropTrainer. Check the documentation of `PPOConfig` for more details.
         reward_function (`Callable[[torch.Tensor, tuple[str], tuple[Any]], torch.Tensor]`):

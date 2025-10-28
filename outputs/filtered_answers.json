@@ -1,71 +1,11 @@
 [
-    {
-        "answer": "C",
-        "reasoning": "A is the brother of B, who is the daughter of C. J is the son of K, who is the brother of L. There is no direct familial connection between A and J. Since K is the brother of L and J is the son of K, A is the uncle of J."
-    },
-    {
-        "answer": "D",
-        "reasoning": "A is the father of B, who is the sister of C. C is the parent of D, who is the child of E. E is the mother of D, and F is the brother of E. F is the parent of G, who is the mother of H and I. J is the father of I, and K is the son of J. L is the mother of K. Since A is the father of B and B is the sister of C, A is the paternal uncle of C. Since C is the parent of D and E is the mother of D, E is the sister of F. Therefore, A is the grandfather of K through C and D, making A the grandfather of L's child K."
-    },
-    {
-        "answer": "D",
-        "reasoning": "From the clues, we determine the seating order: B, A, F, D, C, E. The person who likes green is between D and E, so D likes green. The person who likes purple is two seats to the right of B, which is E. The person who likes yellow is D, as the remaining color. Thus, D likes yellow."
-    },
-    {
-        "answer": "D",
-        "reasoning": "From the given information, A is immediately to the left of B, and B is opposite D, so A and D are two seats apart. F is adjacent to both A and D, so F must be between A and D. C is two seats to the right of E, so E and C are separated by one seat. The only person between E and C is D."
-    },
-    {
-        "answer": "D",
-        "reasoning": "K is the father of J, who is the brother of I. I is the daughter of H, who is the son of G, who is the mother of F. F is the son of E, who is the daughter of D, who is the brother of C, who is the father of B, who is the son of A. Thus, K is the son-in-law of A, as A is the mother of B, and K is the father of J, who is the brother of I, the daughter of H, who is the son of G, who is the mother of F, who is the son of E, who is the daughter of D."
-    },
-    {
-        "answer": "D",
-        "reasoning": "A is facing the center and is directly opposite B, who is facing outward. C is adjacent to D, who is facing the center. E is two seats to the left of F, who is facing outward. Since A is facing the center, B is facing outward. D is facing the center, so the only remaining person facing outward is E or F. F is facing outward, so E must be facing the center. Thus, D is the only one left facing outward."
-    },
-    {
-        "answer": "A",
-        "reasoning": "D is the mother-in-law of H, so H is the son-in-law of D. Since C is the only daughter of D, C is D's daughter. Therefore, H is married to C. C is the only son of B, so B is C's parent. A is the only child of B, so A is C's daughter. G is the mother-in-law of K, so K is the son-in-law of G. Since L is the only daughter of K, L is K's daughter. J is the only son of K, so J is K's son. I is the only daughter of J, so I is K's granddaughter. Since G is the mother-in-law of K, G is the mother of K's wife. Therefore, I is the cousin of A."
-    },
-    {
-        "answer": "D",
-        "reasoning": "Given the circular arrangement, A is opposite B, and B is adjacent to C. F is two seats to the right of G, and I is facing the center. H is facing outward and not adjacent to I. By analyzing the positions and constraints, D is directly opposite G."
-    },
-    {
-        "answer": "A",
-        "reasoning": "H is the daughter of I, who is the daughter of J, who is the son of K. A is the son of B, who is the daughter of C. F is the daughter-in-law of C, making F married to B's son (A) or B's brother. D is the son of E, who is the brother of F. G is the son of D and the brother of H. Thus, H and A are cousins."
-    },
-    {
-        "answer": "A",
-        "reasoning": "A is the paternal uncle of D, meaning A is the brother of D's parent. G is the maternal aunt of J, so G is the sister of J's parent. M is the sister-in-law of P, indicating M is married to P's sibling. Since S is the daughter of T and U, and A is the uncle of D, S must be A's cousin."
-    },
-    {
-        "answer": "A",
-        "reasoning": "F is the son of E, who is the mother of F. A is the son of B, who is the daughter of C, who is the brother of D. Since C is the brother of D, and B is the daughter of C, B is the niece of D. Therefore, F is the cousin of A."
-    },
-    {
-        "answer": "A",
-        "reasoning": "G is the son of F and H, and H is the daughter of C. A is the only child of B, who is the only daughter of C. Therefore, H and B are sisters, making F the brother-in-law of D. Since G's mother H is the daughter of C, and A's mother B is also the daughter of C, G and A are cousins."
-    },
-    {
-        "answer": "A",
-        "reasoning": "C is the paternal uncle of F, making C the brother of F's father. Since B is the daughter of C, B is the niece of F. A is the brother-in-law of B, so A is the brother of B's spouse. D is the mother of E, who is the son of F, making D the mother of F's son. Thus, A is the cousin of D."
-    },
-    {
-        "answer": "C",
-        "reasoning": "A is between B and F, so the order is B-A-F or F-A-B. E is opposite A, so E is two seats away from A. C is two seats to the right of D. B is not adjacent to E. Placing the people in a circle, the only arrangement that satisfies all conditions has C between D and E."
-    },
-    {
-        "answer": "A",
-        "reasoning": "A is the son of B, who is the daughter of C. D is the brother of C, so D and B are siblings. E is the daughter of D, F is the son of E, G is the daughter of F, H is the son of G, and I is the daughter of H. J is the son of I. Since I is the daughter of H, and H is the son of G, and G is the daughter of F, and F is the son of E, and E is the daughter of D, and D is the brother of C, and B is the daughter of C, J is the cousin of A."
-    },
     null,
-    {
-        "answer": "C",
-        "reasoning": "By placing A opposite D and using the clues about positions and adjacent fruits, we deduce the seating arrangement. C is adjacent to both F and G, and the grape lover is not adjacent to B. Through elimination and logical placement, C is the only one left who can logically like cherry without conflicting with other clues."
-    },
-    {
-        "answer": "A",
-        "reasoning": "Ravi is the son of Priya's paternal aunt, making Ravi Priya's cousin. Priya is the daughter of Ravi's maternal grandfather's only sister, making Priya Ravi's cousin. Therefore, Ravi is the cousin of Priya's maternal uncle, as the uncle is the brother of Priya's mother."
-    }
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
 ]

@@ -1,8 +1,8 @@
 """
 2025.10.10
 2025.10.9
-4.57.1
-0.23.0
+4.56.2
+0.20.0
 __UNSLOTH_VERSIONING__
 """
 
@@ -233,6 +233,7 @@ class UnslothGKDConfig(GKDConfig):
         seed = 3407,
         data_seed = 3407,
         jit_mode_eval = False,
+        use_ipex = False,
         bf16 = False,
         fp16 = False,
         fp16_opt_level = 'O1',
@@ -258,7 +259,7 @@ class UnslothGKDConfig(GKDConfig):
         metric_for_best_model = None,
         greater_is_better = None,
         ignore_data_skip = False,
-        fsdp = None,
+        fsdp = '',
         fsdp_min_num_params = 0,
         fsdp_config = None,
         fsdp_transformer_layer_cls_to_wrap = None,
@@ -272,8 +273,6 @@ class UnslothGKDConfig(GKDConfig):
         group_by_length = False,
         length_column_name = 'length',
         report_to = None,
-        project = 'huggingface',
-        trackio_space_id = 'trackio',
         ddp_find_unused_parameters = None,
         ddp_bucket_cap_mb = None,
         ddp_broadcast_buffers = None,
@@ -289,7 +288,7 @@ class UnslothGKDConfig(GKDConfig):
         hub_private_repo = None,
         hub_always_push = False,
         hub_revision = None,
-        gradient_checkpointing = True,
+        gradient_checkpointing = False,
         gradient_checkpointing_kwargs = None,
         include_inputs_for_metrics = False,
         eval_do_concat_batches = True,
@@ -331,7 +330,6 @@ class UnslothGKDConfig(GKDConfig):
         eval_packing = None,
         completion_only_loss = None,
         assistant_only_loss = False,
-        loss_type = 'nll',
         activation_offloading = False,
         temperature = 0.9,
         lmbda = 0.5,
@@ -414,6 +412,7 @@ class UnslothGKDConfig(GKDConfig):
             seed = seed,
             data_seed = data_seed,
             jit_mode_eval = jit_mode_eval,
+            use_ipex = use_ipex,
             bf16 = bf16,
             fp16 = fp16,
             fp16_opt_level = fp16_opt_level,
@@ -453,8 +452,6 @@ class UnslothGKDConfig(GKDConfig):
             group_by_length = group_by_length,
             length_column_name = length_column_name,
             report_to = report_to,
-            project = project,
-            trackio_space_id = trackio_space_id,
             ddp_find_unused_parameters = ddp_find_unused_parameters,
             ddp_bucket_cap_mb = ddp_bucket_cap_mb,
             ddp_broadcast_buffers = ddp_broadcast_buffers,
@@ -512,7 +509,6 @@ class UnslothGKDConfig(GKDConfig):
             eval_packing = eval_packing,
             completion_only_loss = completion_only_loss,
             assistant_only_loss = assistant_only_loss,
-            loss_type = loss_type,
             activation_offloading = activation_offloading,
             temperature = temperature,
             lmbda = lmbda,
@@ -528,8 +524,6 @@ class UnslothGKDConfig(GKDConfig):
 pass
 
 class _UnslothGKDTrainer(SFTTrainer):
-    """"""
-
     _tag_names = ["trl", "gkd"]
 
     def __init__(
@@ -550,29 +544,9 @@ class _UnslothGKDTrainer(SFTTrainer):
         peft_config: Optional["PeftConfig"] = None,
         formatting_func: Optional[Callable] = None,
     ):
-        # Ensure Trainer does not drop non-signature columns used by the collator [e.g., "prompts"]
+        # add remove_unused_columns=False to the dataclass args
         args.remove_unused_columns = False
-        # Respect a user-provided data_collator; otherwise, provide a ChatML collator that
-        if data_collator is None:
-            data_collator = DataCollatorForChatML(tokenizer=processing_class, max_length=args.max_length)
-
-        # Ensure SFTTrainer does not pre-process the dataset when using a ChatML collator,
-        # so that raw conversational fields [e.g., "messages"] remain available to the collator.
-        if args.dataset_kwargs is None:
-            args.dataset_kwargs = {"skip_prepare_dataset": True}
-        else:
-            args.dataset_kwargs["skip_prepare_dataset"] = True
-
-        # Liger fused GKD loss [JSD]
-        self.use_liger_gkd_loss = False
-        if args.use_liger_kernel:
-            self.liger_jsd_loss = LigerFusedLinearJSDLoss(
-                beta=args.beta,
-                ignore_index=-100,
-                temperature=args.temperature,
-                compiled=False,
-            )
-            self.use_liger_gkd_loss = True
+        data_collator = DataCollatorForChatML(tokenizer=processing_class, max_length=args.max_length)
 
         super().__init__(
             model,
@@ -597,10 +571,10 @@ class _UnslothGKDTrainer(SFTTrainer):
             )
         else:
             teacher_model_init_kwargs = args.teacher_model_init_kwargs
-            teacher_model_init_kwargs["dtype"] = (
-                teacher_model_init_kwargs["dtype"]
-                if teacher_model_init_kwargs["dtype"] in ["auto", None]
-                else getattr(torch, teacher_model_init_kwargs["dtype"])
+            teacher_model_init_kwargs["torch_dtype"] = (
+                teacher_model_init_kwargs["torch_dtype"]
+                if teacher_model_init_kwargs["torch_dtype"] in ["auto", None]
+                else getattr(torch, teacher_model_init_kwargs["torch_dtype"])
             )
 
         if isinstance(teacher_model, str):
@@ -710,102 +684,43 @@ class _UnslothGKDTrainer(SFTTrainer):
             return jsd
 
     def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
-        if self.use_liger_gkd_loss:
-            # Forward only through the base models (avoid lm_head to save memory)
-            unwrapped_student = self.accelerator.unwrap_model(model)
-            if hasattr(unwrapped_student, "get_decoder") and unwrapped_student.get_decoder() is not None:
-                base_student = unwrapped_student.get_decoder()
-            else:
-                base_student = getattr(
-                    unwrapped_student, getattr(unwrapped_student, "base_model_prefix", "model"), unwrapped_student
-                )
+        # compute student output
+        outputs_student = model(
+            input_ids=inputs["input_ids"],
+            attention_mask=inputs["attention_mask"],
+        )
 
-            student_outputs = base_student(
-                input_ids=inputs["input_ids"],
-                attention_mask=inputs["attention_mask"],
-                output_hidden_states=True,
-                use_cache=False,
-            )
-
-            self.teacher_model.eval()
-            unwrapped_teacher = self.accelerator.unwrap_model(self.teacher_model)
-            if hasattr(unwrapped_teacher, "get_decoder") and unwrapped_teacher.get_decoder() is not None:
-                base_teacher = unwrapped_teacher.get_decoder()
-            else:
-                base_teacher = getattr(
-                    unwrapped_teacher, getattr(unwrapped_teacher, "base_model_prefix", "model"), unwrapped_teacher
-                )
-            with torch.no_grad():
-                teacher_outputs = base_teacher(
-                    input_ids=inputs["input_ids"],
-                    attention_mask=inputs["attention_mask"],
-                    output_hidden_states=True,
-                    use_cache=False,
-                )
-
-            # hidden states (shifted)
-            student_hidden = student_outputs.last_hidden_state[:, :-1].contiguous()
-            teacher_hidden = teacher_outputs.last_hidden_state[:, :-1].contiguous()
-
-            # labels mask and labels (shifted)
-            labels_mask = inputs["labels"] != -100
-            masked_input_ids = torch.where(
-                labels_mask, inputs["input_ids"], torch.full_like(inputs["input_ids"], -100)
-            )
-            true_labels = masked_input_ids[:, 1:].contiguous()
-
-            # heads
-            student_head = unwrapped_student.get_output_embeddings()
-            teacher_head = unwrapped_teacher.get_output_embeddings()
-
-            # liger fused jsd loss
-            loss = self.liger_jsd_loss(
-                student_input=student_hidden,
-                student_weight=student_head.weight,
-                teacher_input=teacher_hidden,
-                teacher_weight=teacher_head.weight,
-                true_labels=true_labels,
-                student_bias=getattr(student_head, "bias", None),
-                teacher_bias=getattr(teacher_head, "bias", None),
-            )
-        else:
-            # compute student output
-            student_outputs = model(
+        # compute teacher output in eval mode
+        self.teacher_model.eval()
+        with torch.no_grad():
+            outputs_teacher = self.teacher_model(
                 input_ids=inputs["input_ids"],
                 attention_mask=inputs["attention_mask"],
             )
 
-            # compute teacher output in eval mode
-            self.teacher_model.eval()
-            with torch.no_grad():
-                teacher_outputs = self.teacher_model(
-                    input_ids=inputs["input_ids"],
-                    attention_mask=inputs["attention_mask"],
-                )
+        # slice the logits for the generated tokens using the inputs["prompts"] lengths
+        prompt_lengths = inputs["prompts"].shape[1]
+        shifted_student_logits = outputs_student.logits[:, prompt_lengths - 1 : -1, :]
+        shifted_teacher_logits = outputs_teacher.logits[:, prompt_lengths - 1 : -1, :]
+        shifted_labels = inputs["labels"][:, prompt_lengths:]
 
-            # slice the logits for the generated tokens using the inputs["prompts"] lengths
-            prompt_lengths = inputs["prompts"].shape[1]
-            shifted_student_logits = student_outputs.logits[:, prompt_lengths - 1 : -1, :]
-            shifted_teacher_logits = teacher_outputs.logits[:, prompt_lengths - 1 : -1, :]
-            shifted_labels = inputs["labels"][:, prompt_lengths:]
-
-            # compute loss
-            loss = self.generalized_jsd_loss(
-                student_logits=shifted_student_logits,
-                teacher_logits=shifted_teacher_logits,
-                labels=shifted_labels,
-                beta=self.beta,
-            )
+        # compute loss
+        loss = self.generalized_jsd_loss(
+            student_logits=shifted_student_logits,
+            teacher_logits=shifted_teacher_logits,
+            labels=shifted_labels,
+            beta=self.beta,
+        )
 
         # empty cache
         empty_cache()
 
         # Return loss
-        return (loss, student_outputs) if return_outputs else loss
+        return (loss, outputs_student) if return_outputs else loss
 
     @staticmethod
     def generate_on_policy_outputs(model, inputs, generation_config, pad_token_id=None):
-        # Generate output with respect to the prompt-only
+        # Generate output with respect to the prompt only
         generated_outputs = model.generate(
             input_ids=inputs["prompts"],
             attention_mask=inputs.get("prompt_attention_mask", None),
@@ -892,12 +807,8 @@ class _UnslothGKDTrainer(SFTTrainer):
         if hasattr(self.model.config, "unsloth_version"):
             tags.add("unsloth")
 
-        if "JOB_ID" in os.environ:
-            tags.add("hf_jobs")
-
         tags.update(self._tag_names)
 
-        # docstyle-ignore
         citation = textwrap.dedent("""\
         @inproceedings{agarwal2024on-policy,
             title        = {{On-Policy Distillation of Language Models: Learning from Self-Generated Mistakes}},
@@ -925,43 +836,6 @@ class _UnslothGKDTrainer(SFTTrainer):
         model_card.save(os.path.join(self.args.output_dir, "README.md"))
 class UnslothGKDTrainer(_UnslothGKDTrainer):
     """
-    Trainer for Generalized Knowledge Distillation (GKD) of language models.
-
-    For details on GKD, see the paper: [On-Policy Distillation of Language Models: Learning from Self-Generated
-    Mistakes](https://huggingface.co/papers/2306.13649).
-
-    Args:
-        model ([`~transformers.PreTrainedModel`] or `torch.nn.Module` or `str`, *optional*):
-            Model to be trained, or the string identifier of the model to be instantiated from a pretrained model.
-        teacher_model ([`~transformers.PreTrainedModel`] or `torch.nn.Module` or `str`, *optional*):
-            Teacher model for knowledge distillation, or the string identifier of the model to be instantiated from a
-            pretrained model.
-        args ([`GKDConfig`], *optional*):
-            Training arguments.
-        data_collator ([`~transformers.DataCollator`], *optional*):
-            Data collator to batch samples from the dataset. It defaults to a [`DataCollatorForChatML`] using the
-            `processing_class`.
-        train_dataset ([`~datasets.Dataset`], *optional*):
-            Dataset for training.
-        eval_dataset ([`~datasets.Dataset`] or `dict` of [`~datasets.Dataset`], *optional*):
-            Dataset for evaluation.
-        processing_class ([`~transformers.PreTrainedTokenizerBase`], [`~transformers.BaseImageProcessor`], [`~transformers.FeatureExtractionMixin`] or [`~transformers.ProcessorMixin`], *optional*):
-           Class to process the data.
-        compute_metrics (`Callable`, *optional*):
-            Function to compute metrics at evaluation. Must take in an [`~transformers.EvalPrediction`] and return a
-            dictionary string to float.
-        callbacks (`list` of [`~transformers.TrainerCallback`], *optional*):
-            Callbacks to use during training.
-        optimizers (`tuple` of `torch.optim.Optimizer` and `torch.optim.lr_scheduler.LambdaLR`, *optional*, defaults to `(None, None)`):
-            Tuple containing the optimizer and the learning rate scheduler to use for training.
-        preprocess_logits_for_metrics (`Callable`, *optional*):
-            Function to preprocess the logits before computing the metrics. Must take in the `logits` and `labels` and
-            return the logits to be used for metrics computation.
-        peft_config ([`~peft.config.PeftConfig`], *optional*):
-            PEFT configuration to use PEFT for training. If `None`, PEFT is not used. If provided, the `model` will be
-            wrapped with the specified PEFT adapter.
-        formatting_func (`Callable`, *optional*):
-            Function to format the dataset. Must take in an example and return an example.
     
     """
     def __init__(
