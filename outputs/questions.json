@@ -1,6 +1,16 @@
 [
     {
         "topic": "Family Trees/Blood Relations",
+        "question": "Rajat is the son-in-law of Amit. Rajat has two children, both sons. If Ria is not married to Amit, then which of these statements can be deduced?",
+        "choices": [
+            "A) Both Rajat's sons have daughters.",
+            "B) One of Rajat's sons may marry in future.",
+            "C) None of the above."
+        ],
+        "answer": "C"
+    },
+    {
+        "topic": "Family Trees/Blood Relations",
         "question": "Rajat is the son-in-law of Amita. Rajat has two children, both sons. If Riaan is not the elder child, then which one is the father of Kavya?",
         "choices": [
             "A) Vikram",
@@ -12,20 +22,43 @@
         "explanation": "Given relationships, we deduce Riaan as younger brother of Kavya, making Arjun their father"
     },
     {
-        "topic": "Puzzles/Seating Arrangements (Linear, Circular)",
-        "question": "Five friends - R, T, U, V, W - sit linearly facing north. If S sits immediately to the left of Q, and there are two persons seated between Q and P, then how many seats away is O from N?",
+        "topic": "Family Trees/Blood Relations",
+        "question": "Rajat is the son-in-law of Amit. Rajat has two children, both sons. If Ria is not married to Vikram, then which one among them could be the daughter-in-law of Amit?",
         "choices": [
-            "A) 0",
-            "B) 1",
-            "C) 2",
-            "D) 3"
+            "A) Ria",
+            "B) Meera",
+            "C) None can be",
+            "D) Both can't be"
+        ],
+        "answer": "C"
+    },
+    {
+        "topic": "Family Trees/Blood Relations",
+        "question": "Rajat is the son-in-law of Amita. Rajat has two children, both sons. If Riaan is not the elder child, then which one is the father of Kavya?",
+        "choices": [
+            "A) Vikram",
+            "B) Arjun",
+            "C) Sameer",
+            "D) None of these"
         ],
         "answer": "B",
-        "explanation": "Given the conditions provided, we can deduce the sequence as follows:...and thus find out where O and N are relative to each other."
+        "explanation": "Given relationships, we deduce Riaan as younger sibling & thus Arjun being older would make him Kavya's father"
     },
     {
         "topic": "Puzzles/Seating Arrangements (Linear, Circular)",
-        "question": "Five cousins sit in two rows facing each other with one person standing alone outside. R likes 19, S likes 17, T likes 13, U likes 11, V stands alone. If W sits opposite X, Y faces Z, then what color does Q wear?",
+        "question": "Five colleagues - R, T, U, V, W - occupy seats facing each other across two tables with three rows. R faces U directly opposite. If S sits immediately to the left of Q, and there are exactly four persons seated clockwise from Q to reach R again, where does O sit relative to N?",
+        "choices": [
+            "A) Between N and O",
+            "B) To the immediate right of N",
+            "C) Exactly one position away from N towards O",
+            "D) Not enough information provided"
+        ],
+        "answer": "C",
+        "explanation": "Given the constraints, we can deduce the sequence as follows:... Thus, O sits exactly one position away from N towards O."
+    },
+    {
+        "topic": "Puzzles/Seating Arrangements (Linear, Circular)",
+        "question": "Five colleagues - R, T, U, V, W - occupy seats facing each other across two tables with three rows. R likes 19, U dislikes 7, and V has no favorite number. If S sits immediately to the left of Q, and there are exactly four people who like numbers ending in 0, what color shirt does person X wear?",
         "choices": [
             "A) Red",
             "B) Blue",
@@ -33,19 +66,30 @@
             "D) Yellow"
         ],
         "answer": "B",
-        "explanation": "Given clues about colors and positions, we deduce Q wears blue based on direct statements and logical deductions."
+        "explanation": "Given constraints, we deduce colors based on preferences and positions relative to others' favorites."
     },
     {
         "topic": "Puzzles/Seating Arrangements (Linear, Circular)",
-        "question": "Five friends - R, T, U, V, W - sit in two rows facing each other with one person seated alone. If S faces P, then Q sits immediately to the left of O.",
+        "question": "Five colleagues - R, T, U, V, W - occupy seats facing each other across two tables with three rows. R likes 19, U dislikes 7, and V has no preference. If T faces someone who prefers 11 over 5, what number does W prefer?",
         "choices": [
-            "A) R",
-            "B) T",
-            "C) U",
-            "D) None can face directly"
+            "A) 13",
+            "B) 17",
+            "C) 21",
+            "D) No information given about W's preferences"
         ],
-        "answer": "D",
-        "explanation": "Given the constraints, no direct facing relationship exists among these five individuals."
+        "answer": "A",
+        "explanation": "Given constraints lead to specific seat arrangements where W's preference can be deduced from the solution"
+    },
+    {
+        "topic": "Family Trees/Blood Relations",
+        "question": "Rajat is the son-in-law of Amit. Rajat has two children, both sons. If Ria is not married to Vikram, then which one among them could be the daughter-in-law of Amit?",
+        "choices": [
+            "A) Ria",
+            "B) Meera",
+            "C) None can be",
+            "D) Both can't be"
+        ],
+        "answer": "C"
     },
     {
         "topic": "Family Trees/Blood Relations",
@@ -57,23 +101,23 @@
             "D) None of these"
         ],
         "answer": "B",
-        "explanation": "Given relationships, we deduce Riaan as younger brother of Kavya, making Arjun their father"
+        "explanation": "Given relationships, we deduce Riaan as younger sibling & thus Arjun being older would make him Kavya's father"
     },
     {
         "topic": "Puzzles/Seating Arrangements (Linear, Circular)",
-        "question": "Five cousins sit in two rows facing each other with one person standing alone outside. R likes 19 while T prefers not to reveal their number. U has no sibling among those seated. V faces W, who stands opposite X. Y does not like 17. Z is an only child. What is the middle name of the cousin who likes 13?",
+        "question": "Five colleagues - R, T, U, V, W - occupy seats facing each other across two tables with three rows. R likes 19, U dislikes 7, and V has no favorite number. If S sits immediately to the left of Q, and there are exactly four people who like numbers ending in 0, what color shirt does person X wear?",
         "choices": [
-            "A) Kunal",
-            "B) Rohan",
-            "C) Sameer",
-            "D) Vikram"
+            "A) Blue",
+            "B) Red",
+            "C) Green",
+            "D) Yellow"
         ],
         "answer": "B",
-        "explanation": "Given the clues about siblings, numbers liked by individuals, and face-to-face arrangements, we deduce the possible orders and find out who likes 13, which turns out to be Rohan."
+        "explanation": "Given constraints, we deduce colors based on preferences and positions relative to others' favorites."
     },
     {
         "topic": "Puzzles/Seating Arrangements (Linear, Circular)",
-        "question": "Five cousins sit in two rows facing each other with one person standing alone outside. R likes 19 while T prefers not to reveal their favorite number. U has no siblings. V faces W. X stands alone. What color does Y prefer?",
+        "question": "Five colleagues - R, T, U, V, W - occupy seats facing each other across two tables with three rows. R likes 19, U dislikes 7, and V has no favorite number. If S sits immediately to the left of Q, and there are exactly four people who like numbers ending in 0, what color shirt does person X wear?",
         "choices": [
             "A) Red",
             "B) Blue",
@@ -81,114 +125,58 @@
             "D) Yellow"
         ],
         "answer": "B",
-        "explanation": "Given the clues about numbers and family relationships, we deduce the colors based on the provided information."
-    },
-    {
-        "topic": "Family Trees/Blood Relations",
-        "question": "Rajat is the son-in-law of Amita. Rajat has two children, both sons. If Riaan is not the elder child, then which one is the father of Kavya?",
-        "choices": [
-            "A) Vikram",
-            "B) Arjun",
-            "C) None can be determined without more information about their relationships"
-        ],
-        "answer": "B"
+        "explanation": "Given constraints, we deduce colors based on preferences and positions relative to others' favorites."
     },
     {
         "topic": "Puzzles/Seating Arrangements (Linear, Circular)",
-        "question": "Five cousins sit in two rows facing each other with one person standing alone outside. R likes 19 while T prefers not to reveal their number. U has no sibling among those seated. V faces W, who stands opposite X. Y does not like 17. Z is an only child. What is the middle name of the cousin who likes 13?",
+        "question": "Five colleagues - R, T, U, V, W - occupy seats facing each other across two tables with three rows. R likes 19, U dislikes 7, and V has no preference. If T faces someone who prefers 11 over 5, what number does W prefer?",
         "choices": [
-            "A) Kunal",
-            "B) Rohan",
-            "C) Sameer",
-            "D) Vikram"
+            "A) 13",
+            "B) 17",
+            "C) 21",
+            "D) No information given about W's preferences"
         ],
-        "answer": "B",
-        "explanation": "Given the clues about siblings, numbers liked by individuals, and face-to-face arrangements, we deduce the possible orders and find out who likes 13, which turns out to be Rohan."
-    },
-    {
-        "topic": "Puzzles/Seating Arrangements (Linear, Circular)",
-        "question": "Five friends - R, T, U, V, W - sit in two rows facing each other with one person seated alone. If S faces Q, then how many persons sit between them?",
-        "choices": [
-            "A) 0",
-            "B) 1",
-            "C) 2",
-            "D) 3"
-        ],
-        "answer": "B",
-        "explanation": "Given the constraints, we can deduce the possible arrangements leading to only one person between S and Q when they face each other."
+        "answer": "A",
+        "explanation": "Given constraints lead to specific seat arrangements where W's preference can be deduced from the solution"
     },
     {
         "topic": "Family Trees/Blood Relations",
-        "question": "Rajat is the son-in-law of Amita. Rajat has two children, both sons. If Riaan is not the elder child, then which one is the father of Kavya?",
+        "question": "Rajat is the son-in-law of Amit. Rajat has two children, both sons. If Ria is not married to Vikram, then which one among them could be the daughter-in-law of Amit?",
         "choices": [
-            "A) Vikram",
-            "B) Arjun",
-            "C) Sameer",
-            "D) None of these"
+            "A) Ria",
+            "B) Meera",
+            "C) None can be",
+            "D) Both can't be"
         ],
-        "answer": "B",
-        "explanation": "Given relationships, we deduce Riaan as younger brother of Kavya, making Arjun their father"
-    },
-    {
-        "topic": "Family Trees/Blood Relations",
-        "question": "Rajat is the son-in-law of Amita. Rajat has two children, both sons. If Riaan is not the elder child, then which one is the father of Kavya?",
-        "choices": [
-            "A) Vikram",
-            "B) Arjun",
-            "C) Sameer",
-            "D) None of these"
-        ],
-        "answer": "B",
-        "explanation": "Given relationships, we deduce Riaan as younger brother of Kavya, making Arjun their father"
-    },
-    {
-        "topic": "Family Trees/Blood Relations",
-        "question": "Rajat is the son-in-law of Amita. Rajat has two children, both sons. If Riaan is not the elder child, then which one is the father of Kavya?",
-        "choices": [
-            "A) Vikram",
-            "B) Arjun",
-            "C) None can be determined without more information about their relationships"
-        ],
-        "answer": "B"
-    },
-    {
-        "topic": "Family Trees/Blood Relations",
-        "question": "Rajat is the son-in-law of Amita. Rajat has two children, both sons. If Riaan is not the elder child, then which one is the father of Kavya?",
-        "choices": [
-            "A) Vikram",
-            "B) Arjun",
-            "C) None can be determined without more information"
-        ],
-        "answer": "B",
-        "explanation": "Given the relationships provided in the problem statement, we know Rajat has two sons, and since Riaan is not the elder child, it implies Arjun could potentially be the other son, making him the father of Kavya if necessary details support such an arrangement"
+        "answer": "C"
     },
     {
         "topic": "Puzzles/Seating Arrangements (Linear, Circular)",
-        "question": "Five friends - R, T, U, V, W - sit in two rows facing each other with one person seated alone. If S faces Q, then how many persons sit between them?",
+        "question": "Five colleagues stand in two rows facing each other. R likes Red, S likes Silver, T likes Turquoise, U likes Ultramarine, V likes Violet. If R faces S, what color does U like?",
         "choices": [
-            "A) 0",
-            "B) 1",
-            "C) 2",
-            "D) 3"
+            "A) Turquoise",
+            "B) Ultramarine",
+            "C) Violet",
+            "D) Silver"
         ],
         "answer": "B",
-        "explanation": "Given the constraints, we can deduce the possible arrangements leading to only one person between S and Q when they face each other."
+        "explanation": "Given the direct face relationship and colors, we deduce the sequence and find U's preference as per the rules provided."
     },
     {
         "topic": "Puzzles/Seating Arrangements (Linear, Circular)",
-        "question": "Five cousins sit in two rows facing each other with one person standing alone outside. R likes 19 while T prefers not to reveal their number. U has no sibling among those seated. V faces W, who stands opposite X. Y does not like 17. Z is an only child. What is the middle name of the cousin who likes 13?",
+        "question": "Five colleagues - R, T, U, V, W - occupy seats facing each other across two tables with three rows. R likes 19, U dislikes 7, and V has no favorite number. If S sits immediately to the left of Q, and there are exactly four people who like numbers ending in 0, what color shirt does person X wear?",
         "choices": [
-            "A) Kunal",
-            "B) Rohan",
-            "C) Sameer",
-            "D) Vikram"
+            "A) Blue",
+            "B) Red",
+            "C) Green",
+            "D) Yellow"
         ],
         "answer": "B",
-        "explanation": "Given the clues about siblings, numbers liked by individuals, and face-to-face arrangements, we deduce the possible orders and find out who likes 13, which turns out to be Rohan."
+        "explanation": "Given constraints, we deduce colors based on preferences and positions relative to others' favorites."
     },
     {
         "topic": "Puzzles/Seating Arrangements (Linear, Circular)",
-        "question": "Five cousins sit in two rows facing each other with one person standing alone outside. R likes 19 while T prefers not to reveal their favorite number. U has no siblings. V faces W. X stands alone. What color does Y prefer?",
+        "question": "Five colleagues - R, T, U, V, W - occupy seats facing each other across two tables with three rows. R likes 19, U dislikes 7, and V has no favorite number. If S sits immediately to the left of Q, and there are exactly four people who like numbers ending in 0, what color shirt does person X wear?",
         "choices": [
             "A) Red",
             "B) Blue",
@@ -196,41 +184,53 @@
             "D) Yellow"
         ],
         "answer": "B",
-        "explanation": "Given the clues about numbers and family relationships, we deduce the colors based on the provided information."
+        "explanation": "Given constraints, we deduce colors based on preferences and positions relative to others' favorites."
     },
     {
         "topic": "Puzzles/Seating Arrangements (Linear, Circular)",
-        "question": "Five friends - R, T, U, V, W - sit in two rows facing each other with one person seated alone. If S faces Q, then how many persons sit between them?",
+        "question": "Five colleagues - R, T, U, V, W - occupy seats facing each other across two tables with three rows. R likes 19, U dislikes 7, and V has no preference. If T faces someone who prefers 11 over 5, what number does W prefer?",
         "choices": [
-            "A) 0",
-            "B) 1",
-            "C) 2",
-            "D) 3"
+            "A) 13",
+            "B) 17",
+            "C) 21",
+            "D) No information given about W's preferences"
         ],
-        "answer": "B",
-        "explanation": "Given the constraints, we can deduce the possible arrangements leading to only one person between S and Q when they face each other."
+        "answer": "A",
+        "explanation": "Given constraints lead to specific seat arrangements where W's preference can be deduced from the solution"
     },
     {
         "topic": "Family Trees/Blood Relations",
-        "question": "Rajat is the son-in-law of Amita. Rajat has two children, both sons. If Riaan is not the elder child, then which one is the father of Kavya?",
+        "question": "Rajat is the son-in-law of Amit. Rajat has two children, both sons. If Ria is not married to Vikram, then which one among them could be the daughter-in-law of Amit?",
         "choices": [
-            "A) Vikram",
-            "B) Arjun",
-            "C) None can be determined without more information"
+            "A) Ria",
+            "B) Meera",
+            "C) None can be",
+            "D) Both can't be"
         ],
-        "answer": "B",
-        "explanation": "Given the relationships provided in the problem statement, we know Rajat has two sons, and since Riaan is not the elder child, it implies Arjun could potentially be the other son, making him the father of Kavya if necessary details support such an arrangement"
+        "answer": "C"
     },
     {
         "topic": "Puzzles/Seating Arrangements (Linear, Circular)",
-        "question": "Five friends - R, T, U, V, W - sit in two rows facing each other with one person seated alone. If S faces Q, then how many persons sit between them?",
+        "question": "Five colleagues stand in two rows facing each other. R likes Red, S likes Silver, T likes Turquoise, U likes Ultramarine, V likes Violet. If R faces S, what color does U like?",
         "choices": [
-            "A) 0",
-            "B) 1",
-            "C) 2",
-            "D) 3"
+            "A) Turquoise",
+            "B) Ultramarine",
+            "C) Violet",
+            "D) Silver"
         ],
         "answer": "B",
-        "explanation": "Given the constraints, we can deduce the possible arrangements leading to only one person between S and Q when they face each other."
+        "explanation": "Given the direct face relationship and colors, we deduce the sequence and find U's preference as per the rules provided."
+    },
+    {
+        "topic": "Family Trees/Blood Relations",
+        "question": "Rajat is the son-in-law of Amit. Rajat has two children, both daughters. If Ria is not married, what is the relationship between Ria and Amit?",
+        "choices": [
+            "A) Son",
+            "B) Daughter",
+            "C) Granddaughter",
+            "D) Niece"
+        ],
+        "answer": "C",
+        "explanation": "Since Rajat is Amit's son-in-law and has only daughters, Ria being unmarried makes her Amit's granddaughter."
     }
 ]
