@@ -1,0 +1,1552 @@
+{
+  "summary": "The logical reasoning content covers blood relation problems, which involve analyzing family relationships and determining how individuals are related to each other. Key solving strategies mentioned include carefully studying the given information, identifying key relationships, and using logical deductions to answer questions. Important concepts and principles include understanding family trees, recognizing relationships such as siblings, spouses, parents, and children, and using symbols and notations to represent these relationships. By applying these strategies and concepts, individuals can solve complex blood relation problems and determine the relationships between various family members.",
+  "qa_pairs": [
+    {
+      "question": "How is M related to P?",
+      "answer": "M is the father of the spouse of O, and R is the maternal uncle of S. Since P and S are sisters, and M is the brother-in-law of R, M must be the father of O's spouse, who is also the parent of P and S. Therefore, M is the grandfather of P.",
+      "rating": 8
+    },
+    {
+      "question": "If J is the grandchild of M, then how is N related to J?",
+      "answer": "Since M is the father of O's spouse, and Q is the son of N, we can deduce that N is the spouse of M. Therefore, N is the grandparent of J.",
+      "rating": 7
+    },
+    {
+      "question": "If L is the maternal uncle of S, then how is L related to Q?",
+      "answer": "Since R is the maternal uncle of S, and L is also the maternal uncle of S, L must be the same person as R. We know that M is the brother-in-law of R, so R is the brother of M's spouse, who is N. Therefore, L (or R) is the uncle of Q.",
+      "rating": 9
+    },
+    {
+      "question": "How is Radhey related to Hari's uncle?",
+      "answer": "Since Radhey is the son-in-law of Krishna, and Hari's parents and grandparents are alive, Radhey must be the husband of one of Krishna's children. Therefore, Radhey is the brother-in-law of Hari's uncle.",
+      "rating": 8
+    },
+    {
+      "question": "If Madhav has a son, then how will he be related to Krishna?",
+      "answer": "We know that Kanha is the grandmother of Hari, so she belongs to the first generation. If Madhav has a son, then Madhav must belong to the second generation, since his son would belong to the third generation. Therefore, Madhav is the child of one of Krishna's siblings, or Krishna's spouse, making Madhav's son the nephew or grandchild of Krishna.",
+      "rating": 8
+    },
+    {
+      "question": "Find the following relations respectively: I. In which way Omisha is related to Madvan? II. How is Madvan related to Naasih?",
+      "answer": "I. Since Parag is the husband of Omisha, and Parag is the brother-in-law of Qutub, Omisha must be the sister-in-law of Qutub. We know that Rajani is the spouse of Qutub, and Rajani is the sister of Madvan. Therefore, Omisha is the sister-in-law of Madvan. II. We know that Madvan is the brother-in-law of Naasih, and Naasih is the sibling of Rajani, making Naasih the sibling of Madvan's sibling, but since Madvan only has one sibling, which is Rajani, then Naasih is the sibling of Rajani, and Madvan is the brother-in-law of Naasih.",
+      "rating": 9
+    },
+    {
+      "question": "Which of the following pairs denotes the relationship of Father-Daughter?",
+      "answer": "We know that Adi is the father of Abhi, and Aaru is the daughter-in-law of Adi. Therefore, Aaru is the wife of Abhi. We also know that Auro is the daughter of Aaru, making Abhi the father of Auro. However, this pair is not among the answer choices. Another option is Ana, who is the father of Anu. This pair is among the answer choices.",
+      "rating": 7
+    },
+    {
+      "question": "How is Cal related to Ira?",
+      "answer": "To determine the relationship between Cal and Ira, we need to analyze the given information. We know that Kat is the mother of Jay and Cal is the father of Kat. We also know that Ira is not an unmarried person, but we don't have any direct information about Ira's relationship with Cal. However, since all female members of the family are married and there are three married couples, we can try to find a connection between Cal and Ira through their relationships with other family members. Given that Ira is married and Cal is a parent, if Ira is married to someone in Cal's generation or the next, Cal could be Ira's father-in-law. Without more specific information about Ira's spouse, we cannot definitively determine the relationship, but based on the options provided, the most plausible answer would be that Cal is Ira's father-in-law, as it fits the given family structure and relationships.",
+      "rating": 8
+    },
+    {
+      "question": "How is Sia related to Tur?",
+      "answer": "To find out how Sia is related to Tur, we look at the given relationships. Tur is married to Dep, who is the aunt of Han. Sia and Rai are cousins of Jay, and Map and Eva are uncles of Sia and Han. This implies that Sia and Han are in the same generation and are related through their parents. Since Tur is an aunt of Han, and considering the family structure with married couples and their children, Tur would be an aunt of Sia as well if Sia and Han are first cousins. Thus, Sia is the niece of Tur.",
+      "rating": 8
+    },
+    {
+      "question": "Which of the following conclusions cannot be drawn from the expression 'R@P$Q/S*T'?",
+      "answer": "Analyzing the expression 'R@P$Q/S*T', we break it down: R is the son of P, Q is the brother of R, S is the sister of T. The expression does not directly state the relationship between R (or his family) and S (or her family), except that S and T are siblings. Option A says R is the nephew of Q, which cannot be directly concluded from the given expression because it does not specify Q's relationship to R's parents or to S and T. Option B says T is the niece of P, which also cannot be directly concluded because the expression does not provide enough information to determine the relationship between P and T. Option C, S is the sister of T, is directly stated by the expression. Therefore, the conclusions that cannot be drawn are related to the broader family relationships not explicitly stated in the expression.",
+      "rating": 9
+    },
+    {
+      "question": "Which of the following conclusions can be drawn from the given expression 'M#S$J@W*P'?",
+      "answer": "Breaking down the expression 'M#S$J@W*P', we get: M is the husband of S, J is the brother of S, W is the father of J, and P is the sister of J. From this, we can conclude that W is the father of J and thus the father-in-law of M (since M is married to S, J's sister). Also, since P is the sister of J and J is the brother of S, P is the aunt of M's children (if any) but more directly, P is the sister of S, making P the sister-in-law of M. The expression directly supports that W is the father-in-law of M and implies family relationships that can be deduced from the given symbols.",
+      "rating": 9
+    },
+    {
+      "question": "'G is the brother-in-law of Y' can be derived from which of the following expressions?",
+      "answer": "To derive that 'G is the brother-in-law of Y', we need an expression that shows G is married to Y's sister or is the brother of Y's spouse. Looking at the options, the expression needs to establish a sibling relationship between G's spouse and Y or between G and Y's spouse. The correct expression should directly imply this brother-in-law relationship.",
+      "rating": 7
+    },
+    {
+      "question": "How is Ankur related to Suraj?",
+      "answer": "Given that Ankur and Suraj are pointing to photographs and describing relationships, we understand that both are talking about the same person in relation to their sister's maternal grandmother. This implies that both Ankur and Suraj are describing a family member in the same generational line. Since the photograph towards which Ankur was pointing was not of Suraj, but both are describing a relationship that could apply to themselves, it suggests that Ankur and Suraj are likely in a direct familial line, such as uncle and nephew or cousins, but without more specific relationships, the exact connection can be challenging to determine. However, the description provided suggests a closer familial relationship than distant cousins.",
+      "rating": 8
+    },
+    {
+      "question": "How many male members are there in the family?",
+      "answer": "To determine the number of male members in the family, we analyze the given information: Minu is the daughter-in-law of Joya, Tiya is the grandmother of Drona, Heer is the sister-in-law of Joya, Gaur has two children (Ali and Drona), and Tiya is the only sibling of Heer. From this, we can infer the following males: Ali, Drona (Gaur's children), and potentially Joya's husband (since Minu is Joya's daughter-in-law) and Gaur (as a parent). Without explicit mention of Joya's husband or other male members beyond the direct relationships, we identify at least three male members: Ali, Drona, and Gaur. The status of Joya's husband and any other potential males (like Minu's husband) would determine if there are more.",
+      "rating": 8
+    },
+    {
+      "question": "How is Drona related to Joya?",
+      "answer": "Given that Minu is the daughter-in-law of Joya and Gaur has two children, Ali and Drona, and considering Tiya is the grandmother of Drona, we can establish that Joya is likely in the parental generation of Drona. Since Minu is married to one of Joya's children (making Minu the daughter-in-law), and if Gaur is that child (which would make Gaur Joya's child and Drona Joya's grandchild), Drona would be Joya's grandchild. This relationship is supported by the family structure described, where Tiya as the grandmother of Drona and the relationships between the other family members place Drona in the generation that would make Joya a grandparent.",
+      "rating": 9
+    },
+    {
+      "question": "Can the statement 'G is the brother-in-law of Y' be derived from the expression 'K@G$T#Y*U'?",
+      "answer": "The expression 'K@G$T#Y*U' translates to: K is the son of G, T is the brother of G, Y is the husband of T, and U is the sister of Y. From this expression, we see that G is the brother of T, and T is the husband of Y, which means G is the brother-in-law of Y. This directly supports the statement 'G is the brother-in-law of Y'.",
+      "rating": 10
+    },
+    {
+      "question": "How is N related to R based on the statements provided by M and other family members?",
+      "answer": "From M's statement, N is M's daughter-in-law, and R is M's father-in-law. This implies that M is married to R's child, making N the wife of R's child, hence N is R's granddaughter-in-law or simply a younger generation relative, but the exact relationship 'Granddaughter in law' can be deduced by understanding family relationships.",
+      "rating": 7
+    },
+    {
+      "question": "How is the sister-in-law of L related to T, considering the statements from C, Z, and other family members?",
+      "answer": "Since L says 'C is my niece', and C says 'T is my aunt', this means T is the aunt of C, who is L's niece. Therefore, T is the sister-in-law of L's brother (or the spouse of L's sibling), making T the aunt of L's niece or nephew, but directly, she is L's sister-in-law.",
+      "rating": 8
+    },
+    {
+      "question": "How is C related to M, given the information about their family members and relationships?",
+      "answer": "From the statements, we know Z is C's father, and M says N is his daughter-in-law, but there's no direct statement linking C to M. However, understanding that L says C is his niece and considering the relationships, we can infer connections but need a direct link to accurately determine the relationship between C and M.",
+      "rating": 7
+    },
+    {
+      "question": "How many female members are there in the family based on the given statements?",
+      "answer": "We can identify several female members directly mentioned or implied: N (M's daughter-in-law), T (C's aunt), and others like C (if female, based on the context that L calls C 'niece'), and possibly more through relationships. However, without explicit gender identification for all individuals and considering the complexity of relationships, the exact number might be challenging to determine without assuming genders for characters like C.",
+      "rating": 8
+    },
+    {
+      "question": "Which of the following does not belong to the group based on the given family relationships and the principle that four of the five are alike in a certain way?",
+      "answer": "To solve this, we need to find a commonality among four of the options provided (e.g., pairs of siblings, parent-child relationships, etc.) and identify which one does not fit this pattern. Without explicit categorization, we look for pairs or relationships that are similar and find the odd one out based on the unique characteristics of each option.",
+      "rating": 9
+    },
+    {
+      "question": "How is Abha related to Abish, given the family relationships and the information that Arti is Abha's father?",
+      "answer": "Abish is the father of Avanti, and Arti is the brother-in-law of Avnish (and thus Avni, since they are sisters). If Arti is Abha's father, and considering the relationships, Abish's relation to Abha would depend on connecting Arti to Abish, possibly through their spouses or children. However, the direct relationship provided doesn't immediately clarify Abha's relation to Abish without assuming or deducing additional family connections.",
+      "rating": 7
+    },
+    {
+      "question": "How is W related to K based on the given expression J@K!T*W?X#Z?",
+      "answer": "Using the given meanings: J@K means J is the son of K, K!T means K is the mother of T, T*W means T is the brother of W, and W?X means W is the daughter of X. So, if T is the brother of W and K is the mother of T, then W must also be a child of K, making W the daughter or son of K. However, since W?X indicates W is the daughter of X, W is specifically the daughter of X, but in relation to K, W would be K's child, given T is K's child and T*W indicates a sibling relationship.",
+      "rating": 8
+    },
+    {
+      "question": "How is T related to Z based on the expression A*D!Z!P@K*T?",
+      "answer": "From the expression, A*D means A is the son of D, D!Z means D is the mother of Z, Z!P means Z is the mother of P, P@K means P is the son of K, and K*T means K is the brother of T. So, if Z is the mother of P and P is the son of K, then Z must be the wife of K (since P@K and Z!P), making T the brother of K and thus the uncle of P, but more directly in relation to Z, T is Z's brother-in-law because T is K's brother and Z is K's wife.",
+      "rating": 9
+    },
+    {
+      "question": "How is Daya related to Nupur?",
+      "answer": "Daya is the mother-in-law of Nupur. Since Prem has three children and one of them is married to Nupur, and Daya is married to Prem, Daya is the mother-in-law of Nupur.",
+      "rating": 7
+    },
+    {
+      "question": "If Zaid is the only son of Labh, then how is Mahe related to Kalp?",
+      "answer": "Since Kalp is the father-in-law of Labh, and Labh is Zaid's father, Kalp is Zaid's grandfather. Given that Abhi is the grandmother of Mahe and Abhi is the sister-in-law of Vaak, and considering the family structure, Mahe could be a child of Vaak or Vaak's sibling. However, since Cand is the brother-in-law of Labh and Labh is married to Vaak's niece (because Vaak is the paternal aunt of Cand, and Cand is the brother-in-law of Labh), this implies Vaak's niece is Labh's wife. Given Abhi's relationship as the grandmother of Mahe and her relation to Vaak, without specific details on Mahe's parentage, we cannot directly infer Mahe's relationship to Kalp beyond the familial connection through Labh's marriage, making the direct relationship between Mahe and Kalp not explicitly determinable from the given information.",
+      "rating": 8
+    },
+    {
+      "question": "How is Abhi related to Bati?",
+      "answer": "Abhi is the grandmother of Mahe, and since Cand is married to Bati, and considering the relationships provided, Abhi's relation to Bati can be deduced through Cand. However, the direct link between Abhi and Bati requires understanding Abhi's position in the family. Given Abhi is the sister-in-law of Vaak and the grandmother of Mahe, without explicit information on how Abhi connects to Cand or Bati directly through blood or marriage, the precise relationship might seem indeterminate. Yet, since Abhi is the grandmother of Mahe and given the close-knit family relationships, if we establish that Cand (Bati's husband) is closely related to Mahe, Abhi could be Bati's mother-in-law, considering Cand's relation to the family and Mahe.",
+      "rating": 7
+    },
+    {
+      "question": "If Mony is the mother of Gaya, and Somu is the grandfather of Babu, who is the sister of Gaya, then how is Reet related to Somu?",
+      "answer": "Given Mony is the mother of Gaya, and Heer is the brother of Mony and the son of Somu, this implies Somu is Mony's father. Since Gaya's sister is Babu, and Somu is Babu's grandfather, it means Somu is also Gaya's grandfather. Given Reet is mentioned in relation to Somu and the family, but without a direct link, we must infer from the relationships. Since Somu is the grandfather of both Gaya and Babu, and Mony is Somu's child, making Mony the mother of Gaya (and thus Babu's mother as well since they are sisters), Reet's relation to Somu isn't directly stated but considering the family structure, if Reet is related to Mony (as a spouse), then Reet would be Somu's son-in-law.",
+      "rating": 8
+    },
+    {
+      "question": "If C is married to J, then how is B related to J?",
+      "answer": "Since A is the mother-in-law of E and sister-in-law of C, this implies C is A's husband's sibling, making C A's brother-in-law as well. Given C is the paternal aunt of D, and B is the father of D, C is B's sister. If C is married to J, then J is B's brother-in-law (since C is B's sister).",
+      "rating": 9
+    },
+    {
+      "question": "How is P related to the one who uses Xiaomi?",
+      "answer": "P is married to the one who uses Xiaomi. This can be deduced from the statement 'P, who uses Nokia is married to the one who uses Xiaomi.'",
+      "rating": 9
+    },
+    {
+      "question": "Which brand of phone does the grandfather of Y use?",
+      "answer": "The grandfather of Y uses Oppo. This can be deduced from the statement 'One who uses Oppo is the grandfather of Y, who uses Intex.'",
+      "rating": 9
+    },
+    {
+      "question": "How is Q related to A?",
+      "answer": "Q is married to A. This can be deduced from the statement 'Q, who uses Honor is married to A.'",
+      "rating": 9
+    },
+    {
+      "question": "How is B related to X and Y?",
+      "answer": "B is the mother of X and Y. This can be deduced from the statement 'B is the mother of X and Y.'",
+      "rating": 8
+    },
+    {
+      "question": "Which phone brand is used by the husband of the one whose child uses Xiaomi?",
+      "answer": "The husband of the one whose child uses Xiaomi uses Oppo. This can be deduced by analyzing the relationships between the family members and the phone brands they use.",
+      "rating": 7
+    },
+    {
+      "question": "How is Bala related to Roop?",
+      "answer": "Bala is the husband of Roop. This can be deduced by analyzing the relationships between the family members and using the given information that Moni is the son of Roop and Bala is the father of Charu, who is the brother of Daya, and Daya is the sister of Moni.",
+      "rating": 8
+    },
+    {
+      "question": "How is R related to S?",
+      "answer": "R is the maternal uncle of S. This can be deduced by analyzing the relationships between the family members and using the given information that M is the brother-in-law of R and P and S are sisters of each other.",
+      "rating": 9
+    },
+    {
+      "question": "Given that Gaur is unmarried and has a sister, and Hari has an uncle, what is the relationship between Gaur and Hari?",
+      "answer": "Gaur is the uncle of Hari because there are only 6 members in the family, and since Gaur has a sister and is unmarried, Gaur must be the uncle of Hari.",
+      "rating": 7
+    },
+    {
+      "question": "If Rajani is the sister of Madvan, who is the brother-in-law of Naasih, and Rajani is the spouse of Qutub, what is the relationship between Qutub and Madvan?",
+      "answer": "Qutub is the brother-in-law of Madvan because Rajani is the wife of Qutub and the sister of Madvan.",
+      "rating": 9
+    },
+    {
+      "question": "Given that Tanuja is the only sister of Naasih and the sister-in-law of Saharsa, what is the relationship between Tanuja and Madvan?",
+      "answer": "Tanuja is the wife of Madvan because Madvan is married to the sister of Naasih, and Tanuja is the only sister of Naasih.",
+      "rating": 8
+    },
+    {
+      "question": "If Parag is the husband of Omisha and the brother-in-law of Qutub, what is the relationship between Omisha and Qutub?",
+      "answer": "Omisha is the sister of Qutub because Parag is the brother-in-law of Qutub, and Omisha is the wife of Parag.",
+      "rating": 9
+    },
+    {
+      "question": "Who is the brother-in-law's brother-in-law of Naasih?",
+      "answer": "Qutub is the brother-in-law's brother-in-law of Naasih because Naasih's brother-in-law is Madvan, and Madvan's brother-in-law is Qutub.",
+      "rating": 8
+    },
+    {
+      "question": "Given that Adi has only one son and Aaru is the daughter-in-law of Adi, what are the possible relationships between Abhi and Auro?",
+      "answer": "There are two possible cases: (1) Abhi is the son of Adi, or (2) Abhi is the daughter of Adi. However, since Adi has only one son, case (2) is eliminated, and Abhi must be the son of Adi.",
+      "rating": 9
+    },
+    {
+      "question": "Who has the relationship of Father-Daughter among the given options?",
+      "answer": "Abhi and Auro have the relationship of Father-Daughter because Abhi is the son of Adi, and Auro is the daughter of Aaru, who is the daughter-in-law of Adi.",
+      "rating": 7
+    },
+    {
+      "question": "If Aby has two daughters, and both daughters have 2 sons and 2 brothers, what is the relationship between Aby and the brothers of Aby's daughters?",
+      "answer": "Since both daughters have 2 brothers, and Aby is the father of the daughters, the brothers of Aby's daughters must be Aby's sons. Therefore, Aby is the father of the brothers.",
+      "rating": 9
+    },
+    {
+      "question": "Given that Kat is the mother of Jay, and Cal is the father of Kat, what is the relationship between Cal and Jay?",
+      "answer": "Since Cal is the father of Kat, and Kat is the mother of Jay, Cal must be the grandfather of Jay.",
+      "rating": 9
+    },
+    {
+      "question": "If Sia and Rai are cousins of Jay, and Map and Eva are uncles of Sia and Han, what can be inferred about the relationship between Map, Eva, and Jay?",
+      "answer": "Since Sia and Rai are cousins of Jay, and Map and Eva are uncles of Sia, Map and Eva must be related to Jay's family. However, without more information, we cannot determine the exact relationship between Map, Eva, and Jay.",
+      "rating": 8
+    },
+    {
+      "question": "If Ira is not an unmarried person, and Dep is married to Tur, who is the aunt of Han, what can be inferred about the relationship between Ira and Tur?",
+      "answer": "Since Ira is not unmarried, and Dep is married to Tur, it is possible that Ira is married to Dep. However, without more information, we cannot confirm this. Additionally, since Tur is the aunt of Han, Tur must be a sister of one of Han's parents.",
+      "rating": 7
+    },
+    {
+      "question": "Given the expression 'R@P$Q/S*T', where R is the son of P, Q is the brother of P, Q is the father of S, and T is the sister of S, can we determine the gender of P and S?",
+      "answer": "No, we cannot determine the gender of P and S. The expression only provides relationships between the individuals, but does not specify their genders.",
+      "rating": 8
+    },
+    {
+      "question": "If M is the husband of S, J is the brother of S, J is the son of W, and P is the sister of W, can we determine the gender of W?",
+      "answer": "No, we cannot determine the gender of W. The expression only provides relationships between the individuals, but does not specify their genders.",
+      "rating": 8
+    },
+    {
+      "question": "Given the expression 'K@G$T#Y*U', where K is the son of G, T is the brother of G, T is the husband of Y, and U is the sister of Y, can we determine the relationship between G and Y?",
+      "answer": "We cannot determine the relationship between G and Y, as the gender of G is not specified. If G is male, then G is the brother-in-law of Y, but if G is female, then G is the sister-in-law of Y.",
+      "rating": 8
+    },
+    {
+      "question": "If Ankur says, 'He is the only brother of the only daughter of my sister's maternal grandmother', who is Ankur pointing to?",
+      "answer": "Ankur is pointing to his maternal uncle. The 'only daughter of my sister's maternal grandmother' refers to Ankur's mother, and the 'only brother' refers to Ankur's maternal uncle.",
+      "rating": 9
+    },
+    {
+      "question": "Given that Suraj says, 'He is the only brother of the only daughter of my sister's maternal grandmother', who is Suraj pointing to?",
+      "answer": "Suraj is pointing to his maternal uncle. The reasoning is the same as in the previous question, as the relationships described are the same.",
+      "rating": 9
+    },
+    {
+      "question": "Ankur says, 'He is the only brother of the only daughter of my sister's maternal grandmother.' What can be inferred about the person in the photograph?",
+      "answer": "The person in the photograph is Ankur's maternal uncle. This can be deduced by breaking down the statement and analyzing the relationships. The 'only daughter' refers to Ankur's mother, and the 'only brother' refers to Ankur's maternal uncle.",
+      "rating": 9
+    },
+    {
+      "question": "Suraj says, 'He is the only brother of the only daughter of my sister's maternal grandmother.' How does this statement relate to Ankur's statement?",
+      "answer": "Both Ankur and Suraj are pointing towards their maternal uncle. This can be inferred by comparing the two statements and analyzing the relationships. Since both statements describe the same relationship, the person in the photograph must be the maternal uncle of both Ankur and Suraj.",
+      "rating": 8
+    },
+    {
+      "question": "Given that one of the photographs is either of Suraj or Ankur, and Ankur is not pointing towards Suraj's photograph, what can be concluded about the relationship between Ankur and Suraj?",
+      "answer": "Ankur is the maternal uncle of Suraj. This can be deduced by analyzing the given hints and eliminating contradictions. Since Ankur is not pointing towards Suraj's photograph, and no one can point towards their own photograph, Suraj must be pointing towards Ankur's photograph, making Ankur the maternal uncle of Suraj.",
+      "rating": 8
+    },
+    {
+      "question": "Minu is the daughter-in-law of Joya, and Heer is the sister-in-law of Joya. What can be inferred about the relationship between Minu and Heer?",
+      "answer": "Minu is the wife of Joya's son, and Heer is the wife of Joya's husband's brother. This can be deduced by analyzing the given relationships and drawing a blood chart. Since Minu is the daughter-in-law of Joya, she must be the wife of Joya's son, and Heer must be the wife of Joya's husband's brother.",
+      "rating": 7
+    },
+    {
+      "question": "Tiya is the only sibling of Heer, and Tiya is the grandmother of Drona. What can be inferred about the relationship between Heer and Drona?",
+      "answer": "Heer is the great-aunt of Drona. This can be deduced by analyzing the given relationships and drawing a blood chart. Since Tiya is the only sibling of Heer, and Tiya is the grandmother of Drona, Heer must be the great-aunt of Drona.",
+      "rating": 9
+    },
+    {
+      "question": "M says, 'N is my daughter-in-law and R is my father-in-law.' N says, 'Q is my father-in-law and L is my brother-in-law.' What can be inferred about the relationship between M and N?",
+      "answer": "M is the mother-in-law of N. This can be deduced by analyzing the given statements and drawing a blood chart. Since M says N is her daughter-in-law, M must be the mother-in-law of N.",
+      "rating": 8
+    },
+    {
+      "question": "L says, 'P is my grandfather and C is my niece.' C says, 'T is my aunt and Z is my father.' What can be inferred about the relationship between L and C?",
+      "answer": "L is the uncle of C's father. This can be deduced by analyzing the given statements and drawing a blood chart. Since L says C is his niece, L must be the uncle of C's father.",
+      "rating": 8
+    },
+    {
+      "question": "Avnish and Avni are sisters. Asha is the brother-in-law of Avnish, and Abish is the brother-in-law of Avni. What can be inferred about the relationship between Asha and Abish?",
+      "answer": "Asha and Abish are brothers. This can be deduced by analyzing the given relationships and drawing a blood chart. Since Asha is the brother-in-law of Avnish, and Abish is the brother-in-law of Avni, Asha and Abish must be brothers.",
+      "rating": 9
+    },
+    {
+      "question": "Avanti is an unmarried son of Abish, and Avanti has a brother-in-law Arti. Arti is the father of Abha. What can be inferred about the relationship between Avanti and Abha?",
+      "answer": "Avanti is the uncle of Abha. This can be deduced by analyzing the given relationships and drawing a blood chart. Since Avanti has a brother-in-law Arti, and Arti is the father of Abha, Avanti must be the uncle of Abha.",
+      "rating": 8
+    },
+    {
+      "question": "If Arti is the father of Abha and Ankur has two daughters, Ankit and Abha, what can be inferred about the relationship between Arti and Ankur?",
+      "answer": "From the given information, we can infer that Arti and Ankur are likely spouses, as Abha is the daughter of both Arti and Ankur. This means Arti is the husband of Ankur, making Ankur the mother of Abha.",
+      "rating": 9
+    },
+    {
+      "question": "Given that Amrita is Avnish's nephew and has a brother Arun, and Asha is the father of Arun, what can be inferred about the relationship between Amrita and Asha?",
+      "answer": "Since Amrita is Avnish's nephew, Amrita's parent must be Avnish's sibling. Additionally, Asha is the father of Arun, and Amrita has a brother Arun, which means Asha is the father of both Amrita and Arun, making Amrita the child of Asha.",
+      "rating": 9
+    },
+    {
+      "question": "If J is the son of K and K is the mother of T, and T is the brother of W, what can be inferred about the relationship between J and W?",
+      "answer": "From the given information, we can infer that J and W are siblings, as K is the mother of both J (through J being the son of K) and T (directly), and T is the brother of W. This makes J and W siblings, with K as their mother.",
+      "rating": 8
+    },
+    {
+      "question": "Given that A is the brother of D, D is the mother of Z, and Z is the mother of P, what can be inferred about the relationship between A and P?",
+      "answer": "Since A is the brother of D, and D is the mother of Z, A is the uncle of Z. Given that Z is the mother of P, A is the granduncle of P.",
+      "rating": 9
+    },
+    {
+      "question": "If Sonu was the father of Beenu, who had 2 children, and Raja was the only daughter of Beenu but Beenu was not the mother of Raja, what can be inferred about the relationship between Sonu and Raja?",
+      "answer": "Given that Raja is the only daughter of Beenu but Beenu is not the mother of Raja, Raja must be the daughter of Beenu's spouse, making Beenu the father of Raja (since Raja is Beenu's daughter but not through Beenu being the mother). Since Sonu is the father of Beenu, Sonu is the grandfather of Raja.",
+      "rating": 8
+    },
+    {
+      "question": "Given that Koko was the only sister-in-law of Ninu, and Ninu was the only sibling of Beenu, what can be inferred about the relationship between Koko and Beenu?",
+      "answer": "Since Koko is the sister-in-law of Ninu, and Ninu is the sibling of Beenu, Koko must be the spouse of either Ninu or Beenu. However, given that Ninu is the only sibling of Beenu, and Koko is specifically Ninu's sister-in-law, it implies Koko is married to Beenu, making Koko the spouse of Beenu.",
+      "rating": 9
+    },
+    {
+      "question": "If Tinu was the granddaughter of Kiku, who was the mother-in-law of Bala, and Shalu was the son of Kiku's daughter-in-law, what can be inferred about the relationship between Tinu and Shalu?",
+      "answer": "Given that Tinu is the granddaughter of Kiku, and Kiku is the mother-in-law of Bala, it means Tinu's parent is either Bala or Bala's spouse. Since Shalu is the son of Kiku's daughter-in-law, and Kiku is the mother-in-law of Bala, Shalu's mother must be Bala. This makes Tinu and Shalu siblings, as both are grandchildren of Kiku and children of Bala (or Bala's spouse).",
+      "rating": 7
+    },
+    {
+      "question": "Given the family relationships and the fact that there are only 8 persons in the family, how many female members are in the family?",
+      "answer": "To solve this, we need to analyze the given relationships: Daya is the child of Subh, married to Prem, who has three children, one of them married to Nupur. Nupur is the sister-in-law of Honey. Bala is the daughter of Subh, and Subh is the paternal grandfather of Geet. Rathi is the only son of Daya. From these relationships, we can identify the females as follows: Daya (Subh's child), Bala (Subh's daughter), Nupur (Honey's sister-in-law), and the daughter of Prem who is married to Nupur. Additionally, since Geet's parent is not directly mentioned but Subh is Geet's paternal grandfather, and considering the family structure, Geet could be a female, adding to the count. Thus, there are at least 5 female members in the family: Daya, Bala, Nupur, Prem's daughter (married to Nupur), and potentially Geet if she is a female.",
+      "rating": 8
+    },
+    {
+      "question": "If A is the brother of D, and D is the mother of Z, and Z is the mother of P, and P is the son of K, what can be inferred about the relationship between K and D?",
+      "answer": "Given that Z is the mother of P, and P is the son of K, it means K must be the spouse of Z. Since Z is the daughter of D, this makes K the son-in-law of D, and D the mother-in-law of K.",
+      "rating": 9
+    },
+    {
+      "question": "Given that Kalp is the father-in-law of Labh and Abhi is the grandmother of Mahe, who is the mother of Mahe?",
+      "answer": "From the information, Kalp is Labh's father-in-law, meaning Labh is married to Kalp's child. Since Abhi is the grandmother of Mahe and also Kalp's wife (as Abhi is sister-in-law of Vaak, and Vaak is Kalp's sister), this makes Abhi's child (Kalp's child) the parent of Mahe. Given that Rafi is Mahe's parent and is married to Labh, it indicates Labh is not Mahe's mother but father, making Rafi the mother of Mahe.",
+      "rating": 8
+    },
+    {
+      "question": "If Mony is the mother of Gaya, who is the daughter of Reet, and Somu is the grandfather of Babu, who is the sister of Gaya, how is Reet related to Somu?",
+      "answer": "Given that Gaya is the daughter of Reet and Mony, and Babu is Gaya's sister, this makes Reet the parent of both Gaya and Babu. Since Somu is the grandfather of Babu, and Babu is Reet's child, Reet must be Somu's child-in-law, making Reet the son-in-law of Somu.",
+      "rating": 7
+    },
+    {
+      "question": "With B being the father of D, C the paternal aunt of D, and A the mother-in-law of E and sister-in-law of C, how is B related to A?",
+      "answer": "Since C is D's paternal aunt and A is C's sister-in-law, this implies A is married to C's brother, who is B (since B is D's father and C is D's paternal aunt). Thus, B is A's husband.",
+      "rating": 9
+    },
+    {
+      "question": "Given G is the mother of F, who has one daughter and one son, and F and D are sister-in-law of each other, what can be deduced about F and D's genders?",
+      "answer": "Since F and D are sister-in-law of each other, and given that they must be married to siblings (to be sister-in-law), this confirms that both F and D are female, as they are married into the same family.",
+      "rating": 8
+    },
+    {
+      "question": "If the person I is the niece of E, and the relationship of B and D is the same as that of H and I, how is H related to G, given that G is the mother of F and E is the son of G?",
+      "answer": "Since I is E's niece and the relationship between B and D is the same as H and I, and knowing B is D's father, H must be I's father. Given I is the niece of E, and E is G's son, this makes I the daughter of F (since F and E are G's children, and I is E's niece). Thus, H is F's husband and G's son-in-law.",
+      "rating": 9
+    },
+    {
+      "question": "With the information provided about the relationships between A, B, C, D, E, F, G, H, and I, how is H related to G?",
+      "answer": "From the deductions, since H is married to F (as I is the daughter of F and niece of E), and F is G's daughter, H is G's son-in-law.",
+      "rating": 7
+    },
+    {
+      "question": "If V is the only uncle of T and V is from the second generation, what is the generation of T?",
+      "answer": "Since V is from the second generation and is the only uncle of T, T must be from the third generation.",
+      "rating": 8
+    },
+    {
+      "question": "If B is the mother of X and Y, and the Oppo owner is the grandfather of Y, what is the relationship between B and the Oppo owner?",
+      "answer": "Since B is the mother of X and Y, and the Oppo owner is the grandfather of Y, B must be the daughter of the Oppo owner.",
+      "rating": 9
+    },
+    {
+      "question": "If Q uses Honor and is married to A, and P uses Nokia and is married to the one who uses Xiaomi, what is the phone used by P's spouse?",
+      "answer": "From the given information, we know P is married to the one who uses Xiaomi.",
+      "rating": 8
+    },
+    {
+      "question": "If one who uses Oppo is the grandfather of Y, and B is the daughter of the one who owns Oppo, what is the phone used by B's father?",
+      "answer": "Since B is the daughter of the one who owns Oppo, B's father must use Oppo.",
+      "rating": 8
+    },
+    {
+      "question": "If Bala is the husband of Roop, and the blood chart is given, what is the relationship between Bala and Roop?",
+      "answer": "From the given blood chart, we can see that Bala is indeed the husband of Roop.",
+      "rating": 9
+    }
+  ],
+  "conversations": [
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is M related to P?"
+      },
+      {
+        "role": "assistant",
+        "content": "M is the father of the spouse of O, and R is the maternal uncle of S. Since P and S are sisters, and M is the brother-in-law of R, M must be the father of O's spouse, who is also the parent of P and S. Therefore, M is the grandfather of P."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "If J is the grandchild of M, then how is N related to J?"
+      },
+      {
+        "role": "assistant",
+        "content": "Since M is the father of O's spouse, and Q is the son of N, we can deduce that N is the spouse of M. Therefore, N is the grandparent of J."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "If L is the maternal uncle of S, then how is L related to Q?"
+      },
+      {
+        "role": "assistant",
+        "content": "Since R is the maternal uncle of S, and L is also the maternal uncle of S, L must be the same person as R. We know that M is the brother-in-law of R, so R is the brother of M's spouse, who is N. Therefore, L (or R) is the uncle of Q."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Radhey related to Hari's uncle?"
+      },
+      {
+        "role": "assistant",
+        "content": "Since Radhey is the son-in-law of Krishna, and Hari's parents and grandparents are alive, Radhey must be the husband of one of Krishna's children. Therefore, Radhey is the brother-in-law of Hari's uncle."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "If Madhav has a son, then how will he be related to Krishna?"
+      },
+      {
+        "role": "assistant",
+        "content": "We know that Kanha is the grandmother of Hari, so she belongs to the first generation. If Madhav has a son, then Madhav must belong to the second generation, since his son would belong to the third generation. Therefore, Madhav is the child of one of Krishna's siblings, or Krishna's spouse, making Madhav's son the nephew or grandchild of Krishna."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Find the following relations respectively: I. In which way Omisha is related to Madvan? II. How is Madvan related to Naasih?"
+      },
+      {
+        "role": "assistant",
+        "content": "I. Since Parag is the husband of Omisha, and Parag is the brother-in-law of Qutub, Omisha must be the sister-in-law of Qutub. We know that Rajani is the spouse of Qutub, and Rajani is the sister of Madvan. Therefore, Omisha is the sister-in-law of Madvan. II. We know that Madvan is the brother-in-law of Naasih, and Naasih is the sibling of Rajani, making Naasih the sibling of Madvan's sibling, but since Madvan only has one sibling, which is Rajani, then Naasih is the sibling of Rajani, and Madvan is the brother-in-law of Naasih."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Which of the following pairs denotes the relationship of Father-Daughter?"
+      },
+      {
+        "role": "assistant",
+        "content": "We know that Adi is the father of Abhi, and Aaru is the daughter-in-law of Adi. Therefore, Aaru is the wife of Abhi. We also know that Auro is the daughter of Aaru, making Abhi the father of Auro. However, this pair is not among the answer choices. Another option is Ana, who is the father of Anu. This pair is among the answer choices."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Cal related to Ira?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine the relationship between Cal and Ira, we need to analyze the given information. We know that Kat is the mother of Jay and Cal is the father of Kat. We also know that Ira is not an unmarried person, but we don't have any direct information about Ira's relationship with Cal. However, since all female members of the family are married and there are three married couples, we can try to find a connection between Cal and Ira through their relationships with other family members. Given that Ira is married and Cal is a parent, if Ira is married to someone in Cal's generation or the next, Cal could be Ira's father-in-law. Without more specific information about Ira's spouse, we cannot definitively determine the relationship, but based on the options provided, the most plausible answer would be that Cal is Ira's father-in-law, as it fits the given family structure and relationships."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Sia related to Tur?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out how Sia is related to Tur, we look at the given relationships. Tur is married to Dep, who is the aunt of Han. Sia and Rai are cousins of Jay, and Map and Eva are uncles of Sia and Han. This implies that Sia and Han are in the same generation and are related through their parents. Since Tur is an aunt of Han, and considering the family structure with married couples and their children, Tur would be an aunt of Sia as well if Sia and Han are first cousins. Thus, Sia is the niece of Tur."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Which of the following conclusions cannot be drawn from the expression 'R@P$Q/S*T'?"
+      },
+      {
+        "role": "assistant",
+        "content": "Analyzing the expression 'R@P$Q/S*T', we break it down: R is the son of P, Q is the brother of R, S is the sister of T. The expression does not directly state the relationship between R (or his family) and S (or her family), except that S and T are siblings. Option A says R is the nephew of Q, which cannot be directly concluded from the given expression because it does not specify Q's relationship to R's parents or to S and T. Option B says T is the niece of P, which also cannot be directly concluded because the expression does not provide enough information to determine the relationship between P and T. Option C, S is the sister of T, is directly stated by the expression. Therefore, the conclusions that cannot be drawn are related to the broader family relationships not explicitly stated in the expression."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Which of the following conclusions can be drawn from the given expression 'M#S$J@W*P'?"
+      },
+      {
+        "role": "assistant",
+        "content": "Breaking down the expression 'M#S$J@W*P', we get: M is the husband of S, J is the brother of S, W is the father of J, and P is the sister of J. From this, we can conclude that W is the father of J and thus the father-in-law of M (since M is married to S, J's sister). Also, since P is the sister of J and J is the brother of S, P is the aunt of M's children (if any) but more directly, P is the sister of S, making P the sister-in-law of M. The expression directly supports that W is the father-in-law of M and implies family relationships that can be deduced from the given symbols."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "'G is the brother-in-law of Y' can be derived from which of the following expressions?"
+      },
+      {
+        "role": "assistant",
+        "content": "To derive that 'G is the brother-in-law of Y', we need an expression that shows G is married to Y's sister or is the brother of Y's spouse. Looking at the options, the expression needs to establish a sibling relationship between G's spouse and Y or between G and Y's spouse. The correct expression should directly imply this brother-in-law relationship."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Ankur related to Suraj?"
+      },
+      {
+        "role": "assistant",
+        "content": "Given that Ankur and Suraj are pointing to photographs and describing relationships, we understand that both are talking about the same person in relation to their sister's maternal grandmother. This implies that both Ankur and Suraj are describing a family member in the same generational line. Since the photograph towards which Ankur was pointing was not of Suraj, but both are describing a relationship that could apply to themselves, it suggests that Ankur and Suraj are likely in a direct familial line, such as uncle and nephew or cousins, but without more specific relationships, the exact connection can be challenging to determine. However, the description provided suggests a closer familial relationship than distant cousins."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How many male members are there in the family?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine the number of male members in the family, we analyze the given information: Minu is the daughter-in-law of Joya, Tiya is the grandmother of Drona, Heer is the sister-in-law of Joya, Gaur has two children (Ali and Drona), and Tiya is the only sibling of Heer. From this, we can infer the following males: Ali, Drona (Gaur's children), and potentially Joya's husband (since Minu is Joya's daughter-in-law) and Gaur (as a parent). Without explicit mention of Joya's husband or other male members beyond the direct relationships, we identify at least three male members: Ali, Drona, and Gaur. The status of Joya's husband and any other potential males (like Minu's husband) would determine if there are more."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Drona related to Joya?"
+      },
+      {
+        "role": "assistant",
+        "content": "Given that Minu is the daughter-in-law of Joya and Gaur has two children, Ali and Drona, and considering Tiya is the grandmother of Drona, we can establish that Joya is likely in the parental generation of Drona. Since Minu is married to one of Joya's children (making Minu the daughter-in-law), and if Gaur is that child (which would make Gaur Joya's child and Drona Joya's grandchild), Drona would be Joya's grandchild. This relationship is supported by the family structure described, where Tiya as the grandmother of Drona and the relationships between the other family members place Drona in the generation that would make Joya a grandparent."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Can the statement 'G is the brother-in-law of Y' be derived from the expression 'K@G$T#Y*U'?"
+      },
+      {
+        "role": "assistant",
+        "content": "The expression 'K@G$T#Y*U' translates to: K is the son of G, T is the brother of G, Y is the husband of T, and U is the sister of Y. From this expression, we see that G is the brother of T, and T is the husband of Y, which means G is the brother-in-law of Y. This directly supports the statement 'G is the brother-in-law of Y'."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is N related to R based on the statements provided by M and other family members?"
+      },
+      {
+        "role": "assistant",
+        "content": "From M's statement, N is M's daughter-in-law, and R is M's father-in-law. This implies that M is married to R's child, making N the wife of R's child, hence N is R's granddaughter-in-law or simply a younger generation relative, but the exact relationship 'Granddaughter in law' can be deduced by understanding family relationships."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is the sister-in-law of L related to T, considering the statements from C, Z, and other family members?"
+      },
+      {
+        "role": "assistant",
+        "content": "Since L says 'C is my niece', and C says 'T is my aunt', this means T is the aunt of C, who is L's niece. Therefore, T is the sister-in-law of L's brother (or the spouse of L's sibling), making T the aunt of L's niece or nephew, but directly, she is L's sister-in-law."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is C related to M, given the information about their family members and relationships?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the statements, we know Z is C's father, and M says N is his daughter-in-law, but there's no direct statement linking C to M. However, understanding that L says C is his niece and considering the relationships, we can infer connections but need a direct link to accurately determine the relationship between C and M."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How many female members are there in the family based on the given statements?"
+      },
+      {
+        "role": "assistant",
+        "content": "We can identify several female members directly mentioned or implied: N (M's daughter-in-law), T (C's aunt), and others like C (if female, based on the context that L calls C 'niece'), and possibly more through relationships. However, without explicit gender identification for all individuals and considering the complexity of relationships, the exact number might be challenging to determine without assuming genders for characters like C."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Which of the following does not belong to the group based on the given family relationships and the principle that four of the five are alike in a certain way?"
+      },
+      {
+        "role": "assistant",
+        "content": "To solve this, we need to find a commonality among four of the options provided (e.g., pairs of siblings, parent-child relationships, etc.) and identify which one does not fit this pattern. Without explicit categorization, we look for pairs or relationships that are similar and find the odd one out based on the unique characteristics of each option."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Abha related to Abish, given the family relationships and the information that Arti is Abha's father?"
+      },
+      {
+        "role": "assistant",
+        "content": "Abish is the father of Avanti, and Arti is the brother-in-law of Avnish (and thus Avni, since they are sisters). If Arti is Abha's father, and considering the relationships, Abish's relation to Abha would depend on connecting Arti to Abish, possibly through their spouses or children. However, the direct relationship provided doesn't immediately clarify Abha's relation to Abish without assuming or deducing additional family connections."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is W related to K based on the given expression J@K!T*W?X#Z?"
+      },
+      {
+        "role": "assistant",
+        "content": "Using the given meanings: J@K means J is the son of K, K!T means K is the mother of T, T*W means T is the brother of W, and W?X means W is the daughter of X. So, if T is the brother of W and K is the mother of T, then W must also be a child of K, making W the daughter or son of K. However, since W?X indicates W is the daughter of X, W is specifically the daughter of X, but in relation to K, W would be K's child, given T is K's child and T*W indicates a sibling relationship."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is T related to Z based on the expression A*D!Z!P@K*T?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the expression, A*D means A is the son of D, D!Z means D is the mother of Z, Z!P means Z is the mother of P, P@K means P is the son of K, and K*T means K is the brother of T. So, if Z is the mother of P and P is the son of K, then Z must be the wife of K (since P@K and Z!P), making T the brother of K and thus the uncle of P, but more directly in relation to Z, T is Z's brother-in-law because T is K's brother and Z is K's wife."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Daya related to Nupur?"
+      },
+      {
+        "role": "assistant",
+        "content": "Daya is the mother-in-law of Nupur. Since Prem has three children and one of them is married to Nupur, and Daya is married to Prem, Daya is the mother-in-law of Nupur."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "If Zaid is the only son of Labh, then how is Mahe related to Kalp?"
+      },
+      {
+        "role": "assistant",
+        "content": "Since Kalp is the father-in-law of Labh, and Labh is Zaid's father, Kalp is Zaid's grandfather. Given that Abhi is the grandmother of Mahe and Abhi is the sister-in-law of Vaak, and considering the family structure, Mahe could be a child of Vaak or Vaak's sibling. However, since Cand is the brother-in-law of Labh and Labh is married to Vaak's niece (because Vaak is the paternal aunt of Cand, and Cand is the brother-in-law of Labh), this implies Vaak's niece is Labh's wife. Given Abhi's relationship as the grandmother of Mahe and her relation to Vaak, without specific details on Mahe's parentage, we cannot directly infer Mahe's relationship to Kalp beyond the familial connection through Labh's marriage, making the direct relationship between Mahe and Kalp not explicitly determinable from the given information."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Abhi related to Bati?"
+      },
+      {
+        "role": "assistant",
+        "content": "Abhi is the grandmother of Mahe, and since Cand is married to Bati, and considering the relationships provided, Abhi's relation to Bati can be deduced through Cand. However, the direct link between Abhi and Bati requires understanding Abhi's position in the family. Given Abhi is the sister-in-law of Vaak and the grandmother of Mahe, without explicit information on how Abhi connects to Cand or Bati directly through blood or marriage, the precise relationship might seem indeterminate. Yet, since Abhi is the grandmother of Mahe and given the close-knit family relationships, if we establish that Cand (Bati's husband) is closely related to Mahe, Abhi could be Bati's mother-in-law, considering Cand's relation to the family and Mahe."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "If Mony is the mother of Gaya, and Somu is the grandfather of Babu, who is the sister of Gaya, then how is Reet related to Somu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Given Mony is the mother of Gaya, and Heer is the brother of Mony and the son of Somu, this implies Somu is Mony's father. Since Gaya's sister is Babu, and Somu is Babu's grandfather, it means Somu is also Gaya's grandfather. Given Reet is mentioned in relation to Somu and the family, but without a direct link, we must infer from the relationships. Since Somu is the grandfather of both Gaya and Babu, and Mony is Somu's child, making Mony the mother of Gaya (and thus Babu's mother as well since they are sisters), Reet's relation to Somu isn't directly stated but considering the family structure, if Reet is related to Mony (as a spouse), then Reet would be Somu's son-in-law."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "If C is married to J, then how is B related to J?"
+      },
+      {
+        "role": "assistant",
+        "content": "Since A is the mother-in-law of E and sister-in-law of C, this implies C is A's husband's sibling, making C A's brother-in-law as well. Given C is the paternal aunt of D, and B is the father of D, C is B's sister. If C is married to J, then J is B's brother-in-law (since C is B's sister)."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is P related to the one who uses Xiaomi?"
+      },
+      {
+        "role": "assistant",
+        "content": "P is married to the one who uses Xiaomi. This can be deduced from the statement 'P, who uses Nokia is married to the one who uses Xiaomi.'"
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Which brand of phone does the grandfather of Y use?"
+      },
+      {
+        "role": "assistant",
+        "content": "The grandfather of Y uses Oppo. This can be deduced from the statement 'One who uses Oppo is the grandfather of Y, who uses Intex.'"
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Q related to A?"
+      },
+      {
+        "role": "assistant",
+        "content": "Q is married to A. This can be deduced from the statement 'Q, who uses Honor is married to A.'"
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is B related to X and Y?"
+      },
+      {
+        "role": "assistant",
+        "content": "B is the mother of X and Y. This can be deduced from the statement 'B is the mother of X and Y.'"
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Which phone brand is used by the husband of the one whose child uses Xiaomi?"
+      },
+      {
+        "role": "assistant",
+        "content": "The husband of the one whose child uses Xiaomi uses Oppo. This can be deduced by analyzing the relationships between the family members and the phone brands they use."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Bala related to Roop?"
+      },
+      {
+        "role": "assistant",
+        "content": "Bala is the husband of Roop. This can be deduced by analyzing the relationships between the family members and using the given information that Moni is the son of Roop and Bala is the father of Charu, who is the brother of Daya, and Daya is the sister of Moni."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is R related to S?"
+      },
+      {
+        "role": "assistant",
+        "content": "R is the maternal uncle of S. This can be deduced by analyzing the relationships between the family members and using the given information that M is the brother-in-law of R and P and S are sisters of each other."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Given that Gaur is unmarried and has a sister, and Hari has an uncle, what is the relationship between Gaur and Hari?"
+      },
+      {
+        "role": "assistant",
+        "content": "Gaur is the uncle of Hari because there are only 6 members in the family, and since Gaur has a sister and is unmarried, Gaur must be the uncle of Hari."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "If Rajani is the sister of Madvan, who is the brother-in-law of Naasih, and Rajani is the spouse of Qutub, what is the relationship between Qutub and Madvan?"
+      },
+      {
+        "role": "assistant",
+        "content": "Qutub is the brother-in-law of Madvan because Rajani is the wife of Qutub and the sister of Madvan."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Given that Tanuja is the only sister of Naasih and the sister-in-law of Saharsa, what is the relationship between Tanuja and Madvan?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tanuja is the wife of Madvan because Madvan is married to the sister of Naasih, and Tanuja is the only sister of Naasih."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "If Parag is the husband of Omisha and the brother-in-law of Qutub, what is the relationship between Omisha and Qutub?"
+      },
+      {
+        "role": "assistant",
+        "content": "Omisha is the sister of Qutub because Parag is the brother-in-law of Qutub, and Omisha is the wife of Parag."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the brother-in-law's brother-in-law of Naasih?"
+      },
+      {
+        "role": "assistant",
+        "content": "Qutub is the brother-in-law's brother-in-law of Naasih because Naasih's brother-in-law is Madvan, and Madvan's brother-in-law is Qutub."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Given that Adi has only one son and Aaru is the daughter-in-law of Adi, what are the possible relationships between Abhi and Auro?"
+      },
+      {
+        "role": "assistant",
+        "content": "There are two possible cases: (1) Abhi is the son of Adi, or (2) Abhi is the daughter of Adi. However, since Adi has only one son, case (2) is eliminated, and Abhi must be the son of Adi."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who has the relationship of Father-Daughter among the given options?"
+      },
+      {
+        "role": "assistant",
+        "content": "Abhi and Auro have the relationship of Father-Daughter because Abhi is the son of Adi, and Auro is the daughter of Aaru, who is the daughter-in-law of Adi."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "If Aby has two daughters, and both daughters have 2 sons and 2 brothers, what is the relationship between Aby and the brothers of Aby's daughters?"
+      },
+      {
+        "role": "assistant",
+        "content": "Since both daughters have 2 brothers, and Aby is the father of the daughters, the brothers of Aby's daughters must be Aby's sons. Therefore, Aby is the father of the brothers."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Given that Kat is the mother of Jay, and Cal is the father of Kat, what is the relationship between Cal and Jay?"
+      },
+      {
+        "role": "assistant",
+        "content": "Since Cal is the father of Kat, and Kat is the mother of Jay, Cal must be the grandfather of Jay."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "If Sia and Rai are cousins of Jay, and Map and Eva are uncles of Sia and Han, what can be inferred about the relationship between Map, Eva, and Jay?"
+      },
+      {
+        "role": "assistant",
+        "content": "Since Sia and Rai are cousins of Jay, and Map and Eva are uncles of Sia, Map and Eva must be related to Jay's family. However, without more information, we cannot determine the exact relationship between Map, Eva, and Jay."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "If Ira is not an unmarried person, and Dep is married to Tur, who is the aunt of Han, what can be inferred about the relationship between Ira and Tur?"
+      },
+      {
+        "role": "assistant",
+        "content": "Since Ira is not unmarried, and Dep is married to Tur, it is possible that Ira is married to Dep. However, without more information, we cannot confirm this. Additionally, since Tur is the aunt of Han, Tur must be a sister of one of Han's parents."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Given the expression 'R@P$Q/S*T', where R is the son of P, Q is the brother of P, Q is the father of S, and T is the sister of S, can we determine the gender of P and S?"
+      },
+      {
+        "role": "assistant",
+        "content": "No, we cannot determine the gender of P and S. The expression only provides relationships between the individuals, but does not specify their genders."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "If M is the husband of S, J is the brother of S, J is the son of W, and P is the sister of W, can we determine the gender of W?"
+      },
+      {
+        "role": "assistant",
+        "content": "No, we cannot determine the gender of W. The expression only provides relationships between the individuals, but does not specify their genders."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Given the expression 'K@G$T#Y*U', where K is the son of G, T is the brother of G, T is the husband of Y, and U is the sister of Y, can we determine the relationship between G and Y?"
+      },
+      {
+        "role": "assistant",
+        "content": "We cannot determine the relationship between G and Y, as the gender of G is not specified. If G is male, then G is the brother-in-law of Y, but if G is female, then G is the sister-in-law of Y."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "If Ankur says, 'He is the only brother of the only daughter of my sister's maternal grandmother', who is Ankur pointing to?"
+      },
+      {
+        "role": "assistant",
+        "content": "Ankur is pointing to his maternal uncle. The 'only daughter of my sister's maternal grandmother' refers to Ankur's mother, and the 'only brother' refers to Ankur's maternal uncle."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Given that Suraj says, 'He is the only brother of the only daughter of my sister's maternal grandmother', who is Suraj pointing to?"
+      },
+      {
+        "role": "assistant",
+        "content": "Suraj is pointing to his maternal uncle. The reasoning is the same as in the previous question, as the relationships described are the same."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Ankur says, 'He is the only brother of the only daughter of my sister's maternal grandmother.' What can be inferred about the person in the photograph?"
+      },
+      {
+        "role": "assistant",
+        "content": "The person in the photograph is Ankur's maternal uncle. This can be deduced by breaking down the statement and analyzing the relationships. The 'only daughter' refers to Ankur's mother, and the 'only brother' refers to Ankur's maternal uncle."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Suraj says, 'He is the only brother of the only daughter of my sister's maternal grandmother.' How does this statement relate to Ankur's statement?"
+      },
+      {
+        "role": "assistant",
+        "content": "Both Ankur and Suraj are pointing towards their maternal uncle. This can be inferred by comparing the two statements and analyzing the relationships. Since both statements describe the same relationship, the person in the photograph must be the maternal uncle of both Ankur and Suraj."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Given that one of the photographs is either of Suraj or Ankur, and Ankur is not pointing towards Suraj's photograph, what can be concluded about the relationship between Ankur and Suraj?"
+      },
+      {
+        "role": "assistant",
+        "content": "Ankur is the maternal uncle of Suraj. This can be deduced by analyzing the given hints and eliminating contradictions. Since Ankur is not pointing towards Suraj's photograph, and no one can point towards their own photograph, Suraj must be pointing towards Ankur's photograph, making Ankur the maternal uncle of Suraj."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Minu is the daughter-in-law of Joya, and Heer is the sister-in-law of Joya. What can be inferred about the relationship between Minu and Heer?"
+      },
+      {
+        "role": "assistant",
+        "content": "Minu is the wife of Joya's son, and Heer is the wife of Joya's husband's brother. This can be deduced by analyzing the given relationships and drawing a blood chart. Since Minu is the daughter-in-law of Joya, she must be the wife of Joya's son, and Heer must be the wife of Joya's husband's brother."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Tiya is the only sibling of Heer, and Tiya is the grandmother of Drona. What can be inferred about the relationship between Heer and Drona?"
+      },
+      {
+        "role": "assistant",
+        "content": "Heer is the great-aunt of Drona. This can be deduced by analyzing the given relationships and drawing a blood chart. Since Tiya is the only sibling of Heer, and Tiya is the grandmother of Drona, Heer must be the great-aunt of Drona."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "M says, 'N is my daughter-in-law and R is my father-in-law.' N says, 'Q is my father-in-law and L is my brother-in-law.' What can be inferred about the relationship between M and N?"
+      },
+      {
+        "role": "assistant",
+        "content": "M is the mother-in-law of N. This can be deduced by analyzing the given statements and drawing a blood chart. Since M says N is her daughter-in-law, M must be the mother-in-law of N."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "L says, 'P is my grandfather and C is my niece.' C says, 'T is my aunt and Z is my father.' What can be inferred about the relationship between L and C?"
+      },
+      {
+        "role": "assistant",
+        "content": "L is the uncle of C's father. This can be deduced by analyzing the given statements and drawing a blood chart. Since L says C is his niece, L must be the uncle of C's father."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Avnish and Avni are sisters. Asha is the brother-in-law of Avnish, and Abish is the brother-in-law of Avni. What can be inferred about the relationship between Asha and Abish?"
+      },
+      {
+        "role": "assistant",
+        "content": "Asha and Abish are brothers. This can be deduced by analyzing the given relationships and drawing a blood chart. Since Asha is the brother-in-law of Avnish, and Abish is the brother-in-law of Avni, Asha and Abish must be brothers."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Avanti is an unmarried son of Abish, and Avanti has a brother-in-law Arti. Arti is the father of Abha. What can be inferred about the relationship between Avanti and Abha?"
+      },
+      {
+        "role": "assistant",
+        "content": "Avanti is the uncle of Abha. This can be deduced by analyzing the given relationships and drawing a blood chart. Since Avanti has a brother-in-law Arti, and Arti is the father of Abha, Avanti must be the uncle of Abha."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "If Arti is the father of Abha and Ankur has two daughters, Ankit and Abha, what can be inferred about the relationship between Arti and Ankur?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given information, we can infer that Arti and Ankur are likely spouses, as Abha is the daughter of both Arti and Ankur. This means Arti is the husband of Ankur, making Ankur the mother of Abha."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Given that Amrita is Avnish's nephew and has a brother Arun, and Asha is the father of Arun, what can be inferred about the relationship between Amrita and Asha?"
+      },
+      {
+        "role": "assistant",
+        "content": "Since Amrita is Avnish's nephew, Amrita's parent must be Avnish's sibling. Additionally, Asha is the father of Arun, and Amrita has a brother Arun, which means Asha is the father of both Amrita and Arun, making Amrita the child of Asha."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "If J is the son of K and K is the mother of T, and T is the brother of W, what can be inferred about the relationship between J and W?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given information, we can infer that J and W are siblings, as K is the mother of both J (through J being the son of K) and T (directly), and T is the brother of W. This makes J and W siblings, with K as their mother."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Given that A is the brother of D, D is the mother of Z, and Z is the mother of P, what can be inferred about the relationship between A and P?"
+      },
+      {
+        "role": "assistant",
+        "content": "Since A is the brother of D, and D is the mother of Z, A is the uncle of Z. Given that Z is the mother of P, A is the granduncle of P."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "If Sonu was the father of Beenu, who had 2 children, and Raja was the only daughter of Beenu but Beenu was not the mother of Raja, what can be inferred about the relationship between Sonu and Raja?"
+      },
+      {
+        "role": "assistant",
+        "content": "Given that Raja is the only daughter of Beenu but Beenu is not the mother of Raja, Raja must be the daughter of Beenu's spouse, making Beenu the father of Raja (since Raja is Beenu's daughter but not through Beenu being the mother). Since Sonu is the father of Beenu, Sonu is the grandfather of Raja."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Given that Koko was the only sister-in-law of Ninu, and Ninu was the only sibling of Beenu, what can be inferred about the relationship between Koko and Beenu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Since Koko is the sister-in-law of Ninu, and Ninu is the sibling of Beenu, Koko must be the spouse of either Ninu or Beenu. However, given that Ninu is the only sibling of Beenu, and Koko is specifically Ninu's sister-in-law, it implies Koko is married to Beenu, making Koko the spouse of Beenu."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "If Tinu was the granddaughter of Kiku, who was the mother-in-law of Bala, and Shalu was the son of Kiku's daughter-in-law, what can be inferred about the relationship between Tinu and Shalu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Given that Tinu is the granddaughter of Kiku, and Kiku is the mother-in-law of Bala, it means Tinu's parent is either Bala or Bala's spouse. Since Shalu is the son of Kiku's daughter-in-law, and Kiku is the mother-in-law of Bala, Shalu's mother must be Bala. This makes Tinu and Shalu siblings, as both are grandchildren of Kiku and children of Bala (or Bala's spouse)."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Given the family relationships and the fact that there are only 8 persons in the family, how many female members are in the family?"
+      },
+      {
+        "role": "assistant",
+        "content": "To solve this, we need to analyze the given relationships: Daya is the child of Subh, married to Prem, who has three children, one of them married to Nupur. Nupur is the sister-in-law of Honey. Bala is the daughter of Subh, and Subh is the paternal grandfather of Geet. Rathi is the only son of Daya. From these relationships, we can identify the females as follows: Daya (Subh's child), Bala (Subh's daughter), Nupur (Honey's sister-in-law), and the daughter of Prem who is married to Nupur. Additionally, since Geet's parent is not directly mentioned but Subh is Geet's paternal grandfather, and considering the family structure, Geet could be a female, adding to the count. Thus, there are at least 5 female members in the family: Daya, Bala, Nupur, Prem's daughter (married to Nupur), and potentially Geet if she is a female."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "If A is the brother of D, and D is the mother of Z, and Z is the mother of P, and P is the son of K, what can be inferred about the relationship between K and D?"
+      },
+      {
+        "role": "assistant",
+        "content": "Given that Z is the mother of P, and P is the son of K, it means K must be the spouse of Z. Since Z is the daughter of D, this makes K the son-in-law of D, and D the mother-in-law of K."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Given that Kalp is the father-in-law of Labh and Abhi is the grandmother of Mahe, who is the mother of Mahe?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the information, Kalp is Labh's father-in-law, meaning Labh is married to Kalp's child. Since Abhi is the grandmother of Mahe and also Kalp's wife (as Abhi is sister-in-law of Vaak, and Vaak is Kalp's sister), this makes Abhi's child (Kalp's child) the parent of Mahe. Given that Rafi is Mahe's parent and is married to Labh, it indicates Labh is not Mahe's mother but father, making Rafi the mother of Mahe."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "If Mony is the mother of Gaya, who is the daughter of Reet, and Somu is the grandfather of Babu, who is the sister of Gaya, how is Reet related to Somu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Given that Gaya is the daughter of Reet and Mony, and Babu is Gaya's sister, this makes Reet the parent of both Gaya and Babu. Since Somu is the grandfather of Babu, and Babu is Reet's child, Reet must be Somu's child-in-law, making Reet the son-in-law of Somu."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "With B being the father of D, C the paternal aunt of D, and A the mother-in-law of E and sister-in-law of C, how is B related to A?"
+      },
+      {
+        "role": "assistant",
+        "content": "Since C is D's paternal aunt and A is C's sister-in-law, this implies A is married to C's brother, who is B (since B is D's father and C is D's paternal aunt). Thus, B is A's husband."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Given G is the mother of F, who has one daughter and one son, and F and D are sister-in-law of each other, what can be deduced about F and D's genders?"
+      },
+      {
+        "role": "assistant",
+        "content": "Since F and D are sister-in-law of each other, and given that they must be married to siblings (to be sister-in-law), this confirms that both F and D are female, as they are married into the same family."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "If the person I is the niece of E, and the relationship of B and D is the same as that of H and I, how is H related to G, given that G is the mother of F and E is the son of G?"
+      },
+      {
+        "role": "assistant",
+        "content": "Since I is E's niece and the relationship between B and D is the same as H and I, and knowing B is D's father, H must be I's father. Given I is the niece of E, and E is G's son, this makes I the daughter of F (since F and E are G's children, and I is E's niece). Thus, H is F's husband and G's son-in-law."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "With the information provided about the relationships between A, B, C, D, E, F, G, H, and I, how is H related to G?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the deductions, since H is married to F (as I is the daughter of F and niece of E), and F is G's daughter, H is G's son-in-law."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "If V is the only uncle of T and V is from the second generation, what is the generation of T?"
+      },
+      {
+        "role": "assistant",
+        "content": "Since V is from the second generation and is the only uncle of T, T must be from the third generation."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "If B is the mother of X and Y, and the Oppo owner is the grandfather of Y, what is the relationship between B and the Oppo owner?"
+      },
+      {
+        "role": "assistant",
+        "content": "Since B is the mother of X and Y, and the Oppo owner is the grandfather of Y, B must be the daughter of the Oppo owner."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "If Q uses Honor and is married to A, and P uses Nokia and is married to the one who uses Xiaomi, what is the phone used by P's spouse?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given information, we know P is married to the one who uses Xiaomi."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "If one who uses Oppo is the grandfather of Y, and B is the daughter of the one who owns Oppo, what is the phone used by B's father?"
+      },
+      {
+        "role": "assistant",
+        "content": "Since B is the daughter of the one who owns Oppo, B's father must use Oppo."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "If Bala is the husband of Roop, and the blood chart is given, what is the relationship between Bala and Roop?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given blood chart, we can see that Bala is indeed the husband of Roop."
+      }
+    ]
+  ],
+  "metrics": {
+    "total": 99,
+    "filtered": 81,
+    "retention_rate": 0.82,
+    "avg_score": 7.7
+  }
+}

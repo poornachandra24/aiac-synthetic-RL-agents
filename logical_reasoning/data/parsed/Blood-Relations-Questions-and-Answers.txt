@@ -1,0 +1,602 @@
+Blood Relations Questions and Answers 
+
+ Introducing a boy to her mother, Richa said that he is the son of the daughter of the father of her 
+
+Q 1.
+uncle. How is Richa related to the boy? 
+
+1. Brother-in-law 
+2. Brother 
+3. Father 
+4. Uncle 
+5. Son 
+
+Answer: (2) Brother 
+Solution: 
+Father 
+↕ 
+Uncle ↔ Mother 
+
+       ↕ 
+    Son ↔ Richa 
+
+Where ↕ defines children, ↔ defines siblings 
+
+ Ejaz is the son of Kismat. Bharat is the brother of Dharmesh and Garima is Dharmesh’s daughter. 
+
+Q 2.
+Kismat is married to Dharmesh. Fatima is the maternal aunt of Ejaz. What is the relation between 
+Bharat and Ejaz? 
+
+1. Uncle & Nephew 
+2. Brothers 
+3. Father & Son 
+4. Father-in-law & Son-in-law 
+5. None of the above 
+Answer: (1) Uncle & Nephew 
+Solution: 
+Fatima ↔ Kismat ∼ Dharmesh ↔ Bharat 
+
+       ↕ 
+     Ejaz ↔ Garima 
+
+Where ↕ defines children, ↔ defines siblings, ∼ defines a married couple 
+
+Study the information given below carefully and accordingly answer the following 
+
+Directions (Q3 - Q5): 
+questions: 
+A+B means A is married to B  
+A-B means A is sister of B 
+A*B means A is brother of B 
+A×B means A is father of B 
+
+ 
+ 
+ 
+​
+ 
+​
+ 
+ 
+ 
+​
+ 
+ 
+ Based on the equation given below, how is J related to I? 
+
+Q 3.
+K * J × L + I * P 
+1. Mother 
+2. Father 
+3. Mother in law 
+4. Father in law 
+5. Sister 
+Answer: (4)  
+Solution: Father in law 
++
+K
+​ ↔ J
+        ↕ 
++
+-
+​ ∼ I
+        L
+​ ↔ P 
+Where ↕ defines children, ↔ defines siblings, ∼ defines a married couple, + defines male, - defines 
+female 
+
++ 
+
+ Based on the equation given below, how is S related to T? 
+
+Q 4.
+T + R * S + U × H 
+A+B means A is married to B  
+A-B means A is sister of B 
+A*B means A is brother of B 
+A×B means A is father of B 
+
+1. Sister 
+2. Mother 
+3. Sister-in-law 
+4. Brother 
+5. Father 
+
+Answer: (3) Sister-in-law 
+Solution: 
++ 
+-
++
+-
+​ ∼ U
+​ ∼ R
+​ ↔ S
+T
+
+  ↕ 
+  H 
+
+Where ↕ defines children, ↔ defines siblings, ∼ defines a married couple, + defines male, - defines 
+female 
+
+ Based on the given equation, find how is U related to X? 
+
+Q 5.
+Y + Z - U * S + X * R 
+1. Brother 
+2. Mother 
+3. Grandfather 
+4. Sister 
+
+ 
+ 
+ 
+​
+​
+​
+​
+​
+ 
+​
+​
+​
+​
+​
+ 
+​
+ 
+ 
+5. Bother-in-law 
+
+Answer: (5) Bother-in-law 
+Solution: 
++
+-
++
+-
+​ ∼ X
+Y ∼ Z
+​ ↔ R 
+​ ↔ S
+​ ↔ U
+Where ↕ defines children, ↔ defines siblings, ∼ defines a married couple, + defines male, - defines 
+female 
+
+ Ajit pointed at Abhijeet and said “I am the only son of one of the sons of his father.” How is Ajit 
+
+Q 6.
+related to Abhijeet? 
+1. Brother 
+2. Grandfather 
+3. Nephew 
+4. Brother-in-law 
+5. None of the above 
+
+Answer: (5) None of the above 
+Solution: 
+
+Ajit is either the Father or Uncle of Abhijeet 
+
+Q 7.
+ While looking at old photographs, Sangeeta came across a photo and pointing towards a boy in it, 
+Sangeeta said “He is the only son of the only daughter of my Grandfather.” How is Sangeeta related to 
+that boy?  
+
+1. Mother 
+2. Daughter 
+3. Sister 
+4. Grandmother 
+5. Niece 
+
+Answer: (3) Sister 
+Solution: 
+Grandfather 
+         ↕ 
+Boy’s Mother 
+         ↕ 
+       Boy ↔ Sangeeta 
+
+Study the information given below and answer the following questions: 
+
+Directions (Q8 - Q11): 
+A family comprises seven members of which there are two couples. These seven members include A, 
+B, C, D, E, F and G. C is the sister of B. A is the father of F and E is the brother of F and F is a female. 
+G is the mother of B. D is the mother in law of G. 
+
+Q 8. 
+
+How is G related to A? 
+
+1. Daughter-in-law 
+2. Daughter 
+
+ 
+ 
+​
+​
+​
+​
+ 
+​
+​
+ 
+​
+ 
+​
+ 
+​
+ 
+ 
+3. Brother 
+4. Neice 
+5. Grandfather 
+
+Answer: (1) Daughter-in-law 
+
+Q 9. 
+
+How is E related to C? 
+
+1. Father 
+2. Mother 
+3. Sister 
+4. Grandparent 
+5. Uncle 
+
+Answer: (1) Father 
+
+Q 10. 
+
+What is the relation between B and D? 
+
+1. D is father of B 
+2. B is the brother of D 
+3. B and D are cousins 
+4. B is Grandson of D 
+5. D is the Grandmother of B 
+Answer: (4) B is Grandson of D 
+
+Q 11.
+
+ How is F related to B? 
+
+1. Uncle 
+2. Nephew 
+3. Grandson 
+4. Aunt 
+5. Sister 
+Answer: (4) Aunt 
+
+Solution (Q8 - Q11): 
+- 
++
+​ ∼ D
+          A
+          ↕ 
+- 
++
+-
+​ ∼ G
+ F
+​ ↔ E
+           ↕ 
++ 
+  C ↔ B
+Where ↕ defines children, ↔ defines siblings, ∼ defines a married couple, + defines male, - defines 
+female 
+
+Directions (Q12 - Q15): 
+A family comprising 6 people lives in the same flat. There are two couples in the family.  
+
+Refer to the details given below and answer the questions following it: 
+
+ 
+ 
+ 
+​
+ 
+​
+ 
+​
+ 
+​
+​
+​
+​
+​
+​
+ 
+​
+ 
+ 
+● The Engineer is the head of the family and has only two sons - Harish and Honey and both 
+
+Lawyers 
+
+● Mrs Renu and her mother-in-law both are Engineers 
+● Harish's wife is a Scientist and they have a son, Lalit 
+
+Q 12.
+
+ What is the professions of Harish’s wife? 
+
+1. Engineer 
+2. Scientist 
+3. Lawyer 
+4. Cannot be determined 
+5. None of the above 
+
+Answer: (2) Scientist 
+
+Q 13. 
+
+How is Lalit related to Renu? 
+
+1. Son 
+2. Grandson 
+3. Nephew 
+4. Brother 
+5. Brother-in-law 
+Answer: (3) Nephew 
+
+Q 14.
+
+ What is the profession of Honey’s wife? 
+
+1. Lawyer 
+2. Engineer 
+3. Scientist 
+4. Doctor 
+5. None of the above 
+
+Answer: (2) Engineer 
+
+Q 15. 
+
+Which of the given statement is incorrect with respect to the blood relation given here? 
+
+1. The head of the family is female 
+2. Renu is Honey’s wife 
+3. Harish is the husband of an Engineer 
+4. Honey is married to Engineer 
+5. Lalit is Harish’s son 
+
+Answer: (3) Harish is the husband of an Engineer 
+Solution (Q12 - Q15):  
+
+-
++
++
+-
+​ (Lawyer) ∼ Renu
+​ ∼ Harish
+​ (Engineer) 
+​ (Lawyer) ↔ Honey
+(Scientist)
+
+- 
+Engineer
+    ↕ 
+
+ 
+ 
+ 
+​
+ 
+​
+ 
+​
+ 
+​
+ 
+ 
+​
+ 
+​
+​
+​
+​
+ 
+ 
+     ↕ 
++ 
+ Lalit
+
+Where ↕ defines children, ↔ defines siblings, ∼ defines a married couple, + defines male, - defines 
+female  
+
+Study the given information and answer the following questions: 
+
+Directions (Q16 - Q18): 
+A family is planning an International vacation and six members of the family have agreed to go on this 
+trip. The six members of the family are A, B, C, D, E and F. 
+● A and C is a married couple and they have a child B 
+● C is not the mother of B 
+● E is the brother of C 
+● F is the brother of B and D is the daughter of A 
+
+Q 16.
+
+ Which of the given statements is incorrect? 
+
+1. E is the Brother-in-law of A 
+2. D is the sister of F 
+3. F is male 
+4. A is female 
+5. None of the given statements is incorrect 
+
+Answer: (3) F is male 
+
+Q 17. 
+
+How is D related to F? 
+
+1. Niece 
+2. Sister 
+3. Mother 
+4. Grandmother 
+5. Daughter-in-law 
+
+Answer: (2) Sister 
+
+Q 18. 
+
+How is E related to F? 
+
+1. Father 
+2. Uncle 
+3. Aunt 
+4. Mother 
+5. Sister 
+Answer: (2) Uncle 
+
+Solution (Q16 - Q18): 
++ 
++
+-
+​ ∼ C
+​ ↔ E
+A
+      ↕ 
+
+ 
+ 
+​
+ 
+ 
+ 
+​
+  
+​
+ 
+​
+ 
+​
+ 
+​
+​
+​
+ 
+ 
++ 
+
+-
+D
+​ ↔ B ↔ F
+Where ↕ defines children, ↔ defines siblings, ∼ defines a married couple, + defines male, - defines 
+female  
+
+Study the information given below carefully and based on it answer the 
+
+Directions (Q19 - Q22): 
+following questions: 
+In a family of 6 people, all the people are of different professions. There are two married couples in the 
+family 
+
+● The six people in the family are A, B, C, D, E and F 
+● There professions are Lawyer, Teacher, Salesman, Doctor, Engineer and Accountant but not in 
+
+the same order 
+
+● The Salesman, D is married to the one who is Teacher by profession 
+● Doctor and Lawyer are a married couple 
+● Teacher is female and A’s daughter-in-law is Lawyer 
+● F is the son of B and brother of E and is Accountant by profession 
+● E is an Engineer and is unmarried 
+● C is the daughter-in-law of A 
+● A is the grandmother of F 
+
+Q 19. 
+
+What is the profession of the person married to C? 
+
+1. Doctor 
+2. Salesman 
+3. Teacher 
+4. Engineer 
+5. Accountant 
+Answer: (1) Doctor 
+
+Q 20. 
+
+How is E related to A? 
+1. E is the grandson of A 
+2. E is the granddaughter of A 
+3. E is the son of A 
+4. E and A are siblings 
+5. Cannot be determined 
+
+Answer: (5) Cannot be determined 
+
+Q 21. 
+
+Which of the given statements is correct? 
+
+1. B is a Doctor by profession 
+2. C is the mother of F 
+3. D is male 
+4. A is the Grandmother of F 
+5. All the statements are correct 
+
+ 
+ 
+​
+​
+ 
+​
+ 
+​
+ 
+​
+ 
+​
+ 
+ 
+Answer: (5) All the statements are correct 
+
+Q 22.
+
+ What is the profession of A? 
+
+1. Teacher 
+2. Doctor 
+3. Salesman 
+4. Lawyer 
+5. Engineer 
+Answer: (1) Teacher 
+
+Solution (Q19 - Q22):  
++
+-
+​ (Teacher) ∼ D
+A
+​ (Salesman) 
+↕ 
+-
++
+​ (Doctor) ∼ C
+​ (Lawyer) 
+B
+↕ 
++
+F
+​ (Accountant) ↔ E (Engineer) 
+Where ↕ defines children, ↔ defines siblings, ∼ defines a married couple, + defines male, - defines 
+female  
+
+ 
+ 
+ 
+​
+ 
+​
+​
+​
+​
+​
+ 
+ 
+ 
+ 
+

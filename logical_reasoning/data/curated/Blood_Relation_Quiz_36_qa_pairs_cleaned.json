@@ -1,0 +1,1172 @@
+{
+  "summary": "This logical reasoning content covers blood relation problems, which require analyzing family relationships and determining how individuals are related to each other. Key solving strategies mentioned include carefully reading the given information, using inference to draw conclusions, and creating a mental or visual representation of the family relationships. Important concepts and principles include understanding relationships such as uncle, aunt, brother, sister, mother, father, and spouse, as well as being able to identify more complex relationships like grandfather, grandmother, and maternal/paternal uncle. By applying these strategies and concepts, individuals can effectively solve blood relation problems and determine the relationships between family members.",
+  "qa_pairs": [
+    {
+      "question": "How is Rekha related to Meena?",
+      "answer": "Rekha is the mother-in-law of Meena because Rekha's husband, Tipu, is the grandfather of Sandy, and Sandy's father, Mohan, is married to Meena.",
+      "rating": 8
+    },
+    {
+      "question": "How is Duggu related to Meena?",
+      "answer": "Duggu is the brother-in-law of Meena because Duggu is the brother of Mohan, who is Meena's husband.",
+      "rating": 9
+    },
+    {
+      "question": "If P is the wife of Duggu, how is Tipu related to P?",
+      "answer": "Tipu is the father-in-law of P because Tipu is the father of Duggu's brother, Mohan, making Tipu the father-in-law of Duggu's wife, P.",
+      "rating": 7
+    },
+    {
+      "question": "How is Krishna related to Sandy?",
+      "answer": "Krishna is the maternal uncle of Sandy because Krishna is the uncle of Sandy, and since Sandy's father is Mohan, Krishna must be the brother of Mohan's wife, Meena.",
+      "rating": 8
+    },
+    {
+      "question": "How is Tipu related to Sandy?",
+      "answer": "Tipu is the grandfather of Sandy because Sandy is the son of Mohan, and Mohan is one of Tipu's two sons.",
+      "rating": 9
+    },
+    {
+      "question": "Who is the husband of Meena?",
+      "answer": "Mohan is the husband of Meena.",
+      "rating": 8
+    },
+    {
+      "question": "Who is the father of Sandy?",
+      "answer": "Mohan is the father of Sandy.",
+      "rating": 8
+    },
+    {
+      "question": "Who is the mother of Mohan?",
+      "answer": "Rekha is the mother of Mohan.",
+      "rating": 8
+    },
+    {
+      "question": "How is Rekha related to Sandy?",
+      "answer": "Rekha is the grandmother of Sandy.",
+      "rating": 9
+    },
+    {
+      "question": "Who is the brother of Mohan?",
+      "answer": "Duggu is the brother of Mohan.",
+      "rating": 8
+    },
+    {
+      "question": "Who is the wife of Tipu?",
+      "answer": "Rekha is the wife of Tipu.",
+      "rating": 7
+    },
+    {
+      "question": "How is Tipu related to Mohan?",
+      "answer": "Tipu is the father of Mohan.",
+      "rating": 7
+    },
+    {
+      "question": "How is Duggu related to Tipu?",
+      "answer": "Duggu is the son of Tipu.",
+      "rating": 7
+    },
+    {
+      "question": "Who is the mother-in-law of P?",
+      "answer": "Rekha is the mother-in-law of P if P is the wife of Duggu.",
+      "rating": 8
+    },
+    {
+      "question": "Who is the father-in-law of Meena?",
+      "answer": "Tipu is the father-in-law of Meena.",
+      "rating": 8
+    },
+    {
+      "question": "How is Rekha related to Duggu?",
+      "answer": "Rekha is the mother of Duggu.",
+      "rating": 8
+    },
+    {
+      "question": "Who is the brother of Duggu?",
+      "answer": "Mohan is the brother of Duggu.",
+      "rating": 8
+    },
+    {
+      "question": "How is Tipu related to Duggu?",
+      "answer": "Tipu is the father of Duggu.",
+      "rating": 8
+    },
+    {
+      "question": "Who is the wife of Mohan?",
+      "answer": "Meena is the wife of Mohan.",
+      "rating": 8
+    },
+    {
+      "question": "Who is the grandfather of Sandy?",
+      "answer": "Tipu is the grandfather of Sandy.",
+      "rating": 8
+    },
+    {
+      "question": "How is Rekha related to Sandy's father?",
+      "answer": "Rekha is the mother of Sandy's father, Mohan.",
+      "rating": 9
+    },
+    {
+      "question": "Who is the uncle of Sandy's father?",
+      "answer": "Krishna is the uncle of Sandy's father, Mohan.",
+      "rating": 8
+    },
+    {
+      "question": "How is Tipu related to Sandy's mother?",
+      "answer": "Tipu is the father-in-law of Sandy's mother, Meena.",
+      "rating": 7
+    },
+    {
+      "question": "Who is the brother of Sandy's father?",
+      "answer": "Duggu is the brother of Sandy's father, Mohan.",
+      "rating": 8
+    },
+    {
+      "question": "How is Rekha related to Sandy's mother?",
+      "answer": "Rekha is the mother-in-law of Sandy's mother, Meena.",
+      "rating": 8
+    },
+    {
+      "question": "Who is the husband of Sandy's mother?",
+      "answer": "Mohan is the husband of Sandy's mother, Meena.",
+      "rating": 9
+    },
+    {
+      "question": "How is Krishna related to Sandy's mother?",
+      "answer": "Krishna is the brother-in-law of Sandy's mother, Meena.",
+      "rating": 8
+    },
+    {
+      "question": "Who is the father of Sandy's mother?",
+      "answer": "The father of Sandy's mother, Meena, is not specified in the given information.",
+      "rating": 7
+    },
+    {
+      "question": "How is Tipu related to Sandy's father?",
+      "answer": "Tipu is the father of Sandy's father, Mohan.",
+      "rating": 9
+    },
+    {
+      "question": "Who is the mother of Sandy's father?",
+      "answer": "Rekha is the mother of Sandy's father, Mohan.",
+      "rating": 8
+    },
+    {
+      "question": "How is Rekha related to Sandy?",
+      "answer": "Rekha is the grandmother of Sandy.",
+      "rating": 9
+    },
+    {
+      "question": "Who is the brother of Sandy's mother?",
+      "answer": "The brother of Sandy's mother, Meena, is not specified in the given information.",
+      "rating": 7
+    },
+    {
+      "question": "How is Krishna related to Sandy?",
+      "answer": "Krishna is the maternal uncle of Sandy.",
+      "rating": 9
+    },
+    {
+      "question": "How is Tipu related to P?",
+      "answer": "Tipu is the father-in-law of P.",
+      "rating": 8
+    },
+    {
+      "question": "Who is the mother of Duggu?",
+      "answer": "Rekha is the mother of Duggu.",
+      "rating": 9
+    },
+    {
+      "question": "How is Rekha related to P?",
+      "answer": "Rekha is the mother-in-law of P.",
+      "rating": 8
+    },
+    {
+      "question": "Who is the father of Duggu?",
+      "answer": "Tipu is the father of Duggu.",
+      "rating": 9
+    },
+    {
+      "question": "How is Krishna related to Duggu?",
+      "answer": "Krishna is the brother-in-law of Duggu.",
+      "rating": 7
+    },
+    {
+      "question": "Who is the mother of Krishna?",
+      "answer": "The mother of Krishna is not specified in the given information.",
+      "rating": 8
+    },
+    {
+      "question": "Who is the brother of Meena?",
+      "answer": "The brother of Meena is not specified in the given information.",
+      "rating": 8
+    },
+    {
+      "question": "Who is the father of Meena?",
+      "answer": "The father of Meena is not specified in the given information.",
+      "rating": 8
+    },
+    {
+      "question": "Who is the husband of Meena?",
+      "answer": "Mohan is the husband of Meena.",
+      "rating": 9
+    },
+    {
+      "question": "Who is the mother of Meena?",
+      "answer": "The mother of Meena is not specified in the given information.",
+      "rating": 8
+    },
+    {
+      "question": "How is Tipu related to Sandy?",
+      "answer": "Tipu is the grandfather of Sandy.",
+      "rating": 8
+    },
+    {
+      "question": "Who is the son of Mohan?",
+      "answer": "Sandy is the son of Mohan.",
+      "rating": 9
+    },
+    {
+      "question": "How is Rekha related to Mohan?",
+      "answer": "Rekha is the mother of Mohan.",
+      "rating": 8
+    },
+    {
+      "question": "Who is the brother of Mohan?",
+      "answer": "Duggu is the brother of Mohan.",
+      "rating": 9
+    },
+    {
+      "question": "How is Krishna related to Mohan?",
+      "answer": "Krishna is the brother-in-law of Mohan.",
+      "rating": 8
+    },
+    {
+      "question": "Who is the father of Mohan?",
+      "answer": "Tipu is the father of Mohan.",
+      "rating": 8
+    },
+    {
+      "question": "How is Duggu related to Sandy?",
+      "answer": "Duggu is the uncle of Sandy.",
+      "rating": 7
+    },
+    {
+      "question": "Who is the mother of Sandy?",
+      "answer": "Meena is the mother of Sandy.",
+      "rating": 8
+    },
+    {
+      "question": "How is Tipu related to Meena?",
+      "answer": "Tipu is the father-in-law of Meena.",
+      "rating": 9
+    },
+    {
+      "question": "Who is the wife of Tipu?",
+      "answer": "Rekha is the wife of Tipu.",
+      "rating": 8
+    },
+    {
+      "question": "How is Rekha related to Sandy?",
+      "answer": "Rekha is the grandmother of Sandy.",
+      "rating": 8
+    },
+    {
+      "question": "Who is the uncle of Sandy?",
+      "answer": "Krishna is the uncle of Sandy.",
+      "rating": 8
+    },
+    {
+      "question": "How is Duggu related to Krishna?",
+      "answer": "Duggu is the brother-in-law of Krishna.",
+      "rating": 9
+    },
+    {
+      "question": "Who is the father of Duggu?",
+      "answer": "Tipu is the father of Duggu.",
+      "rating": 9
+    },
+    {
+      "question": "How is Tipu related to Duggu?",
+      "answer": "Tipu is the father of Duggu.",
+      "rating": 9
+    },
+    {
+      "question": "Who is the mother of Duggu?",
+      "answer": "Rekha is the mother of Duggu.",
+      "rating": 8
+    },
+    {
+      "question": "How is Rekha related to Duggu?",
+      "answer": "Rekha is the mother of Duggu.",
+      "rating": 8
+    },
+    {
+      "question": "How is Krishna related to Duggu?",
+      "answer": "Krishna is the brother-in-law of Duggu.",
+      "rating": 7
+    }
+  ],
+  "conversations": [
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Rekha related to Meena?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the mother-in-law of Meena because Rekha's husband, Tipu, is the grandfather of Sandy, and Sandy's father, Mohan, is married to Meena."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Duggu related to Meena?"
+      },
+      {
+        "role": "assistant",
+        "content": "Duggu is the brother-in-law of Meena because Duggu is the brother of Mohan, who is Meena's husband."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "If P is the wife of Duggu, how is Tipu related to P?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the father-in-law of P because Tipu is the father of Duggu's brother, Mohan, making Tipu the father-in-law of Duggu's wife, P."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Krishna related to Sandy?"
+      },
+      {
+        "role": "assistant",
+        "content": "Krishna is the maternal uncle of Sandy because Krishna is the uncle of Sandy, and since Sandy's father is Mohan, Krishna must be the brother of Mohan's wife, Meena."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Tipu related to Sandy?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the grandfather of Sandy because Sandy is the son of Mohan, and Mohan is one of Tipu's two sons."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the husband of Meena?"
+      },
+      {
+        "role": "assistant",
+        "content": "Mohan is the husband of Meena."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the father of Sandy?"
+      },
+      {
+        "role": "assistant",
+        "content": "Mohan is the father of Sandy."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother of Mohan?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the mother of Mohan."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Rekha related to Sandy?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the grandmother of Sandy."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the brother of Mohan?"
+      },
+      {
+        "role": "assistant",
+        "content": "Duggu is the brother of Mohan."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the wife of Tipu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the wife of Tipu."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Tipu related to Mohan?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the father of Mohan."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Duggu related to Tipu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Duggu is the son of Tipu."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother-in-law of P?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the mother-in-law of P if P is the wife of Duggu."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the father-in-law of Meena?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the father-in-law of Meena."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Rekha related to Duggu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the mother of Duggu."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the brother of Duggu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Mohan is the brother of Duggu."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Tipu related to Duggu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the father of Duggu."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the wife of Mohan?"
+      },
+      {
+        "role": "assistant",
+        "content": "Meena is the wife of Mohan."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the grandfather of Sandy?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the grandfather of Sandy."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Rekha related to Sandy's father?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the mother of Sandy's father, Mohan."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the uncle of Sandy's father?"
+      },
+      {
+        "role": "assistant",
+        "content": "Krishna is the uncle of Sandy's father, Mohan."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Tipu related to Sandy's mother?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the father-in-law of Sandy's mother, Meena."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the brother of Sandy's father?"
+      },
+      {
+        "role": "assistant",
+        "content": "Duggu is the brother of Sandy's father, Mohan."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Rekha related to Sandy's mother?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the mother-in-law of Sandy's mother, Meena."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the husband of Sandy's mother?"
+      },
+      {
+        "role": "assistant",
+        "content": "Mohan is the husband of Sandy's mother, Meena."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Krishna related to Sandy's mother?"
+      },
+      {
+        "role": "assistant",
+        "content": "Krishna is the brother-in-law of Sandy's mother, Meena."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the father of Sandy's mother?"
+      },
+      {
+        "role": "assistant",
+        "content": "The father of Sandy's mother, Meena, is not specified in the given information."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Tipu related to Sandy's father?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the father of Sandy's father, Mohan."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother of Sandy's father?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the mother of Sandy's father, Mohan."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Rekha related to Sandy?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the grandmother of Sandy."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the brother of Sandy's mother?"
+      },
+      {
+        "role": "assistant",
+        "content": "The brother of Sandy's mother, Meena, is not specified in the given information."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Krishna related to Sandy?"
+      },
+      {
+        "role": "assistant",
+        "content": "Krishna is the maternal uncle of Sandy."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Tipu related to P?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the father-in-law of P."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother of Duggu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the mother of Duggu."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Rekha related to P?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the mother-in-law of P."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the father of Duggu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the father of Duggu."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Krishna related to Duggu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Krishna is the brother-in-law of Duggu."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother of Krishna?"
+      },
+      {
+        "role": "assistant",
+        "content": "The mother of Krishna is not specified in the given information."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the brother of Meena?"
+      },
+      {
+        "role": "assistant",
+        "content": "The brother of Meena is not specified in the given information."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the father of Meena?"
+      },
+      {
+        "role": "assistant",
+        "content": "The father of Meena is not specified in the given information."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the husband of Meena?"
+      },
+      {
+        "role": "assistant",
+        "content": "Mohan is the husband of Meena."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother of Meena?"
+      },
+      {
+        "role": "assistant",
+        "content": "The mother of Meena is not specified in the given information."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Tipu related to Sandy?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the grandfather of Sandy."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the son of Mohan?"
+      },
+      {
+        "role": "assistant",
+        "content": "Sandy is the son of Mohan."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Rekha related to Mohan?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the mother of Mohan."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the brother of Mohan?"
+      },
+      {
+        "role": "assistant",
+        "content": "Duggu is the brother of Mohan."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Krishna related to Mohan?"
+      },
+      {
+        "role": "assistant",
+        "content": "Krishna is the brother-in-law of Mohan."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the father of Mohan?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the father of Mohan."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Duggu related to Sandy?"
+      },
+      {
+        "role": "assistant",
+        "content": "Duggu is the uncle of Sandy."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother of Sandy?"
+      },
+      {
+        "role": "assistant",
+        "content": "Meena is the mother of Sandy."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Tipu related to Meena?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the father-in-law of Meena."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the wife of Tipu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the wife of Tipu."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Rekha related to Sandy?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the grandmother of Sandy."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the uncle of Sandy?"
+      },
+      {
+        "role": "assistant",
+        "content": "Krishna is the uncle of Sandy."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Duggu related to Krishna?"
+      },
+      {
+        "role": "assistant",
+        "content": "Duggu is the brother-in-law of Krishna."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the father of Duggu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the father of Duggu."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Tipu related to Duggu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the father of Duggu."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother of Duggu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the mother of Duggu."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Rekha related to Duggu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the mother of Duggu."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How is Krishna related to Duggu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Krishna is the brother-in-law of Duggu."
+      }
+    ]
+  ],
+  "metrics": {
+    "total": 80,
+    "filtered": 61,
+    "retention_rate": 0.76,
+    "avg_score": 7.5
+  }
+}

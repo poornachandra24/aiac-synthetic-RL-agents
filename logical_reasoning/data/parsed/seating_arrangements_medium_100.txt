@@ -1,0 +1,2448 @@
+Seating Arrangement Puzzles — Medium (100 problems)
+
+Generated: Medium difficulty puzzles covering Linear, Circular, Parallel Rows, Square and Rectangular arrangements.
+
+Problem 1: Square Table (4 sides) — 8 seats
+Clues: 1. Rohan sits at the north side of the table. 2. Vivaan is seated between Rohan and Chitra.
+3. Krishna sits immediately to the left of Rohan. 4. Rohan sits immediately to the left of Vivaan.
+5. Maya is 2 places clockwise from Diya. 6. There are 2 people seated clockwise from Diya to Karan,
+not counting endpoints.
+Sample Questions (answers in Solutions section):
+
+ - How many people are seated clockwise from Karan to Vivaan, not counting endpoints?
+ - Who sits at position 5 (from left, 1-indexed)?
+ - Who sits immediately to the left of Chitra?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Rohan sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Vivaan is seated between Rohan and Chitra." to place adjacent
+relationships. Use clue: "Krishna sits immediately to the left of Rohan." to place adjacent relationships. Use
+clue: "Rohan sits immediately to the left of Vivaan." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Maya is 2 places clockwise
+from Diya." to determine distances between persons. Use clue: "There are 2 people seated clockwise from Diya
+to Karan, not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to
+ensure a unique consistent arrangement. The final arrangement is: Rohan, Vivaan, Chitra, Diya, Sara, Maya,
+Karan, Krishna Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read
+off this arrangement.
+
+Problem 2: Square Table (4 sides) — 8 seats
+Clues: 1. Kabir sits at the north side of the table. 2. Ritu sits immediately to the left of
+Krishna. 3. Krishna sits immediately to the right of Ritu. 4. Neeraj sits immediately to the left of
+Priya. 5. Sameer is 2 places clockwise from Ishaan. 6. There are 1 people seated clockwise from
+Krishna to Kabir, not counting endpoints.
+Sample Questions (answers in Solutions section):
+
+ - How many people are seated clockwise from Priya to Krishna, not counting endpoints?
+ - How many people are seated clockwise from Ritu to Priya, not counting endpoints?
+ - Who sits immediately to the right of Sameer?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Kabir sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Ritu sits immediately to the left of Krishna." to place adjacent
+relationships. Use clue: "Krishna sits immediately to the right of Ritu." to place adjacent relationships. Use
+clue: "Neeraj sits immediately to the left of Priya." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Sameer is 2 places clockwise
+from Ishaan." to determine distances between persons. Use clue: "There are 1 people seated clockwise from
+Krishna to Kabir, not counting endpoints." to determine distances between persons. Step 4: Cross-check all
+clues to ensure a unique consistent arrangement. The final arrangement is: Kabir, Sameer, Diya, Neeraj, Priya,
+Ritu, Krishna, Ishaan Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be
+read off this arrangement.
+
+Problem 3: Linear (single row, facing North) — 7 seats
+Clues: 1. Kriti sits at the leftmost end of the row. 2. Maya is seated between Ishaan and Krishna.
+3. Ishaan sits immediately to the right of Tara. 4. Tara sits immediately to the left of Ishaan. 5.
+Tara is 3 places to the right of Harsh. 6. There are 0 people seated clockwise from Harsh to Diya,
+not counting endpoints. 7. Maya sits exactly in the middle of the row.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the left of Krishna?
+ - Who sits immediately to the right of Krishna?
+ - Who sits immediately to the right of Tara?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Kriti sits at the
+leftmost end of the row." to place fixed person(s). Use clue: "Maya sits exactly in the middle of the row." to
+place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to fixed ones.
+Use clue: "Maya is seated between Ishaan and Krishna." to place adjacent relationships. Use clue: "Ishaan sits
+immediately to the right of Tara." to place adjacent relationships. Use clue: "Tara sits immediately to the
+left of Ishaan." to place adjacent relationships. Step 3: Use relative position and counting clues to fill the
+remaining seats consistently. Use clue: "Tara is 3 places to the right of Harsh." to determine distances
+between persons. Use clue: "There are 0 people seated clockwise from Harsh to Diya, not counting endpoints."
+to determine distances between persons. Step 4: Cross-check all clues to ensure a unique consistent
+arrangement. The final arrangement is: Kriti, Tara, Ishaan, Maya, Krishna, Harsh, Diya Therefore the answers
+to direct queries (e.g., who sits left/right/opposite of X) can be read off this arrangement.
+
+Problem 4: Circular (facing Outside) — 10 seats
+Clues: 1. Vijay is at the 12 o'clock position. 2. Yash sits immediately to the right of Arjun. 3.
+Vijay sits immediately to the left of Lokesh. 4. Ritu is seated between Aditya and Vijay. 5. Vijay
+is 7 places clockwise from Maya. 6. There are 8 people seated clockwise from Yash to Arjun, not
+counting endpoints. 7. Vijay sits opposite Rahul.
+Sample Questions (answers in Solutions section):
+ - Who sits at position 3 (from left, 1-indexed)?
+ - Who sits opposite Sonal?
+ - Who sits immediately to the right of Aditya?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Vijay is at the 12
+o'clock position." to place fixed person(s). Use clue: "Vijay sits opposite Rahul." to place fixed person(s).
+Step 2: Use immediate neighbor clues to place adjacent people relative to fixed ones. Use clue: "Yash sits
+immediately to the right of Arjun." to place adjacent relationships. Use clue: "Vijay sits immediately to the
+left of Lokesh." to place adjacent relationships. Use clue: "Ritu is seated between Aditya and Vijay." to
+place adjacent relationships. Step 3: Use relative position and counting clues to fill the remaining seats
+consistently. Use clue: "Vijay is 7 places clockwise from Maya." to determine distances between persons. Use
+clue: "There are 8 people seated clockwise from Yash to Arjun, not counting endpoints." to determine distances
+between persons. Step 4: Cross-check all clues to ensure a unique consistent arrangement. The final
+arrangement is: Vijay, Lokesh, Sonal, Maya, Suresh, Rahul, Arjun, Yash, Aditya, Ritu Therefore the answers to
+direct queries (e.g., who sits left/right/opposite of X) can be read off this arrangement.
+
+Problem 5: Parallel Rows (two rows facing each other) — 10 seats
+Clues: 1. Chitra sits opposite Manish. 2. Chitra sits immediately to the left of Geeta. 3. Chitra
+sits immediately to the left of Geeta. 4. Kabir is seated between Geeta and Ritu. 5. Geeta is 2
+places clockwise from Meera. 6. There are 0 people seated clockwise from Maya to Karan, not counting
+endpoints.
+Sample Questions (answers in Solutions section):
+
+ - How many people are seated clockwise from Karan to Kavya, not counting endpoints?
+ - Who sits opposite Kavya?
+ - Who sits immediately to the left of Geeta?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Chitra sits opposite
+Manish." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to
+fixed ones. Use clue: "Chitra sits immediately to the left of Geeta." to place adjacent relationships. Use
+clue: "Chitra sits immediately to the left of Geeta." to place adjacent relationships. Use clue: "Kabir is
+seated between Geeta and Ritu." to place adjacent relationships. Step 3: Use relative position and counting
+clues to fill the remaining seats consistently. Use clue: "Geeta is 2 places clockwise from Meera." to
+determine distances between persons. Use clue: "There are 0 people seated clockwise from Maya to Karan, not
+counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a unique
+consistent arrangement. The final arrangement is: Chitra, Geeta, Kabir, Ritu, Nikhil, Manish, Maya, Karan,
+Kavya, Meera Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off
+this arrangement.
+
+Problem 6: Square Table (4 sides) — 8 seats
+Clues: 1. Nandini sits at the north side of the table. 2. Raj sits immediately to the right of Diya.
+3. Nandini is seated between Kabir and Ritu. 4. Diya is seated between Ritu and Raj. 5. Kabir is 3
+places clockwise from Sameer. 6. There are 0 people seated clockwise from Diya to Raj, not counting
+endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the right of Nandini?
+ - How many people are seated clockwise from Rohan to Raj, not counting endpoints?
+ - Who sits immediately to the left of Ritu?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Nandini sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Raj sits immediately to the right of Diya." to place adjacent
+relationships. Use clue: "Nandini is seated between Kabir and Ritu." to place adjacent relationships. Use
+clue: "Diya is seated between Ritu and Raj." to place adjacent relationships. Step 3: Use relative position
+and counting clues to fill the remaining seats consistently. Use clue: "Kabir is 3 places clockwise from
+Sameer." to determine distances between persons. Use clue: "There are 0 people seated clockwise from Diya to
+Raj, not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure
+a unique consistent arrangement. The final arrangement is: Nandini, Ritu, Diya, Raj, Sameer, Rohan, Tara,
+Kabir Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off this
+arrangement.
+
+Problem 7: Circular (facing Centre) — 12 seats
+Clues: 1. Nisha is at the 12 o'clock position. 2. Asha sits immediately to the right of Karan. 3.
+Meera sits immediately to the left of Sai. 4. Rekha is seated between Ritu and Ishaan. 5. Sai is 5
+places clockwise from Ritu. 6. There are 4 people seated clockwise from Asha to Rekha, not counting
+endpoints. 7. Nisha sits opposite Lokesh.
+Sample Questions (answers in Solutions section):
+ - Who sits at position 11 (from left, 1-indexed)?
+ - Who sits opposite Meera?
+ - How many people are seated clockwise from Meera to Sara, not counting endpoints?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Nisha is at the 12
+o'clock position." to place fixed person(s). Use clue: "Nisha sits opposite Lokesh." to place fixed person(s).
+Step 2: Use immediate neighbor clues to place adjacent people relative to fixed ones. Use clue: "Asha sits
+immediately to the right of Karan." to place adjacent relationships. Use clue: "Meera sits immediately to the
+left of Sai." to place adjacent relationships. Use clue: "Rekha is seated between Ritu and Ishaan." to place
+adjacent relationships. Step 3: Use relative position and counting clues to fill the remaining seats
+consistently. Use clue: "Sai is 5 places clockwise from Ritu." to determine distances between persons. Use
+clue: "There are 4 people seated clockwise from Asha to Rekha, not counting endpoints." to determine distances
+between persons. Step 4: Cross-check all clues to ensure a unique consistent arrangement. The final
+arrangement is: Nisha, Sara, Arjun, Ritu, Rekha, Ishaan, Lokesh, Meera, Sai, Nandini, Karan, Asha Therefore
+the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off this arrangement.
+
+Problem 8: Linear (single row, facing South) — 7 seats
+Clues: 1. Yash sits at the leftmost end of the row. 2. Sai sits immediately to the left of Sameer.
+3. Sai is seated between Yash and Sameer. 4. Sai sits immediately to the left of Sameer. 5. Geeta is
+3 places to the right of Sai. 6. There are 4 people seated clockwise from Sai to Maya, not counting
+endpoints. 7. Geeta sits exactly in the middle of the row.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the right of Vivaan?
+ - Who sits at position 2 (from left, 1-indexed)?
+ - How many people are seated clockwise from Sameer to Maya, not counting endpoints?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Yash sits at the
+leftmost end of the row." to place fixed person(s). Use clue: "Geeta sits exactly in the middle of the row."
+to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to fixed
+ones. Use clue: "Sai sits immediately to the left of Sameer." to place adjacent relationships. Use clue: "Sai
+is seated between Yash and Sameer." to place adjacent relationships. Use clue: "Sai sits immediately to the
+left of Sameer." to place adjacent relationships. Step 3: Use relative position and counting clues to fill the
+remaining seats consistently. Use clue: "Geeta is 3 places to the right of Sai." to determine distances
+between persons. Use clue: "There are 4 people seated clockwise from Sai to Maya, not counting endpoints." to
+determine distances between persons. Step 4: Cross-check all clues to ensure a unique consistent arrangement.
+The final arrangement is: Sai, Sameer, Vivaan, Geeta, Sonal, Maya, Yash Therefore the answers to direct
+queries (e.g., who sits left/right/opposite of X) can be read off this arrangement.
+
+Problem 9: Parallel Rows (two rows facing each other) — 12 seats
+Clues: 1. Leela sits opposite Lokesh. 2. Deepak is seated between Lokesh and Kabir. 3. Raj is seated
+between Vikram and Yash. 4. Sara sits immediately to the right of Leela. 5. Lokesh is 7 places
+clockwise from Yash. 6. There are 2 people seated clockwise from Sara to Ananya, not counting
+endpoints.
+Sample Questions (answers in Solutions section):
+
+ - Who sits immediately to the right of Siddharth?
+ - How many people are seated clockwise from Deepak to Kriti, not counting endpoints?
+ - Who sits at position 3 (from left, 1-indexed)?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Leela sits opposite
+Lokesh." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to
+fixed ones. Use clue: "Deepak is seated between Lokesh and Kabir." to place adjacent relationships. Use clue:
+"Raj is seated between Vikram and Yash." to place adjacent relationships. Use clue: "Sara sits immediately to
+the right of Leela." to place adjacent relationships. Step 3: Use relative position and counting clues to fill
+the remaining seats consistently. Use clue: "Lokesh is 7 places clockwise from Yash." to determine distances
+between persons. Use clue: "There are 2 people seated clockwise from Sara to Ananya, not counting endpoints."
+to determine distances between persons. Step 4: Cross-check all clues to ensure a unique consistent
+arrangement. The final arrangement is: Leela, Sara, Kriti, Siddharth, Ananya, Krishna, Lokesh, Deepak, Kabir,
+Vikram, Raj, Yash Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be
+read off this arrangement.
+
+Problem 10: Circular (facing Centre) — 10 seats
+Clues: 1. Sai is at the 12 o'clock position. 2. Krishna sits immediately to the right of Sonal. 3.
+Ishaan sits immediately to the right of Aarav. 4. Arjun sits immediately to the right of Krishna. 5.
+Krishna is 3 places clockwise from Sai. 6. There are 3 people seated clockwise from Nandini to Sai,
+not counting endpoints. 7. Sai sits opposite Raj.
+Sample Questions (answers in Solutions section):
+ - Who sits at position 5 (from left, 1-indexed)?
+ - Who sits at position 5 (from left, 1-indexed)?
+ - Who sits at position 9 (from left, 1-indexed)?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Sai is at the 12
+o'clock position." to place fixed person(s). Use clue: "Sai sits opposite Raj." to place fixed person(s). Step
+2: Use immediate neighbor clues to place adjacent people relative to fixed ones. Use clue: "Krishna sits
+immediately to the right of Sonal." to place adjacent relationships. Use clue: "Ishaan sits immediately to the
+right of Aarav." to place adjacent relationships. Use clue: "Arjun sits immediately to the right of Krishna."
+to place adjacent relationships. Step 3: Use relative position and counting clues to fill the remaining seats
+consistently. Use clue: "Krishna is 3 places clockwise from Sai." to determine distances between persons. Use
+clue: "There are 3 people seated clockwise from Nandini to Sai, not counting endpoints." to determine
+distances between persons. Step 4: Cross-check all clues to ensure a unique consistent arrangement. The final
+arrangement is: Sai, Varun, Sonal, Krishna, Arjun, Raj, Nandini, Aarav, Ishaan, Sara Therefore the answers to
+direct queries (e.g., who sits left/right/opposite of X) can be read off this arrangement.
+
+Problem 11: Square Table (4 sides) — 8 seats
+Clues: 1. Prateek sits at the north side of the table. 2. Prateek is seated between Geeta and Meera.
+3. Geeta sits immediately to the left of Prateek. 4. Geeta is seated between Arjun and Prateek. 5.
+Tara is 2 places clockwise from Neeraj. 6. There are 5 people seated clockwise from Meera to Geeta,
+not counting endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the right of Meera?
+ - How many people are seated clockwise from Meera to Priya, not counting endpoints?
+ - Who sits immediately to the right of Arjun?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Prateek sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Prateek is seated between Geeta and Meera." to place adjacent
+relationships. Use clue: "Geeta sits immediately to the left of Prateek." to place adjacent relationships. Use
+clue: "Geeta is seated between Arjun and Prateek." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Tara is 2 places clockwise
+from Neeraj." to determine distances between persons. Use clue: "There are 5 people seated clockwise from
+Meera to Geeta, not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues
+to ensure a unique consistent arrangement. The final arrangement is: Prateek, Meera, Neeraj, Ananya, Tara,
+Priya, Arjun, Geeta Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be
+read off this arrangement.
+
+Problem 12: Linear (single row, facing North) — 10 seats
+Clues: 1. Sara sits at the leftmost end of the row. 2. Rekha sits immediately to the right of Ritu.
+3. Aditya sits immediately to the left of Asha. 4. Asha sits immediately to the left of Ishaan. 5.
+Rekha is 5 places to the right of Asha. 6. There are 2 people seated clockwise from Shreya to
+Ishaan, not counting endpoints. 7. Ishaan sits exactly in the middle of the row.
+Sample Questions (answers in Solutions section):
+ - Who sits at position 6 (from left, 1-indexed)?
+ - Who sits immediately to the left of Sara?
+ - Who sits at position 10 (from left, 1-indexed)?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Sara sits at the
+leftmost end of the row." to place fixed person(s). Use clue: "Ishaan sits exactly in the middle of the row."
+to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to fixed
+ones. Use clue: "Rekha sits immediately to the right of Ritu." to place adjacent relationships. Use clue:
+"Aditya sits immediately to the left of Asha." to place adjacent relationships. Use clue: "Asha sits
+immediately to the left of Ishaan." to place adjacent relationships. Step 3: Use relative position and
+counting clues to fill the remaining seats consistently. Use clue: "Rekha is 5 places to the right of Asha."
+to determine distances between persons. Use clue: "There are 2 people seated clockwise from Shreya to Ishaan,
+not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a
+unique consistent arrangement. The final arrangement is: Sara, Geeta, Shreya, Aditya, Asha, Ishaan, Siddharth,
+Deepak, Ritu, Rekha Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be
+read off this arrangement.
+
+Problem 13: Parallel Rows (two rows facing each other) — 8 seats
+Clues: 1. Sai sits opposite Anika. 2. Anika sits immediately to the right of Kavya. 3. Kavya sits
+immediately to the left of Anika. 4. Kriti is seated between Vikram and Sai. 5. Anika is 4 places
+clockwise from Sai. 6. There are 0 people seated clockwise from Nandini to Priya, not counting
+endpoints.
+Sample Questions (answers in Solutions section):
+
+ - Who sits opposite Nandini?
+ - Who sits immediately to the left of Priya?
+ - Who sits opposite Anika?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Sai sits opposite
+Anika." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to
+fixed ones. Use clue: "Anika sits immediately to the right of Kavya." to place adjacent relationships. Use
+clue: "Kavya sits immediately to the left of Anika." to place adjacent relationships. Use clue: "Kriti is
+seated between Vikram and Sai." to place adjacent relationships. Step 3: Use relative position and counting
+clues to fill the remaining seats consistently. Use clue: "Anika is 4 places clockwise from Sai." to determine
+distances between persons. Use clue: "There are 0 people seated clockwise from Nandini to Priya, not counting
+endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a unique
+consistent arrangement. The final arrangement is: Sai, Nandini, Priya, Kavya, Anika, Karan, Vikram, Kriti
+Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off this
+arrangement.
+
+Problem 14: Parallel Rows (two rows facing each other) — 8 seats
+Clues: 1. Prateek sits opposite Vijay. 2. Suresh sits immediately to the left of Vijay. 3. Sameer is
+seated between Prateek and Priya. 4. Suresh sits immediately to the left of Vijay. 5. Vijay is 4
+places clockwise from Prateek. 6. There are 3 people seated clockwise from Priya to Kavya, not
+counting endpoints.
+Sample Questions (answers in Solutions section):
+
+ - Who sits opposite Priya?
+ - Who sits at position 7 (from left, 1-indexed)?
+ - How many people are seated clockwise from Prateek to Meera, not counting endpoints?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Prateek sits opposite
+Vijay." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to
+fixed ones. Use clue: "Suresh sits immediately to the left of Vijay." to place adjacent relationships. Use
+clue: "Sameer is seated between Prateek and Priya." to place adjacent relationships. Use clue: "Suresh sits
+immediately to the left of Vijay." to place adjacent relationships. Step 3: Use relative position and counting
+clues to fill the remaining seats consistently. Use clue: "Vijay is 4 places clockwise from Prateek." to
+determine distances between persons. Use clue: "There are 3 people seated clockwise from Priya to Kavya, not
+counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a unique
+consistent arrangement. The final arrangement is: Prateek, Sameer, Priya, Suresh, Vijay, Anika, Kavya, Meera
+Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off this
+arrangement.
+
+Problem 15: Linear (single row, facing North) — 7 seats
+Clues: 1. Nandini sits at the leftmost end of the row. 2. Nandini sits immediately to the left of
+Aditya. 3. Geeta sits immediately to the right of Manish. 4. Neeraj sits immediately to the left of
+Kabir. 5. Sonal is 2 places to the right of Manish. 6. There are 2 people seated clockwise from
+Neeraj to Aditya, not counting endpoints. 7. Geeta sits exactly in the middle of the row.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the left of Manish?
+ - How many people are seated clockwise from Kabir to Geeta, not counting endpoints?
+ - How many people are seated clockwise from Neeraj to Aditya, not counting endpoints?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Nandini sits at the
+leftmost end of the row." to place fixed person(s). Use clue: "Geeta sits exactly in the middle of the row."
+to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to fixed
+ones. Use clue: "Nandini sits immediately to the left of Aditya." to place adjacent relationships. Use clue:
+"Geeta sits immediately to the right of Manish." to place adjacent relationships. Use clue: "Neeraj sits
+immediately to the left of Kabir." to place adjacent relationships. Step 3: Use relative position and counting
+clues to fill the remaining seats consistently. Use clue: "Sonal is 2 places to the right of Manish." to
+determine distances between persons. Use clue: "There are 2 people seated clockwise from Neeraj to Aditya, not
+counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a unique
+consistent arrangement. The final arrangement is: Nandini, Aditya, Manish, Geeta, Sonal, Neeraj, Kabir
+Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off this
+arrangement.
+
+Problem 16: Linear (single row, facing South) — 7 seats
+Clues: 1. Deepak sits at the leftmost end of the row. 2. Deepak is seated between Ritu and Isha. 3.
+Siddharth sits immediately to the left of Vivaan. 4. Deepak is seated between Ritu and Isha. 5. Ritu
+is 2 places to the right of Kriti. 6. There are 3 people seated clockwise from Deepak to Kriti, not
+counting endpoints. 7. Kriti sits exactly in the middle of the row.
+Sample Questions (answers in Solutions section):
+
+ - Who sits immediately to the right of Siddharth?
+ - Who sits at position 3 (from left, 1-indexed)?
+ - Who sits opposite Deepak?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Deepak sits at the
+leftmost end of the row." to place fixed person(s). Use clue: "Kriti sits exactly in the middle of the row."
+to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to fixed
+ones. Use clue: "Deepak is seated between Ritu and Isha." to place adjacent relationships. Use clue:
+"Siddharth sits immediately to the left of Vivaan." to place adjacent relationships. Use clue: "Deepak is
+seated between Ritu and Isha." to place adjacent relationships. Step 3: Use relative position and counting
+clues to fill the remaining seats consistently. Use clue: "Ritu is 2 places to the right of Kriti." to
+determine distances between persons. Use clue: "There are 3 people seated clockwise from Deepak to Kriti, not
+counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a unique
+consistent arrangement. The final arrangement is: Isha, Siddharth, Vivaan, Kriti, Sameer, Ritu, Deepak
+Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off this
+arrangement.
+
+Problem 17: Rectangular Table (opposite facing) — 8 seats
+Clues: 1. Maya sits at the north side of the table. 2. Sameer sits immediately to the right of
+Nikhil. 3. Diya is seated between Sameer and Sai. 4. Nikhil sits immediately to the left of Sameer.
+5. Sameer is 4 places clockwise from Vivaan. 6. There are 2 people seated clockwise from Deepak to
+Sameer, not counting endpoints.
+Sample Questions (answers in Solutions section):
+
+ - Who sits opposite Maya?
+ - Who sits immediately to the left of Diya?
+ - Who sits opposite Sameer?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Maya sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Sameer sits immediately to the right of Nikhil." to place adjacent
+relationships. Use clue: "Diya is seated between Sameer and Sai." to place adjacent relationships. Use clue:
+"Nikhil sits immediately to the left of Sameer." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Sameer is 4 places clockwise
+from Vivaan." to determine distances between persons. Use clue: "There are 2 people seated clockwise from
+Deepak to Sameer, not counting endpoints." to determine distances between persons. Step 4: Cross-check all
+clues to ensure a unique consistent arrangement. The final arrangement is: Maya, Vivaan, Deepak, Ananya,
+Nikhil, Sameer, Diya, Sai Therefore the answers to direct queries (e.g., who sits left/right/opposite of X)
+can be read off this arrangement.
+
+Problem 18: Circular (facing Outside) — 10 seats
+Clues: 1. Kavya is at the 12 o'clock position. 2. Aarav is seated between Kabir and Pooja. 3. Ananya
+sits immediately to the right of Rekha. 4. Anika sits immediately to the left of Aditya. 5. Rohan is
+6 places clockwise from Anika. 6. There are 5 people seated clockwise from Anika to Rohan, not
+counting endpoints. 7. Kavya sits opposite Anika.
+Sample Questions (answers in Solutions section):
+
+ - Who sits opposite Aarav?
+ - Who sits opposite Aditya?
+ - Who sits opposite Aditya?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Kavya is at the 12
+o'clock position." to place fixed person(s). Use clue: "Kavya sits opposite Anika." to place fixed person(s).
+Step 2: Use immediate neighbor clues to place adjacent people relative to fixed ones. Use clue: "Aarav is
+seated between Kabir and Pooja." to place adjacent relationships. Use clue: "Ananya sits immediately to the
+right of Rekha." to place adjacent relationships. Use clue: "Anika sits immediately to the left of Aditya." to
+place adjacent relationships. Step 3: Use relative position and counting clues to fill the remaining seats
+consistently. Use clue: "Rohan is 6 places clockwise from Anika." to determine distances between persons. Use
+clue: "There are 5 people seated clockwise from Anika to Rohan, not counting endpoints." to determine
+distances between persons. Step 4: Cross-check all clues to ensure a unique consistent arrangement. The final
+arrangement is: Kavya, Rohan, Harsh, Rekha, Ananya, Anika, Aditya, Kabir, Aarav, Pooja Therefore the answers
+to direct queries (e.g., who sits left/right/opposite of X) can be read off this arrangement.
+
+Problem 19: Square Table (4 sides) — 8 seats
+Clues: 1. Tara sits at the north side of the table. 2. Deepak sits immediately to the right of
+Siddharth. 3. Sonal sits immediately to the right of Tara. 4. Ananya sits immediately to the left of
+Siddharth. 5. Karan is 4 places clockwise from Harsh. 6. There are 3 people seated clockwise from
+Isha to Ananya, not counting endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits at position 4 (from left, 1-indexed)?
+ - How many people are seated clockwise from Isha to Harsh, not counting endpoints?
+ - Who sits immediately to the right of Sonal?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Tara sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Deepak sits immediately to the right of Siddharth." to place
+adjacent relationships. Use clue: "Sonal sits immediately to the right of Tara." to place adjacent
+relationships. Use clue: "Ananya sits immediately to the left of Siddharth." to place adjacent relationships.
+Step 3: Use relative position and counting clues to fill the remaining seats consistently. Use clue: "Karan is
+4 places clockwise from Harsh." to determine distances between persons. Use clue: "There are 3 people seated
+clockwise from Isha to Ananya, not counting endpoints." to determine distances between persons. Step 4: Cross-
+check all clues to ensure a unique consistent arrangement. The final arrangement is: Tara, Sonal, Karan,
+Ananya, Siddharth, Deepak, Harsh, Isha Therefore the answers to direct queries (e.g., who sits
+left/right/opposite of X) can be read off this arrangement.
+
+Problem 20: Circular (facing Centre) — 10 seats
+Clues: 1. Deepak is at the 12 o'clock position. 2. Vijay sits immediately to the left of Asha. 3.
+Ananya sits immediately to the left of Deepak. 4. Nisha is seated between Suresh and Maya. 5. Suresh
+is 5 places clockwise from Vijay. 6. There are 6 people seated clockwise from Suresh to Sameer, not
+counting endpoints. 7. Deepak sits opposite Sara.
+Sample Questions (answers in Solutions section):
+ - Who sits at position 8 (from left, 1-indexed)?
+ - Who sits at position 4 (from left, 1-indexed)?
+ - Who sits immediately to the right of Deepak?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Deepak is at the 12
+o'clock position." to place fixed person(s). Use clue: "Deepak sits opposite Sara." to place fixed person(s).
+Step 2: Use immediate neighbor clues to place adjacent people relative to fixed ones. Use clue: "Vijay sits
+immediately to the left of Asha." to place adjacent relationships. Use clue: "Ananya sits immediately to the
+left of Deepak." to place adjacent relationships. Use clue: "Nisha is seated between Suresh and Maya." to
+place adjacent relationships. Step 3: Use relative position and counting clues to fill the remaining seats
+consistently. Use clue: "Suresh is 5 places clockwise from Vijay." to determine distances between persons. Use
+clue: "There are 6 people seated clockwise from Suresh to Sameer, not counting endpoints." to determine
+distances between persons. Step 4: Cross-check all clues to ensure a unique consistent arrangement. The final
+arrangement is: Deepak, Vijay, Asha, Sameer, Ishaan, Sara, Suresh, Nisha, Maya, Ananya Therefore the answers
+to direct queries (e.g., who sits left/right/opposite of X) can be read off this arrangement.
+
+Problem 21: Rectangular Table (opposite facing) — 8 seats
+Clues: 1. Kriti sits at the north side of the table. 2. Maya sits immediately to the left of Isha.
+3. Amit sits immediately to the left of Arjun. 4. Arjun is seated between Amit and Kriti. 5. Maya is
+5 places clockwise from Pooja. 6. There are 0 people seated clockwise from Amit to Arjun, not
+counting endpoints.
+Sample Questions (answers in Solutions section):
+
+ - How many people are seated clockwise from Arjun to Kabir, not counting endpoints?
+ - Who sits at position 8 (from left, 1-indexed)?
+ - Who sits opposite Isha?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Kriti sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Maya sits immediately to the left of Isha." to place adjacent
+relationships. Use clue: "Amit sits immediately to the left of Arjun." to place adjacent relationships. Use
+clue: "Arjun is seated between Amit and Kriti." to place adjacent relationships. Step 3: Use relative position
+and counting clues to fill the remaining seats consistently. Use clue: "Maya is 5 places clockwise from
+Pooja." to determine distances between persons. Use clue: "There are 0 people seated clockwise from Amit to
+Arjun, not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to
+ensure a unique consistent arrangement. The final arrangement is: Kriti, Kabir, Maya, Isha, Lokesh, Pooja,
+Amit, Arjun Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off
+this arrangement.
+
+Problem 22: Rectangular Table (opposite facing) — 12 seats
+Clues: 1. Diya sits at the north side of the table. 2. Kriti is seated between Sara and Varun. 3.
+Pooja sits immediately to the left of Meera. 4. Sara sits immediately to the right of Vijay. 5.
+Vijay is 4 places clockwise from Sameer. 6. There are 3 people seated clockwise from Sameer to
+Vijay, not counting endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the left of Varun?
+ - Who sits at position 6 (from left, 1-indexed)?
+ - How many people are seated clockwise from Sai to Varun, not counting endpoints?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Diya sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Kriti is seated between Sara and Varun." to place adjacent
+relationships. Use clue: "Pooja sits immediately to the left of Meera." to place adjacent relationships. Use
+clue: "Sara sits immediately to the right of Vijay." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Vijay is 4 places clockwise
+from Sameer." to determine distances between persons. Use clue: "There are 3 people seated clockwise from
+Sameer to Vijay, not counting endpoints." to determine distances between persons. Step 4: Cross-check all
+clues to ensure a unique consistent arrangement. The final arrangement is: Diya, Pooja, Meera, Vijay, Sara,
+Kriti, Varun, Sai, Tara, Prateek, Lokesh, Sameer Therefore the answers to direct queries (e.g., who sits
+left/right/opposite of X) can be read off this arrangement.
+
+Problem 23: Linear (single row, facing North) — 7 seats
+Clues: 1. Siddharth sits at the leftmost end of the row. 2. Geeta sits immediately to the left of
+Lokesh. 3. Lokesh sits immediately to the right of Geeta. 4. Siddharth sits immediately to the right
+of Ritu. 5. Geeta is 3 places to the right of Ritu. 6. There are 1 people seated clockwise from
+Vivaan to Ritu, not counting endpoints. 7. Lokesh sits exactly in the middle of the row.
+Sample Questions (answers in Solutions section):
+
+ - How many people are seated clockwise from Ritu to Vivaan, not counting endpoints?
+ - Who sits immediately to the right of Lokesh?
+ - Who sits immediately to the right of Geeta?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Siddharth sits at the
+leftmost end of the row." to place fixed person(s). Use clue: "Lokesh sits exactly in the middle of the row."
+to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to fixed
+ones. Use clue: "Geeta sits immediately to the left of Lokesh." to place adjacent relationships. Use clue:
+"Lokesh sits immediately to the right of Geeta." to place adjacent relationships. Use clue: "Siddharth sits
+immediately to the right of Ritu." to place adjacent relationships. Step 3: Use relative position and counting
+clues to fill the remaining seats consistently. Use clue: "Geeta is 3 places to the right of Ritu." to
+determine distances between persons. Use clue: "There are 1 people seated clockwise from Vivaan to Ritu, not
+counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a unique
+consistent arrangement. The final arrangement is: Siddharth, Harsh, Geeta, Lokesh, Vivaan, Rekha, Ritu
+Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off this
+arrangement.
+
+Problem 24: Circular (facing Outside) — 10 seats
+Clues: 1. Sameer is at the 12 o'clock position. 2. Karan is seated between Amit and Asha. 3. Vivaan
+sits immediately to the left of Sameer. 4. Amit sits immediately to the left of Karan. 5. Sameer is
+3 places clockwise from Asha. 6. There are 4 people seated clockwise from Sameer to Amit, not
+counting endpoints. 7. Sameer sits opposite Amit.
+Sample Questions (answers in Solutions section):
+ - Who sits at position 6 (from left, 1-indexed)?
+ - Who sits immediately to the right of Asha?
+ - Who sits opposite Amit?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Sameer is at the 12
+o'clock position." to place fixed person(s). Use clue: "Sameer sits opposite Amit." to place fixed person(s).
+Step 2: Use immediate neighbor clues to place adjacent people relative to fixed ones. Use clue: "Karan is
+seated between Amit and Asha." to place adjacent relationships. Use clue: "Vivaan sits immediately to the left
+of Sameer." to place adjacent relationships. Use clue: "Amit sits immediately to the left of Karan." to place
+adjacent relationships. Step 3: Use relative position and counting clues to fill the remaining seats
+consistently. Use clue: "Sameer is 3 places clockwise from Asha." to determine distances between persons. Use
+clue: "There are 4 people seated clockwise from Sameer to Amit, not counting endpoints." to determine
+distances between persons. Step 4: Cross-check all clues to ensure a unique consistent arrangement. The final
+arrangement is: Sameer, Deepak, Suresh, Nikhil, Ria, Amit, Karan, Asha, Nandini, Vivaan Therefore the answers
+to direct queries (e.g., who sits left/right/opposite of X) can be read off this arrangement.
+
+Problem 25: Rectangular Table (opposite facing) — 10 seats
+Clues: 1. Diya sits at the north side of the table. 2. Anika is seated between Siddharth and Ishaan.
+3. Vikram sits immediately to the left of Diya. 4. Siddharth sits immediately to the left of Anika.
+5. Vivaan is 6 places clockwise from Diya. 6. There are 1 people seated clockwise from Siddharth to
+Ishaan, not counting endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the right of Nandini?
+ - Who sits immediately to the left of Vikram?
+ - Who sits immediately to the right of Nandini?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Diya sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Anika is seated between Siddharth and Ishaan." to place adjacent
+relationships. Use clue: "Vikram sits immediately to the left of Diya." to place adjacent relationships. Use
+clue: "Siddharth sits immediately to the left of Anika." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Vivaan is 6 places clockwise
+from Diya." to determine distances between persons. Use clue: "There are 1 people seated clockwise from
+Siddharth to Ishaan, not counting endpoints." to determine distances between persons. Step 4: Cross-check all
+clues to ensure a unique consistent arrangement. The final arrangement is: Diya, Ritu, Siddharth, Anika,
+Ishaan, Leela, Vivaan, Nandini, Arjun, Vikram Therefore the answers to direct queries (e.g., who sits
+left/right/opposite of X) can be read off this arrangement.
+
+Problem 26: Square Table (4 sides) — 8 seats
+Clues: 1. Anika sits at the north side of the table. 2. Manish is seated between Anika and Ria. 3.
+Yash is seated between Shreya and Rohan. 4. Chitra is seated between Rohan and Nisha. 5. Yash is 3
+places clockwise from Manish. 6. There are 4 people seated clockwise from Manish to Chitra, not
+counting endpoints.
+Sample Questions (answers in Solutions section):
+
+ - Who sits opposite Manish?
+ - How many people are seated clockwise from Anika to Ria, not counting endpoints?
+ - How many people are seated clockwise from Chitra to Rohan, not counting endpoints?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Anika sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Manish is seated between Anika and Ria." to place adjacent
+relationships. Use clue: "Yash is seated between Shreya and Rohan." to place adjacent relationships. Use clue:
+"Chitra is seated between Rohan and Nisha." to place adjacent relationships. Step 3: Use relative position and
+counting clues to fill the remaining seats consistently. Use clue: "Yash is 3 places clockwise from Manish."
+to determine distances between persons. Use clue: "There are 4 people seated clockwise from Manish to Chitra,
+not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a
+unique consistent arrangement. The final arrangement is: Anika, Manish, Ria, Shreya, Yash, Rohan, Chitra,
+Nisha Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off this
+arrangement.
+
+Problem 27: Circular (facing Centre) — 6 seats
+Clues: 1. Kavya is at the 12 o'clock position. 2. Raj sits immediately to the right of Kavya. 3.
+Sameer is seated between Raj and Aarav. 4. Siddharth sits immediately to the left of Meera. 5. Meera
+is 2 places clockwise from Aarav. 6. Kavya sits opposite Aarav.
+Sample Questions (answers in Solutions section):
+
+ - How many people are seated clockwise from Meera to Sameer, not counting endpoints?
+ - How many people are seated clockwise from Siddharth to Aarav, not counting endpoints?
+ - Who sits at position 4 (from left, 1-indexed)?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Kavya is at the 12
+o'clock position." to place fixed person(s). Use clue: "Kavya sits opposite Aarav." to place fixed person(s).
+Step 2: Use immediate neighbor clues to place adjacent people relative to fixed ones. Use clue: "Raj sits
+immediately to the right of Kavya." to place adjacent relationships. Use clue: "Sameer is seated between Raj
+and Aarav." to place adjacent relationships. Use clue: "Siddharth sits immediately to the left of Meera." to
+place adjacent relationships. Step 3: Use relative position and counting clues to fill the remaining seats
+consistently. Use clue: "Meera is 2 places clockwise from Aarav." to determine distances between persons. Step
+4: Cross-check all clues to ensure a unique consistent arrangement. The final arrangement is: Kavya, Raj,
+Sameer, Aarav, Siddharth, Meera Therefore the answers to direct queries (e.g., who sits left/right/opposite of
+X) can be read off this arrangement.
+
+Problem 28: Rectangular Table (opposite facing) — 12 seats
+Clues: 1. Geeta sits at the north side of the table. 2. Ishaan sits immediately to the left of Ritu.
+3. Amit sits immediately to the right of Yash. 4. Sara sits immediately to the right of Rahul. 5.
+Asha is 7 places clockwise from Sara. 6. There are 1 people seated clockwise from Ishaan to Varun,
+not counting endpoints.
+Sample Questions (answers in Solutions section):
+
+ - Who sits opposite Rekha?
+ - Who sits opposite Amit?
+ - Who sits immediately to the left of Amit?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Geeta sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Ishaan sits immediately to the left of Ritu." to place adjacent
+relationships. Use clue: "Amit sits immediately to the right of Yash." to place adjacent relationships. Use
+clue: "Sara sits immediately to the right of Rahul." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Asha is 7 places clockwise
+from Sara." to determine distances between persons. Use clue: "There are 1 people seated clockwise from Ishaan
+to Varun, not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to
+ensure a unique consistent arrangement. The final arrangement is: Geeta, Diya, Rahul, Sara, Ishaan, Ritu,
+Varun, Yash, Amit, Rekha, Asha, Harsh Therefore the answers to direct queries (e.g., who sits
+left/right/opposite of X) can be read off this arrangement.
+
+Problem 29: Linear (single row, facing South) — 6 seats
+Clues: 1. Kriti sits at the leftmost end of the row. 2. Sara sits immediately to the right of Kriti.
+3. Kriti is seated between Sonal and Sara. 4. Siddharth sits immediately to the left of Meera. 5.
+Meera is 3 places to the right of Sara. 6. Meera sits exactly in the middle of the row.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the right of Meera?
+ - Who sits immediately to the right of Siddharth?
+ - How many people are seated clockwise from Siddharth to Meera, not counting endpoints?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Kriti sits at the
+leftmost end of the row." to place fixed person(s). Use clue: "Meera sits exactly in the middle of the row."
+to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to fixed
+ones. Use clue: "Sara sits immediately to the right of Kriti." to place adjacent relationships. Use clue:
+"Kriti is seated between Sonal and Sara." to place adjacent relationships. Use clue: "Siddharth sits
+immediately to the left of Meera." to place adjacent relationships. Step 3: Use relative position and counting
+clues to fill the remaining seats consistently. Use clue: "Meera is 3 places to the right of Sara." to
+determine distances between persons. Step 4: Cross-check all clues to ensure a unique consistent arrangement.
+The final arrangement is: Sara, Yash, Siddharth, Meera, Sonal, Kriti Therefore the answers to direct queries
+(e.g., who sits left/right/opposite of X) can be read off this arrangement.
+
+Problem 30: Parallel Rows (two rows facing each other) — 12 seats
+Clues: 1. Vikram sits opposite Amit. 2. Maya sits immediately to the left of Rohan. 3. Sameer sits
+immediately to the left of Kriti. 4. Rohan is seated between Maya and Vikram. 5. Nisha is 5 places
+clockwise from Sonal. 6. There are 7 people seated clockwise from Rohan to Diya, not counting
+endpoints.
+Sample Questions (answers in Solutions section):
+
+ - Who sits opposite Rohan?
+ - How many people are seated clockwise from Nisha to Anika, not counting endpoints?
+ - Who sits opposite Kabir?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Vikram sits opposite
+Amit." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to
+fixed ones. Use clue: "Maya sits immediately to the left of Rohan." to place adjacent relationships. Use clue:
+"Sameer sits immediately to the left of Kriti." to place adjacent relationships. Use clue: "Rohan is seated
+between Maya and Vikram." to place adjacent relationships. Step 3: Use relative position and counting clues to
+fill the remaining seats consistently. Use clue: "Nisha is 5 places clockwise from Sonal." to determine
+distances between persons. Use clue: "There are 7 people seated clockwise from Rohan to Diya, not counting
+endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a unique
+consistent arrangement. The final arrangement is: Vikram, Kabir, Chitra, Sonal, Sameer, Kriti, Amit, Diya,
+Nisha, Anika, Maya, Rohan Therefore the answers to direct queries (e.g., who sits left/right/opposite of X)
+can be read off this arrangement.
+
+Problem 31: Rectangular Table (opposite facing) — 8 seats
+Clues: 1. Tara sits at the north side of the table. 2. Isha sits immediately to the left of Nisha.
+3. Tara is seated between Karan and Maya. 4. Manish is seated between Maya and Isha. 5. Isha is 2
+places clockwise from Maya. 6. There are 6 people seated clockwise from Nisha to Isha, not counting
+endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits at position 8 (from left, 1-indexed)?
+ - Who sits opposite Manish?
+ - Who sits immediately to the left of Nisha?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Tara sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Isha sits immediately to the left of Nisha." to place adjacent
+relationships. Use clue: "Tara is seated between Karan and Maya." to place adjacent relationships. Use clue:
+"Manish is seated between Maya and Isha." to place adjacent relationships. Step 3: Use relative position and
+counting clues to fill the remaining seats consistently. Use clue: "Isha is 2 places clockwise from Maya." to
+determine distances between persons. Use clue: "There are 6 people seated clockwise from Nisha to Isha, not
+counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a unique
+consistent arrangement. The final arrangement is: Tara, Maya, Manish, Isha, Nisha, Aarav, Nandini, Karan
+Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off this
+arrangement.
+
+Problem 32: Rectangular Table (opposite facing) — 10 seats
+Clues: 1. Rohan sits at the north side of the table. 2. Rohan sits immediately to the right of Raj.
+3. Rohan sits immediately to the left of Sai. 4. Sai is seated between Rohan and Nikhil. 5. Nikhil
+is 6 places clockwise from Vijay. 6. There are 3 people seated clockwise from Raj to Meera, not
+counting endpoints.
+Sample Questions (answers in Solutions section):
+
+ - How many people are seated clockwise from Vijay to Arjun, not counting endpoints?
+ - Who sits at position 5 (from left, 1-indexed)?
+ - How many people are seated clockwise from Vijay to Ritu, not counting endpoints?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Rohan sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Rohan sits immediately to the right of Raj." to place adjacent
+relationships. Use clue: "Rohan sits immediately to the left of Sai." to place adjacent relationships. Use
+clue: "Sai is seated between Rohan and Nikhil." to place adjacent relationships. Step 3: Use relative position
+and counting clues to fill the remaining seats consistently. Use clue: "Nikhil is 6 places clockwise from
+Vijay." to determine distances between persons. Use clue: "There are 3 people seated clockwise from Raj to
+Meera, not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to
+ensure a unique consistent arrangement. The final arrangement is: Rohan, Sai, Nikhil, Meera, Ritu, Rekha,
+Vijay, Arjun, Neeraj, Raj Therefore the answers to direct queries (e.g., who sits left/right/opposite of X)
+can be read off this arrangement.
+
+Problem 33: Parallel Rows (two rows facing each other) — 12 seats
+Clues: 1. Arjun sits opposite Prateek. 2. Anika sits immediately to the left of Ishaan. 3. Asha sits
+immediately to the left of Chitra. 4. Anika sits immediately to the right of Prateek. 5. Ishaan is 9
+places clockwise from Isha. 6. There are 7 people seated clockwise from Priya to Arjun, not counting
+endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the right of Priya?
+ - Who sits opposite Isha?
+ - Who sits at position 2 (from left, 1-indexed)?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Arjun sits opposite
+Prateek." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to
+fixed ones. Use clue: "Anika sits immediately to the left of Ishaan." to place adjacent relationships. Use
+clue: "Asha sits immediately to the left of Chitra." to place adjacent relationships. Use clue: "Anika sits
+immediately to the right of Prateek." to place adjacent relationships. Step 3: Use relative position and
+counting clues to fill the remaining seats consistently. Use clue: "Ishaan is 9 places clockwise from Isha."
+to determine distances between persons. Use clue: "There are 7 people seated clockwise from Priya to Arjun,
+not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a
+unique consistent arrangement. The final arrangement is: Arjun, Asha, Chitra, Krishna, Priya, Vijay, Prateek,
+Anika, Ishaan, Ria, Sara, Isha Therefore the answers to direct queries (e.g., who sits left/right/opposite of
+X) can be read off this arrangement.
+
+Problem 34: Square Table (4 sides) — 8 seats
+Clues: 1. Maya sits at the north side of the table. 2. Geeta is seated between Vijay and Deepak. 3.
+Geeta sits immediately to the left of Deepak. 4. Maya sits immediately to the left of Anika. 5.
+Kabir is 4 places clockwise from Vijay. 6. There are 6 people seated clockwise from Deepak to Geeta,
+not counting endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the left of Rohan?
+ - Who sits opposite Kabir?
+ - Who sits opposite Rohan?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Maya sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Geeta is seated between Vijay and Deepak." to place adjacent
+relationships. Use clue: "Geeta sits immediately to the left of Deepak." to place adjacent relationships. Use
+clue: "Maya sits immediately to the left of Anika." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Kabir is 4 places clockwise
+from Vijay." to determine distances between persons. Use clue: "There are 6 people seated clockwise from
+Deepak to Geeta, not counting endpoints." to determine distances between persons. Step 4: Cross-check all
+clues to ensure a unique consistent arrangement. The final arrangement is: Maya, Anika, Vijay, Geeta, Deepak,
+Ananya, Kabir, Rohan Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be
+read off this arrangement.
+
+Problem 35: Circular (facing Outside) — 6 seats
+Clues: 1. Shreya is at the 12 o'clock position. 2. Anika sits immediately to the left of Shreya. 3.
+Aditya is seated between Shreya and Kabir. 4. Rahul sits immediately to the left of Kriti. 5. Kabir
+is 3 places clockwise from Anika. 6. Shreya sits opposite Rahul.
+Sample Questions (answers in Solutions section):
+
+ - How many people are seated clockwise from Shreya to Aditya, not counting endpoints?
+ - Who sits at position 5 (from left, 1-indexed)?
+ - Who sits at position 3 (from left, 1-indexed)?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Shreya is at the 12
+o'clock position." to place fixed person(s). Use clue: "Shreya sits opposite Rahul." to place fixed person(s).
+Step 2: Use immediate neighbor clues to place adjacent people relative to fixed ones. Use clue: "Anika sits
+immediately to the left of Shreya." to place adjacent relationships. Use clue: "Aditya is seated between
+Shreya and Kabir." to place adjacent relationships. Use clue: "Rahul sits immediately to the left of Kriti."
+to place adjacent relationships. Step 3: Use relative position and counting clues to fill the remaining seats
+consistently. Use clue: "Kabir is 3 places clockwise from Anika." to determine distances between persons. Step
+4: Cross-check all clues to ensure a unique consistent arrangement. The final arrangement is: Shreya, Aditya,
+Kabir, Rahul, Kriti, Anika Therefore the answers to direct queries (e.g., who sits left/right/opposite of X)
+can be read off this arrangement.
+
+Problem 36: Linear (single row, facing South) — 10 seats
+Clues: 1. Krishna sits at the leftmost end of the row. 2. Ishaan sits immediately to the right of
+Meera. 3. Siddharth is seated between Vikram and Sameer. 4. Leela is seated between Ishaan and
+Vikram. 5. Kabir is 2 places to the right of Rahul. 6. There are 3 people seated clockwise from
+Sameer to Vijay, not counting endpoints. 7. Vikram sits exactly in the middle of the row.
+Sample Questions (answers in Solutions section):
+
+ - Who sits opposite Leela?
+ - Who sits opposite Vijay?
+ - Who sits at position 9 (from left, 1-indexed)?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Krishna sits at the
+leftmost end of the row." to place fixed person(s). Use clue: "Vikram sits exactly in the middle of the row."
+to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to fixed
+ones. Use clue: "Ishaan sits immediately to the right of Meera." to place adjacent relationships. Use clue:
+"Siddharth is seated between Vikram and Sameer." to place adjacent relationships. Use clue: "Leela is seated
+between Ishaan and Vikram." to place adjacent relationships. Step 3: Use relative position and counting clues
+to fill the remaining seats consistently. Use clue: "Kabir is 2 places to the right of Rahul." to determine
+distances between persons. Use clue: "There are 3 people seated clockwise from Sameer to Vijay, not counting
+endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a unique
+consistent arrangement. The final arrangement is: Kabir, Vijay, Meera, Ishaan, Leela, Vikram, Siddharth,
+Sameer, Rahul, Krishna Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can
+be read off this arrangement.
+
+Problem 37: Rectangular Table (opposite facing) — 8 seats
+Clues: 1. Deepak sits at the north side of the table. 2. Manish is seated between Pooja and Deepak.
+3. Manish sits immediately to the left of Deepak. 4. Arjun is seated between Siddharth and Ananya.
+5. Nandini is 5 places clockwise from Arjun. 6. There are 0 people seated clockwise from Manish to
+Deepak, not counting endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the left of Siddharth?
+ - Who sits immediately to the right of Arjun?
+ - How many people are seated clockwise from Deepak to Arjun, not counting endpoints?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Deepak sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Manish is seated between Pooja and Deepak." to place adjacent
+relationships. Use clue: "Manish sits immediately to the left of Deepak." to place adjacent relationships. Use
+clue: "Arjun is seated between Siddharth and Ananya." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Nandini is 5 places clockwise
+from Arjun." to determine distances between persons. Use clue: "There are 0 people seated clockwise from
+Manish to Deepak, not counting endpoints." to determine distances between persons. Step 4: Cross-check all
+clues to ensure a unique consistent arrangement. The final arrangement is: Deepak, Nandini, Amit, Siddharth,
+Arjun, Ananya, Pooja, Manish Therefore the answers to direct queries (e.g., who sits left/right/opposite of X)
+can be read off this arrangement.
+
+Problem 38: Circular (facing Outside) — 6 seats
+Clues: 1. Maya is at the 12 o'clock position. 2. Ritu is seated between Amit and Raj. 3. Raj is
+seated between Ritu and Neeraj. 4. Raj sits immediately to the right of Ritu. 5. Neeraj is 2 places
+clockwise from Ritu. 6. Maya sits opposite Ritu.
+Sample Questions (answers in Solutions section):
+ - Who sits at position 5 (from left, 1-indexed)?
+ - Who sits immediately to the right of Ritu?
+ - Who sits immediately to the right of Raj?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Maya is at the 12
+o'clock position." to place fixed person(s). Use clue: "Maya sits opposite Ritu." to place fixed person(s).
+Step 2: Use immediate neighbor clues to place adjacent people relative to fixed ones. Use clue: "Ritu is
+seated between Amit and Raj." to place adjacent relationships. Use clue: "Raj is seated between Ritu and
+Neeraj." to place adjacent relationships. Use clue: "Raj sits immediately to the right of Ritu." to place
+adjacent relationships. Step 3: Use relative position and counting clues to fill the remaining seats
+consistently. Use clue: "Neeraj is 2 places clockwise from Ritu." to determine distances between persons. Step
+4: Cross-check all clues to ensure a unique consistent arrangement. The final arrangement is: Maya, Rohan,
+Amit, Ritu, Raj, Neeraj Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can
+be read off this arrangement.
+
+Problem 39: Parallel Rows (two rows facing each other) — 12 seats
+Clues: 1. Karan sits opposite Chitra. 2. Asha sits immediately to the right of Geeta. 3. Siddharth
+sits immediately to the right of Diya. 4. Nisha sits immediately to the right of Tara. 5. Karan is 7
+places clockwise from Kavya. 6. There are 0 people seated clockwise from Tara to Nisha, not counting
+endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits at position 8 (from left, 1-indexed)?
+ - Who sits opposite Siddharth?
+ - Who sits immediately to the right of Nisha?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Karan sits opposite
+Chitra." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to
+fixed ones. Use clue: "Asha sits immediately to the right of Geeta." to place adjacent relationships. Use
+clue: "Siddharth sits immediately to the right of Diya." to place adjacent relationships. Use clue: "Nisha
+sits immediately to the right of Tara." to place adjacent relationships. Step 3: Use relative position and
+counting clues to fill the remaining seats consistently. Use clue: "Karan is 7 places clockwise from Kavya."
+to determine distances between persons. Use clue: "There are 0 people seated clockwise from Tara to Nisha, not
+counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a unique
+consistent arrangement. The final arrangement is: Karan, Sai, Diya, Siddharth, Sameer, Kavya, Chitra, Aarav,
+Tara, Nisha, Geeta, Asha Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can
+be read off this arrangement.
+
+Problem 40: Circular (facing Outside) — 7 seats
+Clues: 1. Siddharth is at the 12 o'clock position. 2. Harsh is seated between Prateek and Lokesh. 3.
+Rahul sits immediately to the left of Leela. 4. Aditya is seated between Siddharth and Rahul. 5.
+Aditya is 2 places clockwise from Lokesh. 6. There are 3 people seated clockwise from Lokesh to
+Leela, not counting endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the left of Prateek?
+ - Who sits at position 1 (from left, 1-indexed)?
+ - Who sits immediately to the right of Leela?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Siddharth is at the
+12 o'clock position." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people
+relative to fixed ones. Use clue: "Harsh is seated between Prateek and Lokesh." to place adjacent
+relationships. Use clue: "Rahul sits immediately to the left of Leela." to place adjacent relationships. Use
+clue: "Aditya is seated between Siddharth and Rahul." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Aditya is 2 places clockwise
+from Lokesh." to determine distances between persons. Use clue: "There are 3 people seated clockwise from
+Lokesh to Leela, not counting endpoints." to determine distances between persons. Step 4: Cross-check all
+clues to ensure a unique consistent arrangement. The final arrangement is: Siddharth, Aditya, Rahul, Leela,
+Prateek, Harsh, Lokesh Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can
+be read off this arrangement.
+
+Problem 41: Rectangular Table (opposite facing) — 12 seats
+Clues: 1. Neeraj sits at the north side of the table. 2. Asha is seated between Sameer and Nikhil.
+3. Raj sits immediately to the left of Ishaan. 4. Ishaan sits immediately to the left of Prateek. 5.
+Prateek is 6 places clockwise from Anika. 6. There are 9 people seated clockwise from Anika to Sai,
+not counting endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits at position 2 (from left, 1-indexed)?
+ - Who sits immediately to the left of Raj?
+ - Who sits immediately to the right of Harsh?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Neeraj sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Asha is seated between Sameer and Nikhil." to place adjacent
+relationships. Use clue: "Raj sits immediately to the left of Ishaan." to place adjacent relationships. Use
+clue: "Ishaan sits immediately to the left of Prateek." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Prateek is 6 places clockwise
+from Anika." to determine distances between persons. Use clue: "There are 9 people seated clockwise from Anika
+to Sai, not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to
+ensure a unique consistent arrangement. The final arrangement is: Neeraj, Sai, Leela, Anika, Sameer, Asha,
+Nikhil, Raj, Ishaan, Prateek, Nandini, Harsh Therefore the answers to direct queries (e.g., who sits
+left/right/opposite of X) can be read off this arrangement.
+
+Problem 42: Circular (facing Centre) — 6 seats
+Clues: 1. Aditya is at the 12 o'clock position. 2. Arjun sits immediately to the left of Tara. 3.
+Rahul is seated between Aditya and Arjun. 4. Vikram is seated between Tara and Manish. 5. Tara is 2
+places clockwise from Rahul. 6. Aditya sits opposite Tara.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the left of Vikram?
+ - Who sits at position 5 (from left, 1-indexed)?
+ - Who sits immediately to the right of Tara?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Aditya is at the 12
+o'clock position." to place fixed person(s). Use clue: "Aditya sits opposite Tara." to place fixed person(s).
+Step 2: Use immediate neighbor clues to place adjacent people relative to fixed ones. Use clue: "Arjun sits
+immediately to the left of Tara." to place adjacent relationships. Use clue: "Rahul is seated between Aditya
+and Arjun." to place adjacent relationships. Use clue: "Vikram is seated between Tara and Manish." to place
+adjacent relationships. Step 3: Use relative position and counting clues to fill the remaining seats
+consistently. Use clue: "Tara is 2 places clockwise from Rahul." to determine distances between persons. Step
+4: Cross-check all clues to ensure a unique consistent arrangement. The final arrangement is: Aditya, Rahul,
+Arjun, Tara, Vikram, Manish Therefore the answers to direct queries (e.g., who sits left/right/opposite of X)
+can be read off this arrangement.
+
+Problem 43: Parallel Rows (two rows facing each other) — 8 seats
+Clues: 1. Maya sits opposite Ritu. 2. Maya sits immediately to the right of Aarav. 3. Amit sits
+immediately to the left of Vijay. 4. Maya sits immediately to the right of Aarav. 5. Amit is 5
+places clockwise from Ritu. 6. There are 6 people seated clockwise from Ritu to Anika, not counting
+endpoints.
+Sample Questions (answers in Solutions section):
+
+ - Who sits opposite Anika?
+ - Who sits at position 8 (from left, 1-indexed)?
+ - Who sits immediately to the left of Anika?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Maya sits opposite
+Ritu." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to
+fixed ones. Use clue: "Maya sits immediately to the right of Aarav." to place adjacent relationships. Use
+clue: "Amit sits immediately to the left of Vijay." to place adjacent relationships. Use clue: "Maya sits
+immediately to the right of Aarav." to place adjacent relationships. Step 3: Use relative position and
+counting clues to fill the remaining seats consistently. Use clue: "Amit is 5 places clockwise from Ritu." to
+determine distances between persons. Use clue: "There are 6 people seated clockwise from Ritu to Anika, not
+counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a unique
+consistent arrangement. The final arrangement is: Maya, Amit, Vijay, Anika, Ritu, Yash, Deepak, Aarav
+Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off this
+arrangement.
+
+Problem 44: Circular (facing Outside) — 10 seats
+Clues: 1. Vikram is at the 12 o'clock position. 2. Aarav is seated between Diya and Vikram. 3.
+Vikram is seated between Aarav and Rekha. 4. Diya sits immediately to the right of Nikhil. 5. Aarav
+is 6 places clockwise from Lokesh. 6. There are 7 people seated clockwise from Vivaan to Lokesh, not
+counting endpoints. 7. Vikram sits opposite Vivaan.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the right of Aarav?
+ - Who sits opposite Tara?
+ - Who sits immediately to the left of Vikram?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Vikram is at the 12
+o'clock position." to place fixed person(s). Use clue: "Vikram sits opposite Vivaan." to place fixed
+person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to fixed ones. Use clue:
+"Aarav is seated between Diya and Vikram." to place adjacent relationships. Use clue: "Vikram is seated
+between Aarav and Rekha." to place adjacent relationships. Use clue: "Diya sits immediately to the right of
+Nikhil." to place adjacent relationships. Step 3: Use relative position and counting clues to fill the
+remaining seats consistently. Use clue: "Aarav is 6 places clockwise from Lokesh." to determine distances
+between persons. Use clue: "There are 7 people seated clockwise from Vivaan to Lokesh, not counting
+endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a unique
+consistent arrangement. The final arrangement is: Vikram, Rekha, Tara, Lokesh, Chitra, Vivaan, Deepak, Nikhil,
+Diya, Aarav Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off
+this arrangement.
+
+Problem 45: Circular (facing Centre) — 12 seats
+Clues: 1. Varun is at the 12 o'clock position. 2. Isha sits immediately to the right of Siddharth.
+3. Siddharth is seated between Rahul and Isha. 4. Manish sits immediately to the right of Geeta. 5.
+Aditya is 6 places clockwise from Rahul. 6. There are 5 people seated clockwise from Prateek to
+Ishaan, not counting endpoints. 7. Varun sits opposite Tara.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the left of Rahul?
+ - Who sits immediately to the left of Geeta?
+ - Who sits immediately to the right of Ananya?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Varun is at the 12
+o'clock position." to place fixed person(s). Use clue: "Varun sits opposite Tara." to place fixed person(s).
+Step 2: Use immediate neighbor clues to place adjacent people relative to fixed ones. Use clue: "Isha sits
+immediately to the right of Siddharth." to place adjacent relationships. Use clue: "Siddharth is seated
+between Rahul and Isha." to place adjacent relationships. Use clue: "Manish sits immediately to the right of
+Geeta." to place adjacent relationships. Step 3: Use relative position and counting clues to fill the
+remaining seats consistently. Use clue: "Aditya is 6 places clockwise from Rahul." to determine distances
+between persons. Use clue: "There are 5 people seated clockwise from Prateek to Ishaan, not counting
+endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a unique
+consistent arrangement. The final arrangement is: Varun, Aditya, Geeta, Manish, Karan, Ishaan, Tara, Rahul,
+Siddharth, Isha, Ananya, Prateek Therefore the answers to direct queries (e.g., who sits left/right/opposite
+of X) can be read off this arrangement.
+
+Problem 46: Square Table (4 sides) — 8 seats
+Clues: 1. Suresh sits at the north side of the table. 2. Sonal sits immediately to the right of
+Nikhil. 3. Ritu is seated between Ishaan and Aarav. 4. Aarav is seated between Ritu and Anika. 5.
+Ishaan is 3 places clockwise from Nikhil. 6. There are 0 people seated clockwise from Anika to
+Suresh, not counting endpoints.
+Sample Questions (answers in Solutions section):
+
+ - How many people are seated clockwise from Ritu to Ishaan, not counting endpoints?
+ - Who sits immediately to the right of Nikhil?
+ - Who sits at position 5 (from left, 1-indexed)?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Suresh sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Sonal sits immediately to the right of Nikhil." to place adjacent
+relationships. Use clue: "Ritu is seated between Ishaan and Aarav." to place adjacent relationships. Use clue:
+"Aarav is seated between Ritu and Anika." to place adjacent relationships. Step 3: Use relative position and
+counting clues to fill the remaining seats consistently. Use clue: "Ishaan is 3 places clockwise from Nikhil."
+to determine distances between persons. Use clue: "There are 0 people seated clockwise from Anika to Suresh,
+not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a
+unique consistent arrangement. The final arrangement is: Suresh, Nikhil, Sonal, Manish, Ishaan, Ritu, Aarav,
+Anika Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off this
+arrangement.
+
+Problem 47: Square Table (4 sides) — 8 seats
+Clues: 1. Siddharth sits at the north side of the table. 2. Siddharth sits immediately to the left
+of Rohan. 3. Aditya sits immediately to the right of Karan. 4. Siddharth sits immediately to the
+right of Ritu. 5. Rohan is 3 places clockwise from Meera. 6. There are 6 people seated clockwise
+from Meera to Nisha, not counting endpoints.
+Sample Questions (answers in Solutions section):
+
+ - Who sits immediately to the left of Ritu?
+ - How many people are seated clockwise from Meera to Karan, not counting endpoints?
+ - Who sits immediately to the left of Nisha?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Siddharth sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Siddharth sits immediately to the left of Rohan." to place adjacent
+relationships. Use clue: "Aditya sits immediately to the right of Karan." to place adjacent relationships. Use
+clue: "Siddharth sits immediately to the right of Ritu." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Rohan is 3 places clockwise
+from Meera." to determine distances between persons. Use clue: "There are 6 people seated clockwise from Meera
+to Nisha, not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to
+ensure a unique consistent arrangement. The final arrangement is: Siddharth, Rohan, Karan, Aditya, Yash,
+Nisha, Meera, Ritu Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be
+read off this arrangement.
+
+Problem 48: Linear (single row, facing South) — 9 seats
+Clues: 1. Vikram sits at the leftmost end of the row. 2. Sara sits immediately to the right of
+Varun. 3. Krishna sits immediately to the left of Suresh. 4. Manish sits immediately to the right of
+Sara. 5. Suresh is 3 places to the right of Sara. 6. There are 0 people seated clockwise from Varun
+to Sara, not counting endpoints. 7. Suresh sits exactly in the middle of the row.
+Sample Questions (answers in Solutions section):
+
+ - Who sits opposite Krishna?
+ - Who sits immediately to the right of Krishna?
+ - Who sits immediately to the left of Vikram?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Vikram sits at the
+leftmost end of the row." to place fixed person(s). Use clue: "Suresh sits exactly in the middle of the row."
+to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to fixed
+ones. Use clue: "Sara sits immediately to the right of Varun." to place adjacent relationships. Use clue:
+"Krishna sits immediately to the left of Suresh." to place adjacent relationships. Use clue: "Manish sits
+immediately to the right of Sara." to place adjacent relationships. Step 3: Use relative position and counting
+clues to fill the remaining seats consistently. Use clue: "Suresh is 3 places to the right of Sara." to
+determine distances between persons. Use clue: "There are 0 people seated clockwise from Varun to Sara, not
+counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a unique
+consistent arrangement. The final arrangement is: Varun, Sara, Manish, Krishna, Suresh, Chitra, Nandini, Raj,
+Vikram Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off this
+arrangement.
+
+Problem 49: Linear (single row, facing South) — 10 seats
+Clues: 1. Nandini sits at the leftmost end of the row. 2. Neeraj sits immediately to the left of
+Shreya. 3. Maya is seated between Priya and Sameer. 4. Nandini sits immediately to the left of
+Priya. 5. Shreya is 4 places to the right of Priya. 6. There are 2 people seated clockwise from
+Neeraj to Diya, not counting endpoints. 7. Aarav sits exactly in the middle of the row.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the left of Sameer?
+ - Who sits opposite Priya?
+ - Who sits immediately to the right of Diya?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Nandini sits at the
+leftmost end of the row." to place fixed person(s). Use clue: "Aarav sits exactly in the middle of the row."
+to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to fixed
+ones. Use clue: "Neeraj sits immediately to the left of Shreya." to place adjacent relationships. Use clue:
+"Maya is seated between Priya and Sameer." to place adjacent relationships. Use clue: "Nandini sits
+immediately to the left of Priya." to place adjacent relationships. Step 3: Use relative position and counting
+clues to fill the remaining seats consistently. Use clue: "Shreya is 4 places to the right of Priya." to
+determine distances between persons. Use clue: "There are 2 people seated clockwise from Neeraj to Diya, not
+counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a unique
+consistent arrangement. The final arrangement is: Priya, Maya, Sameer, Neeraj, Shreya, Aarav, Diya, Yash,
+Karan, Nandini Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read
+off this arrangement.
+
+Problem 50: Parallel Rows (two rows facing each other) — 8 seats
+Clues: 1. Chitra sits opposite Manish. 2. Krishna is seated between Geeta and Chitra. 3. Chitra is
+seated between Krishna and Sai. 4. Kavya sits immediately to the right of Manish. 5. Leela is 2
+places clockwise from Chitra. 6. There are 6 people seated clockwise from Krishna to Geeta, not
+counting endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits at position 7 (from left, 1-indexed)?
+ - Who sits immediately to the left of Krishna?
+ - Who sits at position 2 (from left, 1-indexed)?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Chitra sits opposite
+Manish." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to
+fixed ones. Use clue: "Krishna is seated between Geeta and Chitra." to place adjacent relationships. Use clue:
+"Chitra is seated between Krishna and Sai." to place adjacent relationships. Use clue: "Kavya sits immediately
+to the right of Manish." to place adjacent relationships. Step 3: Use relative position and counting clues to
+fill the remaining seats consistently. Use clue: "Leela is 2 places clockwise from Chitra." to determine
+distances between persons. Use clue: "There are 6 people seated clockwise from Krishna to Geeta, not counting
+endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a unique
+consistent arrangement. The final arrangement is: Chitra, Sai, Leela, Varun, Manish, Kavya, Geeta, Krishna
+Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off this
+arrangement.
+
+Problem 51: Linear (single row, facing North) — 8 seats
+Clues: 1. Shreya sits at the leftmost end of the row. 2. Vijay sits immediately to the right of
+Asha. 3. Asha sits immediately to the right of Diya. 4. Asha sits immediately to the left of Vijay.
+5. Diya is 3 places to the right of Neeraj. 6. There are 4 people seated clockwise from Vijay to
+Karan, not counting endpoints. 7. Diya sits exactly in the middle of the row.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the right of Vijay?
+ - Who sits opposite Geeta?
+ - Who sits at position 7 (from left, 1-indexed)?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Shreya sits at the
+leftmost end of the row." to place fixed person(s). Use clue: "Diya sits exactly in the middle of the row." to
+place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to fixed ones.
+Use clue: "Vijay sits immediately to the right of Asha." to place adjacent relationships. Use clue: "Asha sits
+immediately to the right of Diya." to place adjacent relationships. Use clue: "Asha sits immediately to the
+left of Vijay." to place adjacent relationships. Step 3: Use relative position and counting clues to fill the
+remaining seats consistently. Use clue: "Diya is 3 places to the right of Neeraj." to determine distances
+between persons. Use clue: "There are 4 people seated clockwise from Vijay to Karan, not counting endpoints."
+to determine distances between persons. Step 4: Cross-check all clues to ensure a unique consistent
+arrangement. The final arrangement is: Shreya, Neeraj, Sai, Karan, Diya, Asha, Vijay, Geeta Therefore the
+answers to direct queries (e.g., who sits left/right/opposite of X) can be read off this arrangement.
+
+Problem 52: Square Table (4 sides) — 8 seats
+Clues: 1. Krishna sits at the north side of the table. 2. Manish sits immediately to the left of
+Neeraj. 3. Krishna sits immediately to the left of Rahul. 4. Kabir sits immediately to the right of
+Rahul. 5. Anika is 4 places clockwise from Rahul. 6. There are 2 people seated clockwise from Kabir
+to Anika, not counting endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the left of Anika?
+ - Who sits immediately to the left of Manish?
+ - Who sits opposite Manish?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Krishna sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Manish sits immediately to the left of Neeraj." to place adjacent
+relationships. Use clue: "Krishna sits immediately to the left of Rahul." to place adjacent relationships. Use
+clue: "Kabir sits immediately to the right of Rahul." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Anika is 4 places clockwise
+from Rahul." to determine distances between persons. Use clue: "There are 2 people seated clockwise from Kabir
+to Anika, not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to
+ensure a unique consistent arrangement. The final arrangement is: Krishna, Rahul, Kabir, Ritu, Deepak, Anika,
+Manish, Neeraj Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read
+off this arrangement.
+
+Problem 53: Rectangular Table (opposite facing) — 12 seats
+Clues: 1. Arjun sits at the north side of the table. 2. Shreya sits immediately to the right of
+Tara. 3. Neeraj sits immediately to the right of Priya. 4. Shreya sits immediately to the right of
+Tara. 5. Shreya is 5 places clockwise from Neeraj. 6. There are 2 people seated clockwise from Rekha
+to Neeraj, not counting endpoints.
+Sample Questions (answers in Solutions section):
+
+ - How many people are seated clockwise from Neeraj to Leela, not counting endpoints?
+ - How many people are seated clockwise from Arjun to Neeraj, not counting endpoints?
+ - Who sits opposite Arjun?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Arjun sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Shreya sits immediately to the right of Tara." to place adjacent
+relationships. Use clue: "Neeraj sits immediately to the right of Priya." to place adjacent relationships. Use
+clue: "Shreya sits immediately to the right of Tara." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Shreya is 5 places clockwise
+from Neeraj." to determine distances between persons. Use clue: "There are 2 people seated clockwise from
+Rekha to Neeraj, not counting endpoints." to determine distances between persons. Step 4: Cross-check all
+clues to ensure a unique consistent arrangement. The final arrangement is: Arjun, Tara, Shreya, Nisha, Vikram,
+Krishna, Rekha, Kavya, Priya, Neeraj, Leela, Maya Therefore the answers to direct queries (e.g., who sits
+left/right/opposite of X) can be read off this arrangement.
+
+Problem 54: Linear (single row, facing South) — 8 seats
+Clues: 1. Neeraj sits at the leftmost end of the row. 2. Aarav sits immediately to the left of Isha.
+3. Nisha is seated between Ritu and Sameer. 4. Ritu is seated between Lokesh and Nisha. 5. Lokesh is
+5 places to the right of Sameer. 6. There are 4 people seated clockwise from Isha to Sameer, not
+counting endpoints. 7. Vikram sits exactly in the middle of the row.
+Sample Questions (answers in Solutions section):
+
+ - Who sits opposite Nisha?
+ - Who sits opposite Vikram?
+ - Who sits opposite Ritu?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Neeraj sits at the
+leftmost end of the row." to place fixed person(s). Use clue: "Vikram sits exactly in the middle of the row."
+to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to fixed
+ones. Use clue: "Aarav sits immediately to the left of Isha." to place adjacent relationships. Use clue:
+"Nisha is seated between Ritu and Sameer." to place adjacent relationships. Use clue: "Ritu is seated between
+Lokesh and Nisha." to place adjacent relationships. Step 3: Use relative position and counting clues to fill
+the remaining seats consistently. Use clue: "Lokesh is 5 places to the right of Sameer." to determine
+distances between persons. Use clue: "There are 4 people seated clockwise from Isha to Sameer, not counting
+endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a unique
+consistent arrangement. The final arrangement is: Lokesh, Ritu, Nisha, Sameer, Vikram, Aarav, Isha, Neeraj
+Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off this
+arrangement.
+
+Problem 55: Linear (single row, facing North) — 7 seats
+Clues: 1. Ria sits at the leftmost end of the row. 2. Arjun is seated between Asha and Suresh. 3.
+Arjun is seated between Asha and Suresh. 4. Suresh sits immediately to the right of Arjun. 5. Ishaan
+is 4 places to the right of Ritu. 6. There are 2 people seated clockwise from Ria to Arjun, not
+counting endpoints. 7. Arjun sits exactly in the middle of the row.
+Sample Questions (answers in Solutions section):
+ - Who sits at position 1 (from left, 1-indexed)?
+ - Who sits opposite Ishaan?
+ - How many people are seated clockwise from Arjun to Suresh, not counting endpoints?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Ria sits at the
+leftmost end of the row." to place fixed person(s). Use clue: "Arjun sits exactly in the middle of the row."
+to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to fixed
+ones. Use clue: "Arjun is seated between Asha and Suresh." to place adjacent relationships. Use clue: "Arjun
+is seated between Asha and Suresh." to place adjacent relationships. Use clue: "Suresh sits immediately to the
+right of Arjun." to place adjacent relationships. Step 3: Use relative position and counting clues to fill the
+remaining seats consistently. Use clue: "Ishaan is 4 places to the right of Ritu." to determine distances
+between persons. Use clue: "There are 2 people seated clockwise from Ria to Arjun, not counting endpoints." to
+determine distances between persons. Step 4: Cross-check all clues to ensure a unique consistent arrangement.
+The final arrangement is: Ria, Ritu, Asha, Arjun, Suresh, Ishaan, Diya Therefore the answers to direct queries
+(e.g., who sits left/right/opposite of X) can be read off this arrangement.
+
+Problem 56: Square Table (4 sides) — 8 seats
+Clues: 1. Nisha sits at the north side of the table. 2. Nikhil sits immediately to the left of
+Shreya. 3. Nikhil sits immediately to the right of Maya. 4. Arjun sits immediately to the right of
+Shreya. 5. Nikhil is 2 places clockwise from Aditya. 6. There are 5 people seated clockwise from
+Priya to Arjun, not counting endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits at position 3 (from left, 1-indexed)?
+ - Who sits immediately to the right of Aarav?
+ - How many people are seated clockwise from Nikhil to Shreya, not counting endpoints?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Nisha sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Nikhil sits immediately to the left of Shreya." to place adjacent
+relationships. Use clue: "Nikhil sits immediately to the right of Maya." to place adjacent relationships. Use
+clue: "Arjun sits immediately to the right of Shreya." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Nikhil is 2 places clockwise
+from Aditya." to determine distances between persons. Use clue: "There are 5 people seated clockwise from
+Priya to Arjun, not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues
+to ensure a unique consistent arrangement. The final arrangement is: Nisha, Aditya, Maya, Nikhil, Shreya,
+Arjun, Aarav, Priya Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be
+read off this arrangement.
+
+Problem 57: Parallel Rows (two rows facing each other) — 12 seats
+Clues: 1. Vikram sits opposite Amit. 2. Amit is seated between Vivaan and Ritu. 3. Aditya sits
+immediately to the left of Kabir. 4. Vivaan sits immediately to the left of Amit. 5. Rekha is 4
+places clockwise from Vivaan. 6. There are 9 people seated clockwise from Rekha to Ritu, not
+counting endpoints.
+Sample Questions (answers in Solutions section):
+
+ - Who sits opposite Sai?
+ - Who sits at position 2 (from left, 1-indexed)?
+ - Who sits immediately to the right of Amit?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Vikram sits opposite
+Amit." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to
+fixed ones. Use clue: "Amit is seated between Vivaan and Ritu." to place adjacent relationships. Use clue:
+"Aditya sits immediately to the left of Kabir." to place adjacent relationships. Use clue: "Vivaan sits
+immediately to the left of Amit." to place adjacent relationships. Step 3: Use relative position and counting
+clues to fill the remaining seats consistently. Use clue: "Rekha is 4 places clockwise from Vivaan." to
+determine distances between persons. Use clue: "There are 9 people seated clockwise from Rekha to Ritu, not
+counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a unique
+consistent arrangement. The final arrangement is: Vikram, Sai, Nikhil, Aditya, Kabir, Vivaan, Amit, Ritu,
+Rahul, Rekha, Prateek, Vijay Therefore the answers to direct queries (e.g., who sits left/right/opposite of X)
+can be read off this arrangement.
+
+Problem 58: Parallel Rows (two rows facing each other) — 10 seats
+Clues: 1. Pooja sits opposite Maya. 2. Ishaan is seated between Pooja and Nikhil. 3. Sameer sits
+immediately to the right of Nisha. 4. Maya is seated between Sameer and Prateek. 5. Maya is 3 places
+clockwise from Nikhil. 6. There are 1 people seated clockwise from Ishaan to Nisha, not counting
+endpoints.
+Sample Questions (answers in Solutions section):
+
+ - Who sits opposite Nisha?
+ - Who sits immediately to the right of Kavya?
+ - Who sits immediately to the right of Ishaan?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Pooja sits opposite
+Maya." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to
+fixed ones. Use clue: "Ishaan is seated between Pooja and Nikhil." to place adjacent relationships. Use clue:
+"Sameer sits immediately to the right of Nisha." to place adjacent relationships. Use clue: "Maya is seated
+between Sameer and Prateek." to place adjacent relationships. Step 3: Use relative position and counting clues
+to fill the remaining seats consistently. Use clue: "Maya is 3 places clockwise from Nikhil." to determine
+distances between persons. Use clue: "There are 1 people seated clockwise from Ishaan to Nisha, not counting
+endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a unique
+consistent arrangement. The final arrangement is: Pooja, Ishaan, Nikhil, Nisha, Sameer, Maya, Prateek, Ria,
+Sai, Kavya Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off
+this arrangement.
+
+Problem 59: Linear (single row, facing South) — 9 seats
+Clues: 1. Vijay sits at the leftmost end of the row. 2. Suresh is seated between Varun and Chitra.
+3. Geeta sits immediately to the right of Rekha. 4. Rekha sits immediately to the right of Ritu. 5.
+Rekha is 4 places to the right of Raj. 6. There are 4 people seated clockwise from Varun to Amit,
+not counting endpoints. 7. Varun sits exactly in the middle of the row.
+Sample Questions (answers in Solutions section):
+
+ - Who sits opposite Vijay?
+ - Who sits immediately to the left of Varun?
+ - Who sits at position 8 (from left, 1-indexed)?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Vijay sits at the
+leftmost end of the row." to place fixed person(s). Use clue: "Varun sits exactly in the middle of the row."
+to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to fixed
+ones. Use clue: "Suresh is seated between Varun and Chitra." to place adjacent relationships. Use clue: "Geeta
+sits immediately to the right of Rekha." to place adjacent relationships. Use clue: "Rekha sits immediately to
+the right of Ritu." to place adjacent relationships. Step 3: Use relative position and counting clues to fill
+the remaining seats consistently. Use clue: "Rekha is 4 places to the right of Raj." to determine distances
+between persons. Use clue: "There are 4 people seated clockwise from Varun to Amit, not counting endpoints."
+to determine distances between persons. Step 4: Cross-check all clues to ensure a unique consistent
+arrangement. The final arrangement is: Amit, Ritu, Rekha, Geeta, Varun, Suresh, Chitra, Raj, Vijay Therefore
+the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off this arrangement.
+
+Problem 60: Linear (single row, facing North) — 6 seats
+Clues: 1. Manish sits at the leftmost end of the row. 2. Ishaan is seated between Raj and Asha. 3.
+Raj is seated between Sai and Ishaan. 4. Ishaan sits immediately to the left of Asha. 5. Asha is 2
+places to the right of Raj. 6. Raj sits exactly in the middle of the row.
+Sample Questions (answers in Solutions section):
+
+ - Who sits opposite Ishaan?
+ - Who sits at position 5 (from left, 1-indexed)?
+ - Who sits immediately to the right of Manish?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Manish sits at the
+leftmost end of the row." to place fixed person(s). Use clue: "Raj sits exactly in the middle of the row." to
+place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to fixed ones.
+Use clue: "Ishaan is seated between Raj and Asha." to place adjacent relationships. Use clue: "Raj is seated
+between Sai and Ishaan." to place adjacent relationships. Use clue: "Ishaan sits immediately to the left of
+Asha." to place adjacent relationships. Step 3: Use relative position and counting clues to fill the remaining
+seats consistently. Use clue: "Asha is 2 places to the right of Raj." to determine distances between persons.
+Step 4: Cross-check all clues to ensure a unique consistent arrangement. The final arrangement is: Manish,
+Tara, Sai, Raj, Ishaan, Asha Therefore the answers to direct queries (e.g., who sits left/right/opposite of X)
+can be read off this arrangement.
+
+Problem 61: Circular (facing Outside) — 6 seats
+Clues: 1. Sameer is at the 12 o'clock position. 2. Isha sits immediately to the left of Sameer. 3.
+Sameer sits immediately to the right of Isha. 4. Kavya is seated between Ishaan and Raj. 5. Sameer
+is 2 places clockwise from Raj. 6. Sameer sits opposite Kavya.
+Sample Questions (answers in Solutions section):
+
+ - Who sits opposite Ishaan?
+ - Who sits opposite Kavya?
+ - Who sits at position 3 (from left, 1-indexed)?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Sameer is at the 12
+o'clock position." to place fixed person(s). Use clue: "Sameer sits opposite Kavya." to place fixed person(s).
+Step 2: Use immediate neighbor clues to place adjacent people relative to fixed ones. Use clue: "Isha sits
+immediately to the left of Sameer." to place adjacent relationships. Use clue: "Sameer sits immediately to the
+right of Isha." to place adjacent relationships. Use clue: "Kavya is seated between Ishaan and Raj." to place
+adjacent relationships. Step 3: Use relative position and counting clues to fill the remaining seats
+consistently. Use clue: "Sameer is 2 places clockwise from Raj." to determine distances between persons. Step
+4: Cross-check all clues to ensure a unique consistent arrangement. The final arrangement is: Sameer, Prateek,
+Ishaan, Kavya, Raj, Isha Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can
+be read off this arrangement.
+
+Problem 62: Square Table (4 sides) — 8 seats
+Clues: 1. Shreya sits at the north side of the table. 2. Krishna sits immediately to the right of
+Prateek. 3. Sameer is seated between Raj and Sai. 4. Raj sits immediately to the right of Vijay. 5.
+Sameer is 3 places clockwise from Arjun. 6. There are 4 people seated clockwise from Sai to Vijay,
+not counting endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits at position 3 (from left, 1-indexed)?
+ - How many people are seated clockwise from Arjun to Vijay, not counting endpoints?
+ - How many people are seated clockwise from Prateek to Sai, not counting endpoints?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Shreya sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Krishna sits immediately to the right of Prateek." to place adjacent
+relationships. Use clue: "Sameer is seated between Raj and Sai." to place adjacent relationships. Use clue:
+"Raj sits immediately to the right of Vijay." to place adjacent relationships. Step 3: Use relative position
+and counting clues to fill the remaining seats consistently. Use clue: "Sameer is 3 places clockwise from
+Arjun." to determine distances between persons. Use clue: "There are 4 people seated clockwise from Sai to
+Vijay, not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to
+ensure a unique consistent arrangement. The final arrangement is: Shreya, Arjun, Vijay, Raj, Sameer, Sai,
+Prateek, Krishna Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read
+off this arrangement.
+
+Problem 63: Rectangular Table (opposite facing) — 10 seats
+Clues: 1. Karan sits at the north side of the table. 2. Pooja sits immediately to the left of
+Ishaan. 3. Raj sits immediately to the right of Ishaan. 4. Deepak sits immediately to the left of
+Lokesh. 5. Karan is 5 places clockwise from Ishaan. 6. There are 0 people seated clockwise from
+Suresh to Pooja, not counting endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the right of Lokesh?
+ - Who sits immediately to the left of Pooja?
+ - Who sits immediately to the left of Kabir?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Karan sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Pooja sits immediately to the left of Ishaan." to place adjacent
+relationships. Use clue: "Raj sits immediately to the right of Ishaan." to place adjacent relationships. Use
+clue: "Deepak sits immediately to the left of Lokesh." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Karan is 5 places clockwise
+from Ishaan." to determine distances between persons. Use clue: "There are 0 people seated clockwise from
+Suresh to Pooja, not counting endpoints." to determine distances between persons. Step 4: Cross-check all
+clues to ensure a unique consistent arrangement. The final arrangement is: Karan, Deepak, Lokesh, Suresh,
+Pooja, Ishaan, Raj, Ritu, Kabir, Kavya Therefore the answers to direct queries (e.g., who sits
+left/right/opposite of X) can be read off this arrangement.
+
+Problem 64: Rectangular Table (opposite facing) — 12 seats
+Clues: 1. Chitra sits at the north side of the table. 2. Isha is seated between Ria and Chitra. 3.
+Chitra sits immediately to the right of Isha. 4. Pooja sits immediately to the right of Chitra. 5.
+Ria is 5 places clockwise from Asha. 6. There are 2 people seated clockwise from Shreya to Ria, not
+counting endpoints.
+Sample Questions (answers in Solutions section):
+
+ - Who sits opposite Isha?
+ - Who sits at position 4 (from left, 1-indexed)?
+ - How many people are seated clockwise from Deepak to Sameer, not counting endpoints?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Chitra sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Isha is seated between Ria and Chitra." to place adjacent
+relationships. Use clue: "Chitra sits immediately to the right of Isha." to place adjacent relationships. Use
+clue: "Pooja sits immediately to the right of Chitra." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Ria is 5 places clockwise
+from Asha." to determine distances between persons. Use clue: "There are 2 people seated clockwise from Shreya
+to Ria, not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to
+ensure a unique consistent arrangement. The final arrangement is: Chitra, Pooja, Aditya, Deepak, Sameer, Asha,
+Karan, Shreya, Harsh, Neeraj, Ria, Isha Therefore the answers to direct queries (e.g., who sits
+left/right/opposite of X) can be read off this arrangement.
+
+Problem 65: Rectangular Table (opposite facing) — 10 seats
+Clues: 1. Ananya sits at the north side of the table. 2. Amit sits immediately to the left of Tara.
+3. Rekha is seated between Suresh and Varun. 4. Rekha sits immediately to the left of Varun. 5.
+Manish is 4 places clockwise from Harsh. 6. There are 2 people seated clockwise from Kavya to
+Manish, not counting endpoints.
+Sample Questions (answers in Solutions section):
+
+ - How many people are seated clockwise from Manish to Varun, not counting endpoints?
+ - Who sits immediately to the left of Suresh?
+ - Who sits opposite Harsh?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Ananya sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Amit sits immediately to the left of Tara." to place adjacent
+relationships. Use clue: "Rekha is seated between Suresh and Varun." to place adjacent relationships. Use
+clue: "Rekha sits immediately to the left of Varun." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Manish is 4 places clockwise
+from Harsh." to determine distances between persons. Use clue: "There are 2 people seated clockwise from Kavya
+to Manish, not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to
+ensure a unique consistent arrangement. The final arrangement is: Ananya, Manish, Suresh, Rekha, Varun, Amit,
+Tara, Harsh, Kavya, Pooja Therefore the answers to direct queries (e.g., who sits left/right/opposite of X)
+can be read off this arrangement.
+
+Problem 66: Parallel Rows (two rows facing each other) — 8 seats
+Clues: 1. Kabir sits opposite Vikram. 2. Siddharth is seated between Vivaan and Arjun. 3. Vikram
+sits immediately to the right of Varun. 4. Maya sits immediately to the right of Ishaan. 5. Vivaan
+is 2 places clockwise from Varun. 6. There are 2 people seated clockwise from Vivaan to Kabir, not
+counting endpoints.
+Sample Questions (answers in Solutions section):
+
+ - Who sits opposite Maya?
+ - Who sits immediately to the right of Kabir?
+ - Who sits opposite Arjun?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Kabir sits opposite
+Vikram." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to
+fixed ones. Use clue: "Siddharth is seated between Vivaan and Arjun." to place adjacent relationships. Use
+clue: "Vikram sits immediately to the right of Varun." to place adjacent relationships. Use clue: "Maya sits
+immediately to the right of Ishaan." to place adjacent relationships. Step 3: Use relative position and
+counting clues to fill the remaining seats consistently. Use clue: "Vivaan is 2 places clockwise from Varun."
+to determine distances between persons. Use clue: "There are 2 people seated clockwise from Vivaan to Kabir,
+not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a
+unique consistent arrangement. The final arrangement is: Kabir, Ishaan, Maya, Varun, Vikram, Vivaan,
+Siddharth, Arjun Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read
+off this arrangement.
+
+Problem 67: Square Table (4 sides) — 8 seats
+Clues: 1. Karan sits at the north side of the table. 2. Ritu sits immediately to the right of Karan.
+3. Prateek sits immediately to the left of Leela. 4. Asha sits immediately to the left of Aarav. 5.
+Ishaan is 3 places clockwise from Varun. 6. There are 3 people seated clockwise from Varun to Karan,
+not counting endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the left of Leela?
+ - Who sits at position 8 (from left, 1-indexed)?
+ - Who sits immediately to the left of Ritu?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Karan sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Ritu sits immediately to the right of Karan." to place adjacent
+relationships. Use clue: "Prateek sits immediately to the left of Leela." to place adjacent relationships. Use
+clue: "Asha sits immediately to the left of Aarav." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Ishaan is 3 places clockwise
+from Varun." to determine distances between persons. Use clue: "There are 3 people seated clockwise from Varun
+to Karan, not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to
+ensure a unique consistent arrangement. The final arrangement is: Karan, Ritu, Prateek, Leela, Varun, Asha,
+Aarav, Ishaan Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read
+off this arrangement.
+
+Problem 68: Rectangular Table (opposite facing) — 10 seats
+Clues: 1. Shreya sits at the north side of the table. 2. Shreya is seated between Kabir and Nandini.
+3. Vijay is seated between Vivaan and Kavya. 4. Vivaan is seated between Nandini and Vijay. 5.
+Neeraj is 6 places clockwise from Nandini. 6. There are 5 people seated clockwise from Rekha to
+Nandini, not counting endpoints.
+Sample Questions (answers in Solutions section):
+
+ - How many people are seated clockwise from Tara to Kabir, not counting endpoints?
+ - How many people are seated clockwise from Tara to Shreya, not counting endpoints?
+ - Who sits at position 8 (from left, 1-indexed)?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Shreya sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Shreya is seated between Kabir and Nandini." to place adjacent
+relationships. Use clue: "Vijay is seated between Vivaan and Kavya." to place adjacent relationships. Use
+clue: "Vivaan is seated between Nandini and Vijay." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Neeraj is 6 places clockwise
+from Nandini." to determine distances between persons. Use clue: "There are 5 people seated clockwise from
+Rekha to Nandini, not counting endpoints." to determine distances between persons. Step 4: Cross-check all
+clues to ensure a unique consistent arrangement. The final arrangement is: Shreya, Nandini, Vivaan, Vijay,
+Kavya, Rekha, Sara, Neeraj, Tara, Kabir Therefore the answers to direct queries (e.g., who sits
+left/right/opposite of X) can be read off this arrangement.
+
+Problem 69: Linear (single row, facing North) — 9 seats
+Clues: 1. Manish sits at the leftmost end of the row. 2. Anika is seated between Manish and Chitra.
+3. Vikram sits immediately to the left of Sai. 4. Anika sits immediately to the right of Manish. 5.
+Vivaan is 4 places to the right of Vijay. 6. There are 5 people seated clockwise from Chitra to
+Vijay, not counting endpoints. 7. Vikram sits exactly in the middle of the row.
+Sample Questions (answers in Solutions section):
+ - Who sits at position 3 (from left, 1-indexed)?
+ - Who sits immediately to the right of Anika?
+ - Who sits at position 1 (from left, 1-indexed)?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Manish sits at the
+leftmost end of the row." to place fixed person(s). Use clue: "Vikram sits exactly in the middle of the row."
+to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to fixed
+ones. Use clue: "Anika is seated between Manish and Chitra." to place adjacent relationships. Use clue:
+"Vikram sits immediately to the left of Sai." to place adjacent relationships. Use clue: "Anika sits
+immediately to the right of Manish." to place adjacent relationships. Step 3: Use relative position and
+counting clues to fill the remaining seats consistently. Use clue: "Vivaan is 4 places to the right of Vijay."
+to determine distances between persons. Use clue: "There are 5 people seated clockwise from Chitra to Vijay,
+not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a
+unique consistent arrangement. The final arrangement is: Manish, Anika, Chitra, Vivaan, Vikram, Sai, Prateek,
+Sara, Vijay Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off
+this arrangement.
+
+Problem 70: Circular (facing Centre) — 8 seats
+Clues: 1. Ananya is at the 12 o'clock position. 2. Nisha sits immediately to the left of Kavya. 3.
+Kavya sits immediately to the right of Nisha. 4. Kavya sits immediately to the left of Nikhil. 5.
+Aditya is 4 places clockwise from Nikhil. 6. There are 5 people seated clockwise from Aditya to
+Leela, not counting endpoints. 7. Ananya sits opposite Kavya.
+Sample Questions (answers in Solutions section):
+
+ - Who sits opposite Nandini?
+ - Who sits at position 8 (from left, 1-indexed)?
+ - Who sits at position 6 (from left, 1-indexed)?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Ananya is at the 12
+o'clock position." to place fixed person(s). Use clue: "Ananya sits opposite Kavya." to place fixed person(s).
+Step 2: Use immediate neighbor clues to place adjacent people relative to fixed ones. Use clue: "Nisha sits
+immediately to the left of Kavya." to place adjacent relationships. Use clue: "Kavya sits immediately to the
+right of Nisha." to place adjacent relationships. Use clue: "Kavya sits immediately to the left of Nikhil." to
+place adjacent relationships. Step 3: Use relative position and counting clues to fill the remaining seats
+consistently. Use clue: "Aditya is 4 places clockwise from Nikhil." to determine distances between persons.
+Use clue: "There are 5 people seated clockwise from Aditya to Leela, not counting endpoints." to determine
+distances between persons. Step 4: Cross-check all clues to ensure a unique consistent arrangement. The final
+arrangement is: Ananya, Aditya, Rahul, Nisha, Kavya, Nikhil, Nandini, Leela Therefore the answers to direct
+queries (e.g., who sits left/right/opposite of X) can be read off this arrangement.
+
+Problem 71: Linear (single row, facing South) — 9 seats
+Clues: 1. Suresh sits at the leftmost end of the row. 2. Manish is seated between Meera and Pooja.
+3. Diya sits immediately to the left of Ishaan. 4. Manish sits immediately to the right of Meera. 5.
+Suresh is 4 places to the right of Diya. 6. There are 7 people seated clockwise from Kriti to Kabir,
+not counting endpoints. 7. Diya sits exactly in the middle of the row.
+Sample Questions (answers in Solutions section):
+
+ - Who sits immediately to the right of Kriti?
+ - Who sits opposite Kriti?
+ - Who sits immediately to the left of Ishaan?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Suresh sits at the
+leftmost end of the row." to place fixed person(s). Use clue: "Diya sits exactly in the middle of the row." to
+place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to fixed ones.
+Use clue: "Manish is seated between Meera and Pooja." to place adjacent relationships. Use clue: "Diya sits
+immediately to the left of Ishaan." to place adjacent relationships. Use clue: "Manish sits immediately to the
+right of Meera." to place adjacent relationships. Step 3: Use relative position and counting clues to fill the
+remaining seats consistently. Use clue: "Suresh is 4 places to the right of Diya." to determine distances
+between persons. Use clue: "There are 7 people seated clockwise from Kriti to Kabir, not counting endpoints."
+to determine distances between persons. Step 4: Cross-check all clues to ensure a unique consistent
+arrangement. The final arrangement is: Lokesh, Meera, Manish, Pooja, Diya, Ishaan, Kabir, Kriti, Suresh
+Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off this
+arrangement.
+
+Problem 72: Parallel Rows (two rows facing each other) — 10 seats
+Clues: 1. Diya sits opposite Ritu. 2. Ria sits immediately to the left of Diya. 3. Ria is seated
+between Kavya and Diya. 4. Nikhil sits immediately to the left of Manish. 5. Deepak is 2 places
+clockwise from Arjun. 6. There are 2 people seated clockwise from Sai to Nikhil, not counting
+endpoints.
+Sample Questions (answers in Solutions section):
+
+ - Who sits opposite Nikhil?
+ - How many people are seated clockwise from Diya to Arjun, not counting endpoints?
+ - Who sits at position 6 (from left, 1-indexed)?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Diya sits opposite
+Ritu." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to
+fixed ones. Use clue: "Ria sits immediately to the left of Diya." to place adjacent relationships. Use clue:
+"Ria is seated between Kavya and Diya." to place adjacent relationships. Use clue: "Nikhil sits immediately to
+the left of Manish." to place adjacent relationships. Step 3: Use relative position and counting clues to fill
+the remaining seats consistently. Use clue: "Deepak is 2 places clockwise from Arjun." to determine distances
+between persons. Use clue: "There are 2 people seated clockwise from Sai to Nikhil, not counting endpoints."
+to determine distances between persons. Step 4: Cross-check all clues to ensure a unique consistent
+arrangement. The final arrangement is: Diya, Vijay, Arjun, Sai, Deepak, Ritu, Nikhil, Manish, Kavya, Ria
+Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off this
+arrangement.
+
+Problem 73: Circular (facing Centre) — 9 seats
+Clues: 1. Rekha is at the 12 o'clock position. 2. Rekha sits immediately to the left of Karan. 3.
+Manish sits immediately to the right of Pooja. 4. Rekha sits immediately to the right of Sara. 5.
+Karan is 2 places clockwise from Sara. 6. There are 0 people seated clockwise from Nikhil to Rahul,
+not counting endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits at position 4 (from left, 1-indexed)?
+ - How many people are seated clockwise from Nikhil to Diya, not counting endpoints?
+ - Who sits immediately to the right of Karan?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Rekha is at the 12
+o'clock position." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people
+relative to fixed ones. Use clue: "Rekha sits immediately to the left of Karan." to place adjacent
+relationships. Use clue: "Manish sits immediately to the right of Pooja." to place adjacent relationships. Use
+clue: "Rekha sits immediately to the right of Sara." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Karan is 2 places clockwise
+from Sara." to determine distances between persons. Use clue: "There are 0 people seated clockwise from Nikhil
+to Rahul, not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to
+ensure a unique consistent arrangement. The final arrangement is: Rekha, Karan, Pooja, Manish, Nikhil, Rahul,
+Raj, Diya, Sara Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read
+off this arrangement.
+
+Problem 74: Linear (single row, facing South) — 6 seats
+Clues: 1. Suresh sits at the leftmost end of the row. 2. Prateek is seated between Isha and Kriti.
+3. Ishaan sits immediately to the left of Suresh. 4. Ishaan is seated between Kriti and Suresh. 5.
+Ishaan is 2 places to the right of Prateek. 6. Kriti sits exactly in the middle of the row.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the right of Prateek?
+ - How many people are seated clockwise from Isha to Varun, not counting endpoints?
+ - Who sits immediately to the right of Isha?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Suresh sits at the
+leftmost end of the row." to place fixed person(s). Use clue: "Kriti sits exactly in the middle of the row."
+to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to fixed
+ones. Use clue: "Prateek is seated between Isha and Kriti." to place adjacent relationships. Use clue: "Ishaan
+sits immediately to the left of Suresh." to place adjacent relationships. Use clue: "Ishaan is seated between
+Kriti and Suresh." to place adjacent relationships. Step 3: Use relative position and counting clues to fill
+the remaining seats consistently. Use clue: "Ishaan is 2 places to the right of Prateek." to determine
+distances between persons. Step 4: Cross-check all clues to ensure a unique consistent arrangement. The final
+arrangement is: Varun, Isha, Prateek, Kriti, Ishaan, Suresh Therefore the answers to direct queries (e.g., who
+sits left/right/opposite of X) can be read off this arrangement.
+
+Problem 75: Linear (single row, facing South) — 9 seats
+Clues: 1. Asha sits at the leftmost end of the row. 2. Vivaan sits immediately to the left of
+Manish. 3. Amit sits immediately to the right of Ritu. 4. Karan is seated between Chitra and Asha.
+5. Rekha is 6 places to the right of Chitra. 6. There are 1 people seated clockwise from Manish to
+Rekha, not counting endpoints. 7. Ritu sits exactly in the middle of the row.
+Sample Questions (answers in Solutions section):
+
+ - Who sits opposite Manish?
+ - Who sits at position 8 (from left, 1-indexed)?
+ - How many people are seated clockwise from Amit to Sonal, not counting endpoints?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Asha sits at the
+leftmost end of the row." to place fixed person(s). Use clue: "Ritu sits exactly in the middle of the row." to
+place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to fixed ones.
+Use clue: "Vivaan sits immediately to the left of Manish." to place adjacent relationships. Use clue: "Amit
+sits immediately to the right of Ritu." to place adjacent relationships. Use clue: "Karan is seated between
+Chitra and Asha." to place adjacent relationships. Step 3: Use relative position and counting clues to fill
+the remaining seats consistently. Use clue: "Rekha is 6 places to the right of Chitra." to determine distances
+between persons. Use clue: "There are 1 people seated clockwise from Manish to Rekha, not counting endpoints."
+to determine distances between persons. Step 4: Cross-check all clues to ensure a unique consistent
+arrangement. The final arrangement is: Vivaan, Manish, Sonal, Rekha, Ritu, Amit, Chitra, Karan, Asha Therefore
+the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off this arrangement.
+
+Problem 76: Rectangular Table (opposite facing) — 12 seats
+Clues: 1. Vijay sits at the north side of the table. 2. Karan sits immediately to the right of Isha.
+3. Nisha sits immediately to the left of Ria. 4. Kavya is seated between Kabir and Arjun. 5. Rohan
+is 6 places clockwise from Geeta. 6. There are 7 people seated clockwise from Karan to Ria, not
+counting endpoints.
+Sample Questions (answers in Solutions section):
+
+ - How many people are seated clockwise from Kabir to Isha, not counting endpoints?
+ - Who sits opposite Neeraj?
+ - How many people are seated clockwise from Geeta to Pooja, not counting endpoints?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Vijay sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Karan sits immediately to the right of Isha." to place adjacent
+relationships. Use clue: "Nisha sits immediately to the left of Ria." to place adjacent relationships. Use
+clue: "Kavya is seated between Kabir and Arjun." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Rohan is 6 places clockwise
+from Geeta." to determine distances between persons. Use clue: "There are 7 people seated clockwise from Karan
+to Ria, not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to
+ensure a unique consistent arrangement. The final arrangement is: Vijay, Geeta, Isha, Karan, Kabir, Kavya,
+Arjun, Rohan, Pooja, Neeraj, Nisha, Ria Therefore the answers to direct queries (e.g., who sits
+left/right/opposite of X) can be read off this arrangement.
+
+Problem 77: Square Table (4 sides) — 8 seats
+Clues: 1. Ria sits at the north side of the table. 2. Deepak is seated between Kriti and Asha. 3.
+Shreya sits immediately to the left of Ria. 4. Ria is seated between Shreya and Geeta. 5. Shreya is
+3 places clockwise from Kriti. 6. There are 5 people seated clockwise from Asha to Kriti, not
+counting endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the left of Shreya?
+ - How many people are seated clockwise from Kriti to Deepak, not counting endpoints?
+ - Who sits opposite Shreya?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Ria sits at the north
+side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people
+relative to fixed ones. Use clue: "Deepak is seated between Kriti and Asha." to place adjacent relationships.
+Use clue: "Shreya sits immediately to the left of Ria." to place adjacent relationships. Use clue: "Ria is
+seated between Shreya and Geeta." to place adjacent relationships. Step 3: Use relative position and counting
+clues to fill the remaining seats consistently. Use clue: "Shreya is 3 places clockwise from Kriti." to
+determine distances between persons. Use clue: "There are 5 people seated clockwise from Asha to Kriti, not
+counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a unique
+consistent arrangement. The final arrangement is: Ria, Geeta, Ritu, Neeraj, Kriti, Deepak, Asha, Shreya
+Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off this
+arrangement.
+
+Problem 78: Linear (single row, facing South) — 9 seats
+Clues: 1. Leela sits at the leftmost end of the row. 2. Varun sits immediately to the left of
+Siddharth. 3. Ria is seated between Arjun and Varun. 4. Ria is seated between Arjun and Varun. 5.
+Amit is 5 places to the right of Ria. 6. There are 3 people seated clockwise from Sai to Varun, not
+counting endpoints. 7. Arjun sits exactly in the middle of the row.
+Sample Questions (answers in Solutions section):
+
+ - How many people are seated clockwise from Leela to Amit, not counting endpoints?
+ - Who sits opposite Lokesh?
+ - Who sits at position 2 (from left, 1-indexed)?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Leela sits at the
+leftmost end of the row." to place fixed person(s). Use clue: "Arjun sits exactly in the middle of the row."
+to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to fixed
+ones. Use clue: "Varun sits immediately to the left of Siddharth." to place adjacent relationships. Use clue:
+"Ria is seated between Arjun and Varun." to place adjacent relationships. Use clue: "Ria is seated between
+Arjun and Varun." to place adjacent relationships. Step 3: Use relative position and counting clues to fill
+the remaining seats consistently. Use clue: "Amit is 5 places to the right of Ria." to determine distances
+between persons. Use clue: "There are 3 people seated clockwise from Sai to Varun, not counting endpoints." to
+determine distances between persons. Step 4: Cross-check all clues to ensure a unique consistent arrangement.
+The final arrangement is: Nisha, Amit, Sai, Lokesh, Arjun, Ria, Varun, Siddharth, Leela Therefore the answers
+to direct queries (e.g., who sits left/right/opposite of X) can be read off this arrangement.
+
+Problem 79: Circular (facing Centre) — 10 seats
+Clues: 1. Krishna is at the 12 o'clock position. 2. Asha sits immediately to the left of Siddharth.
+3. Harsh sits immediately to the right of Tara. 4. Rekha sits immediately to the right of Rahul. 5.
+Arjun is 4 places clockwise from Ria. 6. There are 2 people seated clockwise from Ria to Krishna,
+not counting endpoints. 7. Krishna sits opposite Siddharth.
+Sample Questions (answers in Solutions section):
+
+ - Who sits immediately to the left of Sara?
+ - How many people are seated clockwise from Ria to Harsh, not counting endpoints?
+ - Who sits immediately to the right of Rekha?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Krishna is at the 12
+o'clock position." to place fixed person(s). Use clue: "Krishna sits opposite Siddharth." to place fixed
+person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to fixed ones. Use clue:
+"Asha sits immediately to the left of Siddharth." to place adjacent relationships. Use clue: "Harsh sits
+immediately to the right of Tara." to place adjacent relationships. Use clue: "Rekha sits immediately to the
+right of Rahul." to place adjacent relationships. Step 3: Use relative position and counting clues to fill the
+remaining seats consistently. Use clue: "Arjun is 4 places clockwise from Ria." to determine distances between
+persons. Use clue: "There are 2 people seated clockwise from Ria to Krishna, not counting endpoints." to
+determine distances between persons. Step 4: Cross-check all clues to ensure a unique consistent arrangement.
+The final arrangement is: Krishna, Arjun, Tara, Harsh, Asha, Siddharth, Sara, Ria, Rahul, Rekha Therefore the
+answers to direct queries (e.g., who sits left/right/opposite of X) can be read off this arrangement.
+
+Problem 80: Circular (facing Centre) — 6 seats
+Clues: 1. Arjun is at the 12 o'clock position. 2. Raj sits immediately to the right of Shreya. 3.
+Shreya sits immediately to the left of Raj. 4. Tara sits immediately to the right of Arjun. 5. Raj
+is 3 places clockwise from Tara. 6. Arjun sits opposite Shreya.
+Sample Questions (answers in Solutions section):
+
+ - Who sits opposite Shreya?
+ - Who sits opposite Arjun?
+ - Who sits at position 1 (from left, 1-indexed)?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Arjun is at the 12
+o'clock position." to place fixed person(s). Use clue: "Arjun sits opposite Shreya." to place fixed person(s).
+Step 2: Use immediate neighbor clues to place adjacent people relative to fixed ones. Use clue: "Raj sits
+immediately to the right of Shreya." to place adjacent relationships. Use clue: "Shreya sits immediately to
+the left of Raj." to place adjacent relationships. Use clue: "Tara sits immediately to the right of Arjun." to
+place adjacent relationships. Step 3: Use relative position and counting clues to fill the remaining seats
+consistently. Use clue: "Raj is 3 places clockwise from Tara." to determine distances between persons. Step 4:
+Cross-check all clues to ensure a unique consistent arrangement. The final arrangement is: Arjun, Tara, Meera,
+Shreya, Raj, Suresh Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be
+read off this arrangement.
+
+Problem 81: Parallel Rows (two rows facing each other) — 12 seats
+Clues: 1. Ananya sits opposite Kavya. 2. Manish sits immediately to the left of Sonal. 3. Varun sits
+immediately to the right of Kavya. 4. Harsh is seated between Sai and Kavya. 5. Varun is 5 places
+clockwise from Sonal. 6. There are 10 people seated clockwise from Diya to Chitra, not counting
+endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits at position 9 (from left, 1-indexed)?
+ - Who sits immediately to the left of Ananya?
+ - Who sits immediately to the left of Sonal?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Ananya sits opposite
+Kavya." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to
+fixed ones. Use clue: "Manish sits immediately to the left of Sonal." to place adjacent relationships. Use
+clue: "Varun sits immediately to the right of Kavya." to place adjacent relationships. Use clue: "Harsh is
+seated between Sai and Kavya." to place adjacent relationships. Step 3: Use relative position and counting
+clues to fill the remaining seats consistently. Use clue: "Varun is 5 places clockwise from Sonal." to
+determine distances between persons. Use clue: "There are 10 people seated clockwise from Diya to Chitra, not
+counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a unique
+consistent arrangement. The final arrangement is: Ananya, Manish, Sonal, Tara, Sai, Harsh, Kavya, Varun,
+Chitra, Diya, Asha, Rohan Therefore the answers to direct queries (e.g., who sits left/right/opposite of X)
+can be read off this arrangement.
+
+Problem 82: Square Table (4 sides) — 8 seats
+Clues: 1. Sameer sits at the north side of the table. 2. Shreya is seated between Neeraj and Kavya.
+3. Amit sits immediately to the right of Pooja. 4. Neeraj is seated between Amit and Shreya. 5. Amit
+is 4 places clockwise from Karan. 6. There are 6 people seated clockwise from Karan to Kavya, not
+counting endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the left of Shreya?
+ - Who sits opposite Leela?
+ - Who sits at position 5 (from left, 1-indexed)?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Sameer sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Shreya is seated between Neeraj and Kavya." to place adjacent
+relationships. Use clue: "Amit sits immediately to the right of Pooja." to place adjacent relationships. Use
+clue: "Neeraj is seated between Amit and Shreya." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Amit is 4 places clockwise
+from Karan." to determine distances between persons. Use clue: "There are 6 people seated clockwise from Karan
+to Kavya, not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to
+ensure a unique consistent arrangement. The final arrangement is: Sameer, Leela, Pooja, Amit, Neeraj, Shreya,
+Kavya, Karan Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off
+this arrangement.
+
+Problem 83: Rectangular Table (opposite facing) — 12 seats
+Clues: 1. Lokesh sits at the north side of the table. 2. Raj sits immediately to the left of Geeta.
+3. Rekha is seated between Geeta and Maya. 4. Vivaan is seated between Vijay and Shreya. 5. Shreya
+is 3 places clockwise from Lokesh. 6. There are 8 people seated clockwise from Shreya to Lokesh, not
+counting endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits at position 6 (from left, 1-indexed)?
+ - Who sits at position 3 (from left, 1-indexed)?
+ - Who sits at position 12 (from left, 1-indexed)?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Lokesh sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Raj sits immediately to the left of Geeta." to place adjacent
+relationships. Use clue: "Rekha is seated between Geeta and Maya." to place adjacent relationships. Use clue:
+"Vivaan is seated between Vijay and Shreya." to place adjacent relationships. Step 3: Use relative position
+and counting clues to fill the remaining seats consistently. Use clue: "Shreya is 3 places clockwise from
+Lokesh." to determine distances between persons. Use clue: "There are 8 people seated clockwise from Shreya to
+Lokesh, not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to
+ensure a unique consistent arrangement. The final arrangement is: Lokesh, Vijay, Vivaan, Shreya, Leela, Anika,
+Raj, Geeta, Rekha, Maya, Arjun, Deepak Therefore the answers to direct queries (e.g., who sits
+left/right/opposite of X) can be read off this arrangement.
+
+Problem 84: Linear (single row, facing South) — 9 seats
+Clues: 1. Sonal sits at the leftmost end of the row. 2. Karan is seated between Arjun and Pooja. 3.
+Kavya sits immediately to the right of Sonal. 4. Arjun sits immediately to the left of Karan. 5.
+Arjun is 6 places to the right of Priya. 6. There are 0 people seated clockwise from Karan to Pooja,
+not counting endpoints. 7. Arjun sits exactly in the middle of the row.
+Sample Questions (answers in Solutions section):
+
+ - Who sits opposite Priya?
+ - Who sits immediately to the right of Yash?
+ - Who sits opposite Sonal?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Sonal sits at the
+leftmost end of the row." to place fixed person(s). Use clue: "Arjun sits exactly in the middle of the row."
+to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to fixed
+ones. Use clue: "Karan is seated between Arjun and Pooja." to place adjacent relationships. Use clue: "Kavya
+sits immediately to the right of Sonal." to place adjacent relationships. Use clue: "Arjun sits immediately to
+the left of Karan." to place adjacent relationships. Step 3: Use relative position and counting clues to fill
+the remaining seats consistently. Use clue: "Arjun is 6 places to the right of Priya." to determine distances
+between persons. Use clue: "There are 0 people seated clockwise from Karan to Pooja, not counting endpoints."
+to determine distances between persons. Step 4: Cross-check all clues to ensure a unique consistent
+arrangement. The final arrangement is: Kavya, Asha, Leela, Yash, Arjun, Karan, Pooja, Priya, Sonal Therefore
+the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off this arrangement.
+
+Problem 85: Circular (facing Centre) — 7 seats
+Clues: 1. Nisha is at the 12 o'clock position. 2. Lokesh sits immediately to the right of Priya. 3.
+Lokesh is seated between Priya and Meera. 4. Tara sits immediately to the left of Prateek. 5. Tara
+is 4 places clockwise from Lokesh. 6. There are 5 people seated clockwise from Lokesh to Priya, not
+counting endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits at position 7 (from left, 1-indexed)?
+ - Who sits opposite Rahul?
+ - Who sits immediately to the right of Prateek?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Nisha is at the 12
+o'clock position." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people
+relative to fixed ones. Use clue: "Lokesh sits immediately to the right of Priya." to place adjacent
+relationships. Use clue: "Lokesh is seated between Priya and Meera." to place adjacent relationships. Use
+clue: "Tara sits immediately to the left of Prateek." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Tara is 4 places clockwise
+from Lokesh." to determine distances between persons. Use clue: "There are 5 people seated clockwise from
+Lokesh to Priya, not counting endpoints." to determine distances between persons. Step 4: Cross-check all
+clues to ensure a unique consistent arrangement. The final arrangement is: Nisha, Tara, Prateek, Priya,
+Lokesh, Meera, Rahul Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be
+read off this arrangement.
+
+Problem 86: Linear (single row, facing North) — 8 seats
+Clues: 1. Prateek sits at the leftmost end of the row. 2. Varun is seated between Vikram and Raj. 3.
+Varun sits immediately to the left of Raj. 4. Ishaan is seated between Prateek and Vikram. 5. Leela
+is 3 places to the right of Varun. 6. There are 5 people seated clockwise from Prateek to Leela, not
+counting endpoints. 7. Raj sits exactly in the middle of the row.
+Sample Questions (answers in Solutions section):
+
+ - How many people are seated clockwise from Varun to Anika, not counting endpoints?
+ - Who sits immediately to the right of Prateek?
+ - Who sits immediately to the left of Leela?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Prateek sits at the
+leftmost end of the row." to place fixed person(s). Use clue: "Raj sits exactly in the middle of the row." to
+place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to fixed ones.
+Use clue: "Varun is seated between Vikram and Raj." to place adjacent relationships. Use clue: "Varun sits
+immediately to the left of Raj." to place adjacent relationships. Use clue: "Ishaan is seated between Prateek
+and Vikram." to place adjacent relationships. Step 3: Use relative position and counting clues to fill the
+remaining seats consistently. Use clue: "Leela is 3 places to the right of Varun." to determine distances
+between persons. Use clue: "There are 5 people seated clockwise from Prateek to Leela, not counting
+endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a unique
+consistent arrangement. The final arrangement is: Prateek, Ishaan, Vikram, Varun, Raj, Anika, Leela, Priya
+Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off this
+arrangement.
+
+Problem 87: Circular (facing Centre) — 11 seats
+Clues: 1. Suresh is at the 12 o'clock position. 2. Raj sits immediately to the right of Siddharth.
+3. Ananya sits immediately to the left of Tara. 4. Karan is seated between Suresh and Aarav. 5. Ria
+is 7 places clockwise from Deepak. 6. There are 2 people seated clockwise from Suresh to Sonal, not
+counting endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits at position 3 (from left, 1-indexed)?
+ - Who sits immediately to the left of Raj?
+ - Who sits at position 3 (from left, 1-indexed)?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Suresh is at the 12
+o'clock position." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people
+relative to fixed ones. Use clue: "Raj sits immediately to the right of Siddharth." to place adjacent
+relationships. Use clue: "Ananya sits immediately to the left of Tara." to place adjacent relationships. Use
+clue: "Karan is seated between Suresh and Aarav." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Ria is 7 places clockwise
+from Deepak." to determine distances between persons. Use clue: "There are 2 people seated clockwise from
+Suresh to Sonal, not counting endpoints." to determine distances between persons. Step 4: Cross-check all
+clues to ensure a unique consistent arrangement. The final arrangement is: Suresh, Karan, Aarav, Sonal, Ria,
+Siddharth, Raj, Leela, Deepak, Ananya, Tara Therefore the answers to direct queries (e.g., who sits
+left/right/opposite of X) can be read off this arrangement.
+
+Problem 88: Square Table (4 sides) — 8 seats
+Clues: 1. Tara sits at the north side of the table. 2. Shreya sits immediately to the right of
+Rekha. 3. Krishna sits immediately to the left of Sameer. 4. Tara sits immediately to the right of
+Sameer. 5. Shreya is 2 places clockwise from Nisha. 6. There are 3 people seated clockwise from
+Shreya to Aditya, not counting endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits at position 5 (from left, 1-indexed)?
+ - Who sits immediately to the right of Tara?
+ - Who sits opposite Rekha?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Tara sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Shreya sits immediately to the right of Rekha." to place adjacent
+relationships. Use clue: "Krishna sits immediately to the left of Sameer." to place adjacent relationships.
+Use clue: "Tara sits immediately to the right of Sameer." to place adjacent relationships. Step 3: Use
+relative position and counting clues to fill the remaining seats consistently. Use clue: "Shreya is 2 places
+clockwise from Nisha." to determine distances between persons. Use clue: "There are 3 people seated clockwise
+from Shreya to Aditya, not counting endpoints." to determine distances between persons. Step 4: Cross-check
+all clues to ensure a unique consistent arrangement. The final arrangement is: Tara, Aditya, Aarav, Nisha,
+Rekha, Shreya, Krishna, Sameer Therefore the answers to direct queries (e.g., who sits left/right/opposite of
+X) can be read off this arrangement.
+
+Problem 89: Parallel Rows (two rows facing each other) — 12 seats
+Clues: 1. Ritu sits opposite Kabir. 2. Ananya sits immediately to the left of Isha. 3. Rahul sits
+immediately to the right of Kavya. 4. Isha sits immediately to the left of Asha. 5. Ritu is 8 places
+clockwise from Vijay. 6. There are 4 people seated clockwise from Asha to Rahul, not counting
+endpoints.
+Sample Questions (answers in Solutions section):
+
+ - Who sits opposite Nikhil?
+ - Who sits opposite Ishaan?
+ - How many people are seated clockwise from Ritu to Vijay, not counting endpoints?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Ritu sits opposite
+Kabir." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to
+fixed ones. Use clue: "Ananya sits immediately to the left of Isha." to place adjacent relationships. Use
+clue: "Rahul sits immediately to the right of Kavya." to place adjacent relationships. Use clue: "Isha sits
+immediately to the left of Asha." to place adjacent relationships. Step 3: Use relative position and counting
+clues to fill the remaining seats consistently. Use clue: "Ritu is 8 places clockwise from Vijay." to
+determine distances between persons. Use clue: "There are 4 people seated clockwise from Asha to Rahul, not
+counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a unique
+consistent arrangement. The final arrangement is: Ritu, Ananya, Isha, Asha, Vijay, Nikhil, Kabir, Kavya,
+Rahul, Ishaan, Lokesh, Krishna Therefore the answers to direct queries (e.g., who sits left/right/opposite of
+X) can be read off this arrangement.
+
+Problem 90: Square Table (4 sides) — 8 seats
+Clues: 1. Manish sits at the north side of the table. 2. Arjun sits immediately to the right of
+Sara. 3. Deepak is seated between Arjun and Rohan. 4. Rohan sits immediately to the right of Deepak.
+5. Amit is 3 places clockwise from Arjun. 6. There are 1 people seated clockwise from Sara to
+Deepak, not counting endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the right of Nisha?
+ - How many people are seated clockwise from Rohan to Arjun, not counting endpoints?
+ - How many people are seated clockwise from Nisha to Amit, not counting endpoints?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Manish sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Arjun sits immediately to the right of Sara." to place adjacent
+relationships. Use clue: "Deepak is seated between Arjun and Rohan." to place adjacent relationships. Use
+clue: "Rohan sits immediately to the right of Deepak." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Amit is 3 places clockwise
+from Arjun." to determine distances between persons. Use clue: "There are 1 people seated clockwise from Sara
+to Deepak, not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to
+ensure a unique consistent arrangement. The final arrangement is: Manish, Lokesh, Sara, Arjun, Deepak, Rohan,
+Amit, Nisha Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off
+this arrangement.
+
+Problem 91: Parallel Rows (two rows facing each other) — 12 seats
+Clues: 1. Priya sits opposite Pooja. 2. Priya sits immediately to the left of Ritu. 3. Yash is
+seated between Varun and Manish. 4. Manish is seated between Yash and Sai. 5. Manish is 7 places
+clockwise from Sara. 6. There are 10 people seated clockwise from Yash to Varun, not counting
+endpoints.
+Sample Questions (answers in Solutions section):
+
+ - Who sits immediately to the left of Sai?
+ - Who sits immediately to the right of Rekha?
+ - How many people are seated clockwise from Varun to Ritu, not counting endpoints?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Priya sits opposite
+Pooja." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to
+fixed ones. Use clue: "Priya sits immediately to the left of Ritu." to place adjacent relationships. Use clue:
+"Yash is seated between Varun and Manish." to place adjacent relationships. Use clue: "Manish is seated
+between Yash and Sai." to place adjacent relationships. Step 3: Use relative position and counting clues to
+fill the remaining seats consistently. Use clue: "Manish is 7 places clockwise from Sara." to determine
+distances between persons. Use clue: "There are 10 people seated clockwise from Yash to Varun, not counting
+endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a unique
+consistent arrangement. The final arrangement is: Priya, Ritu, Sara, Suresh, Shreya, Ishaan, Pooja, Varun,
+Yash, Manish, Sai, Rekha Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can
+be read off this arrangement.
+
+Problem 92: Parallel Rows (two rows facing each other) — 10 seats
+Clues: 1. Arjun sits opposite Ritu. 2. Siddharth is seated between Kavya and Ritu. 3. Kriti sits
+immediately to the right of Rekha. 4. Arjun is seated between Lokesh and Amit. 5. Amit is 2 places
+clockwise from Lokesh. 6. There are 6 people seated clockwise from Arjun to Kriti, not counting
+endpoints.
+Sample Questions (answers in Solutions section):
+
+ - Who sits opposite Amit?
+ - How many people are seated clockwise from Arjun to Amit, not counting endpoints?
+ - Who sits at position 1 (from left, 1-indexed)?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Arjun sits opposite
+Ritu." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to
+fixed ones. Use clue: "Siddharth is seated between Kavya and Ritu." to place adjacent relationships. Use clue:
+"Kriti sits immediately to the right of Rekha." to place adjacent relationships. Use clue: "Arjun is seated
+between Lokesh and Amit." to place adjacent relationships. Step 3: Use relative position and counting clues to
+fill the remaining seats consistently. Use clue: "Amit is 2 places clockwise from Lokesh." to determine
+distances between persons. Use clue: "There are 6 people seated clockwise from Arjun to Kriti, not counting
+endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a unique
+consistent arrangement. The final arrangement is: Arjun, Amit, Karan, Kavya, Siddharth, Ritu, Rekha, Kriti,
+Sonal, Lokesh Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read
+off this arrangement.
+
+Problem 93: Circular (facing Centre) — 10 seats
+Clues: 1. Karan is at the 12 o'clock position. 2. Raj is seated between Karan and Yash. 3. Varun
+sits immediately to the left of Suresh. 4. Siddharth sits immediately to the left of Manish. 5.
+Suresh is 6 places clockwise from Yash. 6. There are 2 people seated clockwise from Harsh to Chitra,
+not counting endpoints. 7. Karan sits opposite Manish.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the right of Ritu?
+ - Who sits immediately to the left of Karan?
+ - Who sits opposite Varun?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Karan is at the 12
+o'clock position." to place fixed person(s). Use clue: "Karan sits opposite Manish." to place fixed person(s).
+Step 2: Use immediate neighbor clues to place adjacent people relative to fixed ones. Use clue: "Raj is seated
+between Karan and Yash." to place adjacent relationships. Use clue: "Varun sits immediately to the left of
+Suresh." to place adjacent relationships. Use clue: "Siddharth sits immediately to the left of Manish." to
+place adjacent relationships. Step 3: Use relative position and counting clues to fill the remaining seats
+consistently. Use clue: "Suresh is 6 places clockwise from Yash." to determine distances between persons. Use
+clue: "There are 2 people seated clockwise from Harsh to Chitra, not counting endpoints." to determine
+distances between persons. Step 4: Cross-check all clues to ensure a unique consistent arrangement. The final
+arrangement is: Karan, Raj, Yash, Ritu, Siddharth, Manish, Harsh, Varun, Suresh, Chitra Therefore the answers
+to direct queries (e.g., who sits left/right/opposite of X) can be read off this arrangement.
+
+Problem 94: Square Table (4 sides) — 8 seats
+Clues: 1. Yash sits at the north side of the table. 2. Harsh sits immediately to the left of Maya.
+3. Ritu sits immediately to the left of Harsh. 4. Yash sits immediately to the left of Nandini. 5.
+Yash is 2 places clockwise from Sara. 6. There are 5 people seated clockwise from Ritu to Nandini,
+not counting endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the left of Nandini?
+ - How many people are seated clockwise from Yash to Ritu, not counting endpoints?
+ - How many people are seated clockwise from Yash to Nandini, not counting endpoints?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Yash sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Harsh sits immediately to the left of Maya." to place adjacent
+relationships. Use clue: "Ritu sits immediately to the left of Harsh." to place adjacent relationships. Use
+clue: "Yash sits immediately to the left of Nandini." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Yash is 2 places clockwise
+from Sara." to determine distances between persons. Use clue: "There are 5 people seated clockwise from Ritu
+to Nandini, not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to
+ensure a unique consistent arrangement. The final arrangement is: Yash, Nandini, Kabir, Ritu, Harsh, Maya,
+Sara, Amit Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off
+this arrangement.
+
+Problem 95: Square Table (4 sides) — 8 seats
+Clues: 1. Aditya sits at the north side of the table. 2. Maya sits immediately to the left of
+Nandini. 3. Priya is seated between Nandini and Arjun. 4. Nandini sits immediately to the left of
+Priya. 5. Karan is 3 places clockwise from Nandini. 6. There are 0 people seated clockwise from Maya
+to Nandini, not counting endpoints.
+Sample Questions (answers in Solutions section):
+
+ - Who sits opposite Nandini?
+ - Who sits immediately to the left of Varun?
+ - Who sits at position 8 (from left, 1-indexed)?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Aditya sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Maya sits immediately to the left of Nandini." to place adjacent
+relationships. Use clue: "Priya is seated between Nandini and Arjun." to place adjacent relationships. Use
+clue: "Nandini sits immediately to the left of Priya." to place adjacent relationships. Step 3: Use relative
+position and counting clues to fill the remaining seats consistently. Use clue: "Karan is 3 places clockwise
+from Nandini." to determine distances between persons. Use clue: "There are 0 people seated clockwise from
+Maya to Nandini, not counting endpoints." to determine distances between persons. Step 4: Cross-check all
+clues to ensure a unique consistent arrangement. The final arrangement is: Aditya, Nikhil, Varun, Maya,
+Nandini, Priya, Arjun, Karan Therefore the answers to direct queries (e.g., who sits left/right/opposite of X)
+can be read off this arrangement.
+
+Problem 96: Linear (single row, facing North) — 8 seats
+Clues: 1. Raj sits at the leftmost end of the row. 2. Pooja sits immediately to the right of Harsh.
+3. Lokesh sits immediately to the left of Siddharth. 4. Siddharth sits immediately to the left of
+Suresh. 5. Suresh is 4 places to the right of Pooja. 6. There are 4 people seated clockwise from
+Harsh to Suresh, not counting endpoints. 7. Rahul sits exactly in the middle of the row.
+Sample Questions (answers in Solutions section):
+ - Who sits at position 1 (from left, 1-indexed)?
+ - How many people are seated clockwise from Siddharth to Pooja, not counting endpoints?
+ - How many people are seated clockwise from Harsh to Pooja, not counting endpoints?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Raj sits at the
+leftmost end of the row." to place fixed person(s). Use clue: "Rahul sits exactly in the middle of the row."
+to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to fixed
+ones. Use clue: "Pooja sits immediately to the right of Harsh." to place adjacent relationships. Use clue:
+"Lokesh sits immediately to the left of Siddharth." to place adjacent relationships. Use clue: "Siddharth sits
+immediately to the left of Suresh." to place adjacent relationships. Step 3: Use relative position and
+counting clues to fill the remaining seats consistently. Use clue: "Suresh is 4 places to the right of Pooja."
+to determine distances between persons. Use clue: "There are 4 people seated clockwise from Harsh to Suresh,
+not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a
+unique consistent arrangement. The final arrangement is: Raj, Deepak, Harsh, Pooja, Rahul, Lokesh, Siddharth,
+Suresh Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off this
+arrangement.
+
+Problem 97: Linear (single row, facing South) — 8 seats
+Clues: 1. Nandini sits at the leftmost end of the row. 2. Raj sits immediately to the left of
+Ishaan. 3. Manish sits immediately to the right of Varun. 4. Nandini sits immediately to the left of
+Priya. 5. Yash is 3 places to the right of Ishaan. 6. There are 1 people seated clockwise from
+Nandini to Sameer, not counting endpoints. 7. Varun sits exactly in the middle of the row.
+Sample Questions (answers in Solutions section):
+
+ - Who sits opposite Varun?
+ - Who sits immediately to the left of Ishaan?
+ - Who sits immediately to the right of Sameer?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Nandini sits at the
+leftmost end of the row." to place fixed person(s). Use clue: "Varun sits exactly in the middle of the row."
+to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent people relative to fixed
+ones. Use clue: "Raj sits immediately to the left of Ishaan." to place adjacent relationships. Use clue:
+"Manish sits immediately to the right of Varun." to place adjacent relationships. Use clue: "Nandini sits
+immediately to the left of Priya." to place adjacent relationships. Step 3: Use relative position and counting
+clues to fill the remaining seats consistently. Use clue: "Yash is 3 places to the right of Ishaan." to
+determine distances between persons. Use clue: "There are 1 people seated clockwise from Nandini to Sameer,
+not counting endpoints." to determine distances between persons. Step 4: Cross-check all clues to ensure a
+unique consistent arrangement. The final arrangement is: Priya, Sameer, Raj, Ishaan, Varun, Manish, Yash,
+Nandini Therefore the answers to direct queries (e.g., who sits left/right/opposite of X) can be read off this
+arrangement.
+
+Problem 98: Square Table (4 sides) — 8 seats
+Clues: 1. Ritu sits at the north side of the table. 2. Nikhil sits immediately to the right of
+Priya. 3. Chitra sits immediately to the right of Nikhil. 4. Nikhil sits immediately to the right of
+Priya. 5. Ritu is 4 places clockwise from Shreya. 6. There are 3 people seated clockwise from Chitra
+to Lokesh, not counting endpoints.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the left of Chitra?
+ - Who sits opposite Lokesh?
+ - Who sits opposite Priya?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Ritu sits at the
+north side of the table." to place fixed person(s). Step 2: Use immediate neighbor clues to place adjacent
+people relative to fixed ones. Use clue: "Nikhil sits immediately to the right of Priya." to place adjacent
+relationships. Use clue: "Chitra sits immediately to the right of Nikhil." to place adjacent relationships.
+Use clue: "Nikhil sits immediately to the right of Priya." to place adjacent relationships. Step 3: Use
+relative position and counting clues to fill the remaining seats consistently. Use clue: "Ritu is 4 places
+clockwise from Shreya." to determine distances between persons. Use clue: "There are 3 people seated clockwise
+from Chitra to Lokesh, not counting endpoints." to determine distances between persons. Step 4: Cross-check
+all clues to ensure a unique consistent arrangement. The final arrangement is: Ritu, Leela, Sara, Lokesh,
+Shreya, Priya, Nikhil, Chitra Therefore the answers to direct queries (e.g., who sits left/right/opposite of
+X) can be read off this arrangement.
+
+Problem 99: Circular (facing Outside) — 6 seats
+Clues: 1. Rekha is at the 12 o'clock position. 2. Vivaan is seated between Neeraj and Anika. 3.
+Rekha sits immediately to the right of Anika. 4. Maya sits immediately to the left of Chitra. 5.
+Vivaan is 3 places clockwise from Maya. 6. Rekha sits opposite Neeraj.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the right of Neeraj?
+ - How many people are seated clockwise from Maya to Neeraj, not counting endpoints?
+ - How many people are seated clockwise from Anika to Chitra, not counting endpoints?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Rekha is at the 12
+o'clock position." to place fixed person(s). Use clue: "Rekha sits opposite Neeraj." to place fixed person(s).
+Step 2: Use immediate neighbor clues to place adjacent people relative to fixed ones. Use clue: "Vivaan is
+seated between Neeraj and Anika." to place adjacent relationships. Use clue: "Rekha sits immediately to the
+right of Anika." to place adjacent relationships. Use clue: "Maya sits immediately to the left of Chitra." to
+place adjacent relationships. Step 3: Use relative position and counting clues to fill the remaining seats
+consistently. Use clue: "Vivaan is 3 places clockwise from Maya." to determine distances between persons. Step
+4: Cross-check all clues to ensure a unique consistent arrangement. The final arrangement is: Rekha, Maya,
+Chitra, Neeraj, Vivaan, Anika Therefore the answers to direct queries (e.g., who sits left/right/opposite of
+X) can be read off this arrangement.
+
+Problem 100: Circular (facing Centre) — 12 seats
+Clues: 1. Meera is at the 12 o'clock position. 2. Karan is seated between Lokesh and Nandini. 3.
+Lokesh sits immediately to the left of Karan. 4. Yash is seated between Meera and Raj. 5. Karan is 8
+places clockwise from Meera. 6. There are 8 people seated clockwise from Raj to Isha, not counting
+endpoints. 7. Meera sits opposite Vikram.
+Sample Questions (answers in Solutions section):
+ - Who sits immediately to the right of Yash?
+ - Who sits immediately to the right of Meera?
+ - Who sits immediately to the right of Karan?
+
+Solution (concise):
+
+Step 1: Start with an empty layout and fix any absolute positions from clues. Use clue: "Meera is at the 12
+o'clock position." to place fixed person(s). Use clue: "Meera sits opposite Vikram." to place fixed person(s).
+Step 2: Use immediate neighbor clues to place adjacent people relative to fixed ones. Use clue: "Karan is
+seated between Lokesh and Nandini." to place adjacent relationships. Use clue: "Lokesh sits immediately to the
+left of Karan." to place adjacent relationships. Use clue: "Yash is seated between Meera and Raj." to place
+adjacent relationships. Step 3: Use relative position and counting clues to fill the remaining seats
+consistently. Use clue: "Karan is 8 places clockwise from Meera." to determine distances between persons. Use
+clue: "There are 8 people seated clockwise from Raj to Isha, not counting endpoints." to determine distances
+between persons. Step 4: Cross-check all clues to ensure a unique consistent arrangement. The final
+arrangement is: Meera, Yash, Raj, Kriti, Amit, Ria, Vikram, Lokesh, Karan, Nandini, Ritu, Isha Therefore the
+answers to direct queries (e.g., who sits left/right/opposite of X) can be read off this arrangement.
+
+

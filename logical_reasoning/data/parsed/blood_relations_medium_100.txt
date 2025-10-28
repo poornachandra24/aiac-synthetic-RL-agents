@@ -1,0 +1,2736 @@
+Blood Relations & Family Tree Puzzles — Medium (100 problems)
+
+Generated: Medium difficulty puzzles covering narrative, coded, and mixed relation statements.
+
+Problem 1: Mixed — 6 persons
+Clues:
+
+1. Deepak is the son of Kabir.
+2. Deepak is the husband of Karan.
+3. Tara is the daughter of Kabir.
+4. Tara is the wife of Rekha.
+5. Vikram is the husband of Kabir.
+6. Karan is the husband of Deepak.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the spouse of Tara?
+ - Who is the mother of Tara?
+ - How is Deepak related to Rekha?
+
+Solution (key relations):
+
+Vikram is the spouse of Kabir. | Vikram is the father of Deepak. | Vikram is the mother of Tara. | Kabir is
+the spouse of Vikram. | Kabir is the father of Deepak. | Kabir is the mother of Tara. | Deepak is the son of
+Vikram. | Deepak is the son of Kabir. | Deepak is the spouse of Karan. | Tara is the daughter of Vikram. |
+Tara is the daughter of Kabir. | Tara is the spouse of Rekha. | Karan is the spouse of Deepak. | Rekha is the
+spouse of Tara.
+
+Problem 2: Narrative — 12 persons
+Clues:
+
+1. Diya is the parent of Leela.
+2. Maya is the daughter of Anika.
+3. Ria is the daughter of Rajat.
+4. Kabir is the son of Rajat.
+5. Anika is the daughter of Diya.
+6. Anika is the mother of Maya.
+7. Rajat is the parent of Pooja.
+8. Amit is the husband of Diya.
+9. Amit is the mother of Anika.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the mother of Kabir?
+ - How is Amit related to Shreya?
+ - How is Maya related to Shreya?
+
+Solution (key relations):
+
+Diya is the spouse of Amit. | Diya is the mother of Anika. | Diya is the father of Rajat. | Diya is the mother
+of Leela. | Amit is the spouse of Diya. | Amit is the mother of Anika. | Amit is the father of Rajat. | Amit
+is the mother of Leela. | Anika is the daughter of Diya. | Anika is the daughter of Amit. | Anika is the
+mother of Maya. | Rajat is the son of Diya. | Rajat is the son of Amit. | Rajat is the spouse of Anita. |
+Rajat is the mother of Ria. | Rajat is the mother of Pooja. | Rajat is the father of Kabir. | Leela is the
+daughter of Diya. | Leela is the daughter of Amit. | Leela is the spouse of Shreya. | Leela is the mother of
+Asha. | Anita is the spouse of Rajat. | Shreya is the spouse of Leela. | Ria is the daughter of Rajat. | Maya
+is the daughter of Anika. | Asha is the daughter of Leela. | Pooja is the daughter of Rajat. | Kabir is the
+son of Rajat.
+
+Problem 3: Coded — 10 persons
+Clues:
+
+1. Priya is the daughter of Ria.
+2. Leela is the wife of Ria.
+3. Leela is the father of Rishi.
+4. Amit is the son of Ria.
+5. Pooja is the wife of Priya.
+6. Ria is the wife of Leela.
+7. Ria is the father of Amit.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a grandparent of Priya?
+ - Who is the father of Anita?
+ - Who is the mother of Ria?
+
+Solution (key relations):
+
+Leela is the spouse of Ria. | Leela is the father of Rishi. | Leela is the father of Amit. | Leela is the
+mother of Tara. | Leela is the mother of Priya. | Ria is the spouse of Leela. | Ria is the father of Rishi. |
+Ria is the father of Amit. | Ria is the mother of Tara. | Ria is the mother of Priya. | Rishi is the son of
+
+Leela. | Rishi is the son of Ria. | Rishi is the spouse of Vikram. | Amit is the son of Leela. | Amit is the
+son of Ria. | Tara is the daughter of Leela. | Tara is the daughter of Ria. | Tara is the spouse of Rahul. |
+Tara is the mother of Anita. | Priya is the daughter of Leela. | Priya is the daughter of Ria. | Priya is the
+spouse of Pooja. | Vikram is the spouse of Rishi. | Rahul is the spouse of Tara. | Pooja is the spouse of
+Priya. | Anita is the daughter of Tara.
+
+Problem 4: Coded — 10 persons
+Clues:
+
+1. Ria is the wife of Yash.
+2. Yash is the parent of Rishi.
+3. Asha is the parent of Anita.
+4. Yash is the parent of Aditya.
+5. Vikram is the father of Yash.
+6. Yash is the son of Vikram.
+7. Yash is the mother of Diya.
+8. Deepak is the parent of Asha.
+9. Asha is the wife of Rajat.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the father of Aditya?
+ - Who is a sibling of Ria?
+ - How is Rajat related to Vikram?
+
+Solution (key relations):
+
+Deepak is the spouse of Vikram. | Deepak is the mother of Asha. | Deepak is the father of Yash. | Vikram is
+the spouse of Deepak. | Vikram is the mother of Asha. | Vikram is the father of Yash. | Asha is the daughter
+of Deepak. | Asha is the daughter of Vikram. | Asha is the spouse of Rajat. | Asha is the mother of Anita. |
+Yash is the son of Deepak. | Yash is the son of Vikram. | Yash is the spouse of Ria. | Yash is the mother of
+Diya. | Yash is the father of Aditya. | Yash is the father of Rishi. | Rajat is the spouse of Asha. | Ria is
+the spouse of Yash. | Anita is the daughter of Asha. | Diya is the daughter of Yash. | Aditya is the son of
+Yash. | Rishi is the son of Yash.
+
+Problem 5: Narrative — 10 persons
+Clues:
+
+1. Anita is the parent of Geeta.
+2. Geeta is the wife of Suresh.
+3. Geeta is the mother of Diya.
+4. Anita is the parent of Kriti.
+5. Sonal is the wife of Meera.
+6. Diya is the daughter of Geeta.
+7. Siddharth is the parent of Prateek.
+8. Anita is the wife of Siddharth.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the mother of Suresh?
+ - How is Diya related to Siddharth?
+ - Who is a sibling of Geeta?
+
+Solution (key relations):
+
+Siddharth is the spouse of Anita. | Siddharth is the mother of Geeta. | Siddharth is the father of Prateek. |
+Siddharth is the mother of Kriti. | Siddharth is the mother of Meera. | Anita is the spouse of Siddharth. |
+Anita is the mother of Geeta. | Anita is the father of Prateek. | Anita is the mother of Kriti. | Anita is the
+mother of Meera. | Geeta is the daughter of Siddharth. | Geeta is the daughter of Anita. | Geeta is the spouse
+of Suresh. | Geeta is the mother of Diya. | Prateek is the son of Siddharth. | Prateek is the son of Anita. |
+Kriti is the daughter of Siddharth. | Kriti is the daughter of Anita. | Kriti is the spouse of Karan. | Meera
+is the daughter of Siddharth. | Meera is the daughter of Anita. | Meera is the spouse of Sonal. | Suresh is
+the spouse of Geeta. | Karan is the spouse of Kriti. | Sonal is the spouse of Meera. | Diya is the daughter of
+Geeta.
+
+Problem 6: Mixed — 6 persons
+Clues:
+
+1. Shreya is the daughter of Kabir.
+2. Shreya is the wife of Geeta.
+3. Geeta is the wife of Shreya.
+4. Sameer is the husband of Kabir.
+5. Sameer is the mother of Shreya.
+6. Sameer is the parent of Yash.
+7. Yash is the husband of Prateek.
+
+Sample Questions (answers in Solutions section):
+
+ - How is Shreya related to Yash?
+ - Who is the spouse of Sameer?
+ - How is Kabir related to Shreya?
+
+Solution (key relations):
+
+Sameer is the spouse of Kabir. | Sameer is the father of Yash. | Sameer is the mother of Shreya. | Kabir is
+the spouse of Sameer. | Kabir is the father of Yash. | Kabir is the mother of Shreya. | Yash is the son of
+Sameer. | Yash is the son of Kabir. | Yash is the spouse of Prateek. | Shreya is the daughter of Sameer. |
+Shreya is the daughter of Kabir. | Shreya is the spouse of Geeta. | Prateek is the spouse of Yash. | Geeta is
+the spouse of Shreya.
+
+Problem 7: Coded — 8 persons
+Clues:
+
+1. Prateek is the son of Nikhil.
+2. Siddharth is the son of Nikhil.
+3. Siddharth is the husband of Rajat.
+4. Anita is the daughter of Vijay.
+5. Rahul is the son of Nikhil.
+6. Nikhil is the husband of Vijay.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a grandparent of Vijay?
+ - Who is a grandparent of Rahul?
+ - Who is a sibling of Anita?
+
+Solution (key relations):
+
+Nikhil is the spouse of Vijay. | Nikhil is the mother of Anita. | Nikhil is the father of Rahul. | Nikhil is
+the father of Siddharth. | Nikhil is the father of Prateek. | Vijay is the spouse of Nikhil. | Vijay is the
+mother of Anita. | Vijay is the father of Rahul. | Vijay is the father of Siddharth. | Vijay is the father of
+Prateek. | Anita is the daughter of Nikhil. | Anita is the daughter of Vijay. | Rahul is the son of Nikhil. |
+Rahul is the son of Vijay. | Rahul is the spouse of Asha. | Siddharth is the son of Nikhil. | Siddharth is the
+son of Vijay. | Siddharth is the spouse of Rajat. | Prateek is the son of Nikhil. | Prateek is the son of
+Vijay. | Asha is the spouse of Rahul. | Rajat is the spouse of Siddharth.
+
+Problem 8: Coded — 7 persons
+Clues:
+
+1. Arun is the son of Amit.
+2. Amit is the parent of Pooja.
+3. Amit is the parent of Deepak.
+4. Deepak is the husband of Leela.
+5. Sameer is the son of Amit.
+6. Leela is the wife of Deepak.
+7. Vikram is the husband of Amit.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the father of Leela?
+ - How is Amit related to Pooja?
+ - How is Amit related to Vikram?
+
+Solution (key relations):
+
+Amit is the spouse of Vikram. | Amit is the father of Deepak. | Amit is the father of Sameer. | Amit is the
+mother of Pooja. | Amit is the father of Arun. | Vikram is the spouse of Amit. | Vikram is the father of
+Deepak. | Vikram is the father of Sameer. | Vikram is the mother of Pooja. | Vikram is the father of Arun. |
+Deepak is the son of Amit. | Deepak is the son of Vikram. | Deepak is the spouse of Leela. | Sameer is the son
+of Amit. | Sameer is the son of Vikram. | Pooja is the daughter of Amit. | Pooja is the daughter of Vikram. |
+Arun is the son of Amit. | Arun is the son of Vikram. | Leela is the spouse of Deepak.
+
+Problem 9: Coded — 7 persons
+Clues:
+
+1. Rishi is the parent of Anika.
+2. Anika is the father of Amit.
+3. Ritu is the daughter of Neha.
+4. Tara is the wife of Arun.
+5. Arun is the son of Neha.
+6. Arun is the husband of Tara.
+7. Neha is the wife of Rishi.
+8. Amit is the son of Anika.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a grandparent of Anika?
+ - How is Arun related to Neha?
+ - How is Arun related to Neha?
+
+Solution (key relations):
+
+Neha is the spouse of Rishi. | Neha is the father of Arun. | Neha is the mother of Ritu. | Neha is the mother
+of Anika. | Rishi is the spouse of Neha. | Rishi is the father of Arun. | Rishi is the mother of Ritu. | Rishi
+is the mother of Anika. | Arun is the son of Neha. | Arun is the son of Rishi. | Arun is the spouse of Tara. |
+Ritu is the daughter of Neha. | Ritu is the daughter of Rishi. | Anika is the daughter of Neha. | Anika is the
+daughter of Rishi. | Anika is the father of Amit. | Tara is the spouse of Arun. | Amit is the son of Anika.
+
+Problem 10: Narrative — 8 persons
+Clues:
+
+1. Deepak is the parent of Nikhil.
+2. Shreya is the daughter of Arun.
+3. Ritu is the daughter of Deepak.
+4. Deepak is the parent of Tara.
+5. Rishi is the husband of Geeta.
+6. Rishi is the father of Deepak.
+7. Rishi is the parent of Deepak.
+8. Arun is the son of Geeta.
+9. Rishi is the grandfather of Shreya.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the mother of Nikhil?
+ - Who is the father of Tara?
+ - Who is the father of Shreya?
+
+Solution (key relations):
+
+Rishi is the spouse of Geeta. | Rishi is the father of Arun. | Rishi is the father of Deepak. | Geeta is the
+spouse of Rishi. | Geeta is the father of Arun. | Geeta is the father of Deepak. | Arun is the son of Rishi. |
+Arun is the son of Geeta. | Arun is the mother of Shreya. | Deepak is the son of Rishi. | Deepak is the son of
+Geeta. | Deepak is the father of Nikhil. | Deepak is the mother of Ritu. | Deepak is the mother of Tara. |
+Nikhil is the son of Deepak. | Ritu is the daughter of Deepak. | Tara is the daughter of Deepak. | Shreya is
+the daughter of Arun.
+
+Problem 11: Mixed — 9 persons
+Clues:
+
+1. Suresh is the parent of Rekha.
+2. Kavya is the parent of Suresh.
+3. Suresh is the husband of Anika.
+4. Yash is the husband of Sameer.
+5. Sameer is the son of Manish.
+6. Sameer is the husband of Yash.
+7. Anika is the wife of Suresh.
+8. Kavya is the wife of Manish.
+9. Manish is the husband of Kavya.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a grandparent of Sameer?
+ - Who is the mother of Harsh?
+ - Who is the father of Rekha?
+
+Solution (key relations):
+
+Manish is the spouse of Kavya. | Manish is the father of Suresh. | Manish is the father of Rohan. | Manish is
+the father of Sameer. | Kavya is the spouse of Manish. | Kavya is the father of Suresh. | Kavya is the father
+of Rohan. | Kavya is the father of Sameer. | Suresh is the son of Manish. | Suresh is the son of Kavya. |
+Suresh is the spouse of Anika. | Suresh is the mother of Rekha. | Rohan is the son of Manish. | Rohan is the
+son of Kavya. | Rohan is the spouse of Harsh. | Sameer is the son of Manish. | Sameer is the son of Kavya. |
+Sameer is the spouse of Yash. | Anika is the spouse of Suresh. | Harsh is the spouse of Rohan. | Yash is the
+spouse of Sameer. | Rekha is the daughter of Suresh.
+
+Problem 12: Narrative — 12 persons
+Clues:
+
+1. Diya is the wife of Manish.
+2. Diya is the father of Amit.
+3. Anika is the parent of Deepak.
+4. Kriti is the parent of Shreya.
+5. Aditya is the son of Amit.
+6. Karan is the son of Anika.
+7. Diya is the parent of Anika.
+8. Kriti is the parent of Meera.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the spouse of Karan?
+ - Who is the father of Vijay?
+ - Who is the spouse of Karan?
+
+Solution (key relations):
+
+Diya is the spouse of Manish. | Diya is the mother of Kriti. | Diya is the father of Amit. | Diya is the
+mother of Anika. | Manish is the spouse of Diya. | Manish is the mother of Kriti. | Manish is the father of
+Amit. | Manish is the mother of Anika. | Kriti is the daughter of Diya. | Kriti is the daughter of Manish. |
+Kriti is the mother of Meera. | Kriti is the mother of Leela. | Kriti is the mother of Shreya. | Amit is the
+son of Diya. | Amit is the son of Manish. | Amit is the father of Aditya. | Anika is the daughter of Diya. |
+Anika is the daughter of Manish. | Anika is the father of Deepak. | Anika is the father of Vijay. | Anika is
+the father of Karan. | Meera is the daughter of Kriti. | Deepak is the son of Anika. | Vijay is the son of
+Anika. | Leela is the daughter of Kriti. | Shreya is the daughter of Kriti. | Karan is the son of Anika. |
+Aditya is the son of Amit.
+
+Problem 13: Mixed — 9 persons
+Clues:
+
+1. Kabir is the husband of Leela.
+2. Harsh is the husband of Asha.
+3. Priya is the daughter of Leela.
+4. Leela is the parent of Kavya.
+5. Asha is the daughter of Leela.
+6. Asha is the wife of Harsh.
+7. Leela is the wife of Kabir.
+
+Sample Questions (answers in Solutions section):
+
+ - How is Rohan related to Priya?
+ - Who is the spouse of Kabir?
+ - Who is the spouse of Harsh?
+
+Solution (key relations):
+
+Kabir is the spouse of Leela. | Kabir is the mother of Priya. | Kabir is the mother of Kavya. | Kabir is the
+mother of Asha. | Leela is the spouse of Kabir. | Leela is the mother of Priya. | Leela is the mother of
+Kavya. | Leela is the mother of Asha. | Priya is the daughter of Kabir. | Priya is the daughter of Leela. |
+Priya is the spouse of Maya. | Kavya is the daughter of Kabir. | Kavya is the daughter of Leela. | Kavya is
+the spouse of Manish. | Kavya is the father of Rohan. | Asha is the daughter of Kabir. | Asha is the daughter
+of Leela. | Asha is the spouse of Harsh. | Maya is the spouse of Priya. | Manish is the spouse of Kavya. |
+Harsh is the spouse of Asha. | Rohan is the son of Kavya.
+
+Problem 14: Coded — 9 persons
+Clues:
+
+1. Priya is the daughter of Tara.
+2. Priya is the wife of Ria.
+3. Priya is the mother of Pooja.
+4. Tara is the father of Harsh.
+5. Pooja is the daughter of Priya.
+6. Rohan is the son of Tara.
+7. Rohan is the husband of Nisha.
+8. Harsh is the son of Vijay.
+9. Harsh is the husband of Yash.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a grandparent of Rohan?
+ - Who is the father of Ria?
+ - Who is the spouse of Nisha?
+
+Solution (key relations):
+
+Tara is the spouse of Vijay. | Tara is the mother of Priya. | Tara is the father of Harsh. | Tara is the
+father of Rohan. | Vijay is the spouse of Tara. | Vijay is the mother of Priya. | Vijay is the father of
+Harsh. | Vijay is the father of Rohan. | Priya is the daughter of Tara. | Priya is the daughter of Vijay. |
+
+Priya is the spouse of Ria. | Priya is the mother of Pooja. | Harsh is the son of Tara. | Harsh is the son of
+Vijay. | Harsh is the spouse of Yash. | Rohan is the son of Tara. | Rohan is the son of Vijay. | Rohan is the
+spouse of Nisha. | Ria is the spouse of Priya. | Yash is the spouse of Harsh. | Nisha is the spouse of Rohan.
+| Pooja is the daughter of Priya.
+
+Problem 15: Mixed — 7 persons
+Clues:
+
+1. Ritu is the father of Vikram.
+2. Leela is the wife of Ritu.
+3. Leela is the father of Aditya.
+4. Manish is the son of Vikram.
+5. Vikram is the parent of Pooja.
+6. Ritu is the parent of Aditya.
+7. Aditya is the husband of Rajat.
+8. Leela is the parent of Vikram.
+9. Leela is the grandmother of Manish.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a grandparent of Vikram?
+ - Who is a grandparent of Leela?
+ - Who is the spouse of Vikram?
+
+Solution (key relations):
+
+Leela is the spouse of Ritu. | Leela is the father of Aditya. | Leela is the father of Vikram. | Ritu is the
+spouse of Leela. | Ritu is the father of Aditya. | Ritu is the father of Vikram. | Aditya is the son of Leela.
+| Aditya is the son of Ritu. | Aditya is the spouse of Rajat. | Vikram is the son of Leela. | Vikram is the
+son of Ritu. | Vikram is the father of Manish. | Vikram is the mother of Pooja. | Rajat is the spouse of
+Aditya. | Manish is the son of Vikram. | Pooja is the daughter of Vikram.
+
+Problem 16: Narrative — 6 persons
+Clues:
+
+1. Priya is the parent of Neha.
+2. Kriti is the wife of Priya.
+3. Kriti is the mother of Neha.
+4. Priya is the parent of Sameer.
+5. Arun is the son of Priya.
+6. Priya is the wife of Kriti.
+
+Sample Questions (answers in Solutions section):
+
+ - How is Priya related to Sameer?
+ - Who is a sibling of Priya?
+ - How is Arun related to Meera?
+
+Solution (key relations):
+
+Kriti is the spouse of Priya. | Kriti is the mother of Neha. | Kriti is the father of Sameer. | Kriti is the
+father of Arun. | Priya is the spouse of Kriti. | Priya is the mother of Neha. | Priya is the father of
+Sameer. | Priya is the father of Arun. | Neha is the daughter of Kriti. | Neha is the daughter of Priya. |
+Neha is the spouse of Meera. | Sameer is the son of Kriti. | Sameer is the son of Priya. | Arun is the son of
+Kriti. | Arun is the son of Priya. | Meera is the spouse of Neha.
+
+Problem 17: Mixed — 10 persons
+Clues:
+
+1. Aditya is the husband of Siddharth.
+2. Manish is the son of Kavya.
+3. Rekha is the wife of Karan.
+4. Arun is the parent of Tara.
+5. Arun is the husband of Kavya.
+6. Siddharth is the son of Kavya.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the father of Prateek?
+ - Who is the father of Siddharth?
+ - How is Kavya related to Rekha?
+
+Solution (key relations):
+
+Arun is the spouse of Kavya. | Arun is the father of Karan. | Arun is the father of Siddharth. | Arun is the
+mother of Tara. | Arun is the father of Manish. | Kavya is the spouse of Arun. | Kavya is the father of Karan.
+| Kavya is the father of Siddharth. | Kavya is the mother of Tara. | Kavya is the father of Manish. | Karan is
+the son of Arun. | Karan is the son of Kavya. | Karan is the spouse of Rekha. | Siddharth is the son of Arun.
+| Siddharth is the son of Kavya. | Siddharth is the spouse of Aditya. | Siddharth is the father of Sameer. |
+Siddharth is the father of Prateek. | Tara is the daughter of Arun. | Tara is the daughter of Kavya. | Manish
+is the son of Arun. | Manish is the son of Kavya. | Rekha is the spouse of Karan. | Aditya is the spouse of
+
+Siddharth. | Sameer is the son of Siddharth. | Prateek is the son of Siddharth.
+
+Problem 18: Narrative — 8 persons
+Clues:
+
+1. Geeta is the wife of Asha.
+2. Vijay is the husband of Maya.
+3. Vijay is the mother of Asha.
+4. Nisha is the daughter of Rohan.
+5. Maya is the wife of Vijay.
+6. Maya is the father of Rohan.
+7. Meera is the daughter of Rohan.
+8. Asha is the daughter of Vijay.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the father of Rohan?
+ - Who is a grandparent of Nisha?
+ - Who is the mother of Nisha?
+
+Solution (key relations):
+
+Maya is the spouse of Vijay. | Maya is the mother of Asha. | Maya is the father of Rohan. | Vijay is the
+spouse of Maya. | Vijay is the mother of Asha. | Vijay is the father of Rohan. | Asha is the daughter of Maya.
+| Asha is the daughter of Vijay. | Asha is the spouse of Geeta. | Asha is the mother of Anita. | Rohan is the
+son of Maya. | Rohan is the son of Vijay. | Rohan is the mother of Meera. | Rohan is the mother of Nisha. |
+Geeta is the spouse of Asha. | Meera is the daughter of Rohan. | Nisha is the daughter of Rohan. | Anita is
+the daughter of Asha.
+
+Problem 19: Coded — 8 persons
+Clues:
+
+1. Ria is the daughter of Leela.
+2. Amit is the son of Neha.
+3. Neha is the daughter of Diya.
+4. Leela is the wife of Diya.
+5. Leela is the mother of Ria.
+6. Diya is the wife of Leela.
+7. Ritu is the daughter of Harsh.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a sibling of Neha?
+ - How is Maya related to Leela?
+ - Who is a sibling of Neha?
+
+Solution (key relations):
+
+Diya is the spouse of Leela. | Diya is the mother of Ria. | Diya is the father of Harsh. | Diya is the mother
+of Neha. | Leela is the spouse of Diya. | Leela is the mother of Ria. | Leela is the father of Harsh. | Leela
+is the mother of Neha. | Ria is the daughter of Diya. | Ria is the daughter of Leela. | Ria is the mother of
+Maya. | Harsh is the son of Diya. | Harsh is the son of Leela. | Harsh is the mother of Ritu. | Neha is the
+daughter of Diya. | Neha is the daughter of Leela. | Neha is the father of Amit. | Maya is the daughter of
+Ria. | Amit is the son of Neha. | Ritu is the daughter of Harsh.
+
+Problem 20: Mixed — 10 persons
+Clues:
+
+1. Meera is the daughter of Manish.
+2. Karan is the son of Suresh.
+3. Karan is the husband of Rishi.
+4. Vikram is the husband of Manish.
+5. Suresh is the father of Karan.
+6. Manish is the parent of Harsh.
+7. Karan is the parent of Leela.
+8. Suresh is the parent of Manish.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the father of Rishi?
+ - Who is a grandparent of Maya?
+ - Who is the father of Meera?
+
+Solution (key relations):
+
+Aditya is the spouse of Suresh. | Aditya is the father of Karan. | Aditya is the father of Manish. | Suresh is
+the spouse of Aditya. | Suresh is the father of Karan. | Suresh is the father of Manish. | Karan is the son of
+Aditya. | Karan is the son of Suresh. | Karan is the spouse of Rishi. | Karan is the mother of Leela. | Manish
+is the son of Aditya. | Manish is the son of Suresh. | Manish is the spouse of Vikram. | Manish is the mother
+of Maya. | Manish is the mother of Meera. | Manish is the father of Harsh. | Rishi is the spouse of Karan. |
+Vikram is the spouse of Manish. | Maya is the daughter of Manish. | Meera is the daughter of Manish. | Leela
+
+is the daughter of Karan. | Harsh is the son of Manish.
+
+Problem 21: Narrative — 11 persons
+Clues:
+
+1. Anika is the mother of Shreya.
+2. Anika is the parent of Yash.
+3. Yash is the mother of Kriti.
+4. Prateek is the son of Pooja.
+5. Kriti is the daughter of Yash.
+6. Neha is the wife of Rishi.
+7. Rishi is the parent of Nisha.
+8. Anika is the parent of Shreya.
+9. Shreya is the wife of Siddharth.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the mother of Nisha?
+ - Who is a grandparent of Kriti?
+ - Who is the spouse of Leela?
+
+Solution (key relations):
+
+Anika is the spouse of Pooja. | Anika is the mother of Shreya. | Anika is the father of Rishi. | Anika is the
+father of Yash. | Anika is the father of Prateek. | Pooja is the spouse of Anika. | Pooja is the mother of
+Shreya. | Pooja is the father of Rishi. | Pooja is the father of Yash. | Pooja is the father of Prateek. |
+Shreya is the daughter of Anika. | Shreya is the daughter of Pooja. | Shreya is the spouse of Siddharth. |
+Shreya is the mother of Leela. | Rishi is the son of Anika. | Rishi is the son of Pooja. | Rishi is the spouse
+of Neha. | Rishi is the mother of Nisha. | Yash is the son of Anika. | Yash is the son of Pooja. | Yash is the
+mother of Kriti. | Prateek is the son of Anika. | Prateek is the son of Pooja. | Siddharth is the spouse of
+Shreya. | Neha is the spouse of Rishi. | Nisha is the daughter of Rishi. | Kriti is the daughter of Yash. |
+Leela is the daughter of Shreya.
+
+Problem 22: Mixed — 7 persons
+Clues:
+
+1. Nikhil is the son of Pooja.
+2. Nikhil is the husband of Rahul.
+3. Maya is the daughter of Meera.
+4. Pooja is the wife of Meera.
+5. Rahul is the husband of Nikhil.
+6. Anika is the daughter of Meera.
+7. Meera is the wife of Pooja.
+8. Meera is the father of Nikhil.
+9. Nisha is the daughter of Pooja.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the mother of Rahul?
+ - Who is a grandparent of Pooja?
+ - Who is the father of Nikhil?
+
+Solution (key relations):
+
+Pooja is the spouse of Meera. | Pooja is the mother of Anika. | Pooja is the father of Nikhil. | Pooja is the
+mother of Maya. | Pooja is the mother of Nisha. | Meera is the spouse of Pooja. | Meera is the mother of
+Anika. | Meera is the father of Nikhil. | Meera is the mother of Maya. | Meera is the mother of Nisha. | Anika
+is the daughter of Pooja. | Anika is the daughter of Meera. | Nikhil is the son of Pooja. | Nikhil is the son
+of Meera. | Nikhil is the spouse of Rahul. | Maya is the daughter of Pooja. | Maya is the daughter of Meera. |
+Nisha is the daughter of Pooja. | Nisha is the daughter of Meera. | Rahul is the spouse of Nikhil.
+
+Problem 23: Coded — 10 persons
+Clues:
+
+1. Kabir is the parent of Diya.
+2. Diya is the wife of Harsh.
+3. Diya is the father of Deepak.
+4. Kabir is the husband of Aditya.
+5. Arun is the parent of Anika.
+6. Deepak is the son of Diya.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the spouse of Diya?
+ - Who is the spouse of Sonal?
+ - Who is a grandparent of Harsh?
+
+Solution (key relations):
+
+Kabir is the spouse of Aditya. | Kabir is the mother of Diya. | Kabir is the father of Arun. | Aditya is the
+spouse of Kabir. | Aditya is the mother of Diya. | Aditya is the father of Arun. | Diya is the daughter of
+Kabir. | Diya is the daughter of Aditya. | Diya is the spouse of Harsh. | Diya is the father of Sameer. | Diya
+is the father of Deepak. | Diya is the mother of Rekha. | Arun is the son of Kabir. | Arun is the son of
+Aditya. | Arun is the mother of Anika. | Arun is the mother of Sonal. | Harsh is the spouse of Diya. | Sameer
+is the son of Diya. | Deepak is the son of Diya. | Anika is the daughter of Arun. | Rekha is the daughter of
+Diya. | Sonal is the daughter of Arun.
+
+Problem 24: Mixed — 6 persons
+Clues:
+
+1. Rohan is the husband of Kavya.
+2. Rohan is the mother of Asha.
+3. Kavya is the mother of Asha.
+4. Asha is the daughter of Rohan.
+5. Rahul is the son of Kavya.
+6. Rahul is the husband of Kabir.
+7. Deepak is the husband of Asha.
+8. Kabir is the husband of Rahul.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a grandparent of Rahul?
+ - Who is a grandparent of Kabir?
+ - Who is the spouse of Kabir?
+
+Solution (key relations):
+
+Rohan is the spouse of Kavya. | Rohan is the father of Rahul. | Rohan is the mother of Asha. | Kavya is the
+spouse of Rohan. | Kavya is the father of Rahul. | Kavya is the mother of Asha. | Rahul is the son of Rohan. |
+Rahul is the son of Kavya. | Rahul is the spouse of Kabir. | Asha is the daughter of Rohan. | Asha is the
+daughter of Kavya. | Asha is the spouse of Deepak. | Kabir is the spouse of Rahul. | Deepak is the spouse of
+Asha.
+
+Problem 25: Mixed — 6 persons
+Clues:
+
+1. Leela is the daughter of Diya.
+2. Arun is the husband of Kavya.
+3. Kavya is the daughter of Shreya.
+4. Diya is the parent of Karan.
+5. Diya is the wife of Shreya.
+6. Shreya is the wife of Diya.
+7. In the code, '#' means is spouse of.
+8. Using this code: Arun#Karan.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a sibling of Diya?
+ - Who is the father of Shreya?
+ - Who is a grandparent of Shreya?
+
+Solution (key relations):
+
+Diya is the spouse of Shreya. | Diya is the mother of Kavya. | Diya is the mother of Leela. | Diya is the
+father of Karan. | Shreya is the spouse of Diya. | Shreya is the mother of Kavya. | Shreya is the mother of
+Leela. | Shreya is the father of Karan. | Kavya is the daughter of Diya. | Kavya is the daughter of Shreya. |
+Kavya is the spouse of Arun. | Leela is the daughter of Diya. | Leela is the daughter of Shreya. | Karan is
+the son of Diya. | Karan is the son of Shreya. | Arun is the spouse of Kavya.
+
+Problem 26: Mixed — 12 persons
+Clues:
+
+1. Anita is the daughter of Aditya.
+2. Priya is the daughter of Aditya.
+3. Prateek is the son of Aditya.
+4. Siddharth is the son of Vijay.
+5. Tara is the parent of Vijay.
+6. Vijay is the father of Siddharth.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the spouse of Arun?
+ - Who is the father of Anita?
+ - Who is a sibling of Prateek?
+
+Solution (key relations):
+
+Neha is the spouse of Tara. | Neha is the father of Aditya. | Neha is the father of Vijay. | Neha is the
+father of Arun. | Tara is the spouse of Neha. | Tara is the father of Aditya. | Tara is the father of Vijay. |
+Tara is the father of Arun. | Aditya is the son of Neha. | Aditya is the son of Tara. | Aditya is the spouse
+of Deepak. | Aditya is the father of Rajat. | Aditya is the father of Prateek. | Aditya is the mother of
+Anita. | Aditya is the mother of Priya. | Vijay is the son of Neha. | Vijay is the son of Tara. | Vijay is the
+father of Siddharth. | Arun is the son of Neha. | Arun is the son of Tara. | Arun is the mother of Ria. |
+Deepak is the spouse of Aditya. | Ria is the daughter of Arun. | Rajat is the son of Aditya. | Siddharth is
+the son of Vijay. | Prateek is the son of Aditya. | Anita is the daughter of Aditya. | Priya is the daughter
+of Aditya.
+
+Problem 27: Narrative — 8 persons
+Clues:
+
+1. Asha is the daughter of Anika.
+2. Yash is the son of Anika.
+3. Rahul is the husband of Diya.
+4. Diya is the daughter of Siddharth.
+5. Siddharth is the mother of Asha.
+6. Anika is the wife of Siddharth.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the spouse of Ritu?
+ - Who is the mother of Siddharth?
+ - Who is a grandparent of Diya?
+
+Solution (key relations):
+
+Anika is the spouse of Siddharth. | Anika is the father of Vijay. | Anika is the mother of Diya. | Anika is
+the father of Yash. | Anika is the mother of Asha. | Siddharth is the spouse of Anika. | Siddharth is the
+father of Vijay. | Siddharth is the mother of Diya. | Siddharth is the father of Yash. | Siddharth is the
+mother of Asha. | Vijay is the son of Anika. | Vijay is the son of Siddharth. | Vijay is the spouse of Ritu. |
+Diya is the daughter of Anika. | Diya is the daughter of Siddharth. | Diya is the spouse of Rahul. | Yash is
+the son of Anika. | Yash is the son of Siddharth. | Asha is the daughter of Anika. | Asha is the daughter of
+Siddharth. | Ritu is the spouse of Vijay. | Rahul is the spouse of Diya.
+
+Problem 28: Mixed — 6 persons
+Clues:
+
+1. Shreya is the daughter of Harsh.
+2. Vijay is the son of Harsh.
+3. Geeta is the wife of Vijay.
+4. Rishi is the husband of Harsh.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the father of Geeta?
+ - Who is a grandparent of Rishi?
+ - Who is the father of Vijay?
+
+Solution (key relations):
+
+Rishi is the spouse of Harsh. | Rishi is the father of Vijay. | Rishi is the mother of Shreya. | Harsh is the
+spouse of Rishi. | Harsh is the father of Vijay. | Harsh is the mother of Shreya. | Vijay is the son of Rishi.
+| Vijay is the son of Harsh. | Vijay is the spouse of Geeta. | Shreya is the daughter of Rishi. | Shreya is
+the daughter of Harsh. | Shreya is the spouse of Yash. | Geeta is the spouse of Vijay. | Yash is the spouse of
+Shreya.
+
+Problem 29: Narrative — 8 persons
+Clues:
+
+1. Prateek is the husband of Kabir.
+2. Sameer is the parent of Kriti.
+3. Kabir is the parent of Leela.
+4. Leela is the wife of Diya.
+5. Prateek is the parent of Sameer.
+6. Sameer is the mother of Kriti.
+7. Rekha is the daughter of Prateek.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the mother of Ritu?
+ - Who is the spouse of Kabir?
+ - Who is the father of Kriti?
+
+Solution (key relations):
+
+Kabir is the spouse of Prateek. | Kabir is the mother of Leela. | Kabir is the father of Sameer. | Kabir is
+the mother of Ritu. | Kabir is the mother of Rekha. | Prateek is the spouse of Kabir. | Prateek is the mother
+of Leela. | Prateek is the father of Sameer. | Prateek is the mother of Ritu. | Prateek is the mother of
+
+Rekha. | Leela is the daughter of Kabir. | Leela is the daughter of Prateek. | Leela is the spouse of Diya. |
+Sameer is the son of Kabir. | Sameer is the son of Prateek. | Sameer is the mother of Kriti. | Ritu is the
+daughter of Kabir. | Ritu is the daughter of Prateek. | Rekha is the daughter of Kabir. | Rekha is the
+daughter of Prateek. | Diya is the spouse of Leela. | Kriti is the daughter of Sameer.
+
+Problem 30: Narrative — 11 persons
+Clues:
+
+1. Kavya is the daughter of Neha.
+2. Anita is the daughter of Kavya.
+3. Vikram is the husband of Priya.
+4. Neha is the parent of Sameer.
+5. Anika is the daughter of Kavya.
+6. Vijay is the son of Priya.
+7. Priya is the daughter of Neha.
+8. Priya is the wife of Vikram.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the spouse of Kavya?
+ - How is Kavya related to Vijay?
+ - Who is the father of Sameer?
+
+Solution (key relations):
+
+Rekha is the spouse of Neha. | Rekha is the father of Sameer. | Rekha is the mother of Kavya. | Rekha is the
+mother of Priya. | Neha is the spouse of Rekha. | Neha is the father of Sameer. | Neha is the mother of Kavya.
+| Neha is the mother of Priya. | Sameer is the son of Rekha. | Sameer is the son of Neha. | Kavya is the
+daughter of Rekha. | Kavya is the daughter of Neha. | Kavya is the mother of Kriti. | Kavya is the mother of
+Anita. | Kavya is the mother of Anika. | Priya is the daughter of Rekha. | Priya is the daughter of Neha. |
+Priya is the spouse of Vikram. | Priya is the father of Nikhil. | Priya is the father of Vijay. | Vikram is
+the spouse of Priya. | Nikhil is the son of Priya. | Kriti is the daughter of Kavya. | Vijay is the son of
+Priya. | Anita is the daughter of Kavya. | Anika is the daughter of Kavya.
+
+Problem 31: Narrative — 11 persons
+Clues:
+
+1. Aditya is the son of Ria.
+2. Ria is the parent of Geeta.
+3. Geeta is the wife of Anika.
+4. Geeta is the father of Sameer.
+5. Vikram is the son of Leela.
+6. Vikram is the father of Yash.
+7. Nikhil is the son of Ria.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the mother of Yash?
+ - Who is the father of Anika?
+ - Who is the mother of Nikhil?
+
+Solution (key relations):
+
+Ria is the spouse of Leela. | Ria is the father of Aditya. | Ria is the mother of Geeta. | Ria is the father
+of Vikram. | Ria is the father of Nikhil. | Leela is the spouse of Ria. | Leela is the father of Aditya. |
+Leela is the mother of Geeta. | Leela is the father of Vikram. | Leela is the father of Nikhil. | Aditya is
+the son of Ria. | Aditya is the son of Leela. | Geeta is the daughter of Ria. | Geeta is the daughter of
+Leela. | Geeta is the spouse of Anika. | Geeta is the father of Sameer. | Vikram is the son of Ria. | Vikram
+is the son of Leela. | Vikram is the spouse of Amit. | Vikram is the father of Yash. | Nikhil is the son of
+Ria. | Nikhil is the son of Leela. | Nikhil is the mother of Pooja. | Anika is the spouse of Geeta. | Amit is
+the spouse of Vikram. | Yash is the son of Vikram. | Sameer is the son of Geeta. | Pooja is the daughter of
+Nikhil.
+
+Problem 32: Mixed — 8 persons
+Clues:
+
+1. Deepak is the husband of Karan.
+2. Suresh is the husband of Kabir.
+3. Suresh is the father of Karan.
+4. Karan is the son of Suresh.
+5. Karan is the parent of Shreya.
+6. Karan is the parent of Neha.
+7. Sonal is the daughter of Kabir.
+8. Sonal is the wife of Meera.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the spouse of Sonal?
+
+ - Who is the mother of Sonal?
+ - Who is the mother of Sonal?
+
+Solution (key relations):
+
+Kabir is the spouse of Suresh. | Kabir is the mother of Sonal. | Kabir is the father of Karan. | Suresh is the
+spouse of Kabir. | Suresh is the mother of Sonal. | Suresh is the father of Karan. | Sonal is the daughter of
+Kabir. | Sonal is the daughter of Suresh. | Sonal is the spouse of Meera. | Karan is the son of Kabir. | Karan
+is the son of Suresh. | Karan is the spouse of Deepak. | Karan is the mother of Neha. | Karan is the mother of
+Shreya. | Meera is the spouse of Sonal. | Deepak is the spouse of Karan. | Neha is the daughter of Karan. |
+Shreya is the daughter of Karan.
+
+Problem 33: Mixed — 12 persons
+Clues:
+
+1. Manish is the son of Karan.
+2. Maya is the daughter of Pooja.
+3. Aditya is the son of Karan.
+4. Geeta is the daughter of Pooja.
+5. Pooja is the parent of Rohan.
+6. Pooja is the daughter of Yash.
+7. Pooja is the mother of Maya.
+8. Yash is the husband of Shreya.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the spouse of Geeta?
+ - Who is the mother of Karan?
+ - Who is a sibling of Aditya?
+
+Solution (key relations):
+
+Shreya is the spouse of Yash. | Shreya is the mother of Pooja. | Shreya is the father of Karan. | Yash is the
+spouse of Shreya. | Yash is the mother of Pooja. | Yash is the father of Karan. | Pooja is the daughter of
+Shreya. | Pooja is the daughter of Yash. | Pooja is the mother of Diya. | Pooja is the mother of Geeta. |
+Pooja is the mother of Maya. | Pooja is the mother of Neha. | Pooja is the father of Rohan. | Karan is the son
+of Shreya. | Karan is the son of Yash. | Karan is the father of Aditya. | Karan is the father of Manish. |
+Karan is the mother of Sonal. | Diya is the daughter of Pooja. | Geeta is the daughter of Pooja. | Maya is the
+daughter of Pooja. | Aditya is the son of Karan. | Neha is the daughter of Pooja. | Manish is the son of
+Karan. | Sonal is the daughter of Karan. | Rohan is the son of Pooja.
+
+Problem 34: Coded — 8 persons
+Clues:
+
+1. Aditya is the husband of Ritu.
+2. Rishi is the parent of Priya.
+3. Ritu is the daughter of Rishi.
+4. Ritu is the wife of Aditya.
+5. Shreya is the daughter of Priya.
+6. Priya is the parent of Neha.
+7. Rishi is the mother of Ritu.
+
+Sample Questions (answers in Solutions section):
+
+ - How is Kriti related to Shreya?
+ - Who is the spouse of Aditya?
+ - Who is the spouse of Anika?
+
+Solution (key relations):
+
+Kriti is the spouse of Rishi. | Kriti is the mother of Priya. | Kriti is the mother of Ritu. | Rishi is the
+spouse of Kriti. | Rishi is the mother of Priya. | Rishi is the mother of Ritu. | Priya is the daughter of
+Kriti. | Priya is the daughter of Rishi. | Priya is the mother of Shreya. | Priya is the mother of Neha. |
+Priya is the mother of Anika. | Ritu is the daughter of Kriti. | Ritu is the daughter of Rishi. | Ritu is the
+spouse of Aditya. | Aditya is the spouse of Ritu. | Shreya is the daughter of Priya. | Neha is the daughter of
+Priya. | Anika is the daughter of Priya.
+
+Problem 35: Mixed — 6 persons
+Clues:
+
+1. Rahul is the son of Sonal.
+2. Sonal is the parent of Anita.
+3. Geeta is the daughter of Leela.
+4. Sonal is the wife of Leela.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the mother of Anita?
+
+ - Who is the mother of Ritu?
+ - Who is the spouse of Anita?
+
+Solution (key relations):
+
+Leela is the spouse of Sonal. | Leela is the mother of Anita. | Leela is the mother of Geeta. | Leela is the
+father of Rahul. | Sonal is the spouse of Leela. | Sonal is the mother of Anita. | Sonal is the mother of
+Geeta. | Sonal is the father of Rahul. | Anita is the daughter of Leela. | Anita is the daughter of Sonal. |
+Anita is the spouse of Ritu. | Geeta is the daughter of Leela. | Geeta is the daughter of Sonal. | Rahul is
+the son of Leela. | Rahul is the son of Sonal. | Ritu is the spouse of Anita.
+
+Problem 36: Mixed — 8 persons
+Clues:
+
+1. Sameer is the parent of Rahul.
+2. Sameer is the parent of Shreya.
+3. Kabir is the son of Anita.
+4. Sonal is the father of Kabir.
+5. Anita is the parent of Sameer.
+6. Kabir is the parent of Yash.
+7. Ritu is the wife of Sameer.
+8. Sonal is the grandmother of Rahul.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a grandparent of Rahul?
+ - Who is the father of Rahul?
+ - How is Ritu related to Shreya?
+
+Solution (key relations):
+
+Sonal is the spouse of Anita. | Sonal is the father of Sameer. | Sonal is the father of Kabir. | Anita is the
+spouse of Sonal. | Anita is the father of Sameer. | Anita is the father of Kabir. | Sameer is the son of
+Sonal. | Sameer is the son of Anita. | Sameer is the spouse of Ritu. | Sameer is the father of Rahul. | Sameer
+is the mother of Shreya. | Kabir is the son of Sonal. | Kabir is the son of Anita. | Kabir is the father of
+Yash. | Ritu is the spouse of Sameer. | Rahul is the son of Sameer. | Yash is the son of Kabir. | Shreya is
+the daughter of Sameer.
+
+Problem 37: Mixed — 9 persons
+Clues:
+
+1. Asha is the daughter of Neha.
+2. Asha is the wife of Tara.
+3. Karan is the son of Kabir.
+4. Tara is the wife of Asha.
+5. Neha is the parent of Harsh.
+6. Harsh is the husband of Vijay.
+7. Shreya is the father of Harsh.
+8. Rishi is the husband of Kabir.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a sibling of Harsh?
+ - Who is the father of Asha?
+ - Who is a grandparent of Vijay?
+
+Solution (key relations):
+
+Shreya is the spouse of Neha. | Shreya is the mother of Asha. | Shreya is the father of Kabir. | Shreya is the
+father of Harsh. | Neha is the spouse of Shreya. | Neha is the mother of Asha. | Neha is the father of Kabir.
+| Neha is the father of Harsh. | Asha is the daughter of Shreya. | Asha is the daughter of Neha. | Asha is the
+spouse of Tara. | Kabir is the son of Shreya. | Kabir is the son of Neha. | Kabir is the spouse of Rishi. |
+Kabir is the father of Karan. | Harsh is the son of Shreya. | Harsh is the son of Neha. | Harsh is the spouse
+of Vijay. | Tara is the spouse of Asha. | Rishi is the spouse of Kabir. | Vijay is the spouse of Harsh. |
+Karan is the son of Kabir.
+
+Problem 38: Narrative — 10 persons
+Clues:
+
+1. Prateek is the son of Asha.
+2. Asha is the parent of Meera.
+3. Asha is the parent of Shreya.
+4. Amit is the husband of Nisha.
+5. Siddharth is the mother of Asha.
+6. Asha is the daughter of Geeta.
+7. Asha is the mother of Meera.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the mother of Prateek?
+ - Who is a sibling of Aditya?
+ - Who is a sibling of Nisha?
+
+Solution (key relations):
+
+Siddharth is the spouse of Geeta. | Siddharth is the mother of Asha. | Siddharth is the mother of Nisha. |
+Geeta is the spouse of Siddharth. | Geeta is the mother of Asha. | Geeta is the mother of Nisha. | Asha is the
+daughter of Siddharth. | Asha is the daughter of Geeta. | Asha is the mother of Meera. | Asha is the father of
+Prateek. | Asha is the mother of Rekha. | Asha is the mother of Shreya. | Asha is the father of Aditya. |
+Nisha is the daughter of Siddharth. | Nisha is the daughter of Geeta. | Nisha is the spouse of Amit. | Amit is
+the spouse of Nisha. | Meera is the daughter of Asha. | Prateek is the son of Asha. | Rekha is the daughter of
+Asha. | Shreya is the daughter of Asha. | Aditya is the son of Asha.
+
+Problem 39: Mixed — 8 persons
+Clues:
+
+1. Harsh is the parent of Aditya.
+2. Nikhil is the husband of Harsh.
+3. Nikhil is the mother of Maya.
+4. Harsh is the father of Rohan.
+5. Maya is the daughter of Nikhil.
+6. Maya is the wife of Arun.
+7. Rohan is the son of Harsh.
+8. Rohan is the husband of Siddharth.
+9. Rohan is the father of Vikram.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a sibling of Siddharth?
+ - Who is a sibling of Harsh?
+ - Who is the mother of Harsh?
+
+Solution (key relations):
+
+Nikhil is the spouse of Harsh. | Nikhil is the father of Rohan. | Nikhil is the mother of Maya. | Nikhil is
+the father of Aditya. | Harsh is the spouse of Nikhil. | Harsh is the father of Rohan. | Harsh is the mother
+of Maya. | Harsh is the father of Aditya. | Rohan is the son of Nikhil. | Rohan is the son of Harsh. | Rohan
+is the spouse of Siddharth. | Rohan is the father of Vikram. | Maya is the daughter of Nikhil. | Maya is the
+daughter of Harsh. | Maya is the spouse of Arun. | Aditya is the son of Nikhil. | Aditya is the son of Harsh.
+| Siddharth is the spouse of Rohan. | Arun is the spouse of Maya. | Vikram is the son of Rohan.
+
+Problem 40: Mixed — 10 persons
+Clues:
+
+1. Rekha is the wife of Aditya.
+2. Harsh is the son of Vijay.
+3. Vijay is the son of Suresh.
+4. Rohan is the husband of Suresh.
+5. Shreya is the daughter of Rohan.
+6. Suresh is the husband of Rohan.
+7. Ritu is the daughter of Suresh.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a sibling of Suresh?
+ - Who is a grandparent of Aditya?
+ - Who is the father of Harsh?
+
+Solution (key relations):
+
+Rohan is the spouse of Suresh. | Rohan is the father of Vijay. | Rohan is the mother of Shreya. | Rohan is the
+father of Aditya. | Rohan is the mother of Ritu. | Suresh is the spouse of Rohan. | Suresh is the father of
+Vijay. | Suresh is the mother of Shreya. | Suresh is the father of Aditya. | Suresh is the mother of Ritu. |
+Vijay is the son of Rohan. | Vijay is the son of Suresh. | Vijay is the father of Harsh. | Shreya is the
+daughter of Rohan. | Shreya is the daughter of Suresh. | Aditya is the son of Rohan. | Aditya is the son of
+Suresh. | Aditya is the spouse of Rekha. | Ritu is the daughter of Rohan. | Ritu is the daughter of Suresh. |
+Ritu is the spouse of Neha. | Ritu is the mother of Tara. | Rekha is the spouse of Aditya. | Neha is the
+spouse of Ritu. | Harsh is the son of Vijay. | Tara is the daughter of Ritu.
+
+Problem 41: Mixed — 11 persons
+Clues:
+
+1. Kabir is the son of Amit.
+2. Kabir is the father of Manish.
+3. Diya is the wife of Kriti.
+4. Kabir is the parent of Manish.
+5. Amit is the parent of Kriti.
+6. Kriti is the wife of Diya.
+7. Rekha is the parent of Tara.
+8. Karan is the son of Tara.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a sibling of Rekha?
+ - Who is the father of Manish?
+ - Who is a sibling of Manish?
+
+Solution (key relations):
+
+Rekha is the spouse of Amit. | Rekha is the mother of Kriti. | Rekha is the father of Kabir. | Rekha is the
+mother of Tara. | Rekha is the father of Aditya. | Amit is the spouse of Rekha. | Amit is the mother of Kriti.
+| Amit is the father of Kabir. | Amit is the mother of Tara. | Amit is the father of Aditya. | Kriti is the
+daughter of Rekha. | Kriti is the daughter of Amit. | Kriti is the spouse of Diya. | Kabir is the son of
+Rekha. | Kabir is the son of Amit. | Kabir is the spouse of Anika. | Kabir is the father of Manish. | Tara is
+the daughter of Rekha. | Tara is the daughter of Amit. | Tara is the father of Karan. | Aditya is the son of
+Rekha. | Aditya is the son of Amit. | Aditya is the mother of Anita. | Diya is the spouse of Kriti. | Anika is
+the spouse of Kabir. | Anita is the daughter of Aditya. | Karan is the son of Tara. | Manish is the son of
+Kabir.
+
+Problem 42: Mixed — 7 persons
+Clues:
+
+1. Karan is the son of Geeta.
+2. Karan is the husband of Rishi.
+3. Rishi is the husband of Karan.
+4. Kabir is the son of Vijay.
+5. Anita is the daughter of Vijay.
+6. Geeta is the wife of Vijay.
+7. Geeta is the father of Kabir.
+8. Vijay is the parent of Kavya.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a grandparent of Karan?
+ - How is Vijay related to Geeta?
+ - Who is a sibling of Kavya?
+
+Solution (key relations):
+
+Vijay is the spouse of Geeta. | Vijay is the father of Karan. | Vijay is the mother of Anita. | Vijay is the
+father of Kabir. | Vijay is the mother of Kavya. | Geeta is the spouse of Vijay. | Geeta is the father of
+Karan. | Geeta is the mother of Anita. | Geeta is the father of Kabir. | Geeta is the mother of Kavya. | Karan
+is the son of Vijay. | Karan is the son of Geeta. | Karan is the spouse of Rishi. | Anita is the daughter of
+Vijay. | Anita is the daughter of Geeta. | Kabir is the son of Vijay. | Kabir is the son of Geeta. | Kavya is
+the daughter of Vijay. | Kavya is the daughter of Geeta. | Rishi is the spouse of Karan.
+
+Problem 43: Mixed — 11 persons
+Clues:
+
+1. Aditya is the son of Siddharth.
+2. Rajat is the husband of Manish.
+3. Rajat is the father of Sameer.
+4. Geeta is the daughter of Sameer.
+5. Harsh is the parent of Rahul.
+6. Harsh is the parent of Nikhil.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a sibling of Geeta?
+ - How is Manish related to Nikhil?
+ - Who is the father of Harsh?
+
+Solution (key relations):
+
+Rajat is the spouse of Manish. | Rajat is the father of Harsh. | Rajat is the father of Sameer. | Rajat is the
+father of Siddharth. | Manish is the spouse of Rajat. | Manish is the father of Harsh. | Manish is the father
+of Sameer. | Manish is the father of Siddharth. | Harsh is the son of Rajat. | Harsh is the son of Manish. |
+Harsh is the father of Nikhil. | Harsh is the mother of Kavya. | Harsh is the father of Rahul. | Sameer is the
+son of Rajat. | Sameer is the son of Manish. | Sameer is the spouse of Rishi. | Sameer is the mother of Geeta.
+| Siddharth is the son of Rajat. | Siddharth is the son of Manish. | Siddharth is the father of Aditya. |
+
+Rishi is the spouse of Sameer. | Aditya is the son of Siddharth. | Nikhil is the son of Harsh. | Geeta is the
+daughter of Sameer. | Kavya is the daughter of Harsh. | Rahul is the son of Harsh.
+
+Problem 44: Coded — 9 persons
+Clues:
+
+1. Ria is the daughter of Suresh.
+2. Meera is the wife of Rahul.
+3. Meera is the father of Harsh.
+4. Nikhil is the husband of Harsh.
+5. Harsh is the son of Meera.
+6. Harsh is the husband of Nikhil.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the father of Leela?
+ - Who is a sibling of Meera?
+ - How is Meera related to Rahul?
+
+Solution (key relations):
+
+Meera is the spouse of Rahul. | Meera is the father of Harsh. | Meera is the father of Suresh. | Rahul is the
+spouse of Meera. | Rahul is the father of Harsh. | Rahul is the father of Suresh. | Harsh is the son of Meera.
+| Harsh is the son of Rahul. | Harsh is the spouse of Nikhil. | Harsh is the mother of Kavya. | Harsh is the
+mother of Leela. | Suresh is the son of Meera. | Suresh is the son of Rahul. | Suresh is the spouse of Rohan.
+| Suresh is the mother of Ria. | Nikhil is the spouse of Harsh. | Rohan is the spouse of Suresh. | Ria is the
+daughter of Suresh. | Kavya is the daughter of Harsh. | Leela is the daughter of Harsh.
+
+Problem 45: Coded — 8 persons
+Clues:
+
+1. Anita is the wife of Sonal.
+2. Arun is the husband of Nisha.
+3. Arun is the mother of Sonal.
+4. Sameer is the son of Sonal.
+5. Sonal is the daughter of Arun.
+6. Nisha is the wife of Arun.
+7. Suresh is the son of Nisha.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the spouse of Nisha?
+ - Who is the father of Anita?
+ - Who is the mother of Arun?
+
+Solution (key relations):
+
+Arun is the spouse of Nisha. | Arun is the father of Suresh. | Arun is the mother of Sonal. | Nisha is the
+spouse of Arun. | Nisha is the father of Suresh. | Nisha is the mother of Sonal. | Suresh is the son of Arun.
+| Suresh is the son of Nisha. | Suresh is the spouse of Yash. | Suresh is the father of Vijay. | Sonal is the
+daughter of Arun. | Sonal is the daughter of Nisha. | Sonal is the spouse of Anita. | Sonal is the father of
+Sameer. | Yash is the spouse of Suresh. | Anita is the spouse of Sonal. | Vijay is the son of Suresh. | Sameer
+is the son of Sonal.
+
+Problem 46: Coded — 7 persons
+Clues:
+
+1. Amit is the parent of Siddharth.
+2. Kriti is the wife of Kavya.
+3. Kavya is the father of Amit.
+4. Kavya is the parent of Amit.
+5. Amit is the father of Siddharth.
+6. Kavya is the parent of Leela.
+7. Meera is the daughter of Leela.
+8. Harsh is the son of Leela.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the mother of Kavya?
+ - How is Siddharth related to Leela?
+ - Who is a sibling of Amit?
+
+Solution (key relations):
+
+Kriti is the spouse of Kavya. | Kriti is the father of Amit. | Kriti is the mother of Leela. | Kavya is the
+spouse of Kriti. | Kavya is the father of Amit. | Kavya is the mother of Leela. | Amit is the son of Kriti. |
+Amit is the son of Kavya. | Amit is the father of Siddharth. | Leela is the daughter of Kriti. | Leela is the
+daughter of Kavya. | Leela is the father of Harsh. | Leela is the mother of Meera. | Harsh is the son of
+Leela. | Meera is the daughter of Leela. | Siddharth is the son of Amit.
+
+Problem 47: Narrative — 12 persons
+Clues:
+
+1. Anika is the daughter of Shreya.
+2. Deepak is the husband of Ritu.
+3. Neha is the daughter of Shreya.
+4. Amit is the parent of Shreya.
+5. Aditya is the son of Shreya.
+6. Ritu is the daughter of Prateek.
+
+Sample Questions (answers in Solutions section):
+
+ - How is Sonal related to Manish?
+ - Who is a grandparent of Ritu?
+ - Who is a grandparent of Sonal?
+
+Solution (key relations):
+
+Amit is the spouse of Prateek. | Amit is the mother of Ritu. | Amit is the mother of Shreya. | Prateek is the
+spouse of Amit. | Prateek is the mother of Ritu. | Prateek is the mother of Shreya. | Ritu is the daughter of
+Amit. | Ritu is the daughter of Prateek. | Ritu is the spouse of Deepak. | Ritu is the father of Manish. |
+Shreya is the daughter of Amit. | Shreya is the daughter of Prateek. | Shreya is the spouse of Kabir. | Shreya
+is the mother of Anika. | Shreya is the mother of Neha. | Shreya is the father of Aditya. | Shreya is the
+mother of Sonal. | Shreya is the mother of Ria. | Deepak is the spouse of Ritu. | Kabir is the spouse of
+Shreya. | Anika is the daughter of Shreya. | Neha is the daughter of Shreya. | Manish is the son of Ritu. |
+Aditya is the son of Shreya. | Sonal is the daughter of Shreya. | Ria is the daughter of Shreya.
+
+Problem 48: Mixed — 6 persons
+Clues:
+
+1. Deepak is the parent of Prateek.
+2. Deepak is the parent of Ria.
+3. Ria is the wife of Neha.
+4. Neha is the wife of Ria.
+5. Rekha is the parent of Harsh.
+6. Rekha is the wife of Deepak.
+7. In the code, '+' means is parent of.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the spouse of Ria?
+ - How is Neha related to Rekha?
+ - Who is the spouse of Prateek?
+
+Solution (key relations):
+
+Deepak is the spouse of Rekha. | Deepak is the mother of Ria. | Deepak is the father of Harsh. | Deepak is the
+father of Prateek. | Rekha is the spouse of Deepak. | Rekha is the mother of Ria. | Rekha is the father of
+Harsh. | Rekha is the father of Prateek. | Ria is the daughter of Deepak. | Ria is the daughter of Rekha. |
+Ria is the spouse of Neha. | Harsh is the son of Deepak. | Harsh is the son of Rekha. | Prateek is the son of
+Deepak. | Prateek is the son of Rekha. | Neha is the spouse of Ria.
+
+Problem 49: Coded — 8 persons
+Clues:
+
+1. Harsh is the son of Tara.
+2. Tara is the wife of Kabir.
+3. Tara is the parent of Prateek.
+4. Kabir is the parent of Meera.
+5. Rajat is the son of Kabir.
+6. Rajat is the husband of Vikram.
+
+Sample Questions (answers in Solutions section):
+
+ - How is Vikram related to Prateek?
+ - Who is the father of Meera?
+ - Who is the mother of Rajat?
+
+Solution (key relations):
+
+Tara is the spouse of Kabir. | Tara is the father of Prateek. | Tara is the father of Rajat. | Tara is the
+father of Harsh. | Tara is the mother of Meera. | Kabir is the spouse of Tara. | Kabir is the father of
+Prateek. | Kabir is the father of Rajat. | Kabir is the father of Harsh. | Kabir is the mother of Meera. |
+Prateek is the son of Tara. | Prateek is the son of Kabir. | Rajat is the son of Tara. | Rajat is the son of
+Kabir. | Rajat is the spouse of Vikram. | Harsh is the son of Tara. | Harsh is the son of Kabir. | Meera is
+the daughter of Tara. | Meera is the daughter of Kabir. | Meera is the spouse of Geeta. | Vikram is the spouse
+of Rajat. | Geeta is the spouse of Meera.
+
+Problem 50: Narrative — 8 persons
+Clues:
+
+1. Ria is the daughter of Rahul.
+2. Ria is the wife of Manish.
+3. Arun is the son of Pooja.
+4. Arun is the husband of Vikram.
+5. Manish is the husband of Ria.
+6. Pooja is the wife of Rahul.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a sibling of Vikram?
+ - Who is a sibling of Vikram?
+ - Who is a sibling of Rohan?
+
+Solution (key relations):
+
+Rahul is the spouse of Pooja. | Rahul is the mother of Ria. | Rahul is the father of Prateek. | Rahul is the
+father of Arun. | Pooja is the spouse of Rahul. | Pooja is the mother of Ria. | Pooja is the father of
+Prateek. | Pooja is the father of Arun. | Ria is the daughter of Rahul. | Ria is the daughter of Pooja. | Ria
+is the spouse of Manish. | Prateek is the son of Rahul. | Prateek is the son of Pooja. | Prateek is the father
+of Rohan. | Arun is the son of Rahul. | Arun is the son of Pooja. | Arun is the spouse of Vikram. | Manish is
+the spouse of Ria. | Vikram is the spouse of Arun. | Rohan is the son of Prateek.
+
+Problem 51: Narrative — 7 persons
+Clues:
+
+1. Sonal is the parent of Meera.
+2. Rahul is the son of Sonal.
+3. Karan is the son of Kabir.
+4. Vijay is the husband of Rishi.
+5. Vijay is the father of Kabir.
+6. Kabir is the son of Rishi.
+7. Sonal is the daughter of Vijay.
+8. Rishi is the father of Kabir.
+9. Vijay is the grandfather of Karan.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a grandparent of Rishi?
+ - Who is the mother of Sonal?
+ - Who is the mother of Rishi?
+
+Solution (key relations):
+
+Vijay is the spouse of Rishi. | Vijay is the father of Kabir. | Vijay is the mother of Sonal. | Rishi is the
+spouse of Vijay. | Rishi is the father of Kabir. | Rishi is the mother of Sonal. | Kabir is the son of Vijay.
+| Kabir is the son of Rishi. | Kabir is the father of Karan. | Sonal is the daughter of Vijay. | Sonal is the
+daughter of Rishi. | Sonal is the mother of Meera. | Sonal is the father of Rahul. | Meera is the daughter of
+Sonal. | Rahul is the son of Sonal. | Karan is the son of Kabir.
+
+Problem 52: Coded — 10 persons
+Clues:
+
+1. Rahul is the father of Kabir.
+2. Leela is the daughter of Kriti.
+3. Amit is the husband of Rahul.
+4. Amit is the father of Kabir.
+5. Vikram is the son of Kabir.
+6. Kabir is the son of Rahul.
+7. Kriti is the daughter of Rahul.
+8. Kriti is the mother of Shreya.
+
+Sample Questions (answers in Solutions section):
+
+ - How is Leela related to Kabir?
+ - Who is a grandparent of Leela?
+ - How is Meera related to Shreya?
+
+Solution (key relations):
+
+Amit is the spouse of Rahul. | Amit is the father of Kabir. | Amit is the mother of Kriti. | Rahul is the
+spouse of Amit. | Rahul is the father of Kabir. | Rahul is the mother of Kriti. | Kabir is the son of Amit. |
+Kabir is the son of Rahul. | Kabir is the spouse of Diya. | Kabir is the father of Vikram. | Kabir is the
+mother of Meera. | Kriti is the daughter of Amit. | Kriti is the daughter of Rahul. | Kriti is the spouse of
+Siddharth. | Kriti is the mother of Shreya. | Kriti is the mother of Leela. | Diya is the spouse of Kabir. |
+Siddharth is the spouse of Kriti. | Shreya is the daughter of Kriti. | Leela is the daughter of Kriti. |
+Vikram is the son of Kabir. | Meera is the daughter of Kabir.
+
+Problem 53: Mixed — 6 persons
+Clues:
+
+1. Kavya is the wife of Geeta.
+2. Kavya is the mother of Nisha.
+3. Yash is the son of Geeta.
+4. Anika is the daughter of Geeta.
+5. Anika is the wife of Vikram.
+6. Vikram is the husband of Anika.
+7. Nisha is the daughter of Geeta.
+8. Geeta is the wife of Kavya.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a sibling of Vikram?
+ - Who is a grandparent of Geeta?
+ - Who is a grandparent of Yash?
+
+Solution (key relations):
+
+Kavya is the spouse of Geeta. | Kavya is the mother of Anika. | Kavya is the mother of Nisha. | Kavya is the
+father of Yash. | Geeta is the spouse of Kavya. | Geeta is the mother of Anika. | Geeta is the mother of
+Nisha. | Geeta is the father of Yash. | Anika is the daughter of Kavya. | Anika is the daughter of Geeta. |
+Anika is the spouse of Vikram. | Nisha is the daughter of Kavya. | Nisha is the daughter of Geeta. | Yash is
+the son of Kavya. | Yash is the son of Geeta. | Vikram is the spouse of Anika.
+
+Problem 54: Coded — 8 persons
+Clues:
+
+1. Rekha is the parent of Rohan.
+2. Nikhil is the husband of Shreya.
+3. Manish is the parent of Shreya.
+4. Shreya is the wife of Nikhil.
+5. Shreya is the father of Vijay.
+6. Harsh is the husband of Rekha.
+7. Geeta is the mother of Shreya.
+8. Shreya is the parent of Vijay.
+9. Geeta is the parent of Rekha.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the spouse of Harsh?
+ - Who is the spouse of Rohan?
+ - How is Nikhil related to Harsh?
+
+Solution (key relations):
+
+Geeta is the spouse of Manish. | Geeta is the mother of Shreya. | Geeta is the mother of Rekha. | Manish is
+the spouse of Geeta. | Manish is the mother of Shreya. | Manish is the mother of Rekha. | Shreya is the
+daughter of Geeta. | Shreya is the daughter of Manish. | Shreya is the spouse of Nikhil. | Shreya is the
+father of Vijay. | Rekha is the daughter of Geeta. | Rekha is the daughter of Manish. | Rekha is the spouse of
+Harsh. | Rekha is the father of Rohan. | Nikhil is the spouse of Shreya. | Harsh is the spouse of Rekha. |
+Vijay is the son of Shreya. | Rohan is the son of Rekha.
+
+Problem 55: Mixed — 9 persons
+Clues:
+
+1. Siddharth is the son of Meera.
+2. Kavya is the wife of Meera.
+3. Rohan is the parent of Amit.
+4. Rekha is the daughter of Siddharth.
+5. Kriti is the daughter of Rohan.
+6. Rohan is the son of Meera.
+7. Rohan is the father of Amit.
+8. Rajat is the husband of Siddharth.
+
+Sample Questions (answers in Solutions section):
+
+ - How is Kavya related to Meera?
+ - Who is the father of Asha?
+ - Who is a grandparent of Meera?
+
+Solution (key relations):
+
+Kavya is the spouse of Meera. | Kavya is the father of Siddharth. | Kavya is the father of Rohan. | Meera is
+the spouse of Kavya. | Meera is the father of Siddharth. | Meera is the father of Rohan. | Siddharth is the
+son of Kavya. | Siddharth is the son of Meera. | Siddharth is the spouse of Rajat. | Siddharth is the mother
+of Rekha. | Rohan is the son of Kavya. | Rohan is the son of Meera. | Rohan is the spouse of Asha. | Rohan is
+the father of Amit. | Rohan is the mother of Kriti. | Rajat is the spouse of Siddharth. | Asha is the spouse
+of Rohan. | Amit is the son of Rohan. | Kriti is the daughter of Rohan. | Rekha is the daughter of Siddharth.
+
+Problem 56: Mixed — 6 persons
+Clues:
+
+1. Meera is the wife of Diya.
+2. Meera is the father of Rajat.
+3. Leela is the daughter of Diya.
+4. Prateek is the son of Meera.
+5. Pooja is the daughter of Rajat.
+6. Diya is the mother of Leela.
+7. Rajat is the son of Diya.
+8. Rajat is the mother of Pooja.
+9. Diya is the grandmother of Pooja.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a sibling of Diya?
+ - Who is a grandparent of Leela?
+ - Who is the spouse of Prateek?
+
+Solution (key relations):
+
+Diya is the spouse of Meera. | Diya is the father of Prateek. | Diya is the mother of Leela. | Diya is the
+father of Rajat. | Meera is the spouse of Diya. | Meera is the father of Prateek. | Meera is the mother of
+Leela. | Meera is the father of Rajat. | Prateek is the son of Diya. | Prateek is the son of Meera. | Leela is
+the daughter of Diya. | Leela is the daughter of Meera. | Rajat is the son of Diya. | Rajat is the son of
+Meera. | Rajat is the mother of Pooja. | Pooja is the daughter of Rajat.
+
+Problem 57: Coded — 6 persons
+Clues:
+
+1. Yash is the son of Pooja.
+2. Yash is the husband of Siddharth.
+3. Karan is the son of Pooja.
+4. Ritu is the wife of Karan.
+5. Nikhil is the husband of Pooja.
+6. Nikhil is the father of Yash.
+7. Pooja is the wife of Nikhil.
+8. Pooja is the father of Karan.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the spouse of Ritu?
+ - Who is the father of Nikhil?
+ - Who is a sibling of Karan?
+
+Solution (key relations):
+
+Pooja is the spouse of Nikhil. | Pooja is the father of Karan. | Pooja is the father of Yash. | Nikhil is the
+spouse of Pooja. | Nikhil is the father of Karan. | Nikhil is the father of Yash. | Karan is the son of Pooja.
+| Karan is the son of Nikhil. | Karan is the spouse of Ritu. | Yash is the son of Pooja. | Yash is the son of
+Nikhil. | Yash is the spouse of Siddharth. | Ritu is the spouse of Karan. | Siddharth is the spouse of Yash.
+
+Problem 58: Mixed — 11 persons
+Clues:
+
+1. Ritu is the daughter of Karan.
+2. Nisha is the wife of Rishi.
+3. Nisha is the father of Nikhil.
+4. Priya is the daughter of Karan.
+5. Rishi is the husband of Nisha.
+6. Rishi is the father of Nikhil.
+7. Siddharth is the parent of Rahul.
+8. Shreya is the daughter of Siddharth.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a sibling of Siddharth?
+ - Who is the mother of Shreya?
+ - Who is the spouse of Pooja?
+
+Solution (key relations):
+
+Nisha is the spouse of Rishi. | Nisha is the father of Siddharth. | Nisha is the father of Karan. | Nisha is
+the father of Nikhil. | Rishi is the spouse of Nisha. | Rishi is the father of Siddharth. | Rishi is the
+father of Karan. | Rishi is the father of Nikhil. | Siddharth is the son of Nisha. | Siddharth is the son of
+Rishi. | Siddharth is the father of Rahul. | Siddharth is the mother of Anita. | Siddharth is the mother of
+Shreya. | Karan is the son of Nisha. | Karan is the son of Rishi. | Karan is the mother of Priya. | Karan is
+the mother of Ritu. | Nikhil is the son of Nisha. | Nikhil is the son of Rishi. | Nikhil is the spouse of
+Pooja. | Pooja is the spouse of Nikhil. | Priya is the daughter of Karan. | Rahul is the son of Siddharth. |
+Ritu is the daughter of Karan. | Anita is the daughter of Siddharth. | Shreya is the daughter of Siddharth.
+
+Problem 59: Narrative — 6 persons
+Clues:
+
+1. Sonal is the daughter of Nisha.
+2. Nisha is the parent of Ritu.
+3. Deepak is the parent of Diya.
+4. Diya is the wife of Kriti.
+5. Deepak is the husband of Nisha.
+6. Nisha is the wife of Deepak.
+7. Nisha is the mother of Diya.
+8. In the code, '#' means is spouse of.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the spouse of Sonal?
+ - Who is a sibling of Nisha?
+ - How is Kriti related to Ritu?
+
+Solution (key relations):
+
+Nisha is the spouse of Deepak. | Nisha is the mother of Diya. | Nisha is the mother of Ritu. | Nisha is the
+mother of Sonal. | Deepak is the spouse of Nisha. | Deepak is the mother of Diya. | Deepak is the mother of
+Ritu. | Deepak is the mother of Sonal. | Diya is the daughter of Nisha. | Diya is the daughter of Deepak. |
+Diya is the spouse of Kriti. | Ritu is the daughter of Nisha. | Ritu is the daughter of Deepak. | Sonal is the
+daughter of Nisha. | Sonal is the daughter of Deepak. | Kriti is the spouse of Diya.
+
+Problem 60: Coded — 9 persons
+Clues:
+
+1. Asha is the wife of Rahul.
+2. Rahul is the parent of Prateek.
+3. Maya is the daughter of Rahul.
+4. Rekha is the wife of Meera.
+5. Anita is the daughter of Meera.
+6. Nisha is the wife of Anita.
+7. Rahul is the son of Rekha.
+8. Rahul is the husband of Asha.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the spouse of Geeta?
+ - Who is a sibling of Maya?
+ - Who is a sibling of Maya?
+
+Solution (key relations):
+
+Rekha is the spouse of Meera. | Rekha is the mother of Anita. | Rekha is the father of Rahul. | Meera is the
+spouse of Rekha. | Meera is the mother of Anita. | Meera is the father of Rahul. | Anita is the daughter of
+Rekha. | Anita is the daughter of Meera. | Anita is the spouse of Nisha. | Rahul is the son of Rekha. | Rahul
+is the son of Meera. | Rahul is the spouse of Asha. | Rahul is the mother of Geeta. | Rahul is the mother of
+Maya. | Rahul is the father of Prateek. | Nisha is the spouse of Anita. | Asha is the spouse of Rahul. | Geeta
+is the daughter of Rahul. | Maya is the daughter of Rahul. | Prateek is the son of Rahul.
+
+Problem 61: Narrative — 9 persons
+Clues:
+
+1. Anika is the parent of Shreya.
+2. Suresh is the son of Anika.
+3. Siddharth is the son of Aditya.
+4. Aditya is the son of Ritu.
+5. Aditya is the father of Rajat.
+6. Karan is the husband of Ritu.
+7. Karan is the father of Aditya.
+8. Ritu is the wife of Karan.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the father of Karan?
+ - Who is the father of Rajat?
+ - Who is a sibling of Anika?
+
+Solution (key relations):
+
+Ritu is the spouse of Karan. | Ritu is the father of Aditya. | Ritu is the mother of Anika. | Karan is the
+spouse of Ritu. | Karan is the father of Aditya. | Karan is the mother of Anika. | Aditya is the son of Ritu.
+| Aditya is the son of Karan. | Aditya is the father of Siddharth. | Aditya is the father of Rajat. | Anika is
+the daughter of Ritu. | Anika is the daughter of Karan. | Anika is the father of Suresh. | Anika is the mother
+of Shreya. | Anika is the mother of Rekha. | Suresh is the son of Anika. | Siddharth is the son of Aditya. |
+Rajat is the son of Aditya. | Shreya is the daughter of Anika. | Rekha is the daughter of Anika.
+
+Problem 62: Mixed — 11 persons
+Clues:
+
+1. Rishi is the son of Diya.
+2. Geeta is the parent of Diya.
+3. Rajat is the son of Tara.
+4. Shreya is the wife of Kavya.
+5. Kavya is the daughter of Deepak.
+6. Kavya is the wife of Shreya.
+7. Deepak is the husband of Geeta.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a grandparent of Diya?
+ - Who is the father of Tara?
+ - How is Kabir related to Manish?
+
+Solution (key relations):
+
+Deepak is the spouse of Geeta. | Deepak is the mother of Tara. | Deepak is the mother of Diya. | Deepak is the
+mother of Kavya. | Deepak is the father of Amit. | Geeta is the spouse of Deepak. | Geeta is the mother of
+Tara. | Geeta is the mother of Diya. | Geeta is the mother of Kavya. | Geeta is the father of Amit. | Tara is
+the daughter of Deepak. | Tara is the daughter of Geeta. | Tara is the spouse of Kabir. | Tara is the father
+of Rajat. | Diya is the daughter of Deepak. | Diya is the daughter of Geeta. | Diya is the father of Rishi. |
+Kavya is the daughter of Deepak. | Kavya is the daughter of Geeta. | Kavya is the spouse of Shreya. | Amit is
+the son of Deepak. | Amit is the son of Geeta. | Amit is the spouse of Manish. | Kabir is the spouse of Tara.
+| Shreya is the spouse of Kavya. | Manish is the spouse of Amit. | Rishi is the son of Diya. | Rajat is the
+son of Tara.
+
+Problem 63: Mixed — 9 persons
+Clues:
+
+1. Rekha is the daughter of Kriti.
+2. Ria is the parent of Meera.
+3. Ria is the wife of Geeta.
+4. Ria is the mother of Meera.
+5. Geeta is the wife of Ria.
+6. Geeta is the mother of Meera.
+7. Meera is the parent of Diya.
+8. Maya is the daughter of Meera.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the spouse of Sonal?
+ - Who is a sibling of Maya?
+ - Who is a grandparent of Diya?
+
+Solution (key relations):
+
+Geeta is the spouse of Ria. | Geeta is the mother of Meera. | Geeta is the mother of Kriti. | Ria is the
+spouse of Geeta. | Ria is the mother of Meera. | Ria is the mother of Kriti. | Meera is the daughter of Geeta.
+| Meera is the daughter of Ria. | Meera is the mother of Diya. | Meera is the mother of Maya. | Kriti is the
+daughter of Geeta. | Kriti is the daughter of Ria. | Kriti is the father of Aditya. | Kriti is the mother of
+Rekha. | Kriti is the mother of Sonal. | Aditya is the son of Kriti. | Diya is the daughter of Meera. | Maya
+is the daughter of Meera. | Rekha is the daughter of Kriti. | Sonal is the daughter of Kriti.
+
+Problem 64: Mixed — 11 persons
+Clues:
+
+1. Deepak is the parent of Rohan.
+2. Rohan is the husband of Karan.
+3. Deepak is the husband of Rajat.
+4. Rajat is the husband of Deepak.
+5. Rohan is the parent of Nikhil.
+6. Ritu is the daughter of Rohan.
+7. Yash is the husband of Asha.
+8. Asha is the daughter of Rajat.
+9. Vikram is the son of Rohan.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a sibling of Rohan?
+ - Who is the father of Yash?
+ - Who is a grandparent of Rohan?
+
+Solution (key relations):
+
+Deepak is the spouse of Rajat. | Deepak is the mother of Asha. | Deepak is the father of Rohan. | Rajat is the
+spouse of Deepak. | Rajat is the mother of Asha. | Rajat is the father of Rohan. | Asha is the daughter of
+Deepak. | Asha is the daughter of Rajat. | Asha is the spouse of Yash. | Rohan is the son of Deepak. | Rohan
+is the son of Rajat. | Rohan is the spouse of Karan. | Rohan is the father of Manish. | Rohan is the father of
+
+Aditya. | Rohan is the father of Vikram. | Rohan is the father of Nikhil. | Rohan is the mother of Ritu. |
+Yash is the spouse of Asha. | Karan is the spouse of Rohan. | Manish is the son of Rohan. | Aditya is the son
+of Rohan. | Vikram is the son of Rohan. | Nikhil is the son of Rohan. | Ritu is the daughter of Rohan.
+
+Problem 65: Mixed — 10 persons
+Clues:
+
+1. Leela is the parent of Arun.
+2. Rajat is the parent of Kavya.
+3. Leela is the parent of Priya.
+4. Deepak is the parent of Rajat.
+5. Rekha is the parent of Leela.
+6. Leela is the wife of Nikhil.
+7. Rajat is the parent of Anita.
+8. Pooja is the daughter of Leela.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a sibling of Deepak?
+ - Who is the father of Deepak?
+ - Who is the mother of Rekha?
+
+Solution (key relations):
+
+Deepak is the spouse of Rekha. | Deepak is the father of Rajat. | Deepak is the mother of Leela. | Rekha is
+the spouse of Deepak. | Rekha is the father of Rajat. | Rekha is the mother of Leela. | Rajat is the son of
+Deepak. | Rajat is the son of Rekha. | Rajat is the mother of Kavya. | Rajat is the mother of Anita. | Leela
+is the daughter of Deepak. | Leela is the daughter of Rekha. | Leela is the spouse of Nikhil. | Leela is the
+father of Arun. | Leela is the mother of Priya. | Leela is the mother of Pooja. | Nikhil is the spouse of
+Leela. | Arun is the son of Leela. | Kavya is the daughter of Rajat. | Priya is the daughter of Leela. | Anita
+is the daughter of Rajat. | Pooja is the daughter of Leela.
+
+Problem 66: Narrative — 9 persons
+Clues:
+
+1. Sonal is the daughter of Rajat.
+2. Nikhil is the son of Harsh.
+3. Nikhil is the husband of Arun.
+4. Nikhil is the mother of Anika.
+5. Siddharth is the parent of Meera.
+6. Ritu is the wife of Rajat.
+7. Arun is the husband of Nikhil.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the mother of Ritu?
+ - Who is the father of Nikhil?
+ - Who is a grandparent of Rajat?
+
+Solution (key relations):
+
+Harsh is the spouse of Siddharth. | Harsh is the mother of Meera. | Harsh is the father of Nikhil. | Harsh is
+the father of Rajat. | Siddharth is the spouse of Harsh. | Siddharth is the mother of Meera. | Siddharth is
+the father of Nikhil. | Siddharth is the father of Rajat. | Meera is the daughter of Harsh. | Meera is the
+daughter of Siddharth. | Nikhil is the son of Harsh. | Nikhil is the son of Siddharth. | Nikhil is the spouse
+of Arun. | Nikhil is the mother of Anika. | Rajat is the son of Harsh. | Rajat is the son of Siddharth. |
+Rajat is the spouse of Ritu. | Rajat is the mother of Sonal. | Arun is the spouse of Nikhil. | Ritu is the
+spouse of Rajat. | Sonal is the daughter of Rajat. | Anika is the daughter of Nikhil.
+
+Problem 67: Coded — 6 persons
+Clues:
+
+1. Suresh is the mother of Kavya.
+2. Pooja is the wife of Kavya.
+3. Geeta is the wife of Ritu.
+4. Rahul is the parent of Ritu.
+5. Ritu is the wife of Geeta.
+6. Kavya is the daughter of Suresh.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the mother of Ritu?
+ - Who is the father of Pooja?
+ - Who is a sibling of Suresh?
+
+Solution (key relations):
+
+Suresh is the spouse of Rahul. | Suresh is the mother of Kavya. | Suresh is the mother of Ritu. | Rahul is the
+spouse of Suresh. | Rahul is the mother of Kavya. | Rahul is the mother of Ritu. | Kavya is the daughter of
+Suresh. | Kavya is the daughter of Rahul. | Kavya is the spouse of Pooja. | Ritu is the daughter of Suresh. |
+Ritu is the daughter of Rahul. | Ritu is the spouse of Geeta. | Pooja is the spouse of Kavya. | Geeta is the
+
+spouse of Ritu.
+
+Problem 68: Narrative — 8 persons
+Clues:
+
+1. Shreya is the daughter of Neha.
+2. Shreya is the wife of Kriti.
+3. Vikram is the son of Maya.
+4. Sameer is the husband of Neha.
+5. Sameer is the parent of Maya.
+6. Maya is the wife of Rohan.
+7. Kriti is the wife of Shreya.
+8. Maya is the parent of Sonal.
+
+Sample Questions (answers in Solutions section):
+
+ - How is Kriti related to Neha?
+ - Who is the mother of Sameer?
+ - Who is a sibling of Rohan?
+
+Solution (key relations):
+
+Neha is the spouse of Sameer. | Neha is the mother of Shreya. | Neha is the mother of Maya. | Sameer is the
+spouse of Neha. | Sameer is the mother of Shreya. | Sameer is the mother of Maya. | Shreya is the daughter of
+Neha. | Shreya is the daughter of Sameer. | Shreya is the spouse of Kriti. | Maya is the daughter of Neha. |
+Maya is the daughter of Sameer. | Maya is the spouse of Rohan. | Maya is the mother of Sonal. | Maya is the
+father of Vikram. | Kriti is the spouse of Shreya. | Rohan is the spouse of Maya. | Sonal is the daughter of
+Maya. | Vikram is the son of Maya.
+
+Problem 69: Narrative — 11 persons
+Clues:
+
+1. Nisha is the daughter of Prateek.
+2. Aditya is the son of Leela.
+3. Suresh is the son of Harsh.
+4. Anika is the wife of Leela.
+5. Prateek is the husband of Nikhil.
+6. Prateek is the father of Harsh.
+7. Nikhil is the parent of Leela.
+8. Karan is the son of Harsh.
+9. Harsh is the son of Nikhil.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a sibling of Karan?
+ - Who is the mother of Aditya?
+ - Who is a grandparent of Suresh?
+
+Solution (key relations):
+
+Nikhil is the spouse of Prateek. | Nikhil is the mother of Leela. | Nikhil is the father of Harsh. | Nikhil is
+the mother of Nisha. | Prateek is the spouse of Nikhil. | Prateek is the mother of Leela. | Prateek is the
+father of Harsh. | Prateek is the mother of Nisha. | Leela is the daughter of Nikhil. | Leela is the daughter
+of Prateek. | Leela is the spouse of Anika. | Leela is the father of Aditya. | Harsh is the son of Nikhil. |
+Harsh is the son of Prateek. | Harsh is the father of Suresh. | Harsh is the mother of Asha. | Harsh is the
+father of Karan. | Nisha is the daughter of Nikhil. | Nisha is the daughter of Prateek. | Nisha is the spouse
+of Rekha. | Anika is the spouse of Leela. | Rekha is the spouse of Nisha. | Suresh is the son of Harsh. |
+Aditya is the son of Leela. | Asha is the daughter of Harsh. | Karan is the son of Harsh.
+
+Problem 70: Narrative — 9 persons
+Clues:
+
+1. Harsh is the son of Ria.
+2. Kavya is the daughter of Ria.
+3. Kriti is the daughter of Yash.
+4. Kriti is the wife of Deepak.
+5. Karan is the parent of Ria.
+6. Ria is the father of Rohan.
+7. Deepak is the husband of Kriti.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the spouse of Kriti?
+ - Who is the mother of Kriti?
+ - Who is a grandparent of Yash?
+
+Solution (key relations):
+
+Karan is the spouse of Yash. | Karan is the mother of Kriti. | Karan is the mother of Ria. | Yash is the
+spouse of Karan. | Yash is the mother of Kriti. | Yash is the mother of Ria. | Kriti is the daughter of Karan.
+| Kriti is the daughter of Yash. | Kriti is the spouse of Deepak. | Ria is the daughter of Karan. | Ria is the
+
+daughter of Yash. | Ria is the spouse of Nikhil. | Ria is the father of Harsh. | Ria is the mother of Kavya. |
+Ria is the father of Rohan. | Deepak is the spouse of Kriti. | Nikhil is the spouse of Ria. | Harsh is the son
+of Ria. | Kavya is the daughter of Ria. | Rohan is the son of Ria.
+
+Problem 71: Mixed — 11 persons
+Clues:
+
+1. Deepak is the husband of Rajat.
+2. Ria is the father of Rohan.
+3. Anika is the daughter of Rajat.
+4. Rajat is the son of Ria.
+5. Siddharth is the son of Rajat.
+6. Shreya is the daughter of Amit.
+7. Rahul is the husband of Ria.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the spouse of Anika?
+ - Who is a grandparent of Amit?
+ - Who is a grandparent of Nikhil?
+
+Solution (key relations):
+
+Ria is the spouse of Rahul. | Ria is the father of Nikhil. | Ria is the father of Rohan. | Ria is the father
+of Rajat. | Ria is the father of Amit. | Rahul is the spouse of Ria. | Rahul is the father of Nikhil. | Rahul
+is the father of Rohan. | Rahul is the father of Rajat. | Rahul is the father of Amit. | Nikhil is the son of
+Ria. | Nikhil is the son of Rahul. | Rohan is the son of Ria. | Rohan is the son of Rahul. | Rajat is the son
+of Ria. | Rajat is the son of Rahul. | Rajat is the spouse of Deepak. | Rajat is the father of Siddharth. |
+Rajat is the mother of Anika. | Amit is the son of Ria. | Amit is the son of Rahul. | Amit is the spouse of
+Manish. | Amit is the mother of Shreya. | Deepak is the spouse of Rajat. | Manish is the spouse of Amit. |
+Shreya is the daughter of Amit. | Siddharth is the son of Rajat. | Anika is the daughter of Rajat.
+
+Problem 72: Coded — 8 persons
+Clues:
+
+1. Manish is the parent of Anika.
+2. Ria is the mother of Kriti.
+3. Kriti is the parent of Vijay.
+4. Manish is the husband of Ria.
+5. Manish is the mother of Kriti.
+6. Kriti is the daughter of Manish.
+7. Kriti is the wife of Anita.
+
+Sample Questions (answers in Solutions section):
+
+ - How is Aditya related to Vijay?
+ - Who is the mother of Kriti?
+ - Who is a grandparent of Prateek?
+
+Solution (key relations):
+
+Manish is the spouse of Ria. | Manish is the mother of Anika. | Manish is the mother of Kriti. | Ria is the
+spouse of Manish. | Ria is the mother of Anika. | Ria is the mother of Kriti. | Anika is the daughter of
+Manish. | Anika is the daughter of Ria. | Anika is the father of Aditya. | Kriti is the daughter of Manish. |
+Kriti is the daughter of Ria. | Kriti is the spouse of Anita. | Kriti is the father of Prateek. | Kriti is the
+father of Vijay. | Anita is the spouse of Kriti. | Prateek is the son of Kriti. | Vijay is the son of Kriti. |
+Aditya is the son of Anika.
+
+Problem 73: Narrative — 8 persons
+Clues:
+
+1. Meera is the daughter of Manish.
+2. Anita is the parent of Pooja.
+3. Pooja is the wife of Rishi.
+4. Manish is the husband of Anita.
+5. Manish is the mother of Diya.
+6. Priya is the daughter of Manish.
+7. Priya is the wife of Sonal.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a grandparent of Rishi?
+ - Who is a sibling of Rishi?
+ - Who is a sibling of Priya?
+
+Solution (key relations):
+
+Anita is the spouse of Manish. | Anita is the mother of Priya. | Anita is the mother of Diya. | Anita is the
+mother of Pooja. | Anita is the mother of Meera. | Manish is the spouse of Anita. | Manish is the mother of
+Priya. | Manish is the mother of Diya. | Manish is the mother of Pooja. | Manish is the mother of Meera. |
+Priya is the daughter of Anita. | Priya is the daughter of Manish. | Priya is the spouse of Sonal. | Diya is
+
+the daughter of Anita. | Diya is the daughter of Manish. | Pooja is the daughter of Anita. | Pooja is the
+daughter of Manish. | Pooja is the spouse of Rishi. | Meera is the daughter of Anita. | Meera is the daughter
+of Manish. | Sonal is the spouse of Priya. | Rishi is the spouse of Pooja.
+
+Problem 74: Narrative — 8 persons
+Clues:
+
+1. Priya is the mother of Pooja.
+2. Anika is the wife of Pooja.
+3. Neha is the wife of Harsh.
+4. Rishi is the parent of Pooja.
+5. Pooja is the wife of Anika.
+6. Rishi is the husband of Priya.
+7. Rishi is the father of Harsh.
+8. Harsh is the son of Priya.
+
+Sample Questions (answers in Solutions section):
+
+ - How is Anika related to Priya?
+ - Who is the father of Neha?
+ - Who is a sibling of Anika?
+
+Solution (key relations):
+
+Rishi is the spouse of Priya. | Rishi is the mother of Pooja. | Rishi is the mother of Nisha. | Rishi is the
+father of Harsh. | Rishi is the father of Manish. | Priya is the spouse of Rishi. | Priya is the mother of
+Pooja. | Priya is the mother of Nisha. | Priya is the father of Harsh. | Priya is the father of Manish. |
+Pooja is the daughter of Rishi. | Pooja is the daughter of Priya. | Pooja is the spouse of Anika. | Nisha is
+the daughter of Rishi. | Nisha is the daughter of Priya. | Harsh is the son of Rishi. | Harsh is the son of
+Priya. | Harsh is the spouse of Neha. | Manish is the son of Rishi. | Manish is the son of Priya. | Anika is
+the spouse of Pooja. | Neha is the spouse of Harsh.
+
+Problem 75: Mixed — 9 persons
+Clues:
+
+1. Deepak is the son of Shreya.
+2. Rishi is the husband of Shreya.
+3. Kriti is the wife of Vikram.
+4. Deepak is the parent of Anita.
+5. Anika is the daughter of Deepak.
+6. Vikram is the son of Shreya.
+7. Vikram is the husband of Kriti.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a grandparent of Neha?
+ - Who is a sibling of Anita?
+ - Who is a sibling of Kriti?
+
+Solution (key relations):
+
+Shreya is the spouse of Rishi. | Shreya is the father of Deepak. | Shreya is the father of Vikram. | Rishi is
+the spouse of Shreya. | Rishi is the father of Deepak. | Rishi is the father of Vikram. | Deepak is the son of
+Shreya. | Deepak is the son of Rishi. | Deepak is the spouse of Neha. | Deepak is the mother of Anika. |
+Deepak is the mother of Tara. | Deepak is the mother of Anita. | Vikram is the son of Shreya. | Vikram is the
+son of Rishi. | Vikram is the spouse of Kriti. | Neha is the spouse of Deepak. | Kriti is the spouse of
+Vikram. | Anika is the daughter of Deepak. | Tara is the daughter of Deepak. | Anita is the daughter of
+Deepak.
+
+Problem 76: Coded — 8 persons
+Clues:
+
+1. Harsh is the husband of Geeta.
+2. Suresh is the parent of Rajat.
+3. Ria is the wife of Shreya.
+4. Suresh is the husband of Rishi.
+5. Suresh is the mother of Geeta.
+6. Rishi is the husband of Suresh.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a sibling of Ria?
+ - Who is a sibling of Aditya?
+ - Who is the spouse of Ria?
+
+Solution (key relations):
+
+Rishi is the spouse of Suresh. | Rishi is the mother of Geeta. | Rishi is the father of Rajat. | Rishi is the
+mother of Shreya. | Rishi is the father of Aditya. | Suresh is the spouse of Rishi. | Suresh is the mother of
+Geeta. | Suresh is the father of Rajat. | Suresh is the mother of Shreya. | Suresh is the father of Aditya. |
+Geeta is the daughter of Rishi. | Geeta is the daughter of Suresh. | Geeta is the spouse of Harsh. | Rajat is
+
+the son of Rishi. | Rajat is the son of Suresh. | Shreya is the daughter of Rishi. | Shreya is the daughter of
+Suresh. | Shreya is the spouse of Ria. | Aditya is the son of Rishi. | Aditya is the son of Suresh. | Harsh is
+the spouse of Geeta. | Ria is the spouse of Shreya.
+
+Problem 77: Narrative — 11 persons
+Clues:
+
+1. Neha is the daughter of Kabir.
+2. Suresh is the parent of Anika.
+3. Kabir is the parent of Rajat.
+4. Rahul is the husband of Geeta.
+5. Sameer is the husband of Yash.
+6. Sameer is the mother of Geeta.
+7. Suresh is the son of Sameer.
+8. Suresh is the mother of Anika.
+9. Kabir is the son of Yash.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a grandparent of Yash?
+ - How is Anika related to Suresh?
+ - Who is the spouse of Rahul?
+
+Solution (key relations):
+
+Sameer is the spouse of Yash. | Sameer is the father of Kabir. | Sameer is the father of Suresh. | Sameer is
+the mother of Geeta. | Yash is the spouse of Sameer. | Yash is the father of Kabir. | Yash is the father of
+Suresh. | Yash is the mother of Geeta. | Kabir is the son of Sameer. | Kabir is the son of Yash. | Kabir is
+the father of Rajat. | Kabir is the mother of Neha. | Kabir is the mother of Nisha. | Suresh is the son of
+Sameer. | Suresh is the son of Yash. | Suresh is the mother of Kavya. | Suresh is the mother of Anika. | Geeta
+is the daughter of Sameer. | Geeta is the daughter of Yash. | Geeta is the spouse of Rahul. | Rahul is the
+spouse of Geeta. | Rajat is the son of Kabir. | Kavya is the daughter of Suresh. | Neha is the daughter of
+Kabir. | Anika is the daughter of Suresh. | Nisha is the daughter of Kabir.
+
+Problem 78: Coded — 9 persons
+Clues:
+
+1. Sonal is the wife of Ria.
+2. Sonal is the mother of Diya.
+3. Ria is the parent of Rohan.
+4. Diya is the parent of Leela.
+5. Priya is the daughter of Rohan.
+6. Rohan is the parent of Yash.
+
+Sample Questions (answers in Solutions section):
+
+ - How is Rohan related to Diya?
+ - Who is a grandparent of Leela?
+ - Who is the spouse of Leela?
+
+Solution (key relations):
+
+Ria is the spouse of Sonal. | Ria is the father of Rohan. | Ria is the mother of Diya. | Sonal is the spouse
+of Ria. | Sonal is the father of Rohan. | Sonal is the mother of Diya. | Rohan is the son of Ria. | Rohan is
+the son of Sonal. | Rohan is the father of Sameer. | Rohan is the mother of Neha. | Rohan is the mother of
+Priya. | Rohan is the father of Yash. | Diya is the daughter of Ria. | Diya is the daughter of Sonal. | Diya
+is the mother of Leela. | Sameer is the son of Rohan. | Neha is the daughter of Rohan. | Priya is the daughter
+of Rohan. | Leela is the daughter of Diya. | Yash is the son of Rohan.
+
+Problem 79: Narrative — 11 persons
+Clues:
+
+1. Amit is the husband of Nikhil.
+2. Arun is the husband of Rohan.
+3. Asha is the parent of Manish.
+4. Nikhil is the son of Rohan.
+5. Nikhil is the husband of Amit.
+6. Vijay is the parent of Karan.
+7. Rohan is the parent of Asha.
+8. Asha is the wife of Ritu.
+9. Asha is the father of Manish.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the mother of Rohan?
+ - Who is the father of Vijay?
+
+ - Who is a sibling of Arun?
+
+Solution (key relations):
+
+Arun is the spouse of Rohan. | Arun is the mother of Asha. | Arun is the father of Vijay. | Arun is the father
+of Nikhil. | Rohan is the spouse of Arun. | Rohan is the mother of Asha. | Rohan is the father of Vijay. |
+Rohan is the father of Nikhil. | Asha is the daughter of Arun. | Asha is the daughter of Rohan. | Asha is the
+spouse of Ritu. | Asha is the father of Manish. | Asha is the mother of Priya. | Vijay is the son of Arun. |
+Vijay is the son of Rohan. | Vijay is the spouse of Suresh. | Vijay is the father of Karan. | Nikhil is the
+son of Arun. | Nikhil is the son of Rohan. | Nikhil is the spouse of Amit. | Ritu is the spouse of Asha. |
+Suresh is the spouse of Vijay. | Amit is the spouse of Nikhil. | Karan is the son of Vijay. | Manish is the
+son of Asha. | Priya is the daughter of Asha.
+
+Problem 80: Narrative — 10 persons
+Clues:
+
+1. Prateek is the parent of Manish.
+2. Harsh is the husband of Leela.
+3. Harsh is the mother of Meera.
+4. Rajat is the son of Meera.
+5. Prateek is the parent of Rekha.
+6. Anita is the wife of Meera.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the spouse of Leela?
+ - Who is the father of Manish?
+ - How is Arun related to Rajat?
+
+Solution (key relations):
+
+Leela is the spouse of Harsh. | Leela is the mother of Meera. | Leela is the father of Prateek. | Harsh is the
+spouse of Leela. | Harsh is the mother of Meera. | Harsh is the father of Prateek. | Meera is the daughter of
+Leela. | Meera is the daughter of Harsh. | Meera is the spouse of Anita. | Meera is the father of Rajat. |
+Meera is the father of Arun. | Prateek is the son of Leela. | Prateek is the son of Harsh. | Prateek is the
+father of Karan. | Prateek is the father of Manish. | Prateek is the mother of Rekha. | Anita is the spouse of
+Meera. | Rajat is the son of Meera. | Karan is the son of Prateek. | Arun is the son of Meera. | Manish is the
+son of Prateek. | Rekha is the daughter of Prateek.
+
+Problem 81: Mixed — 11 persons
+Clues:
+
+1. Aditya is the father of Vijay.
+2. Prateek is the son of Anika.
+3. Rajat is the son of Aditya.
+4. Rajat is the father of Manish.
+5. Meera is the parent of Vijay.
+6. Vijay is the husband of Yash.
+7. Amit is the son of Anika.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the mother of Manish?
+ - Who is the father of Rohan?
+ - Who is the spouse of Rajat?
+
+Solution (key relations):
+
+Aditya is the spouse of Meera. | Aditya is the father of Vijay. | Aditya is the father of Rajat. | Aditya is
+the mother of Anika. | Meera is the spouse of Aditya. | Meera is the father of Vijay. | Meera is the father of
+Rajat. | Meera is the mother of Anika. | Vijay is the son of Aditya. | Vijay is the son of Meera. | Vijay is
+the spouse of Yash. | Rajat is the son of Aditya. | Rajat is the son of Meera. | Rajat is the father of Rohan.
+| Rajat is the father of Manish. | Rajat is the father of Suresh. | Anika is the daughter of Aditya. | Anika
+is the daughter of Meera. | Anika is the father of Amit. | Anika is the father of Prateek. | Yash is the
+spouse of Vijay. | Rohan is the son of Rajat. | Manish is the son of Rajat. | Amit is the son of Anika. |
+Suresh is the son of Rajat. | Prateek is the son of Anika.
+
+Problem 82: Mixed — 10 persons
+Clues:
+
+1. Vijay is the son of Anita.
+2. Kriti is the daughter of Diya.
+3. Rohan is the parent of Anita.
+4. Rohan is the parent of Diya.
+5. Geeta is the daughter of Arun.
+6. Neha is the daughter of Rohan.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the spouse of Vijay?
+
+ - Who is a sibling of Diya?
+ - Who is the mother of Yash?
+
+Solution (key relations):
+
+Arun is the spouse of Rohan. | Arun is the mother of Neha. | Arun is the mother of Geeta. | Arun is the mother
+of Diya. | Arun is the mother of Anita. | Rohan is the spouse of Arun. | Rohan is the mother of Neha. | Rohan
+is the mother of Geeta. | Rohan is the mother of Diya. | Rohan is the mother of Anita. | Neha is the daughter
+of Arun. | Neha is the daughter of Rohan. | Neha is the spouse of Kavya. | Geeta is the daughter of Arun. |
+Geeta is the daughter of Rohan. | Diya is the daughter of Arun. | Diya is the daughter of Rohan. | Diya is the
+spouse of Yash. | Diya is the mother of Kriti. | Anita is the daughter of Arun. | Anita is the daughter of
+Rohan. | Anita is the father of Vijay. | Kavya is the spouse of Neha. | Yash is the spouse of Diya. | Vijay is
+the son of Anita. | Kriti is the daughter of Diya.
+
+Problem 83: Mixed — 12 persons
+Clues:
+
+1. Asha is the wife of Siddharth.
+2. Meera is the daughter of Neha.
+3. Nisha is the daughter of Maya.
+4. Geeta is the daughter of Nisha.
+5. Siddharth is the son of Maya.
+6. Siddharth is the husband of Asha.
+7. Maya is the wife of Prateek.
+
+Sample Questions (answers in Solutions section):
+
+ - How is Asha related to Neha?
+ - Who is the father of Leela?
+ - Who is the father of Nisha?
+
+Solution (key relations):
+
+Maya is the spouse of Prateek. | Maya is the mother of Nisha. | Maya is the father of Siddharth. | Maya is the
+mother of Neha. | Prateek is the spouse of Maya. | Prateek is the mother of Nisha. | Prateek is the father of
+Siddharth. | Prateek is the mother of Neha. | Nisha is the daughter of Maya. | Nisha is the daughter of
+Prateek. | Nisha is the mother of Geeta. | Siddharth is the son of Maya. | Siddharth is the son of Prateek. |
+Siddharth is the spouse of Asha. | Siddharth is the father of Rishi. | Siddharth is the father of Suresh. |
+Siddharth is the mother of Leela. | Neha is the daughter of Maya. | Neha is the daughter of Prateek. | Neha is
+the mother of Meera. | Neha is the father of Vijay. | Asha is the spouse of Siddharth. | Meera is the daughter
+of Neha. | Geeta is the daughter of Nisha. | Vijay is the son of Neha. | Rishi is the son of Siddharth. |
+Suresh is the son of Siddharth. | Leela is the daughter of Siddharth.
+
+Problem 84: Mixed — 9 persons
+Clues:
+
+1. Vikram is the son of Nikhil.
+2. Nikhil is the parent of Amit.
+3. Ria is the wife of Kriti.
+4. Ria is the father of Nikhil.
+5. Ria is the parent of Maya.
+6. Maya is the father of Vijay.
+7. Nikhil is the parent of Neha.
+8. Shreya is the daughter of Nikhil.
+9. Nikhil is the son of Ria.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the spouse of Amit?
+ - Who is a grandparent of Kriti?
+ - Who is a sibling of Shreya?
+
+Solution (key relations):
+
+Ria is the spouse of Kriti. | Ria is the mother of Maya. | Ria is the father of Nikhil. | Kriti is the spouse
+of Ria. | Kriti is the mother of Maya. | Kriti is the father of Nikhil. | Maya is the daughter of Ria. | Maya
+is the daughter of Kriti. | Maya is the father of Vijay. | Nikhil is the son of Ria. | Nikhil is the son of
+Kriti. | Nikhil is the mother of Neha. | Nikhil is the mother of Shreya. | Nikhil is the father of Vikram. |
+Nikhil is the father of Amit. | Neha is the daughter of Nikhil. | Shreya is the daughter of Nikhil. | Vikram
+is the son of Nikhil. | Vijay is the son of Maya. | Amit is the son of Nikhil.
+
+Problem 85: Narrative — 10 persons
+Clues:
+
+1. Vikram is the son of Asha.
+2. Prateek is the parent of Rahul.
+3. Rahul is the husband of Arun.
+4. Prateek is the husband of Leela.
+5. Geeta is the parent of Rishi.
+6. Deepak is the son of Leela.
+7. Shreya is the wife of Asha.
+8. Asha is the daughter of Leela.
+9. Asha is the wife of Shreya.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the spouse of Geeta?
+ - Who is a grandparent of Arun?
+ - Who is the father of Asha?
+
+Solution (key relations):
+
+Prateek is the spouse of Leela. | Prateek is the father of Deepak. | Prateek is the mother of Geeta. | Prateek
+is the mother of Asha. | Prateek is the father of Rahul. | Leela is the spouse of Prateek. | Leela is the
+father of Deepak. | Leela is the mother of Geeta. | Leela is the mother of Asha. | Leela is the father of
+Rahul. | Deepak is the son of Prateek. | Deepak is the son of Leela. | Geeta is the daughter of Prateek. |
+Geeta is the daughter of Leela. | Geeta is the father of Rishi. | Asha is the daughter of Prateek. | Asha is
+the daughter of Leela. | Asha is the spouse of Shreya. | Asha is the father of Vikram. | Rahul is the son of
+Prateek. | Rahul is the son of Leela. | Rahul is the spouse of Arun. | Shreya is the spouse of Asha. | Arun is
+the spouse of Rahul. | Vikram is the son of Asha. | Rishi is the son of Geeta.
+
+Problem 86: Mixed — 12 persons
+Clues:
+
+1. Karan is the son of Ritu.
+2. Suresh is the son of Maya.
+3. Suresh is the husband of Rishi.
+4. Suresh is the father of Vijay.
+5. Suresh is the parent of Amit.
+6. Neha is the daughter of Suresh.
+7. Manish is the son of Maya.
+8. Manish is the father of Sameer.
+9. Rishi is the husband of Suresh.
+
+Sample Questions (answers in Solutions section):
+
+ - How is Maya related to Rishi?
+ - Who is a grandparent of Sameer?
+ - Who is the mother of Amit?
+
+Solution (key relations):
+
+Meera is the spouse of Maya. | Meera is the mother of Ritu. | Meera is the father of Manish. | Meera is the
+father of Suresh. | Maya is the spouse of Meera. | Maya is the mother of Ritu. | Maya is the father of Manish.
+| Maya is the father of Suresh. | Ritu is the daughter of Meera. | Ritu is the daughter of Maya. | Ritu is the
+spouse of Shreya. | Ritu is the father of Karan. | Manish is the son of Meera. | Manish is the son of Maya. |
+Manish is the father of Sameer. | Suresh is the son of Meera. | Suresh is the son of Maya. | Suresh is the
+spouse of Rishi. | Suresh is the father of Vijay. | Suresh is the father of Amit. | Suresh is the mother of
+Neha. | Shreya is the spouse of Ritu. | Rishi is the spouse of Suresh. | Vijay is the son of Suresh. | Sameer
+is the son of Manish. | Amit is the son of Suresh. | Neha is the daughter of Suresh. | Karan is the son of
+Ritu.
+
+Problem 87: Mixed — 7 persons
+Clues:
+
+1. Karan is the husband of Suresh.
+2. Meera is the daughter of Leela.
+3. Leela is the parent of Anita.
+4. Rishi is the parent of Rahul.
+5. Rishi is the father of Rahul.
+6. Leela is the mother of Meera.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the father of Rishi?
+ - Who is the father of Meera?
+ - Who is the mother of Rishi?
+
+Solution (key relations):
+
+Leela is the spouse of Rishi. | Leela is the father of Suresh. | Leela is the mother of Anita. | Leela is the
+mother of Meera. | Leela is the father of Rahul. | Rishi is the spouse of Leela. | Rishi is the father of
+Suresh. | Rishi is the mother of Anita. | Rishi is the mother of Meera. | Rishi is the father of Rahul. |
+Suresh is the son of Leela. | Suresh is the son of Rishi. | Suresh is the spouse of Karan. | Anita is the
+daughter of Leela. | Anita is the daughter of Rishi. | Meera is the daughter of Leela. | Meera is the daughter
+of Rishi. | Rahul is the son of Leela. | Rahul is the son of Rishi. | Karan is the spouse of Suresh.
+
+Problem 88: Narrative — 10 persons
+Clues:
+
+1. Sameer is the husband of Neha.
+2. Vijay is the son of Manish.
+3. Deepak is the parent of Anika.
+4. Maya is the daughter of Manish.
+5. Neha is the parent of Deepak.
+6. Deepak is the husband of Karan.
+7. Deepak is the parent of Ria.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the father of Geeta?
+ - Who is the father of Neha?
+ - Who is the spouse of Manish?
+
+Solution (key relations):
+
+Neha is the spouse of Sameer. | Neha is the father of Manish. | Neha is the father of Deepak. | Sameer is the
+spouse of Neha. | Sameer is the father of Manish. | Sameer is the father of Deepak. | Manish is the son of
+Neha. | Manish is the son of Sameer. | Manish is the spouse of Geeta. | Manish is the father of Vijay. |
+Manish is the mother of Maya. | Deepak is the son of Neha. | Deepak is the son of Sameer. | Deepak is the
+spouse of Karan. | Deepak is the mother of Anika. | Deepak is the mother of Ria. | Geeta is the spouse of
+Manish. | Karan is the spouse of Deepak. | Vijay is the son of Manish. | Anika is the daughter of Deepak. |
+Maya is the daughter of Manish. | Ria is the daughter of Deepak.
+
+Problem 89: Narrative — 7 persons
+Clues:
+
+1. Kriti is the wife of Rajat.
+2. Kriti is the mother of Tara.
+3. Kriti is the parent of Maya.
+4. Maya is the wife of Sameer.
+5. Meera is the wife of Manish.
+6. Kriti is the parent of Tara.
+7. Rajat is the husband of Kriti.
+8. Rajat is the parent of Manish.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the mother of Manish?
+ - Who is a sibling of Maya?
+ - Who is a grandparent of Tara?
+
+Solution (key relations):
+
+Kriti is the spouse of Rajat. | Kriti is the mother of Tara. | Kriti is the father of Manish. | Kriti is the
+mother of Maya. | Rajat is the spouse of Kriti. | Rajat is the mother of Tara. | Rajat is the father of
+Manish. | Rajat is the mother of Maya. | Tara is the daughter of Kriti. | Tara is the daughter of Rajat. |
+Manish is the son of Kriti. | Manish is the son of Rajat. | Manish is the spouse of Meera. | Maya is the
+daughter of Kriti. | Maya is the daughter of Rajat. | Maya is the spouse of Sameer. | Meera is the spouse of
+Manish. | Sameer is the spouse of Maya.
+
+Problem 90: Coded — 7 persons
+Clues:
+
+1. Harsh is the husband of Arun.
+2. Ria is the parent of Prateek.
+3. Prateek is the husband of Deepak.
+4. Ria is the parent of Manish.
+5. Siddharth is the husband of Ria.
+6. Siddharth is the parent of Arun.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the mother of Harsh?
+ - Who is a grandparent of Harsh?
+
+ - Who is the mother of Manish?
+
+Solution (key relations):
+
+Siddharth is the spouse of Ria. | Siddharth is the father of Arun. | Siddharth is the father of Manish. |
+Siddharth is the father of Prateek. | Ria is the spouse of Siddharth. | Ria is the father of Arun. | Ria is
+the father of Manish. | Ria is the father of Prateek. | Arun is the son of Siddharth. | Arun is the son of
+Ria. | Arun is the spouse of Harsh. | Manish is the son of Siddharth. | Manish is the son of Ria. | Prateek is
+the son of Siddharth. | Prateek is the son of Ria. | Prateek is the spouse of Deepak. | Harsh is the spouse of
+Arun. | Deepak is the spouse of Prateek.
+
+Problem 91: Coded — 12 persons
+Clues:
+
+1. Sameer is the son of Nikhil.
+2. Nisha is the parent of Shreya.
+3. Rekha is the mother of Nisha.
+4. Rekha is the parent of Nikhil.
+5. Nikhil is the mother of Anita.
+6. Meera is the wife of Nikhil.
+7. Anika is the wife of Nisha.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the mother of Neha?
+ - How is Sameer related to Nisha?
+ - Who is a grandparent of Meera?
+
+Solution (key relations):
+
+Rekha is the spouse of Vijay. | Rekha is the father of Nikhil. | Rekha is the mother of Nisha. | Vijay is the
+spouse of Rekha. | Vijay is the father of Nikhil. | Vijay is the mother of Nisha. | Nikhil is the son of
+Rekha. | Nikhil is the son of Vijay. | Nikhil is the spouse of Meera. | Nikhil is the father of Sameer. |
+Nikhil is the mother of Leela. | Nikhil is the mother of Priya. | Nikhil is the mother of Anita. | Nisha is
+the daughter of Rekha. | Nisha is the daughter of Vijay. | Nisha is the spouse of Anika. | Nisha is the mother
+of Shreya. | Nisha is the mother of Neha. | Meera is the spouse of Nikhil. | Anika is the spouse of Nisha. |
+Shreya is the daughter of Nisha. | Sameer is the son of Nikhil. | Leela is the daughter of Nikhil. | Priya is
+the daughter of Nikhil. | Anita is the daughter of Nikhil. | Neha is the daughter of Nisha.
+
+Problem 92: Coded — 10 persons
+Clues:
+
+1. Ria is the daughter of Aditya.
+2. Leela is the wife of Aditya.
+3. Rahul is the son of Ria.
+4. Ria is the parent of Rajat.
+5. Aditya is the husband of Leela.
+6. Aditya is the mother of Diya.
+7. Neha is the wife of Diya.
+8. Geeta is the daughter of Ria.
+9. Aditya is the parent of Diya.
+
+Sample Questions (answers in Solutions section):
+
+ - How is Rajat related to Aditya?
+ - Who is a sibling of Geeta?
+ - Who is a sibling of Aditya?
+
+Solution (key relations):
+
+Aditya is the spouse of Leela. | Aditya is the mother of Ria. | Aditya is the mother of Diya. | Leela is the
+spouse of Aditya. | Leela is the mother of Ria. | Leela is the mother of Diya. | Ria is the daughter of
+Aditya. | Ria is the daughter of Leela. | Ria is the spouse of Kavya. | Ria is the father of Rahul. | Ria is
+the mother of Geeta. | Ria is the father of Rajat. | Diya is the daughter of Aditya. | Diya is the daughter of
+Leela. | Diya is the spouse of Neha. | Diya is the father of Amit. | Kavya is the spouse of Ria. | Neha is the
+spouse of Diya. | Amit is the son of Diya. | Rahul is the son of Ria. | Geeta is the daughter of Ria. | Rajat
+is the son of Ria.
+
+Problem 93: Narrative — 8 persons
+Clues:
+
+1. Rahul is the son of Asha.
+2. Rahul is the mother of Pooja.
+3. Rahul is the parent of Pooja.
+4. Tara is the daughter of Asha.
+5. Asha is the wife of Meera.
+6. Aditya is the son of Meera.
+
+7. Aditya is the husband of Kriti.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the spouse of Tara?
+ - Who is the father of Tara?
+ - Who is a sibling of Meera?
+
+Solution (key relations):
+
+Meera is the spouse of Asha. | Meera is the father of Rahul. | Meera is the mother of Tara. | Meera is the
+father of Aditya. | Asha is the spouse of Meera. | Asha is the father of Rahul. | Asha is the mother of Tara.
+| Asha is the father of Aditya. | Rahul is the son of Meera. | Rahul is the son of Asha. | Rahul is the father
+of Manish. | Rahul is the mother of Pooja. | Tara is the daughter of Meera. | Tara is the daughter of Asha. |
+Aditya is the son of Meera. | Aditya is the son of Asha. | Aditya is the spouse of Kriti. | Kriti is the
+spouse of Aditya. | Manish is the son of Rahul. | Pooja is the daughter of Rahul.
+
+Problem 94: Narrative — 7 persons
+Clues:
+
+1. Ria is the wife of Rishi.
+2. Rishi is the son of Nikhil.
+3. Rishi is the husband of Ria.
+4. Shreya is the wife of Nikhil.
+5. Nikhil is the husband of Shreya.
+6. Shreya is the parent of Maya.
+7. Maya is the wife of Kriti.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the spouse of Ria?
+ - How is Rishi related to Nikhil?
+ - How is Kriti related to Rishi?
+
+Solution (key relations):
+
+Shreya is the spouse of Nikhil. | Shreya is the mother of Maya. | Shreya is the father of Rishi. | Shreya is
+the mother of Nisha. | Nikhil is the spouse of Shreya. | Nikhil is the mother of Maya. | Nikhil is the father
+of Rishi. | Nikhil is the mother of Nisha. | Maya is the daughter of Shreya. | Maya is the daughter of Nikhil.
+| Maya is the spouse of Kriti. | Rishi is the son of Shreya. | Rishi is the son of Nikhil. | Rishi is the
+spouse of Ria. | Nisha is the daughter of Shreya. | Nisha is the daughter of Nikhil. | Kriti is the spouse of
+Maya. | Ria is the spouse of Rishi.
+
+Problem 95: Mixed — 6 persons
+Clues:
+
+1. Manish is the father of Vikram.
+2. Vikram is the son of Manish.
+3. Vikram is the father of Suresh.
+4. Rajat is the husband of Manish.
+5. Rajat is the parent of Siddharth.
+6. Siddharth is the husband of Anita.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the mother of Suresh?
+ - Who is the father of Manish?
+ - Who is a grandparent of Manish?
+
+Solution (key relations):
+
+Manish is the spouse of Rajat. | Manish is the father of Vikram. | Manish is the father of Siddharth. | Rajat
+is the spouse of Manish. | Rajat is the father of Vikram. | Rajat is the father of Siddharth. | Vikram is the
+son of Manish. | Vikram is the son of Rajat. | Vikram is the father of Suresh. | Siddharth is the son of
+Manish. | Siddharth is the son of Rajat. | Siddharth is the spouse of Anita. | Anita is the spouse of
+Siddharth. | Suresh is the son of Vikram.
+
+Problem 96: Narrative — 7 persons
+Clues:
+
+1. Amit is the son of Arun.
+2. Nikhil is the parent of Arun.
+3. Arun is the husband of Anita.
+4. Arun is the father of Amit.
+5. Manish is the son of Yash.
+6. Anita is the wife of Arun.
+7. Nikhil is the parent of Prateek.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the mother of Arun?
+
+ - Who is the father of Arun?
+ - Who is the mother of Yash?
+
+Solution (key relations):
+
+Nikhil is the spouse of Yash. | Nikhil is the father of Manish. | Nikhil is the father of Prateek. | Nikhil is
+the father of Arun. | Yash is the spouse of Nikhil. | Yash is the father of Manish. | Yash is the father of
+Prateek. | Yash is the father of Arun. | Manish is the son of Nikhil. | Manish is the son of Yash. | Prateek
+is the son of Nikhil. | Prateek is the son of Yash. | Arun is the son of Nikhil. | Arun is the son of Yash. |
+Arun is the spouse of Anita. | Arun is the father of Amit. | Anita is the spouse of Arun. | Amit is the son of
+Arun.
+
+Problem 97: Coded — 10 persons
+Clues:
+
+1. Amit is the parent of Manish.
+2. Arun is the husband of Amit.
+3. Rohan is the husband of Priya.
+4. Amit is the parent of Nikhil.
+5. Asha is the parent of Ria.
+6. Kavya is the wife of Meera.
+7. Kavya is the parent of Priya.
+8. Amit is the son of Meera.
+9. Amit is the husband of Arun.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is a sibling of Kavya?
+ - Who is a grandparent of Kavya?
+ - Who is the mother of Arun?
+
+Solution (key relations):
+
+Kavya is the spouse of Meera. | Kavya is the mother of Priya. | Kavya is the mother of Asha. | Kavya is the
+father of Amit. | Meera is the spouse of Kavya. | Meera is the mother of Priya. | Meera is the mother of Asha.
+| Meera is the father of Amit. | Priya is the daughter of Kavya. | Priya is the daughter of Meera. | Priya is
+the spouse of Rohan. | Asha is the daughter of Kavya. | Asha is the daughter of Meera. | Asha is the mother of
+Ria. | Amit is the son of Kavya. | Amit is the son of Meera. | Amit is the spouse of Arun. | Amit is the
+father of Manish. | Amit is the father of Nikhil. | Rohan is the spouse of Priya. | Arun is the spouse of
+Amit. | Ria is the daughter of Asha. | Manish is the son of Amit. | Nikhil is the son of Amit.
+
+Problem 98: Mixed — 7 persons
+Clues:
+
+1. Vijay is the parent of Amit.
+2. Diya is the daughter of Neha.
+3. Vijay is the parent of Siddharth.
+4. Kabir is the son of Vijay.
+5. Vijay is the husband of Neha.
+6. Vijay is the father of Amit.
+7. Rekha is the wife of Siddharth.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the spouse of Siddharth?
+ - Who is the spouse of Diya?
+ - Who is the mother of Neha?
+
+Solution (key relations):
+
+Vijay is the spouse of Neha. | Vijay is the father of Amit. | Vijay is the mother of Diya. | Vijay is the
+father of Siddharth. | Vijay is the father of Kabir. | Neha is the spouse of Vijay. | Neha is the father of
+Amit. | Neha is the mother of Diya. | Neha is the father of Siddharth. | Neha is the father of Kabir. | Amit
+is the son of Vijay. | Amit is the son of Neha. | Diya is the daughter of Vijay. | Diya is the daughter of
+Neha. | Siddharth is the son of Vijay. | Siddharth is the son of Neha. | Siddharth is the spouse of Rekha. |
+Kabir is the son of Vijay. | Kabir is the son of Neha. | Rekha is the spouse of Siddharth.
+
+Problem 99: Coded — 7 persons
+Clues:
+
+1. Meera is the daughter of Rohan.
+2. Rishi is the husband of Rajat.
+3. Kabir is the husband of Rohan.
+4. Rajat is the parent of Prateek.
+5. Prateek is the mother of Ria.
+6. Rohan is the son of Rajat.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the spouse of Kabir?
+ - Who is the mother of Rohan?
+ - Who is a grandparent of Prateek?
+
+Solution (key relations):
+
+Rajat is the spouse of Rishi. | Rajat is the father of Prateek. | Rajat is the father of Rohan. | Rishi is the
+spouse of Rajat. | Rishi is the father of Prateek. | Rishi is the father of Rohan. | Prateek is the son of
+Rajat. | Prateek is the son of Rishi. | Prateek is the mother of Ria. | Rohan is the son of Rajat. | Rohan is
+the son of Rishi. | Rohan is the spouse of Kabir. | Rohan is the mother of Meera. | Kabir is the spouse of
+Rohan. | Meera is the daughter of Rohan. | Ria is the daughter of Prateek.
+
+Problem 100: Mixed — 11 persons
+Clues:
+
+1. Anita is the daughter of Rishi.
+2. Kriti is the wife of Siddharth.
+3. Kriti is the parent of Anika.
+4. Anika is the mother of Pooja.
+5. Rohan is the son of Rishi.
+6. Siddharth is the parent of Ritu.
+7. Ritu is the mother of Sonal.
+8. Harsh is the son of Siddharth.
+
+Sample Questions (answers in Solutions section):
+
+ - Who is the mother of Siddharth?
+ - Who is the mother of Harsh?
+ - Who is the mother of Rishi?
+
+Solution (key relations):
+
+Siddharth is the spouse of Kriti. | Siddharth is the mother of Anika. | Siddharth is the mother of Ritu. |
+Siddharth is the father of Rishi. | Siddharth is the father of Harsh. | Kriti is the spouse of Siddharth. |
+Kriti is the mother of Anika. | Kriti is the mother of Ritu. | Kriti is the father of Rishi. | Kriti is the
+father of Harsh. | Anika is the daughter of Siddharth. | Anika is the daughter of Kriti. | Anika is the mother
+of Pooja. | Ritu is the daughter of Siddharth. | Ritu is the daughter of Kriti. | Ritu is the mother of Sonal.
+| Rishi is the son of Siddharth. | Rishi is the son of Kriti. | Rishi is the mother of Anita. | Rishi is the
+father of Rohan. | Harsh is the son of Siddharth. | Harsh is the son of Kriti. | Harsh is the spouse of Tara.
+| Tara is the spouse of Harsh. | Anita is the daughter of Rishi. | Rohan is the son of Rishi. | Sonal is the
+daughter of Ritu. | Pooja is the daughter of Anika.
+
+

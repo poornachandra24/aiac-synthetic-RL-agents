@@ -1,0 +1,1704 @@
+{
+  "summary": "The logical reasoning content covers various types of seating arrangement puzzles, including linear, circular, parallel rows, square, and rectangular arrangements, with medium difficulty levels. To solve these puzzles, key strategies include starting with an empty layout, fixing absolute positions from clues, using immediate neighbor clues to place adjacent people, and utilizing relative position and counting clues to fill remaining seats. Important concepts and principles involved in solving these puzzles include analyzing clues, determining distances between persons, and cross-checking all clues to ensure a unique and consistent arrangement. By following a step-by-step approach, solvers can arrive at a final arrangement and answer direct queries about the seating arrangement.",
+  "qa_pairs": [
+    {
+      "question": "In the first seating arrangement problem, how many people are seated clockwise from Karan to Vivaan, not counting endpoints?",
+      "answer": "To solve this, first, we need to establish the seating arrangement based on the clues. From the solution, the arrangement is: Rohan, Vivaan, Chitra, Diya, Sara, Maya, Karan, Krishna. Starting from Karan and moving clockwise to Vivaan, we count the people in between, excluding the endpoints (Karan and Vivaan). So, we have Maya, Sara, Diya, Chitra. Therefore, there are 4 people seated clockwise from Karan to Vivaan, not counting endpoints.",
+      "rating": 9
+    },
+    {
+      "question": "In the second seating arrangement problem, who sits immediately to the right of Sameer?",
+      "answer": "Following the steps to solve the seating arrangement: The final arrangement is given as Kabir, Sameer, Diya, Neeraj, Priya, Ritu, Krishna, Ishaan. To find who sits immediately to the right of Sameer, we look at the arrangement and see that Diya is to the right of Sameer. Therefore, Diya sits immediately to the right of Sameer.",
+      "rating": 9
+    },
+    {
+      "question": "In the linear seating arrangement of 7 people, who sits immediately to the left of Krishna?",
+      "answer": "To find out who sits immediately to the left of Krishna, we need to follow the clues given. From the clue 'Maya is seated between Ishaan and Krishna,' we know Maya is to the left of Krishna. Therefore, the person who sits immediately to the left of Krishna is Maya.",
+      "rating": 8
+    },
+    {
+      "question": "In the circular seating arrangement of 10 people, who sits opposite Sonal?",
+      "answer": "Given that Vijay is at the 12 o'clock position and Vijay sits opposite Rahul, we can start by placing Vijay and Rahul. Since Vijay sits immediately to the left of Lokesh and Vijay is at the 12 o'clock position, Lokesh must be to the right of Vijay. The arrangement given is Vijay, Lokesh, Sonal, Maya, Suresh, Rahul, Arjun, Yash, Aditya, Ritu. To find who sits opposite Sonal, we need to consider the circular nature and find the person directly across from Sonal. Given the arrangement, Sonal is at position 3. Counting 5 positions ahead (since there are 10 people and we're looking for the direct opposite), we find that the person opposite Sonal is Rahul, as the arrangement wraps around and positions are counted in a circular manner.",
+      "rating": 8
+    },
+    {
+      "question": "In the seating arrangement of Problem 5, how many people are seated clockwise from Karan to Kavya, not counting endpoints?",
+      "answer": "To solve this, we first need to establish the seating arrangement based on the clues given. From the solution, we know the arrangement is: Chitra, Geeta, Kabir, Ritu, Nikhil, Manish, Maya, Karan, Kavya, Meera. Since Karan and Kavya are adjacent in the seating arrangement with Kavya to the right of Karan, there are 0 people seated clockwise from Karan to Kavya, not counting endpoints.",
+      "rating": 8
+    },
+    {
+      "question": "In the seating arrangement of Problem 6, who sits immediately to the right of Nandini?",
+      "answer": "From the clues given, we know Nandini sits at the north side of the table and is seated between Kabir and Ritu. Given the final arrangement: Nandini, Ritu, Diya, Raj, Sameer, Rohan, Tara, Kabir, we can see that Ritu sits immediately to the right of Nandini.",
+      "rating": 9
+    },
+    {
+      "question": "Who sits opposite Meera in a circular seating arrangement of 12 people where Nisha is at the 12 o'clock position, Asha sits to the right of Karan, Meera sits to the left of Sai, and other given constraints?",
+      "answer": "To find out who sits opposite Meera, we first need to establish the seating arrangement based on the given clues. From the clues: Nisha is at 12 o'clock, Nisha sits opposite Lokesh, Asha sits immediately to the right of Karan, Meera sits immediately to the left of Sai, Rekha is between Ritu and Ishaan, Sai is 5 places clockwise from Ritu, and there are 4 people from Asha to Rekha. Following the steps: Place Nisha and Lokesh first, then use immediate neighbor clues to place others relative to them. Since Meera sits to the left of Sai and Sai is 5 places from Ritu, we determine their positions relative to fixed points and fill in the rest. The arrangement is Nisha, Sara, Arjun, Ritu, Rekha, Ishaan, Lokesh, Meera, Sai, Nandini, Karan, Asha. Meera sits at the 8th position, so the person opposite her, given the circular nature and 12 seats, would be at the 2nd position (since 8 + 6 = 14, and 14 - 12 = 2, considering the circular arrangement). Thus, the person at the 2nd position, which is Sara, sits opposite Meera.",
+      "rating": 8
+    },
+    {
+      "question": "In a circular seating arrangement of 10 people, if Krishna is 3 places clockwise from Sai and Sai is at the 12 o'clock position, who sits immediately to the left of Krishna?",
+      "answer": "To find out who sits immediately to the left of Krishna, we first need to determine the position of Krishna. Given that Krishna is 3 places clockwise from Sai and Sai is at the 12 o'clock position, we can deduce the following arrangement starting from Sai and moving clockwise: Sai (12 o'clock), ?, ?, Krishna. Since the question also mentions that Krishna sits immediately to the right of Sonal, we can conclude that Sonal must be the one sitting immediately to the left of Krishna.",
+      "rating": 9
+    },
+    {
+      "question": "In the same circular arrangement, if there are 3 people seated clockwise from Nandini to Sai, not counting endpoints, and Sai sits opposite Raj, how many people are seated between Raj and Nandini, not counting endpoints?",
+      "answer": "Given that Sai sits opposite Raj in a circular arrangement of 10 people, we know that there are 5 people on one side of the circle between Sai and Raj (including one of the endpoints but excluding the other). Since there are 3 people seated clockwise from Nandini to Sai, not counting endpoints, Nandini must be among those 5 people. To find the number of people between Raj and Nandini, we consider the whole circle: if Nandini is 3 places away from Sai, and assuming the arrangement is symmetrical with Raj directly opposite Sai, the number of people between Raj and Nandini (excluding endpoints) would be the remaining seats not counting Nandini, Raj, or Sai. Thus, we deduce the number based on the total seats and the positions of Sai, Raj, and the given clue about Nandini's position relative to Sai.",
+      "rating": 7
+    },
+    {
+      "question": "In the seating arrangement of Problem 11, who sits immediately to the right of Meera?",
+      "answer": "To find out who sits immediately to the right of Meera, we start with the given clues. From clue 2, Prateek is seated between Geeta and Meera. Since Geeta sits immediately to the left of Prateek (clue 3), Meera must sit to the right of Prateek. Thus, the sequence so far is Geeta, Prateek, Meera. Now, looking at the final arrangement provided in the solution: Prateek, Meera, Neeraj, Ananya, Tara, Priya, Arjun, Geeta, we can see that Neeraj sits immediately to the right of Meera.",
+      "rating": 9
+    },
+    {
+      "question": "Who sits at position 6 in the seating arrangement, given that Ishaan sits exactly in the middle of the row and there are 2 people seated clockwise from Shreya to Ishaan, not counting endpoints?",
+      "answer": "To determine who sits at position 6, we first establish Ishaan's position as the middle seat. Given there are 10 seats in total (as inferred from the question about position 10), Ishaan is at position 5 (since 10 is an even number, the middle would be between 5 and 6, but for seating purposes, we consider the exact middle as position 5 in a 1-indexed system for an even number of seats). We know Shreya is 2 seats away from Ishaan in the clockwise direction, not counting endpoints, which places Shreya at position 8 (since Ishaan is at 5, and moving 2 seats to the right lands on 8, considering the arrangement wraps around). Given the arrangement provided in the solution: Sara, Geeta, Shreya, Aditya, Asha, Ishaan, Siddharth, Deepak, Ritu, Rekha, we can see Ishaan is indeed in the middle. Counting from the left, Ishaan is at position 6, which means the person at position 6 is Ishaan.",
+      "rating": 8
+    },
+    {
+      "question": "In the parallel rows seating arrangement, who sits opposite Nandini, given that Sai sits opposite Anika and there are 0 people seated clockwise from Nandini to Priya, not counting endpoints?",
+      "answer": "Given the clue that there are 0 people seated clockwise from Nandini to Priya, not counting endpoints, it implies Nandini and Priya are adjacent. Since Sai sits opposite Anika, and considering the arrangement must satisfy all clues including Anika being 4 places clockwise from Sai, we deduce the seating arrangement as provided: Sai, Nandini, Priya, Kavya, Anika, Karan, Vikram, Kriti. To find who sits opposite Nandini, we look at the arrangement and see that Nandini is opposite Karan, given the arrangement of the two rows facing each other.",
+      "rating": 7
+    },
+    {
+      "question": "Who sits immediately to the left of Manish in the linear seating arrangement of 7 seats?",
+      "answer": "To determine who sits immediately to the left of Manish, we start by fixing the absolute positions from the given clues. Since Geeta sits exactly in the middle of the row and Geeta sits immediately to the right of Manish, Manish must be to the left of Geeta. With Geeta in the middle (4th position in a 7-seat arrangement), Manish would be in the 3rd position. Given that Nandini sits at the leftmost end and immediately to the left of Aditya, and considering the arrangement, the person to the left of Manish can be deduced by placing the fixed and adjacent relationships. Since Nandini and Aditya occupy the first two positions, the person immediately to the left of Manish would be Aditya, as Manish is in the 3rd position and Aditya is in the 2nd position.",
+      "rating": 9
+    },
+    {
+      "question": "In the seating arrangement, who sits immediately to the right of Siddharth?",
+      "answer": "To find out who sits immediately to the right of Siddharth, we need to follow the clues provided. First, we establish Kriti's position in the middle. Then, using the clue that Siddharth sits immediately to the left of Vivaan, we can place Siddharth and Vivaan relative to Kriti. Given the final arrangement is Isha, Siddharth, Vivaan, Kriti, Sameer, Ritu, Deepak, we can see that Vivaan sits immediately to the right of Siddharth.",
+      "rating": 9
+    },
+    {
+      "question": "In the rectangular table seating, who sits opposite Maya?",
+      "answer": "To determine who sits opposite Maya, we first place Maya at the north side of the table. Then, using the clues about the relative positions of the other individuals, we establish the arrangement: Maya, Vivaan, Deepak, Ananya, Nikhil, Sameer, Diya, Sai. Since Maya is at the north side, the person opposite her would be at the south side. Counting the positions, we find that the arrangement wraps around, meaning the person directly opposite Maya would be the one at the other end of the 'north-south' line. Thus, the person opposite Maya is Ananya.",
+      "rating": 8
+    },
+    {
+      "question": "In the square table seating arrangement of 8 people, who sits at position 4 from the left?",
+      "answer": "To find out who sits at position 4 from the left in the square table arrangement, we follow the clues given. Starting with Tara at the north side, and knowing Sonal sits immediately to the right of Tara, we establish the first two positions. The clue that Ananya sits immediately to the left of Siddharth, and Deepak sits immediately to the right of Siddharth, helps in placing Siddharth and Deepak relative to Ananya. However, to precisely determine who is at position 4, we need to align these relationships with the table's layout and the clue that Karan is 4 places clockwise from Harsh, along with the constraint of people seated from Isha to Ananya. Given the final arrangement provided as Tara, Sonal, Karan, Ananya, Siddharth, Deepak, Harsh, Isha, we can directly identify the person at position 4 as Ananya by counting the positions from the left.",
+      "rating": 8
+    },
+    {
+      "question": "In the seating arrangement of 8 people around a rectangular table, if Kriti sits at the north side and Maya sits immediately to the left of Isha, who sits opposite Isha?",
+      "answer": "To find out who sits opposite Isha, we first place Kriti at the north side. Given Maya sits immediately to the left of Isha, we have a sequence: ... Maya, Isha ... . Since Arjun is seated between Amit and Kriti, and Amit sits immediately to the left of Arjun, we have another sequence: ... Amit, Arjun, Kriti ... . Considering Maya is 5 places clockwise from Pooja and there are 0 people seated clockwise from Amit to Arjun, we can deduce the arrangement. The final arrangement is: Kriti, Kabir, Maya, Isha, Lokesh, Pooja, Amit, Arjun. Thus, Lokesh sits opposite Isha.",
+      "rating": 9
+    },
+    {
+      "question": "Given the rectangular table with 12 seats and the clue that Diya sits at the north side, Kriti is seated between Sara and Varun, and Pooja sits immediately to the left of Meera, who sits immediately to the left of Varun?",
+      "answer": "First, we place Diya at the north side. Knowing Kriti is between Sara and Varun gives us a sequence: ... Sara, Kriti, Varun ... . Since Pooja sits immediately to the left of Meera, we need to find where this pair fits. Given Sara sits immediately to the right of Vijay and Vijay is 4 places clockwise from Sameer, with 3 people seated clockwise from Sameer to Vijay, we can start building the arrangement. However, to find who sits immediately to the left of Varun, we look at our sequence and see that Kriti is to the left of Varun. Thus, Kriti sits immediately to the left of Varun.",
+      "rating": 8
+    },
+    {
+      "question": "In the circular seating arrangement of 10 people, if Sameer is at the 12 o'clock position and Karan is seated between Amit and Asha, who sits immediately to the right of Asha?",
+      "answer": "To determine who sits immediately to the right of Asha, we first use the clue that Sameer is 3 places clockwise from Asha. Given that Sameer is at the 12 o'clock position, we can deduce the positions of the people relative to Sameer. Since Karan is seated between Amit and Asha, and Amit sits immediately to the left of Karan, we need to find the arrangement that satisfies all clues. From the clue that there are 4 people seated clockwise from Sameer to Amit, not counting endpoints, and knowing Sameer sits opposite Amit, we can deduce the seating arrangement. By analyzing the clues step by step and ensuring a unique consistent arrangement, we can determine that Asha is seated to the left of Karan, and thus, Karan sits immediately to the right of Asha.",
+      "rating": 9
+    },
+    {
+      "question": "In the linear seating arrangement of 7 seats, with Siddharth at the leftmost end and Lokesh in the middle, how many people are seated clockwise from Ritu to Vivaan, not counting endpoints?",
+      "answer": "First, we establish the fixed positions based on the clues: Siddharth is at the leftmost end, and Lokesh is exactly in the middle. Then, using the clue that Geeta sits immediately to the left of Lokesh and Geeta is 3 places to the right of Ritu, we can determine the relative positions of Ritu and Geeta. Since Siddharth sits immediately to the right of Ritu, we can place Ritu next to Siddharth. With Lokesh in the middle and Geeta to his left, and knowing the total number of seats is 7, we can fill in the remaining seats. Given that there is 1 person seated clockwise from Vivaan to Ritu, not counting endpoints, and by analyzing the arrangement, we find that Ritu is to the left of the middle, and Vivaan is to the right of the middle. Thus, to find the number of people seated clockwise from Ritu to Vivaan, not counting endpoints, we count the people between them, excluding Ritu and Vivaan. This requires a systematic approach to seating arrangements and the application of the given clues to deduce the correct order of individuals.",
+      "rating": 7
+    },
+    {
+      "question": "In the rectangular table setting with 10 seats, who sits immediately to the right of Nandini?",
+      "answer": "To find out who sits immediately to the right of Nandini, we need to follow the steps given in the solution. First, we place Diya at the north side of the table. Then, we use the immediate neighbor clues to place adjacent people. From the clue 'Vivaan is 6 places clockwise from Diya' and 'There are 1 people seated clockwise from Siddharth to Ishaan, not counting endpoints,' we can deduce the arrangement. Given the final arrangement: Diya, Ritu, Siddharth, Anika, Ishaan, Leela, Vivaan, Nandini, Arjun, Vikram, we can see that Arjun sits immediately to the right of Nandini.",
+      "rating": 8
+    },
+    {
+      "question": "In the square table setting with 8 seats, how many people are seated clockwise from Anika to Ria, not counting endpoints?",
+      "answer": "To solve this, we start by placing Anika at the north side of the table. Then, using the clues 'Manish is seated between Anika and Ria' and 'Yash is 3 places clockwise from Manish,' we can begin to deduce the seating arrangement. Given that Manish is between Anika and Ria, and considering the other clues about the positions of Yash, Shreya, Rohan, Chitra, and Nisha, we can determine the full arrangement. However, the direct question about the number of people seated clockwise from Anika to Ria, not counting endpoints, can be answered by simply looking at the clue that Manish is seated between Anika and Ria, which means there is 1 person (Manish) seated between them, not counting the endpoints (Anika and Ria themselves).",
+      "rating": 8
+    },
+    {
+      "question": "In a circular seating arrangement, if Yash is 3 places clockwise from Manish and there are 4 people seated clockwise from Manish to Chitra, not counting endpoints, who sits opposite Manish?",
+      "answer": "To find out who sits opposite Manish, we first need to establish the seating arrangement based on the clues. Given that Yash is 3 places clockwise from Manish, we can start placing individuals relative to Manish. With 4 people between Manish and Chitra (not counting endpoints), and knowing Yash's position relative to Manish, we can deduce the order. The arrangement is: Anika, Manish, Ria, Shreya, Yash, Rohan, Chitra, Nisha. Since the table is circular and there are 8 people, the person opposite Manish would be 4 places away in either direction. Therefore, the person opposite Manish is Yash.",
+      "rating": 9
+    },
+    {
+      "question": "In the same circular seating arrangement, how many people are seated clockwise from Anika to Ria, not counting endpoints?",
+      "answer": "Given the final arrangement is Anika, Manish, Ria, Shreya, Yash, Rohan, Chitra, Nisha, we can see that from Anika to Ria, there is only 1 person, which is Manish. Therefore, there is 1 person seated clockwise from Anika to Ria, not counting endpoints.",
+      "rating": 9
+    },
+    {
+      "question": "How many people are seated clockwise from Siddharth to Meera in the linear seating arrangement, not counting endpoints?",
+      "answer": "Given the corrected understanding that Siddharth sits immediately to the left of Meera, and considering the linear arrangement, if we are not counting the endpoints (Siddharth and Meera), we are looking at the people between them. However, since Siddharth is directly to the left of Meera, there are no people between them, meaning there are 0 people seated clockwise from Siddharth to Meera when not counting the endpoints themselves.",
+      "rating": 8
+    },
+    {
+      "question": "Who sits opposite Rohan in a circular seating arrangement where Nisha is 5 places clockwise from Sonal and there are 7 people seated clockwise from Rohan to Diya, not counting endpoints?",
+      "answer": "To determine who sits opposite Rohan, we first need to establish the seating arrangement based on the given clues. Starting with 'Nisha is 5 places clockwise from Sonal' and 'There are 7 people seated clockwise from Rohan to Diya, not counting endpoints,' we can deduce the arrangement by placing individuals relative to each other and filling in the seats consistently. Given the final arrangement is Vikram, Kabir, Chitra, Sonal, Sameer, Kriti, Amit, Diya, Nisha, Anika, Maya, Rohan, we can see that Rohan is at one end. Since the table is circular and there are 12 people, the person opposite Rohan would be 6 positions away in either direction. Counting 6 positions from Rohan in the clockwise direction, we find the arrangement leads us to the person opposite Rohan. Thus, the person opposite Rohan is Amit.",
+      "rating": 9
+    },
+    {
+      "question": "Who sits immediately to the left of Nisha in a rectangular table seating arrangement where Isha sits immediately to the left of Nisha and there are other given constraints?",
+      "answer": "Given Isha sits immediately to the left of Nisha, we directly know the answer without needing the full seating arrangement. The clue itself provides the necessary information to answer the question, making further deduction unnecessary. Therefore, Isha sits immediately to the left of Nisha.",
+      "rating": 8
+    },
+    {
+      "question": "How many people are seated clockwise from Vijay to Arjun, not counting endpoints, given that Nikhil is 6 places clockwise from Vijay and there are 3 people seated clockwise from Raj to Meera?",
+      "answer": "First, place Rohan, Raj, and Nikhil based on given clues. Then, use the clue 'Nikhil is 6 places clockwise from Vijay' to determine Vijay's position. Knowing there are 3 people between Raj and Meera, and Nikhil's position relative to Vijay, we deduce the arrangement. From the arrangement: Rohan, Sai, Nikhil, Meera, Ritu, Rekha, Vijay, Arjun, Neeraj, Raj, we find 1 person (Rekha, Ritu, and Meera are between Nikhil and Vijay, and the question asks from Vijay to Arjun) is seated clockwise from Vijay to Arjun, not counting endpoints.",
+      "rating": 7
+    },
+    {
+      "question": "Who sits opposite Isha in a parallel row seating arrangement given that Arjun sits opposite Prateek, Anika sits immediately to the left of Ishaan, and Ishaan is 9 places clockwise from Isha?",
+      "answer": "Start by fixing Arjun and Prateek's positions. Use the clue 'Anika sits immediately to the left of Ishaan' and 'Anika sits immediately to the right of Prateek' to place Anika and Ishaan. Given Ishaan is 9 places clockwise from Isha, determine Isha's position. From the final arrangement: Arjun, Asha, Chitra, Krishna, Priya, Vijay, Prateek, Anika, Ishaan, Ria, Sara, Isha, we identify that Isha sits opposite Arjun.",
+      "rating": 8
+    },
+    {
+      "question": "In a circular seating arrangement of 8 people, if Kabir is 4 places clockwise from Vijay and there are 6 people seated clockwise from Deepak to Geeta, not counting endpoints, who sits opposite Kabir?",
+      "answer": "To solve this, start by placing the fixed positions from clues. Since Kabir is 4 places clockwise from Vijay, and there are 6 people from Deepak to Geeta, we can deduce the seating arrangement step by step. Given the clue that Geeta is seated between Vijay and Deepak, and Kabir is 4 places from Vijay, we can start building the arrangement. If we consider the arrangement: Maya, Anika, Vijay, Geeta, Deepak, Ananya, Kabir, Rohan, we see that Kabir is indeed 4 places from Vijay and there are 6 people from Deepak to Geeta. Thus, to find who sits opposite Kabir, we look at the arrangement and see that since Kabir is at one end, the person opposite him would be 4 places counter-clockwise from him, which lands on Vijay.",
+      "rating": 9
+    },
+    {
+      "question": "In a linear seating arrangement of 10 people, if Krishna sits at the leftmost end, Ishaan sits immediately to the right of Meera, and Vikram sits exactly in the middle of the row, who sits at position 9 from the left?",
+      "answer": "To find who sits at position 9, we start with the given clues. Krishna is at the leftmost end. Since Vikram is in the middle, in a 10-seat row, Vikram would be at position 5 (because 10 divided by 2 is 5). Knowing Ishaan sits to the right of Meera and Leela is between Ishaan and Vikram, we can start building from the middle. If Vikram is at position 5, and considering the constraints, we can deduce the sequence around Vikram. Given that Siddharth is between Vikram and Sameer, and Leela is between Ishaan and Vikram, and knowing the row's middle point, we can deduce that from the middle (Vikram) moving rightwards, we have Sameer, then Siddharth, then Leela, then Ishaan, then Meera to the left of Ishaan, which doesn't fit as we need to account for Krishna at the start and the positions to the right of Vikram. Thus, re-evaluating with Kabir 2 places to the right of Rahul and the other clues, the correct sequence that fits all given conditions must be logically deduced step by step, focusing on the middle and the ends. However, the direct answer to who sits at position 9 requires a detailed step-by-step analysis of all clues provided, focusing on the constraints around the middle seat (Vikram) and the ends. Given the complexity and the need for a precise arrangement, let's simplify: If Vikram is at position 5, and we have Siddharth and Sameer to his right, followed by other placements, we need to fit all characters according to the clues. The arrangement becomes a puzzle of fitting the remaining characters around the fixed points, adhering to all given conditions. Thus, without the exact sequence provided in the question, we deduce based on given clues and the fixed position of Vikram, calculating the positions of others relative to him and the constraints provided.",
+      "rating": 8
+    },
+    {
+      "question": "Who sits opposite Leela in the seating arrangement?",
+      "answer": "To determine who sits opposite Leela, we first need to establish the seating arrangement based on the clues given. From the solution, we know the arrangement is: Kabir, Vijay, Meera, Ishaan, Leela, Vikram, Siddharth, Sameer, Rahul, Krishna. Since Leela is at the 5th position, to find who is opposite her, we need to consider the seating is in a row and find the person at the position that would be directly across from her if the row were curved into a circle or if it were a table where people face each other. Given the arrangement and assuming a linear seating that can be conceptually curved, Leela's opposite would be 5 positions away in either direction. Counting from Leela (5th position) to the right, we have Vikram (6th), Siddharth (7th), Sameer (8th), Rahul (9th), and Krishna (10th). Counting to the left, we have Ishaan (4th), Meera (3rd), Vijay (2nd), and Kabir (1st). Therefore, to be directly opposite, considering the linear arrangement provided and assuming a circular logic for 'opposite', we need to find the person that matches the distance from Leela in a circular manner. Since there are 10 people, the direct opposite of Leela would be 5 positions away, which lands on Rahul if we count from Leela's position as a starting point in a circular manner.",
+      "rating": 9
+    },
+    {
+      "question": "Who sits immediately to the right of Arjun in the rectangular table seating arrangement?",
+      "answer": "To find out who sits immediately to the right of Arjun, we refer to the clues provided for the rectangular table seating arrangement. The arrangement is: Deepak, Nandini, Amit, Siddharth, Arjun, Ananya, Pooja, Manish. According to the arrangement, Ananya sits immediately to the right of Arjun. This is directly inferred from the final seating arrangement provided in the solution.",
+      "rating": 10
+    },
+    {
+      "question": "In a circular seating arrangement with 7 seats, Siddharth is at the 12 o'clock position. Harsh is seated between Prateek and Lokesh. Rahul sits immediately to the left of Leela. Aditya is seated between Siddharth and Rahul. Aditya is 2 places clockwise from Lokesh. There are 3 people seated clockwise from Lokesh to Leela, not counting endpoints. Who sits immediately to the left of Prateek?",
+      "answer": "To solve this, start by placing Siddharth at the 12 o'clock position. Since Aditya is seated between Siddharth and Rahul, and Aditya is 2 places clockwise from Lokesh, we can deduce the order: Siddharth, Aditya, ?, Lokesh, ?, ?, ?. Given Harsh is between Prateek and Lokesh, and there are 3 people from Lokesh to Leela (not counting endpoints), the arrangement must be: Siddharth, Aditya, Rahul, Lokesh, Harsh, Prateek, Leela. Thus, Harsh sits immediately to the left of Prateek.",
+      "rating": 9
+    },
+    {
+      "question": "In a parallel row seating arrangement with 12 seats, Karan sits opposite Chitra. Asha sits immediately to the right of Geeta. Siddharth sits immediately to the right of Diya. Nisha sits immediately to the right of Tara. Karan is 7 places clockwise from Kavya. There are 0 people seated clockwise from Tara to Nisha, not counting endpoints. Who sits opposite Siddharth?",
+      "answer": "Start by using the clue that Karan sits opposite Chitra and Karan is 7 places clockwise from Kavya. This helps in fixing some positions. Since Asha sits to the right of Geeta and Nisha to the right of Tara with no one between Tara and Nisha (clockwise, not counting endpoints), we can start building the arrangement. Given Siddharth sits to the right of Diya, and knowing the final arrangement is: Karan, Sai, Diya, Siddharth, Sameer, Kavya, Chitra, Aarav, Tara, Nisha, Geeta, Asha, we can see that Chitra sits opposite Siddharth.",
+      "rating": 8
+    },
+    {
+      "question": "In the circular seating arrangement with 6 seats, who sits immediately to the left of Vikram?",
+      "answer": "To determine who sits immediately to the left of Vikram, we need to follow the clues given. Starting with Aditya at the 12 o'clock position, we know Rahul is seated between Aditya and Arjun, and Arjun sits immediately to the left of Tara. Since Tara is 2 places clockwise from Rahul, and given the circular nature, we can deduce the order. Aditya is at 12 o'clock, then Rahul, then Arjun, then Tara. Given Tara's position and that Vikram is seated between Tara and Manish, and Aditya sits opposite Tara, the arrangement can be deduced as follows: Aditya, Rahul, Arjun, Tara, Vikram, Manish. Therefore, Tara sits immediately to the left of Vikram.",
+      "rating": 9
+    },
+    {
+      "question": "In the rectangular table seating arrangement with 12 seats, who sits immediately to the left of Raj?",
+      "answer": "To find out who sits immediately to the left of Raj, we analyze the given clues. Raj sits immediately to the left of Ishaan, and Ishaan sits immediately to the left of Prateek. However, to determine who is to the left of Raj, we need to consider the entire arrangement deduced from the clues. Given the arrangement Neeraj, Sai, Leela, Anika, Sameer, Asha, Nikhil, Raj, Ishaan, Prateek, Nandini, Harsh, we see that the person immediately to the left of Raj is Nikhil.",
+      "rating": 8
+    },
+    {
+      "question": "Who sits immediately to the left of Vikram in a circular seating arrangement where Vikram is at the 12 o'clock position, Aarav is seated between Diya and Vikram, and Vikram is seated between Aarav and Rekha?",
+      "answer": "To find out who sits immediately to the left of Vikram, we need to analyze the given clues. Since Aarav is seated between Diya and Vikram, and Vikram is seated between Aarav and Rekha, it means Aarav is to the left of Vikram and Rekha is to the right of Vikram. Therefore, Aarav sits immediately to the left of Vikram.",
+      "rating": 9
+    },
+    {
+      "question": "In a parallel rows seating arrangement with 8 seats, where Maya sits opposite Ritu and Maya sits immediately to the right of Aarav, who sits opposite Anika?",
+      "answer": "First, we establish Maya's position relative to Ritu and Aarav. Since Maya sits opposite Ritu and immediately to the right of Aarav, we can start building the arrangement. Given that Amit is 5 places clockwise from Ritu and there are 6 people seated clockwise from Ritu to Anika, we can deduce the seating arrangement. The final arrangement provided is Maya, Amit, Vijay, Anika, Ritu, Yash, Deepak, Aarav. Therefore, to find who sits opposite Anika, we look at the arrangement and see that Ritu sits opposite Maya, and by the arrangement, Anika sits opposite Amit.",
+      "rating": 8
+    },
+    {
+      "question": "In the circular seating arrangement of 12 people, who sits immediately to the left of Geeta?",
+      "answer": "To find out who sits immediately to the left of Geeta, we first need to establish the fixed positions based on the clues provided. From the clue 'Varun is at the 12 o'clock position' and 'Varun sits opposite Tara,' we can start placing people. With 'Manish sits immediately to the right of Geeta,' we know Geeta and Manish are adjacent. By analyzing the clue 'Aditya is 6 places clockwise from Rahul' and 'There are 5 people seated clockwise from Prateek to Ishaan, not counting endpoints,' we can deduce the seating arrangement. The final arrangement provided is: Varun, Aditya, Geeta, Manish, Karan, Ishaan, Tara, Rahul, Siddharth, Isha, Ananya, Prateek. Therefore, the person immediately to the left of Geeta is Aditya.",
+      "rating": 9
+    },
+    {
+      "question": "At the square table with 8 seats, how many people are seated clockwise from Ritu to Ishaan, not counting endpoints?",
+      "answer": "First, we analyze the given clues to understand the seating arrangement. Since 'Ishaan is 3 places clockwise from Nikhil' and 'Ritu is seated between Ishaan and Aarav,' we can start building the arrangement. With 'Aarav is seated between Ritu and Anika,' we know the sequence for these three. Given 'Sonal sits immediately to the right of Nikhil' and 'There are 0 people seated clockwise from Anika to Suresh, not counting endpoints,' we can further refine the seating. The arrangement isn't directly provided, but based on the clues, we can deduce that Ritu and Ishaan are adjacent, with Ritu to the left of Ishaan in a clockwise direction. Therefore, there are 0 people seated clockwise from Ritu to Ishaan, not counting endpoints, because they are next to each other.",
+      "rating": 9
+    },
+    {
+      "question": "In the seating arrangement of Problem 47, how many people are seated clockwise from Meera to Karan, not counting endpoints?",
+      "answer": "From the solution, we know the arrangement is: Siddharth, Rohan, Karan, Aditya, Yash, Nisha, Meera, Ritu. To find the number of people seated clockwise from Meera to Karan, we start at Meera and move clockwise: Meera -> Ritu -> Siddharth -> Rohan -> Karan. Counting the people between Meera and Karan (not including Meera and Karan), we have Ritu, Siddharth, and Rohan, which totals 3 people.",
+      "rating": 8
+    },
+    {
+      "question": "In the seating arrangement of Problem 48, who sits immediately to the right of Krishna?",
+      "answer": "Given that Krishna sits immediately to the left of Suresh, we can deduce that Suresh sits immediately to the right of Krishna. This is because the clue directly states their adjacent relationship, making Suresh the person to the right of Krishna.",
+      "rating": 7
+    },
+    {
+      "question": "In Problem 50, who sits immediately to the left of Krishna, given that Krishna is seated between Geeta and Chitra, and Chitra sits opposite Manish?",
+      "answer": "First, we establish the order of Krishna, Geeta, and Chitra. Since Krishna is between Geeta and Chitra, and considering Chitra sits opposite Manish, we cannot directly infer the left neighbor of Krishna without the row arrangement. However, clue 2 and clue 3 seem to create a contradiction unless we interpret them as describing a sequence where Geeta, Krishna, Chitra or the reverse can be true based on the perspective of the rows. Given Chitra is between Krishna and Sai, and knowing the rows face each other, if Chitra is opposite Manish, then for Krishna to be between Geeta and Chitra, Geeta must be to the left of Krishna in one of the rows. Therefore, Geeta sits immediately to the left of Krishna.",
+      "rating": 8
+    },
+    {
+      "question": "In the seating arrangement of Problem 51, who sits immediately to the right of Vijay?",
+      "answer": "To determine who sits immediately to the right of Vijay, we need to follow the clues given. From clue 3 and 4, we know Asha sits immediately to the right of Diya and also to the left of Vijay. Since Diya is in the middle, and considering the arrangement of Shreya, Neeraj, and Diya from the left, we place Asha and Vijay relative to Diya. Given Diya's central position and other clues, we deduce the order is Shreya, Neeraj, Sai, Karan, Diya, Asha, Vijay, Geeta. Therefore, Geeta sits immediately to the right of Vijay.",
+      "rating": 9
+    },
+    {
+      "question": "In Problem 52, who sits opposite Manish?",
+      "answer": "First, establish the fixed positions based on the clues. Krishna is at the north side, and sits immediately to the left of Rahul. Kabir is to the right of Rahul. Manish sits to the left of Neeraj. Anika is 4 places clockwise from Rahul, and there are 2 people between Kabir and Anika. Since Krishna is to the left of Rahul and Kabir is to the right of Rahul, and considering the table's square shape, we can start placing people. If we place Krishna, Rahul, and Kabir on the north side in order, Anika must be on the east side to satisfy being 4 places from Rahul and having only 2 people between Kabir and herself. Knowing the table has 8 seats and considering the square shape, we deduce the seating arrangement must accommodate all given conditions. Given Manish is to the left of Neeraj, and considering the placement of others, Manish and Neeraj must be on the south side to fit everyone according to the clues. Therefore, to find who sits opposite Manish, we consider the north side's arrangement and Manish's position on the south side. Since the exact positions of Manish and Neeraj relative to the north side (Krishna, Rahul, Kabir) are not directly given but we know Anika is 4 places from Rahul and must be on the east side, we use the clue about Anika and Kabir to finalize placements. Given the constraints, the person opposite Manish would be on the north side. If Manish is directly south of Rahul (considering the square table and the need to place Anika and others), then the person opposite Manish would be Rahul, as Krishna is to the left of Rahul and Kabir to the right, fitting the given clues about Anika's position relative to Rahul and the number of people between Kabir and Anika.",
+      "rating": 8
+    },
+    {
+      "question": "Who sits immediately to the left of Anika in the seating arrangement?",
+      "answer": "To find out who sits immediately to the left of Anika, we need to follow the clues given. First, we place Krishna at the north side of the table. Then, using the clue 'Krishna sits immediately to the left of Rahul' and 'Kabir sits immediately to the right of Rahul,' we establish the sequence: Krishna, Rahul, Kabir. Given 'Anika is 4 places clockwise from Rahul,' we count the positions: Rahul (1), Kabir (2), and then two more to reach Anika's position, which would be after two people from Kabir. Since 'There are 2 people seated clockwise from Kabir to Anika, not counting endpoints,' it means after Kabir, there are two people before Anika, making the sequence: Krishna, Rahul, Kabir, Ritu, Deepak, Anika. Therefore, Deepak sits immediately to the left of Anika.",
+      "rating": 9
+    },
+    {
+      "question": "How many people are seated clockwise from Neeraj to Leela, not counting endpoints in the rectangular table arrangement?",
+      "answer": "To solve this, we first arrange the people according to the given clues. Starting with 'Arjun sits at the north side of the table,' and using 'Shreya sits immediately to the right of Tara' and 'Neeraj sits immediately to the right of Priya,' we can start building the arrangement. With 'Shreya is 5 places clockwise from Neeraj,' we know the distance between them. The clue 'There are 2 people seated clockwise from Rekha to Neeraj, not counting endpoints' helps in placing Rekha and Neeraj. Following the steps and clues, the arrangement is: Arjun, Tara, Shreya, Nisha, Vikram, Krishna, Rekha, Kavya, Priya, Neeraj, Leela, Maya. To find how many people are seated clockwise from Neeraj to Leela, not counting endpoints, we look at the arrangement and count from Neeraj to Leela: Neeraj, Leela. There are no people between them when counting clockwise without including Neeraj and Leela themselves, meaning there's a direct placement, so the count is 0 people between them when excluding endpoints in a clockwise direction in this specific scenario. However, considering the actual task of counting people between two points in a circular or rectangular arrangement, if the question implies counting the positions between Neeraj and Leela without including them and considering the table's layout, we need to accurately interpret the seating and the question's intent. Given the arrangement and usual interpretation, if we count from Neeraj to Leela without including them, we see there's actually a misunderstanding in the direct count due to the arrangement's nature and the question's specifics. Thus, the solution involves understanding the seating arrangement and applying the clues correctly to determine distances and positions between individuals.",
+      "rating": 7
+    },
+    {
+      "question": "In a linear seating arrangement of 7 people, if Ria sits at the leftmost end and Arjun sits exactly in the middle, and there are 2 people seated clockwise from Ria to Arjun, not counting endpoints, who sits at position 1 from the left?",
+      "answer": "To solve this, start by placing Ria at the leftmost end and Arjun in the middle. Since Arjun is in the middle and there are 7 seats, Arjun must be in the 4th position. With 2 people between Ria and Arjun (not counting endpoints), and knowing Ria is at position 1, we can deduce the arrangement starts with Ria. Thus, Ria sits at position 1 from the left.",
+      "rating": 8
+    },
+    {
+      "question": "Given a square table with 8 seats and Nisha sitting at the north side, Nikhil sitting immediately to the left of Shreya and to the right of Maya, and Arjun sitting immediately to the right of Shreya, how many people are seated clockwise from Nikhil to Shreya, not counting endpoints?",
+      "answer": "First, establish the relationships: Nisha is at the north, and the sequence from the clues is Maya, Nikhil, Shreya, Arjun (since Nikhil is to the left of Shreya and to the right of Maya, and Arjun is to the right of Shreya). Since we're looking for the number of people from Nikhil to Shreya clockwise, not counting endpoints, and given their direct adjacency, there are 0 people between Nikhil and Shreya when counting clockwise and not including the endpoints themselves.",
+      "rating": 9
+    },
+    {
+      "question": "In the seating arrangement, who sits immediately to the right of Aditya?",
+      "answer": "To find out who sits immediately to the right of Aditya, we need to analyze the given clues. From the clue 'Nikhil is 2 places clockwise from Aditya,' we know Aditya and Nikhil's relative positions but not their immediate neighbors. However, from the final arrangement provided (Nisha, Aditya, Maya, Nikhil, Shreya, Arjun, Aarav, Priya), we can directly see that Maya sits immediately to the right of Aditya. Therefore, the person sitting immediately to the right of Aditya is Maya.",
+      "rating": 8
+    },
+    {
+      "question": "Given the seating arrangement clues, how many people are seated clockwise from Nikhil to Shreya, not counting endpoints?",
+      "answer": "To solve this, let's analyze the arrangement and clues given. The final seating arrangement is Nisha, Aditya, Maya, Nikhil, Shreya, Arjun, Aarav, Priya. Since we are counting from Nikhil to Shreya without including the endpoints (Nikhil and Shreya), we look at the people between them. The arrangement shows that there is no one between Nikhil and Shreya, meaning they are adjacent. Therefore, there are 0 people seated clockwise from Nikhil to Shreya, not counting endpoints.",
+      "rating": 9
+    },
+    {
+      "question": "In a linear seating arrangement of 9 people, Vijay sits at the leftmost end and Varun sits exactly in the middle. If Rekha is 4 places to the right of Raj and there are 4 people seated clockwise from Varun to Amit, not counting endpoints, who sits immediately to the left of Varun?",
+      "answer": "To find out who sits immediately to the left of Varun, we first place Vijay at the leftmost end and Varun in the middle. Since Varun is in the middle of 9 seats, Varun must be in the 5th position. We then use the clue that Suresh is seated between Varun and Chitra. However, to determine who sits immediately to the left of Varun, we must figure out the positions relative to Varun using the given clues about the distances and relationships between other individuals. Given that Rekha is 4 places to the right of Raj and there are specific seating arrangements mentioned, we deduce the seating arrangement based on the clues provided. The final arrangement is: Amit, Ritu, Rekha, Geeta, Varun, Suresh, Chitra, Raj, Vijay. Therefore, the person sitting immediately to the left of Varun is Geeta.",
+      "rating": 7
+    },
+    {
+      "question": "Who sits opposite Ishaan in a circular seating arrangement with 6 seats, given that Sameer is at the 12 o'clock position, Isha sits immediately to the left of Sameer, and Kavya is seated between Ishaan and Raj?",
+      "answer": "To find out who sits opposite Ishaan, we first place Sameer at the 12 o'clock position. Given that Isha sits immediately to the left of Sameer and Sameer sits immediately to the right of Isha, their positions are fixed relative to each other. Since Kavya is seated between Ishaan and Raj, and Sameer is 2 places clockwise from Raj, we can deduce the arrangement. Sameer is opposite Kavya, so if we place Kavya, we can find Ishaan's position. Since Sameer sits opposite Kavya, the person opposite Ishaan would be the one 3 positions away from Ishaan in either direction. Thus, the arrangement becomes Sameer, Isha, Prateek, Kavya, Raj, Ishaan. Therefore, the person opposite Ishaan is Sameer.",
+      "rating": 9
+    },
+    {
+      "question": "Who sits at position 5 in a row seating arrangement where Manish sits at the leftmost end, Raj sits exactly in the middle, and Asha is 2 places to the right of Raj?",
+      "answer": "To solve this, start by placing Manish at the leftmost end and Raj in the middle. Since the row has an unknown number of seats but we know Asha is 2 places to the right of Raj, we can begin to build the arrangement around Raj. If Raj is exactly in the middle and Asha is 2 places to his right, there must be at least 5 seats (to accommodate someone to the left of Raj, Raj himself, and then two more to the right for Asha). Given Ishaan is between Raj and Asha, the arrangement from the left, considering Manish is at the start and Raj in the middle, would be Manish, ?, ?, Raj, Ishaan, Asha. We need to fill the spots to the left of Raj. Since Raj is in the middle and there are seats to the left and right of him, we know the total number of seats must be odd to have a middle seat. With Manish at one end, to balance the arrangement and have Raj in the middle, we place other individuals based on given clues. Given the clue that Ishaan sits immediately to the left of Asha and Raj sits between Sai and Ishaan, the complete arrangement from the given solution is Manish, Tara, Sai, Raj, Ishaan, Asha. Therefore, the person at position 5 is Ishaan.",
+      "rating": 8
+    },
+    {
+      "question": "Who sits immediately to the right of Lokesh in the rectangular table seating arrangement?",
+      "answer": "To find out who sits immediately to the right of Lokesh, we follow the steps: 1. Fix absolute positions from clues, noting Karan is at the north side. 2. Use immediate neighbor clues: Pooja is to the left of Ishaan, Raj to the right of Ishaan, and Deepak to the left of Lokesh. 3. Apply relative position clues: Karan is 5 places clockwise from Ishaan, and there are 0 people seated clockwise from Suresh to Pooja. Given Deepak sits immediately to the left of Lokesh, and considering the table's arrangement, we deduce the order. Since Deepak is to the left of Lokesh and the arrangement must satisfy all given conditions, we find that after placing the fixed and adjacent relationships, Lokesh's position and the clue about Deepak being to his left help us understand the sequence. Thus, by following the clues step by step, especially with Deepak to the left of Lokesh and considering the overall arrangement, we can deduce the seating order. The final arrangement provided shows the relative positions, allowing us to identify who sits to the right of Lokesh by examining the sequence: Karan, Deepak, Lokesh, Suresh, Pooja, Ishaan, Raj, Ritu, Kabir, Kavya. Therefore, Suresh sits immediately to the right of Lokesh.",
+      "rating": 8
+    },
+    {
+      "question": "How many people are seated clockwise from Arjun to Vijay, not counting endpoints, in the given seating arrangement?",
+      "answer": "To determine the number of people seated clockwise from Arjun to Vijay, we analyze the seating arrangement derived from the clues: Shreya, Arjun, Vijay, Raj, Sameer, Sai, Prateek, Krishna. The clue 'Sameer is 3 places clockwise from Arjun' and 'There are 4 people seated clockwise from Sai to Vijay, not counting endpoints' help in establishing the sequence. However, to find the number of people from Arjun to Vijay, we directly observe the arrangement. Starting from Arjun and moving clockwise to Vijay without counting Arjun and Vijay themselves, we identify the individuals in between. The sequence from Arjun to Vijay is: Arjun, Vijay, Raj, Sameer, Sai, Prateek, Krishna, and back to Shreya before reaching Arjun again. But since we are counting from Arjun to Vijay without including them, we look at the positions between: Raj, Sameer, Sai, Prateek, Krishna, and then Shreya before reaching Vijay. Therefore, there are 5 people seated clockwise from Arjun to Vijay, not counting the endpoints.",
+      "rating": 7
+    },
+    {
+      "question": "In the seating arrangement of Problem 65, how many people are seated clockwise from Manish to Varun, not counting endpoints?",
+      "answer": "To find the number of people seated clockwise from Manish to Varun, we first need to establish the seating arrangement based on the clues provided. From the solution, the arrangement is: Ananya, Manish, Suresh, Rekha, Varun, Amit, Tara, Harsh, Kavya, Pooja. Manish is at the second position, and Varun is at the fifth position. Counting clockwise from Manish to Varun, not including Manish and Varun, we have Suresh and Rekha. Therefore, there are 2 people seated clockwise from Manish to Varun, not counting endpoints.",
+      "rating": 9
+    },
+    {
+      "question": "In Problem 66, who sits opposite Arjun?",
+      "answer": "To determine who sits opposite Arjun, we need to understand the seating arrangement. From the clues, we know Kabir sits opposite Vikram, and Siddharth is seated between Vivaan and Arjun. Also, Vikram sits immediately to the right of Varun, and Vivaan is 2 places clockwise from Varun. Given that there are 2 people seated clockwise from Vivaan to Kabir, not counting endpoints, and considering the parallel rows arrangement, we can deduce the seating. If we place Varun and Vikram in one row with Kabir opposite Vikram, and knowing Vivaan is 2 places from Varun, we can start building the arrangement. Since Siddharth is between Vivaan and Arjun, and considering the constraints, Arjun must be positioned such that he is opposite the row where the sequence allows for Kabir to be opposite Vikram and satisfies the condition of Vivaan being 2 places from Varun. Given the constraints and the fact that Maya sits immediately to the right of Ishaan, we need to fit these into the rows. The exact opposite of Arjun can be deduced by completing the arrangement according to the clues and ensuring that all conditions are met. However, without the explicit final arrangement provided in the problem statement for Problem 66, we must infer based on typical seating logic that each person has a direct opposite in a parallel rows setting. The solution thus requires careful placement of each individual according to the clues provided, ensuring that the conditions for the seating arrangement are fully satisfied.",
+      "rating": 7
+    },
+    {
+      "question": "Who sits opposite Maya in the circular seating arrangement?",
+      "answer": "To find out who sits opposite Maya, we first need to establish the seating arrangement based on the given clues. From the solution, we know the arrangement is: Kabir, Ishaan, Maya, Varun, Vikram, Vivaan, Siddharth, Arjun. Since Maya is at the 3rd position, the person opposite her will be 4 positions ahead in a circular manner, which lands on Varun and then one more to Vikram and then to Vivaan and finally to Siddharth and then to Arjun. However, considering the direct opposite in a circular table of 8, it would be 4 positions ahead, making it Varun and then moving one more to the right, it lands on Vikram. Thus, Vikram sits opposite Maya.",
+      "rating": 9
+    },
+    {
+      "question": "In the seating arrangement of Problem 69, who sits immediately to the right of Anika?",
+      "answer": "To find out who sits immediately to the right of Anika, we first place Manish at the leftmost end. Since Anika sits immediately to the right of Manish and is also seated between Manish and Chitra, Chitra must sit to the right of Anika. Therefore, Chitra sits immediately to the right of Anika.",
+      "rating": 8
+    },
+    {
+      "question": "In the seating arrangement of 9 people, who sits immediately to the right of Kriti?",
+      "answer": "To find out who sits immediately to the right of Kriti, we first need to establish the seating arrangement based on the given clues. From the clues, we know Suresh is at the leftmost end and Diya is exactly in the middle. We also know Diya sits immediately to the left of Ishaan. Given that Suresh is 4 places to the right of Diya and there are 9 seats, we can deduce the seating arrangement. Since Diya is in the middle, and considering the other clues about the positions of Manish, Meera, and Pooja relative to each other and Diya's position, we can place the individuals. Knowing the arrangement is: Lokesh, Meera, Manish, Pooja, Diya, Ishaan, Kabir, Kriti, Suresh, we can see that Kabir sits immediately to the right of Kriti.",
+      "rating": 8
+    },
+    {
+      "question": "Who sits opposite Nikhil in a circular seating arrangement with 9 people where Deepak is 2 places clockwise from Arjun and there are 2 people seated clockwise from Sai to Nikhil, not counting endpoints?",
+      "answer": "To solve this, start by placing Deepak 2 places clockwise from Arjun. Then, use the clue that there are 2 people seated clockwise from Sai to Nikhil. By analyzing the given arrangement: Diya, Vijay, Arjun, Sai, Deepak, Ritu, Nikhil, Manish, Kavya, Ria, we can see that Ritu sits opposite Nikhil.",
+      "rating": 9
+    },
+    {
+      "question": "Who sits at position 4 from the left in a circular seating arrangement of 9 people where Rekha is at the 12 o'clock position, Rekha sits immediately to the left of Karan, and Karan is 2 places clockwise from Sara?",
+      "answer": "Start with Rekha at the 12 o'clock position. Since Rekha sits immediately to the left of Karan and immediately to the right of Sara, and Karan is 2 places clockwise from Sara, we can deduce the order: Sara, Rekha, Karan, ?. Given the final arrangement: Rekha, Karan, Pooja, Manish, Nikhil, Rahul, Raj, Diya, Sara, Pooja sits at position 4 (from left, 1-indexed, but considering the circular nature and starting point, the positions might slightly differ based on the exact starting point). However, following the instructions precisely, we determine positions based on a linear representation of the circular arrangement provided in the solution, which might not directly translate to a 1-indexed position from the left in a circular setup without a clear 'left' starting point. Thus, considering the arrangement and typical indexing from the first mentioned person in such puzzles, the actual task is to understand the relative positioning rather than absolute 'from the left' in a circular setup. Therefore, the person at position 4, considering the arrangement starts with Rekha as a reference and moves clockwise, would be Manish, given the direct sequence provided.",
+      "rating": 7
+    },
+    {
+      "question": "Given the seating arrangement clues: Ishaan is 2 places to the right of Prateek and Kriti sits exactly in the middle of the row, who sits immediately to the right of Prateek?",
+      "answer": "From the clue that Ishaan is 2 places to the right of Prateek, we can deduce the order is Prateek, _, Ishaan. Since Kriti sits exactly in the middle and considering the final arrangement is Varun, Isha, Prateek, Kriti, Ishaan, Suresh, the person immediately to the right of Prateek must be Kriti. However, given Ishaan's position relative to Prateek and Kriti's middle position, it indicates Isha is between Prateek and Kriti. Thus, Isha sits immediately to the right of Prateek.",
+      "rating": 8
+    },
+    {
+      "question": "In a 9-seat linear arrangement with clues: Asha sits at the leftmost end, Vivaan sits immediately to the left of Manish, and Ritu sits exactly in the middle, who sits at position 8 (from left, 1-indexed)?",
+      "answer": "Start by placing Asha at the leftmost end and Ritu in the middle. Since there are 9 seats, Ritu would be at position 5. Vivaan and Manish's positions relative to each other are known but not their exact positions yet. Given the final arrangement is Vivaan, Manish, Sonal, Rekha, Ritu, Amit, Chitra, Karan, Asha, we can see the arrangement does not match the initial deduction due to incorrect placement of Asha and Ritu based on the clues provided. Correcting this with the actual solution process: With Ritu in the middle (position 5), and knowing the correct final arrangement, we identify the person at position 8 as Karan.",
+      "rating": 8
+    },
+    {
+      "question": "In the seating arrangement, if Rohan is 6 places clockwise from Geeta and there are 7 people seated clockwise from Karan to Ria, not counting endpoints, how many people are seated clockwise from Geeta to Pooja, not counting endpoints?",
+      "answer": "To solve this, we first place Geeta and then count 6 places clockwise to place Rohan. Given the clue that there are 7 people from Karan to Ria, we can start placing people relative to Geeta and Rohan. Since the arrangement is Vijay, Geeta, Isha, Karan, Kabir, Kavya, Arjun, Rohan, Pooja, Neeraj, Nisha, Ria, we count from Geeta to Pooja: Isha, Karan, Kabir, Kavya, Arjun, Rohan. Thus, there are 6 people seated clockwise from Geeta to Pooja, not counting endpoints.",
+      "rating": 9
+    },
+    {
+      "question": "In the square table arrangement with 8 seats, if Shreya sits immediately to the left of Ria and Shreya is 3 places clockwise from Kriti, who sits opposite Shreya?",
+      "answer": "Given the arrangement Ria, Geeta, Ritu, Neeraj, Kriti, Deepak, Asha, Shreya, we know Shreya is to the left of Ria. Since the table is square and there are 8 seats, opposite seats are 4 places apart. Counting from Shreya, we move 4 places: Ria (1 place), Geeta (2 places), Ritu (3 places), Neeraj (4 places). Therefore, Neeraj sits opposite Shreya.",
+      "rating": 7
+    },
+    {
+      "question": "In a circular seating arrangement of 10 people facing the center, if Krishna is at the 12 o'clock position and sits opposite Siddharth, and Asha sits immediately to the left of Siddharth, who sits immediately to the left of Sara?",
+      "answer": "To find out who sits immediately to the left of Sara, we first establish the fixed positions based on the clues. Since Krishna is at the 12 o'clock position and sits opposite Siddharth, Siddharth must be at the 6 o'clock position. With Asha sitting immediately to the left of Siddharth, Asha must be at the position just before the 6 o'clock, which would be between the 5 and 6 o'clock positions if we consider the seats in a clockwise manner from Krishna. Given the arrangement and clues, we deduce the seating order as follows: Krishna, Arjun, Tara, Harsh, Asha, Siddharth, Sara, Ria, Rahul, Rekha. Thus, to find who sits immediately to the left of Sara, we look at the arrangement and see that Siddharth is to the left of Sara.",
+      "rating": 8
+    },
+    {
+      "question": "In a linear seating arrangement, if Arjun sits exactly in the middle of the row, and there are 3 people seated clockwise from Sai to Varun, not counting endpoints, how many people are seated clockwise from Leela to Amit, not counting endpoints?",
+      "answer": "First, we need to establish the seating arrangement based on the given clues. Since Arjun sits exactly in the middle, and knowing there are 3 people from Sai to Varun (not counting endpoints), we can start building the arrangement. Given the final arrangement provided: Nisha, Amit, Sai, Lokesh, Arjun, Ria, Varun, Siddharth, Leela, we can count the people from Leela to Amit. Counting from Leela to Amit (not counting Leela and Amit), we include Siddharth, Varun, Ria, Arjun, Lokesh, and Sai. Thus, there are 6 people seated from Leela to Amit, not counting the endpoints.",
+      "rating": 8
+    },
+    {
+      "question": "Who sits opposite Shreya in a circular seating arrangement where Arjun sits opposite Shreya and Raj is 3 places clockwise from Tara?",
+      "answer": "To find out who sits opposite Shreya, we need to understand the seating arrangement. Given that Arjun sits opposite Shreya, we can directly conclude that Arjun is the one sitting opposite Shreya without needing the other clues for this specific question.",
+      "rating": 9
+    },
+    {
+      "question": "In a seating arrangement where Ananya sits opposite Kavya, Manish sits immediately to the left of Sonal, and Varun is 5 places clockwise from Sonal, who sits immediately to the left of Sonal?",
+      "answer": "From the clues given, we know Manish sits immediately to the left of Sonal. This clue directly answers the question without needing further deductions or the use of other clues.",
+      "rating": 9
+    },
+    {
+      "question": "Who sits immediately to the left of Shreya in the seating arrangement?",
+      "answer": "To find out who sits immediately to the left of Shreya, we need to analyze the given clues. From the clue 'Shreya is seated between Neeraj and Kavya,' we can determine that Neeraj sits to the left of Shreya. Therefore, Neeraj sits immediately to the left of Shreya.",
+      "rating": 8
+    },
+    {
+      "question": "Who sits at position 6 in the rectangular table seating arrangement with 12 seats?",
+      "answer": "To determine who sits at position 6, we need to follow the steps outlined in the solution. First, we fix the absolute positions using the clue 'Lokesh sits at the north side of the table.' Then, we use the immediate neighbor clues to place adjacent people. From the clue 'Shreya is 3 places clockwise from Lokesh,' we can start counting positions. The arrangement is: Lokesh, Vijay, Vivaan, Shreya, Leela, Anika. Therefore, Anika sits at position 6.",
+      "rating": 8
+    },
+    {
+      "question": "Who sits opposite Priya in a circular seating arrangement where Arjun sits exactly in the middle of the row and there are 0 people seated clockwise from Karan to Pooja, not counting endpoints?",
+      "answer": "To find out who sits opposite Priya, we first need to establish the seating arrangement based on the given clues. We know Arjun sits in the middle, and since Karan is between Arjun and Pooja with no one between them clockwise (not counting endpoints), the arrangement around Arjun is fixed as Arjun, Karan, Pooja. Given Arjun is 6 places to the right of Priya, and knowing the arrangement must fit around a circular table, we can deduce the full arrangement is Kavya, Asha, Leela, Yash, Arjun, Karan, Pooja, Priya, Sonal. Thus, Sonal sits opposite Priya.",
+      "rating": 7
+    },
+    {
+      "question": "In a linear seating arrangement of 8 seats where Prateek sits at the leftmost end, Varun is between Vikram and Raj, and Raj sits exactly in the middle of the row, who sits immediately to the right of Prateek?",
+      "answer": "Given Prateek is at the leftmost end and Raj is in the middle, we start by placing Raj in the 4th or 5th position since there are 8 seats. However, since Raj must be exactly in the middle in a linear arrangement of 8 seats, Raj must occupy the 5th seat (as 8 is an even number, the middle positions would be 4 and 5, but for a single middle, we consider the 5th seat in an 8-seat arrangement). With Varun between Vikram and Raj, and Varun immediately to the left of Raj, Varun must be in the 4th seat. Knowing Ishaan is between Prateek and Vikram, and given the constraints, Ishaan must sit to the right of Prateek, making Ishaan the one who sits immediately to the right of Prateek.",
+      "rating": 8
+    },
+    {
+      "question": "In a row of people, if Raj sits exactly in the middle and there are 5 people seated clockwise from Prateek to Leela, not counting endpoints, who sits immediately to the right of Prateek?",
+      "answer": "To find out who sits immediately to the right of Prateek, we first establish the order based on the clues given. We know Raj is in the middle, and since there are 5 people from Prateek to Leela (not counting endpoints), and given that Raj is one of these people, we can start building the sequence. Prateek is at one end, and Leela is at the other. With Raj in the middle, we have: Prateek, ?, ?, Raj, ?, ?, Leela. From additional clues, we learn Ishaan is between Prateek and Vikram, and Varun is between Vikram and Raj. So, the sequence becomes: Prateek, Ishaan, Vikram, Varun, Raj, ?, ?, Leela. Given Leela is 3 places to the right of Varun, and knowing Varun is next to Raj, we fill in the rest: Prateek, Ishaan, Vikram, Varun, Raj, Anika, ?, Leela. Since Leela is 3 places from Varun, Anika must be followed by another person to satisfy the distance, but we know the arrangement must fit the given people. Thus, the final arrangement is: Prateek, Ishaan, Vikram, Varun, Raj, Anika, (missing person is actually part of the initial misinterpretation, the correct sequence based on the provided solution is) Prateek, Ishaan, Vikram, Varun, Raj, Anika, Leela, with Priya not mentioned in this step but part of the full solution. Therefore, Ishaan sits immediately to the right of Prateek.",
+      "rating": 9
+    },
+    {
+      "question": "In a circular seating arrangement of 11 people, with Suresh at the 12 o'clock position, and given that Raj sits immediately to the right of Siddharth, and there are other clues about positions, who sits at position 3 from the left (1-indexed)?",
+      "answer": "Given Suresh is at the 12 o'clock position, we start with Suresh. Knowing Karan is between Suresh and Aarav, we have: Suresh, Karan, Aarav, as our starting sequence. With the clue that there are 2 people seated clockwise from Suresh to Sonal, not counting endpoints, Sonal must be at the position right after Aarav because we count the people between them, not including Suresh and Sonal themselves. So, we have: Suresh, Karan, Aarav, Sonal. The rest of the arrangement can be deduced by applying the other clues systematically. Since Raj sits to the right of Siddharth, and considering the other clues about relative positions, we build the full arrangement: Suresh, Karan, Aarav, Sonal, Ria, Siddharth, Raj, Leela, Deepak, Ananya, Tara. Therefore, to find who sits at position 3 from the left (1-indexed), we count starting from Suresh as 1: Suresh (1), Karan (2), Aarav (3). Thus, Aarav sits at position 3.",
+      "rating": 9
+    },
+    {
+      "question": "Given the seating arrangement around a square table with 8 seats, where Manish sits at the north side, Arjun sits immediately to the right of Sara, and Deepak is seated between Arjun and Rohan, who sits immediately to the right of Deepak, determine the number of people seated clockwise from Rohan to Arjun, not counting endpoints.",
+      "answer": "To solve this, start by fixing Manish's position at the north side. Then, place Arjun to the right of Sara and Deepak between Arjun and Rohan, with Rohan to the right of Deepak. Given that Amit is 3 places clockwise from Arjun and there's 1 person between Sara and Deepak, we can deduce the arrangement. Since Arjun is to the right of Sara, and Deepak is between Arjun and Rohan, and considering the table's circular nature, we count the seats from Rohan to Arjun clockwise: Rohan, Deepak, Arjun. Thus, there is 1 person seated between them, not counting endpoints.",
+      "rating": 8
+    },
+    {
+      "question": "In the context of Problem 89 with parallel rows and 12 seats, where Ritu sits opposite Kabir, Ananya sits immediately to the left of Isha, and there are specific clockwise arrangements, determine how many people are seated clockwise from Ritu to Vijay, not counting endpoints.",
+      "answer": "Start by placing Ritu and Kabir opposite each other. Then, use the clues about immediate neighbors to place Ananya, Isha, Asha, and others relative to each other. Given that Ritu is 8 places clockwise from Vijay, we need to count the seats from Ritu to Vijay, considering the arrangement: Ritu, Ananya, Isha, Asha, Vijay. However, since Ritu is 8 places from Vijay, and considering the arrangement provided in the solution (Ritu, Ananya, Isha, Asha, Vijay, Nikhil, Kabir, Kavya, Rahul, Ishaan, Lokesh, Krishna), we actually count the people between Ritu and Vijay in a clockwise direction, which includes Ananya, Isha, Asha, and then continues to the next row, counting until we reach Vijay, which would actually involve counting the entire row and then some from the next, but given the direct clue, we should directly deduce from the provided arrangement. Since the direct arrangement from Ritu to Vijay isn't straightforward without visualizing the entire table and the clue about 8 places involves counting around the table, the direct count from Ritu to Vijay, not counting endpoints, based on the solution arrangement, should directly reflect the positions as per the final arrangement, considering the parallel rows and the fact that Ritu and Vijay are on the same side, thus requiring a correct interpretation of the clockwise direction in a two-row setting.",
+      "rating": 7
+    },
+    {
+      "question": "How many people are seated clockwise from Arjun to Amit, not counting endpoints, given that Amit is 3 places clockwise from Arjun?",
+      "answer": "To solve this, we start with Arjun's position and move 3 places clockwise to find Amit. Since the question asks for the count not including endpoints, we count the people between Arjun and Amit, excluding both Arjun and Amit. Given Amit is 3 places from Arjun, there are 2 people between them (because we count the positions, not the people, between the endpoints). Therefore, there are 2 people seated clockwise from Arjun to Amit, not counting endpoints.",
+      "rating": 9
+    },
+    {
+      "question": "Who sits immediately to the right of Nisha, given the seating arrangement Manish, Lokesh, Sara, Arjun, Deepak, Rohan, Amit, Nisha?",
+      "answer": "Given the arrangement Manish, Lokesh, Sara, Arjun, Deepak, Rohan, Amit, Nisha, we can see that Nisha is at the end. Since the arrangement provided does not show anyone to the right of Nisha, we must deduce that the arrangement is either circular or Nisha is at the far right end in a linear arrangement. Without explicit information that the arrangement is circular or more people beyond Nisha, we cannot accurately determine who sits immediately to the right of Nisha based on the given arrangement alone. However, following the provided solution format strictly which implies a linear arrangement for the purpose of this question, there is no one to the right of Nisha in the given sequence.",
+      "rating": 8
+    },
+    {
+      "question": "In the circular seating arrangement of 10 people, who sits immediately to the left of Karan?",
+      "answer": "To find out who sits immediately to the left of Karan, we need to analyze the given clues. Since Karan is at the 12 o'clock position and sits opposite Manish, we can start by placing Karan and Manish in the arrangement. Given that Raj is seated between Karan and Yash, we can deduce the order: Karan, Raj, Yash. However, to determine who sits to the left of Karan, we must consider the circular nature and the fact that no one is specified to be to the left of Karan directly. Thus, we have to consider the arrangement as a whole. Since Karan is at the 12 o'clock position and the arrangement provided in the solution is Karan, Raj, Yash, Ritu, Siddharth, Manish, Harsh, Varun, Suresh, Chitra, it indicates that no one is to the immediate left of Karan in a linear sense within the given sequence. However, in a circular arrangement, the person to the 'left' of the first person would be the last person in the sequence when arranged linearly for simplicity. Therefore, Chitra sits to the 'left' of Karan in the circular arrangement.",
+      "rating": 9
+    },
+    {
+      "question": "In the square table seating arrangement of 8 people, how many people are seated clockwise from Yash to Nandini, not counting endpoints?",
+      "answer": "Given the clues, we know Yash sits at the north side and immediately to the left of Nandini. This means Nandini is directly to the right of Yash. Since we are not counting endpoints (Yash and Nandini), we look at the people between them. However, the clues provided do not directly give us the arrangement from Yash to Nandini without considering the whole table. We know Yash is 2 places clockwise from Sara, and there are 5 people seated clockwise from Ritu to Nandini, not counting endpoints. But to find the number of people from Yash to Nandini, we need to establish their positions relative to each other and the table's layout. Given Yash sits immediately to the left of Nandini, there are no people between Yash and Nandini, meaning there are 0 people seated clockwise from Yash to Nandini when not counting the endpoints.",
+      "rating": 8
+    },
+    {
+      "question": "In a circular seating arrangement with 8 people, if Yash is 2 places clockwise from Sara and there are 5 people seated clockwise from Ritu to Nandini, not counting endpoints, how many people are seated clockwise from Yash to Ritu, not counting endpoints?",
+      "answer": "To solve this, we start by placing Yash and Sara based on their relationship. Given Yash is 2 places clockwise from Sara, we can denote their positions as Y-S-?-?. Next, we incorporate Ritu and Nandini's relationship, knowing there are 5 people between them. By combining these clues with the given arrangement (Yash, Nandini, Kabir, Ritu, Harsh, Maya, Sara, Amit), we find Yash to Ritu's positions. Counting clockwise from Yash to Ritu, not counting endpoints, we pass through Nandini, Kabir, which gives us 2 people.",
+      "rating": 9
+    },
+    {
+      "question": "Given the seating arrangement where Aditya sits at the north side of a square table, and Maya sits immediately to the left of Nandini, who sits opposite Nandini?",
+      "answer": "We start by fixing Aditya's position at the north side. Knowing Maya sits to the left of Nandini, we place them relative to each other. With the clue that Priya is between Nandini and Arjun, and Nandini to the left of Priya, we deduce the order: Maya, Nandini, Priya, Arjun. Since Karan is 3 places clockwise from Nandini, and there are 0 people between Maya and Nandini, we can deduce the full arrangement as given: Aditya, Nikhil, Varun, Maya, Nandini, Priya, Arjun, Karan. Nandini's opposite would be the person directly across the table, which is Aditya.",
+      "rating": 8
+    },
+    {
+      "question": "In the seating arrangement of 8 people, who sits immediately to the left of Ishaan?",
+      "answer": "To find out who sits immediately to the left of Ishaan, we need to follow the given clues step by step. From clue 2, we know Raj sits immediately to the left of Ishaan. Therefore, the person sitting immediately to the left of Ishaan is Raj.",
+      "rating": 9
+    },
+    {
+      "question": "In a circular seating arrangement with 8 people, if Ritu is 4 places clockwise from Shreya and there are 3 people seated clockwise from Chitra to Lokesh, not counting endpoints, who sits immediately to the left of Chitra?",
+      "answer": "To solve this, start by placing Ritu and Shreya based on their 4-place clockwise distance. Then, use the clue about the 3 people between Chitra and Lokesh to start building the arrangement. Given that Nikhil sits immediately to the right of Priya and Chitra sits immediately to the right of Nikhil, we can start to build a sequence. By combining these clues with the others, we find the arrangement: Ritu, Leela, Sara, Lokesh, Shreya, Priya, Nikhil, Chitra. Thus, Nikhil sits immediately to the left of Chitra.",
+      "rating": 9
+    },
+    {
+      "question": "In a circular seating arrangement with 6 seats, if Rekha is at the 12 o'clock position, Vivaan is seated between Neeraj and Anika, and Rekha sits immediately to the right of Anika, how many people are seated clockwise from Maya to Neeraj, not counting endpoints?",
+      "answer": "First, place Rekha at the 12 o'clock position. Since Rekha sits opposite Neeraj, Neeraj is at the 6 o'clock position. With Vivaan between Neeraj and Anika, and Rekha to the right of Anika, we get a sequence. Maya sits to the left of Chitra, and Vivaan is 3 places clockwise from Maya. By arranging these clues, we find the sequence: Rekha, Maya, Chitra, Neeraj, Vivaan, Anika. Thus, there are 2 people (Chitra and Vivaan) seated clockwise from Maya to Neeraj, not counting endpoints.",
+      "rating": 8
+    }
+  ],
+  "conversations": [
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the first seating arrangement problem, how many people are seated clockwise from Karan to Vivaan, not counting endpoints?"
+      },
+      {
+        "role": "assistant",
+        "content": "To solve this, first, we need to establish the seating arrangement based on the clues. From the solution, the arrangement is: Rohan, Vivaan, Chitra, Diya, Sara, Maya, Karan, Krishna. Starting from Karan and moving clockwise to Vivaan, we count the people in between, excluding the endpoints (Karan and Vivaan). So, we have Maya, Sara, Diya, Chitra. Therefore, there are 4 people seated clockwise from Karan to Vivaan, not counting endpoints."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the second seating arrangement problem, who sits immediately to the right of Sameer?"
+      },
+      {
+        "role": "assistant",
+        "content": "Following the steps to solve the seating arrangement: The final arrangement is given as Kabir, Sameer, Diya, Neeraj, Priya, Ritu, Krishna, Ishaan. To find who sits immediately to the right of Sameer, we look at the arrangement and see that Diya is to the right of Sameer. Therefore, Diya sits immediately to the right of Sameer."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the linear seating arrangement of 7 people, who sits immediately to the left of Krishna?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits immediately to the left of Krishna, we need to follow the clues given. From the clue 'Maya is seated between Ishaan and Krishna,' we know Maya is to the left of Krishna. Therefore, the person who sits immediately to the left of Krishna is Maya."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the circular seating arrangement of 10 people, who sits opposite Sonal?"
+      },
+      {
+        "role": "assistant",
+        "content": "Given that Vijay is at the 12 o'clock position and Vijay sits opposite Rahul, we can start by placing Vijay and Rahul. Since Vijay sits immediately to the left of Lokesh and Vijay is at the 12 o'clock position, Lokesh must be to the right of Vijay. The arrangement given is Vijay, Lokesh, Sonal, Maya, Suresh, Rahul, Arjun, Yash, Aditya, Ritu. To find who sits opposite Sonal, we need to consider the circular nature and find the person directly across from Sonal. Given the arrangement, Sonal is at position 3. Counting 5 positions ahead (since there are 10 people and we're looking for the direct opposite), we find that the person opposite Sonal is Rahul, as the arrangement wraps around and positions are counted in a circular manner."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the seating arrangement of Problem 5, how many people are seated clockwise from Karan to Kavya, not counting endpoints?"
+      },
+      {
+        "role": "assistant",
+        "content": "To solve this, we first need to establish the seating arrangement based on the clues given. From the solution, we know the arrangement is: Chitra, Geeta, Kabir, Ritu, Nikhil, Manish, Maya, Karan, Kavya, Meera. Since Karan and Kavya are adjacent in the seating arrangement with Kavya to the right of Karan, there are 0 people seated clockwise from Karan to Kavya, not counting endpoints."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the seating arrangement of Problem 6, who sits immediately to the right of Nandini?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the clues given, we know Nandini sits at the north side of the table and is seated between Kabir and Ritu. Given the final arrangement: Nandini, Ritu, Diya, Raj, Sameer, Rohan, Tara, Kabir, we can see that Ritu sits immediately to the right of Nandini."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who sits opposite Meera in a circular seating arrangement of 12 people where Nisha is at the 12 o'clock position, Asha sits to the right of Karan, Meera sits to the left of Sai, and other given constraints?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits opposite Meera, we first need to establish the seating arrangement based on the given clues. From the clues: Nisha is at 12 o'clock, Nisha sits opposite Lokesh, Asha sits immediately to the right of Karan, Meera sits immediately to the left of Sai, Rekha is between Ritu and Ishaan, Sai is 5 places clockwise from Ritu, and there are 4 people from Asha to Rekha. Following the steps: Place Nisha and Lokesh first, then use immediate neighbor clues to place others relative to them. Since Meera sits to the left of Sai and Sai is 5 places from Ritu, we determine their positions relative to fixed points and fill in the rest. The arrangement is Nisha, Sara, Arjun, Ritu, Rekha, Ishaan, Lokesh, Meera, Sai, Nandini, Karan, Asha. Meera sits at the 8th position, so the person opposite her, given the circular nature and 12 seats, would be at the 2nd position (since 8 + 6 = 14, and 14 - 12 = 2, considering the circular arrangement). Thus, the person at the 2nd position, which is Sara, sits opposite Meera."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In a circular seating arrangement of 10 people, if Krishna is 3 places clockwise from Sai and Sai is at the 12 o'clock position, who sits immediately to the left of Krishna?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits immediately to the left of Krishna, we first need to determine the position of Krishna. Given that Krishna is 3 places clockwise from Sai and Sai is at the 12 o'clock position, we can deduce the following arrangement starting from Sai and moving clockwise: Sai (12 o'clock), ?, ?, Krishna. Since the question also mentions that Krishna sits immediately to the right of Sonal, we can conclude that Sonal must be the one sitting immediately to the left of Krishna."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the same circular arrangement, if there are 3 people seated clockwise from Nandini to Sai, not counting endpoints, and Sai sits opposite Raj, how many people are seated between Raj and Nandini, not counting endpoints?"
+      },
+      {
+        "role": "assistant",
+        "content": "Given that Sai sits opposite Raj in a circular arrangement of 10 people, we know that there are 5 people on one side of the circle between Sai and Raj (including one of the endpoints but excluding the other). Since there are 3 people seated clockwise from Nandini to Sai, not counting endpoints, Nandini must be among those 5 people. To find the number of people between Raj and Nandini, we consider the whole circle: if Nandini is 3 places away from Sai, and assuming the arrangement is symmetrical with Raj directly opposite Sai, the number of people between Raj and Nandini (excluding endpoints) would be the remaining seats not counting Nandini, Raj, or Sai. Thus, we deduce the number based on the total seats and the positions of Sai, Raj, and the given clue about Nandini's position relative to Sai."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the seating arrangement of Problem 11, who sits immediately to the right of Meera?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits immediately to the right of Meera, we start with the given clues. From clue 2, Prateek is seated between Geeta and Meera. Since Geeta sits immediately to the left of Prateek (clue 3), Meera must sit to the right of Prateek. Thus, the sequence so far is Geeta, Prateek, Meera. Now, looking at the final arrangement provided in the solution: Prateek, Meera, Neeraj, Ananya, Tara, Priya, Arjun, Geeta, we can see that Neeraj sits immediately to the right of Meera."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who sits at position 6 in the seating arrangement, given that Ishaan sits exactly in the middle of the row and there are 2 people seated clockwise from Shreya to Ishaan, not counting endpoints?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine who sits at position 6, we first establish Ishaan's position as the middle seat. Given there are 10 seats in total (as inferred from the question about position 10), Ishaan is at position 5 (since 10 is an even number, the middle would be between 5 and 6, but for seating purposes, we consider the exact middle as position 5 in a 1-indexed system for an even number of seats). We know Shreya is 2 seats away from Ishaan in the clockwise direction, not counting endpoints, which places Shreya at position 8 (since Ishaan is at 5, and moving 2 seats to the right lands on 8, considering the arrangement wraps around). Given the arrangement provided in the solution: Sara, Geeta, Shreya, Aditya, Asha, Ishaan, Siddharth, Deepak, Ritu, Rekha, we can see Ishaan is indeed in the middle. Counting from the left, Ishaan is at position 6, which means the person at position 6 is Ishaan."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the parallel rows seating arrangement, who sits opposite Nandini, given that Sai sits opposite Anika and there are 0 people seated clockwise from Nandini to Priya, not counting endpoints?"
+      },
+      {
+        "role": "assistant",
+        "content": "Given the clue that there are 0 people seated clockwise from Nandini to Priya, not counting endpoints, it implies Nandini and Priya are adjacent. Since Sai sits opposite Anika, and considering the arrangement must satisfy all clues including Anika being 4 places clockwise from Sai, we deduce the seating arrangement as provided: Sai, Nandini, Priya, Kavya, Anika, Karan, Vikram, Kriti. To find who sits opposite Nandini, we look at the arrangement and see that Nandini is opposite Karan, given the arrangement of the two rows facing each other."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who sits immediately to the left of Manish in the linear seating arrangement of 7 seats?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine who sits immediately to the left of Manish, we start by fixing the absolute positions from the given clues. Since Geeta sits exactly in the middle of the row and Geeta sits immediately to the right of Manish, Manish must be to the left of Geeta. With Geeta in the middle (4th position in a 7-seat arrangement), Manish would be in the 3rd position. Given that Nandini sits at the leftmost end and immediately to the left of Aditya, and considering the arrangement, the person to the left of Manish can be deduced by placing the fixed and adjacent relationships. Since Nandini and Aditya occupy the first two positions, the person immediately to the left of Manish would be Aditya, as Manish is in the 3rd position and Aditya is in the 2nd position."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the seating arrangement, who sits immediately to the right of Siddharth?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits immediately to the right of Siddharth, we need to follow the clues provided. First, we establish Kriti's position in the middle. Then, using the clue that Siddharth sits immediately to the left of Vivaan, we can place Siddharth and Vivaan relative to Kriti. Given the final arrangement is Isha, Siddharth, Vivaan, Kriti, Sameer, Ritu, Deepak, we can see that Vivaan sits immediately to the right of Siddharth."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the rectangular table seating, who sits opposite Maya?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine who sits opposite Maya, we first place Maya at the north side of the table. Then, using the clues about the relative positions of the other individuals, we establish the arrangement: Maya, Vivaan, Deepak, Ananya, Nikhil, Sameer, Diya, Sai. Since Maya is at the north side, the person opposite her would be at the south side. Counting the positions, we find that the arrangement wraps around, meaning the person directly opposite Maya would be the one at the other end of the 'north-south' line. Thus, the person opposite Maya is Ananya."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the square table seating arrangement of 8 people, who sits at position 4 from the left?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits at position 4 from the left in the square table arrangement, we follow the clues given. Starting with Tara at the north side, and knowing Sonal sits immediately to the right of Tara, we establish the first two positions. The clue that Ananya sits immediately to the left of Siddharth, and Deepak sits immediately to the right of Siddharth, helps in placing Siddharth and Deepak relative to Ananya. However, to precisely determine who is at position 4, we need to align these relationships with the table's layout and the clue that Karan is 4 places clockwise from Harsh, along with the constraint of people seated from Isha to Ananya. Given the final arrangement provided as Tara, Sonal, Karan, Ananya, Siddharth, Deepak, Harsh, Isha, we can directly identify the person at position 4 as Ananya by counting the positions from the left."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the seating arrangement of 8 people around a rectangular table, if Kriti sits at the north side and Maya sits immediately to the left of Isha, who sits opposite Isha?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits opposite Isha, we first place Kriti at the north side. Given Maya sits immediately to the left of Isha, we have a sequence: ... Maya, Isha ... . Since Arjun is seated between Amit and Kriti, and Amit sits immediately to the left of Arjun, we have another sequence: ... Amit, Arjun, Kriti ... . Considering Maya is 5 places clockwise from Pooja and there are 0 people seated clockwise from Amit to Arjun, we can deduce the arrangement. The final arrangement is: Kriti, Kabir, Maya, Isha, Lokesh, Pooja, Amit, Arjun. Thus, Lokesh sits opposite Isha."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Given the rectangular table with 12 seats and the clue that Diya sits at the north side, Kriti is seated between Sara and Varun, and Pooja sits immediately to the left of Meera, who sits immediately to the left of Varun?"
+      },
+      {
+        "role": "assistant",
+        "content": "First, we place Diya at the north side. Knowing Kriti is between Sara and Varun gives us a sequence: ... Sara, Kriti, Varun ... . Since Pooja sits immediately to the left of Meera, we need to find where this pair fits. Given Sara sits immediately to the right of Vijay and Vijay is 4 places clockwise from Sameer, with 3 people seated clockwise from Sameer to Vijay, we can start building the arrangement. However, to find who sits immediately to the left of Varun, we look at our sequence and see that Kriti is to the left of Varun. Thus, Kriti sits immediately to the left of Varun."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the circular seating arrangement of 10 people, if Sameer is at the 12 o'clock position and Karan is seated between Amit and Asha, who sits immediately to the right of Asha?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine who sits immediately to the right of Asha, we first use the clue that Sameer is 3 places clockwise from Asha. Given that Sameer is at the 12 o'clock position, we can deduce the positions of the people relative to Sameer. Since Karan is seated between Amit and Asha, and Amit sits immediately to the left of Karan, we need to find the arrangement that satisfies all clues. From the clue that there are 4 people seated clockwise from Sameer to Amit, not counting endpoints, and knowing Sameer sits opposite Amit, we can deduce the seating arrangement. By analyzing the clues step by step and ensuring a unique consistent arrangement, we can determine that Asha is seated to the left of Karan, and thus, Karan sits immediately to the right of Asha."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the linear seating arrangement of 7 seats, with Siddharth at the leftmost end and Lokesh in the middle, how many people are seated clockwise from Ritu to Vivaan, not counting endpoints?"
+      },
+      {
+        "role": "assistant",
+        "content": "First, we establish the fixed positions based on the clues: Siddharth is at the leftmost end, and Lokesh is exactly in the middle. Then, using the clue that Geeta sits immediately to the left of Lokesh and Geeta is 3 places to the right of Ritu, we can determine the relative positions of Ritu and Geeta. Since Siddharth sits immediately to the right of Ritu, we can place Ritu next to Siddharth. With Lokesh in the middle and Geeta to his left, and knowing the total number of seats is 7, we can fill in the remaining seats. Given that there is 1 person seated clockwise from Vivaan to Ritu, not counting endpoints, and by analyzing the arrangement, we find that Ritu is to the left of the middle, and Vivaan is to the right of the middle. Thus, to find the number of people seated clockwise from Ritu to Vivaan, not counting endpoints, we count the people between them, excluding Ritu and Vivaan. This requires a systematic approach to seating arrangements and the application of the given clues to deduce the correct order of individuals."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the rectangular table setting with 10 seats, who sits immediately to the right of Nandini?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits immediately to the right of Nandini, we need to follow the steps given in the solution. First, we place Diya at the north side of the table. Then, we use the immediate neighbor clues to place adjacent people. From the clue 'Vivaan is 6 places clockwise from Diya' and 'There are 1 people seated clockwise from Siddharth to Ishaan, not counting endpoints,' we can deduce the arrangement. Given the final arrangement: Diya, Ritu, Siddharth, Anika, Ishaan, Leela, Vivaan, Nandini, Arjun, Vikram, we can see that Arjun sits immediately to the right of Nandini."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the square table setting with 8 seats, how many people are seated clockwise from Anika to Ria, not counting endpoints?"
+      },
+      {
+        "role": "assistant",
+        "content": "To solve this, we start by placing Anika at the north side of the table. Then, using the clues 'Manish is seated between Anika and Ria' and 'Yash is 3 places clockwise from Manish,' we can begin to deduce the seating arrangement. Given that Manish is between Anika and Ria, and considering the other clues about the positions of Yash, Shreya, Rohan, Chitra, and Nisha, we can determine the full arrangement. However, the direct question about the number of people seated clockwise from Anika to Ria, not counting endpoints, can be answered by simply looking at the clue that Manish is seated between Anika and Ria, which means there is 1 person (Manish) seated between them, not counting the endpoints (Anika and Ria themselves)."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In a circular seating arrangement, if Yash is 3 places clockwise from Manish and there are 4 people seated clockwise from Manish to Chitra, not counting endpoints, who sits opposite Manish?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits opposite Manish, we first need to establish the seating arrangement based on the clues. Given that Yash is 3 places clockwise from Manish, we can start placing individuals relative to Manish. With 4 people between Manish and Chitra (not counting endpoints), and knowing Yash's position relative to Manish, we can deduce the order. The arrangement is: Anika, Manish, Ria, Shreya, Yash, Rohan, Chitra, Nisha. Since the table is circular and there are 8 people, the person opposite Manish would be 4 places away in either direction. Therefore, the person opposite Manish is Yash."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the same circular seating arrangement, how many people are seated clockwise from Anika to Ria, not counting endpoints?"
+      },
+      {
+        "role": "assistant",
+        "content": "Given the final arrangement is Anika, Manish, Ria, Shreya, Yash, Rohan, Chitra, Nisha, we can see that from Anika to Ria, there is only 1 person, which is Manish. Therefore, there is 1 person seated clockwise from Anika to Ria, not counting endpoints."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How many people are seated clockwise from Siddharth to Meera in the linear seating arrangement, not counting endpoints?"
+      },
+      {
+        "role": "assistant",
+        "content": "Given the corrected understanding that Siddharth sits immediately to the left of Meera, and considering the linear arrangement, if we are not counting the endpoints (Siddharth and Meera), we are looking at the people between them. However, since Siddharth is directly to the left of Meera, there are no people between them, meaning there are 0 people seated clockwise from Siddharth to Meera when not counting the endpoints themselves."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who sits opposite Rohan in a circular seating arrangement where Nisha is 5 places clockwise from Sonal and there are 7 people seated clockwise from Rohan to Diya, not counting endpoints?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine who sits opposite Rohan, we first need to establish the seating arrangement based on the given clues. Starting with 'Nisha is 5 places clockwise from Sonal' and 'There are 7 people seated clockwise from Rohan to Diya, not counting endpoints,' we can deduce the arrangement by placing individuals relative to each other and filling in the seats consistently. Given the final arrangement is Vikram, Kabir, Chitra, Sonal, Sameer, Kriti, Amit, Diya, Nisha, Anika, Maya, Rohan, we can see that Rohan is at one end. Since the table is circular and there are 12 people, the person opposite Rohan would be 6 positions away in either direction. Counting 6 positions from Rohan in the clockwise direction, we find the arrangement leads us to the person opposite Rohan. Thus, the person opposite Rohan is Amit."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who sits immediately to the left of Nisha in a rectangular table seating arrangement where Isha sits immediately to the left of Nisha and there are other given constraints?"
+      },
+      {
+        "role": "assistant",
+        "content": "Given Isha sits immediately to the left of Nisha, we directly know the answer without needing the full seating arrangement. The clue itself provides the necessary information to answer the question, making further deduction unnecessary. Therefore, Isha sits immediately to the left of Nisha."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How many people are seated clockwise from Vijay to Arjun, not counting endpoints, given that Nikhil is 6 places clockwise from Vijay and there are 3 people seated clockwise from Raj to Meera?"
+      },
+      {
+        "role": "assistant",
+        "content": "First, place Rohan, Raj, and Nikhil based on given clues. Then, use the clue 'Nikhil is 6 places clockwise from Vijay' to determine Vijay's position. Knowing there are 3 people between Raj and Meera, and Nikhil's position relative to Vijay, we deduce the arrangement. From the arrangement: Rohan, Sai, Nikhil, Meera, Ritu, Rekha, Vijay, Arjun, Neeraj, Raj, we find 1 person (Rekha, Ritu, and Meera are between Nikhil and Vijay, and the question asks from Vijay to Arjun) is seated clockwise from Vijay to Arjun, not counting endpoints."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who sits opposite Isha in a parallel row seating arrangement given that Arjun sits opposite Prateek, Anika sits immediately to the left of Ishaan, and Ishaan is 9 places clockwise from Isha?"
+      },
+      {
+        "role": "assistant",
+        "content": "Start by fixing Arjun and Prateek's positions. Use the clue 'Anika sits immediately to the left of Ishaan' and 'Anika sits immediately to the right of Prateek' to place Anika and Ishaan. Given Ishaan is 9 places clockwise from Isha, determine Isha's position. From the final arrangement: Arjun, Asha, Chitra, Krishna, Priya, Vijay, Prateek, Anika, Ishaan, Ria, Sara, Isha, we identify that Isha sits opposite Arjun."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In a circular seating arrangement of 8 people, if Kabir is 4 places clockwise from Vijay and there are 6 people seated clockwise from Deepak to Geeta, not counting endpoints, who sits opposite Kabir?"
+      },
+      {
+        "role": "assistant",
+        "content": "To solve this, start by placing the fixed positions from clues. Since Kabir is 4 places clockwise from Vijay, and there are 6 people from Deepak to Geeta, we can deduce the seating arrangement step by step. Given the clue that Geeta is seated between Vijay and Deepak, and Kabir is 4 places from Vijay, we can start building the arrangement. If we consider the arrangement: Maya, Anika, Vijay, Geeta, Deepak, Ananya, Kabir, Rohan, we see that Kabir is indeed 4 places from Vijay and there are 6 people from Deepak to Geeta. Thus, to find who sits opposite Kabir, we look at the arrangement and see that since Kabir is at one end, the person opposite him would be 4 places counter-clockwise from him, which lands on Vijay."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In a linear seating arrangement of 10 people, if Krishna sits at the leftmost end, Ishaan sits immediately to the right of Meera, and Vikram sits exactly in the middle of the row, who sits at position 9 from the left?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find who sits at position 9, we start with the given clues. Krishna is at the leftmost end. Since Vikram is in the middle, in a 10-seat row, Vikram would be at position 5 (because 10 divided by 2 is 5). Knowing Ishaan sits to the right of Meera and Leela is between Ishaan and Vikram, we can start building from the middle. If Vikram is at position 5, and considering the constraints, we can deduce the sequence around Vikram. Given that Siddharth is between Vikram and Sameer, and Leela is between Ishaan and Vikram, and knowing the row's middle point, we can deduce that from the middle (Vikram) moving rightwards, we have Sameer, then Siddharth, then Leela, then Ishaan, then Meera to the left of Ishaan, which doesn't fit as we need to account for Krishna at the start and the positions to the right of Vikram. Thus, re-evaluating with Kabir 2 places to the right of Rahul and the other clues, the correct sequence that fits all given conditions must be logically deduced step by step, focusing on the middle and the ends. However, the direct answer to who sits at position 9 requires a detailed step-by-step analysis of all clues provided, focusing on the constraints around the middle seat (Vikram) and the ends. Given the complexity and the need for a precise arrangement, let's simplify: If Vikram is at position 5, and we have Siddharth and Sameer to his right, followed by other placements, we need to fit all characters according to the clues. The arrangement becomes a puzzle of fitting the remaining characters around the fixed points, adhering to all given conditions. Thus, without the exact sequence provided in the question, we deduce based on given clues and the fixed position of Vikram, calculating the positions of others relative to him and the constraints provided."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who sits opposite Leela in the seating arrangement?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine who sits opposite Leela, we first need to establish the seating arrangement based on the clues given. From the solution, we know the arrangement is: Kabir, Vijay, Meera, Ishaan, Leela, Vikram, Siddharth, Sameer, Rahul, Krishna. Since Leela is at the 5th position, to find who is opposite her, we need to consider the seating is in a row and find the person at the position that would be directly across from her if the row were curved into a circle or if it were a table where people face each other. Given the arrangement and assuming a linear seating that can be conceptually curved, Leela's opposite would be 5 positions away in either direction. Counting from Leela (5th position) to the right, we have Vikram (6th), Siddharth (7th), Sameer (8th), Rahul (9th), and Krishna (10th). Counting to the left, we have Ishaan (4th), Meera (3rd), Vijay (2nd), and Kabir (1st). Therefore, to be directly opposite, considering the linear arrangement provided and assuming a circular logic for 'opposite', we need to find the person that matches the distance from Leela in a circular manner. Since there are 10 people, the direct opposite of Leela would be 5 positions away, which lands on Rahul if we count from Leela's position as a starting point in a circular manner."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who sits immediately to the right of Arjun in the rectangular table seating arrangement?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits immediately to the right of Arjun, we refer to the clues provided for the rectangular table seating arrangement. The arrangement is: Deepak, Nandini, Amit, Siddharth, Arjun, Ananya, Pooja, Manish. According to the arrangement, Ananya sits immediately to the right of Arjun. This is directly inferred from the final seating arrangement provided in the solution."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In a circular seating arrangement with 7 seats, Siddharth is at the 12 o'clock position. Harsh is seated between Prateek and Lokesh. Rahul sits immediately to the left of Leela. Aditya is seated between Siddharth and Rahul. Aditya is 2 places clockwise from Lokesh. There are 3 people seated clockwise from Lokesh to Leela, not counting endpoints. Who sits immediately to the left of Prateek?"
+      },
+      {
+        "role": "assistant",
+        "content": "To solve this, start by placing Siddharth at the 12 o'clock position. Since Aditya is seated between Siddharth and Rahul, and Aditya is 2 places clockwise from Lokesh, we can deduce the order: Siddharth, Aditya, ?, Lokesh, ?, ?, ?. Given Harsh is between Prateek and Lokesh, and there are 3 people from Lokesh to Leela (not counting endpoints), the arrangement must be: Siddharth, Aditya, Rahul, Lokesh, Harsh, Prateek, Leela. Thus, Harsh sits immediately to the left of Prateek."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In a parallel row seating arrangement with 12 seats, Karan sits opposite Chitra. Asha sits immediately to the right of Geeta. Siddharth sits immediately to the right of Diya. Nisha sits immediately to the right of Tara. Karan is 7 places clockwise from Kavya. There are 0 people seated clockwise from Tara to Nisha, not counting endpoints. Who sits opposite Siddharth?"
+      },
+      {
+        "role": "assistant",
+        "content": "Start by using the clue that Karan sits opposite Chitra and Karan is 7 places clockwise from Kavya. This helps in fixing some positions. Since Asha sits to the right of Geeta and Nisha to the right of Tara with no one between Tara and Nisha (clockwise, not counting endpoints), we can start building the arrangement. Given Siddharth sits to the right of Diya, and knowing the final arrangement is: Karan, Sai, Diya, Siddharth, Sameer, Kavya, Chitra, Aarav, Tara, Nisha, Geeta, Asha, we can see that Chitra sits opposite Siddharth."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the circular seating arrangement with 6 seats, who sits immediately to the left of Vikram?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine who sits immediately to the left of Vikram, we need to follow the clues given. Starting with Aditya at the 12 o'clock position, we know Rahul is seated between Aditya and Arjun, and Arjun sits immediately to the left of Tara. Since Tara is 2 places clockwise from Rahul, and given the circular nature, we can deduce the order. Aditya is at 12 o'clock, then Rahul, then Arjun, then Tara. Given Tara's position and that Vikram is seated between Tara and Manish, and Aditya sits opposite Tara, the arrangement can be deduced as follows: Aditya, Rahul, Arjun, Tara, Vikram, Manish. Therefore, Tara sits immediately to the left of Vikram."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the rectangular table seating arrangement with 12 seats, who sits immediately to the left of Raj?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits immediately to the left of Raj, we analyze the given clues. Raj sits immediately to the left of Ishaan, and Ishaan sits immediately to the left of Prateek. However, to determine who is to the left of Raj, we need to consider the entire arrangement deduced from the clues. Given the arrangement Neeraj, Sai, Leela, Anika, Sameer, Asha, Nikhil, Raj, Ishaan, Prateek, Nandini, Harsh, we see that the person immediately to the left of Raj is Nikhil."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who sits immediately to the left of Vikram in a circular seating arrangement where Vikram is at the 12 o'clock position, Aarav is seated between Diya and Vikram, and Vikram is seated between Aarav and Rekha?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits immediately to the left of Vikram, we need to analyze the given clues. Since Aarav is seated between Diya and Vikram, and Vikram is seated between Aarav and Rekha, it means Aarav is to the left of Vikram and Rekha is to the right of Vikram. Therefore, Aarav sits immediately to the left of Vikram."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In a parallel rows seating arrangement with 8 seats, where Maya sits opposite Ritu and Maya sits immediately to the right of Aarav, who sits opposite Anika?"
+      },
+      {
+        "role": "assistant",
+        "content": "First, we establish Maya's position relative to Ritu and Aarav. Since Maya sits opposite Ritu and immediately to the right of Aarav, we can start building the arrangement. Given that Amit is 5 places clockwise from Ritu and there are 6 people seated clockwise from Ritu to Anika, we can deduce the seating arrangement. The final arrangement provided is Maya, Amit, Vijay, Anika, Ritu, Yash, Deepak, Aarav. Therefore, to find who sits opposite Anika, we look at the arrangement and see that Ritu sits opposite Maya, and by the arrangement, Anika sits opposite Amit."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the circular seating arrangement of 12 people, who sits immediately to the left of Geeta?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits immediately to the left of Geeta, we first need to establish the fixed positions based on the clues provided. From the clue 'Varun is at the 12 o'clock position' and 'Varun sits opposite Tara,' we can start placing people. With 'Manish sits immediately to the right of Geeta,' we know Geeta and Manish are adjacent. By analyzing the clue 'Aditya is 6 places clockwise from Rahul' and 'There are 5 people seated clockwise from Prateek to Ishaan, not counting endpoints,' we can deduce the seating arrangement. The final arrangement provided is: Varun, Aditya, Geeta, Manish, Karan, Ishaan, Tara, Rahul, Siddharth, Isha, Ananya, Prateek. Therefore, the person immediately to the left of Geeta is Aditya."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "At the square table with 8 seats, how many people are seated clockwise from Ritu to Ishaan, not counting endpoints?"
+      },
+      {
+        "role": "assistant",
+        "content": "First, we analyze the given clues to understand the seating arrangement. Since 'Ishaan is 3 places clockwise from Nikhil' and 'Ritu is seated between Ishaan and Aarav,' we can start building the arrangement. With 'Aarav is seated between Ritu and Anika,' we know the sequence for these three. Given 'Sonal sits immediately to the right of Nikhil' and 'There are 0 people seated clockwise from Anika to Suresh, not counting endpoints,' we can further refine the seating. The arrangement isn't directly provided, but based on the clues, we can deduce that Ritu and Ishaan are adjacent, with Ritu to the left of Ishaan in a clockwise direction. Therefore, there are 0 people seated clockwise from Ritu to Ishaan, not counting endpoints, because they are next to each other."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the seating arrangement of Problem 47, how many people are seated clockwise from Meera to Karan, not counting endpoints?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the solution, we know the arrangement is: Siddharth, Rohan, Karan, Aditya, Yash, Nisha, Meera, Ritu. To find the number of people seated clockwise from Meera to Karan, we start at Meera and move clockwise: Meera -> Ritu -> Siddharth -> Rohan -> Karan. Counting the people between Meera and Karan (not including Meera and Karan), we have Ritu, Siddharth, and Rohan, which totals 3 people."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the seating arrangement of Problem 48, who sits immediately to the right of Krishna?"
+      },
+      {
+        "role": "assistant",
+        "content": "Given that Krishna sits immediately to the left of Suresh, we can deduce that Suresh sits immediately to the right of Krishna. This is because the clue directly states their adjacent relationship, making Suresh the person to the right of Krishna."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In Problem 50, who sits immediately to the left of Krishna, given that Krishna is seated between Geeta and Chitra, and Chitra sits opposite Manish?"
+      },
+      {
+        "role": "assistant",
+        "content": "First, we establish the order of Krishna, Geeta, and Chitra. Since Krishna is between Geeta and Chitra, and considering Chitra sits opposite Manish, we cannot directly infer the left neighbor of Krishna without the row arrangement. However, clue 2 and clue 3 seem to create a contradiction unless we interpret them as describing a sequence where Geeta, Krishna, Chitra or the reverse can be true based on the perspective of the rows. Given Chitra is between Krishna and Sai, and knowing the rows face each other, if Chitra is opposite Manish, then for Krishna to be between Geeta and Chitra, Geeta must be to the left of Krishna in one of the rows. Therefore, Geeta sits immediately to the left of Krishna."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the seating arrangement of Problem 51, who sits immediately to the right of Vijay?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine who sits immediately to the right of Vijay, we need to follow the clues given. From clue 3 and 4, we know Asha sits immediately to the right of Diya and also to the left of Vijay. Since Diya is in the middle, and considering the arrangement of Shreya, Neeraj, and Diya from the left, we place Asha and Vijay relative to Diya. Given Diya's central position and other clues, we deduce the order is Shreya, Neeraj, Sai, Karan, Diya, Asha, Vijay, Geeta. Therefore, Geeta sits immediately to the right of Vijay."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In Problem 52, who sits opposite Manish?"
+      },
+      {
+        "role": "assistant",
+        "content": "First, establish the fixed positions based on the clues. Krishna is at the north side, and sits immediately to the left of Rahul. Kabir is to the right of Rahul. Manish sits to the left of Neeraj. Anika is 4 places clockwise from Rahul, and there are 2 people between Kabir and Anika. Since Krishna is to the left of Rahul and Kabir is to the right of Rahul, and considering the table's square shape, we can start placing people. If we place Krishna, Rahul, and Kabir on the north side in order, Anika must be on the east side to satisfy being 4 places from Rahul and having only 2 people between Kabir and herself. Knowing the table has 8 seats and considering the square shape, we deduce the seating arrangement must accommodate all given conditions. Given Manish is to the left of Neeraj, and considering the placement of others, Manish and Neeraj must be on the south side to fit everyone according to the clues. Therefore, to find who sits opposite Manish, we consider the north side's arrangement and Manish's position on the south side. Since the exact positions of Manish and Neeraj relative to the north side (Krishna, Rahul, Kabir) are not directly given but we know Anika is 4 places from Rahul and must be on the east side, we use the clue about Anika and Kabir to finalize placements. Given the constraints, the person opposite Manish would be on the north side. If Manish is directly south of Rahul (considering the square table and the need to place Anika and others), then the person opposite Manish would be Rahul, as Krishna is to the left of Rahul and Kabir to the right, fitting the given clues about Anika's position relative to Rahul and the number of people between Kabir and Anika."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who sits immediately to the left of Anika in the seating arrangement?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits immediately to the left of Anika, we need to follow the clues given. First, we place Krishna at the north side of the table. Then, using the clue 'Krishna sits immediately to the left of Rahul' and 'Kabir sits immediately to the right of Rahul,' we establish the sequence: Krishna, Rahul, Kabir. Given 'Anika is 4 places clockwise from Rahul,' we count the positions: Rahul (1), Kabir (2), and then two more to reach Anika's position, which would be after two people from Kabir. Since 'There are 2 people seated clockwise from Kabir to Anika, not counting endpoints,' it means after Kabir, there are two people before Anika, making the sequence: Krishna, Rahul, Kabir, Ritu, Deepak, Anika. Therefore, Deepak sits immediately to the left of Anika."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How many people are seated clockwise from Neeraj to Leela, not counting endpoints in the rectangular table arrangement?"
+      },
+      {
+        "role": "assistant",
+        "content": "To solve this, we first arrange the people according to the given clues. Starting with 'Arjun sits at the north side of the table,' and using 'Shreya sits immediately to the right of Tara' and 'Neeraj sits immediately to the right of Priya,' we can start building the arrangement. With 'Shreya is 5 places clockwise from Neeraj,' we know the distance between them. The clue 'There are 2 people seated clockwise from Rekha to Neeraj, not counting endpoints' helps in placing Rekha and Neeraj. Following the steps and clues, the arrangement is: Arjun, Tara, Shreya, Nisha, Vikram, Krishna, Rekha, Kavya, Priya, Neeraj, Leela, Maya. To find how many people are seated clockwise from Neeraj to Leela, not counting endpoints, we look at the arrangement and count from Neeraj to Leela: Neeraj, Leela. There are no people between them when counting clockwise without including Neeraj and Leela themselves, meaning there's a direct placement, so the count is 0 people between them when excluding endpoints in a clockwise direction in this specific scenario. However, considering the actual task of counting people between two points in a circular or rectangular arrangement, if the question implies counting the positions between Neeraj and Leela without including them and considering the table's layout, we need to accurately interpret the seating and the question's intent. Given the arrangement and usual interpretation, if we count from Neeraj to Leela without including them, we see there's actually a misunderstanding in the direct count due to the arrangement's nature and the question's specifics. Thus, the solution involves understanding the seating arrangement and applying the clues correctly to determine distances and positions between individuals."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In a linear seating arrangement of 7 people, if Ria sits at the leftmost end and Arjun sits exactly in the middle, and there are 2 people seated clockwise from Ria to Arjun, not counting endpoints, who sits at position 1 from the left?"
+      },
+      {
+        "role": "assistant",
+        "content": "To solve this, start by placing Ria at the leftmost end and Arjun in the middle. Since Arjun is in the middle and there are 7 seats, Arjun must be in the 4th position. With 2 people between Ria and Arjun (not counting endpoints), and knowing Ria is at position 1, we can deduce the arrangement starts with Ria. Thus, Ria sits at position 1 from the left."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Given a square table with 8 seats and Nisha sitting at the north side, Nikhil sitting immediately to the left of Shreya and to the right of Maya, and Arjun sitting immediately to the right of Shreya, how many people are seated clockwise from Nikhil to Shreya, not counting endpoints?"
+      },
+      {
+        "role": "assistant",
+        "content": "First, establish the relationships: Nisha is at the north, and the sequence from the clues is Maya, Nikhil, Shreya, Arjun (since Nikhil is to the left of Shreya and to the right of Maya, and Arjun is to the right of Shreya). Since we're looking for the number of people from Nikhil to Shreya clockwise, not counting endpoints, and given their direct adjacency, there are 0 people between Nikhil and Shreya when counting clockwise and not including the endpoints themselves."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the seating arrangement, who sits immediately to the right of Aditya?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits immediately to the right of Aditya, we need to analyze the given clues. From the clue 'Nikhil is 2 places clockwise from Aditya,' we know Aditya and Nikhil's relative positions but not their immediate neighbors. However, from the final arrangement provided (Nisha, Aditya, Maya, Nikhil, Shreya, Arjun, Aarav, Priya), we can directly see that Maya sits immediately to the right of Aditya. Therefore, the person sitting immediately to the right of Aditya is Maya."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Given the seating arrangement clues, how many people are seated clockwise from Nikhil to Shreya, not counting endpoints?"
+      },
+      {
+        "role": "assistant",
+        "content": "To solve this, let's analyze the arrangement and clues given. The final seating arrangement is Nisha, Aditya, Maya, Nikhil, Shreya, Arjun, Aarav, Priya. Since we are counting from Nikhil to Shreya without including the endpoints (Nikhil and Shreya), we look at the people between them. The arrangement shows that there is no one between Nikhil and Shreya, meaning they are adjacent. Therefore, there are 0 people seated clockwise from Nikhil to Shreya, not counting endpoints."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In a linear seating arrangement of 9 people, Vijay sits at the leftmost end and Varun sits exactly in the middle. If Rekha is 4 places to the right of Raj and there are 4 people seated clockwise from Varun to Amit, not counting endpoints, who sits immediately to the left of Varun?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits immediately to the left of Varun, we first place Vijay at the leftmost end and Varun in the middle. Since Varun is in the middle of 9 seats, Varun must be in the 5th position. We then use the clue that Suresh is seated between Varun and Chitra. However, to determine who sits immediately to the left of Varun, we must figure out the positions relative to Varun using the given clues about the distances and relationships between other individuals. Given that Rekha is 4 places to the right of Raj and there are specific seating arrangements mentioned, we deduce the seating arrangement based on the clues provided. The final arrangement is: Amit, Ritu, Rekha, Geeta, Varun, Suresh, Chitra, Raj, Vijay. Therefore, the person sitting immediately to the left of Varun is Geeta."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who sits opposite Ishaan in a circular seating arrangement with 6 seats, given that Sameer is at the 12 o'clock position, Isha sits immediately to the left of Sameer, and Kavya is seated between Ishaan and Raj?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits opposite Ishaan, we first place Sameer at the 12 o'clock position. Given that Isha sits immediately to the left of Sameer and Sameer sits immediately to the right of Isha, their positions are fixed relative to each other. Since Kavya is seated between Ishaan and Raj, and Sameer is 2 places clockwise from Raj, we can deduce the arrangement. Sameer is opposite Kavya, so if we place Kavya, we can find Ishaan's position. Since Sameer sits opposite Kavya, the person opposite Ishaan would be the one 3 positions away from Ishaan in either direction. Thus, the arrangement becomes Sameer, Isha, Prateek, Kavya, Raj, Ishaan. Therefore, the person opposite Ishaan is Sameer."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who sits at position 5 in a row seating arrangement where Manish sits at the leftmost end, Raj sits exactly in the middle, and Asha is 2 places to the right of Raj?"
+      },
+      {
+        "role": "assistant",
+        "content": "To solve this, start by placing Manish at the leftmost end and Raj in the middle. Since the row has an unknown number of seats but we know Asha is 2 places to the right of Raj, we can begin to build the arrangement around Raj. If Raj is exactly in the middle and Asha is 2 places to his right, there must be at least 5 seats (to accommodate someone to the left of Raj, Raj himself, and then two more to the right for Asha). Given Ishaan is between Raj and Asha, the arrangement from the left, considering Manish is at the start and Raj in the middle, would be Manish, ?, ?, Raj, Ishaan, Asha. We need to fill the spots to the left of Raj. Since Raj is in the middle and there are seats to the left and right of him, we know the total number of seats must be odd to have a middle seat. With Manish at one end, to balance the arrangement and have Raj in the middle, we place other individuals based on given clues. Given the clue that Ishaan sits immediately to the left of Asha and Raj sits between Sai and Ishaan, the complete arrangement from the given solution is Manish, Tara, Sai, Raj, Ishaan, Asha. Therefore, the person at position 5 is Ishaan."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who sits immediately to the right of Lokesh in the rectangular table seating arrangement?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits immediately to the right of Lokesh, we follow the steps: 1. Fix absolute positions from clues, noting Karan is at the north side. 2. Use immediate neighbor clues: Pooja is to the left of Ishaan, Raj to the right of Ishaan, and Deepak to the left of Lokesh. 3. Apply relative position clues: Karan is 5 places clockwise from Ishaan, and there are 0 people seated clockwise from Suresh to Pooja. Given Deepak sits immediately to the left of Lokesh, and considering the table's arrangement, we deduce the order. Since Deepak is to the left of Lokesh and the arrangement must satisfy all given conditions, we find that after placing the fixed and adjacent relationships, Lokesh's position and the clue about Deepak being to his left help us understand the sequence. Thus, by following the clues step by step, especially with Deepak to the left of Lokesh and considering the overall arrangement, we can deduce the seating order. The final arrangement provided shows the relative positions, allowing us to identify who sits to the right of Lokesh by examining the sequence: Karan, Deepak, Lokesh, Suresh, Pooja, Ishaan, Raj, Ritu, Kabir, Kavya. Therefore, Suresh sits immediately to the right of Lokesh."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How many people are seated clockwise from Arjun to Vijay, not counting endpoints, in the given seating arrangement?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine the number of people seated clockwise from Arjun to Vijay, we analyze the seating arrangement derived from the clues: Shreya, Arjun, Vijay, Raj, Sameer, Sai, Prateek, Krishna. The clue 'Sameer is 3 places clockwise from Arjun' and 'There are 4 people seated clockwise from Sai to Vijay, not counting endpoints' help in establishing the sequence. However, to find the number of people from Arjun to Vijay, we directly observe the arrangement. Starting from Arjun and moving clockwise to Vijay without counting Arjun and Vijay themselves, we identify the individuals in between. The sequence from Arjun to Vijay is: Arjun, Vijay, Raj, Sameer, Sai, Prateek, Krishna, and back to Shreya before reaching Arjun again. But since we are counting from Arjun to Vijay without including them, we look at the positions between: Raj, Sameer, Sai, Prateek, Krishna, and then Shreya before reaching Vijay. Therefore, there are 5 people seated clockwise from Arjun to Vijay, not counting the endpoints."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the seating arrangement of Problem 65, how many people are seated clockwise from Manish to Varun, not counting endpoints?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find the number of people seated clockwise from Manish to Varun, we first need to establish the seating arrangement based on the clues provided. From the solution, the arrangement is: Ananya, Manish, Suresh, Rekha, Varun, Amit, Tara, Harsh, Kavya, Pooja. Manish is at the second position, and Varun is at the fifth position. Counting clockwise from Manish to Varun, not including Manish and Varun, we have Suresh and Rekha. Therefore, there are 2 people seated clockwise from Manish to Varun, not counting endpoints."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In Problem 66, who sits opposite Arjun?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine who sits opposite Arjun, we need to understand the seating arrangement. From the clues, we know Kabir sits opposite Vikram, and Siddharth is seated between Vivaan and Arjun. Also, Vikram sits immediately to the right of Varun, and Vivaan is 2 places clockwise from Varun. Given that there are 2 people seated clockwise from Vivaan to Kabir, not counting endpoints, and considering the parallel rows arrangement, we can deduce the seating. If we place Varun and Vikram in one row with Kabir opposite Vikram, and knowing Vivaan is 2 places from Varun, we can start building the arrangement. Since Siddharth is between Vivaan and Arjun, and considering the constraints, Arjun must be positioned such that he is opposite the row where the sequence allows for Kabir to be opposite Vikram and satisfies the condition of Vivaan being 2 places from Varun. Given the constraints and the fact that Maya sits immediately to the right of Ishaan, we need to fit these into the rows. The exact opposite of Arjun can be deduced by completing the arrangement according to the clues and ensuring that all conditions are met. However, without the explicit final arrangement provided in the problem statement for Problem 66, we must infer based on typical seating logic that each person has a direct opposite in a parallel rows setting. The solution thus requires careful placement of each individual according to the clues provided, ensuring that the conditions for the seating arrangement are fully satisfied."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who sits opposite Maya in the circular seating arrangement?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits opposite Maya, we first need to establish the seating arrangement based on the given clues. From the solution, we know the arrangement is: Kabir, Ishaan, Maya, Varun, Vikram, Vivaan, Siddharth, Arjun. Since Maya is at the 3rd position, the person opposite her will be 4 positions ahead in a circular manner, which lands on Varun and then one more to Vikram and then to Vivaan and finally to Siddharth and then to Arjun. However, considering the direct opposite in a circular table of 8, it would be 4 positions ahead, making it Varun and then moving one more to the right, it lands on Vikram. Thus, Vikram sits opposite Maya."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the seating arrangement of Problem 69, who sits immediately to the right of Anika?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits immediately to the right of Anika, we first place Manish at the leftmost end. Since Anika sits immediately to the right of Manish and is also seated between Manish and Chitra, Chitra must sit to the right of Anika. Therefore, Chitra sits immediately to the right of Anika."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the seating arrangement of 9 people, who sits immediately to the right of Kriti?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits immediately to the right of Kriti, we first need to establish the seating arrangement based on the given clues. From the clues, we know Suresh is at the leftmost end and Diya is exactly in the middle. We also know Diya sits immediately to the left of Ishaan. Given that Suresh is 4 places to the right of Diya and there are 9 seats, we can deduce the seating arrangement. Since Diya is in the middle, and considering the other clues about the positions of Manish, Meera, and Pooja relative to each other and Diya's position, we can place the individuals. Knowing the arrangement is: Lokesh, Meera, Manish, Pooja, Diya, Ishaan, Kabir, Kriti, Suresh, we can see that Kabir sits immediately to the right of Kriti."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who sits opposite Nikhil in a circular seating arrangement with 9 people where Deepak is 2 places clockwise from Arjun and there are 2 people seated clockwise from Sai to Nikhil, not counting endpoints?"
+      },
+      {
+        "role": "assistant",
+        "content": "To solve this, start by placing Deepak 2 places clockwise from Arjun. Then, use the clue that there are 2 people seated clockwise from Sai to Nikhil. By analyzing the given arrangement: Diya, Vijay, Arjun, Sai, Deepak, Ritu, Nikhil, Manish, Kavya, Ria, we can see that Ritu sits opposite Nikhil."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who sits at position 4 from the left in a circular seating arrangement of 9 people where Rekha is at the 12 o'clock position, Rekha sits immediately to the left of Karan, and Karan is 2 places clockwise from Sara?"
+      },
+      {
+        "role": "assistant",
+        "content": "Start with Rekha at the 12 o'clock position. Since Rekha sits immediately to the left of Karan and immediately to the right of Sara, and Karan is 2 places clockwise from Sara, we can deduce the order: Sara, Rekha, Karan, ?. Given the final arrangement: Rekha, Karan, Pooja, Manish, Nikhil, Rahul, Raj, Diya, Sara, Pooja sits at position 4 (from left, 1-indexed, but considering the circular nature and starting point, the positions might slightly differ based on the exact starting point). However, following the instructions precisely, we determine positions based on a linear representation of the circular arrangement provided in the solution, which might not directly translate to a 1-indexed position from the left in a circular setup without a clear 'left' starting point. Thus, considering the arrangement and typical indexing from the first mentioned person in such puzzles, the actual task is to understand the relative positioning rather than absolute 'from the left' in a circular setup. Therefore, the person at position 4, considering the arrangement starts with Rekha as a reference and moves clockwise, would be Manish, given the direct sequence provided."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Given the seating arrangement clues: Ishaan is 2 places to the right of Prateek and Kriti sits exactly in the middle of the row, who sits immediately to the right of Prateek?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the clue that Ishaan is 2 places to the right of Prateek, we can deduce the order is Prateek, _, Ishaan. Since Kriti sits exactly in the middle and considering the final arrangement is Varun, Isha, Prateek, Kriti, Ishaan, Suresh, the person immediately to the right of Prateek must be Kriti. However, given Ishaan's position relative to Prateek and Kriti's middle position, it indicates Isha is between Prateek and Kriti. Thus, Isha sits immediately to the right of Prateek."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In a 9-seat linear arrangement with clues: Asha sits at the leftmost end, Vivaan sits immediately to the left of Manish, and Ritu sits exactly in the middle, who sits at position 8 (from left, 1-indexed)?"
+      },
+      {
+        "role": "assistant",
+        "content": "Start by placing Asha at the leftmost end and Ritu in the middle. Since there are 9 seats, Ritu would be at position 5. Vivaan and Manish's positions relative to each other are known but not their exact positions yet. Given the final arrangement is Vivaan, Manish, Sonal, Rekha, Ritu, Amit, Chitra, Karan, Asha, we can see the arrangement does not match the initial deduction due to incorrect placement of Asha and Ritu based on the clues provided. Correcting this with the actual solution process: With Ritu in the middle (position 5), and knowing the correct final arrangement, we identify the person at position 8 as Karan."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the seating arrangement, if Rohan is 6 places clockwise from Geeta and there are 7 people seated clockwise from Karan to Ria, not counting endpoints, how many people are seated clockwise from Geeta to Pooja, not counting endpoints?"
+      },
+      {
+        "role": "assistant",
+        "content": "To solve this, we first place Geeta and then count 6 places clockwise to place Rohan. Given the clue that there are 7 people from Karan to Ria, we can start placing people relative to Geeta and Rohan. Since the arrangement is Vijay, Geeta, Isha, Karan, Kabir, Kavya, Arjun, Rohan, Pooja, Neeraj, Nisha, Ria, we count from Geeta to Pooja: Isha, Karan, Kabir, Kavya, Arjun, Rohan. Thus, there are 6 people seated clockwise from Geeta to Pooja, not counting endpoints."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the square table arrangement with 8 seats, if Shreya sits immediately to the left of Ria and Shreya is 3 places clockwise from Kriti, who sits opposite Shreya?"
+      },
+      {
+        "role": "assistant",
+        "content": "Given the arrangement Ria, Geeta, Ritu, Neeraj, Kriti, Deepak, Asha, Shreya, we know Shreya is to the left of Ria. Since the table is square and there are 8 seats, opposite seats are 4 places apart. Counting from Shreya, we move 4 places: Ria (1 place), Geeta (2 places), Ritu (3 places), Neeraj (4 places). Therefore, Neeraj sits opposite Shreya."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In a circular seating arrangement of 10 people facing the center, if Krishna is at the 12 o'clock position and sits opposite Siddharth, and Asha sits immediately to the left of Siddharth, who sits immediately to the left of Sara?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits immediately to the left of Sara, we first establish the fixed positions based on the clues. Since Krishna is at the 12 o'clock position and sits opposite Siddharth, Siddharth must be at the 6 o'clock position. With Asha sitting immediately to the left of Siddharth, Asha must be at the position just before the 6 o'clock, which would be between the 5 and 6 o'clock positions if we consider the seats in a clockwise manner from Krishna. Given the arrangement and clues, we deduce the seating order as follows: Krishna, Arjun, Tara, Harsh, Asha, Siddharth, Sara, Ria, Rahul, Rekha. Thus, to find who sits immediately to the left of Sara, we look at the arrangement and see that Siddharth is to the left of Sara."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In a linear seating arrangement, if Arjun sits exactly in the middle of the row, and there are 3 people seated clockwise from Sai to Varun, not counting endpoints, how many people are seated clockwise from Leela to Amit, not counting endpoints?"
+      },
+      {
+        "role": "assistant",
+        "content": "First, we need to establish the seating arrangement based on the given clues. Since Arjun sits exactly in the middle, and knowing there are 3 people from Sai to Varun (not counting endpoints), we can start building the arrangement. Given the final arrangement provided: Nisha, Amit, Sai, Lokesh, Arjun, Ria, Varun, Siddharth, Leela, we can count the people from Leela to Amit. Counting from Leela to Amit (not counting Leela and Amit), we include Siddharth, Varun, Ria, Arjun, Lokesh, and Sai. Thus, there are 6 people seated from Leela to Amit, not counting the endpoints."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who sits opposite Shreya in a circular seating arrangement where Arjun sits opposite Shreya and Raj is 3 places clockwise from Tara?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits opposite Shreya, we need to understand the seating arrangement. Given that Arjun sits opposite Shreya, we can directly conclude that Arjun is the one sitting opposite Shreya without needing the other clues for this specific question."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In a seating arrangement where Ananya sits opposite Kavya, Manish sits immediately to the left of Sonal, and Varun is 5 places clockwise from Sonal, who sits immediately to the left of Sonal?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the clues given, we know Manish sits immediately to the left of Sonal. This clue directly answers the question without needing further deductions or the use of other clues."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who sits immediately to the left of Shreya in the seating arrangement?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits immediately to the left of Shreya, we need to analyze the given clues. From the clue 'Shreya is seated between Neeraj and Kavya,' we can determine that Neeraj sits to the left of Shreya. Therefore, Neeraj sits immediately to the left of Shreya."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who sits at position 6 in the rectangular table seating arrangement with 12 seats?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine who sits at position 6, we need to follow the steps outlined in the solution. First, we fix the absolute positions using the clue 'Lokesh sits at the north side of the table.' Then, we use the immediate neighbor clues to place adjacent people. From the clue 'Shreya is 3 places clockwise from Lokesh,' we can start counting positions. The arrangement is: Lokesh, Vijay, Vivaan, Shreya, Leela, Anika. Therefore, Anika sits at position 6."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who sits opposite Priya in a circular seating arrangement where Arjun sits exactly in the middle of the row and there are 0 people seated clockwise from Karan to Pooja, not counting endpoints?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits opposite Priya, we first need to establish the seating arrangement based on the given clues. We know Arjun sits in the middle, and since Karan is between Arjun and Pooja with no one between them clockwise (not counting endpoints), the arrangement around Arjun is fixed as Arjun, Karan, Pooja. Given Arjun is 6 places to the right of Priya, and knowing the arrangement must fit around a circular table, we can deduce the full arrangement is Kavya, Asha, Leela, Yash, Arjun, Karan, Pooja, Priya, Sonal. Thus, Sonal sits opposite Priya."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In a linear seating arrangement of 8 seats where Prateek sits at the leftmost end, Varun is between Vikram and Raj, and Raj sits exactly in the middle of the row, who sits immediately to the right of Prateek?"
+      },
+      {
+        "role": "assistant",
+        "content": "Given Prateek is at the leftmost end and Raj is in the middle, we start by placing Raj in the 4th or 5th position since there are 8 seats. However, since Raj must be exactly in the middle in a linear arrangement of 8 seats, Raj must occupy the 5th seat (as 8 is an even number, the middle positions would be 4 and 5, but for a single middle, we consider the 5th seat in an 8-seat arrangement). With Varun between Vikram and Raj, and Varun immediately to the left of Raj, Varun must be in the 4th seat. Knowing Ishaan is between Prateek and Vikram, and given the constraints, Ishaan must sit to the right of Prateek, making Ishaan the one who sits immediately to the right of Prateek."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In a row of people, if Raj sits exactly in the middle and there are 5 people seated clockwise from Prateek to Leela, not counting endpoints, who sits immediately to the right of Prateek?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits immediately to the right of Prateek, we first establish the order based on the clues given. We know Raj is in the middle, and since there are 5 people from Prateek to Leela (not counting endpoints), and given that Raj is one of these people, we can start building the sequence. Prateek is at one end, and Leela is at the other. With Raj in the middle, we have: Prateek, ?, ?, Raj, ?, ?, Leela. From additional clues, we learn Ishaan is between Prateek and Vikram, and Varun is between Vikram and Raj. So, the sequence becomes: Prateek, Ishaan, Vikram, Varun, Raj, ?, ?, Leela. Given Leela is 3 places to the right of Varun, and knowing Varun is next to Raj, we fill in the rest: Prateek, Ishaan, Vikram, Varun, Raj, Anika, ?, Leela. Since Leela is 3 places from Varun, Anika must be followed by another person to satisfy the distance, but we know the arrangement must fit the given people. Thus, the final arrangement is: Prateek, Ishaan, Vikram, Varun, Raj, Anika, (missing person is actually part of the initial misinterpretation, the correct sequence based on the provided solution is) Prateek, Ishaan, Vikram, Varun, Raj, Anika, Leela, with Priya not mentioned in this step but part of the full solution. Therefore, Ishaan sits immediately to the right of Prateek."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In a circular seating arrangement of 11 people, with Suresh at the 12 o'clock position, and given that Raj sits immediately to the right of Siddharth, and there are other clues about positions, who sits at position 3 from the left (1-indexed)?"
+      },
+      {
+        "role": "assistant",
+        "content": "Given Suresh is at the 12 o'clock position, we start with Suresh. Knowing Karan is between Suresh and Aarav, we have: Suresh, Karan, Aarav, as our starting sequence. With the clue that there are 2 people seated clockwise from Suresh to Sonal, not counting endpoints, Sonal must be at the position right after Aarav because we count the people between them, not including Suresh and Sonal themselves. So, we have: Suresh, Karan, Aarav, Sonal. The rest of the arrangement can be deduced by applying the other clues systematically. Since Raj sits to the right of Siddharth, and considering the other clues about relative positions, we build the full arrangement: Suresh, Karan, Aarav, Sonal, Ria, Siddharth, Raj, Leela, Deepak, Ananya, Tara. Therefore, to find who sits at position 3 from the left (1-indexed), we count starting from Suresh as 1: Suresh (1), Karan (2), Aarav (3). Thus, Aarav sits at position 3."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Given the seating arrangement around a square table with 8 seats, where Manish sits at the north side, Arjun sits immediately to the right of Sara, and Deepak is seated between Arjun and Rohan, who sits immediately to the right of Deepak, determine the number of people seated clockwise from Rohan to Arjun, not counting endpoints."
+      },
+      {
+        "role": "assistant",
+        "content": "To solve this, start by fixing Manish's position at the north side. Then, place Arjun to the right of Sara and Deepak between Arjun and Rohan, with Rohan to the right of Deepak. Given that Amit is 3 places clockwise from Arjun and there's 1 person between Sara and Deepak, we can deduce the arrangement. Since Arjun is to the right of Sara, and Deepak is between Arjun and Rohan, and considering the table's circular nature, we count the seats from Rohan to Arjun clockwise: Rohan, Deepak, Arjun. Thus, there is 1 person seated between them, not counting endpoints."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the context of Problem 89 with parallel rows and 12 seats, where Ritu sits opposite Kabir, Ananya sits immediately to the left of Isha, and there are specific clockwise arrangements, determine how many people are seated clockwise from Ritu to Vijay, not counting endpoints."
+      },
+      {
+        "role": "assistant",
+        "content": "Start by placing Ritu and Kabir opposite each other. Then, use the clues about immediate neighbors to place Ananya, Isha, Asha, and others relative to each other. Given that Ritu is 8 places clockwise from Vijay, we need to count the seats from Ritu to Vijay, considering the arrangement: Ritu, Ananya, Isha, Asha, Vijay. However, since Ritu is 8 places from Vijay, and considering the arrangement provided in the solution (Ritu, Ananya, Isha, Asha, Vijay, Nikhil, Kabir, Kavya, Rahul, Ishaan, Lokesh, Krishna), we actually count the people between Ritu and Vijay in a clockwise direction, which includes Ananya, Isha, Asha, and then continues to the next row, counting until we reach Vijay, which would actually involve counting the entire row and then some from the next, but given the direct clue, we should directly deduce from the provided arrangement. Since the direct arrangement from Ritu to Vijay isn't straightforward without visualizing the entire table and the clue about 8 places involves counting around the table, the direct count from Ritu to Vijay, not counting endpoints, based on the solution arrangement, should directly reflect the positions as per the final arrangement, considering the parallel rows and the fact that Ritu and Vijay are on the same side, thus requiring a correct interpretation of the clockwise direction in a two-row setting."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "How many people are seated clockwise from Arjun to Amit, not counting endpoints, given that Amit is 3 places clockwise from Arjun?"
+      },
+      {
+        "role": "assistant",
+        "content": "To solve this, we start with Arjun's position and move 3 places clockwise to find Amit. Since the question asks for the count not including endpoints, we count the people between Arjun and Amit, excluding both Arjun and Amit. Given Amit is 3 places from Arjun, there are 2 people between them (because we count the positions, not the people, between the endpoints). Therefore, there are 2 people seated clockwise from Arjun to Amit, not counting endpoints."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Who sits immediately to the right of Nisha, given the seating arrangement Manish, Lokesh, Sara, Arjun, Deepak, Rohan, Amit, Nisha?"
+      },
+      {
+        "role": "assistant",
+        "content": "Given the arrangement Manish, Lokesh, Sara, Arjun, Deepak, Rohan, Amit, Nisha, we can see that Nisha is at the end. Since the arrangement provided does not show anyone to the right of Nisha, we must deduce that the arrangement is either circular or Nisha is at the far right end in a linear arrangement. Without explicit information that the arrangement is circular or more people beyond Nisha, we cannot accurately determine who sits immediately to the right of Nisha based on the given arrangement alone. However, following the provided solution format strictly which implies a linear arrangement for the purpose of this question, there is no one to the right of Nisha in the given sequence."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the circular seating arrangement of 10 people, who sits immediately to the left of Karan?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits immediately to the left of Karan, we need to analyze the given clues. Since Karan is at the 12 o'clock position and sits opposite Manish, we can start by placing Karan and Manish in the arrangement. Given that Raj is seated between Karan and Yash, we can deduce the order: Karan, Raj, Yash. However, to determine who sits to the left of Karan, we must consider the circular nature and the fact that no one is specified to be to the left of Karan directly. Thus, we have to consider the arrangement as a whole. Since Karan is at the 12 o'clock position and the arrangement provided in the solution is Karan, Raj, Yash, Ritu, Siddharth, Manish, Harsh, Varun, Suresh, Chitra, it indicates that no one is to the immediate left of Karan in a linear sense within the given sequence. However, in a circular arrangement, the person to the 'left' of the first person would be the last person in the sequence when arranged linearly for simplicity. Therefore, Chitra sits to the 'left' of Karan in the circular arrangement."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the square table seating arrangement of 8 people, how many people are seated clockwise from Yash to Nandini, not counting endpoints?"
+      },
+      {
+        "role": "assistant",
+        "content": "Given the clues, we know Yash sits at the north side and immediately to the left of Nandini. This means Nandini is directly to the right of Yash. Since we are not counting endpoints (Yash and Nandini), we look at the people between them. However, the clues provided do not directly give us the arrangement from Yash to Nandini without considering the whole table. We know Yash is 2 places clockwise from Sara, and there are 5 people seated clockwise from Ritu to Nandini, not counting endpoints. But to find the number of people from Yash to Nandini, we need to establish their positions relative to each other and the table's layout. Given Yash sits immediately to the left of Nandini, there are no people between Yash and Nandini, meaning there are 0 people seated clockwise from Yash to Nandini when not counting the endpoints."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In a circular seating arrangement with 8 people, if Yash is 2 places clockwise from Sara and there are 5 people seated clockwise from Ritu to Nandini, not counting endpoints, how many people are seated clockwise from Yash to Ritu, not counting endpoints?"
+      },
+      {
+        "role": "assistant",
+        "content": "To solve this, we start by placing Yash and Sara based on their relationship. Given Yash is 2 places clockwise from Sara, we can denote their positions as Y-S-?-?. Next, we incorporate Ritu and Nandini's relationship, knowing there are 5 people between them. By combining these clues with the given arrangement (Yash, Nandini, Kabir, Ritu, Harsh, Maya, Sara, Amit), we find Yash to Ritu's positions. Counting clockwise from Yash to Ritu, not counting endpoints, we pass through Nandini, Kabir, which gives us 2 people."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "Given the seating arrangement where Aditya sits at the north side of a square table, and Maya sits immediately to the left of Nandini, who sits opposite Nandini?"
+      },
+      {
+        "role": "assistant",
+        "content": "We start by fixing Aditya's position at the north side. Knowing Maya sits to the left of Nandini, we place them relative to each other. With the clue that Priya is between Nandini and Arjun, and Nandini to the left of Priya, we deduce the order: Maya, Nandini, Priya, Arjun. Since Karan is 3 places clockwise from Nandini, and there are 0 people between Maya and Nandini, we can deduce the full arrangement as given: Aditya, Nikhil, Varun, Maya, Nandini, Priya, Arjun, Karan. Nandini's opposite would be the person directly across the table, which is Aditya."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In the seating arrangement of 8 people, who sits immediately to the left of Ishaan?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find out who sits immediately to the left of Ishaan, we need to follow the given clues step by step. From clue 2, we know Raj sits immediately to the left of Ishaan. Therefore, the person sitting immediately to the left of Ishaan is Raj."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In a circular seating arrangement with 8 people, if Ritu is 4 places clockwise from Shreya and there are 3 people seated clockwise from Chitra to Lokesh, not counting endpoints, who sits immediately to the left of Chitra?"
+      },
+      {
+        "role": "assistant",
+        "content": "To solve this, start by placing Ritu and Shreya based on their 4-place clockwise distance. Then, use the clue about the 3 people between Chitra and Lokesh to start building the arrangement. Given that Nikhil sits immediately to the right of Priya and Chitra sits immediately to the right of Nikhil, we can start to build a sequence. By combining these clues with the others, we find the arrangement: Ritu, Leela, Sara, Lokesh, Shreya, Priya, Nikhil, Chitra. Thus, Nikhil sits immediately to the left of Chitra."
+      }
+    ],
+    [
+      {
+        "role": "system",
+        "content": "You are a helpful AI assistant that provides accurate, detailed responses."
+      },
+      {
+        "role": "user",
+        "content": "In a circular seating arrangement with 6 seats, if Rekha is at the 12 o'clock position, Vivaan is seated between Neeraj and Anika, and Rekha sits immediately to the right of Anika, how many people are seated clockwise from Maya to Neeraj, not counting endpoints?"
+      },
+      {
+        "role": "assistant",
+        "content": "First, place Rekha at the 12 o'clock position. Since Rekha sits opposite Neeraj, Neeraj is at the 6 o'clock position. With Vivaan between Neeraj and Anika, and Rekha to the right of Anika, we get a sequence. Maya sits to the left of Chitra, and Vivaan is 3 places clockwise from Maya. By arranging these clues, we find the sequence: Rekha, Maya, Chitra, Neeraj, Vivaan, Anika. Thus, there are 2 people (Chitra and Vivaan) seated clockwise from Maya to Neeraj, not counting endpoints."
+      }
+    ]
+  ],
+  "metrics": {
+    "total": 100,
+    "filtered": 89,
+    "retention_rate": 0.89,
+    "avg_score": 8.0
+  }
+}

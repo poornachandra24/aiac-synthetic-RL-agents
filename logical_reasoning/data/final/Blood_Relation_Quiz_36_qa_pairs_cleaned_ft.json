@@ -1,0 +1,978 @@
+[
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Rekha related to Meena?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the mother-in-law of Meena because Rekha's husband, Tipu, is the grandfather of Sandy, and Sandy's father, Mohan, is married to Meena."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Duggu related to Meena?"
+      },
+      {
+        "role": "assistant",
+        "content": "Duggu is the brother-in-law of Meena because Duggu is the brother of Mohan, who is Meena's husband."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "If P is the wife of Duggu, how is Tipu related to P?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the father-in-law of P because Tipu is the father of Duggu's brother, Mohan, making Tipu the father-in-law of Duggu's wife, P."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Krishna related to Sandy?"
+      },
+      {
+        "role": "assistant",
+        "content": "Krishna is the maternal uncle of Sandy because Krishna is the uncle of Sandy, and since Sandy's father is Mohan, Krishna must be the brother of Mohan's wife, Meena."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Tipu related to Sandy?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the grandfather of Sandy because Sandy is the son of Mohan, and Mohan is one of Tipu's two sons."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the husband of Meena?"
+      },
+      {
+        "role": "assistant",
+        "content": "Mohan is the husband of Meena."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the father of Sandy?"
+      },
+      {
+        "role": "assistant",
+        "content": "Mohan is the father of Sandy."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother of Mohan?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the mother of Mohan."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Rekha related to Sandy?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the grandmother of Sandy."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the brother of Mohan?"
+      },
+      {
+        "role": "assistant",
+        "content": "Duggu is the brother of Mohan."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the wife of Tipu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the wife of Tipu."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Tipu related to Mohan?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the father of Mohan."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Duggu related to Tipu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Duggu is the son of Tipu."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother-in-law of P?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the mother-in-law of P if P is the wife of Duggu."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the father-in-law of Meena?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the father-in-law of Meena."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Rekha related to Duggu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the mother of Duggu."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the brother of Duggu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Mohan is the brother of Duggu."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Tipu related to Duggu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the father of Duggu."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the wife of Mohan?"
+      },
+      {
+        "role": "assistant",
+        "content": "Meena is the wife of Mohan."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the grandfather of Sandy?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the grandfather of Sandy."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Rekha related to Sandy's father?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the mother of Sandy's father, Mohan."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the uncle of Sandy's father?"
+      },
+      {
+        "role": "assistant",
+        "content": "Krishna is the uncle of Sandy's father, Mohan."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Tipu related to Sandy's mother?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the father-in-law of Sandy's mother, Meena."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the brother of Sandy's father?"
+      },
+      {
+        "role": "assistant",
+        "content": "Duggu is the brother of Sandy's father, Mohan."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Rekha related to Sandy's mother?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the mother-in-law of Sandy's mother, Meena."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the husband of Sandy's mother?"
+      },
+      {
+        "role": "assistant",
+        "content": "Mohan is the husband of Sandy's mother, Meena."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Krishna related to Sandy's mother?"
+      },
+      {
+        "role": "assistant",
+        "content": "Krishna is the brother-in-law of Sandy's mother, Meena."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the father of Sandy's mother?"
+      },
+      {
+        "role": "assistant",
+        "content": "The father of Sandy's mother, Meena, is not specified in the given information."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Tipu related to Sandy's father?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the father of Sandy's father, Mohan."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother of Sandy's father?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the mother of Sandy's father, Mohan."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Rekha related to Sandy?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the grandmother of Sandy."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the brother of Sandy's mother?"
+      },
+      {
+        "role": "assistant",
+        "content": "The brother of Sandy's mother, Meena, is not specified in the given information."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Krishna related to Sandy?"
+      },
+      {
+        "role": "assistant",
+        "content": "Krishna is the maternal uncle of Sandy."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Tipu related to P?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the father-in-law of P."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother of Duggu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the mother of Duggu."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Rekha related to P?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the mother-in-law of P."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the father of Duggu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the father of Duggu."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Krishna related to Duggu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Krishna is the brother-in-law of Duggu."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother of Krishna?"
+      },
+      {
+        "role": "assistant",
+        "content": "The mother of Krishna is not specified in the given information."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the brother of Meena?"
+      },
+      {
+        "role": "assistant",
+        "content": "The brother of Meena is not specified in the given information."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the father of Meena?"
+      },
+      {
+        "role": "assistant",
+        "content": "The father of Meena is not specified in the given information."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the husband of Meena?"
+      },
+      {
+        "role": "assistant",
+        "content": "Mohan is the husband of Meena."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother of Meena?"
+      },
+      {
+        "role": "assistant",
+        "content": "The mother of Meena is not specified in the given information."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Tipu related to Sandy?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the grandfather of Sandy."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the son of Mohan?"
+      },
+      {
+        "role": "assistant",
+        "content": "Sandy is the son of Mohan."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Rekha related to Mohan?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the mother of Mohan."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the brother of Mohan?"
+      },
+      {
+        "role": "assistant",
+        "content": "Duggu is the brother of Mohan."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Krishna related to Mohan?"
+      },
+      {
+        "role": "assistant",
+        "content": "Krishna is the brother-in-law of Mohan."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the father of Mohan?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the father of Mohan."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Duggu related to Sandy?"
+      },
+      {
+        "role": "assistant",
+        "content": "Duggu is the uncle of Sandy."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother of Sandy?"
+      },
+      {
+        "role": "assistant",
+        "content": "Meena is the mother of Sandy."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Tipu related to Meena?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the father-in-law of Meena."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the wife of Tipu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the wife of Tipu."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Rekha related to Sandy?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the grandmother of Sandy."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the uncle of Sandy?"
+      },
+      {
+        "role": "assistant",
+        "content": "Krishna is the uncle of Sandy."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Duggu related to Krishna?"
+      },
+      {
+        "role": "assistant",
+        "content": "Duggu is the brother-in-law of Krishna."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the father of Duggu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the father of Duggu."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Tipu related to Duggu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tipu is the father of Duggu."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother of Duggu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the mother of Duggu."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Rekha related to Duggu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rekha is the mother of Duggu."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Krishna related to Duggu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Krishna is the brother-in-law of Duggu."
+      }
+    ]
+  }
+]

@@ -1,0 +1,1330 @@
+[
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "In Problem 1, who is the spouse of Tara and how is Deepak related to Rekha?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find the spouse of Tara and the relationship between Deepak and Rekha, we analyze the clues. From clue 4, Tara is the wife of Rekha, meaning Rekha is the spouse of Tara. For Deepak's relation to Rekha, since Deepak is the son of Kabir (clue 1) and Tara is the daughter of Kabir (clue 3) and also the wife of Rekha, this makes Deepak the brother of Tara, and thus, Deepak is the brother-in-law of Rekha."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "In Problem 2, who is the mother of Kabir and how is Amit related to Shreya?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the clues in Problem 2, we know Kabir is the son of Rajat (clue 4). To find Kabir's mother, we look at Rajat's spouse, which is Anita (from the solution key relations). Thus, Anita is the mother of Kabir. For Amit's relation to Shreya, since Amit is the spouse of Diya and Diya is the parent of Leela, and Leela is the spouse of Shreya, this makes Amit the parent of Leela, and therefore, Amit is the parent-in-law of Shreya."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "In Problem 3, who is a grandparent of Priya and who is the mother of Ria?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find a grandparent of Priya, we know from clue 1 that Priya is the daughter of Ria. Then, looking at the clues and solution, since Leela is the spouse of Ria and Ria is the mother of Priya, we need to find the parents of Ria or Leela to identify a grandparent of Priya. However, the direct parents of Ria or Leela are not explicitly stated, but from the coded nature and the relations given, we can infer that since Ria and Leela are spouses and parents of Priya, their parents would be the grandparents. Unfortunately, without explicit clues on Ria's or Leela's parents, we cannot directly name a grandparent of Priya from the given information. For the mother of Ria, there is no direct clue provided in Problem 3 that explicitly states who Ria's mother is."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Rajat related to Nikhil?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine the relationship between Rajat and Nikhil, we start by identifying the known relationships. From the clues, we know Siddharth is the son of Nikhil and Siddharth is the husband of Rajat. This means Rajat is the spouse of Nikhil's son, making Rajat the daughter-in-law of Nikhil."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is a sibling of Geeta in Problem 5?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the clues provided in Problem 5, we know Anita is the parent of Geeta and also the parent of Kriti and Prateek. Since Geeta, Kriti, and Prateek all share the same parent (Anita), they are siblings. Therefore, Kriti and Prateek are siblings of Geeta."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Shreya related to Prateek in Problem 6?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find the relationship between Shreya and Prateek, we analyze the given clues. Shreya is the daughter of Kabir, and Sameer is the husband of Kabir and the parent of both Shreya and Yash. Additionally, Yash is the husband of Prateek. This makes Shreya the sibling of Yash, and since Yash is the husband of Prateek, Shreya is the sister-in-law of Prateek."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the father of Leela?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine the father of Leela, we first identify Leela's husband, which is Deepak. Since Deepak is the son of Amit and Vikram, we cannot directly conclude who Leela's father is from the given information. However, we can say that Vikram is the father of Deepak, and thus, the father-in-law of Leela. The direct father of Leela is not specified in the provided clues."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Amit related to Pooja?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given clues, Amit is the parent of Pooja. Since Amit is also mentioned as the mother of Pooja in the solution, we can conclude that Amit is Pooja's mother."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the father of Shreya?"
+      },
+      {
+        "role": "assistant",
+        "content": "Given that Shreya is the daughter of Arun and Rishi is the grandfather of Shreya, we can deduce the relationship as follows: Rishi is the father of Deepak and also of Arun (since Arun is the son of Geeta, and Rishi is the husband of Geeta). Therefore, Arun is Shreya's father."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the father of Shreya?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given information, Rishi is the grandfather of Shreya, and Arun is the son of Geeta. Since Rishi is the spouse of Geeta and the father of Arun, Arun is the parent of Shreya. However, it is stated that Arun is the son of Rishi and Geeta, and Shreya is the daughter of Arun. Therefore, the father of Shreya is Arun."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the spouse of Karan?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine the spouse of Karan, we need to analyze the given clues. Diya is the parent of Anika, and Anika is the parent of Karan. However, there is no direct information about the spouse of Karan. Since the question about the spouse of Karan is mentioned in the sample questions for Problem 12, and given the solution does not directly state the spouse of Karan but lists relationships, we cannot definitively conclude the spouse of Karan from the provided information without making assumptions beyond the given data."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Rohan related to Priya in the given family relationships?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine the relationship between Rohan and Priya, we must analyze the given clues. From the clues, we know that Rohan is the son of Tara and Vijay, and Priya is the daughter of Tara and Vijay. This makes Rohan and Priya siblings, as they share the same parents."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the spouse of Kabir, and how can we deduce this information from the given clues?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given clues, we know that Leela is the wife of Kabir. This information is directly stated, making it a straightforward deduction. However, to further verify this relationship, we can look at the other clues that mention Kabir and Leela's children, such as Priya, Kavya, and Asha, which reinforces their spousal relationship."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "In Problem 15, who is a grandparent of Manish, and what clues lead us to this conclusion?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find the grandparent of Manish, we need to identify Manish's parents and then their parents. From the clues, Manish is the son of Vikram. Since Leela is the parent of Vikram, and Ritu is the spouse of Leela, both Leela and Ritu are grandparents of Manish. This requires analyzing the family tree and tracing the relationships between the individuals mentioned in the clues."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Priya related to Sameer?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given clues, Priya is the parent of Sameer. Additionally, it is mentioned that Kriti is the spouse of Priya and Kriti is the father of Sameer, which implies Priya is the other parent. Since Priya is referred to as the wife of Kriti, we can deduce Priya is the mother of Sameer."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the father of Siddharth?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the clues provided, Siddharth is the son of Kavya, and Arun is the husband of Kavya. Therefore, Arun is the father of Siddharth. This is further supported by the solution which states Arun is the father of Siddharth."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother of Nisha?"
+      },
+      {
+        "role": "assistant",
+        "content": "According to the clues, Nisha is the daughter of Rohan, and Rohan is the son of Maya and Vijay. Additionally, it is stated that Maya is the father of Rohan and Vijay is the mother of Rohan. However, given the direct relationship, Rohan is the parent of Nisha, and since Rohan is mentioned as the mother of Meera and Nisha, we can conclude Rohan is the mother of Nisha."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother of Nisha in Problem 21?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine the mother of Nisha, we look at the clues provided. Rishi is the parent of Nisha (Clue 7), and Neha is the wife of Rishi (Clue 6). However, the direct relationship between Rishi and Nisha does not specify if Rishi is the mother or father. We need to find out the gender of Rishi to proceed. From the clues, Anika is the father of Rishi (Clue 3), indicating Rishi is a child of Anika and thus can be either male or female since Anika's spouse, Pooja, is mentioned as a parent as well. But given Neha is the wife of Rishi, it implies Rishi is male. Therefore, Rishi, being the parent of Nisha and male, is the father of Nisha. Since Neha is Rishi's wife, Neha is Nisha's mother."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Maya related to Leela in the provided text?"
+      },
+      {
+        "role": "assistant",
+        "content": "To understand how Maya is related to Leela, we refer to the key relations provided. Maya is the daughter of Ria (from the key relations), and Ria is the daughter of Leela. This establishes a direct grandparent-grandchild relationship between Leela and Maya. Therefore, Maya is the granddaughter of Leela."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the spouse of Diya?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given clues, Diya is the wife of Harsh. Additionally, Diya is the father of Deepak, but this does not affect the identification of Diya's spouse. Therefore, the spouse of Diya is Harsh."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is a grandparent of Rahul?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given information in Problem 24, Rahul is the son of Kavya, and Kavya is the spouse of Rohan. To find a grandparent of Rahul, we need to look for the parents of Kavya or Rohan. However, the provided information does not explicitly state the parents of Kavya or Rohan. But since Rohan is the husband of Kavya and also the mother of Asha, and given the mixed gender roles in the problem, we cannot directly infer a grandparent for Rahul without more specific information about Kavya's or Rohan's parents."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the spouse of Arun?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given clues, we know that Arun is the son of Neha and Tara. However, to find the spouse of Arun, we need to look for a direct relation. Since there's no direct clue about Arun's spouse, we look at the sample questions and solutions provided. According to the solution key relations, there is no direct mention of Arun's spouse. However, from the initial problem statement, it is mentioned that 'Arun is the spouse of Kavya.' Therefore, the spouse of Arun is Kavya."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is a sibling of Prateek?"
+      },
+      {
+        "role": "assistant",
+        "content": "Given that Prateek is the son of Aditya, to find a sibling, we look for other children of Aditya. From the clues, Anita and Priya are also children of Aditya, making them siblings of Prateek. Therefore, Anita or Priya is a sibling of Prateek."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the father of Vijay?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine Vijay's father, we look at the clues provided. From Problem 28, clue 1 and 2 state that Shreya is the daughter of Harsh and Vijay is the son of Harsh. This directly tells us that Harsh is the parent of Vijay. However, to specify the father, we look further. Clue 4 introduces Rishi as the husband of Harsh, making Rishi the father of Vijay, given the traditional definition of husband and father. Therefore, Rishi is the father of Vijay."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother of Kriti?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine the mother of Kriti, we need to analyze the given clues. From clue 6 in the initial text, we know that Sameer is the mother of Kriti. Therefore, the mother of Kriti is Sameer."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Kavya related to Vijay?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find the relationship between Kavya and Vijay, we need to follow the clues. From clue 1 in Problem 30, Kavya is the daughter of Neha. From clue 7 in the same problem, Priya is the daughter of Neha, making Priya the sister of Kavya. Clue 6 states that Vijay is the son of Priya, which means Vijay is the nephew of Kavya. Therefore, Kavya is the aunt of Vijay."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother of Yash?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine the mother of Yash, we analyze the clues from Problem 31. Clue 7 states that Vikram is the father of Yash. Since Vikram is the son of Leela (from clue 5), and clue 6 states that Vikram is the father of Yash, we need to find Vikram's spouse to identify Yash's mother. From the solution key relations, Vikram is the spouse of Amit. Therefore, the mother of Yash is Amit."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother of Anita?"
+      },
+      {
+        "role": "assistant",
+        "content": "Given that Sonal is the parent of Anita (clue 2) and also that Sonal is the wife of Leela (clue 4), we understand Sonal and Leela are spouses. Since Sonal is directly mentioned as the parent of Anita, and considering traditional family structures, Sonal would be the mother of Anita, as the clue directly states Sonal's parental relationship to Anita without needing further deduction about Leela's relationship to Anita."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Ritu related to Shreya?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given information, Sameer is the parent of Shreya. It is also mentioned that Ritu is the wife of Sameer. Therefore, Ritu is the mother of Shreya, as she is the spouse of Sameer, who is Shreya's parent."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is a grandparent of Vijay?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given information, Harsh is the husband of Vijay. It is also mentioned that Neha is the parent of Harsh, and Shreya is the spouse of Neha. Therefore, Neha and Shreya are the parents of Harsh, making them the grandparents of Vijay, as Vijay is the spouse of Harsh."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is a sibling of Aditya?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find a sibling of Aditya, we need to identify Aditya's parents and then find other children of those parents. From the clues, Nikhil and Harsh are parents of Aditya. Other children of Nikhil and Harsh are Rohan and Maya. Therefore, Rohan and Maya are siblings of Aditya."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the father of Harsh?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given information in Problem 40, Vijay is the son of Suresh, and Harsh is the son of Vijay. This establishes a generational relationship where Suresh is a grandparent of Harsh, and Vijay is the parent of Harsh. Therefore, the father of Harsh is Vijay."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is a sibling of Kabir?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find the sibling of Kabir, we need to identify Kabir's parents and then find their other children. From the given information, Kabir is the son of Rekha and Amit. The other children of Rekha and Amit are Kriti, Tara, and Aditya. Therefore, the siblings of Kabir are Kriti, Tara, and Aditya."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Vijay related to Karan?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine the relationship between Vijay and Karan, we look at the clues provided. Karan is the son of Geeta, and Geeta is the wife of Vijay. This means Vijay is the spouse of Karan's mother, making Vijay the father of Karan."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the father of Aditya?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given information, Aditya is the son of Siddharth. To find Siddharth's parent, we see that Siddharth is the son of Rajat. However, the direct question asks for Aditya's father, which is Siddharth. The information about Rajat and Manish being spouses and parents of several children, including Siddharth, confirms that Siddharth is indeed a generation above Aditya, making Siddharth the father of Aditya."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the spouse of Harsh?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find the spouse of Harsh, we can look at the given clues. Clue 5 states that Harsh is the son of Meera, but this does not directly tell us who the spouse of Harsh is. However, from the solution key relations, we see that Harsh is the spouse of Nikhil. Therefore, Nikhil is the spouse of Harsh."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Meera related to Kavya?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine how Meera is related to Kavya, we need to follow the family relationships given in the clues and solution. Meera is the parent of Harsh (from clue 5 and the solution). Harsh is the mother of Kavya (from the solution key relations). Therefore, Meera is the grandparent of Kavya."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is a sibling of Suresh?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the solution key relations for Problem 45, we see that Suresh is the son of Arun and Nisha. Also, Sonal is the daughter of Arun and Nisha. Since both Suresh and Sonal have the same parents (Arun and Nisha), they are siblings. Therefore, Sonal is a sibling of Suresh."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Aditya related to Amit?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given information, Amit is the parent of Shreya, and Aditya is the son of Shreya. Therefore, Amit is the grandparent of Aditya."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the spouse of Shreya?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the provided relations, we can see that Shreya is the spouse of Kabir. This is directly stated in the key relations as 'Shreya is the spouse of Kabir.' and 'Kabir is the spouse of Shreya.'"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Vikram related to Prateek in Problem 49?"
+      },
+      {
+        "role": "assistant",
+        "content": "In Problem 49, the relations provided do not directly link Vikram and Prateek through a parent-child or spouse relationship. However, we can deduce their relationship through their connections to other individuals. Since Rajat is the spouse of Vikram and the son of Kabir, and Prateek is also a child of Kabir (as Tara is the parent of Prateek and Tara is the spouse of Kabir), this makes Rajat and Prateek siblings. Consequently, Vikram, being the spouse of Rajat, is the sibling-in-law of Prateek."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Leela related to Kabir?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine how Leela is related to Kabir, we start with the given clues. Leela is the daughter of Kriti (Clue 2), and Kriti is the daughter of Rahul (Clue 7). Kabir is the son of Rahul (Clue 1 and Clue 6). Since Kriti and Kabir are both children of Rahul, they are siblings. Therefore, Leela, being the daughter of Kriti, is the niece of Kabir."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the spouse of Geeta?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given information, we know that Kavya is the spouse of Geeta. This can be deduced directly from the statement 'Geeta is the wife of Kavya.', which implies that Kavya is the husband of Geeta."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Nikhil related to Harsh?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine the relationship between Nikhil and Harsh, we need to analyze the given information. We know that Nikhil is the husband of Shreya, and Shreya is the daughter of Geeta and Manish. We also know that Harsh is the husband of Rekha, and Rekha is the daughter of Geeta and Manish. Since Shreya and Rekha are siblings (both being children of Geeta and Manish), Nikhil (Shreya's husband) is the brother-in-law of Harsh (Rekha's husband)."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the spouse of Nikhil?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given clues, we can deduce that Nikhil is the spouse of Pooja. Clue 5 states that Nikhil is the husband of Pooja, and clue 7 states that Pooja is the wife of Nikhil. Therefore, Nikhil and Pooja are spouses."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Kriti related to Ritu?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine how Kriti is related to Ritu, we need to analyze the given clues. Clue 1 states that Sonal is the daughter of Nisha, and clue 2 states that Nisha is the parent of Ritu. This means that Sonal and Ritu are siblings. Clue 7 states that Nisha is the mother of Diya, and clue 4 states that Diya is the wife of Kriti. Therefore, Kriti is the spouse of Diya, who is the child of Nisha. Since Nisha is also the parent of Ritu, Kriti is the spouse of Ritu's sibling, making Kriti the sibling-in-law of Ritu."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is a sibling of Karan?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given clues, we can deduce that Karan is the son of Nisha (clue 4 in Problem 58). Clue 6 in Problem 58 states that Rishi is the father of Nikhil, and clue 3 states that Nisha is the father of Nikhil. This means that Nisha and Rishi are spouses. Clue 1 in Problem 58 states that Ritu is the daughter of Karan, and clue 5 states that Priya is the daughter of Karan. However, to find a sibling of Karan, we need to look at the children of Nisha and Rishi. Clue 8 in Problem 58 states that Shreya is the daughter of Siddharth, but it does not directly relate to Karan. However, from the solution key relations, we see that Siddharth is the son of Nisha and Rishi, making Siddharth a sibling of Karan, as both are children of the same parents."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the spouse of Anita?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find the spouse of Anita, we look at the given clues. From clue 6 in Problem 60, we know Nisha is the wife of Anita. Therefore, the spouse of Anita is Nisha."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Kriti related to Ritu?"
+      },
+      {
+        "role": "assistant",
+        "content": "Given the information, we know from the initial text that Diya is the daughter of Nisha and Deepak, and also that Diya is the spouse of Kriti. Since Ritu is also a daughter of Nisha and Deepak, this makes Ritu the sister of Diya. Therefore, Kriti, being the spouse of Diya, is the sister-in-law of Ritu."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother of Diya?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given information, we know that Meera is the parent of Diya. Additionally, it is stated that Meera is the daughter of Geeta and Ria. However, since Meera is the parent of Diya, and given the relationships provided, we deduce that Meera is the mother of Diya because the clues directly state Meera's relationship to Diya as a parent, and in the context, Meera is referred to with feminine pronouns, indicating Meera is the mother."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the spouse of Tara?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find the spouse of Tara, we look at the given relationships. It is directly stated that Tara is the spouse of Kabir. This relationship is explicitly mentioned, making it clear that Kabir is the spouse of Tara. No further deduction is needed as the information is provided outright."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is a grandparent of Diya?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine who is a grandparent of Diya, we need to trace the family relationships. We know Meera is the parent of Diya. Then, looking at the relationships provided, Geeta and Ria are the parents of Meera. Since Geeta and Ria are the parents of Meera, and Meera is the parent of Diya, it follows that Geeta and Ria are the grandparents of Diya. This requires tracing the family tree and understanding the relationships between generations."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother of Pooja?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find the mother of Pooja, we look at the given clues. It is stated that 'Pooja is the daughter of Leela.' Therefore, Leela is the mother of Pooja."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Kriti related to Neha?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine how Kriti is related to Neha, we follow the clues step by step. It is given that 'Shreya is the daughter of Neha' and 'Shreya is the wife of Kriti.' This means Kriti is the spouse of Neha's daughter, making Kriti the son-in-law of Neha."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the father of Nikhil?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the clues provided, we see that 'Nikhil is the son of Harsh.' This directly tells us that Harsh is the father of Nikhil. Additionally, it is mentioned that 'Harsh is the spouse of Siddharth,' but for determining Nikhil's father, we only need the direct relationship stated between Nikhil and Harsh."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Kriti related to Neha in the given family tree?"
+      },
+      {
+        "role": "assistant",
+        "content": "First, identify Kriti's spouse, which is Shreya. Then, find Shreya's parents, who are Neha and Sameer. Since Shreya is the daughter of Neha, and Kriti is the spouse of Shreya, Kriti is the daughter-in-law of Neha."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is a sibling of Karan based on the provided clues?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the clues, we know Karan is the son of Harsh. We also find that Suresh is the son of Harsh, and Asha is the daughter of Harsh. Therefore, Suresh and Asha are siblings of Karan."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother of Kriti in the narrative of 9 persons?"
+      },
+      {
+        "role": "assistant",
+        "content": "Given that Kriti is the daughter of Yash, and Yash is the spouse of Karan, we can conclude that either Yash or Karan could be considered Kriti's mother based on the gender-neutral language used. However, traditionally, if we consider Yash as the father due to the lack of explicit gender roles beyond spousal relationships, then Karan would be Kriti's mother."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Anika related to Priya?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine the relationship between Anika and Priya, we analyze the clues: Priya is the mother of Pooja, and Pooja is the wife of Anika. This indicates Anika is the spouse of Pooja, who is Priya's daughter. Therefore, Anika is the daughter-in-law of Priya."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is a grandparent of Vijay?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given information, Kriti is the parent of Vijay, and Manish is the parent of Kriti. Therefore, Manish (and Ria, as Manish's spouse) is the grandparent of Vijay. This requires understanding the family relationships and tracing them back to find grandparents."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Aditya related to Vijay?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find the relationship between Aditya and Vijay, we follow the family tree: Anika is the parent of Aditya, and Anika is a child of Manish (and Ria), making Anika a sibling of Kriti. Since Kriti is the parent of Vijay, this makes Anika the aunt of Vijay, and consequently, Aditya (Anika's child) the cousin of Vijay. This requires tracing relationships through siblings and generations."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Anika related to Priya?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given information, we know that Rishi is the husband of Priya and the father of Harsh. We also know that Pooja is the daughter of Rishi and Priya. Additionally, Pooja is the spouse of Anika. Therefore, Anika is the spouse of Pooja, who is the daughter of Priya, making Anika the daughter-in-law of Priya."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the father of Neha?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given information in Problem 75, we know that Deepak is the parent of Anita and Anika. We also know that Deepak is the spouse of Neha. However, the direct relationship between Deepak and Neha does not imply parenthood. Looking at the relationships, we find that Deepak is the son of Shreya and Rishi, and Deepak is the spouse of Neha, but there is no direct information about Neha's parentage. However, since Deepak is the spouse of Neha and also a parent (of Anita and Anika), and given the context, it seems the question might be aiming towards understanding Neha's relationship with her spouse rather than her parents. The information directly related to Neha's parents is not provided, making the question about Neha's father unsolvable with the given data. Thus, based on the information given, we cannot accurately determine Neha's father."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is a sibling of Anika?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the information given in Problem 75, we know that Deepak is the parent of Anika, Tara, and Anita. Since Anika, Tara, and Anita all share the same parent (Deepak), they are siblings. Therefore, Tara and Anita are siblings of Anika."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Anika related to Suresh?"
+      },
+      {
+        "role": "assistant",
+        "content": "Anika is the daughter of Suresh. This can be deduced from the statement 'Suresh is the mother of Anika.'"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the spouse of Rahul?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find the spouse of Rahul, we look for a statement that relates Rahul to another person as spouses. From the key relations, 'Geeta is the spouse of Rahul' and 'Rahul is the spouse of Geeta' indicate that Geeta is the spouse of Rahul."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother of Rohan?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the clues given in Problem 79, 'Rohan is the parent of Asha' and 'Arun is the husband of Rohan' are provided. However, to determine the mother of Rohan, we must look for a clue that directly states Rohan's parent. Since 'Rohan is the parent of Asha' and 'Arun is the spouse of Rohan,' we can infer that Arun or Rohan could be the mother or father of Asha, but there's no direct clue stating who Rohan's mother is. Thus, based on the given clues, we cannot directly determine Rohan's mother without making assumptions beyond the provided information."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the spouse of Vijay?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given clues in Problem 81, Vijay is the husband of Yash (Clue 6). This directly answers the question without needing further deduction."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Asha related to Neha?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine how Asha is related to Neha, we analyze the given clues in Problem 83. Asha is the wife of Siddharth (Clue 1), and Siddharth is the son of Maya (Clue 5). Meera is the daughter of Neha (Clue 2), but there is no direct relationship provided between Asha (or Siddharth) and Neha (or Meera) in the clues. However, since Siddharth is the son of Maya and Asha is the wife of Siddharth, Asha is the daughter-in-law of Maya. But without a direct link between Maya and Neha, or between any of their children and Neha, we cannot precisely define the relationship between Asha and Neha based solely on the information given."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Asha related to Maya?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given information, we know that Siddharth is the son of Maya and the husband of Asha. Therefore, Asha is the daughter-in-law of Maya."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the spouse of Geeta?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given information in Problem 85, we know that Geeta is the parent of Rishi, but there is no direct information about the spouse of Geeta. However, we can analyze the relationships and find that Prateek is the parent of Rahul, Leela is the spouse of Prateek, and Asha is the daughter of Leela. Since Geeta is the parent of Rishi and there is no other information about Geeta's relationships, we cannot directly determine the spouse of Geeta from the given clues. Therefore, the spouse of Geeta cannot be determined with the provided information."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Maya related to Rishi in the given family tree?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given clues, we know Suresh is the son of Maya and Suresh is the husband of Rishi. Therefore, Maya is the mother of Suresh, and since Suresh is the husband of Rishi, Maya is the mother-in-law of Rishi."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother of Amit based on the provided family relationships?"
+      },
+      {
+        "role": "assistant",
+        "content": "Given that Suresh is the parent of Amit and from the solution, it is stated that Suresh is the father of Amit, we need to identify Suresh's spouse to determine Amit's mother. Since Suresh is the spouse of Rishi, Rishi is the mother of Amit."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the father of Meera in Problem 87, considering the clues provided?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the clues, Leela is the parent of Meera, and it is also stated that Leela is the mother of Meera. However, to find Meera's father, we look at the relationship between Leela and Rishi, which is that of spouses. Since Leela is the mother of Meera and Leela is the spouse of Rishi, Rishi is the father of Meera."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother of Manish?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find the mother of Manish, we look at the given clues. From clue 4, Ria is the parent of Manish. Since Siddharth is the spouse of Ria and both are parents of Manish, Ria can be either the mother or the father. However, the clues do not explicitly state the gender roles of Ria and Siddharth as parents. But based on traditional naming and the lack of information suggesting otherwise, we might infer Ria as the mother due to the direct mention of 'Ria is the parent of Manish.' Thus, Manish's mother is Ria."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Sameer related to Nisha?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine how Sameer is related to Nisha, let's analyze the given clues. Sameer is the son of Nikhil (clue 1), and Nisha is the parent of Shreya (clue 2). Additionally, Rekha is the mother of Nisha (clue 3) and also the parent of Nikhil (clue 4). This makes Nisha and Nikhil siblings. Since Sameer is Nikhil's son, Sameer is the nephew of Nisha. Therefore, Sameer is related to Nisha as her nephew."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is a sibling of Geeta?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find a sibling of Geeta, we examine the clues provided. Geeta is the daughter of Ria (clue 8). Ria is also the parent of Rajat (clue 4) and Rahul (clue 3). This makes Rajat, Rahul, and Geeta siblings since they all share the same parent, Ria. Therefore, Rajat and Rahul are siblings of Geeta."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Aditya related to Geeta?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given information, we know Aditya is the parent of Diya and Ria is the daughter of Aditya. Also, Geeta is the daughter of Ria. Therefore, Aditya is the grandparent of Geeta."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the spouse of Ria?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given information, we know Ria is the spouse of Kavya. This can be directly inferred from the clue 'Ria is the spouse of Kavya.'"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "How is Kriti related to Rishi?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given information, we know Maya is the wife of Kriti and Maya is the daughter of Nikhil. Also, Rishi is the son of Nikhil. Therefore, Kriti is the spouse of Rishi's sister, making Kriti the sister-in-law of Rishi."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the spouse of Siddharth?"
+      },
+      {
+        "role": "assistant",
+        "content": "To find the spouse of Siddharth, we look directly at the clues provided. Clue 7 in Problem 98 states 'Rekha is the wife of Siddharth.' This directly answers the question without needing further deduction or assumption. Thus, the spouse of Siddharth is Rekha."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is a grandparent of Prateek?"
+      },
+      {
+        "role": "assistant",
+        "content": "To determine who is a grandparent of Prateek, we analyze the clues given in Problem 99. From clue 4, Rajat is the parent of Prateek. Then, looking at clue 6, Rohan is the son of Rajat. This establishes a family line: Rajat is the parent of Prateek, and Rohan is the child of Rajat, making Rohan the sibling of Prateek if we consider Prateek's generation. However, to find a grandparent of Prateek, we need a parent of Rajat or a spouse of Rajat who could also be a grandparent. The clues do not directly provide the parentage of Rajat but do establish relationships. Since Prateek is the mother of Ria (clue 5), and we are looking for a grandparent of Prateek, we consider the generation above Prateek. Given Rajat is Prateek's parent, a grandparent of Prateek would be a parent of Rajat. However, the clues provided do not directly state who the parents of Rajat are, making it necessary to look at the given relationships again. Kabir is the husband of Rohan (clue 3), and Meera is the daughter of Rohan (clue 1), but these do not directly lead to the parents of Rajat. Without direct information on Rajat's parents, we cannot accurately determine a grandparent of Prateek from the given clues based on logical deduction alone."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Who is the mother of Rohan?"
+      },
+      {
+        "role": "assistant",
+        "content": "From the given information, Rajat is the parent of Prateek and Rohan is the son of Rajat. Also, Prateek is the mother of Ria. Since Rohan is the son of Rajat and Rajat is the spouse of Rishi, we can conclude that Rishi is the mother of Rohan because the text implies Rishi is the other parent of Rajat's children. However, based on the provided relations, it's explicitly stated that 'Rohan is the son of Rajat' and 'Rohan is the son of Rishi,' but since Prateek is noted as the mother of Ria and there's no direct mention of Rohan's mother, we should look at the relations given in the solution. The solution states 'Rohan is the son of Rishi,' and since Rishi is mentioned as a parent of Rohan, and given that one of the parents of Rohan is Rajat, and considering typical family structures, if Rajat is the father, then Rishi, being the spouse, would be the mother. But to accurately follow the instructions without assuming beyond given data, we focus on what's directly stated or implied without contradicting given facts. The statement 'Rohan is the son of Rishi' directly tells us about Rohan's parentage, implying Rishi's role as a parent. Given the context and focusing strictly on provided information without over-assuming, the direct answer based on the question's framing and available data should consider the explicit parent-child relationships provided."
+      }
+    ]
+  }
+]
