@@ -26,29 +26,23 @@ class QuestioningAgent(object):
         else:
             sys_prompt = "You are an examiner tasked with creating extremely difficult multiple-choice questions"
 
-        # === FIX: THE ONE-SHOT EXAMPLE PROMPT ===
-        # This new prompt is simpler and provides a perfect, concrete example of the desired output.
-        # This is the most effective way to force the model to adhere to a specific JSON schema.
         tmpl = (
-            "Generate an EXTREMELY DIFFICULT multiple-choice question on the topic: '{topic}'.\n\n"
-            "Your entire response must be a single, valid JSON object. Follow this exact format:\n\n"
+            "Generate a tricky but CONCISE multiple-choice question on the topic: '{topic}'.\n\n"
+            "CRITICAL RULES:\n"
+            "1.  The question must be short and to the point.\n"
+            "2.  The total length of the question, choices, and answer MUST be very short (well under 130 tokens).\n"
+            "3.  Your entire response must be a single, valid JSON object following this exact format:\n\n"
             "```json\n"
             "{{\n"
             '    "topic": "Puzzles/Seating Arrangements (Linear, Circular)",\n'
-            '    "question": "Eight friends—A, B, C, D, E, F, G, and H—are sitting around a circular table, but not necessarily in that order. All are facing the center. F sits third to the left of C. There are two people between C and E. G is an immediate neighbor of A, who sits second to the right of E. B sits third to the right of H. Who sits exactly between A and B when counted from the left of A?",\n'
-            '    "choices": [\n'
-            '        "A) H",\n'
-            '        "B) F",\n'
-            '        "C) D",\n'
-            '        "D) G"\n'
-            '    ],\n'
+            '    "question": "Eight friends are sitting around a circular table. F sits third to the left of C. Two people are between C and E. G is a neighbor of A, who is second to the right of E. B is third to the right of H. Who sits between A and B (from A\'s left)?",\n'
+            '    "choices": ["A) H", "B) F", "C) D", "D) G"],\n'
             '    "answer": "C",\n'
-            '    "explanation": "Based on the arrangement, the final order is E, G, A, D, B, C, F, H. Counting from the left of A, D is the only person sitting exactly between A and B."\n'
+            '    "explanation": "The final order is E, G, A, D, B, C, F, H. Counting from the left of A, D sits between A and B."\n'
             "}}\n"
             "```\n\n"
-            "Now, generate a new, unique, and EXTREMELY DIFFICULT question for the topic: '{topic}'"
+            "Now, generate a new, unique, tricky, and CONCISE question for the topic: '{topic}'"
         )
-        # =======================================
         
         prompt = tmpl.format(topic=topic)
         return prompt, sys_prompt
@@ -64,7 +58,6 @@ class QuestioningAgent(object):
         for t in topics:
             p, _ = self.build_prompt(f"{t[0]}/{t[1]}", wadvsys)
             prompts.append(p)
-
         resp, tl, gt = self.agent.generate_response(prompts, sp, **gen_kwargs)
         return resp, tl, gt
 
@@ -76,20 +69,14 @@ class QuestioningAgent(object):
         wadvsys: bool = True,
         **kwargs,
     ) -> Tuple[List[str], float, int]:
-        
         all_subtopics = [(t, st) for t, sublist in topics.items() for st in sublist]
         extended_topics = random.choices(all_subtopics, k=num_questions)
-        
         all_questions = []
-        total_tokens = 0
-        total_time = 0.0
+        total_tokens, total_time = 0, 0.0
         pbar = tqdm(total=(num_questions + batch_size - 1) // batch_size, desc="STEPS: ")
-
         for i in range(0, num_questions, batch_size):
             batch_topics = extended_topics[i : i + batch_size]
-            questions, tl, gt = self.generate_question_batch(
-                batch_topics, wadvsys, **kwargs
-            )
+            questions, tl, gt = self.generate_question_batch(batch_topics, wadvsys, **kwargs)
             all_questions.extend(questions)
             if tl: total_tokens += tl
             if gt: total_time += gt
@@ -103,7 +90,6 @@ class QuestioningAgent(object):
     def filter_questions(
         self, questions: List[Dict[str, Any]]
     ) -> List[Dict[str, Any]]:
-        
         def basic_checks(q2: Dict[str, Any]) -> bool:
             required_keys = ["topic", "question", "choices", "answer"]
             if not all(key in q2 for key in required_keys): return False
@@ -111,7 +97,6 @@ class QuestioningAgent(object):
             if not all(isinstance(c, str) and len(c) > 2 and c[0].upper() in "ABCD" for c in q2["choices"]): return False
             if not (isinstance(q2.get("answer"), str) and q2["answer"].upper() in "ABCD"): return False
             return True
-
         return [q for q in questions if basic_checks(q)]
 
     def save_questions(self, questions: List[Dict], file_path: str) -> None:
@@ -132,7 +117,7 @@ if __name__ == "__main__":
         topics = json.load(f)
 
     agent = QuestioningAgent()
-    gen_kwargs = {"tgps_show": True}
+    gen_kwargs = {}
     with open("qgen.yaml", "r") as f:
         gen_kwargs.update(yaml.safe_load(f))
 
@@ -145,31 +130,60 @@ if __name__ == "__main__":
     )
     
     print(f"Generated {len(raw_outputs)} raw outputs!")
-    if args.verbose:
-        for output in raw_outputs:
-            print(output, flush=True)
-        if total_time > 0:
-            print("\n" + "=" * 50)
-            print(f"Total Time Taken: {total_time:.3f} seconds; Total Tokens: {total_tokens}; TGPS: {total_tokens/total_time:.3f} tokens/sec\n")
-            print("=" * 50 + "\n")
+    if args.verbose and total_time > 0:
+        print(f"\n{'='*50}\nTotal Time: {total_time:.3f}s; Total Tokens: {total_tokens}; TGPS: {total_tokens/total_time:.3f}\n{'='*50}\n")
 
+    # === FINAL, 3-LAYER PARSING CASCADE ===
     clean_questions = []
+    print("--- Starting 3-Layer Robust JSON Parsing ---")
     for raw_text in raw_outputs:
-        match = re.search(r'\{.*\}', raw_text, re.DOTALL)
-        if match:
-            json_str = match.group(0)
-            try:
-                clean_questions.append(json.loads(json_str))
-                print("Successfully extracted and parsed JSON.")
-            except json.JSONDecodeError:
-                print(f"  -> FAILED to parse extracted JSON from: {json_str}")
-        else:
-            print(f"  -> FAILED: No JSON object found in raw output.")
-    
+        parsed_json = None
+        
+        # Layer 1: Try direct parsing (fastest)
+        try:
+            parsed_json = json.loads(raw_text)
+            print("✅ Layer 1 Success: Parsed clean JSON directly.")
+        except json.JSONDecodeError:
+            # Layer 2: Try regex extraction (fast)
+            print("⚠️ Layer 1 Failed. Trying Layer 2 (Regex)...")
+            match = re.search(r'\{.*\}', raw_text, re.DOTALL)
+            if match:
+                try:
+                    parsed_json = json.loads(match.group(0))
+                    print("✅ Layer 2 Success: Extracted JSON with regex.")
+                except json.JSONDecodeError:
+                    parsed_json = None
+            
+            # Layer 3: LLM Self-Correction (slow but smart)
+            if parsed_json is None:
+                print("⚠️ Layer 2 Failed. Trying Layer 3 (LLM Self-Correction)...")
+                try:
+                    correction_prompt = (
+                        "The following text contains a JSON object, but it is formatted incorrectly or has extra text. "
+                        "Your task is to extract and return ONLY the valid JSON object and nothing else.\n\n"
+                        "Original Text:\n"
+                        f"```\n{raw_text}\n```\n\n"
+                        "Corrected JSON:"
+                    )
+                    # Note: We call agent.agent to access the inner model's generate_response
+                    corrected_output, _, _ = agent.agent.generate_response(
+                        correction_prompt,
+                        "You are an expert JSON extractor.",
+                        temperature=0.0, # Use greedy decoding for correction
+                        do_sample=False,
+                    )
+                    parsed_json = json.loads(corrected_output)
+                    print("✅ Layer 3 Success: Corrected JSON with second LLM call.")
+                except Exception as e:
+                    print(f"❌ Layer 3 FAILED: Could not self-correct. Error: {e}")
+                    
+        if parsed_json:
+            clean_questions.append(parsed_json)
+
     agent.save_questions(clean_questions, args.output_file)
     filtered_file = args.output_file.replace("questions.json", "filtered_questions.json")
     filtered_questions = agent.filter_questions(clean_questions)
     agent.save_questions(filtered_questions, filtered_file)
     
-    print(f"Saved {len(clean_questions)} clean questions to {args.output_file}!")
+    print(f"\nSaved {len(clean_questions)} clean questions to {args.output_file}!")
     print(f"Saved {len(filtered_questions)} filtered questions to {filtered_file}!")

@@ -246,7 +246,7 @@ class UnslothDDPOConfig(DDPOConfig):
     
     def __init__(
         self,
-        exp_name = 'answer_agent',
+        exp_name = 'question_agent',
         run_name = '',
         seed = 3407,
         log_with = None,

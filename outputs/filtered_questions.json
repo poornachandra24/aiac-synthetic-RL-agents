@@ -1,43 +1,31 @@
 [
     {
-        "topic": "Puzzles/Seating Arrangements (Linear, Circular)",
-        "question": "Ten individuals\u2014K, L, M, N, O, P, Q, R, S, T\u2014are seated linearly with no one at either end. The following clues apply: K likes 19, while L dislikes it; M has a favorite number ending in 7, which is also disliked by N; O always faces north, whereas P never does; Q prefers numbers divisible by 5, except for 15; R hates all even numbers; S loves 11, as well as its square root; T thinks 13 is perfect. Given these preferences, if we start counting seats from the leftmost individual and count towards the right until reaching someone who likes their preferred number, how many steps would you take to reach such an individual assuming there are no gaps in seating?",
+        "topic": "Family Trees/Blood Relations",
+        "question": "Rajat is the son-in-law of Amita. Rajat has two children, both sons. If Riaan is not the elder child, then which one is the father of Kavya?",
         "choices": [
-            "A) 2",
-            "B) 3",
-            "C) 4",
-            "D) 6"
+            "A) Vikram",
+            "B) Arjun",
+            "C) Sameer",
+            "D) None of these"
         ],
         "answer": "B",
-        "explanation": "By analyzing each preference and applying them sequentially without gaps, we find the first step leads us to L, then M, followed by N, then O, next P, then Q, and finally R, taking four steps."
+        "explanation": "Given relationships, we deduce Riaan as younger brother of Kavya, making Arjun their father"
     },
     {
-        "topic": "Blood Relations/Family Trees",
-        "question": "In a complex family structure with three married couples each having one child, there exists a direct blood relation between R and S through their spouses. T is the daughter-in-law of U, whose son V has no siblings. W is the mother of X, Y, Z, all being children of Q. If P is the father of O, N, M, then how many grandchildren does K have if we consider the relationships provided as clues to determine the number of grandkids directly related to K without counting those indirectly connected due to marriages?",
-        "choices": [
-            "A) 0",
-            "B) 1-2",
-            "C) 3-5",
-            "D) More than 6"
-        ],
-        "answer": "C",
-        "explanation": "Given the relations, it requires careful analysis to deduce the correct answer by applying logical deductions based on the information provided."
-    },
-    {
-        "topic": "Blood Relations/Family Trees",
-        "question": "In a complex family structure with three married couples each having one child, there exists a direct blood relation between R and S through their spouses. T is the daughter-in-law of U, whose son V has no siblings. W is the mother of X, Y, Z, all being children of Q. If P is the father of O, N, M, then how many grandchildren does K have if we consider the given relationships as part of his extended family?",
+        "topic": "Puzzles/Seating Arrangements (Linear, Circular)",
+        "question": "Five friends - R, T, U, V, W - sit linearly facing north. If S sits immediately to the left of Q, and there are two persons seated between Q and P, then how many seats away is O from N?",
         "choices": [
             "A) 0",
             "B) 1",
             "C) 2",
-            "D) More than 5"
+            "D) 3"
         ],
-        "answer": "D",
-        "explanation": "Given the complexity of the relations provided, it requires careful analysis of each couple's relationship to others, including spouses and offspring. The key lies in understanding how these individuals fit into larger families beyond just their own."
+        "answer": "B",
+        "explanation": "Given the conditions provided, we can deduce the sequence as follows:...and thus find out where O and N are relative to each other."
     },
     {
         "topic": "Puzzles/Seating Arrangements (Linear, Circular)",
-        "question": "Ten individuals\u2014K, L, M, N, O, P, Q, R, S, T\u2014are seated linearly with no one standing. The following clues apply: K likes 19, while L dislikes it; M faces U, who has 17; N always wears blue; O never does math homework; P loves reading novels by J.K. Rowling; Q hates spicy food; R plays soccer; S enjoys playing chess; T has 15 pencils. If V sits immediately to the right of W, and X is three places clockwise from Y, what color shirt will Z wear if he chooses his favorite number based solely on its digits' sum being greater than 10?",
+        "question": "Five cousins sit in two rows facing each other with one person standing alone outside. R likes 19, S likes 17, T likes 13, U likes 11, V stands alone. If W sits opposite X, Y faces Z, then what color does Q wear?",
         "choices": [
             "A) Red",
             "B) Blue",
@@ -45,23 +33,131 @@
             "D) Yellow"
         ],
         "answer": "B",
-        "explanation": "Given all constraints, we deduce the sequence:...V, W,..., Y, X,..., Z. Since Z prefers numbers > 10, considering digit sums, Z would choose a number like 18, which corresponds to green shirts according to the provided key."
+        "explanation": "Given clues about colors and positions, we deduce Q wears blue based on direct statements and logical deductions."
     },
     {
-        "topic": "Blood Relations/Family Trees",
-        "question": "In a complex family structure with three married couples each having one child, there exists a direct blood relation between R and S through their spouses. T is the daughter-in-law of U, whose son V has no siblings. W is the mother of X, Y, Z, all being children of Q. If P is the father of O, N, M, then how many grandchildren does K have if we consider the given relationships as part of his extended family?",
+        "topic": "Puzzles/Seating Arrangements (Linear, Circular)",
+        "question": "Five friends - R, T, U, V, W - sit in two rows facing each other with one person seated alone. If S faces P, then Q sits immediately to the left of O.",
+        "choices": [
+            "A) R",
+            "B) T",
+            "C) U",
+            "D) None can face directly"
+        ],
+        "answer": "D",
+        "explanation": "Given the constraints, no direct facing relationship exists among these five individuals."
+    },
+    {
+        "topic": "Family Trees/Blood Relations",
+        "question": "Rajat is the son-in-law of Amita. Rajat has two children, both sons. If Riaan is not the elder child, then which one is the father of Kavya?",
+        "choices": [
+            "A) Vikram",
+            "B) Arjun",
+            "C) Sameer",
+            "D) None of these"
+        ],
+        "answer": "B",
+        "explanation": "Given relationships, we deduce Riaan as younger brother of Kavya, making Arjun their father"
+    },
+    {
+        "topic": "Puzzles/Seating Arrangements (Linear, Circular)",
+        "question": "Five cousins sit in two rows facing each other with one person standing alone outside. R likes 19 while T prefers not to reveal their number. U has no sibling among those seated. V faces W, who stands opposite X. Y does not like 17. Z is an only child. What is the middle name of the cousin who likes 13?",
+        "choices": [
+            "A) Kunal",
+            "B) Rohan",
+            "C) Sameer",
+            "D) Vikram"
+        ],
+        "answer": "B",
+        "explanation": "Given the clues about siblings, numbers liked by individuals, and face-to-face arrangements, we deduce the possible orders and find out who likes 13, which turns out to be Rohan."
+    },
+    {
+        "topic": "Puzzles/Seating Arrangements (Linear, Circular)",
+        "question": "Five cousins sit in two rows facing each other with one person standing alone outside. R likes 19 while T prefers not to reveal their favorite number. U has no siblings. V faces W. X stands alone. What color does Y prefer?",
+        "choices": [
+            "A) Red",
+            "B) Blue",
+            "C) Green",
+            "D) Yellow"
+        ],
+        "answer": "B",
+        "explanation": "Given the clues about numbers and family relationships, we deduce the colors based on the provided information."
+    },
+    {
+        "topic": "Puzzles/Seating Arrangements (Linear, Circular)",
+        "question": "Five cousins sit in two rows facing each other with one person standing alone outside. R likes 19 while T prefers not to reveal their number. U has no sibling among those seated. V faces W, who stands opposite X. Y does not like 17. Z is an only child. What is the middle name of the cousin who likes 13?",
+        "choices": [
+            "A) Kunal",
+            "B) Rohan",
+            "C) Sameer",
+            "D) Vikram"
+        ],
+        "answer": "B",
+        "explanation": "Given the clues about siblings, numbers liked by individuals, and face-to-face arrangements, we deduce the possible orders and find out who likes 13, which turns out to be Rohan."
+    },
+    {
+        "topic": "Puzzles/Seating Arrangements (Linear, Circular)",
+        "question": "Five friends - R, T, U, V, W - sit in two rows facing each other with one person seated alone. If S faces Q, then how many persons sit between them?",
         "choices": [
             "A) 0",
             "B) 1",
             "C) 2",
-            "D) More than 5"
+            "D) 3"
         ],
-        "answer": "D",
-        "explanation": "Given the complexity of the relations provided, it requires careful analysis of each couple's relationship to others, including spouses and offspring. The key lies in understanding how these individuals fit into larger families beyond just their own."
+        "answer": "B",
+        "explanation": "Given the constraints, we can deduce the possible arrangements leading to only one person between S and Q when they face each other."
+    },
+    {
+        "topic": "Family Trees/Blood Relations",
+        "question": "Rajat is the son-in-law of Amita. Rajat has two children, both sons. If Riaan is not the elder child, then which one is the father of Kavya?",
+        "choices": [
+            "A) Vikram",
+            "B) Arjun",
+            "C) Sameer",
+            "D) None of these"
+        ],
+        "answer": "B",
+        "explanation": "Given relationships, we deduce Riaan as younger brother of Kavya, making Arjun their father"
+    },
+    {
+        "topic": "Family Trees/Blood Relations",
+        "question": "Rajat is the son-in-law of Amita. Rajat has two children, both sons. If Riaan is not the elder child, then which one is the father of Kavya?",
+        "choices": [
+            "A) Vikram",
+            "B) Arjun",
+            "C) Sameer",
+            "D) None of these"
+        ],
+        "answer": "B",
+        "explanation": "Given relationships, we deduce Riaan as younger brother of Kavya, making Arjun their father"
     },
     {
         "topic": "Puzzles/Seating Arrangements (Linear, Circular)",
-        "question": "Ten individuals\u2014K, L, M, N, O, P, Q, R, S, T\u2014are seated linearly with no one standing. The following clues apply: K likes 19, while L dislikes it; M faces U, who has 17; N always wears blue; O never does math homework; P loves reading novels by J.K. Rowling; Q hates spicy food; R plays soccer; S enjoys playing chess; T has 15 pencils. If V sits immediately to the right of W, and X is three places clockwise from Y, what color shirt will Z wear if he chooses his favorite number based solely on its digits' sum being greater than 10?",
+        "question": "Five friends - R, T, U, V, W - sit in two rows facing each other with one person seated alone. If S faces Q, then how many persons sit between them?",
+        "choices": [
+            "A) 0",
+            "B) 1",
+            "C) 2",
+            "D) 3"
+        ],
+        "answer": "B",
+        "explanation": "Given the constraints, we can deduce the possible arrangements leading to only one person between S and Q when they face each other."
+    },
+    {
+        "topic": "Puzzles/Seating Arrangements (Linear, Circular)",
+        "question": "Five cousins sit in two rows facing each other with one person standing alone outside. R likes 19 while T prefers not to reveal their number. U has no sibling among those seated. V faces W, who stands opposite X. Y does not like 17. Z is an only child. What is the middle name of the cousin who likes 13?",
+        "choices": [
+            "A) Kunal",
+            "B) Rohan",
+            "C) Sameer",
+            "D) Vikram"
+        ],
+        "answer": "B",
+        "explanation": "Given the clues about siblings, numbers liked by individuals, and face-to-face arrangements, we deduce the possible orders and find out who likes 13, which turns out to be Rohan."
+    },
+    {
+        "topic": "Puzzles/Seating Arrangements (Linear, Circular)",
+        "question": "Five cousins sit in two rows facing each other with one person standing alone outside. R likes 19 while T prefers not to reveal their favorite number. U has no siblings. V faces W. X stands alone. What color does Y prefer?",
         "choices": [
             "A) Red",
             "B) Blue",
@@ -69,42 +165,30 @@
             "D) Yellow"
         ],
         "answer": "B",
-        "explanation": "Given all constraints, we deduce the sequence:...V, W,..., Y, X,..., Z. Since Z prefers numbers > 10, considering digit sums, Z would choose a number like 18, which corresponds to green shirts according to the provided key."
+        "explanation": "Given the clues about numbers and family relationships, we deduce the colors based on the provided information."
     },
     {
         "topic": "Puzzles/Seating Arrangements (Linear, Circular)",
-        "question": "Ten individuals\u2014K, L, M, N, O, P, Q, R, S, T\u2014are seated linearly with no one at either end. The following clues apply: K likes 19, which is written beside U. No one likes 13. If V does not like 5, then W likes it. X always faces Y. Z never faces anyone directly opposite them. Given these conditions, what position would you place U if all other positions were already fixed based solely on the given relationships without considering U's preference?",
+        "question": "Five friends - R, T, U, V, W - sit in two rows facing each other with one person seated alone. If S faces Q, then how many persons sit between them?",
         "choices": [
-            "A) First",
-            "B) Last",
-            "C) Third",
-            "D) Seventh"
+            "A) 0",
+            "B) 1",
+            "C) 2",
+            "D) 3"
         ],
         "answer": "B",
-        "explanation": "Since there's no direct relationship provided about U's placement relative to others' preferences, we focus on fixing other positions first using indirect connections. Knowing some face each other and others have specific preferences helps establish a sequence. However, without explicit information linking U's position to those already determined, we cannot accurately deduce their spot beyond knowing they're part of the overall arrangement."
+        "explanation": "Given the constraints, we can deduce the possible arrangements leading to only one person between S and Q when they face each other."
     },
     {
         "topic": "Puzzles/Seating Arrangements (Linear, Circular)",
-        "question": "Ten individuals\u2014K, L, M, N, O, P, Q, R, S, T\u2014are seated linearly with no one standing. The following clues apply: K likes 19, while L dislikes it; M faces U, who has 17; N always wears blue; O never does math homework; P loves reading novels by J.K. Rowling; Q hates spicy food; R plays soccer; S enjoys playing chess; T has 15 pencils. If V sits immediately to the right of W, and X is three places clockwise from Y, what color shirt will Z wear if he chooses his favorite number based solely on its digits' sum being greater than 10?",
+        "question": "Five friends - R, T, U, V, W - sit in two rows facing each other with one person seated alone. If S faces Q, then how many persons sit between them?",
         "choices": [
-            "A) Red",
-            "B) Blue",
-            "C) Green",
-            "D) Yellow"
+            "A) 0",
+            "B) 1",
+            "C) 2",
+            "D) 3"
         ],
         "answer": "B",
-        "explanation": "Given all constraints, we deduce the sequence:...V, W,..., Y, X,..., Z. Since Z prefers numbers > 10, considering digit sums, Z would choose a number like 18, which corresponds to green shirts according to the provided key."
-    },
-    {
-        "topic": "Puzzles/Seating Arrangements (Linear, Circular)",
-        "question": "Ten individuals\u2014K, L, M, N, O, P, Q, R, S, T\u2014are seated linearly with no one at either end. The following clues apply: K likes 19, which is written beside U. No one likes 13. If V does not like 5, then W likes it. X always faces Y. Z never faces anyone directly opposite them. Given these conditions, what position would you place U if all other positions were already fixed based solely on the given relationships without considering U's preference?",
-        "choices": [
-            "A) First",
-            "B) Last",
-            "C) Third",
-            "D) Seventh"
-        ],
-        "answer": "B",
-        "explanation": "Since there's no direct relationship provided about U's placement relative to others' preferences, we focus on fixing other positions first using indirect connections. Knowing some face each other and others have specific preferences helps establish a sequence. However, without explicit information linking U's position to those already determined, we cannot accurately deduce their spot beyond knowing they're part of the overall arrangement."
+        "explanation": "Given the constraints, we can deduce the possible arrangements leading to only one person between S and Q when they face each other."
     }
 ]
