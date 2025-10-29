@@ -1,688 +1,386 @@
 [
-    null,
     {
         "answer": "D",
-        "reasoning": "Since Rajat has two sons and Riaan is not the elder child, it implies Riaan's sibling (Kavya's brother) could be either. Without explicit information linking Kavya's parentage to specific individuals beyond Rajat being their grandfather, we cannot determine the father of Kavya based on given relationships alone."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, P's color cannot be determined directly from the clues provided."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, the only possible arrangement where S is opposite U and not adjacent to Q leads to P wearing Red (Choice B)."
+        "reasoning": "Since M is the wife of K and niece of T, it implies M's parent is T's child. Given K is the son-in-law of N, and considering the family structure provided, we deduce O's relationship to L based on the direct relationships between spouses and parents. Thus, O being the mother of L directly follows from the given information about M and her connection to T."
     },
     {
         "answer": "D",
-        "reasoning": "Since Rajat has two sons and Riaan is not the elder child, it implies Riaan's sibling (Kavya's brother) could be either. Thus, without direct information linking a specific son to Kavya's parent, we cannot determine the father of Kavya from given details."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we deduce the arrangement. Given the constraints, the only possible arrangement leads to P wearing Red (Choice B)."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, P's color shirt cannot be determined directly from the information provided."
+        "reasoning": "Since U likes to sit next to neither T nor W, U must sit between them or at either end. Given the constraints, U can only sit between T and V or between V and W. The latter arrangement satisfies U's preference, making option D the correct choice."
     },
     {
         "answer": "D",
-        "reasoning": "Since Rajat has two sons and Riaan is not the elder child, it implies Riaan's sibling (Kavya) could be either. Given no direct relation between Kavya and other choices' parents, we cannot determine the father without more information, making 'None of these' the only logical choice."
+        "reasoning": "Since no two adjacent persons have the same color preference and given the preferences of other family members, we deduce the sequence of colors. Knowing S's preference for blue and the pattern, we can determine the sequence. Given the constraints and the fact that T is not mentioned directly but implied through the sequence, we infer T's preference based on the sequence and the rules provided."
     },
     {
         "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, the only possible arrangement where S is opposite U and not adjacent to Q leads to P wearing Red (Choice B)."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, P's color cannot be determined directly from the clues provided."
+        "reasoning": "Since K has only one child (S), and there's no direct relation between O and K/S, we look at the family structure provided. Given P is father of O, and knowing the relationships between other members, without explicit information about O's siblings or parents' siblings, we cannot accurately determine O's sibling count. Thus, option B (Three) is eliminated due to lack of sufficient information to support it. The remaining options (One, Four, Five) also don't fit based on the given family structure. Therefore, the correct answer is not explicitly stated in the choices, making B the best possible inference from the provided information."
     },
     {
         "answer": "D",
-        "reasoning": "Since Rajat has two sons and Riaan is not the elder child, it implies Riaan's sibling (Kavya's brother) could be the father of Kavya. Given Rajat's family structure, there's no direct indication of who fathers Kavya without explicit information linking a specific son to Kavya's parentage."
+        "reasoning": "Since R is married to S, and they are part of Q and L's family, we need to find how T and U relate to them. Given the structure provided, if R is married to S, it implies a generation gap. Therefore, T and U could be uncles/aunts or cousins of R and S, making option D the most likely relationship."
     },
     {
         "answer": "D",
-        "reasoning": "Since Rajat has two sons and Riaan is not the elder, it means Riaan is the younger son. Given the family structure, there's no direct relation between Rajat's sons and Kavya's parentage, making 'None of these' the correct choice as neither Vikram nor Arjun can be Kavya's father without explicit information linking them."
+        "reasoning": "Since Reena is not married yet, Amit cannot be her husband. Given that Amit is Geeta's son, and considering the family structure, Amit would be Rahul's nephew if Geeta were married to Rahul's brother, making option D the most likely relationship."
     },
     {
         "answer": "D",
-        "reasoning": "Since Rajat has two sons and Riaan is not the elder child, the other son must be the father of Kavya. However, without explicit information linking a specific son to Kavya's father, we cannot determine the correct answer from the given choices."
-    },
-    null,
-    null,
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, P's color cannot be determined directly from the clues provided, so the correct answer choice based on the information given is B (Red)."
-    },
-    {
-        "answer": "D",
-        "reasoning": "Since Rajat has two sons and neither is Kavya's father, and given the family structure, there is no direct relationship between Rajat's sons and Kavya's parentage, making it impossible to determine without more information."
+        "reasoning": "Since Ritu has two children, one married to Rohan, and Deepak is brother-in-law of Kavya, we need to find how Pooja relates to Diya. Given Rahul is father of Siddharth, and without explicit relationships between these individuals and the given family structure, we look at the choices. Since Pooja's relationship to Diya isn't directly stated, but considering the provided information doesn't explicitly link them, option D (Cousin) seems most plausible due to the complexity of direct relationships from the given clues."
     },
     {
         "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, P's color cannot be determined directly from the information provided, so the correct answer choice based on the given options is B (Red)."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we deduce the arrangement. Given the constraints, the only possible arrangement leads to P wearing Red (Choice B)."
-    },
-    {
-        "answer": "D",
-        "reasoning": "Since Rajat has two sons, and neither is Kavya's father (as Riaan is not the elder), it implies Kavya's father is not among Rajat's sons. Thus, the father of Kavya cannot be determined from given information, making option D (None of these) the correct choice."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, P's color cannot be determined directly from the information provided, making all options equally likely without more specific details about P's position relative to others."
-    },
-    {
-        "answer": "D",
-        "reasoning": "Since Rajat has two sons and Riaan is not the elder child, it implies Riaan's sibling (Kavya's brother) could be either. Thus, without explicit information linking a specific son to Kavya's parentage, we cannot determine the father of Kavya from given clues alone."
-    },
-    {
-        "answer": "D",
-        "reasoning": "Since Rajat has two sons and Riaan is not the elder, the other son must be the father of Kavya. However, without explicit information linking a specific son to Kavya's father, we cannot determine the correct answer from the given choices."
-    },
-    null,
-    {
-        "answer": "D",
-        "reasoning": "Since Rajat has two sons and Riaan is not the elder child, it implies Riaan is one of the sons. Given Rajat's family structure and the fact that Kavya is not mentioned as a direct relation to Rajat, we cannot determine who Kavya's father is without more information, making option D (None of these) the most accurate response."
-    },
-    {
-        "answer": "D",
-        "reasoning": "Since Rajat has two sons and Riaan is not the elder child, it implies Riaan is the younger child. Given the family structure, neither Vikram nor Arjun can be the father of Kavya because they have only one child each. Sameer's relationship with Rajat's wife makes him a potential candidate but without explicit information linking Sameer to Kavya's parentage, we cannot confirm. Thus, the correct answer is 'None of these' as the provided choices do not directly lead to identifying Kavya's father."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, P's color cannot be determined directly from the clues provided."
-    },
-    null,
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, P's color shirt cannot be determined directly from the information provided."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we deduce the arrangement. Given the constraints, P's color can't be determined directly from the clues provided, so we choose an arbitrary option (in this case, B)."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, P's color cannot be determined directly from the information provided, so the correct answer choice based on the given options is B (Red)."
-    },
-    null,
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we deduce the arrangement. Given the constraints, P's color can't be determined directly from the clues provided."
-    },
-    {
-        "answer": "D",
-        "reasoning": "Since Rajat has two sons and Riaan is not the elder, the other son must be the father of Kavya. However, without explicit information linking a specific son to Kavya's parentage, we cannot definitively determine the father of Kavya from the given clues."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, the only possible arrangement where S is opposite U and not adjacent to Q leads to P wearing Red (Choice B)."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, P's color cannot be determined directly from the information provided."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, P's color cannot be determined directly from the clues provided."
-    },
-    null,
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, the only possible arrangement where S is opposite U and not adjacent to Q leads to P wearing Red (Choice B)."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, P's color cannot be determined directly from the information provided."
-    },
-    {
-        "answer": "D",
-        "reasoning": "Since Rajat has two sons and Riaan is not the elder child, it implies Riaan's sibling (Kavya's brother) could be the father of Kavya. Given Rajat's family structure, there's no direct indication of who fathers Kavya without explicit information linking a specific son to Kavya's parentage."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we deduce the arrangement. Given the constraints, P's color can't be determined directly from the clues provided."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, the only possible arrangement where S is opposite U and not adjacent to Q leads to P wearing Red (Choice B)."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we deduce the seating arrangement. Given the constraints, P's color can be determined by analyzing the possible positions of the others, leading us to conclude P wears Red (Choice B)."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, P's color cannot be determined directly from the information provided."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, P's color cannot be determined directly from the information provided, so the correct answer choice is based on eliminating options that contradict the given conditions."
-    },
-    {
-        "answer": "D",
-        "reasoning": "Since Rajat has two sons and Riaan is not the elder child, it implies Riaan's position relative to the other son. However, without explicit information about their ages or positions, we cannot determine who is the father of Kavya based on the given clues alone."
-    },
-    null,
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we deduce the arrangement. Given the constraints, P's color can't be determined directly from the clues provided, so we choose an arbitrary option (B)."
-    },
-    {
-        "answer": "D",
-        "reasoning": "Since Rajat has two sons and Riaan is not the elder, the other son must be the father of Kavya. However, without explicit information linking a specific son to Kavya's parentage, we cannot definitively determine who is Kavya's father, making option D (None of these) the most accurate response given the provided details."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we deduce the arrangement. Given the constraints, the only possible arrangement leads to P wearing Red (Choice B)."
-    },
-    null,
-    {
-        "answer": "D",
-        "reasoning": "Since Rajat has two sons and Riaan is not the elder child, it implies Riaan's position relative to the other son. However, without explicit information about their positions or relationships beyond being sons of Rajat, we cannot determine who is the father of Kavya based on the given clues alone."
-    },
-    null,
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, P's color shirt cannot be determined directly from the information provided."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, P's color cannot be determined directly from the information provided."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we deduce the arrangement. Given the constraints, P's color can't be determined directly from the clues provided, so we choose an option based on the typical distribution of colors (e.g., if all others have been accounted for)."
+        "reasoning": "Since K is the daughter-in-law of I and has two brothers, we need to find the number of children T has based on the given information about P and Q's relationship to T. However, there's no direct link between T's family structure and the provided details about P and Q's children. Thus, without explicit clues connecting T's family to the others mentioned, we cannot accurately determine T's child count from the given choices."
     },
     null,
     null,
     {
         "answer": "D",
-        "reasoning": "Since Rajat has two sons, neither can be the father of Kavya. The question states 'If Riaan is not the elder child,' implying Riaan's relationship to Kavya is irrelevant. Thus, without direct information linking a specific father to Kavya, we choose option D as it directly contradicts the given relationships."
+        "reasoning": "Since U is sister of T, and there's no direct information linking V to W through U or T, we look at the given relationships. O being brother-in-law of S implies O is married to S's sibling. Given R is son-in-law of P, and Q is R's daughter, without explicit links between these families and V/W, we consider the option that best fits based on typical family structures. Option D, 'Aunt,' is a common relationship between siblings' spouses, making it a reasonable guess considering the complexity of other options."
     },
     {
         "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we deduce the seating arrangement. Given the constraints, P's color can be determined by analyzing the possible positions of the others, leading us to conclude P wears Red (Choice B)."
-    },
-    {
-        "answer": "D",
-        "reasoning": "Since Rajat has two sons and Riaan is not the elder child, it implies Riaan's sibling (Kavya's brother) could be either. Given no direct relation between Kavya and other family members, we cannot determine the father without more information, making 'None of these' the correct answer."
+        "reasoning": "O is the son-in-law of P, making him the husband of P's child. Since there is no direct information linking O to another family member beyond being married to P's child, we cannot infer more relationships without explicit clues."
     },
     null,
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we deduce the seating arrangement. Given the constraints, P's color can't be determined directly from the clues provided, so we choose an option based on the context of the problem."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, P's color cannot be determined directly from the information provided."
-    },
-    {
-        "answer": "D",
-        "reasoning": "Since Rajat has two sons, and neither is Kavya's father (as Riaan is not the elder child), it implies Kavya's father is someone other than Rajat's sons, making option D (None of these) the correct choice as there's no direct information linking Kavya's father to Rajat's sons."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, the only possible arrangement where S is opposite U and not adjacent to Q leads to P wearing Red (Choice B)."
-    },
     null,
     {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, P's color cannot be determined directly from the information provided."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, P's color shirt cannot be determined directly from the information provided."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, the only possible arrangement where S is opposite U and not adjacent to Q leads to P wearing Red (Choice B)."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we deduce the arrangement. Given the constraints, P's color can't be determined directly from the clues provided, but based on typical seating logic and the fact that only one person sits alone, without explicit information linking P's color to the arrangement, we cannot accurately determine P's color."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, P's color cannot be determined directly from the information provided."
-    },
-    null,
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, P's color cannot be determined directly from the information provided, so the correct answer choice is based on eliminating options that contradict the given conditions."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we deduce the seating arrangement. Given the constraints, P's color can be determined by analyzing the possible positions of each friend relative to S and U, leading us to conclude P wears Red (Choice B)."
-    },
-    null,
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, P's color shirt cannot be determined directly from the information provided."
-    },
-    {
-        "answer": "D",
-        "reasoning": "Since Rajat has two sons and neither is Kavya's father, and given the family structure provided, there is no direct information linking a specific father to Kavya without explicit statements about their relationships."
-    },
-    null,
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we deduce the seating arrangement based on given clues. Given that there's only one person seated alone, we can infer the arrangement and thus determine P's shirt color as per the solution provided."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, the only possible arrangement where S is opposite U and not adjacent to Q leads to P wearing Red (Choice B)."
-    },
-    {
-        "answer": "D",
-        "reasoning": "Since Rajat has two sons and Riaan is not the elder, the other son must be the father of Kavya. However, without explicit information linking a son to Kavya's father, we cannot determine the correct answer from the given choices."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, P's color cannot be determined directly from the clues provided."
-    },
-    {
-        "answer": "D",
-        "reasoning": "Since Rajat has two sons and Riaan is not the elder, the other son must be the father of Kavya. However, without explicit information linking a son to Kavya's father, we cannot determine the correct answer from the given choices."
-    },
-    {
-        "answer": "D",
-        "reasoning": "Since Rajat has two sons and Riaan is not the elder, the other son must be the father of Kavya. However, without explicit information linking a specific son to Kavya's father, we cannot determine the correct answer from the given choices."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given that there's only one person seated alone, it implies the other four are paired. Thus, P's color cannot be determined directly from the provided information, making all options equally likely."
+        "answer": "C",
+        "reasoning": "To find the relationship between Kirti and Yash, we need to identify their family connections. Given that Ritu is married to Mohit, who is the son-in-law of Prateek, and considering the relationships provided, we can deduce that Kirti and Yash are siblings since they are mentioned together without any explicit familial distinction."
     },
     null,
     {
         "answer": "D",
-        "reasoning": "Since Rajat has two sons and Riaan is not the elder child, it implies Riaan's sibling (Kavya's brother) could be the father of Kavya. Given Rajat's family structure, neither Vikram nor Arjun can be Kavya's father. Sameer is not mentioned as having a child, making D, None of these, the correct answer."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we deduce the seating arrangement. Given the constraints, P's color can be determined by analyzing the possible positions of each friend relative to S and U, leading us to conclude P wears Red (Choice B)."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given that there's only one person seated alone, it implies the row has an odd number of seats. Thus, P must be wearing Red (B)."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we deduce the arrangement. Given the constraints, P's color can't be determined directly from the clues provided, but based on typical logic puzzle solutions, without explicit information linking P to a specific color, we default to the assumption that all colors are equally possible, making 'B' (Red) a reasonable choice due to its common occurrence as a default option in such puzzles."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we deduce the seating arrangement. Given the constraints, P's color can be determined by analyzing the possible positions of each friend relative to S and U, leading us to conclude P wears Red (Choice B)."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, P's color cannot be determined directly from the information provided, so the correct answer choice based on the given options is B (Red)."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, the only possible arrangement where S is opposite U and not adjacent to Q leads to P wearing Red (Choice B)."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given the constraints, P's color cannot be determined directly from the clues provided."
+        "reasoning": "Since W is the father of Y and X is the mother of Z, W's relationship to X would be'spouse' because they are married."
     },
     {
         "answer": "D",
-        "reasoning": "Since Rajat has two sons and Riaan is not the elder child, the other son must be the father of Kavya. However, without explicit information linking a specific son to Kavya's father, we cannot determine the correct answer from the given choices."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we can deduce the seating arrangement. Given that there's only one person seated alone, it implies the row has an odd number of people. Thus, P must be wearing Red (B)."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since S is opposite U and not adjacent to Q, we deduce the arrangement. Given the constraints, the only possible arrangement leads to P wearing Red (Choice B)."
+        "reasoning": "Since there's no direct relationship between the given clues and the choices provided, we cannot determine which person sits alone or how they're arranged based on the information given. Thus, option D, 'None of these,' is the most accurate response because it acknowledges the lack of sufficient details to make a determination."
     },
     null,
     {
         "answer": "B",
-        "reasoning": "Given the seating arrangement and preferences, we can deduce that P's preference is not explicitly stated but since it's part of the solution set, we infer based on the provided clues."
+        "reasoning": "Since only one person likes each color and N always sits next to O, who likes Red, we can deduce the seating arrangement. Given Q sits opposite R and S cannot be between them due to U's preference for Yellow over Green, we need to find a color not yet accounted for. The statement 'Five cousins...like different colors' implies there are five unique colors. With the given constraints, the most straightforward solution involves assigning colors based on the provided relationships, leading us to conclude that White (B) is the unaccounted-for color."
     },
     {
         "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the sequence and find P's preference by analyzing the table structure and individual preferences, leading us to conclude P likes 9 (Choice B)."
+        "reasoning": "Rajani's sibling count cannot be determined from the given information about her children or uncle. Thus, option B 'None' is the most accurate representation of the available data."
+    },
+    {
+        "answer": "B",
+        "reasoning": "Since B sits immediately to the left of E, and knowing the arrangement, we can deduce the positions. Given one person faces north, and considering the constraints, B's position relative to others helps us identify who might face north's opposite. By analyzing the seating plan and applying the given clues, we find B's position leads to determining the opposite side."
     },
     {
         "answer": "D",
-        "reasoning": "Since Rajat has two sons, and Riaan is not the elder child, we need to find out who is the father of Kavya. Given the family structure, it's clear that neither Vikram nor Arjun can be Kavya's father. Sameer is also ruled out as he's married to Riaan's mother. Thus, the correct answer is D) None of these."
+        "reasoning": "Rishi has two children from his first marriage, Rajesh and Rohan. Since Rajesh is not the son of Rekha, it means Rajesh belongs to Rishi's first marriage. Thus, Rishi has two sons, Rajesh and Rohan, considering both marriages."
     },
     {
         "answer": "B",
-        "reasoning": "Given the seating arrangement and preferences, we can deduce the numbers liked by each person. Since U dislikes 7, and V faces someone who likes 11, we start building the sequence. With R liking 19 and U's dislike, we get a pattern. The correct answer is B because it fits the given clues and the sequence formed from them."
+        "reasoning": "Since P has no one directly behind them, we start placing people. Given Y likes U, who stands immediately behind N, and knowing others' positions relative to each other, we deduce the order. With S next to V and T two positions from O, and considering the constraints on P's position, we can infer the sequence. Thus, X fits relative to R based on the given relationships between individuals."
+    },
+    {
+        "answer": "C",
+        "reasoning": "Since Q always sits opposite R, and given the seating arrangement constraints, U facing V means they're at opposite ends. The fact that U never drinks tea doesn't affect the seating directly but helps in eliminating other options. Thus, the correct answer is C, 'Opposite R', because it satisfies the condition of U facing V."
     },
     {
         "answer": "B",
-        "reasoning": "Given the seating arrangement and preferences, we can deduce that P's preference is not explicitly stated but since it's part of the solution set, we infer based on the provided clues and table structure."
+        "reasoning": "Since Geeta is the mother of Deepak, option B 'Father' cannot be true. Option A 'Mother' is also incorrect because it would make Geeta the mother of herself. Option C 'Daughter' is not possible because Deepak's gender is male. Therefore, option D 'Son' is eliminated due to the same reason. Thus, the correct relationship between Geeta and Deepak is that Geeta is the father of Deepak, making option B the only remaining possibility."
     },
     {
-        "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7, and V faces someone who likes 11, we can infer the sequence. With S sitting left of Q, and knowing the table layout, we find P's preference by analyzing the seating and preferences provided, leading us to conclude P likes 9 (Choice B)."
+        "answer": "D",
+        "reasoning": "Since P likes Violet, who always sits at an end, we cannot determine if P is at the start or end. The condition about U and V does not directly relate to P's position. Thus, based on the given information, none can be determined from these conditions alone, making option D the correct choice."
     },
     {
-        "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7, and V faces someone who likes 11, we can infer the sequence. With R liking 19 and knowing the table layout, we find P's preference by analyzing the seating and preferences provided."
+        "answer": "D",
+        "reasoning": "Since L faces T and U stands directly opposite V, we need to find who faces whom. Given the arrangement, U faces V, which satisfies the condition. Therefore, option D) W is incorrect, making option D the correct answer."
+    },
+    {
+        "answer": "D",
+        "reasoning": "Given O is 5 places clockwise from T, we can start building the arrangement. Since N faces U, and N is 3 places clockwise from P, we know the sequence. With W opposite X, and knowing the positions of others, we count the seats between R and S. The arrangement provides enough information to deduce the correct distance."
+    },
+    {
+        "answer": "D",
+        "reasoning": "Since there's no direct relation between X and any other person's family structure provided, we can't determine the number of children X has based on the given information alone."
+    },
+    {
+        "answer": "D",
+        "reasoning": "Since U's color is not mentioned in the given information, we cannot determine U's color based on the provided details about S and T being opposite each other or any other clue. Therefore, option D 'None' is the correct answer because it accurately reflects our lack of knowledge about U's color from the given statements."
     },
     null,
-    {
-        "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7 and V faces someone who likes 11, we can start building the sequence. With R liking 19 and knowing the sequence, we find P's preference (9) by analyzing the table layout and preferences."
-    },
     null,
     {
-        "answer": "B",
-        "reasoning": "Since Rajat has two sons, and Riaan is not the elder child, the other son must be the father of Kavya. Given the family structure, Arjun is the only other son, making him the father of Kavya."
-    },
-    null,
-    {
-        "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7 and V faces someone who likes 11, we can determine the sequence. With S sitting left of Q and knowing the others' positions relative to these two, we find P's position and thus the number they like (in this case, 9)."
+        "answer": "C",
+        "reasoning": "Since Manish is son-in-law of Geeta, and Rishi's daughter Ritu is married to Manish (as stated), Manish is brother-in-law of Rishi's other daughter Rekha. Thus, Manish shares a brother-in-law relationship with Rishi."
     },
     {
         "answer": "B",
-        "reasoning": "Since Rajat has two sons, and Riaan is not the elder child, the other son must be the father of Kavya. Given the family structure, Arjun is the only other son, making him the father of Kavya."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since Rajat has two sons and Riaan is not the elder, the other son must be the father of Kavya. Given the family structure, Arjun is the only other son, making him the father of Kavya."
+        "reasoning": "Since P is at an end, we know the arrangement. Given X is three places clockwise from Y, and knowing the sequence, we can deduce who faces away from T. By analyzing the seating plan and applying the given relationships, we find S is the one who faces away from T."
     },
     null,
     null,
     {
         "answer": "D",
-        "reasoning": "Since Rajat has two sons, and Riaan is not the elder child, it implies Riaan is one of the sons. Given Sameer is the husband of Riaan's mother (Rajat's wife), Sameer would be the father of Riaan, making him the father of Kavya if Kavya is indeed Riaan's sibling."
+        "reasoning": "Since there's no direct relation between O and P's positions given the seating arrangement and the fact that M is two positions counterclockwise from N doesn't directly impact O's position relative to P, we look at the overall structure and find that the couples are arranged such that one person from each couple sits next to someone from another couple, making it likely that O will sit between or opposite someone else, but without explicit information linking O to P's position, we choose the option that best fits the general pattern of alternating seats and couples' arrangements."
     },
     {
         "answer": "B",
-        "reasoning": "Since U dislikes 7 and V faces someone who likes 11, we can deduce the sequence. Given R likes 19, we find the pattern and determine P's preference based on the table arrangement."
+        "reasoning": "Since U faces neither end, it cannot be at either extreme. Given T's preference for Pinky, who is to his right, we deduce the order. With S opposite P, we can start building the sequence. However, without explicit clues linking Q to specific colors or positions, we rely on general knowledge that Q prefers Green, making B the most likely correct answer based on the provided information."
+    },
+    {
+        "answer": "D",
+        "reasoning": "Ritu is the daughter-in-law of Deepak, which means she is married to one of Deepak's sons. Given the family structure provided, we know Rekha is married to Manish, making Manish Ritu's husband. However, since Ritu is the daughter-in-law of Deepak, it implies she is married to Deepak's son, not Manish. Therefore, Deepak can be the brother of Ritu because he could potentially be her father-in-law if his son is married to Ritu."
     },
     {
         "answer": "B",
-        "reasoning": "Since Rajat has two sons, and Riaan is not the elder child, the other son must be the father of Kavya. Given the family structure, Arjun is the only other son, making him the father of Kavya."
+        "reasoning": "Since we're moving towards the center from R, and knowing the arrangement is symmetrical, we need to find out who's between R and U when facing each other. Given the clues about positions relative to the center and the fact that U sits immediately to the left of the one who likes 19, we deduce the sequence. Thus, starting from the person opposite U, we'd pass only 1 person (U's neighbor) to reach the center."
+    },
+    {
+        "answer": "D",
+        "reasoning": "Given the relationships provided, we need to find U's relation to V. Since there's no direct information linking U to V or their family members, we look at the overall structure. The key insight lies in recognizing that if S is T's sister, it implies a sibling relationship between them. Thus, without explicit details on U's position relative to V, we infer U could be V's brother based on the general sibling structure, making option D plausible but not explicitly confirmed."
     },
     {
         "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7, and V faces someone who likes 11, we can infer the sequence. With S sitting left of Q, and knowing the table layout, we find P's preference by analyzing the possible combinations and eliminating others based on given clues, ultimately leading us to conclude P likes 9 (Choice B)."
+        "reasoning": "Since U sits immediately to the left of W, there's only one person between them. Given the arrangement, we can deduce the positions directly from the clues provided."
     },
     {
         "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7 and V faces someone who likes 11, we can start building the sequence. With R liking 19 and knowing the sequence, we find P's preference (9) by analyzing the table layout and preferences provided."
+        "reasoning": "Since R is seated opposite T, and U has someone to their left, we can start building the arrangement. Given V faces W with no one between, we know at least two people. With R opposite T, we need to place others. Option B provides the most coherent seating arrangement based on the clues provided, making it the correct choice."
     },
     {
         "answer": "B",
-        "reasoning": "Since U dislikes 7 and V faces someone who likes 11, we can deduce the sequence. Given S sits immediately to the left of Q, and knowing the table arrangement, we find P's position relative to the others. By analyzing the seating and preferences, we determine P likes 9 (Choice B)."
+        "reasoning": "Raja's gender is not explicitly stated, but since she is referred to as'mother-in-law,' it implies she is married to someone who has a child. However, without direct information about her spouse or their children, we cannot accurately determine the number of grandchildren. Thus, option B, Zero, is the most accurate response given the limited information provided."
+    },
+    {
+        "answer": "D",
+        "reasoning": "Since S has two sisters-in-law, and their husbands have only one son each, it implies they are brothers-in-law. Given V is married to T's father and U is not related by marriage to either, we focus on the relationships directly stated. The question asks about R and Q's relationship. Without explicit information linking R and Q, we look at the given relationships. Since there's no direct link or statement about R and Q being siblings, uncles/nephews (option D) is the most fitting based on the provided details."
+    },
+    {
+        "answer": "B",
+        "reasoning": "Since Nisha sits to the left of someone wearing blue, we need to find who wears blue. Given Amit's child faces east and Diya likes yellow, we can deduce the arrangement. With Kabir facing north and knowing the sequence, we see Nisha is between two people. The only clue about colors besides Diya's liking is Amit's child facing east. Since Diya is already accounted for, it implies another person's color. Given the sequence and clues, the person next to Nisha must wear blue because the other options don't fit the given information."
+    },
+    {
+        "answer": "B",
+        "reasoning": "Since S sits at one end of a row, and Q faces P, we can deduce the seating arrangement. Given Z's position relative to others, option B 'Between Z and P' fits best, considering the direct opposition rule and the need for Z to know X's position relative to Y."
+    },
+    {
+        "answer": "B",
+        "reasoning": "Given seven students already seated, adding one more (T) would require only one extra chair, not considering any potential re-arrangements or new seating configurations."
+    },
+    {
+        "answer": "D",
+        "reasoning": "Since K faces O directly across from I, and Q stands at one end with R beside him, we can deduce the arrangement. Given that I likes V more than U does W, and knowing the colors of others' hair, we find S's color by analyzing the direct relationships between individuals and their preferences."
+    },
+    {
+        "answer": "D",
+        "reasoning": "Since X has two children, Y and Z, and X's uncle is K, we need to find the mother of T. Given Q is W's father-in-law, and without direct information linking T's mother to the provided family structure, we look at the choices. Option D, M, seems unrelated but since there's no explicit connection between the given family members and T's mother, we choose the option that doesn't directly contradict the provided information, which is D, M."
+    },
+    {
+        "answer": "D",
+        "reasoning": "Since Rahul has only one wife mentioned, Geeta or Rekha, and considering the context of having three children from his 'first' wife, without explicit information on the gender of these children, we cannot determine if any of them are sons. Thus, option D, 'None,' is the most accurate representation given the provided details."
+    },
+    {
+        "answer": "D",
+        "reasoning": "Since R has no neighbors with the same favorite color, and given the seating arrangement, we can deduce that R's neighbor must have a different favorite color. With the clue about U's favorite color being Pink and sitting next to T, who likes White, we can start building the sequence. Knowing V faces S, and considering the constraints on R's neighbors, we arrive at the conclusion that O, being part of the sequence, would fit best with the provided information. Given the context and the need to satisfy all clues, option D, Purple, seems the most plausible choice for O's preferred color."
+    },
+    null,
+    {
+        "answer": "B",
+        "reasoning": "Since S and Q are adjacent to the lone person, they must be on either side of it. Given option B directly relates to N's position relative to O without introducing new information, it's the most relevant choice. The other options introduce extraneous details or change the context, making B the best fit based on the provided clues."
+    },
+    {
+        "answer": "B",
+        "reasoning": "Since Rishi's wife, Neeraj, is the daughter-in-law of Kirti, it means Neeraj is married to either Deepak or Priya. However, without more information about their relationships or marriages, we cannot determine if Kirti has any grandchildren. Thus, option B 'None' is the most accurate representation based on the given clues."
+    },
+    {
+        "answer": "D",
+        "reasoning": "Since W is brother-in-law of X, it implies they share a common sibling. Given the relationships provided, we can deduce the family structure. Thus, Y being sister of W makes Y's relation to Z (who is not directly mentioned but implied through the family structure) as Z could be any member of the family, making Y's relation to Z ambiguous without explicit information about their relationship."
+    },
+    {
+        "answer": "D",
+        "reasoning": "Since U stands immediately to the right of V, who faces W, and there's only one person standing alone, we deduce the arrangement based on clues like 'X sits opposite Y' and 'R likes blue.' Given the constraints, Z's color can't be determined directly from the provided information, so option D (Yellow) is the most reasonable choice without explicit contradiction."
+    },
+    {
+        "answer": "D",
+        "reasoning": "Since Rishi is the son-in-law of Kavya and there's no direct relation given between Rishabh and Arjun, we cannot determine their relationship from the provided information. Thus, option D 'Unrelated' is the most accurate representation based on the given details."
+    },
+    {
+        "answer": "B",
+        "reasoning": "Since five women sit in two rows with an equal number of men between them, we need to find pairs that fit this description. Option B (K & J) satisfies this condition, making it the correct choice."
+    },
+    {
+        "answer": "B",
+        "reasoning": "Since there are five people and they face each other with three between them, we can deduce the arrangement. Given Q stands opposite P and T faces W, we start building the structure. With V sitting to the right of U and knowing the total number of people, we systematically place each person considering their positions relative to others. This leads us to conclude that three persons sit to the immediate right of S, making option B the correct choice."
+    },
+    {
+        "answer": "B",
+        "reasoning": "Given K's relationship to J and L being K's daughter, we can deduce family structure. Since O is N's brother-in-law, he must be married to N's sibling. With M as P's sister, we consider Q's position relative to these families. Without explicit relationships between Q and other individuals mentioned, we cannot accurately determine Q's siblings without more information."
+    },
+    {
+        "answer": "B",
+        "reasoning": "Since Rahul has two wives, and one wife has three sons and one daughter, we know she has at least four children. However, there's no direct information linking the second wife's family structure or number of children. Therefore, option B 'His other wife might not have kids at all' remains possible without contradicting given facts."
+    },
+    {
+        "answer": "B",
+        "reasoning": "Since R is son-in-law of K and P is daughter-in-law of R, it means R's spouse is child of K. Given L is brother-in-law of M, there's no direct relation between L/M and S's siblings. Thus, without explicit information linking S to other family members or their relationships, we cannot determine S's siblings. Therefore, option B 'One' is incorrect because it assumes a specific relationship not provided."
+    },
+    {
+        "answer": "D",
+        "reasoning": "Since W is the mother of Y and X is the brother of Y, W must be the aunt of X because X is the nephew of W. Therefore, W is the uncle of X, making option D the correct choice."
+    },
+    {
+        "answer": "B",
+        "reasoning": "Since only one person likes Red, and given that L doesn't like Yellow, we can deduce the color preferences without directly linking J's preference to L's or the other conditions. Thus, the correct answer based on the provided information is B) Red."
+    },
+    {
+        "answer": "D",
+        "reasoning": "Since there's no direct information about Y's color preference, we look at the given statements. U likes blue, V has no sibling with red, W doesn't like green, X has an orange-colored brother. Given these details, without any specific mention of Y's color, we can infer that if Y were mentioned with a color, it would likely fit into one of the already stated preferences. Thus, without explicit information on Y's color, we choose the option that seems most fitting based on the provided details, which is purple."
+    },
+    {
+        "answer": "B",
+        "reasoning": "Rishi has two brothers-in-law, which means Priya is married to one of them. Since Rishi has a son named Rajan, Priya cannot be his mother. Given the family structure, Priya is likely the sister-in-law of Rajan, making option B (Brother-Brother) incorrect. Option A (Father-Son) also doesn't fit. The correct relation between Priya and Rajan would be through marriage or siblinghood, but without explicit information linking Priya to Rajan's parents, we can infer a familial connection but not directly as siblings or parent-child."
+    },
+    {
+        "answer": "D",
+        "reasoning": "Since R sits next to T, and given the seating arrangement provided, we can deduce the order. However, without explicit information on who faces U, we need to look at the choices. Since none directly relate to facing U, we consider the context. Given the seating arrangement and the fact that R and T sit together, if U were part of the group, it would imply a specific position relative to others. Without direct clues linking U's position to any individual, we cannot accurately determine who faces U based solely on the provided information. Therefore, option D (V), which seems unrelated to the seating arrangement or direct clues about U's position, appears to be the most plausible choice considering the lack of concrete details about U's placement relative to others."
+    },
+    {
+        "answer": "B",
+        "reasoning": "Since K is married to L, and T has two sons, R and S, without direct information about K's children, we look at other clues. O being N's son-in-law implies N has a child, but it doesn't directly relate to K's children. P being V's father also doesn't help here. Given the lack of specific details about K's family, we cannot accurately determine the number of children K has based on the provided statements alone."
+    },
+    {
+        "answer": "C",
+        "reasoning": "Pooja is mother-in-law of Chitra, and since Ritu is wife of Arun, Pooja must be mother-in-law of Arun's spouse, making her mother of Arun's sibling, thus Pooja is mother of Arun."
+    },
+    {
+        "answer": "B",
+        "reasoning": "Raja has two sons, Raju and Rishi. Since Kavya is the daughter-in-law of Raja, she must be married to one of them. Given there's only one daughter-in-law, it implies Raja has at least two sons, making option B the correct choice."
+    },
+    {
+        "answer": "B",
+        "reasoning": "Since only one cousin likes Blue, and between two people who like Red, there are three others who don't, we know at least four cousins have different preferences. Given R and S both like Green, and T likes Yellow, without knowing specific neighbors or preferences, we cannot determine if any have opposite preferences. Thus, option B is incorrect because M and N may still have no common preference."
+    },
+    {
+        "answer": "B",
+        "reasoning": "Since only one person likes Red, and between two people who like Green and Blue, there are three seats with no one sitting, we can deduce that at least four people like other colors. Given U faces V, and L sits opposite P, without explicit information on Yellow liking, we cannot confirm more than one person likes it directly from the clues provided."
+    },
+    {
+        "answer": "B",
+        "reasoning": "Since R is son-in-law of Q, R's children would be Q's grandchildren. Given T is daughter-in-law of R, she is part of R's family. U having two daughters, one married to V and another to W, makes them part of R's family too. Since Z is mother of Y, and considering the relationships provided, we can deduce that O could potentially have more than one grandchild, but based on the information given, it seems most likely that O has at least two grandchildren, making option B the most plausible."
     },
     null,
     {
         "answer": "D",
-        "reasoning": "Since Rajat has two sons, and Riaan is not the elder child, it means Riaan is the younger son. Given the family structure, there's no direct relation between Rajat's sons and Kavya's parentage, making 'None of these' the correct choice."
+        "reasoning": "Since Rajat is the son-in-law of Ritu, and Kriti is the daughter of Rajat, Mohit being the brother-in-law of Prateek does not directly relate to Kriti's family. Thus, without explicit information linking Mohit to Kriti's generation or family structure, we cannot determine Mohit's relation to Kriti from the given clues alone. Therefore, option D 'Cousin' is incorrect due to lack of sufficient information."
     },
     {
         "answer": "B",
-        "reasoning": "Given the seating arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7, and V faces someone who likes 11, we can infer the sequence of numbers. Thus, P's preferred number is 9 (Choice B)."
+        "reasoning": "Since M has only one son, R, and there are two married couples with two children each, we deduce that M's wife also has two children. Given P is daughter-in-law of N, and considering the family structure, it can be inferred that V has two grandchildren."
     },
     {
         "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7 and V faces someone who likes 11, we can start building the sequence. With R liking 19 and knowing the sequence, we find P's preference (9) by analyzing the table layout and preferences provided."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7 and V faces someone who likes 11, and knowing the sequence, we find P's preference by analyzing the table structure and applying the given conditions."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7 and V faces someone who likes 11, we can start building the sequence. With R liking 19 and knowing the sequence, we find P's preference (9) by analyzing the table layout and preferences."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7 and V faces someone who likes 11, we can start building the sequence. With R liking 19 and knowing the sequence, we find P's preference by analyzing the table layout and applying the given conditions, ultimately leading us to conclude P likes 9 (Choice B)."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7 and V faces someone who likes 11, we can start building the sequence. With R liking 19 and knowing the sequence, we find P's preference (9) by analyzing the given information and applying logical deductions."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since U dislikes 7 and V faces someone who likes 11, we can deduce the sequence. Given S is between Q and P, and knowing the sequence, P's preference (9) matches the pattern."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7 and V faces someone who likes 11, we can start building the sequence. With R liking 19 and knowing the sequence, we find P's preference by analyzing the table layout and applying the given conditions."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since U dislikes 7, and V faces someone who likes 11, we can deduce the sequence. Given R likes 19, and considering the table layout, P's preference (9) fits the pattern."
-    },
-    null,
-    {
-        "answer": "B",
-        "reasoning": "Given the seating arrangement and preferences, we can deduce the numbers liked by each person. Since U dislikes 7 and V faces someone who likes 11, and considering the table layout, P's preference cannot be determined directly from the given information. Therefore, option B (9) is not the correct answer based on the provided clues."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Given the seating arrangement and preferences, we deduce that P's preferred number is not explicitly stated but can be inferred by analyzing the table layout and individual preferences. Since P's preference is not directly mentioned, we cannot accurately determine their preferred number based on the provided information."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7 and V faces someone who likes 11, we can determine the sequence. With S sitting left of Q, we find the correct preference order and thus the number liked by P, which leads us to choice B as the solution."
+        "reasoning": "Since P has two children, and one is Q, the other must be R. Given S is T's mother-in-law, and U has no siblings, we focus on direct relationships. Since V is W's husband, and there's no explicit connection between these families and X's grandchildren, we look at the provided information. The only clue about grandchildren is through the family structure, but without specific details, we can't accurately determine X's grandchild count. Thus, option B 'Two' cannot be definitively supported or refuted based on the given information."
     },
     {
         "answer": "D",
-        "reasoning": "Since Rajat has two sons, and Riaan is not the elder child, it implies Riaan is one of the sons. Given Sameer is married to Amita's daughter (Rajat), and considering the family structure, Sameer could potentially be the father of Kavya if she is part of the same family lineage."
+        "reasoning": "Since O always faces south, we can deduce the seating arrangement based on the given clues about S and T's positions relative to each other. Given the linear arrangement and the clue about S and T, we can systematically place individuals knowing O's position. Thus, by process of elimination and applying the clues, we find R wearing yellow."
     },
     {
         "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7 and V faces someone who likes 11, we can start building the sequence. With R liking 19 and knowing the sequence, we find P's preference (9) by analyzing the table layout and preferences provided."
+        "reasoning": "Since R is the son-in-law of P and Q has two sons, R and T, but there's no direct relation between R and S or any other sibling information provided, we can't determine how many brothers S has based on given relationships. Thus, option B stating 'One' brother is not supported by the given information, making option B the most accurate representation of the lack of sufficient data."
+    },
+    null,
+    null,
+    {
+        "answer": "B",
+        "reasoning": "Since Tara faces Leela, and given the seating arrangement, we can deduce the order. Knowing Ria's position relative to others and the color preferences between Red and Yellow, we find the person to the right of Ria. By analyzing the clues and eliminating other options based on the provided information, we determine the correct answer is B) Purple."
     },
     {
         "answer": "B",
-        "reasoning": "Since Rajat has two sons, and Riaan is not the elder child, the other son must be the father of Kavya. Given the family structure, Arjun is the only other son, making him the father of Kavya."
+        "reasoning": "Since R is married to T, and W is R's son, W is T's nephew. Given Z is husband of P, who is daughter of U, and considering the family structure provided, Z being brother-in-law of Q can be deduced from analyzing the relationships between U, V, R, T, and their children."
     },
     {
         "answer": "D",
-        "reasoning": "Since Rajat has two sons, and Riaan is not the elder child, we need to find out who is the father of Kavya. Given the family structure, it's clear that neither Vikram nor Arjun can be Kavya's father as they have their own families. Sameer is also eliminated since he's part of another family. Thus, the correct answer is D) None of these because none of the given options fit the description."
+        "reasoning": "Since X faces Y, they must be in the same row. Given P is opposite Q, we can deduce the arrangement. With W's position unknown, we look at the possible arrangements and eliminate based on the constraints. The middle seat (D) fits best considering the direct opposition between P and Q, and the need for X and Y to face each other."
+    },
+    {
+        "answer": "C",
+        "reasoning": "Since Kavya is the daughter-in-law of Rahul and Rahul has two daughters, neither Priya nor Nisha can be confirmed as Ria's sister without more information about their relationships to Ria or other family members."
+    },
+    null,
+    null,
+    {
+        "answer": "D",
+        "reasoning": "Since Rajat is the son-in-law of Rekha, it means Rajat is married to Rekha's child. Given Amit is the father of Rajat, and considering Ria is Rekha's daughter, Ria would be the sister of Rajat's spouse, making her the sister of Rajat's wife, who is also Rekha's daughter."
     },
     {
         "answer": "B",
-        "reasoning": "Since U dislikes 7, and V faces someone who likes 11, we can deduce the sequence. Given S sits immediately to the left of Q, and knowing the sequence, P's preference (9) fits the pattern."
+        "reasoning": "Since there are two rows with an equal number of seats, and U always faces O, we consider direct face-to-face pairs. Given S is opposite T, one person can see both, making option B the correct choice."
+    },
+    null,
+    {
+        "answer": "D",
+        "reasoning": "Given L faces O with one person between them, we can deduce the arrangement. Since P stands opposite Q, it implies a direct opposition. Thus, R would face someone directly across from him, which fits option D's description 'directly opposite'."
     },
     {
         "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the sequence and find P's preference by analyzing the table structure and individual preferences, leading us to conclude P likes 9 (Choice B)."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since Rajat has two sons, and Riaan is not the elder child, the other son must be the father of Kavya. Given the family structure, Arjun is the only other son, making him the father of Kavya."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since Rajat has two sons and Riaan is not the elder child, the other son must be the father of Kavya. Given the family structure, Arjun is the only other son, making him the father of Kavya."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7 and V faces someone who likes 11, we can start building the sequence. With R liking 19 and knowing the sequence, we find P's preference (9) by analyzing the table layout and preferences provided."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since Rajat has two sons, and Riaan is not the elder child, the other son must be the father of Kavya. Given the family structure, Arjun is the only other son, making him the father of Kavya."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since R likes 19, U dislikes 7, and V faces someone who likes 11, we can determine the sequence of numbers. The correct answer is B because it fits the given conditions and leads to a logical solution."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since U dislikes 7 and V faces someone who likes 11, we can deduce the sequence. Given S sits immediately to the left of Q, and knowing the sequence, P's preference (9) fits the pattern."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7 and V faces someone who likes 11, and considering the table layout and seating, we find that P's preference is not directly stated but can be inferred from the given information. However, based on the provided clues and typical logic puzzle solving strategies, without explicit information about P's preference, we cannot definitively determine which option (A, B, C, or D) corresponds to P's liking."
+        "reasoning": "Since S sits immediately to the left of T, and given the seating arrangement provided, we can deduce the positions relative to S. Knowing two people sit clockwise from T to W, and considering the table's circular nature, option B accurately reflects the possible position of Q relative to S without contradicting any explicit information about their direct neighbors or the overall layout."
     },
     {
         "answer": "D",
-        "reasoning": "Since Rajat has two sons, and Riaan is not the elder child, it implies Riaan is one of the sons. Given Sameer is the husband of Amita's daughter (Rajat's wife), and considering the family structure, Sameer could potentially be the father of either son, making 'None of these' the correct answer as neither Vikram nor Arjun can be confirmed without more specific relationships."
+        "reasoning": "Since there's no direct relation between U and V provided, we cannot determine their positions relative to each other. Thus, option D 'Not mentioned' is the most accurate representation of the given information."
     },
     {
         "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7 and V faces someone who likes 11, we can start building the sequence. With R liking 19 and knowing the sequence must fit the given conditions, we find that P's preferred number is indeed 9 (Choice B)."
+        "reasoning": "Since there's only one person in the middle row and considering the seating arrangement, we can deduce the possible positions. Given the constraints, option B (At the end of either row) makes sense because it provides flexibility without contradicting any direct relationships or fixed positions."
     },
     {
         "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7 and V faces someone who likes 11, we can start building the sequence. With R liking 19 and knowing the sequence, we find P's preference (9) by analyzing the table layout and preferences."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since Rajat has two sons, and Riaan is not the elder child, the other son must be the father of Kavya. Given the family structure, Arjun is the only remaining option who could be the father of Kavya."
-    },
-    null,
-    {
-        "answer": "B",
-        "reasoning": "Given the seating arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7 and V faces someone who likes 11, and knowing the sequence of numbers (5, 9, 13, 17), we find P's preference by analyzing the table layout and individual preferences, leading us to conclude P likes 9."
+        "reasoning": "Since Rajat has two brothers-in-law, and their ages differ by 15 years, we can deduce there's at least one more sibling. Given the family structure and age relationships provided, we find that Rajat has three siblings: two brothers-in-law and another sibling mentioned in the context of Rekha having a sister named Rohan."
     },
     {
         "answer": "D",
-        "reasoning": "Since Rajat has two sons and Riaan is not the elder child, it implies that Riaan is the younger child. Given that Kavya is the daughter of Sameer, who is also the brother of Rajat's wife (since Rajat is the son-in-law of Amita), and considering Sameer's family structure, we deduce that Sameer is the father of Kavya."
-    },
-    null,
-    {
-        "answer": "B",
-        "reasoning": "Since U dislikes 7, and V faces someone who likes 11, we can deduce the sequence. Given S sits immediately to the left of Q, and knowing the sequence, P's preference (9) fits the pattern."
+        "reasoning": "Rishi is son-in-law of Asha, implying he's married to Asha's child. Since Ria is not mentioned as Asha's child or spouse, we look at other clues. Rishi being brother-in-law of Tara means Tara is his sister-in-law, but without direct relation between Rishi and Ria, we consider all options. Given the family structure and relationships provided, Rishi being Ria's uncle or cousin seems unlikely due to lack of direct connection. Thus, option D, 'Cousin' cannot be confirmed based on given information. However, since Rishi's relationship to Ria is not directly stated, we choose the most plausible option considering the complexity of relationships and the fact that Rishi's marriage to Asha's child is the only direct link provided."
     },
     {
         "answer": "D",
-        "reasoning": "Since Rajat has two sons, and Riaan is not the elder child, we need to find out who is the father of Kavya. Given the family structure, it's clear that neither Vikram nor Arjun can be Kavya's father. Sameer is also eliminated as he's married to Amita. Thus, the correct answer is D) None of these because none of the given options fit the description."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since Rajat has two sons, and Riaan is not the elder child, the other son must be the father of Kavya. Given the family structure, Arjun is the only other son, making him the father of Kavya."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since U dislikes 7, and V faces someone who likes 11, we can deduce the sequence. Given R likes 19, and knowing the sequence, P's preference (9) fits the pattern."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the sequence and find P's preference by analyzing the table structure and individual preferences, leading us to conclude P likes 9 (Choice B)."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7 and V faces someone who likes 11, and considering the table layout, we find P's preference (9) from the clues provided."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since U dislikes 7 and V faces someone who likes 11, we can deduce the sequence. Given R likes 19 and U's position relative to V, we find P's position by analyzing the table structure and the clues provided. The correct sequence leads us to conclude P likes 9, making option B the correct choice."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since Rajat has two sons, and Riaan is not the elder child, the other son must be the father of Kavya. Given the family structure, Arjun is the only other son, making him the father of Kavya."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7 and V faces someone who likes 11, and considering the table layout, we find that P's preference (9) fits the given clues."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since Rajat has two sons, and Riaan is not the elder child, the other son must be the father of Kavya. Given the family structure, Arjun is the only other son, making him the father of Kavya."
-    },
-    null,
-    null,
-    null,
-    {
-        "answer": "B",
-        "reasoning": "Since Rajat has two sons, and Riaan is not the elder child, the other son must be the father of Kavya. Given the family structure, Arjun is the only remaining option who could be the father of Kavya."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7 and V faces someone who likes 11, and knowing the sequence, we find P's preference (which is not directly stated but can be inferred from the table layout and preferences)."
+        "reasoning": "Since both brothers have two daughters each, neither P nor Q has no child. The statement 'R is daughter-in-law of O' does not directly relate to the number of children each brother has, so we cannot determine which son has no child based on this information alone."
     },
     null,
     {
-        "answer": "B",
-        "reasoning": "Since U dislikes 7, and V faces someone who likes 11, we can deduce the sequence. Given R likes 19, and knowing the sequence (19, 7, 11), P's preference is not directly stated but based on the sequence, it would likely follow the pattern, making B the most logical choice."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since Rajat has two sons, and Riaan is not the elder child, the other son must be the father of Kavya. Given the relationships provided, Arjun is the only other son of Rajat, making him the father of Kavya."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since Rajat has two sons and Riaan is not the elder child, the other son must be the father of Kavya. Given the family structure, Arjun is the only other son, making him the father of Kavya."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the sequence and find P's preference by analyzing the table structure and individual preferences, leading us to conclude P likes 9 (Choice B)."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Given the seating arrangement and preferences, we can deduce the numbers liked by each person. Since U dislikes 7 and V faces someone who likes 11, and considering the table layout and preferences, P's preferred number is 9 (Choice B)."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since Rajat has two sons, and Riaan is not the elder child, the other son must be the father of Kavya. Given the family structure, Arjun is the only other son, making him the father of Kavya."
-    },
-    null,
-    {
-        "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7 and V faces someone who likes 11, and knowing the sequence, we find P's preference by analyzing the table structure and applying the given clues."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Since Rajat has two sons, and Riaan is not the elder child, the other son must be the father of Kavya. Given the family structure, Arjun is the only other son, making him the father of Kavya."
+        "answer": "D",
+        "reasoning": "Since S is between L and Q, and there's only one row facing each other, we can deduce the arrangement. Given the direct opposition constraint, we need to find the arrangement that satisfies it. The correct arrangement would lead us to conclude that T and U are more than 2 seats apart from R."
     },
     {
         "answer": "D",
-        "reasoning": "Since Rajat has two sons, and Riaan is not the elder child, we need to find out who is the father of Kavya. Given the family structure, it's clear that neither Vikram nor Arjun can be Kavya's father as they have their own families. Sameer is also ruled out since he's part of another family. Thus, the correct answer is D) None of these."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7 and V faces someone who likes 11, and considering the table layout and seating, we find that P's preference is not directly stated but can be inferred from the given information. However, based on the provided clues and the need to choose one option, we select the closest matching number among the options, which is 9 (Choice B)."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7 and V faces someone who likes 11, we can start building the sequence. With R liking 19 and knowing the sequence, we find P's preference (9) by analyzing the table layout and preferences provided."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7 and V faces someone who likes 11, and knowing the sequence, we find P's preference by analyzing the table structure and applying the given conditions, leading us to conclude P likes 9 (Choice B)."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7, and V faces someone who likes 11, we can infer the sequence. With S sitting left of Q, and knowing the table layout, we find P's preference by analyzing the seating and preferences, leading us to conclude P likes 9 (Choice B)."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7, and V faces someone who likes 11, we can infer the sequence. With S sitting left of Q, and knowing the table layout, we find P's preference by analyzing the seating and preferences provided, leading us to conclude P likes 9 (Choice B)."
-    },
-    {
-        "answer": "B",
-        "reasoning": "Given the seating arrangement and preferences, we can deduce that P's preference is not explicitly stated but since it's part of the solution set, we infer based on the provided clues and table structure."
+        "reasoning": "Since five students can arrange themselves in various ways without any specific constraints given, option D 'All arrangements possible' is the most accurate representation of the situation."
     },
     null,
     null,
-    null,
-    null,
     {
         "answer": "B",
-        "reasoning": "Since Rajat has two sons and Riaan is not the elder child, the other son must be the father of Kavya. Given the family structure, Arjun is the only other son, making him the father of Kavya."
+        "reasoning": "Since S faces U and there's only one person sitting alone, we can deduce the arrangement. Given the constraints, option B 'Opposite W' makes sense because it directly relates to the seating arrangement and the fact that S faces U, which leads us to conclude that Q would face P if they were seated opposite each other."
     },
     {
         "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7 and V faces someone who likes 11, and knowing the sequence, we find P's preference (9) from the given clues."
+        "reasoning": "Rajat having two daughters and marrying one of his sisters makes Ria Rajat's daughter, eliminating other options."
     },
     null,
     {
-        "answer": "B",
-        "reasoning": "Given the arrangement and preferences, we deduce the numbers liked by each person. Since U dislikes 7 and V faces someone who likes 11, we can determine the sequence. With S sitting left of Q, and knowing the table layout, we find P's preference by analyzing the seating and preferences, leading us to conclude P likes 9 (Choice B)."
+        "answer": "D",
+        "reasoning": "Since N is brother-in-law of O, it implies N is married to O's sibling. Given P is son of N and Q is father of N, P would be grandson of Q if N were son of Q. However, since N is brother-in-law of O, N could be son or daughter of O's sibling, making P's relationship to Q unclear without more information about P's generation relative to N."
     },
     {
-        "answer": "B",
-        "reasoning": "Since U dislikes 7, and V faces someone who likes 11, we can deduce the sequence. Given S sits left of Q, and knowing the sequence, P's preference (9) fits the pattern."
+        "answer": "A",
+        "reasoning": "By applying the clues, starting with R opposite Q with one person between, and S facing U, we build the sequence. With T being three places clockwise from V, option A, P, aligns best with the given relationships."
+    },
+    null,
+    null,
+    {
+        "answer": "D",
+        "reasoning": "Since the question asks about who sits immediately to the right of R but provides no direct relation or positioning clues about R, it requires more explicit information than given, making option D the best fit."
+    },
+    null,
+    {
+        "answer": "D",
+        "reasoning": "The question lacks sufficient information about the seating arrangement of N and O relative to each other or the other given pairs, making it impossible to determine the number of seats separating them without explicit clues connecting these individuals or their positions."
     }
 ]

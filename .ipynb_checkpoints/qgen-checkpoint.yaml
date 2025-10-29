@@ -1,6 +1,6 @@
 ## Example hyperparameters for question agent ##
 max_new_tokens: 1024 # Do not modify max_new_tokens
-temperature: 0.3
+temperature: 0.5
 top_p: 0.95
 repetition_penalty: 1.2
-do_sample: false
+do_sample: true

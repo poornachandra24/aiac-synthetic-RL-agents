@@ -136,8 +136,7 @@ class QuestioningAgent(object):
                 if (isinstance(q2["choices"], list) and len(q2["choices"]) == 4
                         and checks):
                     # check answer format
-                    if isinstance(q2["answer"],
-                                  str) and q2["answer"].upper() in "ABCD":
+                    if isinstance(q2["answer"],str) and q2["answer"].upper() in "ABCD":
                         # Check token length
                         check_len = sum(
                             self.count_tokens_q(q2[k])
@@ -146,9 +145,10 @@ class QuestioningAgent(object):
                             self.count_tokens_q(choice)
                             for choice in q2["choices"]) - 15)
                         if check_len < 130:
-                            if (check_len + self.count_tokens_q(
-                                    q2.get("explanation", "None")) <= 1024):
-                                return True
+                            if (check_len + self.count_tokens_q(q2.get("explanation", "None")) <= 1024):
+                                if isinstance(q2['answer'], str):
+                                    if  len(q2['answer']) == 1 and q2['answer'].upper() in 'ABCD':
+                                        return True
             return False
 
         correct_format_question = []
@@ -156,11 +156,22 @@ class QuestioningAgent(object):
             if isinstance(q, dict):
                 if basic_checks(q):
                     correct_format_question.append(q)
+            elif isinstance(q, str):
+                try:
+                    q1 = json.loads(q)
+                    if basic_checks(q1):
+                        correct_format_question.append(q1)
+                except json.JSONDecodeError:
+                    # If JSON decoding fails, skip this answer
+                    print(f"Skipping invalid JSON at index {i}: {q}")
+                    continue
             else:
                 continue
-
+                
         if len(correct_format_question) >= 0.5 * len(questions):
             return correct_format_question
+        
+        print(f"Warning: Failed to generate enough valid questions. Found {len(correct_format_questions)}, need at least {0.5 * len(questions)}. Returning empty list.")
         return list()
 
     def save_questions(self, questions: List[Dict], file_path: str) -> None:
