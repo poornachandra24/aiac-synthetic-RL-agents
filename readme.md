@@ -1,4 +1,4 @@
-### **Project Report: Synthetic Data AI Agent System for the AMD/Pytorch/Unsloth Hackathon**
+### AMD-Pytorch-Unsloth Hackathon:  AI Agents powered by Fine-tuned Models
 
 ### 1. Executive Summary
 
@@ -31,14 +31,14 @@ All architectural decisions were driven by a clear set of constraints and resour
 
 **Available Resources:**
 *   **Hardware:** An AMD Instinct™ MI300X GPU with 192 GB of HBM3 VRAM.
-*   **Software:** A baseline Python framework, `Unsloth` for accelerated training/inference, and the `synthetic-data-kit` library.
+*   **Software:** A baseline Python framework, [`Unsloth`](https://unsloth.ai/) for accelerated training/inference, and the [`synthetic-data-kit`](https://github.com/meta-llama/synthetic-data-kit) library.
 *   **Data:** Topic lists and format examples. **No training data was provided.**
 
 ### 4. The Architectural Approach
 
 #### 4.1. High-Level Strategy: The Teacher-Student Architecture
 
-The strict time limits made it impossible to use a large, state-of-the-art model (like 70B) for inference. The solution was a **Teacher-Student architecture**:
+The strict time limits made it difficult to use a large, state-of-the-art model (like 70B) for inference. The solution implemented  was a **Teacher-Student architecture**:
 1.  **Teacher:** Use the slow but powerful `Unsloth/Llama-3.3-70B-Instruct` model exclusively for an offline, one-time task: generating a high-quality synthetic dataset.
 2.  **Student:** Fine-tune the fast but capable `unsloth/llama-3-8b-instruct` model on this dataset. This "student" model learns the reasoning patterns from the "teacher" and becomes a specialist.
 
@@ -85,5 +85,10 @@ The fine-tuned model was integrated into the agent scripts using Unsloth's `Fast
     *   **Accuracy & Reliability:** The system successfully parsed and format-validated **100% of the 200 questions** and **85% (170/200) of the answers**, demonstrating exceptional reliability.
     
     
- Future :
-Improving the accuracy and quality of content
+### 5. Future Work
+
+To further enhance the system's capabilities, two key areas for future development have been identified:
+
+*   **Improving Content Quality with Reinforcement Learning (RL):** While the current model is highly effective, its output quality is capped by the initial dataset. A reward model could be trained to score the synthetic data on metrics like difficulty, logical consistency, and creativity. The Q-Agent could then be further fine-tuned using RL algorithms.
+
+*  **Ingesting Semantic Chunks for Dataset Generation:** The initial dataset was created by ingesting entire PDF documents. A more advanced approach would be to first process the source material into "semantic chunks". This technique involves splitting documents into smaller, contextually coherent blocks based on their meaning.
