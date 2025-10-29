@@ -45,7 +45,7 @@ class QuestioningAgent(object):
         tmpl = (
             "Generate a tricky but CONCISE multiple-choice question on the topic: '{topic}'.\n\n"
             "CRITICAL RULES:\n"
-            "1.  The question must be short and to the point.\n"
+            "1.  The question must be short and sensible.\n"
             "2.  The total length of the question, choices, and answer MUST be very short (well under 130 tokens).\n"
             "3.  Your entire response must be a single, valid JSON object following this exact format:\n\n"
             "```json\n"
@@ -57,7 +57,7 @@ class QuestioningAgent(object):
             '    "explanation": "The final order is E, G, A, D, B, C, F, H. From A\'s left, D sits between A and B."\n'
             "}}\n"
             "```\n\n"
-            "Now, generate a new, unique, tricky, and CONCISE question for the topic: '{topic}'"
+            "Now, generate a new, unique, tricky, and CONCISE question for the topic: '{topic} in the expected schema ONLY; DO NOT ADD ANYTHING EXTRA OTHER THAN THE JSON'"
         )
 
         prompt = tmpl.format(topic=topic)
@@ -220,8 +220,7 @@ class QuestioningAgent(object):
             print(
                 f"\n🔧 Batch correcting {len(remaining_indices)} failed questions with LLM (batch_size={batch_size})..."
             )
-            self._improved_batch_llm_correction(texts, results,
-                                                remaining_indices, batch_size)
+            self._batch_llm_correction(texts, results, remaining_indices, 1 ,batch_size)
 
         return results
 
@@ -274,6 +273,20 @@ class QuestioningAgent(object):
                 for text in batch_texts
             ]
 
+            correction_prompt_template = """
+                EXTRACT AND RETURN ONLY VALID JSON from the text below. Follow these rules STRICTLY:
+                
+                1. Return ONLY the JSON object, no other text
+                2. Ensure proper JSON format with double quotes
+                3. If multiple JSON objects exist, pick the most complete one
+                4. If no valid JSON, return {{}}
+                
+                TEXT:
+                {text}
+                
+                JSON OUTPUT:
+                """
+
             batch_prompts = [
                 correction_prompt_template.format(text=text)
                 for text in preprocessed_texts
@@ -321,6 +334,7 @@ class QuestioningAgent(object):
                         )
                     else:
                         print(f"[Q{idx+1}] ❌ Layer 3 FAILED (batch error)")
+                        
 
     def _remove_conversational_wrappers(self, text: str) -> str:
         """Remove common conversational wrappers around JSON"""
