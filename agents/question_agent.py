@@ -119,29 +119,53 @@ class QuestioningAgent(object):
 
     def filter_questions(
         self, questions: List[Dict[str, Any]]
-    ) -> List[Dict[str, Any]]:
-        # This uses our final, corrected logic
+        ) -> List[Dict[str, Any]]:
         def basic_checks(q2: Dict[str, Any]) -> bool:
+            # check required keys
             required_keys = ["topic", "question", "choices", "answer"]
-            if not all(key in q2 for key in required_keys): return False
-            if not (isinstance(q2.get("choices"), list) and len(q2["choices"]) == 4): return False
-            if not all(isinstance(c, str) and len(c) > 2 and c[0].upper() in "ABCD" for c in q2["choices"]): return False
-            if not (isinstance(q2.get("answer"), str) and q2["answer"].upper() in "ABCD"): return False
-            
-            # The original token check from the hackathon guidelines
-            check_len = sum(self.count_tokens_q(q2.get(k, "")) for k in ["question", "answer"])
-            check_len += sum(self.count_tokens_q(c) for c in q2["choices"]) - 15
-            if check_len >= 130: return False
+            if all((key in q2) for key in required_keys):
+                # check choices format
+                checks = all(
+                    isinstance(choice, str)
+                    and len(choice) > 2
+                    and choice[0].upper() in "ABCD"
+                    for choice in q2["choices"]
+                )
+                if (
+                    isinstance(q2["choices"], list)
+                    and len(q2["choices"]) == 4
+                    and checks
+                ):
+                    # check answer format
+                    if isinstance(q2["answer"], str) and q2["answer"].upper() in "ABCD":
+                        # Check token length
+                        check_len = sum(
+                            self.count_tokens_q(q2[k]) for k in ["question", "answer"]
+                        )
+                        check_len += (
+                            sum(self.count_tokens_q(choice) for choice in q2["choices"])
+                            - 15
+                        )
+                        if check_len < 130:
+                            if (
+                                check_len
+                                + self.count_tokens_q(q2.get("explanation", "None"))
+                                <= 1024
+                            ):
+                                return True
+            return False
 
-            return True
+        correct_format_question = []
+        for i, q in enumerate(questions):
+            if isinstance(q, dict):
+                if basic_checks(q):
+                    correct_format_question.append(q)
+            else:
+                continue
         
-        # This correctly handles a list of dicts now
-        correct_format_question = [q for q in questions if basic_checks(q)]
-
-        # The 50% threshold rule from the original script
         if len(correct_format_question) >= 0.5 * len(questions):
             return correct_format_question
-        return []
+        return list()
 
     def save_questions(self, questions: List[Dict], file_path: str) -> None:
         path = Path(file_path)
@@ -180,7 +204,7 @@ if __name__ == "__main__":
         gen_kwargs.update(yaml.safe_load(f))
 
     # The main function call remains the same, but we now pass wicl=False
-    raw_outputs, tls, gts = agent.generate_batches(
+    question, tls, gts = agent.generate_batches(
         num_questions=args.num_questions,
         topics=topics,
         batch_size=args.batch_size,
@@ -190,8 +214,11 @@ if __name__ == "__main__":
         **gen_kwargs,
     )
     
-    print(f"Generated {len(raw_outputs)} raw outputs!")
+    print(f"Generated {len(question)} raw questions!")
     if args.verbose and gts:
+        for q in question:
+            print(q, flush=True)
+        print("\n" + "=" * 50 + "\n\n")
         total_time = sum(filter(None, gts))
         if total_time > 0:
             total_tokens = sum(filter(None, tls))
@@ -200,7 +227,7 @@ if __name__ == "__main__":
     # The 3-Layer Parsing Cascade, now integrated into the original structure
     clean_questions = []
     print("\n--- Starting 3-Layer Robust JSON Parsing ---")
-    for idx, raw_text in enumerate(raw_outputs, 1):
+    for idx, raw_text in enumerate(question, 1):
         print(f"[Q{idx}] ", end="")
         parsed_json = None
         
@@ -236,7 +263,7 @@ if __name__ == "__main__":
             clean_questions.append(parsed_json)
     
     print(f"\n{'='*50}")
-    print(f"Successfully parsed {len(clean_questions)}/{len(raw_outputs)} outputs")
+    print(f"Successfully parsed {len(clean_questions)}/{len(question)} outputs")
     print(f"{'='*50}")
 
     agent.save_questions(clean_questions, args.output_file)
