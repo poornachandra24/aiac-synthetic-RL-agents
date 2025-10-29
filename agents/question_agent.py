@@ -47,7 +47,7 @@ class QuestioningAgent(object):
             "CRITICAL RULES:\n"
             "1.  The question must be short and sensible.\n"
             "2.  The total length of the question, choices, and answer MUST be very short (well under 130 tokens).\n"
-            "3.  Your entire response must be a single, valid JSON object following this exact format:\n\n"
+            "3.  Your entire response must be **ONLY** a single, valid JSON object following this exact format:\n\n"
             "```json\n"
             "{{\n"
             '    "topic": "Puzzles/Seating Arrangements (Linear, Circular)",\n'
@@ -57,7 +57,7 @@ class QuestioningAgent(object):
             '    "explanation": "The final order is E, G, A, D, B, C, F, H. From A\'s left, D sits between A and B."\n'
             "}}\n"
             "```\n\n"
-            "Now, generate a new, unique, tricky, and CONCISE question for the topic: '{topic} in the expected schema ONLY; DO NOT ADD ANYTHING EXTRA OTHER THAN THE JSON'"
+            "Now, generate a new, unique, tricky, and CONCISE question for the topic: '{topic} in the expected schema ONLY'"
         )
 
         prompt = tmpl.format(topic=topic)
