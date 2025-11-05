@@ -1,6 +1,6 @@
-### AMD-Pytorch-Unsloth Hackathon:  AI Agents powered by Fine-tuned Models
+# AMD-Pytorch-Unsloth Hackathon:  AI Agents powered by Fine-tuned Models
 
-### 1. Executive Summary
+## 1. Executive Summary
 
 This document outlines the architecture, design, and execution of a high-performance Question & Answer (Q&A) agent system for the Synthetic Data AI Agents Challenge. The objective was to build a Question Agent (Q-Agent) capable of generating complex, format-correct puzzles and an Answer Agent (A-Agent) capable of solving them, all while adhering to strict performance and formatting constraints.
 
@@ -8,7 +8,7 @@ The chosen strategy was a **"Teacher-Student" fine-tuning architecture**. A stat
 
 The system was built on an **AMD Instinct™ MI300X GPU**, leveraging its 192 GB of HBM3 memory and massive compute power. The Unsloth library was used for optimized fine-tuning and inference. The final fine-tuned model and its LoRA adapters were successfully versioned and pushed to the Hugging Face Hub for deployment. The resulting system is not only highly accurate but also exceptionally fast, capable of generating **200 questions in 36.5 seconds (0.18s/question)**, demonstrating a throughput over 55 times faster than the required threshold.
 
-### 2. Problem Statement
+## 2. Problem Statement
 
 The hackathon required participants to build two AI agents that would compete in a 1v1, knockout-style tournament:
 *   **A Question Agent (Q-Agent):** To generate novel, difficult, multiple-choice questions on specific topics (`Puzzles/Seating Arrangements` and `Blood Relations/Family Trees`).
@@ -16,7 +16,15 @@ The hackathon required participants to build two AI agents that would compete in
 
 Scoring was based on the A-Agent's ability to answer correctly and the Q-Agent's ability to stump opponents. A key challenge was that no training data was provided; the core task was to design and generate a synthetic dataset for training the agents.
 
-### 3. Constraints & Available Resources
+## 3. Quick Links:
+ -   Raw data collection, synthethic data generation and model finetuning: https://github.com/poornachandra24/aiac-synthetic-RL-agents/blob/main/data_gen_finetune.ipynb
+ -   Finetuned Model: https://huggingface.co/Thunderbird2410/Llama-3-8B-Puzzles-Unsloth
+ -   LoRA adapters: https://huggingface.co/Thunderbird2410/Llama-3-8B-Puzzles-Unsloth-LoRA
+ -   Generated Synthetic QA pairs:  https://huggingface.co/datasets/Thunderbird2410/amd-hack-qa
+ -   E2E Q and A agent test on 200 Questions prior to submission: https://github.com/poornachandra24/aiac-synthetic-RL-agents/blob/main/README.ipynb
+ -   The python files to load the model from hugging face and initialize agents with 3 layer parsing logic: https://github.com/poornachandra24/aiac-synthetic-RL-agents/tree/main/agents
+
+## 4. Constraints & Available Resources
 
 All architectural decisions were driven by a clear set of constraints and resources.
 
@@ -34,20 +42,20 @@ All architectural decisions were driven by a clear set of constraints and resour
 *   **Software:** A baseline Python framework, [`Unsloth`](https://unsloth.ai/) for accelerated training/inference, and the [`synthetic-data-kit`](https://github.com/meta-llama/synthetic-data-kit) library.
 *   **Data:** Topic lists and format examples. **No training data was provided.**
 
-### 4. The Architectural Approach
+## 5. The Architectural Approach
 
-#### 4.1. High-Level Strategy: The Teacher-Student Architecture
+### 5.1. High-Level Strategy: The Teacher-Student Architecture
 
 The strict time limits made it difficult to use a large, state-of-the-art model (like 70B) for inference. The solution implemented  was a **Teacher-Student architecture**:
 1.  **Teacher:** Use the slow but powerful `Unsloth/Llama-3.3-70B-Instruct` model exclusively for an offline, one-time task: generating a high-quality synthetic dataset.
 2.  **Student:** Fine-tune the fast but capable `unsloth/llama-3-8b-instruct` model on this dataset. This "student" model learns the reasoning patterns from the "teacher" and becomes a specialist.
 
-#### 4.2. Phase 1: Synthetic Data Design
-
+### 5.2. Phase 1: Synthetic Data Design
+  
 *   **Source Material:** High-quality, human-vetted question banks from competitive exam preparation PDFs were used as the source. This ensured the core logic of the puzzles was sound.
 *   **Generation Process:** The `synthetic-data-kit` was used to `ingest` the PDFs. Then, the 70B Teacher model was prompted with a custom "JSON machine" prompt to read the parsed text and **reformat** the existing puzzles into the hackathon's required JSON schema. This produced a final dataset of **1,038 high-quality, perfectly formatted training examples.**
 
-#### 4.3. Phase 2: Fine-Tuning the Student Model
+### 5.3. Phase 2: Fine-Tuning the Student Model
 
 *   **Model Selection:** `unsloth/llama-3-8b-instruct` was chosen as the student model for its optimal balance of reasoning capability and inference speed.
 *   **Fine-Tuning Configuration:** The model was fine-tuned using Unsloth and LoRA. The hyperparameters were aggressively tuned to leverage the power of the MI300X hardware:
@@ -63,7 +71,7 @@ The strict time limits made it difficult to use a large, state-of-the-art model 
 
 *   **Training Results:** The training logs confirm the model trained successfully over two runs, with the training loss consistently decreasing from a starting point of ~1.57 down to a final value of ~0.81, indicating effective learning.
 
-#### 4.4. Phase 3: Integration, System Hardening, and Performance
+### 5.4. Phase 3: Integration, System Hardening, and Performance
 
 The fine-tuned model was integrated into the agent scripts using Unsloth's `FastLanguageModel`. The system was hardened against real-world model behavior.
 
@@ -83,12 +91,35 @@ The fine-tuned model was integrated into the agent scripts using Unsloth's `Fast
         *   **Average Time:** **0.17 seconds per answer** (35x faster than the 6s limit).
         *   **Tokens Per Second (TGPS):** **778.7 TGPS**.
     *   **Accuracy & Reliability:** The system successfully parsed and format-validated **100% of the 200 questions** and **85% (170/200) of the answers**, demonstrating exceptional reliability.
-    
-    
-### 5. Future Work
+  
+
+## 6. Future Work
 
 To further enhance the system's capabilities, two key areas for future development have been identified:
 
 *   **Improving Content Quality with Reinforcement Learning (RL):** While the current model is highly effective, its output quality is capped by the initial dataset. A reward model could be trained to score the synthetic data on metrics like difficulty, logical consistency, and creativity. The Q-Agent could then be further fine-tuned using RL algorithms.
 
 *  **Ingesting Semantic Chunks for Dataset Generation:** The initial dataset was created by ingesting entire PDF documents. A more advanced approach would be to first process the source material into "semantic chunks". This technique involves splitting documents into smaller, contextually coherent blocks based on their meaning.
+
+
+## 7. References and Influences
+
+The strategies employed in this project were informed by a number of excellent resources from the AI community:
+
+* **Fine-Tuning & Model Architecture:**
+
+  * [DeepLearning.AI – Finetuning Large Language Models](https://www.deeplearning.ai/short-courses/finetuning-large-language-models/) 
+  * [James Briggs – LoRA Fine-tuning Tiny LLMs as Expert Agents (](https://www.youtube.com/watch?v=lJDxkjE9SSY)
+  * 
+* **Synthetic Data & Data Generation:**
+
+  * [“Synthetic Data Generation using LLMs” ](https://www.youtube.com/watch?v=fOkkmbwdS7Y) 
+  * [Session: “LLM Scaling and the Role of Synthetic Data” ](https://www.youtube.com/watch?v=hW8PLg3Hitk)
+    
+* **Reinforcement Learning & Policy Distillation:**
+
+  * [DeepLearning.AI – Post-training of LLMs (SFT, DPO, RL)](https://www.deeplearning.ai/short-courses/post-training-of-llms/)
+  *  [“How does GRPO work?” — YouTube](https://www.youtube.com/watch?v=iHlarYGLMbY)
+  *  [“[Full Workshop] Reinforcement Learning, Kernels, Reasoning, Quantization & Agents — Daniel Han”](https://www.youtube.com/watch?v=OkEGJ5G3foU)
+  * [“On-Policy Distillation” – Thinking Machines blog](https://thinkingmachines.ai/blog/on-policy-distillation/)
+
