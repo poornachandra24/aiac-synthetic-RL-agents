@@ -109,8 +109,9 @@ The strategies employed in this project were informed by a number of excellent r
 * **Fine-Tuning & Model Architecture:**
 
   * [DeepLearning.AI – Finetuning Large Language Models](https://www.deeplearning.ai/short-courses/finetuning-large-language-models/) 
-  * [James Briggs – LoRA Fine-tuning Tiny LLMs as Expert Agents (](https://www.youtube.com/watch?v=lJDxkjE9SSY)
-  * 
+  * [James Briggs – LoRA Fine-tuning Tiny LLMs as Expert Agents](https://www.youtube.com/watch?v=lJDxkjE9SSY)
+  * [Low Level Technicals of LLMs: Daniel Han](https://youtu.be/pRM_P6UfdIc?si=VI_xOnYIDVfCz6kK)
+
 * **Synthetic Data & Data Generation:**
 
   * [“Synthetic Data Generation using LLMs” ](https://www.youtube.com/watch?v=fOkkmbwdS7Y) 
